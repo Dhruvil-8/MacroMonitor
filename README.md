@@ -1,9 +1,17 @@
+---
+title: Global Macro Monitor
+emoji: 📈
+colorFrom: gray
+colorTo: blue
+sdk: docker
+app_port: 7860
+---
+
 # Global Macro Transmission Monitor
 
 A system for detecting structural breaks in historical relationships (transmission mechanisms) between global macro drivers and asset classes.
 
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 **Repository:** [github.com/Dhruvil-8/MacroMonitor](https://github.com/Dhruvil-8/MacroMonitor)
 **Live Demo:** [huggingface.co/spaces/Dhruvil8/MacroMonitor](https://huggingface.co/spaces/Dhruvil8/MacroMonitor)
@@ -90,9 +98,3 @@ macro-monitor/
 ├── Dockerfile                 # HF Spaces Deployment config
 └── requirements.txt           # Python dependencies
 ```
-Configuration
-The system behavior is fully controlled via configuration files in config/:
-
-asset_universe.yaml: Dictionary of all trackable assets.
-pairing_matrix.yaml: The logic map. Defines which macro driver is expected to influence which target asset (e.g., DXY -> Emerging Markets).
-thresholds.yaml: Risk sensitivity parameters (Z-Score limits, Window sizes).
