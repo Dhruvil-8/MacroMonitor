@@ -1,0 +1,73 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Processed data files (generated, not committed)
+# data/processed/*.parquet  <-- Un-commented to allow committing 'prices.parquet' (Hybrid Strategy)
+data/processed/alerts/*.jsonl
+data/processed/alerts/latest.json
+data/processed/validation/
+
+# Logs
+*.log
+logs/
+
+# Local documentation
+DEPLOYMENT.md
+audit_report.md
+# validation_report.md (Uploaded as proof of quality)
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# mypy
+.mypy_cache/

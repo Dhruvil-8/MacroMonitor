@@ -1,0 +1,64 @@
+# asset_universe.yaml
+# Global-first taxonomy of macro drivers and assets
+# Format: semantic_name: yahoo_finance_ticker
+
+macro_fx:
+  DXY: DX-Y.NYB
+  EURUSD: EURUSD=X
+  USDJPY: JPY=X
+  GBPUSD: GBPUSD=X
+  USDCNY: CNY=X
+  USDINR: INR=X
+  USDCHF: CHF=X
+
+macro_rates:
+  US_2Y: ^IRX
+  US_10Y: ^TNX
+  US_30Y: ^TYX
+
+macro_credit:
+  US_HighYield: HYG
+  US_InvestmentGrade: LQD
+  EM_Bonds: EMB
+
+equities_us:
+  SP500: ^GSPC
+  NASDAQ: ^IXIC
+  DowJones: ^DJI
+  Russell2000: ^RUT
+
+equities_europe:
+  DAX: ^GDAXI
+  FTSE100: ^FTSE
+  CAC40: ^FCHI
+  Europe: EZU
+
+equities_asia:
+  Nikkei225: EWJ
+  HangSeng: EWH
+  China: MCHI
+  KOSPI: EWY
+  India: INDA
+  ASX200: EWA
+
+commodities:
+  Brent: BZ=F
+  WTI: CL=F
+  NatGas: NG=F
+  Gold: GC=F
+  Silver: SI=F
+  Copper: HG=F
+  Platinum: PL=F
+
+crypto:
+  Bitcoin: BTC-USD
+  Ethereum: ETH-USD
+
+volatility:
+  VIX: ^VIX
+  VXN: ^VXN
+
+regions:
+  EM_Equities: EEM
+  LatAm: ILF
+  Japan: EWJ

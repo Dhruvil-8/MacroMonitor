@@ -1,0 +1,107 @@
+# pairing_matrix.yaml
+# Cross-asset pairings for transmission monitoring
+# Each pairing must reference valid names from asset_universe.yaml
+
+# USD Transmission
+- macro: DXY
+  target: SP500
+  rationale: USD strength impacts foreign investor flows and US multinational earnings
+
+- macro: DXY
+  target: EM_Equities
+  rationale: Strong USD creates EM debt servicing stress and capital outflows
+
+- macro: DXY
+  target: Gold
+  rationale: Inverse relationship - USD strength reduces gold demand as alternative store
+
+- macro: DXY
+  target: Bitcoin
+  rationale: Crypto often trades as risk/liquidity proxy inversely correlated with USD
+
+# Rates Transmission
+- macro: US_10Y
+  target: SP500
+  rationale: Discount rate effect on equity valuations via DCF sensitivity
+
+- macro: US_10Y
+  target: NASDAQ
+  rationale: Growth stocks highly sensitive to long-duration discount rates
+
+- macro: US_10Y
+  target: US_HighYield
+  rationale: Credit spreads widen when risk-free rates spike unexpectedly
+
+- macro: US_10Y
+  target: Gold
+  rationale: Higher real rates reduce gold attractiveness vs yield-bearing assets
+
+- macro: US_2Y
+  target: USDJPY
+  rationale: Short-rate differentials drive FX carry trades
+
+# Credit Transmission
+- macro: US_HighYield
+  target: SP500
+  rationale: Credit stress signals equity risk; HY spreads lead equities
+
+- macro: US_HighYield
+  target: Russell2000
+  rationale: Small caps more leveraged and sensitive to credit conditions
+
+# Energy Transmission
+- macro: Brent
+  target: Europe
+  rationale: Energy price shocks impact European net importers heavily
+
+- macro: Brent
+  target: India
+  rationale: India large oil importer - energy costs flow to inflation/current account
+
+- macro: NatGas
+  target: Europe
+  rationale: European industrial base sensitive to natural gas prices
+
+- macro: WTI
+  target: US_HighYield
+  rationale: US HY index has significant energy sector exposure
+
+# Industrial Metals Transmission
+- macro: Copper
+  target: China
+  rationale: Copper as proxy for Chinese industrial demand and construction
+
+- macro: Copper
+  target: EM_Equities
+  rationale: EM economies correlated with global industrial cycle
+
+# Volatility Transmission
+- macro: VIX
+  target: SP500
+  rationale: VIX spikes indicate equity stress; inverse relationship baseline
+
+- macro: VIX
+  target: HangSeng
+  rationale: Global risk aversion transmits to Asian risk assets
+
+- macro: VIX
+  target: EM_Equities
+  rationale: EM equities sell off during global risk-off episodes
+
+- macro: VIX
+  target: Bitcoin
+  rationale: Crypto correlates with risk appetite; VIX spikes = crypto weakness
+
+# FX Cross Transmission
+- macro: USDJPY
+  target: Japan
+  rationale: Yen weakness boosts Japanese exporter competitiveness
+
+- macro: EURUSD
+  target: DAX
+  rationale: Euro weakness supports German export-heavy economy
+
+# Crypto Internal
+- macro: Bitcoin
+  target: Ethereum
+  rationale: Crypto assets highly correlated; BTC leads ETH movements

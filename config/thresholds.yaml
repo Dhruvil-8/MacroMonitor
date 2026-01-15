@@ -1,0 +1,11 @@
+# thresholds.yaml
+corr_window: 30
+hist_corr_window: 180
+beta_window: 180
+macro_vol_window: 180
+z_threshold: 2.0
+macro_move_threshold: 1.5
+deviation_threshold_params:
+  target_vol_multiplier: 0.75
+  beta_macro_multiplier: 0.5
+max_allowed_alerts_per_day: 20
