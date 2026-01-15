@@ -218,6 +218,12 @@ def update_price_store(
         existing = pd.read_parquet(parquet_path)
         last_date = existing.index.max()
         fetch_start = last_date + pd.Timedelta(days=1)
+        
+        # Check if up to date (prevent future download error)
+        if fetch_start > pd.Timestamp.now().normalize():
+            LOGGER.info("Price store is up to date. Skipping download.")
+            return existing
+            
         LOGGER.info(
             "Existing price store found",
             extra={"last_date": str(last_date), "rows": len(existing)}
