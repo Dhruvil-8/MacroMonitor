@@ -179,7 +179,6 @@ from radar.metrics.stats import (
     compute_expanding_zscore,
     compute_lag1_autocorr,
 )
-import yaml
 
 
 def write_json_file(file_path: Path, model_instance: Any) -> int:

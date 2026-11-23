@@ -148,13 +148,13 @@ def fit_window_multi_factor(
         # L2 Ridge regression fallback
         k = X_clean.shape[1]
         XtX = X_clean.T @ X_clean
-        I = np.eye(k)
-        beta_ridge = np.linalg.inv(XtX + ridge_alpha * I) @ X_clean.T @ y_clean
+        eye_k = np.eye(k)
+        beta_ridge = np.linalg.inv(XtX + ridge_alpha * eye_k) @ X_clean.T @ y_clean
 
         # Conservative standard errors
         residuals = y_clean - X_clean @ beta_ridge
         sigma2 = np.sum(residuals**2) / max(1, n_obs - k)
-        cov_ridge = sigma2 * np.linalg.inv(XtX + ridge_alpha * I) @ XtX @ np.linalg.inv(XtX + ridge_alpha * I)
+        cov_ridge = sigma2 * np.linalg.inv(XtX + ridge_alpha * eye_k) @ XtX @ np.linalg.inv(XtX + ridge_alpha * eye_k)
         se_ridge = np.sqrt(np.maximum(0.0, np.diag(cov_ridge)))
 
         ss_tot = np.sum((y_clean - np.mean(y_clean))**2)

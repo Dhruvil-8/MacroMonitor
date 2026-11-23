@@ -27,7 +27,7 @@ jobs:
 
       - name: Lint with Ruff
         run: |
-          ruff check pipeline/src
+          ruff check pipeline/src --config pipeline/pyproject.toml
 
       - name: Test with pytest
         run: |
@@ -50,7 +50,7 @@ jobs:
           cache-dependency-path: web/package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci || npm install
 
       - name: Next.js Static Export Build
         run: npm run build

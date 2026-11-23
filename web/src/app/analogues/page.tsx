@@ -105,11 +105,10 @@ export default function AnaloguesPage() {
               key={p.id}
               type="button"
               onClick={() => setPresetId(p.id)}
-              className={`text-left rounded-[6px] border p-3.5 transition-colors cursor-pointer flex flex-col justify-between gap-2 ${
-                active
-                  ? "border-[#38bdf8] bg-[#38bdf8]/10"
-                  : "border-[#1d2633] bg-[#0c1017] hover:border-[#6f7c90]"
-              }`}
+              className={`text-left rounded-[6px] border p-3.5 transition-colors cursor-pointer flex flex-col justify-between gap-2 ${active
+                ? "border-[#38bdf8] bg-[#38bdf8]/10"
+                : "border-[#1d2633] bg-[#0c1017] hover:border-[#6f7c90]"
+                }`}
             >
               <div>
                 <div className="text-xs font-semibold text-[#e8edf5]">{p.name}</div>
@@ -158,11 +157,10 @@ export default function AnaloguesPage() {
                 key={a}
                 type="button"
                 onClick={() => setTargetAsset(a)}
-                className={`px-2 py-1 text-[11px] font-mono rounded-[4px] border cursor-pointer ${
-                  targetAsset === a
-                    ? "border-[#38bdf8] bg-[#38bdf8]/10 text-[#e8edf5]"
-                    : "border-[#1d2633] text-[#6f7c90]"
-                }`}
+                className={`px-2 py-1 text-[11px] font-mono rounded-[4px] border cursor-pointer ${targetAsset === a
+                  ? "border-[#38bdf8] bg-[#38bdf8]/10 text-[#e8edf5]"
+                  : "border-[#1d2633] text-[#6f7c90]"
+                  }`}
               >
                 {a}
               </button>

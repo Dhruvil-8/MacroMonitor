@@ -58,19 +58,19 @@ export function ContextClientView({ id }: { id: string }) {
 
   const jsonLd = ctxData
     ? {
-        "@context": "https://schema.org",
-        "@type": "Dataset",
-        name: `${ctxData.name} Historical Context & Empirical Distribution`,
-        description: ctxData.description,
-        identifier: ctxData.id,
-        isAccessibleForFree: true,
-        temporalCoverage: "2000-01-01/..",
-        spatialCoverage: ctxData.region,
-        creator: {
-          "@type": "Organization",
-          name: "MacroMonitor",
-        },
-      }
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      name: `${ctxData.name} Historical Context & Empirical Distribution`,
+      description: ctxData.description,
+      identifier: ctxData.id,
+      isAccessibleForFree: true,
+      temporalCoverage: "2000-01-01/..",
+      spatialCoverage: ctxData.region,
+      creator: {
+        "@type": "Organization",
+        name: "MacroMonitor",
+      },
+    }
     : null;
 
   return (

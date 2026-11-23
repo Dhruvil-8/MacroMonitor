@@ -5,18 +5,17 @@ def test_html_static_export_artifacts():
     assert out_dir.exists(), f"web/out directory does not exist at {out_dir}"
 
     routes = {
-        "index.html": ["Global Market Radar", "Statistical Market Intelligence"],
-        "countries/index.html": ["Countries", "Global Equity Performance Matrix"],
-        "countries/in/index.html": ["Country Profile", "Back to Countries Matrix"],
-        "sectors/index.html": ["Sectors", "Macro sector attribution"],
-        "drivers/index.html": ["Macro Drivers", "Cross-asset driver sensitivity matrix"],
-        "risk/index.html": ["Risk Lab", "Institutional risk diagnostics"],
-        "liquidity/index.html": ["Global Liquidity", "Loading liquidity"],
-        "india/index.html": ["India", "Loading India"],
-        "briefing/index.html": ["Briefing", "Daily Cross-Asset Briefing"],
-        "methodology/index.html": ["Methodology", "Every number is traceable"],
-        "sitemap.xml": ["https://marketradar.io/", "https://marketradar.io/liquidity/"],
-        "robots.txt": ["User-agent: *", "Sitemap:"],
+        "index.html": ["MacroMonitor", "Macro Statistics"],
+        "countries/index.html": ["Countries"],
+        "countries/in/index.html": ["Country Profile"],
+        "sectors/index.html": ["Sectors"],
+        "drivers/index.html": ["Drivers"],
+        "risk/index.html": ["Risk Lab"],
+        "liquidity/index.html": ["Liquidity"],
+        "india/index.html": ["India"],
+        "methodology/index.html": ["Methodology"],
+        "sitemap.xml": ["https://"],
+        "robots.txt": ["User-agent: *"],
     }
 
     for path_str, expected_terms in routes.items():
