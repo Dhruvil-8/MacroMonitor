@@ -79,6 +79,40 @@ interface ChartMeta {
   renderComponent: () => React.ReactNode;
 }
 
+class ChartErrorBoundary extends React.Component<
+  { children: React.ReactNode },
+  { hasError: boolean; error: Error | null }
+> {
+  constructor(props: any) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+
+  static getDerivedStateFromError(error: Error) {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+    console.error("Chart preview render exception:", error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="h-64 rounded bg-[#0c1017] border border-amber-500/20 p-4 flex flex-col items-center justify-center text-center">
+          <div className="text-amber-400 font-mono text-xs font-semibold mb-1">
+            Preview Unavailable
+          </div>
+          <div className="text-[#8c9bb0] text-[11px] font-mono max-w-md">
+            {this.state.error?.message || "Data formatting exception in chart preview."}
+          </div>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 function LazyChartItem({ render }: { render: () => React.ReactNode }) {
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -101,7 +135,9 @@ function LazyChartItem({ render }: { render: () => React.ReactNode }) {
   return (
     <div ref={containerRef} className="min-h-[260px] flex flex-col justify-center">
       {isVisible ? (
-        render()
+        <ChartErrorBoundary>
+          {render()}
+        </ChartErrorBoundary>
       ) : (
         <div className="h-64 rounded bg-[#07090d]/60 border border-[#1d2633]/40 flex flex-col items-center justify-center text-xs font-mono text-[#6f7c90] animate-pulse">
           <span>Loading chart model...</span>
@@ -898,12 +934,12 @@ export default function ChartsCataloguePage() {
                 { tenor: "6M", days: 180, current: 19.5, one_month_ago: 21.60, one_year_median: 20.20, p10: 17.90, p90: 26.20 },
               ],
               fear_tail_indices: [
-                { id: "skew", name: "Cboe SKEW Index", value: 142.5, percentile: 88.0, interpretation: "Elevated crash protection demand" },
-                { id: "vrp", name: "Trailing 30D VRP", value: 2.14, percentile: 45.0, interpretation: "Moderate volatility risk premium" },
+                { id: "skew", name: "Cboe SKEW Index", current: 142.5, value: 142.5, z_score: 1.45, percentile: 88.0, chg_1w: 2.5, chg_1m: 4.2, interpretation: "Elevated crash protection demand" },
+                { id: "vrp", name: "Trailing 30D VRP", current: 2.14, value: 2.14, z_score: 0.35, percentile: 45.0, chg_1w: -0.3, chg_1m: -0.8, interpretation: "Moderate volatility risk premium" },
               ],
               tail_fear: [
-                { id: "skew", name: "Cboe SKEW Index", value: 142.5, percentile: 88.0, interpretation: "Elevated crash protection demand" },
-                { id: "vrp", name: "Trailing 30D VRP", value: 2.14, percentile: 45.0, interpretation: "Moderate volatility risk premium" },
+                { id: "skew", name: "Cboe SKEW Index", current: 142.5, value: 142.5, z_score: 1.45, percentile: 88.0, chg_1w: 2.5, chg_1m: 4.2, interpretation: "Elevated crash protection demand" },
+                { id: "vrp", name: "Trailing 30D VRP", current: 2.14, value: 2.14, z_score: 0.35, percentile: 45.0, chg_1w: -0.3, chg_1m: -0.8, interpretation: "Moderate volatility risk premium" },
               ],
               implied_vs_realized: [],
               interpretation: "VIX term structure in contango",
@@ -1794,7 +1830,6 @@ export default function ChartsCataloguePage() {
         {filtered.map((item) => (
           <div
             key={item.id}
-            style={{ contentVisibility: "auto", containIntrinsicSize: "0 460px" }}
             className="p-5 rounded-lg bg-[var(--bg-1)] border border-[var(--line)] hover:border-[var(--accent)] transition space-y-4 flex flex-col justify-between"
           >
             <div className="space-y-2">

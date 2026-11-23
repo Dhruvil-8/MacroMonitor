@@ -249,30 +249,42 @@ export function TermStructureChart({ data }: Props) {
 
       {/* Fear, Tail & Vol-of-Vol Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {vol.fear_tail_indices?.map((idx: FearTailItem) => (
-          <div key={idx.id} className="p-3.5 bg-[var(--bg-0)] rounded-lg border border-[var(--line)] flex flex-col justify-between">
-            <div>
-              <div className="text-[10px] font-mono uppercase text-[var(--tx-2)] flex items-center justify-between">
-                <span>{idx.name}</span>
-                <span className="text-[9px] px-1 py-0.2 rounded bg-[var(--bg-1)] border border-[var(--line)]">
-                  Z: {idx.z_score > 0 ? "+" : ""}{idx.z_score.toFixed(2)}σ
+        {vol.fear_tail_indices?.map((idx: FearTailItem) => {
+          const currentVal = idx.current ?? (idx as any).value ?? 0;
+          const zVal = idx.z_score;
+          const pctVal = idx.percentile;
+          const chg1w = idx.chg_1w;
+          const chg1m = idx.chg_1m;
+
+          return (
+            <div key={idx.id} className="p-3.5 bg-[var(--bg-0)] rounded-lg border border-[var(--line)] flex flex-col justify-between">
+              <div>
+                <div className="text-[10px] font-mono uppercase text-[var(--tx-2)] flex items-center justify-between">
+                  <span>{idx.name}</span>
+                  {zVal !== undefined && zVal !== null && (
+                    <span className="text-[9px] px-1 py-0.2 rounded bg-[var(--bg-1)] border border-[var(--line)]">
+                      Z: {zVal > 0 ? "+" : ""}{zVal.toFixed(2)}σ
+                    </span>
+                  )}
+                </div>
+                <div className="text-2xl font-bold font-mono text-[var(--tx-0)] mt-1">
+                  {typeof currentVal === "number" ? currentVal.toFixed(1) : currentVal}
+                </div>
+              </div>
+
+              <div className="mt-3 pt-2 border-t border-[var(--line)] flex items-center justify-between text-xs font-mono">
+                <span className="text-[var(--tx-2)] text-[11px]">Expanding Pct:</span>
+                <span className="font-bold text-[var(--accent)]">
+                  {pctVal !== undefined && pctVal !== null ? `${pctVal.toFixed(0)}th` : "—"}
                 </span>
               </div>
-              <div className="text-2xl font-bold font-mono text-[var(--tx-0)] mt-1">
-                {idx.current.toFixed(1)}
+              <div className="flex items-center justify-between text-[10px] font-mono text-[var(--tx-2)] mt-0.5">
+                <span>1W Δ: <b className={(chg1w ?? 0) >= 0 ? "text-rose-400" : "text-emerald-400"}>{chg1w !== undefined && chg1w !== null ? `${chg1w > 0 ? "+" : ""}${chg1w.toFixed(1)}` : "—"}</b></span>
+                <span>1M Δ: <b className={(chg1m ?? 0) >= 0 ? "text-rose-400" : "text-emerald-400"}>{chg1m !== undefined && chg1m !== null ? `${chg1m > 0 ? "+" : ""}${chg1m.toFixed(1)}` : "—"}</b></span>
               </div>
             </div>
-
-            <div className="mt-3 pt-2 border-t border-[var(--line)] flex items-center justify-between text-xs font-mono">
-              <span className="text-[var(--tx-2)] text-[11px]">Expanding Pct:</span>
-              <span className="font-bold text-[var(--accent)]">{idx.percentile.toFixed(0)}th</span>
-            </div>
-            <div className="flex items-center justify-between text-[10px] font-mono text-[var(--tx-2)] mt-0.5">
-              <span>1W Δ: <b className={idx.chg_1w >= 0 ? "text-rose-400" : "text-emerald-400"}>{idx.chg_1w > 0 ? "+" : ""}{idx.chg_1w.toFixed(1)}</b></span>
-              <span>1M Δ: <b className={idx.chg_1m >= 0 ? "text-rose-400" : "text-emerald-400"}>{idx.chg_1m > 0 ? "+" : ""}{idx.chg_1m.toFixed(1)}</b></span>
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* Implied vs Realized & Variance Risk Premium (VRP) */}

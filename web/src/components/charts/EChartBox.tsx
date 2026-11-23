@@ -25,13 +25,25 @@ export function EChartBox({ option, height = 360, ariaLabel = "Statistical chart
     chartRef.current = chart;
 
     const ro = new ResizeObserver(() => {
-      chart.resize();
+      try {
+        if (chart && !chart.isDisposed()) {
+          chart.resize();
+        }
+      } catch {
+        // Ignore unmounted resize loop notifications
+      }
     });
     ro.observe(el);
 
     return () => {
       ro.disconnect();
-      chart.dispose();
+      try {
+        if (chart && !chart.isDisposed()) {
+          chart.dispose();
+        }
+      } catch {
+        // Ignore dispose error
+      }
       chartRef.current = null;
     };
   }, []);
