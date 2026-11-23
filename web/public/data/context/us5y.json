@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "us5y",
+    "name": "US 5-Year Treasury Yield",
+    "group": "rates",
+    "region": "US",
+    "unit": "pct",
+    "current_value": 4.86,
+    "percentile": 93.1,
+    "z_score": 0.79,
+    "n": 7014,
+    "n_eff": 7009.9,
+    "histogram_bins": [
+      -9438.9,
+      -8660.7,
+      -7882.5,
+      -7104.3,
+      -6326.1,
+      -5547.9,
+      -4769.7,
+      -3991.5,
+      -3213.3,
+      -2435.1,
+      -1656.9,
+      -878.7,
+      -100.5,
+      677.7,
+      1455.9,
+      2234.1,
+      3012.3,
+      3790.5,
+      4568.7,
+      5346.9,
+      6125.1,
+      6903.3,
+      7681.5,
+      8459.7,
+      9237.9
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      7011,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2023-10-20",
+        "value": 4.86,
+        "distance": 0.0
+      },
+      {
+        "date": "2007-05-31",
+        "value": 4.86,
+        "distance": 0.0
+      },
+      {
+        "date": "2007-01-30",
+        "value": 4.86,
+        "distance": 0.0
+      },
+      {
+        "date": "2001-02-23",
+        "value": 4.86,
+        "distance": 0.0
+      },
+      {
+        "date": "2006-04-11",
+        "value": 4.86,
+        "distance": 0.0
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for US 5-Year Treasury Yield.",
+    "source_note": "Attribution: FRED"
+  }
+}

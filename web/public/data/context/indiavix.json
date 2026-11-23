@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "indiavix",
+    "name": "India VIX",
+    "group": "risk_gauge",
+    "region": "IN",
+    "unit": "index",
+    "current_value": 17.32,
+    "percentile": 85.4,
+    "z_score": 0.41,
+    "n": 754,
+    "n_eff": 754.0,
+    "histogram_bins": [
+      -8833.0,
+      -8103.0,
+      -7373.0,
+      -6643.0,
+      -5913.0,
+      -5183.0,
+      -4453.0,
+      -3723.0,
+      -2993.0,
+      -2263.0,
+      -1533.0,
+      -803.0,
+      -73.0,
+      657.0,
+      1387.0,
+      2117.0,
+      2847.0,
+      3577.0,
+      4307.0,
+      5037.0,
+      5767.0,
+      6497.0,
+      7227.0,
+      7957.0,
+      8687.0
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      739,
+      9,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2025-05-23",
+        "value": 17.28,
+        "distance": 0.04
+      },
+      {
+        "date": "2025-04-29",
+        "value": 17.37,
+        "distance": 0.05
+      },
+      {
+        "date": "2025-01-30",
+        "value": 17.39,
+        "distance": 0.07
+      },
+      {
+        "date": "2026-04-17",
+        "value": 17.21,
+        "distance": 0.11
+      },
+      {
+        "date": "2026-10-26",
+        "value": 17.16,
+        "distance": 0.16
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for India VIX.",
+    "source_note": "Attribution: NSE"
+  }
+}

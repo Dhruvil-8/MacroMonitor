@@ -1,0 +1,40 @@
+# pipeline/config/sector_weights.yaml
+# Published index factsheet weights for approximate sector contribution
+# Section 4.2: w_s from published index factsheets (monthly)
+# Label: "approximate", show explicit residual
+
+us:
+  index_id: spx
+  country_name: "United States"
+  benchmark_name: "S&P 500"
+  source: "S&P Dow Jones Indices S&P 500 Factsheet"
+  source_url: "https://www.spglobal.com/spdji/en/indices/equity/sp-500/"
+  as_of: "2024-10-31"
+  weights:
+    xlk: 0.3150   # Information Technology
+    xlf: 0.1320   # Financials
+    xlv: 0.1180   # Health Care
+    xly: 0.1020   # Consumer Discretionary
+    xlc: 0.0910   # Communication Services
+    xli: 0.0840   # Industrials
+    xlp: 0.0580   # Consumer Staples
+    xle: 0.0340   # Energy
+    xlu: 0.0250   # Utilities
+    xlre: 0.0220  # Real Estate
+    xlb: 0.0210   # Materials
+
+india:
+  index_id: nifty50
+  country_name: "India"
+  benchmark_name: "Nifty 50"
+  source: "NSE Indices Nifty 50 Factsheet"
+  source_url: "https://www.niftyindices.com/reports/factsheet"
+  as_of: "2024-10-31"
+  weights:
+    niftybank: 0.3320   # Financial Services
+    niftyit: 0.1350     # Information Technology
+    niftyfmcg: 0.0830   # Fast Moving Consumer Goods
+    niftyauto: 0.0780   # Automobile
+    niftypharma: 0.0460 # Healthcare & Pharma
+    niftymetal: 0.0370  # Metals & Mining
+    niftyrealty: 0.0120 # Realty

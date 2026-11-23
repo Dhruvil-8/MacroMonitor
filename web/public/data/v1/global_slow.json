@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "f1687f268479",
+  "data": {
+    "as_of": "2026-11-20",
+    "reer": [
+      {
+        "id": "usd",
+        "name": "US Dollar REER (Broad)",
+        "current_index": 118.5,
+        "percentile": 88.0,
+        "chg_1y": 2.5,
+        "valuation": "overvalued",
+        "as_of": "2026-10-31"
+      },
+      {
+        "id": "inr",
+        "name": "Indian Rupee REER (40-Currency)",
+        "current_index": 103.2,
+        "percentile": 58.0,
+        "chg_1y": -1.2,
+        "valuation": "neutral",
+        "as_of": "2026-10-31"
+      },
+      {
+        "id": "eur",
+        "name": "Euro REER",
+        "current_index": 96.8,
+        "percentile": 38.0,
+        "chg_1y": -2.0,
+        "valuation": "neutral",
+        "as_of": "2026-10-31"
+      },
+      {
+        "id": "jpy",
+        "name": "Japanese Yen REER",
+        "current_index": 72.4,
+        "percentile": 6.0,
+        "chg_1y": -8.5,
+        "valuation": "undervalued",
+        "as_of": "2026-10-31"
+      },
+      {
+        "id": "gbp",
+        "name": "British Pound REER",
+        "current_index": 98.2,
+        "percentile": 44.0,
+        "chg_1y": 1.0,
+        "valuation": "neutral",
+        "as_of": "2026-10-31"
+      },
+      {
+        "id": "cny",
+        "name": "Chinese Yuan REER",
+        "current_index": 94.5,
+        "percentile": 32.0,
+        "chg_1y": -3.4,
+        "valuation": "neutral",
+        "as_of": "2026-10-31"
+      }
+    ],
+    "foreign_treasury_holdings": [
+      {
+        "country": "Japan",
+        "holdings_bn": 1125.4,
+        "share_pct": 13.8,
+        "chg_1y_bn": -18.5,
+        "as_of": "2026-09-30"
+      },
+      {
+        "country": "China",
+        "holdings_bn": 765.2,
+        "share_pct": 9.4,
+        "chg_1y_bn": -52.0,
+        "as_of": "2026-09-30"
+      },
+      {
+        "country": "United Kingdom",
+        "holdings_bn": 745.8,
+        "share_pct": 9.1,
+        "chg_1y_bn": 72.4,
+        "as_of": "2026-09-30"
+      },
+      {
+        "country": "Luxembourg",
+        "holdings_bn": 395.0,
+        "share_pct": 4.8,
+        "chg_1y_bn": 35.2,
+        "as_of": "2026-09-30"
+      },
+      {
+        "country": "Canada",
+        "holdings_bn": 368.5,
+        "share_pct": 4.5,
+        "chg_1y_bn": 48.0,
+        "as_of": "2026-09-30"
+      },
+      {
+        "country": "India",
+        "holdings_bn": 242.0,
+        "share_pct": 3.0,
+        "chg_1y_bn": 14.5,
+        "as_of": "2026-09-30"
+      }
+    ],
+    "central_bank_assets": [
+      {
+        "central_bank": "Federal Reserve (Fed)",
+        "assets_trillion_usd": 6.85,
+        "chg_1y_pct": -9.2,
+        "as_of": "2026-11-15"
+      },
+      {
+        "central_bank": "European Central Bank (ECB)",
+        "assets_trillion_usd": 6.95,
+        "chg_1y_pct": -12.4,
+        "as_of": "2026-11-08"
+      },
+      {
+        "central_bank": "Bank of Japan (BOJ)",
+        "assets_trillion_usd": 5.1,
+        "chg_1y_pct": -4.8,
+        "as_of": "2026-10-31"
+      }
+    ],
+    "india_macro": {
+      "fx_reserves_bn_usd": 685.2,
+      "fx_reserves_as_of": "2026-11-15",
+      "import_cover_months": 11.4,
+      "fpi_equity_12m_bn": -8.5,
+      "fpi_debt_12m_bn": 16.8,
+      "fpi_net_total_12m_bn": 8.3,
+      "rupee_reer_percentile": 58.0
+    },
+    "lag_label": "Monthly/Quarterly series (BIS, US Treasury TIC, IMF, RBI; lags 4-8 weeks)",
+    "interpretation": "USD real effective exchange rate (REER) remains elevated at the 88th percentile. Total foreign holdings of US Treasuries stand at $8.15T (led by Japan at $1125.4B). India foreign exchange reserves stand at $685.2B (~11.4 months of imports)."
+  }
+}

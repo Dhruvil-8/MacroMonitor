@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "us10y",
+    "name": "US 10-Year Treasury Yield",
+    "group": "rates",
+    "region": "US",
+    "unit": "pct",
+    "current_value": 5.04,
+    "percentile": 91.6,
+    "z_score": 0.68,
+    "n": 7014,
+    "n_eff": 7009.8,
+    "histogram_bins": [
+      -9394.72,
+      -8620.16,
+      -7845.6,
+      -7071.04,
+      -6296.48,
+      -5521.92,
+      -4747.36,
+      -3972.8,
+      -3198.24,
+      -2423.68,
+      -1649.12,
+      -874.56,
+      -100.0,
+      674.56,
+      1449.12,
+      2223.68,
+      2998.24,
+      3772.8,
+      4547.36,
+      5321.92,
+      6096.48,
+      6871.04,
+      7645.6,
+      8420.16,
+      9194.72
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      7011,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2006-04-20",
+        "value": 5.04,
+        "distance": 0.0
+      },
+      {
+        "date": "2001-08-09",
+        "value": 5.04,
+        "distance": 0.0
+      },
+      {
+        "date": "2007-07-19",
+        "value": 5.04,
+        "distance": 0.0
+      },
+      {
+        "date": "2002-06-06",
+        "value": 5.04,
+        "distance": 0.0
+      },
+      {
+        "date": "2006-07-26",
+        "value": 5.04,
+        "distance": 0.0
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for US 10-Year Treasury Yield.",
+    "source_note": "Attribution: FRED"
+  }
+}

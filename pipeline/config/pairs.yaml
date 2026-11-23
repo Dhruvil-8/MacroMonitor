@@ -1,0 +1,54 @@
+# pipeline/config/pairs.yaml
+# Pre-registered macro & cross-asset pairs with clear economic rationale
+# Section 8.5: Report false discovery caveat (number of pairs tested).
+
+pairs:
+  - id: spx_vs_ndx
+    asset_a: spx
+    asset_b: ndx
+    rationale: Broad market vs tech duration divergence
+
+  - id: us10y_vs_spx
+    asset_a: us10y
+    asset_b: spx
+    rationale: Discount rate effect on equity valuations
+
+  - id: dxy_vs_gold
+    asset_a: dxy
+    asset_b: gold
+    rationale: Store of value vs US dollar strength
+
+  - id: dxy_vs_em
+    asset_a: dxy
+    asset_b: em_equities
+    rationale: Dollar liquidity tightening transmits to EM capital flight
+
+  - id: brent_vs_nifty
+    asset_a: brent
+    asset_b: nifty50
+    rationale: Oil import bill impact on Indian current account and corporate margins
+
+  - id: copper_vs_gold
+    asset_a: copper
+    asset_b: gold
+    rationale: Growth-sensitive industrial metal vs risk-off safe haven
+
+  - id: vix_vs_spx
+    asset_a: vix
+    asset_b: spx
+    rationale: Equity risk aversion and hedging demand
+
+  - id: us10y_vs_gold
+    asset_a: us10y
+    asset_b: gold
+    rationale: Real rate competition against non-yielding monetary assets
+
+  - id: hyg_vs_spx
+    asset_a: us_highyield
+    asset_b: spx
+    rationale: Credit risk premium leading equity volatility
+
+  - id: usdinr_vs_nifty
+    asset_a: usdinr
+    asset_b: nifty50
+    rationale: FX depreciation pressure on domestic equity flows

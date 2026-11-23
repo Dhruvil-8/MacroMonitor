@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "tga",
+    "name": "US Treasury General Account Balance",
+    "group": "liquidity",
+    "region": "US",
+    "unit": "usd_mn",
+    "current_value": 916613.0,
+    "percentile": 93.8,
+    "z_score": 1.67,
+    "n": 4969,
+    "n_eff": 4969.0,
+    "histogram_bins": [
+      -80454096.0,
+      -73921088.0,
+      -67388080.0,
+      -60855072.0,
+      -54322064.0,
+      -47789056.0,
+      -41256048.0,
+      -34723040.0,
+      -28190032.0,
+      -21657024.0,
+      -15124016.0,
+      -8591008.0,
+      -2058000.0,
+      4475008.0,
+      11008016.0,
+      17541024.0,
+      24074032.0,
+      30607040.0,
+      37140048.0,
+      43673056.0,
+      50206064.0,
+      56739072.0,
+      63272080.0,
+      69805088.0,
+      76338096.0
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      69,
+      4617,
+      232,
+      35,
+      8,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2024-05-02",
+        "value": 917177.0,
+        "distance": 564.0
+      },
+      {
+        "date": "2026-02-13",
+        "value": 915306.0,
+        "distance": 1307.0
+      },
+      {
+        "date": "2026-06-26",
+        "value": 918696.0,
+        "distance": 2083.0
+      },
+      {
+        "date": "2026-07-29",
+        "value": 910776.0,
+        "distance": 5837.0
+      },
+      {
+        "date": "2021-04-14",
+        "value": 925094.0,
+        "distance": 8481.0
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for US Treasury General Account Balance.",
+    "source_note": "Attribution: FRED"
+  }
+}

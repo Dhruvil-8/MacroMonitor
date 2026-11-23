@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "ssec",
+    "name": "Shanghai Composite Index",
+    "group": "equity_index",
+    "region": "CN",
+    "unit": "index",
+    "current_value": 3533.79,
+    "percentile": 54.1,
+    "z_score": 0.07,
+    "n": 738,
+    "n_eff": 738.0,
+    "histogram_bins": [
+      -3.5336,
+      -3.2388,
+      -2.944,
+      -2.6491,
+      -2.3543,
+      -2.0595,
+      -1.7646,
+      -1.4698,
+      -1.175,
+      -0.8801,
+      -0.5853,
+      -0.2905,
+      0.0044,
+      0.2992,
+      0.594,
+      0.8889,
+      1.1837,
+      1.4785,
+      1.7734,
+      2.0682,
+      2.363,
+      2.6579,
+      2.9527,
+      3.2475,
+      3.5424
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      735,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2025-07-18",
+        "value": 3534.48,
+        "distance": 0.6899
+      },
+      {
+        "date": "2024-10-08",
+        "value": 3489.77,
+        "distance": 44.0181
+      },
+      {
+        "date": "2024-11-07",
+        "value": 3470.66,
+        "distance": 63.1321
+      },
+      {
+        "date": "2026-10-30",
+        "value": 3599.02,
+        "distance": 65.2241
+      },
+      {
+        "date": "2024-12-12",
+        "value": 3461.5,
+        "distance": 72.293
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Shanghai Composite Index.",
+    "source_note": "Attribution: YAHOO"
+  }
+}

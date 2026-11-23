@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "usdcny",
+    "name": "USD / CNY Currency Pair",
+    "group": "fx",
+    "region": "CN",
+    "unit": "rate",
+    "current_value": 6.67,
+    "percentile": 0.9,
+    "z_score": -0.13,
+    "n": 755,
+    "n_eff": 755.0,
+    "histogram_bins": [
+      -2.574,
+      -2.3603,
+      -2.1467,
+      -1.9331,
+      -1.7195,
+      -1.5058,
+      -1.2922,
+      -1.0786,
+      -0.865,
+      -0.6514,
+      -0.4377,
+      -0.2241,
+      -0.0105,
+      0.2031,
+      0.4168,
+      0.6304,
+      0.844,
+      1.0576,
+      1.2713,
+      1.4849,
+      1.6985,
+      1.9121,
+      2.1258,
+      2.3394,
+      2.553
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      752,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-10-29",
+        "value": 6.67,
+        "distance": 0.0005
+      },
+      {
+        "date": "2026-09-22",
+        "value": 6.7,
+        "distance": 0.0288
+      },
+      {
+        "date": "2026-09-02",
+        "value": 6.72,
+        "distance": 0.0537
+      },
+      {
+        "date": "2026-08-13",
+        "value": 6.74,
+        "distance": 0.0768
+      },
+      {
+        "date": "2026-06-16",
+        "value": 6.76,
+        "distance": 0.0905
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for USD / CNY Currency Pair.",
+    "source_note": "Attribution: YAHOO"
+  }
+}

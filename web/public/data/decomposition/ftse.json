@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "target": "United Kingdom (FTSE 100)",
+    "target_id": "ftse",
+    "horizon_days": 5,
+    "lens": "usd",
+    "total_return": -0.048,
+    "contributions": {
+      "brent": 0.0005,
+      "copper": 0.0,
+      "gold": -0.0008,
+      "dxy": 0.0,
+      "us10y": 0.0028,
+      "row_equity": -0.0005,
+      "fx_effect": -0.0098
+    },
+    "intervals": {
+      "brent": [
+        0.0004,
+        0.0005
+      ],
+      "copper": [
+        -0.0001,
+        0.0001
+      ],
+      "gold": [
+        -0.0009,
+        -0.0008
+      ],
+      "dxy": [
+        0.0,
+        0.0
+      ],
+      "us10y": [
+        -0.0044,
+        0.0099
+      ],
+      "row_equity": [
+        -0.0005,
+        -0.0004
+      ],
+      "fx_effect": [
+        -0.0098,
+        -0.0098
+      ]
+    },
+    "residual": -0.0401,
+    "betas": {
+      "brent": -0.0116,
+      "copper": -0.0002,
+      "gold": 0.0157,
+      "dxy": 0.0012,
+      "us10y": -0.0005,
+      "row_equity": 0.0162
+    },
+    "r2_in_sample": 0.9995,
+    "r2_out_sample": 0.9995,
+    "mostly_unexplained": false,
+    "regularized": true,
+    "n_obs": 250,
+    "window_dates": {
+      "prior_start": "2025-11-28",
+      "prior_end": "2026-11-12",
+      "horizon_start": "2026-11-13",
+      "horizon_end": "2026-11-19"
+    },
+    "narrative": "Over 5 days, United Kingdom (FTSE 100)'s USD return of -4.8% was associated with: fx effect -1.0%, us10y +0.3%, gold -0.1%, brent +0.0%, row equity -0.0%, copper +0.0%, dxy +0.0%, unexplained -4.0% (out-of-sample R-squared 1.00).",
+    "history": []
+  }
+}

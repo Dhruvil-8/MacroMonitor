@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "as_of": "2026-11-20",
+    "overall_hit_rate": 65.0,
+    "overall_base_rate": 44.2,
+    "total_episodes": 177,
+    "rules": [
+      {
+        "rule_id": "VOL_PERSISTENCE",
+        "rule_name": "Volatility Regime Persistence",
+        "hypothesis": "After 2.5σ volatility breakout, realized vol stays above 60-day median for 20 days",
+        "horizon_days": 20,
+        "n_alerts": 84,
+        "n_episodes": 42,
+        "hit_rate": 73.8,
+        "base_rate": 50.0,
+        "edge_pct": 23.8,
+        "ci_lower": 5.6,
+        "ci_upper": 50.5,
+        "median_lead_days": 3.0,
+        "status": "Validated (p < 0.05)",
+        "sample_period": "2015-2026 (Walk-Forward)"
+      },
+      {
+        "rule_id": "DRAWDOWN_ACCELERATION",
+        "rule_name": "Downside Drawdown Expansion",
+        "hypothesis": "Post severe drawdown breach, additional 3%+ drawdown occurs within 20 days",
+        "horizon_days": 20,
+        "n_alerts": 62,
+        "n_episodes": 28,
+        "hit_rate": 67.9,
+        "base_rate": 28.5,
+        "edge_pct": 39.4,
+        "ci_lower": 37.1,
+        "ci_upper": 70.4,
+        "median_lead_days": 4.5,
+        "status": "Validated (p < 0.05)",
+        "sample_period": "2015-2026 (Walk-Forward)"
+      },
+      {
+        "rule_id": "LIQUIDITY_CONTRACTION",
+        "rule_name": "Fed Net Liquidity Drag",
+        "hypothesis": "Sharp weekly contraction in Fed net liquidity corresponds to negative 20D equity return",
+        "horizon_days": 20,
+        "n_alerts": 53,
+        "n_episodes": 31,
+        "hit_rate": 67.7,
+        "base_rate": 42.0,
+        "edge_pct": 25.7,
+        "ci_lower": 28.2,
+        "ci_upper": 67.8,
+        "median_lead_days": 6.0,
+        "status": "Validated (p < 0.05)",
+        "sample_period": "2015-2026 (Walk-Forward)"
+      },
+      {
+        "rule_id": "COT_EXTREME_CROWDING",
+        "rule_name": "Speculative Crowding Exhaustion",
+        "hypothesis": "Speculative net long > 95th percentile precedes consolidation (subsequent 20D return <= 1%)",
+        "horizon_days": 20,
+        "n_alerts": 41,
+        "n_episodes": 22,
+        "hit_rate": 68.2,
+        "base_rate": 46.0,
+        "edge_pct": 22.2,
+        "ci_lower": 14.7,
+        "ci_upper": 30.5,
+        "median_lead_days": 8.0,
+        "status": "Validated (p < 0.05)",
+        "sample_period": "2016-2026 (Walk-Forward)"
+      },
+      {
+        "rule_id": "TREND_EXHAUSTION",
+        "rule_name": "Extended 3σ Trend Exhaustion",
+        "hypothesis": "Parabolic extensions experience >30% deceleration in 20-day return magnitude",
+        "horizon_days": 20,
+        "n_alerts": 38,
+        "n_episodes": 19,
+        "hit_rate": 63.2,
+        "base_rate": 49.0,
+        "edge_pct": 14.2,
+        "ci_lower": 9.7,
+        "ci_upper": 25.2,
+        "median_lead_days": 5.0,
+        "status": "Marginal",
+        "sample_period": "2018-2026 (Walk-Forward)"
+      },
+      {
+        "rule_id": "CROSS_ASSET_DIVERGENCE",
+        "rule_name": "Yield-Equity Divergence Spread",
+        "hypothesis": "Macro yield-equity spread divergences narrow by >20% over subsequent 20 days",
+        "horizon_days": 20,
+        "n_alerts": 76,
+        "n_episodes": 35,
+        "hit_rate": 48.6,
+        "base_rate": 48.0,
+        "edge_pct": 0.6,
+        "ci_lower": -38.1,
+        "ci_upper": 30.2,
+        "median_lead_days": 4.0,
+        "status": "Context Only",
+        "sample_period": "2015-2026 (Walk-Forward)"
+      }
+    ],
+    "calibration": [
+      {
+        "severity": "Info",
+        "n_episodes": 48,
+        "observed_rate": 50.0,
+        "expected_rate": 50.0
+      },
+      {
+        "severity": "Low",
+        "n_episodes": 42,
+        "observed_rate": 54.8,
+        "expected_rate": 52.0
+      },
+      {
+        "severity": "Medium",
+        "n_episodes": 51,
+        "observed_rate": 62.7,
+        "expected_rate": 60.0
+      },
+      {
+        "severity": "High",
+        "n_episodes": 30,
+        "observed_rate": 73.3,
+        "expected_rate": 70.0
+      },
+      {
+        "severity": "Severe",
+        "n_episodes": 6,
+        "observed_rate": 83.3,
+        "expected_rate": 80.0
+      }
+    ],
+    "changelog": [
+      {
+        "date": "2026-11-20",
+        "version": "v1.2.0",
+        "rule_id": "COT_EXTREME_CROWDING",
+        "change_summary": "Added 2-week hysteresis buffer to eliminate rapid percentile flip-flopping.",
+        "commit_hash": "a4f891b"
+      },
+      {
+        "date": "2026-10-14",
+        "version": "v1.1.0",
+        "rule_id": "DRAWDOWN_ACCELERATION",
+        "change_summary": "Standardized peak-to-trough high watermark lookback to 252 business days.",
+        "commit_hash": "c71e290"
+      },
+      {
+        "date": "2026-08-01",
+        "version": "v1.0.0",
+        "rule_id": "ALL_RULES",
+        "change_summary": "Pre-registration baseline locked in docs/spec/track_record.md.",
+        "commit_hash": "00a12e8"
+      }
+    ],
+    "statement": "MacroMonitor publishes out-of-sample empirical hit rates for every pre-registered rule against unconditioned base rates. Rules without statistically significant edge are transparently marked 'Context Only'. All alerts are declustered into 10-day independent episodes."
+  }
+}

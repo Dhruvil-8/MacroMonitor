@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "us10y_real",
+    "name": "US 10-Year TIPS Real Yield",
+    "group": "rates",
+    "region": "US",
+    "unit": "pct",
+    "current_value": 2.88,
+    "percentile": 99.5,
+    "z_score": 0.75,
+    "n": 6231,
+    "n_eff": 6227.6,
+    "histogram_bins": [
+      -9612.68,
+      -8820.04,
+      -8027.4,
+      -7234.76,
+      -6442.12,
+      -5649.48,
+      -4856.84,
+      -4064.2,
+      -3271.56,
+      -2478.92,
+      -1686.28,
+      -893.64,
+      -101.0,
+      691.64,
+      1484.28,
+      2276.92,
+      3069.56,
+      3862.2,
+      4654.84,
+      5447.48,
+      6240.12,
+      7032.76,
+      7825.4,
+      8618.04,
+      9410.68
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      6228,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-10-01",
+        "value": 2.88,
+        "distance": 0.0
+      },
+      {
+        "date": "2008-11-04",
+        "value": 2.88,
+        "distance": 0.0
+      },
+      {
+        "date": "2007-06-12",
+        "value": 2.83,
+        "distance": 0.05
+      },
+      {
+        "date": "2007-07-06",
+        "value": 2.79,
+        "distance": 0.09
+      },
+      {
+        "date": "2008-11-25",
+        "value": 2.79,
+        "distance": 0.09
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for US 10-Year TIPS Real Yield.",
+    "source_note": "Attribution: FRED"
+  }
+}

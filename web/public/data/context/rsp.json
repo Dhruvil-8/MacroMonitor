@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "rsp",
+    "name": "S&P 500 Equal Weight",
+    "group": "equity_index",
+    "region": "US",
+    "unit": "index",
+    "current_value": 207.44,
+    "percentile": 84.1,
+    "z_score": 1.28,
+    "n": 754,
+    "n_eff": 754.0,
+    "histogram_bins": [
+      -0.6125,
+      -0.5611,
+      -0.5097,
+      -0.4583,
+      -0.4069,
+      -0.3556,
+      -0.3042,
+      -0.2528,
+      -0.2014,
+      -0.15,
+      -0.0987,
+      -0.0473,
+      0.0041,
+      0.0555,
+      0.1069,
+      0.1582,
+      0.2096,
+      0.261,
+      0.3124,
+      0.3638,
+      0.4151,
+      0.4665,
+      0.5179,
+      0.5693,
+      0.6207
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      742,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-06-17",
+        "value": 207.4,
+        "distance": 0.0359
+      },
+      {
+        "date": "2026-09-30",
+        "value": 208.02,
+        "distance": 0.58
+      },
+      {
+        "date": "2026-05-28",
+        "value": 206.67,
+        "distance": 0.7703
+      },
+      {
+        "date": "2026-07-23",
+        "value": 211.13,
+        "distance": 3.6864
+      },
+      {
+        "date": "2026-05-06",
+        "value": 203.3,
+        "distance": 4.1445
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for S&P 500 Equal Weight.",
+    "source_note": "Attribution: YAHOO"
+  }
+}

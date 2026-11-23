@@ -1,0 +1,911 @@
+# pipeline/config/universe.yaml
+# Core 60-series asset universe (Section 6.1)
+# Format: id, name, source, source_symbol, group, region, unit, frequency, transform_default, start_date, fallback, license_note
+
+# =============================================================================
+# 1. Global Equity Indices (11)
+# =============================================================================
+- id: spx
+  name: S&P 500 Index
+  source: yahoo
+  source_symbol: "^GSPC"
+  group: equity_index
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:SPY
+  license_note: "Published derived statistics only"
+
+- id: ndx
+  name: Nasdaq 100 Index
+  source: yahoo
+  source_symbol: "^IXIC"
+  group: equity_index
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:QQQ
+  license_note: "Published derived statistics only"
+
+- id: rut
+  name: Russell 2000 Index
+  source: yahoo
+  source_symbol: "^RUT"
+  group: equity_index
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:IWM
+  license_note: "Published derived statistics only"
+
+- id: dji
+  name: Dow Jones Industrial Average
+  source: yahoo
+  source_symbol: "^DJI"
+  group: equity_index
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:DIA
+  license_note: "Published derived statistics only"
+
+- id: rsp
+  name: S&P 500 Equal Weight
+  source: yahoo
+  source_symbol: "RSP"
+  group: equity_index
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2003-05-01"
+  fallback: yahoo:RSP
+  license_note: "Invesco ETF price"
+
+- id: dax
+  name: DAX Performance Index
+  source: yahoo
+  source_symbol: "^GDAXI"
+  group: equity_index
+  region: EU
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:DAX
+  license_note: "Deutsche Boerse derived"
+
+- id: ftse
+  name: FTSE 100 Index
+  source: yahoo
+  source_symbol: "^FTSE"
+  group: equity_index
+  region: UK
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:ISF.L
+  license_note: "LSE derived"
+
+- id: n225
+  name: Nikkei 225 Index
+  source: yahoo
+  source_symbol: "^N225"
+  group: equity_index
+  region: JP
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:EWJ
+  license_note: "Nikkei derived"
+
+- id: hsi
+  name: Hang Seng Index
+  source: yahoo
+  source_symbol: "^HSI"
+  group: equity_index
+  region: HK
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:EWH
+  license_note: "HKEX derived"
+
+- id: ssec
+  name: Shanghai Composite Index
+  source: yahoo
+  source_symbol: "000001.SS"
+  group: equity_index
+  region: CN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:MCHI
+  license_note: "SSE derived"
+
+- id: eem
+  name: MSCI Emerging Markets Index ETF
+  source: yahoo
+  source_symbol: "EEM"
+  group: equity_index
+  region: EM
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2003-04-01"
+  fallback: yahoo:EEM
+  license_note: "iShares ETF proxy"
+
+- id: tsse
+  name: S&P/TSX Composite Index
+  source: yahoo
+  source_symbol: "^GSPTSE"
+  group: equity_index
+  region: CA
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:EWC
+  license_note: "TMX derived"
+
+- id: ibov
+  name: Ibovespa Index
+  source: yahoo
+  source_symbol: "^BVSP"
+  group: equity_index
+  region: BR
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:EWZ
+  license_note: "B3 derived"
+
+- id: kospi
+  name: KOSPI Composite Index
+  source: yahoo
+  source_symbol: "^KS11"
+  group: equity_index
+  region: KR
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:EWY
+  license_note: "KRX derived"
+
+- id: asx200
+  name: S&P/ASX 200 Index
+  source: yahoo
+  source_symbol: "^AXJO"
+  group: equity_index
+  region: AU
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:EWA
+  license_note: "ASX derived"
+
+# =============================================================================
+# 2. US Sector ETFs (11)
+# =============================================================================
+- id: xlk
+  name: Technology Select Sector SPDR
+  source: yahoo
+  source_symbol: "XLK"
+  group: us_sector
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:XLK
+  license_note: "State Street SPDR"
+
+- id: xlf
+  name: Financial Select Sector SPDR
+  source: yahoo
+  source_symbol: "XLF"
+  group: us_sector
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:XLF
+  license_note: "State Street SPDR"
+
+- id: xlv
+  name: Health Care Select Sector SPDR
+  source: yahoo
+  source_symbol: "XLV"
+  group: us_sector
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:XLV
+  license_note: "State Street SPDR"
+
+- id: xly
+  name: Consumer Discretionary Select SPDR
+  source: yahoo
+  source_symbol: "XLY"
+  group: us_sector
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:XLY
+  license_note: "State Street SPDR"
+
+- id: xli
+  name: Industrial Select Sector SPDR
+  source: yahoo
+  source_symbol: "XLI"
+  group: us_sector
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:XLI
+  license_note: "State Street SPDR"
+
+- id: xlp
+  name: Consumer Staples Select Sector SPDR
+  source: yahoo
+  source_symbol: "XLP"
+  group: us_sector
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:XLP
+  license_note: "State Street SPDR"
+
+- id: xle
+  name: Energy Select Sector SPDR
+  source: yahoo
+  source_symbol: "XLE"
+  group: us_sector
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:XLE
+  license_note: "State Street SPDR"
+
+- id: xlu
+  name: Utilities Select Sector SPDR
+  source: yahoo
+  source_symbol: "XLU"
+  group: us_sector
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:XLU
+  license_note: "State Street SPDR"
+
+- id: xlre
+  name: Real Estate Select Sector SPDR
+  source: yahoo
+  source_symbol: "XLRE"
+  group: us_sector
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2015-10-01"
+  fallback: yahoo:XLRE
+  license_note: "State Street SPDR"
+
+- id: xlb
+  name: Materials Select Sector SPDR
+  source: yahoo
+  source_symbol: "XLB"
+  group: us_sector
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:XLB
+  license_note: "State Street SPDR"
+
+- id: xlc
+  name: Communication Services Select SPDR
+  source: yahoo
+  source_symbol: "XLC"
+  group: us_sector
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2018-06-01"
+  fallback: yahoo:XLC
+  license_note: "State Street SPDR"
+
+# =============================================================================
+# 3. India Equities, Sectors & Volatility (12)
+# =============================================================================
+- id: nifty50
+  name: Nifty 50 Index
+  source: nse
+  source_symbol: "NIFTY 50"
+  group: india_equity
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:^NSEI
+  license_note: "NSE derived statistics only"
+
+- id: niftybank
+  name: Nifty Bank Index
+  source: nse
+  source_symbol: "NIFTY BANK"
+  group: india_equity
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:^NSEBANK
+  license_note: "NSE derived statistics only"
+
+- id: sensex
+  name: BSE Sensex Index
+  source: yahoo
+  source_symbol: "^BSESN"
+  group: india_equity
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:^BSESN
+  license_note: "BSE derived statistics"
+
+- id: niftymid
+  name: Nifty Midcap 100 Index
+  source: nse
+  source_symbol: "NIFTY MIDCAP 100"
+  group: india_equity
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:^CRSLDX
+  license_note: "NSE derived"
+
+- id: niftysmall
+  name: Nifty Smallcap 100 Index
+  source: nse
+  source_symbol: "NIFTY SMALLCAP 100"
+  group: india_equity
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:^CNXSC
+  license_note: "NSE derived"
+
+- id: niftyit
+  name: Nifty IT Index
+  source: nse
+  source_symbol: "NIFTY IT"
+  group: india_sector
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:^CNXIT
+  license_note: "NSE derived"
+
+- id: niftypharma
+  name: Nifty Pharma Index
+  source: nse
+  source_symbol: "NIFTY PHARMA"
+  group: india_sector
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:^CNXPHARMA
+  license_note: "NSE derived"
+
+- id: niftyfmcg
+  name: Nifty FMCG Index
+  source: nse
+  source_symbol: "NIFTY FMCG"
+  group: india_sector
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:^CNXFMCG
+  license_note: "NSE derived"
+
+- id: niftyauto
+  name: Nifty Auto Index
+  source: nse
+  source_symbol: "NIFTY AUTO"
+  group: india_sector
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:^CNXAUTO
+  license_note: "NSE derived"
+
+- id: niftymetal
+  name: Nifty Metal Index
+  source: nse
+  source_symbol: "NIFTY METAL"
+  group: india_sector
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:^CNXMETAL
+  license_note: "NSE derived"
+
+- id: niftyrealty
+  name: Nifty Realty Index
+  source: nse
+  source_symbol: "NIFTY REALTY"
+  group: india_sector
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:^CNXREALTY
+  license_note: "NSE derived"
+
+- id: indiavix
+  name: India VIX
+  source: nse
+  source_symbol: "INDIA VIX"
+  group: risk_gauge
+  region: IN
+  unit: index
+  frequency: D
+  transform_default: diff
+  start_date: "2009-01-01"
+  fallback: yahoo:^INDIAVIX
+  license_note: "NSE volatility index"
+
+# =============================================================================
+# 4. Sovereign Rates & Yield Curve (8)
+# =============================================================================
+- id: us2y
+  name: US 2-Year Treasury Yield
+  source: fred
+  source_symbol: "DGS2"
+  group: rates
+  region: US
+  unit: pct
+  frequency: D
+  transform_default: diff
+  start_date: "2000-01-01"
+  fallback: yahoo:^IRX
+  license_note: "Federal Reserve Economic Data"
+
+- id: us5y
+  name: US 5-Year Treasury Yield
+  source: fred
+  source_symbol: "DGS5"
+  group: rates
+  region: US
+  unit: pct
+  frequency: D
+  transform_default: diff
+  start_date: "2000-01-01"
+  fallback: yahoo:^FVX
+  license_note: "Federal Reserve Economic Data"
+
+- id: us10y
+  name: US 10-Year Treasury Yield
+  source: fred
+  source_symbol: "DGS10"
+  group: rates
+  region: US
+  unit: pct
+  frequency: D
+  transform_default: diff
+  start_date: "2000-01-01"
+  fallback: yahoo:^TNX
+  license_note: "Federal Reserve Economic Data"
+
+- id: us30y
+  name: US 30-Year Treasury Yield
+  source: fred
+  source_symbol: "DGS30"
+  group: rates
+  region: US
+  unit: pct
+  frequency: D
+  transform_default: diff
+  start_date: "2000-01-01"
+  fallback: yahoo:^TYX
+  license_note: "Federal Reserve Economic Data"
+
+- id: us2s10s
+  name: US 10Y minus 2Y Yield Spread
+  source: fred
+  source_symbol: "T10Y2Y"
+  group: rates
+  region: US
+  unit: bps
+  frequency: D
+  transform_default: diff
+  start_date: "2000-01-01"
+  fallback: yahoo:^TNX
+  license_note: "Federal Reserve Economic Data"
+
+- id: us10y_real
+  name: US 10-Year TIPS Real Yield
+  source: fred
+  source_symbol: "DFII10"
+  group: rates
+  region: US
+  unit: pct
+  frequency: D
+  transform_default: diff
+  start_date: "2003-01-01"
+  fallback: yahoo:TIP
+  license_note: "Federal Reserve Economic Data"
+
+- id: us10y_breakeven
+  name: US 10-Year Breakeven Inflation Rate
+  source: fred
+  source_symbol: "T10YIE"
+  group: rates
+  region: US
+  unit: pct
+  frequency: D
+  transform_default: diff
+  start_date: "2003-01-01"
+  fallback: yahoo:RINF
+  license_note: "Federal Reserve Economic Data"
+
+- id: sofr
+  name: Secured Overnight Financing Rate
+  source: fred
+  source_symbol: "SOFR"
+  group: rates
+  region: US
+  unit: pct
+  frequency: D
+  transform_default: diff
+  start_date: "2018-04-01"
+  fallback: fred:SOFR
+  license_note: "Federal Reserve Bank of New York"
+
+# =============================================================================
+# 5. Foreign Exchange (6)
+# =============================================================================
+- id: dxy
+  name: US Dollar Index
+  source: yahoo
+  source_symbol: "DX-Y.NYB"
+  group: fx
+  region: US
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:UUP
+  license_note: "ICE Dollar Index derived"
+
+- id: eurusd
+  name: EUR / USD Currency Pair
+  source: yahoo
+  source_symbol: "EURUSD=X"
+  group: fx
+  region: EU
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:FXE
+  license_note: "WM/Reuters FX benchmark derived"
+
+- id: usdjpy
+  name: USD / JPY Currency Pair
+  source: yahoo
+  source_symbol: "JPY=X"
+  group: fx
+  region: JP
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:FXY
+  license_note: "WM/Reuters FX benchmark derived"
+
+- id: gbpusd
+  name: GBP / USD Currency Pair
+  source: yahoo
+  source_symbol: "GBPUSD=X"
+  group: fx
+  region: UK
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:FXB
+  license_note: "WM/Reuters FX benchmark derived"
+
+- id: usdinr
+  name: USD / INR Currency Pair
+  source: yahoo
+  source_symbol: "INR=X"
+  group: fx
+  region: IN
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:INR=X
+  license_note: "RBI Reference Rate derived"
+
+- id: usdcny
+  name: USD / CNY Currency Pair
+  source: yahoo
+  source_symbol: "CNY=X"
+  group: fx
+  region: CN
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:CYB
+  license_note: "PBOC Fix derived"
+
+- id: usdcad
+  name: USD / CAD Currency Pair
+  source: yahoo
+  source_symbol: "CAD=X"
+  group: fx
+  region: CA
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:FXC
+  license_note: "Bank of Canada / FX market derived"
+
+- id: usdbrl
+  name: USD / BRL Currency Pair
+  source: yahoo
+  source_symbol: "BRL=X"
+  group: fx
+  region: BR
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2003-01-01"
+  fallback: yahoo:BRL=X
+  license_note: "BCB PTAX reference rate derived"
+
+- id: usdkrw
+  name: USD / KRW Currency Pair
+  source: yahoo
+  source_symbol: "KRW=X"
+  group: fx
+  region: KR
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:KRW=X
+  license_note: "Bank of Korea market average derived"
+
+- id: audusd
+  name: AUD / USD Currency Pair
+  source: yahoo
+  source_symbol: "AUDUSD=X"
+  group: fx
+  region: AU
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:FXA
+  license_note: "RBA / FX benchmark derived"
+
+# =============================================================================
+# 6. Global Commodities (6)
+# =============================================================================
+- id: brent
+  name: Brent Crude Oil Futures
+  source: yahoo
+  source_symbol: "BZ=F"
+  group: commodity
+  region: Global
+  unit: usd_per_barrel
+  frequency: D
+  transform_default: log_return
+  start_date: "2005-01-01"
+  fallback: yahoo:BNO
+  license_note: "ICE Futures derived"
+
+- id: wti
+  name: WTI Crude Oil Futures
+  source: yahoo
+  source_symbol: "CL=F"
+  group: commodity
+  region: US
+  unit: usd_per_barrel
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:USO
+  license_note: "NYMEX derived"
+
+- id: gold
+  name: Gold Futures
+  source: yahoo
+  source_symbol: "GC=F"
+  group: commodity
+  region: Global
+  unit: usd_per_oz
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:GLD
+  license_note: "COMEX derived"
+
+- id: silver
+  name: Silver Futures
+  source: yahoo
+  source_symbol: "SI=F"
+  group: commodity
+  region: Global
+  unit: usd_per_oz
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:SLV
+  license_note: "COMEX derived"
+
+- id: copper
+  name: Copper Futures
+  source: yahoo
+  source_symbol: "HG=F"
+  group: commodity
+  region: Global
+  unit: usd_per_lb
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:CPER
+  license_note: "COMEX derived"
+
+- id: natgas
+  name: Natural Gas Futures
+  source: yahoo
+  source_symbol: "NG=F"
+  group: commodity
+  region: US
+  unit: usd_per_mmbtu
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:UNG
+  license_note: "NYMEX derived"
+
+# =============================================================================
+# 7. Risk Gauges & Credit Spreads (3)
+# =============================================================================
+- id: vix
+  name: Cboe Volatility Index
+  source: yahoo
+  source_symbol: "^VIX"
+  group: risk_gauge
+  region: US
+  unit: index
+  frequency: D
+  transform_default: diff
+  start_date: "2000-01-01"
+  fallback: yahoo:VIXY
+  license_note: "Cboe derived"
+
+- id: hy_spread
+  name: US High Yield Option-Adjusted Spread
+  source: fred
+  source_symbol: "BAMLH0A0HYM2"
+  group: credit
+  region: US
+  unit: bps
+  frequency: D
+  transform_default: diff
+  start_date: "2000-01-01"
+  fallback: yahoo:HYG
+  license_note: "ICE BofA High Yield OAS via FRED"
+
+- id: ig_spread
+  name: US Investment Grade Option-Adjusted Spread
+  source: fred
+  source_symbol: "BAMLC0A0CM"
+  group: credit
+  region: US
+  unit: bps
+  frequency: D
+  transform_default: diff
+  start_date: "2000-01-01"
+  fallback: yahoo:LQD
+  license_note: "ICE BofA Corporate OAS via FRED"
+
+# =============================================================================
+# 8. Global Macro Liquidity (3)
+# =============================================================================
+- id: fed_assets
+  name: Federal Reserve Total Assets
+  source: fred
+  source_symbol: "WALCL"
+  group: liquidity
+  region: US
+  unit: usd_mn
+  frequency: W
+  transform_default: diff
+  start_date: "2003-01-01"
+  fallback: fred:WALCL
+  license_note: "Federal Reserve Board H.4.1"
+
+- id: tga
+  name: US Treasury General Account Balance
+  source: fred
+  source_symbol: "WTREGEN"
+  group: liquidity
+  region: US
+  unit: usd_mn
+  frequency: W
+  transform_default: diff
+  start_date: "2003-01-01"
+  fallback: fred:WTREGEN
+  license_note: "US Treasury Financial Statements via FRED"
+
+- id: rrp
+  name: Overnight Reverse Repurchase Agreements
+  source: fred
+  source_symbol: "RRPONTSYD"
+  group: liquidity
+  region: US
+  unit: usd_bn
+  frequency: D
+  transform_default: diff
+  start_date: "2013-09-01"
+  fallback: fred:RRPONTSYD
+  license_note: "Federal Reserve Bank of New York"

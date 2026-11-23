@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "status": "ok",
+  "skill_threshold": 0.02,
+  "min_eval_points": 36,
+  "presets": [
+    {
+      "preset_id": "rates_dollar_pressure",
+      "name": "Rates & Dollar Tightening",
+      "target_asset": "SPX",
+      "n_eval": 9,
+      "spearman_rho": 0.2176,
+      "iqr_coverage": 0.5556,
+      "mae_cond": 717.4779,
+      "mae_base": 717.6522,
+      "mae_skill": 0.0002,
+      "verdict_class": "no_reliable_improvement",
+      "verdict_text": "Historical context only. Out-of-sample evaluation shows no reliable improvement over the base rate.",
+      "subperiods": [
+        {
+          "label": "2023+",
+          "n_eval": 9,
+          "spearman_rho": 0.218,
+          "iqr_coverage": 0.556,
+          "mae_skill": 0.0002
+        }
+      ]
+    },
+    {
+      "preset_id": "risk_off_stress",
+      "name": "Cross-Asset Risk-Off Stress",
+      "target_asset": "SPX",
+      "n_eval": 7,
+      "spearman_rho": -0.2857,
+      "iqr_coverage": 0.7143,
+      "mae_cond": 4.2177,
+      "mae_base": 4.1239,
+      "mae_skill": -0.0227,
+      "verdict_class": "no_reliable_improvement",
+      "verdict_text": "Historical context only. Out-of-sample evaluation shows no reliable improvement over the base rate.",
+      "subperiods": [
+        {
+          "label": "2023+",
+          "n_eval": 7,
+          "spearman_rho": -0.286,
+          "iqr_coverage": 0.714,
+          "mae_skill": -0.0227
+        }
+      ]
+    },
+    {
+      "preset_id": "cyclical_reflation",
+      "name": "Cyclical Metals & Yield Expansion",
+      "target_asset": "SPX",
+      "n_eval": 7,
+      "spearman_rho": 0.5225,
+      "iqr_coverage": 0.4286,
+      "mae_cond": 4.3368,
+      "mae_base": 4.1239,
+      "mae_skill": -0.0516,
+      "verdict_class": "no_reliable_improvement",
+      "verdict_text": "Historical context only. Out-of-sample evaluation shows no reliable improvement over the base rate.",
+      "subperiods": [
+        {
+          "label": "2023+",
+          "n_eval": 7,
+          "spearman_rho": 0.523,
+          "iqr_coverage": 0.429,
+          "mae_skill": -0.0516
+        }
+      ]
+    },
+    {
+      "preset_id": "equity_breadth_concentration",
+      "name": "Equity Concentration & Dispersion",
+      "target_asset": "SPX",
+      "n_eval": 7,
+      "spearman_rho": 0.0721,
+      "iqr_coverage": 0.4286,
+      "mae_cond": 3.8544,
+      "mae_base": 4.1239,
+      "mae_skill": 0.0654,
+      "verdict_class": "no_reliable_improvement",
+      "verdict_text": "Historical context only. Out-of-sample evaluation shows no reliable improvement over the base rate.",
+      "subperiods": [
+        {
+          "label": "2023+",
+          "n_eval": 7,
+          "spearman_rho": 0.072,
+          "iqr_coverage": 0.429,
+          "mae_skill": 0.0654
+        }
+      ]
+    },
+    {
+      "preset_id": "india_flow_stress",
+      "name": "India Volatility & Currency Pressure",
+      "target_asset": "NIFTY50",
+      "n_eval": 9,
+      "spearman_rho": 0.35,
+      "iqr_coverage": 0.3333,
+      "mae_cond": 2473.8471,
+      "mae_base": 2474.0031,
+      "mae_skill": 0.0001,
+      "verdict_class": "no_reliable_improvement",
+      "verdict_text": "Historical context only. Out-of-sample evaluation shows no reliable improvement over the base rate.",
+      "subperiods": [
+        {
+          "label": "2023+",
+          "n_eval": 9,
+          "spearman_rho": 0.35,
+          "iqr_coverage": 0.333,
+          "mae_skill": 0.0001
+        }
+      ]
+    }
+  ]
+}

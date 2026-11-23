@@ -1,0 +1,4171 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "f1687f268479",
+  "data": {
+    "as_of": "2026-11-19",
+    "factors": {
+      "level": 5.322,
+      "slope": -1.532,
+      "curvature": 0.318,
+      "rmse": 0.12,
+      "level_percentile": 82.7,
+      "slope_percentile": 41.2,
+      "curvature_percentile": 90.5
+    },
+    "spreads": [
+      {
+        "name": "10Y - 2Y Curve Spread",
+        "current": 0.28,
+        "chg_1m": -0.03,
+        "percentile": 27.4,
+        "inverted": false
+      },
+      {
+        "name": "10Y - 3M Near-Term Spread",
+        "current": 1.13,
+        "chg_1m": 0.07,
+        "percentile": 79.0,
+        "inverted": false
+      },
+      {
+        "name": "30Y - 5Y Ultra-Long Spread",
+        "current": 0.54,
+        "chg_1m": 0.03,
+        "percentile": 28.2,
+        "inverted": false
+      }
+    ],
+    "curves": [
+      {
+        "label": "Current",
+        "date": "2026-11-19",
+        "points": [
+          {
+            "maturity": "3M",
+            "months": 3,
+            "yield_pct": 3.91,
+            "fitted_pct": 3.948
+          },
+          {
+            "maturity": "2Y",
+            "months": 24,
+            "yield_pct": 4.76,
+            "fitted_pct": 4.61
+          },
+          {
+            "maturity": "5Y",
+            "months": 60,
+            "yield_pct": 4.86,
+            "fitted_pct": 4.99
+          },
+          {
+            "maturity": "10Y",
+            "months": 120,
+            "yield_pct": 5.04,
+            "fitted_pct": 5.156
+          },
+          {
+            "maturity": "30Y",
+            "months": 360,
+            "yield_pct": 5.4,
+            "fitted_pct": 5.267
+          }
+        ],
+        "smooth_fitted": [
+          {
+            "months": 1.0,
+            "yield_pct": 3.845
+          },
+          {
+            "months": 4.6,
+            "yield_pct": 4.024
+          },
+          {
+            "months": 8.3,
+            "yield_pct": 4.175
+          },
+          {
+            "months": 11.9,
+            "yield_pct": 4.304
+          },
+          {
+            "months": 15.5,
+            "yield_pct": 4.413
+          },
+          {
+            "months": 19.1,
+            "yield_pct": 4.506
+          },
+          {
+            "months": 22.8,
+            "yield_pct": 4.586
+          },
+          {
+            "months": 26.4,
+            "yield_pct": 4.654
+          },
+          {
+            "months": 30.0,
+            "yield_pct": 4.713
+          },
+          {
+            "months": 33.6,
+            "yield_pct": 4.765
+          },
+          {
+            "months": 37.3,
+            "yield_pct": 4.809
+          },
+          {
+            "months": 40.9,
+            "yield_pct": 4.848
+          },
+          {
+            "months": 44.5,
+            "yield_pct": 4.883
+          },
+          {
+            "months": 48.1,
+            "yield_pct": 4.913
+          },
+          {
+            "months": 51.8,
+            "yield_pct": 4.94
+          },
+          {
+            "months": 55.4,
+            "yield_pct": 4.963
+          },
+          {
+            "months": 59.0,
+            "yield_pct": 4.985
+          },
+          {
+            "months": 62.6,
+            "yield_pct": 5.004
+          },
+          {
+            "months": 66.3,
+            "yield_pct": 5.021
+          },
+          {
+            "months": 69.9,
+            "yield_pct": 5.036
+          },
+          {
+            "months": 73.5,
+            "yield_pct": 5.05
+          },
+          {
+            "months": 77.2,
+            "yield_pct": 5.063
+          },
+          {
+            "months": 80.8,
+            "yield_pct": 5.075
+          },
+          {
+            "months": 84.4,
+            "yield_pct": 5.085
+          },
+          {
+            "months": 88.0,
+            "yield_pct": 5.095
+          },
+          {
+            "months": 91.7,
+            "yield_pct": 5.104
+          },
+          {
+            "months": 95.3,
+            "yield_pct": 5.112
+          },
+          {
+            "months": 98.9,
+            "yield_pct": 5.12
+          },
+          {
+            "months": 102.5,
+            "yield_pct": 5.127
+          },
+          {
+            "months": 106.2,
+            "yield_pct": 5.134
+          },
+          {
+            "months": 109.8,
+            "yield_pct": 5.14
+          },
+          {
+            "months": 113.4,
+            "yield_pct": 5.146
+          },
+          {
+            "months": 117.0,
+            "yield_pct": 5.151
+          },
+          {
+            "months": 120.7,
+            "yield_pct": 5.157
+          },
+          {
+            "months": 124.3,
+            "yield_pct": 5.161
+          },
+          {
+            "months": 127.9,
+            "yield_pct": 5.166
+          },
+          {
+            "months": 131.5,
+            "yield_pct": 5.17
+          },
+          {
+            "months": 135.2,
+            "yield_pct": 5.174
+          },
+          {
+            "months": 138.8,
+            "yield_pct": 5.178
+          },
+          {
+            "months": 142.4,
+            "yield_pct": 5.182
+          },
+          {
+            "months": 146.1,
+            "yield_pct": 5.185
+          },
+          {
+            "months": 149.7,
+            "yield_pct": 5.189
+          },
+          {
+            "months": 153.3,
+            "yield_pct": 5.192
+          },
+          {
+            "months": 156.9,
+            "yield_pct": 5.195
+          },
+          {
+            "months": 160.6,
+            "yield_pct": 5.198
+          },
+          {
+            "months": 164.2,
+            "yield_pct": 5.2
+          },
+          {
+            "months": 167.8,
+            "yield_pct": 5.203
+          },
+          {
+            "months": 171.4,
+            "yield_pct": 5.206
+          },
+          {
+            "months": 175.1,
+            "yield_pct": 5.208
+          },
+          {
+            "months": 178.7,
+            "yield_pct": 5.21
+          },
+          {
+            "months": 182.3,
+            "yield_pct": 5.213
+          },
+          {
+            "months": 185.9,
+            "yield_pct": 5.215
+          },
+          {
+            "months": 189.6,
+            "yield_pct": 5.217
+          },
+          {
+            "months": 193.2,
+            "yield_pct": 5.219
+          },
+          {
+            "months": 196.8,
+            "yield_pct": 5.221
+          },
+          {
+            "months": 200.4,
+            "yield_pct": 5.222
+          },
+          {
+            "months": 204.1,
+            "yield_pct": 5.224
+          },
+          {
+            "months": 207.7,
+            "yield_pct": 5.226
+          },
+          {
+            "months": 211.3,
+            "yield_pct": 5.228
+          },
+          {
+            "months": 214.9,
+            "yield_pct": 5.229
+          },
+          {
+            "months": 218.6,
+            "yield_pct": 5.231
+          },
+          {
+            "months": 222.2,
+            "yield_pct": 5.232
+          },
+          {
+            "months": 225.8,
+            "yield_pct": 5.234
+          },
+          {
+            "months": 229.5,
+            "yield_pct": 5.235
+          },
+          {
+            "months": 233.1,
+            "yield_pct": 5.236
+          },
+          {
+            "months": 236.7,
+            "yield_pct": 5.238
+          },
+          {
+            "months": 240.3,
+            "yield_pct": 5.239
+          },
+          {
+            "months": 244.0,
+            "yield_pct": 5.24
+          },
+          {
+            "months": 247.6,
+            "yield_pct": 5.241
+          },
+          {
+            "months": 251.2,
+            "yield_pct": 5.243
+          },
+          {
+            "months": 254.8,
+            "yield_pct": 5.244
+          },
+          {
+            "months": 258.5,
+            "yield_pct": 5.245
+          },
+          {
+            "months": 262.1,
+            "yield_pct": 5.246
+          },
+          {
+            "months": 265.7,
+            "yield_pct": 5.247
+          },
+          {
+            "months": 269.3,
+            "yield_pct": 5.248
+          },
+          {
+            "months": 273.0,
+            "yield_pct": 5.249
+          },
+          {
+            "months": 276.6,
+            "yield_pct": 5.25
+          },
+          {
+            "months": 280.2,
+            "yield_pct": 5.251
+          },
+          {
+            "months": 283.8,
+            "yield_pct": 5.252
+          },
+          {
+            "months": 287.5,
+            "yield_pct": 5.253
+          },
+          {
+            "months": 291.1,
+            "yield_pct": 5.253
+          },
+          {
+            "months": 294.7,
+            "yield_pct": 5.254
+          },
+          {
+            "months": 298.4,
+            "yield_pct": 5.255
+          },
+          {
+            "months": 302.0,
+            "yield_pct": 5.256
+          },
+          {
+            "months": 305.6,
+            "yield_pct": 5.257
+          },
+          {
+            "months": 309.2,
+            "yield_pct": 5.257
+          },
+          {
+            "months": 312.9,
+            "yield_pct": 5.258
+          },
+          {
+            "months": 316.5,
+            "yield_pct": 5.259
+          },
+          {
+            "months": 320.1,
+            "yield_pct": 5.26
+          },
+          {
+            "months": 323.7,
+            "yield_pct": 5.26
+          },
+          {
+            "months": 327.4,
+            "yield_pct": 5.261
+          },
+          {
+            "months": 331.0,
+            "yield_pct": 5.262
+          },
+          {
+            "months": 334.6,
+            "yield_pct": 5.262
+          },
+          {
+            "months": 338.2,
+            "yield_pct": 5.263
+          },
+          {
+            "months": 341.9,
+            "yield_pct": 5.264
+          },
+          {
+            "months": 345.5,
+            "yield_pct": 5.264
+          },
+          {
+            "months": 349.1,
+            "yield_pct": 5.265
+          },
+          {
+            "months": 352.7,
+            "yield_pct": 5.265
+          },
+          {
+            "months": 356.4,
+            "yield_pct": 5.266
+          },
+          {
+            "months": 360.0,
+            "yield_pct": 5.267
+          }
+        ]
+      },
+      {
+        "label": "1 Month Ago",
+        "date": "2026-10-21",
+        "points": [
+          {
+            "maturity": "3M",
+            "months": 3,
+            "yield_pct": 3.88,
+            "fitted_pct": 3.913
+          },
+          {
+            "maturity": "2Y",
+            "months": 24,
+            "yield_pct": 4.81,
+            "fitted_pct": 4.679
+          },
+          {
+            "maturity": "5Y",
+            "months": 60,
+            "yield_pct": 4.95,
+            "fitted_pct": 5.07
+          },
+          {
+            "maturity": "10Y",
+            "months": 120,
+            "yield_pct": 5.13,
+            "fitted_pct": 5.218
+          },
+          {
+            "maturity": "30Y",
+            "months": 360,
+            "yield_pct": 5.42,
+            "fitted_pct": 5.311
+          }
+        ],
+        "smooth_fitted": [
+          {
+            "months": 1.0,
+            "yield_pct": 3.789
+          },
+          {
+            "months": 4.6,
+            "yield_pct": 4.004
+          },
+          {
+            "months": 8.3,
+            "yield_pct": 4.184
+          },
+          {
+            "months": 11.9,
+            "yield_pct": 4.333
+          },
+          {
+            "months": 15.5,
+            "yield_pct": 4.458
+          },
+          {
+            "months": 19.1,
+            "yield_pct": 4.564
+          },
+          {
+            "months": 22.8,
+            "yield_pct": 4.652
+          },
+          {
+            "months": 26.4,
+            "yield_pct": 4.727
+          },
+          {
+            "months": 30.0,
+            "yield_pct": 4.791
+          },
+          {
+            "months": 33.6,
+            "yield_pct": 4.845
+          },
+          {
+            "months": 37.3,
+            "yield_pct": 4.891
+          },
+          {
+            "months": 40.9,
+            "yield_pct": 4.931
+          },
+          {
+            "months": 44.5,
+            "yield_pct": 4.966
+          },
+          {
+            "months": 48.1,
+            "yield_pct": 4.996
+          },
+          {
+            "months": 51.8,
+            "yield_pct": 5.022
+          },
+          {
+            "months": 55.4,
+            "yield_pct": 5.045
+          },
+          {
+            "months": 59.0,
+            "yield_pct": 5.065
+          },
+          {
+            "months": 62.6,
+            "yield_pct": 5.083
+          },
+          {
+            "months": 66.3,
+            "yield_pct": 5.099
+          },
+          {
+            "months": 69.9,
+            "yield_pct": 5.113
+          },
+          {
+            "months": 73.5,
+            "yield_pct": 5.125
+          },
+          {
+            "months": 77.2,
+            "yield_pct": 5.137
+          },
+          {
+            "months": 80.8,
+            "yield_pct": 5.147
+          },
+          {
+            "months": 84.4,
+            "yield_pct": 5.157
+          },
+          {
+            "months": 88.0,
+            "yield_pct": 5.165
+          },
+          {
+            "months": 91.7,
+            "yield_pct": 5.173
+          },
+          {
+            "months": 95.3,
+            "yield_pct": 5.18
+          },
+          {
+            "months": 98.9,
+            "yield_pct": 5.187
+          },
+          {
+            "months": 102.5,
+            "yield_pct": 5.193
+          },
+          {
+            "months": 106.2,
+            "yield_pct": 5.199
+          },
+          {
+            "months": 109.8,
+            "yield_pct": 5.204
+          },
+          {
+            "months": 113.4,
+            "yield_pct": 5.209
+          },
+          {
+            "months": 117.0,
+            "yield_pct": 5.214
+          },
+          {
+            "months": 120.7,
+            "yield_pct": 5.218
+          },
+          {
+            "months": 124.3,
+            "yield_pct": 5.222
+          },
+          {
+            "months": 127.9,
+            "yield_pct": 5.226
+          },
+          {
+            "months": 131.5,
+            "yield_pct": 5.23
+          },
+          {
+            "months": 135.2,
+            "yield_pct": 5.233
+          },
+          {
+            "months": 138.8,
+            "yield_pct": 5.237
+          },
+          {
+            "months": 142.4,
+            "yield_pct": 5.24
+          },
+          {
+            "months": 146.1,
+            "yield_pct": 5.243
+          },
+          {
+            "months": 149.7,
+            "yield_pct": 5.245
+          },
+          {
+            "months": 153.3,
+            "yield_pct": 5.248
+          },
+          {
+            "months": 156.9,
+            "yield_pct": 5.251
+          },
+          {
+            "months": 160.6,
+            "yield_pct": 5.253
+          },
+          {
+            "months": 164.2,
+            "yield_pct": 5.255
+          },
+          {
+            "months": 167.8,
+            "yield_pct": 5.258
+          },
+          {
+            "months": 171.4,
+            "yield_pct": 5.26
+          },
+          {
+            "months": 175.1,
+            "yield_pct": 5.262
+          },
+          {
+            "months": 178.7,
+            "yield_pct": 5.264
+          },
+          {
+            "months": 182.3,
+            "yield_pct": 5.266
+          },
+          {
+            "months": 185.9,
+            "yield_pct": 5.267
+          },
+          {
+            "months": 189.6,
+            "yield_pct": 5.269
+          },
+          {
+            "months": 193.2,
+            "yield_pct": 5.271
+          },
+          {
+            "months": 196.8,
+            "yield_pct": 5.272
+          },
+          {
+            "months": 200.4,
+            "yield_pct": 5.274
+          },
+          {
+            "months": 204.1,
+            "yield_pct": 5.275
+          },
+          {
+            "months": 207.7,
+            "yield_pct": 5.277
+          },
+          {
+            "months": 211.3,
+            "yield_pct": 5.278
+          },
+          {
+            "months": 214.9,
+            "yield_pct": 5.279
+          },
+          {
+            "months": 218.6,
+            "yield_pct": 5.281
+          },
+          {
+            "months": 222.2,
+            "yield_pct": 5.282
+          },
+          {
+            "months": 225.8,
+            "yield_pct": 5.283
+          },
+          {
+            "months": 229.5,
+            "yield_pct": 5.284
+          },
+          {
+            "months": 233.1,
+            "yield_pct": 5.285
+          },
+          {
+            "months": 236.7,
+            "yield_pct": 5.287
+          },
+          {
+            "months": 240.3,
+            "yield_pct": 5.288
+          },
+          {
+            "months": 244.0,
+            "yield_pct": 5.289
+          },
+          {
+            "months": 247.6,
+            "yield_pct": 5.29
+          },
+          {
+            "months": 251.2,
+            "yield_pct": 5.291
+          },
+          {
+            "months": 254.8,
+            "yield_pct": 5.292
+          },
+          {
+            "months": 258.5,
+            "yield_pct": 5.293
+          },
+          {
+            "months": 262.1,
+            "yield_pct": 5.293
+          },
+          {
+            "months": 265.7,
+            "yield_pct": 5.294
+          },
+          {
+            "months": 269.3,
+            "yield_pct": 5.295
+          },
+          {
+            "months": 273.0,
+            "yield_pct": 5.296
+          },
+          {
+            "months": 276.6,
+            "yield_pct": 5.297
+          },
+          {
+            "months": 280.2,
+            "yield_pct": 5.298
+          },
+          {
+            "months": 283.8,
+            "yield_pct": 5.298
+          },
+          {
+            "months": 287.5,
+            "yield_pct": 5.299
+          },
+          {
+            "months": 291.1,
+            "yield_pct": 5.3
+          },
+          {
+            "months": 294.7,
+            "yield_pct": 5.3
+          },
+          {
+            "months": 298.4,
+            "yield_pct": 5.301
+          },
+          {
+            "months": 302.0,
+            "yield_pct": 5.302
+          },
+          {
+            "months": 305.6,
+            "yield_pct": 5.303
+          },
+          {
+            "months": 309.2,
+            "yield_pct": 5.303
+          },
+          {
+            "months": 312.9,
+            "yield_pct": 5.304
+          },
+          {
+            "months": 316.5,
+            "yield_pct": 5.304
+          },
+          {
+            "months": 320.1,
+            "yield_pct": 5.305
+          },
+          {
+            "months": 323.7,
+            "yield_pct": 5.306
+          },
+          {
+            "months": 327.4,
+            "yield_pct": 5.306
+          },
+          {
+            "months": 331.0,
+            "yield_pct": 5.307
+          },
+          {
+            "months": 334.6,
+            "yield_pct": 5.307
+          },
+          {
+            "months": 338.2,
+            "yield_pct": 5.308
+          },
+          {
+            "months": 341.9,
+            "yield_pct": 5.308
+          },
+          {
+            "months": 345.5,
+            "yield_pct": 5.309
+          },
+          {
+            "months": 349.1,
+            "yield_pct": 5.309
+          },
+          {
+            "months": 352.7,
+            "yield_pct": 5.31
+          },
+          {
+            "months": 356.4,
+            "yield_pct": 5.31
+          },
+          {
+            "months": 360.0,
+            "yield_pct": 5.311
+          }
+        ]
+      },
+      {
+        "label": "6 Months Ago",
+        "date": "2026-05-27",
+        "points": [
+          {
+            "maturity": "3M",
+            "months": 3,
+            "yield_pct": 3.63,
+            "fitted_pct": 3.666
+          },
+          {
+            "maturity": "2Y",
+            "months": 24,
+            "yield_pct": 4.0,
+            "fitted_pct": 3.858
+          },
+          {
+            "maturity": "5Y",
+            "months": 60,
+            "yield_pct": 4.17,
+            "fitted_pct": 4.282
+          },
+          {
+            "maturity": "10Y",
+            "months": 120,
+            "yield_pct": 4.48,
+            "fitted_pct": 4.613
+          },
+          {
+            "maturity": "30Y",
+            "months": 360,
+            "yield_pct": 5.01,
+            "fitted_pct": 4.871
+          }
+        ],
+        "smooth_fitted": [
+          {
+            "months": 1.0,
+            "yield_pct": 3.67
+          },
+          {
+            "months": 4.6,
+            "yield_pct": 3.668
+          },
+          {
+            "months": 8.3,
+            "yield_pct": 3.684
+          },
+          {
+            "months": 11.9,
+            "yield_pct": 3.713
+          },
+          {
+            "months": 15.5,
+            "yield_pct": 3.751
+          },
+          {
+            "months": 19.1,
+            "yield_pct": 3.795
+          },
+          {
+            "months": 22.8,
+            "yield_pct": 3.842
+          },
+          {
+            "months": 26.4,
+            "yield_pct": 3.89
+          },
+          {
+            "months": 30.0,
+            "yield_pct": 3.939
+          },
+          {
+            "months": 33.6,
+            "yield_pct": 3.987
+          },
+          {
+            "months": 37.3,
+            "yield_pct": 4.034
+          },
+          {
+            "months": 40.9,
+            "yield_pct": 4.079
+          },
+          {
+            "months": 44.5,
+            "yield_pct": 4.123
+          },
+          {
+            "months": 48.1,
+            "yield_pct": 4.164
+          },
+          {
+            "months": 51.8,
+            "yield_pct": 4.202
+          },
+          {
+            "months": 55.4,
+            "yield_pct": 4.239
+          },
+          {
+            "months": 59.0,
+            "yield_pct": 4.273
+          },
+          {
+            "months": 62.6,
+            "yield_pct": 4.305
+          },
+          {
+            "months": 66.3,
+            "yield_pct": 4.336
+          },
+          {
+            "months": 69.9,
+            "yield_pct": 4.364
+          },
+          {
+            "months": 73.5,
+            "yield_pct": 4.39
+          },
+          {
+            "months": 77.2,
+            "yield_pct": 4.415
+          },
+          {
+            "months": 80.8,
+            "yield_pct": 4.438
+          },
+          {
+            "months": 84.4,
+            "yield_pct": 4.46
+          },
+          {
+            "months": 88.0,
+            "yield_pct": 4.48
+          },
+          {
+            "months": 91.7,
+            "yield_pct": 4.499
+          },
+          {
+            "months": 95.3,
+            "yield_pct": 4.517
+          },
+          {
+            "months": 98.9,
+            "yield_pct": 4.533
+          },
+          {
+            "months": 102.5,
+            "yield_pct": 4.549
+          },
+          {
+            "months": 106.2,
+            "yield_pct": 4.564
+          },
+          {
+            "months": 109.8,
+            "yield_pct": 4.578
+          },
+          {
+            "months": 113.4,
+            "yield_pct": 4.591
+          },
+          {
+            "months": 117.0,
+            "yield_pct": 4.603
+          },
+          {
+            "months": 120.7,
+            "yield_pct": 4.615
+          },
+          {
+            "months": 124.3,
+            "yield_pct": 4.626
+          },
+          {
+            "months": 127.9,
+            "yield_pct": 4.636
+          },
+          {
+            "months": 131.5,
+            "yield_pct": 4.646
+          },
+          {
+            "months": 135.2,
+            "yield_pct": 4.656
+          },
+          {
+            "months": 138.8,
+            "yield_pct": 4.665
+          },
+          {
+            "months": 142.4,
+            "yield_pct": 4.673
+          },
+          {
+            "months": 146.1,
+            "yield_pct": 4.681
+          },
+          {
+            "months": 149.7,
+            "yield_pct": 4.689
+          },
+          {
+            "months": 153.3,
+            "yield_pct": 4.696
+          },
+          {
+            "months": 156.9,
+            "yield_pct": 4.703
+          },
+          {
+            "months": 160.6,
+            "yield_pct": 4.71
+          },
+          {
+            "months": 164.2,
+            "yield_pct": 4.716
+          },
+          {
+            "months": 167.8,
+            "yield_pct": 4.722
+          },
+          {
+            "months": 171.4,
+            "yield_pct": 4.728
+          },
+          {
+            "months": 175.1,
+            "yield_pct": 4.734
+          },
+          {
+            "months": 178.7,
+            "yield_pct": 4.739
+          },
+          {
+            "months": 182.3,
+            "yield_pct": 4.745
+          },
+          {
+            "months": 185.9,
+            "yield_pct": 4.75
+          },
+          {
+            "months": 189.6,
+            "yield_pct": 4.754
+          },
+          {
+            "months": 193.2,
+            "yield_pct": 4.759
+          },
+          {
+            "months": 196.8,
+            "yield_pct": 4.763
+          },
+          {
+            "months": 200.4,
+            "yield_pct": 4.768
+          },
+          {
+            "months": 204.1,
+            "yield_pct": 4.772
+          },
+          {
+            "months": 207.7,
+            "yield_pct": 4.776
+          },
+          {
+            "months": 211.3,
+            "yield_pct": 4.78
+          },
+          {
+            "months": 214.9,
+            "yield_pct": 4.783
+          },
+          {
+            "months": 218.6,
+            "yield_pct": 4.787
+          },
+          {
+            "months": 222.2,
+            "yield_pct": 4.791
+          },
+          {
+            "months": 225.8,
+            "yield_pct": 4.794
+          },
+          {
+            "months": 229.5,
+            "yield_pct": 4.797
+          },
+          {
+            "months": 233.1,
+            "yield_pct": 4.8
+          },
+          {
+            "months": 236.7,
+            "yield_pct": 4.803
+          },
+          {
+            "months": 240.3,
+            "yield_pct": 4.806
+          },
+          {
+            "months": 244.0,
+            "yield_pct": 4.809
+          },
+          {
+            "months": 247.6,
+            "yield_pct": 4.812
+          },
+          {
+            "months": 251.2,
+            "yield_pct": 4.815
+          },
+          {
+            "months": 254.8,
+            "yield_pct": 4.817
+          },
+          {
+            "months": 258.5,
+            "yield_pct": 4.82
+          },
+          {
+            "months": 262.1,
+            "yield_pct": 4.822
+          },
+          {
+            "months": 265.7,
+            "yield_pct": 4.825
+          },
+          {
+            "months": 269.3,
+            "yield_pct": 4.827
+          },
+          {
+            "months": 273.0,
+            "yield_pct": 4.83
+          },
+          {
+            "months": 276.6,
+            "yield_pct": 4.832
+          },
+          {
+            "months": 280.2,
+            "yield_pct": 4.834
+          },
+          {
+            "months": 283.8,
+            "yield_pct": 4.836
+          },
+          {
+            "months": 287.5,
+            "yield_pct": 4.838
+          },
+          {
+            "months": 291.1,
+            "yield_pct": 4.84
+          },
+          {
+            "months": 294.7,
+            "yield_pct": 4.842
+          },
+          {
+            "months": 298.4,
+            "yield_pct": 4.844
+          },
+          {
+            "months": 302.0,
+            "yield_pct": 4.846
+          },
+          {
+            "months": 305.6,
+            "yield_pct": 4.848
+          },
+          {
+            "months": 309.2,
+            "yield_pct": 4.85
+          },
+          {
+            "months": 312.9,
+            "yield_pct": 4.851
+          },
+          {
+            "months": 316.5,
+            "yield_pct": 4.853
+          },
+          {
+            "months": 320.1,
+            "yield_pct": 4.855
+          },
+          {
+            "months": 323.7,
+            "yield_pct": 4.856
+          },
+          {
+            "months": 327.4,
+            "yield_pct": 4.858
+          },
+          {
+            "months": 331.0,
+            "yield_pct": 4.86
+          },
+          {
+            "months": 334.6,
+            "yield_pct": 4.861
+          },
+          {
+            "months": 338.2,
+            "yield_pct": 4.863
+          },
+          {
+            "months": 341.9,
+            "yield_pct": 4.864
+          },
+          {
+            "months": 345.5,
+            "yield_pct": 4.865
+          },
+          {
+            "months": 349.1,
+            "yield_pct": 4.867
+          },
+          {
+            "months": 352.7,
+            "yield_pct": 4.868
+          },
+          {
+            "months": 356.4,
+            "yield_pct": 4.87
+          },
+          {
+            "months": 360.0,
+            "yield_pct": 4.871
+          }
+        ]
+      },
+      {
+        "label": "1 Year Ago",
+        "date": "2025-12-02",
+        "points": [
+          {
+            "maturity": "3M",
+            "months": 3,
+            "yield_pct": 4.01,
+            "fitted_pct": 4.039
+          },
+          {
+            "maturity": "2Y",
+            "months": 24,
+            "yield_pct": 3.51,
+            "fitted_pct": 3.398
+          },
+          {
+            "maturity": "5Y",
+            "months": 60,
+            "yield_pct": 3.66,
+            "fitted_pct": 3.738
+          },
+          {
+            "maturity": "10Y",
+            "months": 120,
+            "yield_pct": 4.09,
+            "fitted_pct": 4.216
+          },
+          {
+            "maturity": "30Y",
+            "months": 360,
+            "yield_pct": 4.74,
+            "fitted_pct": 4.619
+          }
+        ],
+        "smooth_fitted": [
+          {
+            "months": 1.0,
+            "yield_pct": 4.214
+          },
+          {
+            "months": 4.6,
+            "yield_pct": 3.918
+          },
+          {
+            "months": 8.3,
+            "yield_pct": 3.709
+          },
+          {
+            "months": 11.9,
+            "yield_pct": 3.567
+          },
+          {
+            "months": 15.5,
+            "yield_pct": 3.477
+          },
+          {
+            "months": 19.1,
+            "yield_pct": 3.424
+          },
+          {
+            "months": 22.8,
+            "yield_pct": 3.401
+          },
+          {
+            "months": 26.4,
+            "yield_pct": 3.399
+          },
+          {
+            "months": 30.0,
+            "yield_pct": 3.413
+          },
+          {
+            "months": 33.6,
+            "yield_pct": 3.439
+          },
+          {
+            "months": 37.3,
+            "yield_pct": 3.472
+          },
+          {
+            "months": 40.9,
+            "yield_pct": 3.511
+          },
+          {
+            "months": 44.5,
+            "yield_pct": 3.552
+          },
+          {
+            "months": 48.1,
+            "yield_pct": 3.596
+          },
+          {
+            "months": 51.8,
+            "yield_pct": 3.64
+          },
+          {
+            "months": 55.4,
+            "yield_pct": 3.684
+          },
+          {
+            "months": 59.0,
+            "yield_pct": 3.727
+          },
+          {
+            "months": 62.6,
+            "yield_pct": 3.769
+          },
+          {
+            "months": 66.3,
+            "yield_pct": 3.809
+          },
+          {
+            "months": 69.9,
+            "yield_pct": 3.848
+          },
+          {
+            "months": 73.5,
+            "yield_pct": 3.885
+          },
+          {
+            "months": 77.2,
+            "yield_pct": 3.92
+          },
+          {
+            "months": 80.8,
+            "yield_pct": 3.953
+          },
+          {
+            "months": 84.4,
+            "yield_pct": 3.985
+          },
+          {
+            "months": 88.0,
+            "yield_pct": 4.015
+          },
+          {
+            "months": 91.7,
+            "yield_pct": 4.043
+          },
+          {
+            "months": 95.3,
+            "yield_pct": 4.07
+          },
+          {
+            "months": 98.9,
+            "yield_pct": 4.095
+          },
+          {
+            "months": 102.5,
+            "yield_pct": 4.119
+          },
+          {
+            "months": 106.2,
+            "yield_pct": 4.141
+          },
+          {
+            "months": 109.8,
+            "yield_pct": 4.162
+          },
+          {
+            "months": 113.4,
+            "yield_pct": 4.182
+          },
+          {
+            "months": 117.0,
+            "yield_pct": 4.201
+          },
+          {
+            "months": 120.7,
+            "yield_pct": 4.219
+          },
+          {
+            "months": 124.3,
+            "yield_pct": 4.236
+          },
+          {
+            "months": 127.9,
+            "yield_pct": 4.253
+          },
+          {
+            "months": 131.5,
+            "yield_pct": 4.268
+          },
+          {
+            "months": 135.2,
+            "yield_pct": 4.283
+          },
+          {
+            "months": 138.8,
+            "yield_pct": 4.296
+          },
+          {
+            "months": 142.4,
+            "yield_pct": 4.31
+          },
+          {
+            "months": 146.1,
+            "yield_pct": 4.322
+          },
+          {
+            "months": 149.7,
+            "yield_pct": 4.334
+          },
+          {
+            "months": 153.3,
+            "yield_pct": 4.346
+          },
+          {
+            "months": 156.9,
+            "yield_pct": 4.357
+          },
+          {
+            "months": 160.6,
+            "yield_pct": 4.367
+          },
+          {
+            "months": 164.2,
+            "yield_pct": 4.377
+          },
+          {
+            "months": 167.8,
+            "yield_pct": 4.387
+          },
+          {
+            "months": 171.4,
+            "yield_pct": 4.396
+          },
+          {
+            "months": 175.1,
+            "yield_pct": 4.405
+          },
+          {
+            "months": 178.7,
+            "yield_pct": 4.413
+          },
+          {
+            "months": 182.3,
+            "yield_pct": 4.421
+          },
+          {
+            "months": 185.9,
+            "yield_pct": 4.429
+          },
+          {
+            "months": 189.6,
+            "yield_pct": 4.436
+          },
+          {
+            "months": 193.2,
+            "yield_pct": 4.444
+          },
+          {
+            "months": 196.8,
+            "yield_pct": 4.451
+          },
+          {
+            "months": 200.4,
+            "yield_pct": 4.457
+          },
+          {
+            "months": 204.1,
+            "yield_pct": 4.464
+          },
+          {
+            "months": 207.7,
+            "yield_pct": 4.47
+          },
+          {
+            "months": 211.3,
+            "yield_pct": 4.476
+          },
+          {
+            "months": 214.9,
+            "yield_pct": 4.482
+          },
+          {
+            "months": 218.6,
+            "yield_pct": 4.487
+          },
+          {
+            "months": 222.2,
+            "yield_pct": 4.493
+          },
+          {
+            "months": 225.8,
+            "yield_pct": 4.498
+          },
+          {
+            "months": 229.5,
+            "yield_pct": 4.503
+          },
+          {
+            "months": 233.1,
+            "yield_pct": 4.508
+          },
+          {
+            "months": 236.7,
+            "yield_pct": 4.513
+          },
+          {
+            "months": 240.3,
+            "yield_pct": 4.518
+          },
+          {
+            "months": 244.0,
+            "yield_pct": 4.522
+          },
+          {
+            "months": 247.6,
+            "yield_pct": 4.527
+          },
+          {
+            "months": 251.2,
+            "yield_pct": 4.531
+          },
+          {
+            "months": 254.8,
+            "yield_pct": 4.535
+          },
+          {
+            "months": 258.5,
+            "yield_pct": 4.539
+          },
+          {
+            "months": 262.1,
+            "yield_pct": 4.543
+          },
+          {
+            "months": 265.7,
+            "yield_pct": 4.547
+          },
+          {
+            "months": 269.3,
+            "yield_pct": 4.55
+          },
+          {
+            "months": 273.0,
+            "yield_pct": 4.554
+          },
+          {
+            "months": 276.6,
+            "yield_pct": 4.557
+          },
+          {
+            "months": 280.2,
+            "yield_pct": 4.561
+          },
+          {
+            "months": 283.8,
+            "yield_pct": 4.564
+          },
+          {
+            "months": 287.5,
+            "yield_pct": 4.567
+          },
+          {
+            "months": 291.1,
+            "yield_pct": 4.571
+          },
+          {
+            "months": 294.7,
+            "yield_pct": 4.574
+          },
+          {
+            "months": 298.4,
+            "yield_pct": 4.577
+          },
+          {
+            "months": 302.0,
+            "yield_pct": 4.58
+          },
+          {
+            "months": 305.6,
+            "yield_pct": 4.583
+          },
+          {
+            "months": 309.2,
+            "yield_pct": 4.585
+          },
+          {
+            "months": 312.9,
+            "yield_pct": 4.588
+          },
+          {
+            "months": 316.5,
+            "yield_pct": 4.591
+          },
+          {
+            "months": 320.1,
+            "yield_pct": 4.593
+          },
+          {
+            "months": 323.7,
+            "yield_pct": 4.596
+          },
+          {
+            "months": 327.4,
+            "yield_pct": 4.598
+          },
+          {
+            "months": 331.0,
+            "yield_pct": 4.601
+          },
+          {
+            "months": 334.6,
+            "yield_pct": 4.603
+          },
+          {
+            "months": 338.2,
+            "yield_pct": 4.606
+          },
+          {
+            "months": 341.9,
+            "yield_pct": 4.608
+          },
+          {
+            "months": 345.5,
+            "yield_pct": 4.61
+          },
+          {
+            "months": 349.1,
+            "yield_pct": 4.612
+          },
+          {
+            "months": 352.7,
+            "yield_pct": 4.614
+          },
+          {
+            "months": 356.4,
+            "yield_pct": 4.617
+          },
+          {
+            "months": 360.0,
+            "yield_pct": 4.619
+          }
+        ]
+      }
+    ],
+    "anatomy": [
+      {
+        "date": "2025-12-03",
+        "nominal_10y": 4.06,
+        "real_10y": 1.82,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2025-12-04",
+        "nominal_10y": 4.11,
+        "real_10y": 1.85,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2025-12-05",
+        "nominal_10y": 4.14,
+        "real_10y": 1.88,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-08",
+        "nominal_10y": 4.17,
+        "real_10y": 1.91,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-09",
+        "nominal_10y": 4.18,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-10",
+        "nominal_10y": 4.13,
+        "real_10y": 1.88,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-11",
+        "nominal_10y": 4.14,
+        "real_10y": 1.89,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-12",
+        "nominal_10y": 4.19,
+        "real_10y": 1.93,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-15",
+        "nominal_10y": 4.18,
+        "real_10y": 1.93,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-16",
+        "nominal_10y": 4.15,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.23,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-17",
+        "nominal_10y": 4.16,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-18",
+        "nominal_10y": 4.12,
+        "real_10y": 1.88,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2025-12-19",
+        "nominal_10y": 4.16,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-22",
+        "nominal_10y": 4.17,
+        "real_10y": 1.94,
+        "breakeven_10y": 2.23,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-23",
+        "nominal_10y": 4.18,
+        "real_10y": 1.94,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-24",
+        "nominal_10y": 4.15,
+        "real_10y": 1.91,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-25",
+        "nominal_10y": 4.15,
+        "real_10y": 1.91,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-26",
+        "nominal_10y": 4.14,
+        "real_10y": 1.91,
+        "breakeven_10y": 2.23,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-29",
+        "nominal_10y": 4.12,
+        "real_10y": 1.9,
+        "breakeven_10y": 2.22,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2025-12-30",
+        "nominal_10y": 4.14,
+        "real_10y": 1.9,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2025-12-31",
+        "nominal_10y": 4.18,
+        "real_10y": 1.93,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-01",
+        "nominal_10y": 4.18,
+        "real_10y": 1.925,
+        "breakeven_10y": 2.255,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-02",
+        "nominal_10y": 4.18,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-05",
+        "nominal_10y": 4.18,
+        "real_10y": 1.915,
+        "breakeven_10y": 2.265,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-06",
+        "nominal_10y": 4.18,
+        "real_10y": 1.91,
+        "breakeven_10y": 2.27,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-07",
+        "nominal_10y": 4.15,
+        "real_10y": 1.88,
+        "breakeven_10y": 2.27,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-08",
+        "nominal_10y": 4.19,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.27,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-09",
+        "nominal_10y": 4.18,
+        "real_10y": 1.9,
+        "breakeven_10y": 2.28,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-12",
+        "nominal_10y": 4.19,
+        "real_10y": 1.9,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-13",
+        "nominal_10y": 4.18,
+        "real_10y": 1.88,
+        "breakeven_10y": 2.3,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-14",
+        "nominal_10y": 4.15,
+        "real_10y": 1.86,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-15",
+        "nominal_10y": 4.17,
+        "real_10y": 1.88,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-01-16",
+        "nominal_10y": 4.24,
+        "real_10y": 1.91,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-01-19",
+        "nominal_10y": 4.24,
+        "real_10y": 1.91,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-01-20",
+        "nominal_10y": 4.3,
+        "real_10y": 1.97,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-01-21",
+        "nominal_10y": 4.26,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-01-22",
+        "nominal_10y": 4.26,
+        "real_10y": 1.95,
+        "breakeven_10y": 2.31,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-01-23",
+        "nominal_10y": 4.24,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.32,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-01-26",
+        "nominal_10y": 4.22,
+        "real_10y": 1.9,
+        "breakeven_10y": 2.32,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-01-27",
+        "nominal_10y": 4.24,
+        "real_10y": 1.9,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-01-28",
+        "nominal_10y": 4.26,
+        "real_10y": 1.9,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-01-29",
+        "nominal_10y": 4.24,
+        "real_10y": 1.89,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-01-30",
+        "nominal_10y": 4.26,
+        "real_10y": 1.9,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-02-02",
+        "nominal_10y": 4.29,
+        "real_10y": 1.94,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-02-03",
+        "nominal_10y": 4.28,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-02-04",
+        "nominal_10y": 4.29,
+        "real_10y": 1.94,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-02-05",
+        "nominal_10y": 4.21,
+        "real_10y": 1.89,
+        "breakeven_10y": 2.32,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-02-06",
+        "nominal_10y": 4.22,
+        "real_10y": 1.88,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-02-09",
+        "nominal_10y": 4.22,
+        "real_10y": 1.87,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-02-10",
+        "nominal_10y": 4.16,
+        "real_10y": 1.84,
+        "breakeven_10y": 2.32,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-02-11",
+        "nominal_10y": 4.18,
+        "real_10y": 1.86,
+        "breakeven_10y": 2.32,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-02-12",
+        "nominal_10y": 4.09,
+        "real_10y": 1.8,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2026-02-13",
+        "nominal_10y": 4.04,
+        "real_10y": 1.77,
+        "breakeven_10y": 2.27,
+        "term_premium": 0.28
+      },
+      {
+        "date": "2026-02-16",
+        "nominal_10y": 4.04,
+        "real_10y": 1.77,
+        "breakeven_10y": 2.27,
+        "term_premium": 0.28
+      },
+      {
+        "date": "2026-02-17",
+        "nominal_10y": 4.05,
+        "real_10y": 1.79,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2026-02-18",
+        "nominal_10y": 4.09,
+        "real_10y": 1.8,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2026-02-19",
+        "nominal_10y": 4.08,
+        "real_10y": 1.79,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2026-02-20",
+        "nominal_10y": 4.08,
+        "real_10y": 1.8,
+        "breakeven_10y": 2.28,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2026-02-23",
+        "nominal_10y": 4.03,
+        "real_10y": 1.77,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.28
+      },
+      {
+        "date": "2026-02-24",
+        "nominal_10y": 4.04,
+        "real_10y": 1.78,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.28
+      },
+      {
+        "date": "2026-02-25",
+        "nominal_10y": 4.05,
+        "real_10y": 1.77,
+        "breakeven_10y": 2.28,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2026-02-26",
+        "nominal_10y": 4.02,
+        "real_10y": 1.74,
+        "breakeven_10y": 2.28,
+        "term_premium": 0.28
+      },
+      {
+        "date": "2026-02-27",
+        "nominal_10y": 3.97,
+        "real_10y": 1.72,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.28
+      },
+      {
+        "date": "2026-03-02",
+        "nominal_10y": 4.05,
+        "real_10y": 1.76,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2026-03-03",
+        "nominal_10y": 4.06,
+        "real_10y": 1.77,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2026-03-04",
+        "nominal_10y": 4.09,
+        "real_10y": 1.8,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2026-03-05",
+        "nominal_10y": 4.13,
+        "real_10y": 1.82,
+        "breakeven_10y": 2.31,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-03-06",
+        "nominal_10y": 4.15,
+        "real_10y": 1.8,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-03-09",
+        "nominal_10y": 4.12,
+        "real_10y": 1.78,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.29
+      },
+      {
+        "date": "2026-03-10",
+        "nominal_10y": 4.15,
+        "real_10y": 1.82,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-03-11",
+        "nominal_10y": 4.21,
+        "real_10y": 1.85,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-03-12",
+        "nominal_10y": 4.27,
+        "real_10y": 1.89,
+        "breakeven_10y": 2.38,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-03-13",
+        "nominal_10y": 4.28,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-03-16",
+        "nominal_10y": 4.23,
+        "real_10y": 1.87,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-03-17",
+        "nominal_10y": 4.2,
+        "real_10y": 1.83,
+        "breakeven_10y": 2.37,
+        "term_premium": 0.3
+      },
+      {
+        "date": "2026-03-18",
+        "nominal_10y": 4.26,
+        "real_10y": 1.86,
+        "breakeven_10y": 2.4,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-03-19",
+        "nominal_10y": 4.25,
+        "real_10y": 1.88,
+        "breakeven_10y": 2.37,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-03-20",
+        "nominal_10y": 4.39,
+        "real_10y": 2.01,
+        "breakeven_10y": 2.38,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-03-23",
+        "nominal_10y": 4.34,
+        "real_10y": 2.01,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-03-24",
+        "nominal_10y": 4.39,
+        "real_10y": 2.06,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-03-25",
+        "nominal_10y": 4.33,
+        "real_10y": 2.02,
+        "breakeven_10y": 2.31,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-03-26",
+        "nominal_10y": 4.42,
+        "real_10y": 2.08,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-03-27",
+        "nominal_10y": 4.44,
+        "real_10y": 2.13,
+        "breakeven_10y": 2.31,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-03-30",
+        "nominal_10y": 4.35,
+        "real_10y": 2.04,
+        "breakeven_10y": 2.31,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-03-31",
+        "nominal_10y": 4.3,
+        "real_10y": 2.0,
+        "breakeven_10y": 2.3,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-01",
+        "nominal_10y": 4.33,
+        "real_10y": 2.02,
+        "breakeven_10y": 2.31,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-02",
+        "nominal_10y": 4.31,
+        "real_10y": 1.97,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-03",
+        "nominal_10y": 4.35,
+        "real_10y": 1.99,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-06",
+        "nominal_10y": 4.34,
+        "real_10y": 1.98,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-07",
+        "nominal_10y": 4.33,
+        "real_10y": 1.96,
+        "breakeven_10y": 2.37,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-08",
+        "nominal_10y": 4.29,
+        "real_10y": 1.96,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-04-09",
+        "nominal_10y": 4.29,
+        "real_10y": 1.95,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-04-10",
+        "nominal_10y": 4.31,
+        "real_10y": 1.95,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-13",
+        "nominal_10y": 4.3,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.38,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-14",
+        "nominal_10y": 4.26,
+        "real_10y": 1.89,
+        "breakeven_10y": 2.37,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-04-15",
+        "nominal_10y": 4.29,
+        "real_10y": 1.9,
+        "breakeven_10y": 2.39,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-04-16",
+        "nominal_10y": 4.32,
+        "real_10y": 1.93,
+        "breakeven_10y": 2.39,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-17",
+        "nominal_10y": 4.26,
+        "real_10y": 1.9,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-04-20",
+        "nominal_10y": 4.26,
+        "real_10y": 1.91,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.31
+      },
+      {
+        "date": "2026-04-21",
+        "nominal_10y": 4.3,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.38,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-22",
+        "nominal_10y": 4.3,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.38,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-23",
+        "nominal_10y": 4.34,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.42,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-24",
+        "nominal_10y": 4.31,
+        "real_10y": 1.89,
+        "breakeven_10y": 2.42,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-27",
+        "nominal_10y": 4.35,
+        "real_10y": 1.91,
+        "breakeven_10y": 2.44,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-28",
+        "nominal_10y": 4.36,
+        "real_10y": 1.92,
+        "breakeven_10y": 2.44,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-04-29",
+        "nominal_10y": 4.42,
+        "real_10y": 1.96,
+        "breakeven_10y": 2.46,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-04-30",
+        "nominal_10y": 4.4,
+        "real_10y": 1.94,
+        "breakeven_10y": 2.46,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-05-01",
+        "nominal_10y": 4.39,
+        "real_10y": 1.91,
+        "breakeven_10y": 2.48,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-05-04",
+        "nominal_10y": 4.45,
+        "real_10y": 1.95,
+        "breakeven_10y": 2.5,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-05-05",
+        "nominal_10y": 4.43,
+        "real_10y": 1.96,
+        "breakeven_10y": 2.47,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-05-06",
+        "nominal_10y": 4.36,
+        "real_10y": 1.94,
+        "breakeven_10y": 2.42,
+        "term_premium": 0.32
+      },
+      {
+        "date": "2026-05-07",
+        "nominal_10y": 4.41,
+        "real_10y": 1.96,
+        "breakeven_10y": 2.45,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-05-08",
+        "nominal_10y": 4.38,
+        "real_10y": 1.93,
+        "breakeven_10y": 2.45,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-05-11",
+        "nominal_10y": 4.42,
+        "real_10y": 1.95,
+        "breakeven_10y": 2.47,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-05-12",
+        "nominal_10y": 4.46,
+        "real_10y": 1.99,
+        "breakeven_10y": 2.47,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-05-13",
+        "nominal_10y": 4.46,
+        "real_10y": 1.99,
+        "breakeven_10y": 2.47,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-05-14",
+        "nominal_10y": 4.47,
+        "real_10y": 2.0,
+        "breakeven_10y": 2.47,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-05-15",
+        "nominal_10y": 4.59,
+        "real_10y": 2.1,
+        "breakeven_10y": 2.49,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-05-18",
+        "nominal_10y": 4.61,
+        "real_10y": 2.13,
+        "breakeven_10y": 2.48,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-05-19",
+        "nominal_10y": 4.67,
+        "real_10y": 2.18,
+        "breakeven_10y": 2.49,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-05-20",
+        "nominal_10y": 4.57,
+        "real_10y": 2.13,
+        "breakeven_10y": 2.44,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-05-21",
+        "nominal_10y": 4.57,
+        "real_10y": 2.18,
+        "breakeven_10y": 2.39,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-05-22",
+        "nominal_10y": 4.56,
+        "real_10y": 2.16,
+        "breakeven_10y": 2.4,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-05-25",
+        "nominal_10y": 4.56,
+        "real_10y": 2.16,
+        "breakeven_10y": 2.4,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-05-26",
+        "nominal_10y": 4.5,
+        "real_10y": 2.1,
+        "breakeven_10y": 2.4,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-05-27",
+        "nominal_10y": 4.48,
+        "real_10y": 2.09,
+        "breakeven_10y": 2.39,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-05-28",
+        "nominal_10y": 4.45,
+        "real_10y": 2.06,
+        "breakeven_10y": 2.39,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-05-29",
+        "nominal_10y": 4.45,
+        "real_10y": 2.07,
+        "breakeven_10y": 2.38,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-06-01",
+        "nominal_10y": 4.47,
+        "real_10y": 2.07,
+        "breakeven_10y": 2.4,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-02",
+        "nominal_10y": 4.46,
+        "real_10y": 2.07,
+        "breakeven_10y": 2.39,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-03",
+        "nominal_10y": 4.49,
+        "real_10y": 2.11,
+        "breakeven_10y": 2.38,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-04",
+        "nominal_10y": 4.47,
+        "real_10y": 2.11,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-05",
+        "nominal_10y": 4.55,
+        "real_10y": 2.19,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-06-08",
+        "nominal_10y": 4.56,
+        "real_10y": 2.21,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-06-09",
+        "nominal_10y": 4.53,
+        "real_10y": 2.2,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-10",
+        "nominal_10y": 4.55,
+        "real_10y": 2.21,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-06-11",
+        "nominal_10y": 4.45,
+        "real_10y": 2.16,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-06-12",
+        "nominal_10y": 4.48,
+        "real_10y": 2.17,
+        "breakeven_10y": 2.31,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-15",
+        "nominal_10y": 4.47,
+        "real_10y": 2.15,
+        "breakeven_10y": 2.32,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-16",
+        "nominal_10y": 4.43,
+        "real_10y": 2.14,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-06-17",
+        "nominal_10y": 4.49,
+        "real_10y": 2.23,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-18",
+        "nominal_10y": 4.46,
+        "real_10y": 2.21,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-19",
+        "nominal_10y": 4.46,
+        "real_10y": 2.21,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-22",
+        "nominal_10y": 4.51,
+        "real_10y": 2.28,
+        "breakeven_10y": 2.23,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-23",
+        "nominal_10y": 4.5,
+        "real_10y": 2.29,
+        "breakeven_10y": 2.21,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-06-24",
+        "nominal_10y": 4.41,
+        "real_10y": 2.23,
+        "breakeven_10y": 2.18,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-06-25",
+        "nominal_10y": 4.4,
+        "real_10y": 2.19,
+        "breakeven_10y": 2.21,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-06-26",
+        "nominal_10y": 4.38,
+        "real_10y": 2.18,
+        "breakeven_10y": 2.2,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-06-29",
+        "nominal_10y": 4.38,
+        "real_10y": 2.16,
+        "breakeven_10y": 2.22,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-06-30",
+        "nominal_10y": 4.44,
+        "real_10y": 2.2,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.33
+      },
+      {
+        "date": "2026-07-01",
+        "nominal_10y": 4.48,
+        "real_10y": 2.25,
+        "breakeven_10y": 2.23,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-07-02",
+        "nominal_10y": 4.49,
+        "real_10y": 2.26,
+        "breakeven_10y": 2.23,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-07-03",
+        "nominal_10y": 4.49,
+        "real_10y": 2.26,
+        "breakeven_10y": 2.23,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-07-06",
+        "nominal_10y": 4.48,
+        "real_10y": 2.24,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-07-07",
+        "nominal_10y": 4.55,
+        "real_10y": 2.3,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-07-08",
+        "nominal_10y": 4.56,
+        "real_10y": 2.31,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-07-09",
+        "nominal_10y": 4.54,
+        "real_10y": 2.31,
+        "breakeven_10y": 2.23,
+        "term_premium": 0.34
+      },
+      {
+        "date": "2026-07-10",
+        "nominal_10y": 4.56,
+        "real_10y": 2.32,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-07-13",
+        "nominal_10y": 4.62,
+        "real_10y": 2.36,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-07-14",
+        "nominal_10y": 4.58,
+        "real_10y": 2.33,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-07-15",
+        "nominal_10y": 4.55,
+        "real_10y": 2.32,
+        "breakeven_10y": 2.23,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-07-16",
+        "nominal_10y": 4.57,
+        "real_10y": 2.35,
+        "breakeven_10y": 2.22,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-07-17",
+        "nominal_10y": 4.55,
+        "real_10y": 2.31,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-07-20",
+        "nominal_10y": 4.6,
+        "real_10y": 2.35,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-07-21",
+        "nominal_10y": 4.63,
+        "real_10y": 2.37,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-07-22",
+        "nominal_10y": 4.67,
+        "real_10y": 2.39,
+        "breakeven_10y": 2.28,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-07-23",
+        "nominal_10y": 4.71,
+        "real_10y": 2.43,
+        "breakeven_10y": 2.28,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-07-24",
+        "nominal_10y": 4.69,
+        "real_10y": 2.43,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-07-27",
+        "nominal_10y": 4.65,
+        "real_10y": 2.44,
+        "breakeven_10y": 2.21,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-07-28",
+        "nominal_10y": 4.61,
+        "real_10y": 2.41,
+        "breakeven_10y": 2.2,
+        "term_premium": 0.35
+      },
+      {
+        "date": "2026-07-29",
+        "nominal_10y": 4.67,
+        "real_10y": 2.41,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-07-30",
+        "nominal_10y": 4.68,
+        "real_10y": 2.41,
+        "breakeven_10y": 2.27,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-07-31",
+        "nominal_10y": 4.75,
+        "real_10y": 2.47,
+        "breakeven_10y": 2.28,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-08-03",
+        "nominal_10y": 4.7,
+        "real_10y": 2.43,
+        "breakeven_10y": 2.27,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-04",
+        "nominal_10y": 4.63,
+        "real_10y": 2.4,
+        "breakeven_10y": 2.23,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-05",
+        "nominal_10y": 4.63,
+        "real_10y": 2.41,
+        "breakeven_10y": 2.22,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-06",
+        "nominal_10y": 4.69,
+        "real_10y": 2.43,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-07",
+        "nominal_10y": 4.65,
+        "real_10y": 2.4,
+        "breakeven_10y": 2.25,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-10",
+        "nominal_10y": 4.72,
+        "real_10y": 2.43,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-08-11",
+        "nominal_10y": 4.7,
+        "real_10y": 2.43,
+        "breakeven_10y": 2.27,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-12",
+        "nominal_10y": 4.68,
+        "real_10y": 2.42,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-13",
+        "nominal_10y": 4.63,
+        "real_10y": 2.39,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-14",
+        "nominal_10y": 4.68,
+        "real_10y": 2.41,
+        "breakeven_10y": 2.27,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-17",
+        "nominal_10y": 4.72,
+        "real_10y": 2.44,
+        "breakeven_10y": 2.28,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-08-18",
+        "nominal_10y": 4.71,
+        "real_10y": 2.41,
+        "breakeven_10y": 2.3,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-08-19",
+        "nominal_10y": 4.65,
+        "real_10y": 2.35,
+        "breakeven_10y": 2.3,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-20",
+        "nominal_10y": 4.69,
+        "real_10y": 2.35,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-21",
+        "nominal_10y": 4.74,
+        "real_10y": 2.4,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-08-24",
+        "nominal_10y": 4.7,
+        "real_10y": 2.38,
+        "breakeven_10y": 2.32,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-25",
+        "nominal_10y": 4.64,
+        "real_10y": 2.32,
+        "breakeven_10y": 2.32,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-26",
+        "nominal_10y": 4.66,
+        "real_10y": 2.34,
+        "breakeven_10y": 2.32,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-27",
+        "nominal_10y": 4.67,
+        "real_10y": 2.34,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.36
+      },
+      {
+        "date": "2026-08-28",
+        "nominal_10y": 4.73,
+        "real_10y": 2.42,
+        "breakeven_10y": 2.31,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-08-31",
+        "nominal_10y": 4.75,
+        "real_10y": 2.44,
+        "breakeven_10y": 2.31,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-09-01",
+        "nominal_10y": 4.79,
+        "real_10y": 2.44,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-09-02",
+        "nominal_10y": 4.79,
+        "real_10y": 2.45,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-09-03",
+        "nominal_10y": 4.77,
+        "real_10y": 2.42,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-09-04",
+        "nominal_10y": 4.78,
+        "real_10y": 2.43,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-09-07",
+        "nominal_10y": 4.78,
+        "real_10y": 2.43,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.37
+      },
+      {
+        "date": "2026-09-08",
+        "nominal_10y": 4.8,
+        "real_10y": 2.43,
+        "breakeven_10y": 2.37,
+        "term_premium": 0.38
+      },
+      {
+        "date": "2026-09-09",
+        "nominal_10y": 4.83,
+        "real_10y": 2.46,
+        "breakeven_10y": 2.37,
+        "term_premium": 0.38
+      },
+      {
+        "date": "2026-09-10",
+        "nominal_10y": 4.95,
+        "real_10y": 2.55,
+        "breakeven_10y": 2.4,
+        "term_premium": 0.39
+      },
+      {
+        "date": "2026-09-11",
+        "nominal_10y": 4.96,
+        "real_10y": 2.6,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-09-14",
+        "nominal_10y": 4.97,
+        "real_10y": 2.6,
+        "breakeven_10y": 2.37,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-09-15",
+        "nominal_10y": 5.0,
+        "real_10y": 2.62,
+        "breakeven_10y": 2.38,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-09-16",
+        "nominal_10y": 5.01,
+        "real_10y": 2.68,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-09-17",
+        "nominal_10y": 4.94,
+        "real_10y": 2.61,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.39
+      },
+      {
+        "date": "2026-09-18",
+        "nominal_10y": 5.01,
+        "real_10y": 2.68,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-09-21",
+        "nominal_10y": 4.96,
+        "real_10y": 2.62,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-09-22",
+        "nominal_10y": 4.96,
+        "real_10y": 2.63,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-09-23",
+        "nominal_10y": 5.11,
+        "real_10y": 2.76,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.41
+      },
+      {
+        "date": "2026-09-24",
+        "nominal_10y": 5.18,
+        "real_10y": 2.85,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.42
+      },
+      {
+        "date": "2026-09-25",
+        "nominal_10y": 5.17,
+        "real_10y": 2.83,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.42
+      },
+      {
+        "date": "2026-09-28",
+        "nominal_10y": 5.24,
+        "real_10y": 2.9,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.43
+      },
+      {
+        "date": "2026-09-29",
+        "nominal_10y": 5.26,
+        "real_10y": 2.91,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.43
+      },
+      {
+        "date": "2026-09-30",
+        "nominal_10y": 5.29,
+        "real_10y": 2.93,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.43
+      },
+      {
+        "date": "2026-10-01",
+        "nominal_10y": 5.24,
+        "real_10y": 2.88,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.43
+      },
+      {
+        "date": "2026-10-02",
+        "nominal_10y": 5.28,
+        "real_10y": 2.92,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.43
+      },
+      {
+        "date": "2026-10-05",
+        "nominal_10y": 5.31,
+        "real_10y": 2.95,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.44
+      },
+      {
+        "date": "2026-10-06",
+        "nominal_10y": 5.27,
+        "real_10y": 2.91,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.43
+      },
+      {
+        "date": "2026-10-07",
+        "nominal_10y": 5.28,
+        "real_10y": 2.92,
+        "breakeven_10y": 2.36,
+        "term_premium": 0.43
+      },
+      {
+        "date": "2026-10-08",
+        "nominal_10y": 5.22,
+        "real_10y": 2.87,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.43
+      },
+      {
+        "date": "2026-10-09",
+        "nominal_10y": 5.24,
+        "real_10y": 2.91,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.43
+      },
+      {
+        "date": "2026-10-12",
+        "nominal_10y": 5.24,
+        "real_10y": 2.91,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.43
+      },
+      {
+        "date": "2026-10-13",
+        "nominal_10y": 5.21,
+        "real_10y": 2.88,
+        "breakeven_10y": 2.33,
+        "term_premium": 0.43
+      },
+      {
+        "date": "2026-10-14",
+        "nominal_10y": 5.19,
+        "real_10y": 2.84,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.42
+      },
+      {
+        "date": "2026-10-15",
+        "nominal_10y": 5.1,
+        "real_10y": 2.78,
+        "breakeven_10y": 2.32,
+        "term_premium": 0.41
+      },
+      {
+        "date": "2026-10-16",
+        "nominal_10y": 5.09,
+        "real_10y": 2.74,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.41
+      },
+      {
+        "date": "2026-10-19",
+        "nominal_10y": 5.15,
+        "real_10y": 2.8,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.42
+      },
+      {
+        "date": "2026-10-20",
+        "nominal_10y": 5.12,
+        "real_10y": 2.77,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.41
+      },
+      {
+        "date": "2026-10-21",
+        "nominal_10y": 5.13,
+        "real_10y": 2.76,
+        "breakeven_10y": 2.37,
+        "term_premium": 0.42
+      },
+      {
+        "date": "2026-10-22",
+        "nominal_10y": 4.96,
+        "real_10y": 2.64,
+        "breakeven_10y": 2.32,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-10-23",
+        "nominal_10y": 5.0,
+        "real_10y": 2.66,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-10-26",
+        "nominal_10y": 5.0,
+        "real_10y": 2.66,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-10-27",
+        "nominal_10y": 4.99,
+        "real_10y": 2.64,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-10-28",
+        "nominal_10y": 5.05,
+        "real_10y": 2.67,
+        "breakeven_10y": 2.38,
+        "term_premium": 0.41
+      },
+      {
+        "date": "2026-10-29",
+        "nominal_10y": 4.98,
+        "real_10y": 2.63,
+        "breakeven_10y": 2.35,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-10-30",
+        "nominal_10y": 4.94,
+        "real_10y": 2.6,
+        "breakeven_10y": 2.34,
+        "term_premium": 0.39
+      },
+      {
+        "date": "2026-11-02",
+        "nominal_10y": 4.91,
+        "real_10y": 2.62,
+        "breakeven_10y": 2.29,
+        "term_premium": 0.39
+      },
+      {
+        "date": "2026-11-03",
+        "nominal_10y": 4.95,
+        "real_10y": 2.65,
+        "breakeven_10y": 2.3,
+        "term_premium": 0.39
+      },
+      {
+        "date": "2026-11-04",
+        "nominal_10y": 4.9,
+        "real_10y": 2.64,
+        "breakeven_10y": 2.26,
+        "term_premium": 0.39
+      },
+      {
+        "date": "2026-11-05",
+        "nominal_10y": 4.84,
+        "real_10y": 2.6,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.38
+      },
+      {
+        "date": "2026-11-06",
+        "nominal_10y": 4.86,
+        "real_10y": 2.63,
+        "breakeven_10y": 2.23,
+        "term_premium": 0.38
+      },
+      {
+        "date": "2026-11-09",
+        "nominal_10y": 4.88,
+        "real_10y": 2.66,
+        "breakeven_10y": 2.22,
+        "term_premium": 0.39
+      },
+      {
+        "date": "2026-11-10",
+        "nominal_10y": 4.98,
+        "real_10y": 2.78,
+        "breakeven_10y": 2.2,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-11-11",
+        "nominal_10y": 4.98,
+        "real_10y": 2.78,
+        "breakeven_10y": 2.2,
+        "term_premium": 0.4
+      },
+      {
+        "date": "2026-11-12",
+        "nominal_10y": 5.1,
+        "real_10y": 2.86,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.41
+      },
+      {
+        "date": "2026-11-13",
+        "nominal_10y": 5.15,
+        "real_10y": 2.91,
+        "breakeven_10y": 2.24,
+        "term_premium": 0.42
+      },
+      {
+        "date": "2026-11-16",
+        "nominal_10y": 5.12,
+        "real_10y": 2.92,
+        "breakeven_10y": 2.2,
+        "term_premium": 0.41
+      },
+      {
+        "date": "2026-11-17",
+        "nominal_10y": 5.1,
+        "real_10y": 2.89,
+        "breakeven_10y": 2.21,
+        "term_premium": 0.41
+      },
+      {
+        "date": "2026-11-18",
+        "nominal_10y": 5.07,
+        "real_10y": 2.88,
+        "breakeven_10y": 2.19,
+        "term_premium": 0.41
+      },
+      {
+        "date": "2026-11-19",
+        "nominal_10y": 5.04,
+        "real_10y": 2.88,
+        "breakeven_10y": 2.16,
+        "term_premium": 0.4
+      }
+    ],
+    "heatmap": [
+      {
+        "date": "2026-08-28",
+        "yields": {
+          "3M": 3.65,
+          "2Y": 4.34,
+          "5Y": 4.48,
+          "10Y": 4.73,
+          "30Y": 5.22
+        }
+      },
+      {
+        "date": "2026-08-31",
+        "yields": {
+          "3M": 3.68,
+          "2Y": 4.34,
+          "5Y": 4.49,
+          "10Y": 4.75,
+          "30Y": 5.25
+        }
+      },
+      {
+        "date": "2026-09-01",
+        "yields": {
+          "3M": 3.66,
+          "2Y": 4.39,
+          "5Y": 4.55,
+          "10Y": 4.79,
+          "30Y": 5.27
+        }
+      },
+      {
+        "date": "2026-09-02",
+        "yields": {
+          "3M": 3.65,
+          "2Y": 4.39,
+          "5Y": 4.54,
+          "10Y": 4.79,
+          "30Y": 5.27
+        }
+      },
+      {
+        "date": "2026-09-03",
+        "yields": {
+          "3M": 3.66,
+          "2Y": 4.34,
+          "5Y": 4.52,
+          "10Y": 4.77,
+          "30Y": 5.25
+        }
+      },
+      {
+        "date": "2026-09-04",
+        "yields": {
+          "3M": 3.65,
+          "2Y": 4.37,
+          "5Y": 4.54,
+          "10Y": 4.78,
+          "30Y": 5.24
+        }
+      },
+      {
+        "date": "2026-09-07",
+        "yields": {
+          "3M": 3.65,
+          "2Y": 4.37,
+          "5Y": 4.54,
+          "10Y": 4.78,
+          "30Y": 5.24
+        }
+      },
+      {
+        "date": "2026-09-08",
+        "yields": {
+          "3M": 3.64,
+          "2Y": 4.39,
+          "5Y": 4.57,
+          "10Y": 4.8,
+          "30Y": 5.25
+        }
+      },
+      {
+        "date": "2026-09-09",
+        "yields": {
+          "3M": 3.64,
+          "2Y": 4.43,
+          "5Y": 4.61,
+          "10Y": 4.83,
+          "30Y": 5.28
+        }
+      },
+      {
+        "date": "2026-09-10",
+        "yields": {
+          "3M": 3.62,
+          "2Y": 4.56,
+          "5Y": 4.75,
+          "10Y": 4.95,
+          "30Y": 5.37
+        }
+      },
+      {
+        "date": "2026-09-11",
+        "yields": {
+          "3M": 3.62,
+          "2Y": 4.63,
+          "5Y": 4.78,
+          "10Y": 4.96,
+          "30Y": 5.35
+        }
+      },
+      {
+        "date": "2026-09-14",
+        "yields": {
+          "3M": 3.62,
+          "2Y": 4.65,
+          "5Y": 4.8,
+          "10Y": 4.97,
+          "30Y": 5.34
+        }
+      },
+      {
+        "date": "2026-09-15",
+        "yields": {
+          "3M": 3.64,
+          "2Y": 4.67,
+          "5Y": 4.83,
+          "10Y": 5.0,
+          "30Y": 5.36
+        }
+      },
+      {
+        "date": "2026-09-16",
+        "yields": {
+          "3M": 3.62,
+          "2Y": 4.74,
+          "5Y": 4.86,
+          "10Y": 5.01,
+          "30Y": 5.35
+        }
+      },
+      {
+        "date": "2026-09-17",
+        "yields": {
+          "3M": 3.85,
+          "2Y": 4.67,
+          "5Y": 4.78,
+          "10Y": 4.94,
+          "30Y": 5.29
+        }
+      },
+      {
+        "date": "2026-09-18",
+        "yields": {
+          "3M": 3.85,
+          "2Y": 4.76,
+          "5Y": 4.86,
+          "10Y": 5.01,
+          "30Y": 5.34
+        }
+      },
+      {
+        "date": "2026-09-21",
+        "yields": {
+          "3M": 3.85,
+          "2Y": 4.76,
+          "5Y": 4.83,
+          "10Y": 4.96,
+          "30Y": 5.29
+        }
+      },
+      {
+        "date": "2026-09-22",
+        "yields": {
+          "3M": 3.87,
+          "2Y": 4.71,
+          "5Y": 4.83,
+          "10Y": 4.96,
+          "30Y": 5.29
+        }
+      },
+      {
+        "date": "2026-09-23",
+        "yields": {
+          "3M": 3.87,
+          "2Y": 4.85,
+          "5Y": 4.99,
+          "10Y": 5.11,
+          "30Y": 5.4
+        }
+      },
+      {
+        "date": "2026-09-24",
+        "yields": {
+          "3M": 3.88,
+          "2Y": 4.87,
+          "5Y": 5.03,
+          "10Y": 5.18,
+          "30Y": 5.47
+        }
+      },
+      {
+        "date": "2026-09-25",
+        "yields": {
+          "3M": 3.9,
+          "2Y": 4.81,
+          "5Y": 4.98,
+          "10Y": 5.17,
+          "30Y": 5.49
+        }
+      },
+      {
+        "date": "2026-09-28",
+        "yields": {
+          "3M": 3.9,
+          "2Y": 4.92,
+          "5Y": 5.06,
+          "10Y": 5.24,
+          "30Y": 5.56
+        }
+      },
+      {
+        "date": "2026-09-29",
+        "yields": {
+          "3M": 3.88,
+          "2Y": 4.89,
+          "5Y": 5.06,
+          "10Y": 5.26,
+          "30Y": 5.59
+        }
+      },
+      {
+        "date": "2026-09-30",
+        "yields": {
+          "3M": 3.9,
+          "2Y": 4.88,
+          "5Y": 5.09,
+          "10Y": 5.29,
+          "30Y": 5.64
+        }
+      },
+      {
+        "date": "2026-10-01",
+        "yields": {
+          "3M": 3.87,
+          "2Y": 4.78,
+          "5Y": 5.01,
+          "10Y": 5.24,
+          "30Y": 5.61
+        }
+      },
+      {
+        "date": "2026-10-02",
+        "yields": {
+          "3M": 3.88,
+          "2Y": 4.83,
+          "5Y": 5.06,
+          "10Y": 5.28,
+          "30Y": 5.63
+        }
+      },
+      {
+        "date": "2026-10-05",
+        "yields": {
+          "3M": 3.89,
+          "2Y": 4.84,
+          "5Y": 5.06,
+          "10Y": 5.31,
+          "30Y": 5.66
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "yields": {
+          "3M": 3.9,
+          "2Y": 4.79,
+          "5Y": 5.03,
+          "10Y": 5.27,
+          "30Y": 5.64
+        }
+      },
+      {
+        "date": "2026-10-07",
+        "yields": {
+          "3M": 3.88,
+          "2Y": 4.77,
+          "5Y": 5.03,
+          "10Y": 5.28,
+          "30Y": 5.67
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "yields": {
+          "3M": 3.87,
+          "2Y": 4.75,
+          "5Y": 4.99,
+          "10Y": 5.22,
+          "30Y": 5.6
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "yields": {
+          "3M": 3.87,
+          "2Y": 4.8,
+          "5Y": 5.02,
+          "10Y": 5.24,
+          "30Y": 5.6
+        }
+      },
+      {
+        "date": "2026-10-12",
+        "yields": {
+          "3M": 3.87,
+          "2Y": 4.8,
+          "5Y": 5.02,
+          "10Y": 5.24,
+          "30Y": 5.6
+        }
+      },
+      {
+        "date": "2026-10-13",
+        "yields": {
+          "3M": 3.89,
+          "2Y": 4.79,
+          "5Y": 5.0,
+          "10Y": 5.21,
+          "30Y": 5.56
+        }
+      },
+      {
+        "date": "2026-10-14",
+        "yields": {
+          "3M": 3.88,
+          "2Y": 4.82,
+          "5Y": 5.0,
+          "10Y": 5.19,
+          "30Y": 5.52
+        }
+      },
+      {
+        "date": "2026-10-15",
+        "yields": {
+          "3M": 3.89,
+          "2Y": 4.77,
+          "5Y": 4.91,
+          "10Y": 5.1,
+          "30Y": 5.43
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "yields": {
+          "3M": 3.88,
+          "2Y": 4.74,
+          "5Y": 4.89,
+          "10Y": 5.09,
+          "30Y": 5.43
+        }
+      },
+      {
+        "date": "2026-10-19",
+        "yields": {
+          "3M": 3.87,
+          "2Y": 4.77,
+          "5Y": 4.94,
+          "10Y": 5.15,
+          "30Y": 5.48
+        }
+      },
+      {
+        "date": "2026-10-20",
+        "yields": {
+          "3M": 3.88,
+          "2Y": 4.79,
+          "5Y": 4.94,
+          "10Y": 5.12,
+          "30Y": 5.42
+        }
+      },
+      {
+        "date": "2026-10-21",
+        "yields": {
+          "3M": 3.88,
+          "2Y": 4.81,
+          "5Y": 4.95,
+          "10Y": 5.13,
+          "30Y": 5.42
+        }
+      },
+      {
+        "date": "2026-10-22",
+        "yields": {
+          "3M": 3.9,
+          "2Y": 4.65,
+          "5Y": 4.78,
+          "10Y": 4.96,
+          "30Y": 5.29
+        }
+      },
+      {
+        "date": "2026-10-23",
+        "yields": {
+          "3M": 3.92,
+          "2Y": 4.69,
+          "5Y": 4.82,
+          "10Y": 5.0,
+          "30Y": 5.33
+        }
+      },
+      {
+        "date": "2026-10-26",
+        "yields": {
+          "3M": 3.93,
+          "2Y": 4.68,
+          "5Y": 4.84,
+          "10Y": 5.0,
+          "30Y": 5.31
+        }
+      },
+      {
+        "date": "2026-10-27",
+        "yields": {
+          "3M": 3.95,
+          "2Y": 4.7,
+          "5Y": 4.82,
+          "10Y": 4.99,
+          "30Y": 5.3
+        }
+      },
+      {
+        "date": "2026-10-28",
+        "yields": {
+          "3M": 3.94,
+          "2Y": 4.67,
+          "5Y": 4.85,
+          "10Y": 5.05,
+          "30Y": 5.37
+        }
+      },
+      {
+        "date": "2026-10-29",
+        "yields": {
+          "3M": 3.94,
+          "2Y": 4.61,
+          "5Y": 4.78,
+          "10Y": 4.98,
+          "30Y": 5.32
+        }
+      },
+      {
+        "date": "2026-10-30",
+        "yields": {
+          "3M": 3.95,
+          "2Y": 4.56,
+          "5Y": 4.71,
+          "10Y": 4.94,
+          "30Y": 5.31
+        }
+      },
+      {
+        "date": "2026-11-02",
+        "yields": {
+          "3M": 3.95,
+          "2Y": 4.59,
+          "5Y": 4.7,
+          "10Y": 4.91,
+          "30Y": 5.28
+        }
+      },
+      {
+        "date": "2026-11-03",
+        "yields": {
+          "3M": 3.97,
+          "2Y": 4.61,
+          "5Y": 4.74,
+          "10Y": 4.95,
+          "30Y": 5.32
+        }
+      },
+      {
+        "date": "2026-11-04",
+        "yields": {
+          "3M": 3.94,
+          "2Y": 4.58,
+          "5Y": 4.69,
+          "10Y": 4.9,
+          "30Y": 5.28
+        }
+      },
+      {
+        "date": "2026-11-05",
+        "yields": {
+          "3M": 3.92,
+          "2Y": 4.46,
+          "5Y": 4.59,
+          "10Y": 4.84,
+          "30Y": 5.25
+        }
+      },
+      {
+        "date": "2026-11-06",
+        "yields": {
+          "3M": 3.89,
+          "2Y": 4.51,
+          "5Y": 4.64,
+          "10Y": 4.86,
+          "30Y": 5.26
+        }
+      },
+      {
+        "date": "2026-11-09",
+        "yields": {
+          "3M": 3.88,
+          "2Y": 4.56,
+          "5Y": 4.67,
+          "10Y": 4.88,
+          "30Y": 5.26
+        }
+      },
+      {
+        "date": "2026-11-10",
+        "yields": {
+          "3M": 3.89,
+          "2Y": 4.73,
+          "5Y": 4.81,
+          "10Y": 4.98,
+          "30Y": 5.35
+        }
+      },
+      {
+        "date": "2026-11-11",
+        "yields": {
+          "3M": 3.89,
+          "2Y": 4.73,
+          "5Y": 4.81,
+          "10Y": 4.98,
+          "30Y": 5.35
+        }
+      },
+      {
+        "date": "2026-11-12",
+        "yields": {
+          "3M": 3.9,
+          "2Y": 4.86,
+          "5Y": 4.95,
+          "10Y": 5.1,
+          "30Y": 5.43
+        }
+      },
+      {
+        "date": "2026-11-13",
+        "yields": {
+          "3M": 3.9,
+          "2Y": 4.88,
+          "5Y": 4.98,
+          "10Y": 5.15,
+          "30Y": 5.47
+        }
+      },
+      {
+        "date": "2026-11-16",
+        "yields": {
+          "3M": 3.93,
+          "2Y": 4.83,
+          "5Y": 4.93,
+          "10Y": 5.12,
+          "30Y": 5.46
+        }
+      },
+      {
+        "date": "2026-11-17",
+        "yields": {
+          "3M": 3.92,
+          "2Y": 4.8,
+          "5Y": 4.9,
+          "10Y": 5.1,
+          "30Y": 5.46
+        }
+      },
+      {
+        "date": "2026-11-18",
+        "yields": {
+          "3M": 3.9,
+          "2Y": 4.8,
+          "5Y": 4.89,
+          "10Y": 5.07,
+          "30Y": 5.41
+        }
+      },
+      {
+        "date": "2026-11-19",
+        "yields": {
+          "3M": 3.91,
+          "2Y": 4.76,
+          "5Y": 4.86,
+          "10Y": 5.04,
+          "30Y": 5.4
+        }
+      }
+    ],
+    "maturities": [
+      "3M",
+      "2Y",
+      "5Y",
+      "10Y",
+      "30Y"
+    ],
+    "interpretation": "US Treasury yield curve exhibits a level of 5.32% (83th pct) and slope of -1.53%. Curve displays normal positive term spread. Nelson-Siegel fit RMSE across 11 tenors is 0.120%."
+  }
+}

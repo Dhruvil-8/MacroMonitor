@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://marketradar.io/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://marketradar.io/radar/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://marketradar.io/cross-asset/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://marketradar.io/liquidity/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://marketradar.io/india/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://marketradar.io/briefing/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://marketradar.io/methodology/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://marketradar.io/context/spx/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/ndx/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/rut/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/dji/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/nifty50/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/niftybank/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/niftyit/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/indiavix/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/vix/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/us10y/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/eurusd/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/usdjpy/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/brent/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/gold/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/fed_assets/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/tga/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://marketradar.io/context/rrp/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+</urlset>

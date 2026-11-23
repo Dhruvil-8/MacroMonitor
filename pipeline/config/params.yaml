@@ -1,0 +1,70 @@
+# pipeline/config/params.yaml
+# Single source of truth for all quantitative hyperparameters and thresholds
+# Section 0.4: Never invent data, silently fill gaps, or hard-code thresholds.
+
+data_cleaning:
+  max_ffill_days: 3
+  jump_sigma: 8.0
+  max_stale_pct: 0.20
+  stale_after_hours: 36
+  min_obs: 750
+
+volatility:
+  windows: [10, 20, 60]
+  annualization_factor: 252.0  # sqrt(252)
+
+drawdown:
+  window: 252
+
+market_state_map:
+  trend_window: 60
+  trend_threshold: 2.0  # t-statistic threshold
+  vol_percentile_threshold: 50.0
+  momentum_window: 20
+  momentum_lag: 20
+  hysteresis_days: 3
+
+correlation:
+  short_window: 60
+  long_window: 250
+
+divergence:
+  momentum_window: 20
+  percentile_threshold: 95.0
+  consecutive_days: 3
+
+rotation:
+  benchmark_window: 60
+  momentum_window: 10
+  tail_days: 10
+
+liquidity:
+  change_windows: [20, 65]  # ~4-week and ~13-week business days
+  stablecoin_window: 30
+
+insights:
+  cooldown_days: 10
+  daily_cap: 8
+  max_alerts_per_asset_per_month: 3
+  unusual_return_sigma: 3.0
+  severity_bands:
+    low: [90.0, 95.0]
+    medium: [95.0, 99.0]
+    high: [99.0, 100.0]
+
+yield_curve:
+  lambda_diebold_li: 0.0609  # Nelson-Siegel decay parameter for monthly maturities (Diebold & Li 2006)
+  min_obs: 60
+  maturities_months: [1, 3, 6, 12, 24, 36, 60, 84, 120, 240, 360]
+  spreads:
+    - { name: "10Y - 2Y", long: "10Y", short: "2Y" }
+    - { name: "10Y - 3M", long: "10Y", short: "3M" }
+    - { name: "30Y - 5Y", long: "30Y", short: "5Y" }
+
+positioning:
+  min_expanding_weeks: 52
+  lookback_weeks: 156  # 3-year lookback
+  tail_weeks: 156
+  extreme_percentiles: [5.0, 95.0]
+  hysteresis_consecutive_weeks: 2
+

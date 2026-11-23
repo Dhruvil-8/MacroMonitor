@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "f1687f268479",
+  "target_name": "S&P 500",
+  "evt": {
+    "shape_xi": 0.347,
+    "scale_beta": 0.634,
+    "threshold_u": 1.855,
+    "tail_fatness": "Heavy-Tailed (Fréchet)",
+    "var_99_pct": 4.28,
+    "es_99_pct": 6.53,
+    "var_995_pct": 5.43,
+    "es_995_pct": 8.3,
+    "gaussian_var_99": 3.08,
+    "gaussian_var_995": 3.41,
+    "empirical_var_99": 2.74,
+    "empirical_var_995": 3.58,
+    "excess_ratio_over_gaussian": 1.39,
+    "mean_excess_curve": [
+      {
+        "threshold": 0.63,
+        "quantile": 80.0,
+        "mean_excess": 0.885,
+        "count": 151
+      },
+      {
+        "threshold": 0.71,
+        "quantile": 82.0,
+        "mean_excess": 0.897,
+        "count": 136
+      },
+      {
+        "threshold": 0.8,
+        "quantile": 84.0,
+        "mean_excess": 0.916,
+        "count": 121
+      },
+      {
+        "threshold": 0.92,
+        "quantile": 86.0,
+        "mean_excess": 0.911,
+        "count": 106
+      },
+      {
+        "threshold": 1.08,
+        "quantile": 88.0,
+        "mean_excess": 0.9,
+        "count": 91
+      },
+      {
+        "threshold": 1.21,
+        "quantile": 90.0,
+        "mean_excess": 0.929,
+        "count": 76
+      },
+      {
+        "threshold": 1.42,
+        "quantile": 92.0,
+        "mean_excess": 0.932,
+        "count": 61
+      },
+      {
+        "threshold": 1.72,
+        "quantile": 94.0,
+        "mean_excess": 0.888,
+        "count": 46
+      },
+      {
+        "threshold": 1.98,
+        "quantile": 96.0,
+        "mean_excess": 0.991,
+        "count": 31
+      },
+      {
+        "threshold": 2.67,
+        "quantile": 98.0,
+        "mean_excess": 1.075,
+        "count": 16
+      }
+    ]
+  }
+}

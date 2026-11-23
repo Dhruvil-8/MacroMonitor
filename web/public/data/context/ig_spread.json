@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "ig_spread",
+    "name": "US Investment Grade Option-Adjusted Spread",
+    "group": "credit",
+    "region": "US",
+    "unit": "bps",
+    "current_value": 0.94,
+    "percentile": 78.3,
+    "z_score": -0.05,
+    "n": 783,
+    "n_eff": 783.0,
+    "histogram_bins": [
+      -9720.16,
+      -8918.48,
+      -8116.8,
+      -7315.12,
+      -6513.44,
+      -5711.76,
+      -4910.08,
+      -4108.4,
+      -3306.72,
+      -2505.04,
+      -1703.36,
+      -901.68,
+      -100.0,
+      701.68,
+      1503.36,
+      2305.04,
+      3106.72,
+      3908.4,
+      4710.08,
+      5511.76,
+      6313.44,
+      7115.12,
+      7916.8,
+      8718.48,
+      9520.16
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      780,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-03-16",
+        "value": 0.94,
+        "distance": 0.0
+      },
+      {
+        "date": "2025-03-28",
+        "value": 0.94,
+        "distance": 0.0
+      },
+      {
+        "date": "2024-03-14",
+        "value": 0.94,
+        "distance": 0.0
+      },
+      {
+        "date": "2024-02-21",
+        "value": 0.94,
+        "distance": 0.0
+      },
+      {
+        "date": "2025-05-13",
+        "value": 0.94,
+        "distance": 0.0
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for US Investment Grade Option-Adjusted Spread.",
+    "source_note": "Attribution: FRED"
+  }
+}

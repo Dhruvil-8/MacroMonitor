@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "niftyauto",
+    "name": "Nifty Auto Index",
+    "group": "india_sector",
+    "region": "IN",
+    "unit": "index",
+    "current_value": 28787.65,
+    "percentile": 97.1,
+    "z_score": 1.39,
+    "n": 754,
+    "n_eff": 754.0,
+    "histogram_bins": [
+      -5.4158,
+      -4.9642,
+      -4.5126,
+      -4.0611,
+      -3.6095,
+      -3.158,
+      -2.7064,
+      -2.2549,
+      -1.8033,
+      -1.3517,
+      -0.9002,
+      -0.4486,
+      0.0029,
+      0.4545,
+      0.906,
+      1.3576,
+      1.8092,
+      2.2607,
+      2.7123,
+      3.1638,
+      3.6154,
+      4.0669,
+      4.5185,
+      4.9701,
+      5.4216
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      751,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-07-31",
+        "value": 28744.15,
+        "distance": 43.5
+      },
+      {
+        "date": "2026-08-31",
+        "value": 28841.5,
+        "distance": 53.8496
+      },
+      {
+        "date": "2026-02-26",
+        "value": 28693.4,
+        "distance": 94.25
+      },
+      {
+        "date": "2026-01-07",
+        "value": 28692.4,
+        "distance": 95.25
+      },
+      {
+        "date": "2025-12-01",
+        "value": 27993.0,
+        "distance": 794.6504
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Nifty Auto Index.",
+    "source_note": "Attribution: NSE"
+  }
+}

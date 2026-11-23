@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "xlk",
+    "name": "Technology Select Sector SPDR",
+    "group": "us_sector",
+    "region": "US",
+    "unit": "index",
+    "current_value": 149.01,
+    "percentile": 78.5,
+    "z_score": 0.59,
+    "n": 754,
+    "n_eff": 754.0,
+    "histogram_bins": [
+      -0.3464,
+      -0.3176,
+      -0.2888,
+      -0.26,
+      -0.2312,
+      -0.2024,
+      -0.1736,
+      -0.1447,
+      -0.1159,
+      -0.0871,
+      -0.0583,
+      -0.0295,
+      -0.0007,
+      0.0281,
+      0.0569,
+      0.0858,
+      0.1146,
+      0.1434,
+      0.1722,
+      0.201,
+      0.2298,
+      0.2586,
+      0.2874,
+      0.3163,
+      0.3451
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      7,
+      100,
+      517,
+      121,
+      3,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2025-10-27",
+        "value": 148.74,
+        "distance": 0.2729
+      },
+      {
+        "date": "2026-01-28",
+        "value": 148.69,
+        "distance": 0.3163
+      },
+      {
+        "date": "2026-04-15",
+        "value": 149.95,
+        "distance": 0.936
+      },
+      {
+        "date": "2025-12-10",
+        "value": 147.97,
+        "distance": 1.039
+      },
+      {
+        "date": "2026-01-06",
+        "value": 146.12,
+        "distance": 2.8871
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Technology Select Sector SPDR.",
+    "source_note": "Attribution: YAHOO"
+  }
+}

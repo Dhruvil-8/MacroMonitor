@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "target": "India (Nifty 50)",
+    "target_id": "nifty50",
+    "horizon_days": 5,
+    "lens": "usd",
+    "total_return": 0.0059,
+    "contributions": {
+      "brent": 0.0003,
+      "copper": 0.0008,
+      "gold": -0.0009,
+      "dxy": 0.0,
+      "us10y": 0.0033,
+      "row_equity": -0.0008,
+      "fx_effect": -0.0025
+    },
+    "intervals": {
+      "brent": [
+        0.0003,
+        0.0004
+      ],
+      "copper": [
+        0.0007,
+        0.001
+      ],
+      "gold": [
+        -0.001,
+        -0.0008
+      ],
+      "dxy": [
+        0.0,
+        0.0
+      ],
+      "us10y": [
+        -0.0058,
+        0.0125
+      ],
+      "row_equity": [
+        -0.0008,
+        -0.0007
+      ],
+      "fx_effect": [
+        -0.0025,
+        -0.0025
+      ]
+    },
+    "residual": 0.0057,
+    "betas": {
+      "brent": -0.0079,
+      "copper": -0.0086,
+      "gold": 0.0173,
+      "dxy": 0.0028,
+      "us10y": -0.0006,
+      "row_equity": 0.0205
+    },
+    "r2_in_sample": 0.9994,
+    "r2_out_sample": 0.9994,
+    "mostly_unexplained": false,
+    "regularized": true,
+    "n_obs": 250,
+    "window_dates": {
+      "prior_start": "2025-11-28",
+      "prior_end": "2026-11-12",
+      "horizon_start": "2026-11-13",
+      "horizon_end": "2026-11-19"
+    },
+    "narrative": "Over 5 days, India (Nifty 50)'s USD return of +0.6% was associated with: us10y +0.3%, fx effect -0.2%, gold -0.1%, copper +0.1%, row equity -0.1%, brent +0.0%, dxy +0.0%, unexplained +0.6% (out-of-sample R-squared 1.00).",
+    "history": []
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "observations": [
+      {
+        "id": "vol_shift_v1:dji:2026-11-20",
+        "type": "vol_shift",
+        "asset": "dji",
+        "severity": "low",
+        "headline": "Dow Jones Industrial Average realized volatility moved above historical baseline",
+        "body": "20-day realized volatility reached 22.9%, corresponding to the 94th percentile of historical observations.",
+        "metrics": {
+          "vol20": 0.2289,
+          "percentile": 93.7,
+          "n": 734,
+          "n_eff": 11.1
+        },
+        "window": "20D",
+        "inputs": [
+          "dji"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_shift_v1:eem:2026-11-20",
+        "type": "vol_shift",
+        "asset": "eem",
+        "severity": "low",
+        "headline": "MSCI Emerging Markets Index ETF realized volatility moved above historical baseline",
+        "body": "20-day realized volatility reached 37.4%, corresponding to the 92th percentile of historical observations.",
+        "metrics": {
+          "vol20": 0.3735,
+          "percentile": 92.2,
+          "n": 734,
+          "n_eff": 11.3
+        },
+        "window": "20D",
+        "inputs": [
+          "eem"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_shift_v1:ndx:2026-11-20",
+        "type": "vol_shift",
+        "asset": "ndx",
+        "severity": "low",
+        "headline": "Nasdaq 100 Index realized volatility moved above historical baseline",
+        "body": "20-day realized volatility reached 35.2%, corresponding to the 94th percentile of historical observations.",
+        "metrics": {
+          "vol20": 0.352,
+          "percentile": 93.7,
+          "n": 734,
+          "n_eff": 11.1
+        },
+        "window": "20D",
+        "inputs": [
+          "ndx"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_shift_v1:rsp:2026-11-20",
+        "type": "vol_shift",
+        "asset": "rsp",
+        "severity": "low",
+        "headline": "S&P 500 Equal Weight realized volatility moved above historical baseline",
+        "body": "20-day realized volatility reached 20.2%, corresponding to the 94th percentile of historical observations.",
+        "metrics": {
+          "vol20": 0.2024,
+          "percentile": 93.5,
+          "n": 734,
+          "n_eff": 11.1
+        },
+        "window": "20D",
+        "inputs": [
+          "rsp"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_shift_v1:rut:2026-11-20",
+        "type": "vol_shift",
+        "asset": "rut",
+        "severity": "low",
+        "headline": "Russell 2000 Index realized volatility moved above historical baseline",
+        "body": "20-day realized volatility reached 27.9%, corresponding to the 91th percentile of historical observations.",
+        "metrics": {
+          "vol20": 0.2792,
+          "percentile": 90.9,
+          "n": 734,
+          "n_eff": 11.1
+        },
+        "window": "20D",
+        "inputs": [
+          "rut"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_shift_v1:spx:2026-11-20",
+        "type": "vol_shift",
+        "asset": "spx",
+        "severity": "low",
+        "headline": "S&P 500 Index realized volatility moved above historical baseline",
+        "body": "20-day realized volatility reached 26.5%, corresponding to the 94th percentile of historical observations.",
+        "metrics": {
+          "vol20": 0.2653,
+          "percentile": 93.7,
+          "n": 734,
+          "n_eff": 11.1
+        },
+        "window": "20D",
+        "inputs": [
+          "spx"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_shift_v1:vix:2026-11-20",
+        "type": "vol_shift",
+        "asset": "vix",
+        "severity": "low",
+        "headline": "Cboe Volatility Index realized volatility moved above historical baseline",
+        "body": "20-day realized volatility reached 614286.2%, corresponding to the 94th percentile of historical observations.",
+        "metrics": {
+          "vol20": 6142.8623,
+          "percentile": 93.7,
+          "n": 734,
+          "n_eff": 11.0
+        },
+        "window": "20D",
+        "inputs": [
+          "vix"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_shift_v1:xlb:2026-11-20",
+        "type": "vol_shift",
+        "asset": "xlb",
+        "severity": "low",
+        "headline": "Materials Select Sector SPDR realized volatility moved above historical baseline",
+        "body": "20-day realized volatility reached 23.6%, corresponding to the 94th percentile of historical observations.",
+        "metrics": {
+          "vol20": 0.2361,
+          "percentile": 93.6,
+          "n": 734,
+          "n_eff": 11.0
+        },
+        "window": "20D",
+        "inputs": [
+          "xlb"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      }
+    ]
+  }
+}

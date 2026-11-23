@@ -1,0 +1,41 @@
+name: Weekly Deep Pipeline (Heavy Analytics)
+
+on:
+  schedule:
+    # 02:00 UTC every Sunday = ~7:30 AM IST Sunday
+    - cron: '0 2 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  weekly-deep-refresh:
+    name: Weekly Deep Ingestion (CFTC, EIA & Connectedness)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e pipeline/
+
+      - name: Execute Weekly Deep Pipeline
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: |
+          PYTHONPATH=pipeline/src python -m radar.cli all --cadence weekly
+
+      - name: Auto-Commit & Push Weekly Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add web/public/data/v1/ data/processed/
+          git diff --staged --quiet || (git commit -m "chore(data): weekly macro deep analytics update" && git push)

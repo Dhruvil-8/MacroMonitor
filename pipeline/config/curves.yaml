@@ -1,0 +1,98 @@
+# pipeline/config/curves.yaml
+# Specification P4: Sovereign Yield Curves Configuration
+# Governed by docs/PUSH_PACK_PLAN.md Section 8 & Section 11
+
+curves:
+  - id: us_treasury_par
+    name: "U.S. Treasury Par Yield Curve"
+    country: "US"
+    currency: "USD"
+    quality_grade: "A"
+    provider: "U.S. Department of the Treasury / FRED"
+    source_url: "https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics"
+    maturities_months: [1, 3, 6, 12, 24, 36, 60, 84, 120, 240, 360]
+    maturity_labels: ["1M", "3M", "6M", "1Y", "2Y", "3Y", "5Y", "7Y", "10Y", "20Y", "30Y"]
+    lambda_diebold_li: 0.0609
+    spreads:
+      - name: "10Y - 2Y"
+        long_maturity: 120
+        short_maturity: 24
+        benchmark: true
+      - name: "10Y - 3M"
+        long_maturity: 120
+        short_maturity: 3
+        benchmark: true
+      - name: "30Y - 5Y"
+        long_maturity: 360
+        short_maturity: 60
+        benchmark: false
+    anatomy:
+      nominal_10y_series: "us10y"
+      real_10y_series: "dfii10"
+      breakeven_10y_series: "t10yie"
+      term_premium_series: "acm10y"
+    notes: "Daily par yield curve from constant-maturity Treasury securities; includes 10-year TIPS real yield and breakeven inflation rate."
+
+  - id: ecb_spot
+    name: "Euro Area AAA Government Benchmark Curve"
+    country: "EU"
+    currency: "EUR"
+    quality_grade: "B+"
+    provider: "European Central Bank Data Portal"
+    source_url: "https://data.ecb.europa.eu/data/datasets/YC"
+    maturities_months: [3, 6, 12, 24, 36, 60, 84, 120, 240, 360]
+    maturity_labels: ["3M", "6M", "1Y", "2Y", "3Y", "5Y", "7Y", "10Y", "20Y", "30Y"]
+    lambda_diebold_li: 0.0609
+    spreads:
+      - name: "10Y - 2Y"
+        long_maturity: 120
+        short_maturity: 24
+        benchmark: true
+    notes: "ECB Svensson/Nelson-Siegel spot yield curve for AAA-rated central government bonds in the euro area."
+
+  - id: uk_gilt
+    name: "UK Gilt Nominal Yield Curve"
+    country: "GB"
+    currency: "GBP"
+    quality_grade: "B"
+    provider: "Bank of England"
+    source_url: "https://www.bankofengland.co.uk/statistics/yield-curves"
+    maturities_months: [6, 12, 24, 36, 60, 84, 120, 240, 360]
+    maturity_labels: ["6M", "1Y", "2Y", "3Y", "5Y", "7Y", "10Y", "20Y", "30Y"]
+    lambda_diebold_li: 0.0609
+    spreads:
+      - name: "10Y - 2Y"
+        long_maturity: 120
+        short_maturity: 24
+        benchmark: true
+    notes: "Bank of England nominal gilt curve estimated via spline/Nelson-Siegel representation."
+
+  - id: japan_jgb
+    name: "Japan Government Bond (JGB) Yield Curve"
+    country: "JP"
+    currency: "JPY"
+    quality_grade: "B"
+    provider: "Ministry of Finance Japan"
+    source_url: "https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/"
+    maturities_months: [12, 24, 36, 60, 84, 120, 240, 360, 480]
+    maturity_labels: ["1Y", "2Y", "3Y", "5Y", "7Y", "10Y", "20Y", "30Y", "40Y"]
+    lambda_diebold_li: 0.0609
+    spreads:
+      - name: "10Y - 2Y"
+        long_maturity: 120
+        short_maturity: 24
+        benchmark: true
+    notes: "Ministry of Finance official published interest rates on Japanese Government Bonds."
+
+  - id: india_10y
+    name: "India Sovereign Benchmark (10-Year)"
+    country: "IN"
+    currency: "INR"
+    quality_grade: "B-"
+    provider: "Reserve Bank of India / Clearing Corporation of India (CCIL)"
+    source_url: "https://www.ccilindia.com/"
+    maturities_months: [120]
+    maturity_labels: ["10Y"]
+    lambda_diebold_li: 0.0609
+    spreads: []
+    notes: "10-year Indian sovereign benchmark yield; full term structure deferred until reliable free high-frequency curve feed is standardized."

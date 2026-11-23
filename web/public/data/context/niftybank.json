@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "niftybank",
+    "name": "Nifty Bank Index",
+    "group": "india_equity",
+    "region": "IN",
+    "unit": "index",
+    "current_value": 64635.2,
+    "percentile": 100.0,
+    "z_score": 2.13,
+    "n": 755,
+    "n_eff": 755.0,
+    "histogram_bins": [
+      -6.1346,
+      -5.6238,
+      -5.113,
+      -4.6023,
+      -4.0915,
+      -3.5807,
+      -3.07,
+      -2.5592,
+      -2.0485,
+      -1.5377,
+      -1.0269,
+      -0.5162,
+      -0.0054,
+      0.5053,
+      1.0161,
+      1.5269,
+      2.0376,
+      2.5484,
+      3.0591,
+      3.5699,
+      4.0807,
+      4.5914,
+      5.1022,
+      5.613,
+      6.1237
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      752,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-02-18",
+        "value": 61550.8,
+        "distance": 3084.3984
+      },
+      {
+        "date": "2026-01-06",
+        "value": 60118.4,
+        "distance": 4516.8008
+      },
+      {
+        "date": "2026-01-29",
+        "value": 59957.85,
+        "distance": 4677.3477
+      },
+      {
+        "date": "2025-12-05",
+        "value": 59777.2,
+        "distance": 4858.0
+      },
+      {
+        "date": "2026-07-17",
+        "value": 58521.4,
+        "distance": 6113.8008
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Nifty Bank Index.",
+    "source_note": "Attribution: NSE"
+  }
+}

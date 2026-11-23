@@ -1,0 +1,39 @@
+/* Section 13.2 Design tokens */
+:root {
+  /* Surfaces (dark default) */
+  --bg-0: #07090d;       /* page */
+  --bg-1: #0c1017;       /* panel */
+  --bg-2: #121823;       /* raised / hover */
+  --line: #1d2633;       /* 1px borders */
+  --line-strong: #2a3647;
+
+  /* Text */
+  --tx-0: #e8edf5;       /* primary */
+  --tx-1: #a9b4c4;       /* secondary */
+  --tx-2: #6f7c90;       /* muted / axis labels */
+
+  /* Semantic data colors (colorblind-safe pairing) */
+  --pos: #3fb6a8;        /* above / up   (teal) */
+  --neg: #e8765a;        /* below / down (coral) */
+  --neutral: #8aa0ff;    /* non-directional (periwinkle) */
+  --warn: #e6b94d;       /* caution */
+  --accent: #6ea8ff;     /* links, focus, selection */
+
+  /* Diverging scale for percentiles and z-scores */
+  --div-1: #2f6fb4; --div-2: #5a96cf; --div-3: #a9c8e4; --div-4: #2a3340;
+  --div-5: #e9b9a1; --div-6: #de8a63; --div-7: #c2552e;
+
+  /* Chart series palette (8, distinguishable, tested for CVD) */
+  --c1:#6ea8ff; --c2:#3fb6a8; --c3:#e6b94d; --c4:#e8765a;
+  --c5:#b48cff; --c6:#7dd3fc; --c7:#f472b6; --c8:#a3e635;
+
+  --radius: 8px;
+  --gap: 16px;
+  --shadow-pop: 0 8px 30px rgba(0,0,0,.45);
+}
+
+[data-theme="light"] {
+  --bg-0:#f6f7f9; --bg-1:#ffffff; --bg-2:#eef1f5; --line:#e1e6ee; --line-strong:#cdd5e1;
+  --tx-0:#0e1420; --tx-1:#445064; --tx-2:#6d7a8f;
+  --pos:#12877a; --neg:#c24d33; --neutral:#4a5fd1; --warn:#b6860f; --accent:#1f6feb;
+}

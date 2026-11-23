@@ -1,0 +1,150 @@
+# pipeline/config/cot_contracts.yaml
+# Specification P2: CFTC Commitments of Traders (COT) Contracts Registry
+contracts:
+  # Equities (Financial Futures Report)
+  - id: sp500_emini
+    name: "E-mini S&P 500"
+    market: "CME"
+    cftc_contract_code: "13874A"
+    report_type: "financial_futures"
+    category: "leveraged_funds"
+    asset_class: "equities"
+    rationale: "Core speculative positioning gauge for US broad equities."
+
+  - id: nasdaq_100
+    name: "Nasdaq 100 Mini"
+    market: "CME"
+    cftc_contract_code: "209742"
+    report_type: "financial_futures"
+    category: "leveraged_funds"
+    asset_class: "equities"
+    rationale: "Speculative positioning on tech growth leadership."
+
+  # Currencies (Financial Futures Report)
+  - id: eur_usd
+    name: "Euro FX"
+    market: "CME"
+    cftc_contract_code: "099741"
+    report_type: "financial_futures"
+    category: "leveraged_funds"
+    asset_class: "currencies"
+    rationale: "Largest component of the US Dollar Index (DXY)."
+
+  - id: jpy_usd
+    name: "Japanese Yen"
+    market: "CME"
+    cftc_contract_code: "097741"
+    report_type: "financial_futures"
+    category: "leveraged_funds"
+    asset_class: "currencies"
+    rationale: "Global carry trade indicator and safe haven proxy."
+
+  - id: gbp_usd
+    name: "British Pound"
+    market: "CME"
+    cftc_contract_code: "096742"
+    report_type: "financial_futures"
+    category: "leveraged_funds"
+    asset_class: "currencies"
+    rationale: "Major European cross currency positioning."
+
+  - id: aud_usd
+    name: "Australian Dollar"
+    market: "CME"
+    cftc_contract_code: "232741"
+    report_type: "financial_futures"
+    category: "leveraged_funds"
+    asset_class: "currencies"
+    rationale: "High-beta commodity currency and China proxy."
+
+  - id: cad_usd
+    name: "Canadian Dollar"
+    market: "CME"
+    cftc_contract_code: "090741"
+    report_type: "financial_futures"
+    category: "leveraged_funds"
+    asset_class: "currencies"
+    rationale: "North American energy and trade cross."
+
+  - id: chf_usd
+    name: "Swiss Franc"
+    market: "CME"
+    cftc_contract_code: "092741"
+    report_type: "financial_futures"
+    category: "leveraged_funds"
+    asset_class: "currencies"
+    rationale: "European safe haven positioning."
+
+  # Rates & Fixed Income (Financial Futures Report)
+  - id: us_2y_note
+    name: "2-Year U.S. Treasury Note"
+    market: "CBOT"
+    cftc_contract_code: "042601"
+    report_type: "financial_futures"
+    category: "leveraged_funds"
+    asset_class: "rates"
+    rationale: "Fed policy rate expectation crowding."
+
+  - id: us_10y_note
+    name: "10-Year U.S. Treasury Note"
+    market: "CBOT"
+    cftc_contract_code: "043602"
+    report_type: "financial_futures"
+    category: "leveraged_funds"
+    asset_class: "rates"
+    rationale: "Global benchmark long-term interest rate positioning."
+
+  - id: us_30y_bond
+    name: "U.S. Treasury Bond (Ultra/30Y)"
+    market: "CBOT"
+    cftc_contract_code: "020601"
+    report_type: "financial_futures"
+    category: "leveraged_funds"
+    asset_class: "rates"
+    rationale: "Long-duration term premium and fiscal deficit proxy."
+
+  # Commodities (Disaggregated Report)
+  - id: wti_crude
+    name: "Crude Oil (WTI Light Sweet)"
+    market: "NYMEX"
+    cftc_contract_code: "067651"
+    report_type: "disaggregated"
+    category: "managed_money"
+    asset_class: "commodities"
+    rationale: "Global energy demand and geopolitical risk crowding."
+
+  - id: natural_gas
+    name: "Henry Hub Natural Gas"
+    market: "NYMEX"
+    cftc_contract_code: "023651"
+    report_type: "disaggregated"
+    category: "managed_money"
+    asset_class: "commodities"
+    rationale: "US energy storage and weather-driven positioning."
+
+  - id: gold
+    name: "Gold (100 Troy Oz)"
+    market: "COMEX"
+    cftc_contract_code: "088691"
+    report_type: "disaggregated"
+    category: "managed_money"
+    asset_class: "commodities"
+    rationale: "Monetary debasement, central bank demand, and real yield hedge."
+
+  - id: copper
+    name: "Copper (Grade A)"
+    market: "COMEX"
+    cftc_contract_code: "085692"
+    report_type: "disaggregated"
+    category: "managed_money"
+    asset_class: "commodities"
+    rationale: "Global industrial growth and electrification barometer (Dr. Copper)."
+
+  - id: silver
+    name: "Silver (5,000 Troy Oz)"
+    market: "COMEX"
+    cftc_contract_code: "084691"
+    report_type: "disaggregated"
+    category: "managed_money"
+    asset_class: "commodities"
+    rationale: "High-beta monetary and industrial dual precious metal."

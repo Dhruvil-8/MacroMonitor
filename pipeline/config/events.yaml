@@ -1,0 +1,124 @@
+# pipeline/config/events.yaml
+# Specification P6: Central Bank Decision Calendars
+events:
+  # Federal Reserve (FOMC) Decisions
+  - id: fomc_2024_09_18
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2024-09-18"
+    decision: "cut"
+    rate_before: 5.50
+    rate_after: 5.00
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC initiated policy easing with a 50 bps federal funds rate reduction."
+
+  - id: fomc_2024_11_07
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2024-11-07"
+    decision: "cut"
+    rate_before: 5.00
+    rate_after: 4.75
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC lowered federal funds target range by 25 bps to 4.50-4.75%."
+
+  - id: fomc_2024_12_18
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2024-12-18"
+    decision: "cut"
+    rate_before: 4.75
+    rate_after: 4.50
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC lowered policy rate by 25 bps to 4.25-4.50%."
+
+  - id: fomc_2024_07_31
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2024-07-31"
+    decision: "hold"
+    rate_before: 5.50
+    rate_after: 5.50
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC maintained target range at 5.25-5.50%."
+
+  - id: fomc_2023_07_26
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2023-07-26"
+    decision: "hike"
+    rate_before: 5.25
+    rate_after: 5.50
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "Final rate increase of the 2022-2023 tightening cycle (+25 bps)."
+
+  - id: fomc_2023_05_03
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2023-05-03"
+    decision: "hike"
+    rate_before: 5.00
+    rate_after: 5.25
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC raised federal funds rate by 25 bps amid banking sector stresses."
+
+  - id: fomc_2023_03_22
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2023-03-22"
+    decision: "hike"
+    rate_before: 4.75
+    rate_after: 5.00
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC raised rate by 25 bps following SVB resolution."
+
+  - id: fomc_2022_12_14
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2022-12-14"
+    decision: "hike"
+    rate_before: 4.00
+    rate_after: 4.50
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC slowed hike pace to 50 bps after four consecutive 75 bps increases."
+
+  # Reserve Bank of India (RBI MPC) Decisions
+  - id: rbi_2024_10_09
+    event_type: "rbi_mpc"
+    institution: "Reserve Bank of India"
+    date: "2024-10-09"
+    decision: "hold"
+    rate_before: 6.50
+    rate_after: 6.50
+    source_url: "https://www.rbi.org.in"
+    description: "RBI MPC shifted policy stance to Neutral while maintaining repo rate at 6.50%."
+
+  - id: rbi_2024_12_06
+    event_type: "rbi_mpc"
+    institution: "Reserve Bank of India"
+    date: "2024-12-06"
+    decision: "hold"
+    rate_before: 6.50
+    rate_after: 6.50
+    source_url: "https://www.rbi.org.in"
+    description: "RBI held repo rate at 6.50% and lowered CRR by 50 bps to ease liquidity."
+
+  - id: rbi_2023_02_08
+    event_type: "rbi_mpc"
+    institution: "Reserve Bank of India"
+    date: "2023-02-08"
+    decision: "hike"
+    rate_before: 6.25
+    rate_after: 6.50
+    source_url: "https://www.rbi.org.in"
+    description: "Final rate hike of RBI tightening cycle (+25 bps to 6.50%)."
+
+  - id: rbi_2022_12_07
+    event_type: "rbi_mpc"
+    institution: "Reserve Bank of India"
+    date: "2022-12-07"
+    decision: "hike"
+    rate_before: 5.90
+    rate_after: 6.25
+    source_url: "https://www.rbi.org.in"
+    description: "RBI increased repo rate by 35 bps to 6.25%."

@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "niftymetal",
+    "name": "Nifty Metal Index",
+    "group": "india_sector",
+    "region": "IN",
+    "unit": "index",
+    "current_value": 12271.1,
+    "percentile": 80.8,
+    "z_score": 1.19,
+    "n": 754,
+    "n_eff": 754.0,
+    "histogram_bins": [
+      -4.5267,
+      -4.149,
+      -3.7713,
+      -3.3936,
+      -3.0159,
+      -2.6382,
+      -2.2605,
+      -1.8828,
+      -1.505,
+      -1.1273,
+      -0.7496,
+      -0.3719,
+      0.0058,
+      0.3835,
+      0.7612,
+      1.1389,
+      1.5167,
+      1.8944,
+      2.2721,
+      2.6498,
+      3.0275,
+      3.4052,
+      3.7829,
+      4.1606,
+      4.5384
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      751,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-03-02",
+        "value": 12269.8,
+        "distance": 1.2998
+      },
+      {
+        "date": "2026-10-07",
+        "value": 12306.7,
+        "distance": 35.6006
+      },
+      {
+        "date": "2026-04-09",
+        "value": 12229.7,
+        "distance": 41.3994
+      },
+      {
+        "date": "2026-02-10",
+        "value": 12228.3,
+        "distance": 42.7998
+      },
+      {
+        "date": "2026-07-01",
+        "value": 12394.75,
+        "distance": 123.6504
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Nifty Metal Index.",
+    "source_note": "Attribution: NSE"
+  }
+}

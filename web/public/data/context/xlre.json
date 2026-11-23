@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "xlre",
+    "name": "Real Estate Select Sector SPDR",
+    "group": "us_sector",
+    "region": "US",
+    "unit": "index",
+    "current_value": 42.46,
+    "percentile": 80.5,
+    "z_score": 0.5,
+    "n": 754,
+    "n_eff": 752.9,
+    "histogram_bins": [
+      -0.9051,
+      -0.8301,
+      -0.7552,
+      -0.6802,
+      -0.6052,
+      -0.5303,
+      -0.4553,
+      -0.3804,
+      -0.3054,
+      -0.2305,
+      -0.1555,
+      -0.0805,
+      -0.0056,
+      0.0694,
+      0.1443,
+      0.2193,
+      0.2942,
+      0.3692,
+      0.4442,
+      0.5191,
+      0.5941,
+      0.669,
+      0.744,
+      0.8189,
+      0.8939
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      748,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-09-16",
+        "value": 42.45,
+        "distance": 0.0073
+      },
+      {
+        "date": "2026-02-13",
+        "value": 42.48,
+        "distance": 0.0167
+      },
+      {
+        "date": "2026-10-27",
+        "value": 42.44,
+        "distance": 0.02
+      },
+      {
+        "date": "2026-05-15",
+        "value": 42.5,
+        "distance": 0.0368
+      },
+      {
+        "date": "2026-03-05",
+        "value": 42.32,
+        "distance": 0.1395
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Real Estate Select Sector SPDR.",
+    "source_note": "Attribution: YAHOO"
+  }
+}

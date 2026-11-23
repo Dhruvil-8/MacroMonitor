@@ -1,0 +1,1745 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "as_of": "2026-11-20",
+    "inventories": [
+      {
+        "id": "crude_oil",
+        "name": "US Commercial Crude Oil Stocks (ex-SPR)",
+        "unit": "Million Barrels",
+        "as_of": "2026-11-20",
+        "current_level": 433.5,
+        "mean_5y": 425.0,
+        "min_5y": 391.0,
+        "max_5y": 459.0,
+        "deviation": 8.5,
+        "deviation_pct": 2.0,
+        "deviation_percentile": 58.0,
+        "build_draw_1w": -1.4,
+        "band_years_label": "2021-2025 Range",
+        "weeks": [
+          {
+            "week": 1,
+            "min_5y": 360.63,
+            "max_5y": 423.35,
+            "mean_5y": 391.99,
+            "current_year": 399.83,
+            "prev_year": 384.15
+          },
+          {
+            "week": 2,
+            "min_5y": 361.75,
+            "max_5y": 424.67,
+            "mean_5y": 393.21,
+            "current_year": 401.07,
+            "prev_year": 385.35
+          },
+          {
+            "week": 3,
+            "min_5y": 363.3,
+            "max_5y": 426.49,
+            "mean_5y": 394.89,
+            "current_year": 402.79,
+            "prev_year": 387.0
+          },
+          {
+            "week": 4,
+            "min_5y": 365.26,
+            "max_5y": 428.78,
+            "mean_5y": 397.02,
+            "current_year": 404.96,
+            "prev_year": 389.08
+          },
+          {
+            "week": 5,
+            "min_5y": 367.59,
+            "max_5y": 431.51,
+            "mean_5y": 399.55,
+            "current_year": 407.54,
+            "prev_year": 391.56
+          },
+          {
+            "week": 6,
+            "min_5y": 370.26,
+            "max_5y": 434.65,
+            "mean_5y": 402.45,
+            "current_year": 410.5,
+            "prev_year": 394.4
+          },
+          {
+            "week": 7,
+            "min_5y": 373.23,
+            "max_5y": 438.14,
+            "mean_5y": 405.69,
+            "current_year": 413.8,
+            "prev_year": 397.57
+          },
+          {
+            "week": 8,
+            "min_5y": 376.46,
+            "max_5y": 441.94,
+            "mean_5y": 409.2,
+            "current_year": 417.38,
+            "prev_year": 401.02
+          },
+          {
+            "week": 9,
+            "min_5y": 379.91,
+            "max_5y": 445.98,
+            "mean_5y": 412.94,
+            "current_year": 421.2,
+            "prev_year": 404.68
+          },
+          {
+            "week": 10,
+            "min_5y": 383.51,
+            "max_5y": 450.21,
+            "mean_5y": 416.86,
+            "current_year": 425.2,
+            "prev_year": 408.53
+          },
+          {
+            "week": 11,
+            "min_5y": 387.23,
+            "max_5y": 454.57,
+            "mean_5y": 420.9,
+            "current_year": 429.32,
+            "prev_year": 412.48
+          },
+          {
+            "week": 12,
+            "min_5y": 391.0,
+            "max_5y": 459.0,
+            "mean_5y": 425.0,
+            "current_year": 433.5,
+            "prev_year": 416.5
+          },
+          {
+            "week": 13,
+            "min_5y": 394.77,
+            "max_5y": 463.43,
+            "mean_5y": 429.1,
+            "current_year": 437.68,
+            "prev_year": 420.52
+          },
+          {
+            "week": 14,
+            "min_5y": 398.49,
+            "max_5y": 467.79,
+            "mean_5y": 433.14,
+            "current_year": 441.8,
+            "prev_year": 424.47
+          },
+          {
+            "week": 15,
+            "min_5y": 402.09,
+            "max_5y": 472.02,
+            "mean_5y": 437.06,
+            "current_year": 445.8,
+            "prev_year": 428.32
+          },
+          {
+            "week": 16,
+            "min_5y": 405.54,
+            "max_5y": 476.06,
+            "mean_5y": 440.8,
+            "current_year": 449.62,
+            "prev_year": 431.98
+          },
+          {
+            "week": 17,
+            "min_5y": 408.77,
+            "max_5y": 479.86,
+            "mean_5y": 444.31,
+            "current_year": 453.2,
+            "prev_year": 435.43
+          },
+          {
+            "week": 18,
+            "min_5y": 411.74,
+            "max_5y": 483.35,
+            "mean_5y": 447.55,
+            "current_year": 456.5,
+            "prev_year": 438.6
+          },
+          {
+            "week": 19,
+            "min_5y": 414.41,
+            "max_5y": 486.49,
+            "mean_5y": 450.45,
+            "current_year": 459.46,
+            "prev_year": 441.44
+          },
+          {
+            "week": 20,
+            "min_5y": 416.74,
+            "max_5y": 489.22,
+            "mean_5y": 452.98,
+            "current_year": 462.04,
+            "prev_year": 443.92
+          },
+          {
+            "week": 21,
+            "min_5y": 418.7,
+            "max_5y": 491.51,
+            "mean_5y": 455.11,
+            "current_year": 464.21,
+            "prev_year": 446.0
+          },
+          {
+            "week": 22,
+            "min_5y": 420.25,
+            "max_5y": 493.33,
+            "mean_5y": 456.79,
+            "current_year": 465.93,
+            "prev_year": 447.65
+          },
+          {
+            "week": 23,
+            "min_5y": 421.37,
+            "max_5y": 494.65,
+            "mean_5y": 458.01,
+            "current_year": 467.17,
+            "prev_year": 448.85
+          },
+          {
+            "week": 24,
+            "min_5y": 422.05,
+            "max_5y": 495.45,
+            "mean_5y": 458.75,
+            "current_year": 467.93,
+            "prev_year": 449.58
+          },
+          {
+            "week": 25,
+            "min_5y": 422.28,
+            "max_5y": 495.72,
+            "mean_5y": 459.0,
+            "current_year": 468.18,
+            "prev_year": 449.82
+          },
+          {
+            "week": 26,
+            "min_5y": 422.05,
+            "max_5y": 495.45,
+            "mean_5y": 458.75,
+            "current_year": 467.93,
+            "prev_year": 449.58
+          },
+          {
+            "week": 27,
+            "min_5y": 421.37,
+            "max_5y": 494.65,
+            "mean_5y": 458.01,
+            "current_year": 467.17,
+            "prev_year": 448.85
+          },
+          {
+            "week": 28,
+            "min_5y": 420.25,
+            "max_5y": 493.33,
+            "mean_5y": 456.79,
+            "current_year": 465.93,
+            "prev_year": 447.65
+          },
+          {
+            "week": 29,
+            "min_5y": 418.7,
+            "max_5y": 491.51,
+            "mean_5y": 455.11,
+            "current_year": 464.21,
+            "prev_year": 446.0
+          },
+          {
+            "week": 30,
+            "min_5y": 416.74,
+            "max_5y": 489.22,
+            "mean_5y": 452.98,
+            "current_year": 462.04,
+            "prev_year": 443.92
+          },
+          {
+            "week": 31,
+            "min_5y": 414.41,
+            "max_5y": 486.49,
+            "mean_5y": 450.45,
+            "current_year": 459.46,
+            "prev_year": 441.44
+          },
+          {
+            "week": 32,
+            "min_5y": 411.74,
+            "max_5y": 483.35,
+            "mean_5y": 447.55,
+            "current_year": 456.5,
+            "prev_year": 438.6
+          },
+          {
+            "week": 33,
+            "min_5y": 408.77,
+            "max_5y": 479.86,
+            "mean_5y": 444.31,
+            "current_year": 453.2,
+            "prev_year": 435.43
+          },
+          {
+            "week": 34,
+            "min_5y": 405.54,
+            "max_5y": 476.06,
+            "mean_5y": 440.8,
+            "current_year": 449.62,
+            "prev_year": 431.98
+          },
+          {
+            "week": 35,
+            "min_5y": 402.09,
+            "max_5y": 472.02,
+            "mean_5y": 437.06,
+            "current_year": 445.8,
+            "prev_year": 428.32
+          },
+          {
+            "week": 36,
+            "min_5y": 398.49,
+            "max_5y": 467.79,
+            "mean_5y": 433.14,
+            "current_year": 441.8,
+            "prev_year": 424.47
+          },
+          {
+            "week": 37,
+            "min_5y": 394.77,
+            "max_5y": 463.43,
+            "mean_5y": 429.1,
+            "current_year": 437.68,
+            "prev_year": 420.52
+          },
+          {
+            "week": 38,
+            "min_5y": 391.0,
+            "max_5y": 459.0,
+            "mean_5y": 425.0,
+            "current_year": 433.5,
+            "prev_year": 416.5
+          },
+          {
+            "week": 39,
+            "min_5y": 387.23,
+            "max_5y": 454.57,
+            "mean_5y": 420.9,
+            "current_year": 429.32,
+            "prev_year": 412.48
+          },
+          {
+            "week": 40,
+            "min_5y": 383.51,
+            "max_5y": 450.21,
+            "mean_5y": 416.86,
+            "current_year": 425.2,
+            "prev_year": 408.53
+          },
+          {
+            "week": 41,
+            "min_5y": 379.91,
+            "max_5y": 445.98,
+            "mean_5y": 412.94,
+            "current_year": 421.2,
+            "prev_year": 404.68
+          },
+          {
+            "week": 42,
+            "min_5y": 376.46,
+            "max_5y": 441.94,
+            "mean_5y": 409.2,
+            "current_year": 417.38,
+            "prev_year": 401.02
+          },
+          {
+            "week": 43,
+            "min_5y": 373.23,
+            "max_5y": 438.14,
+            "mean_5y": 405.69,
+            "current_year": 413.8,
+            "prev_year": 397.57
+          },
+          {
+            "week": 44,
+            "min_5y": 370.26,
+            "max_5y": 434.65,
+            "mean_5y": 402.45,
+            "current_year": 410.5,
+            "prev_year": 394.4
+          },
+          {
+            "week": 45,
+            "min_5y": 367.59,
+            "max_5y": 431.51,
+            "mean_5y": 399.55,
+            "current_year": 407.54,
+            "prev_year": 391.56
+          },
+          {
+            "week": 46,
+            "min_5y": 365.26,
+            "max_5y": 428.78,
+            "mean_5y": 397.02,
+            "current_year": 404.96,
+            "prev_year": 389.08
+          },
+          {
+            "week": 47,
+            "min_5y": 363.3,
+            "max_5y": 426.49,
+            "mean_5y": 394.89,
+            "current_year": 402.79,
+            "prev_year": 387.0
+          },
+          {
+            "week": 48,
+            "min_5y": 361.75,
+            "max_5y": 424.67,
+            "mean_5y": 393.21,
+            "current_year": null,
+            "prev_year": 385.35
+          },
+          {
+            "week": 49,
+            "min_5y": 360.63,
+            "max_5y": 423.35,
+            "mean_5y": 391.99,
+            "current_year": null,
+            "prev_year": 384.15
+          },
+          {
+            "week": 50,
+            "min_5y": 359.95,
+            "max_5y": 422.55,
+            "mean_5y": 391.25,
+            "current_year": null,
+            "prev_year": 383.42
+          },
+          {
+            "week": 51,
+            "min_5y": 359.72,
+            "max_5y": 422.28,
+            "mean_5y": 391.0,
+            "current_year": null,
+            "prev_year": 383.18
+          },
+          {
+            "week": 52,
+            "min_5y": 359.95,
+            "max_5y": 422.55,
+            "mean_5y": 391.25,
+            "current_year": null,
+            "prev_year": 383.42
+          }
+        ]
+      },
+      {
+        "id": "gasoline",
+        "name": "Total Motor Gasoline Inventories",
+        "unit": "Million Barrels",
+        "as_of": "2026-11-20",
+        "current_level": 214.2,
+        "mean_5y": 210.0,
+        "min_5y": 193.2,
+        "max_5y": 226.8,
+        "deviation": 4.2,
+        "deviation_pct": 2.0,
+        "deviation_percentile": 58.0,
+        "build_draw_1w": -1.4,
+        "band_years_label": "2021-2025 Range",
+        "weeks": [
+          {
+            "week": 1,
+            "min_5y": 178.19,
+            "max_5y": 209.18,
+            "mean_5y": 193.69,
+            "current_year": 197.56,
+            "prev_year": 189.81
+          },
+          {
+            "week": 2,
+            "min_5y": 178.75,
+            "max_5y": 209.84,
+            "mean_5y": 194.29,
+            "current_year": 198.18,
+            "prev_year": 190.41
+          },
+          {
+            "week": 3,
+            "min_5y": 179.51,
+            "max_5y": 210.73,
+            "mean_5y": 195.12,
+            "current_year": 199.03,
+            "prev_year": 191.22
+          },
+          {
+            "week": 4,
+            "min_5y": 180.48,
+            "max_5y": 211.87,
+            "mean_5y": 196.17,
+            "current_year": 200.1,
+            "prev_year": 192.25
+          },
+          {
+            "week": 5,
+            "min_5y": 181.63,
+            "max_5y": 213.22,
+            "mean_5y": 197.43,
+            "current_year": 201.37,
+            "prev_year": 193.48
+          },
+          {
+            "week": 6,
+            "min_5y": 182.95,
+            "max_5y": 214.77,
+            "mean_5y": 198.86,
+            "current_year": 202.84,
+            "prev_year": 194.88
+          },
+          {
+            "week": 7,
+            "min_5y": 184.42,
+            "max_5y": 216.49,
+            "mean_5y": 200.46,
+            "current_year": 204.47,
+            "prev_year": 196.45
+          },
+          {
+            "week": 8,
+            "min_5y": 186.02,
+            "max_5y": 218.37,
+            "mean_5y": 202.19,
+            "current_year": 206.24,
+            "prev_year": 198.15
+          },
+          {
+            "week": 9,
+            "min_5y": 187.72,
+            "max_5y": 220.37,
+            "mean_5y": 204.04,
+            "current_year": 208.12,
+            "prev_year": 199.96
+          },
+          {
+            "week": 10,
+            "min_5y": 189.5,
+            "max_5y": 222.46,
+            "mean_5y": 205.98,
+            "current_year": 210.1,
+            "prev_year": 201.86
+          },
+          {
+            "week": 11,
+            "min_5y": 191.34,
+            "max_5y": 224.61,
+            "mean_5y": 207.97,
+            "current_year": 212.13,
+            "prev_year": 203.82
+          },
+          {
+            "week": 12,
+            "min_5y": 193.2,
+            "max_5y": 226.8,
+            "mean_5y": 210.0,
+            "current_year": 214.2,
+            "prev_year": 205.8
+          },
+          {
+            "week": 13,
+            "min_5y": 195.06,
+            "max_5y": 228.99,
+            "mean_5y": 212.03,
+            "current_year": 216.27,
+            "prev_year": 207.78
+          },
+          {
+            "week": 14,
+            "min_5y": 196.9,
+            "max_5y": 231.14,
+            "mean_5y": 214.02,
+            "current_year": 218.3,
+            "prev_year": 209.74
+          },
+          {
+            "week": 15,
+            "min_5y": 198.68,
+            "max_5y": 233.23,
+            "mean_5y": 215.96,
+            "current_year": 220.28,
+            "prev_year": 211.64
+          },
+          {
+            "week": 16,
+            "min_5y": 200.38,
+            "max_5y": 235.23,
+            "mean_5y": 217.81,
+            "current_year": 222.16,
+            "prev_year": 213.45
+          },
+          {
+            "week": 17,
+            "min_5y": 201.98,
+            "max_5y": 237.11,
+            "mean_5y": 219.54,
+            "current_year": 223.93,
+            "prev_year": 215.15
+          },
+          {
+            "week": 18,
+            "min_5y": 203.45,
+            "max_5y": 238.83,
+            "mean_5y": 221.14,
+            "current_year": 225.56,
+            "prev_year": 216.72
+          },
+          {
+            "week": 19,
+            "min_5y": 204.77,
+            "max_5y": 240.38,
+            "mean_5y": 222.57,
+            "current_year": 227.03,
+            "prev_year": 218.12
+          },
+          {
+            "week": 20,
+            "min_5y": 205.92,
+            "max_5y": 241.73,
+            "mean_5y": 223.83,
+            "current_year": 228.3,
+            "prev_year": 219.35
+          },
+          {
+            "week": 21,
+            "min_5y": 206.89,
+            "max_5y": 242.87,
+            "mean_5y": 224.88,
+            "current_year": 229.37,
+            "prev_year": 220.38
+          },
+          {
+            "week": 22,
+            "min_5y": 207.65,
+            "max_5y": 243.76,
+            "mean_5y": 225.71,
+            "current_year": 230.22,
+            "prev_year": 221.19
+          },
+          {
+            "week": 23,
+            "min_5y": 208.21,
+            "max_5y": 244.42,
+            "mean_5y": 226.31,
+            "current_year": 230.84,
+            "prev_year": 221.79
+          },
+          {
+            "week": 24,
+            "min_5y": 208.54,
+            "max_5y": 244.81,
+            "mean_5y": 226.68,
+            "current_year": 231.21,
+            "prev_year": 222.14
+          },
+          {
+            "week": 25,
+            "min_5y": 208.66,
+            "max_5y": 244.94,
+            "mean_5y": 226.8,
+            "current_year": 231.34,
+            "prev_year": 222.26
+          },
+          {
+            "week": 26,
+            "min_5y": 208.54,
+            "max_5y": 244.81,
+            "mean_5y": 226.68,
+            "current_year": 231.21,
+            "prev_year": 222.14
+          },
+          {
+            "week": 27,
+            "min_5y": 208.21,
+            "max_5y": 244.42,
+            "mean_5y": 226.31,
+            "current_year": 230.84,
+            "prev_year": 221.79
+          },
+          {
+            "week": 28,
+            "min_5y": 207.65,
+            "max_5y": 243.76,
+            "mean_5y": 225.71,
+            "current_year": 230.22,
+            "prev_year": 221.19
+          },
+          {
+            "week": 29,
+            "min_5y": 206.89,
+            "max_5y": 242.87,
+            "mean_5y": 224.88,
+            "current_year": 229.37,
+            "prev_year": 220.38
+          },
+          {
+            "week": 30,
+            "min_5y": 205.92,
+            "max_5y": 241.73,
+            "mean_5y": 223.83,
+            "current_year": 228.3,
+            "prev_year": 219.35
+          },
+          {
+            "week": 31,
+            "min_5y": 204.77,
+            "max_5y": 240.38,
+            "mean_5y": 222.57,
+            "current_year": 227.03,
+            "prev_year": 218.12
+          },
+          {
+            "week": 32,
+            "min_5y": 203.45,
+            "max_5y": 238.83,
+            "mean_5y": 221.14,
+            "current_year": 225.56,
+            "prev_year": 216.72
+          },
+          {
+            "week": 33,
+            "min_5y": 201.98,
+            "max_5y": 237.11,
+            "mean_5y": 219.54,
+            "current_year": 223.93,
+            "prev_year": 215.15
+          },
+          {
+            "week": 34,
+            "min_5y": 200.38,
+            "max_5y": 235.23,
+            "mean_5y": 217.81,
+            "current_year": 222.16,
+            "prev_year": 213.45
+          },
+          {
+            "week": 35,
+            "min_5y": 198.68,
+            "max_5y": 233.23,
+            "mean_5y": 215.96,
+            "current_year": 220.28,
+            "prev_year": 211.64
+          },
+          {
+            "week": 36,
+            "min_5y": 196.9,
+            "max_5y": 231.14,
+            "mean_5y": 214.02,
+            "current_year": 218.3,
+            "prev_year": 209.74
+          },
+          {
+            "week": 37,
+            "min_5y": 195.06,
+            "max_5y": 228.99,
+            "mean_5y": 212.03,
+            "current_year": 216.27,
+            "prev_year": 207.78
+          },
+          {
+            "week": 38,
+            "min_5y": 193.2,
+            "max_5y": 226.8,
+            "mean_5y": 210.0,
+            "current_year": 214.2,
+            "prev_year": 205.8
+          },
+          {
+            "week": 39,
+            "min_5y": 191.34,
+            "max_5y": 224.61,
+            "mean_5y": 207.97,
+            "current_year": 212.13,
+            "prev_year": 203.82
+          },
+          {
+            "week": 40,
+            "min_5y": 189.5,
+            "max_5y": 222.46,
+            "mean_5y": 205.98,
+            "current_year": 210.1,
+            "prev_year": 201.86
+          },
+          {
+            "week": 41,
+            "min_5y": 187.72,
+            "max_5y": 220.37,
+            "mean_5y": 204.04,
+            "current_year": 208.12,
+            "prev_year": 199.96
+          },
+          {
+            "week": 42,
+            "min_5y": 186.02,
+            "max_5y": 218.37,
+            "mean_5y": 202.19,
+            "current_year": 206.24,
+            "prev_year": 198.15
+          },
+          {
+            "week": 43,
+            "min_5y": 184.42,
+            "max_5y": 216.49,
+            "mean_5y": 200.46,
+            "current_year": 204.47,
+            "prev_year": 196.45
+          },
+          {
+            "week": 44,
+            "min_5y": 182.95,
+            "max_5y": 214.77,
+            "mean_5y": 198.86,
+            "current_year": 202.84,
+            "prev_year": 194.88
+          },
+          {
+            "week": 45,
+            "min_5y": 181.63,
+            "max_5y": 213.22,
+            "mean_5y": 197.43,
+            "current_year": 201.37,
+            "prev_year": 193.48
+          },
+          {
+            "week": 46,
+            "min_5y": 180.48,
+            "max_5y": 211.87,
+            "mean_5y": 196.17,
+            "current_year": 200.1,
+            "prev_year": 192.25
+          },
+          {
+            "week": 47,
+            "min_5y": 179.51,
+            "max_5y": 210.73,
+            "mean_5y": 195.12,
+            "current_year": 199.03,
+            "prev_year": 191.22
+          },
+          {
+            "week": 48,
+            "min_5y": 178.75,
+            "max_5y": 209.84,
+            "mean_5y": 194.29,
+            "current_year": null,
+            "prev_year": 190.41
+          },
+          {
+            "week": 49,
+            "min_5y": 178.19,
+            "max_5y": 209.18,
+            "mean_5y": 193.69,
+            "current_year": null,
+            "prev_year": 189.81
+          },
+          {
+            "week": 50,
+            "min_5y": 177.86,
+            "max_5y": 208.79,
+            "mean_5y": 193.32,
+            "current_year": null,
+            "prev_year": 189.46
+          },
+          {
+            "week": 51,
+            "min_5y": 177.74,
+            "max_5y": 208.66,
+            "mean_5y": 193.2,
+            "current_year": null,
+            "prev_year": 189.34
+          },
+          {
+            "week": 52,
+            "min_5y": 177.86,
+            "max_5y": 208.79,
+            "mean_5y": 193.32,
+            "current_year": null,
+            "prev_year": 189.46
+          }
+        ]
+      },
+      {
+        "id": "distillate",
+        "name": "Distillate Fuel Oil Inventories",
+        "unit": "Million Barrels",
+        "as_of": "2026-11-20",
+        "current_level": 117.3,
+        "mean_5y": 115.0,
+        "min_5y": 105.8,
+        "max_5y": 124.2,
+        "deviation": 2.3,
+        "deviation_pct": 2.0,
+        "deviation_percentile": 58.0,
+        "build_draw_1w": -1.4,
+        "band_years_label": "2021-2025 Range",
+        "weeks": [
+          {
+            "week": 1,
+            "min_5y": 97.58,
+            "max_5y": 114.55,
+            "mean_5y": 106.07,
+            "current_year": 108.19,
+            "prev_year": 103.95
+          },
+          {
+            "week": 2,
+            "min_5y": 97.89,
+            "max_5y": 114.91,
+            "mean_5y": 106.4,
+            "current_year": 108.53,
+            "prev_year": 104.27
+          },
+          {
+            "week": 3,
+            "min_5y": 98.31,
+            "max_5y": 115.4,
+            "mean_5y": 106.85,
+            "current_year": 108.99,
+            "prev_year": 104.72
+          },
+          {
+            "week": 4,
+            "min_5y": 98.83,
+            "max_5y": 116.02,
+            "mean_5y": 107.43,
+            "current_year": 109.58,
+            "prev_year": 105.28
+          },
+          {
+            "week": 5,
+            "min_5y": 99.46,
+            "max_5y": 116.76,
+            "mean_5y": 108.11,
+            "current_year": 110.28,
+            "prev_year": 105.95
+          },
+          {
+            "week": 6,
+            "min_5y": 100.19,
+            "max_5y": 117.61,
+            "mean_5y": 108.9,
+            "current_year": 111.08,
+            "prev_year": 106.72
+          },
+          {
+            "week": 7,
+            "min_5y": 100.99,
+            "max_5y": 118.56,
+            "mean_5y": 109.77,
+            "current_year": 111.97,
+            "prev_year": 107.58
+          },
+          {
+            "week": 8,
+            "min_5y": 101.87,
+            "max_5y": 119.58,
+            "mean_5y": 110.72,
+            "current_year": 112.94,
+            "prev_year": 108.51
+          },
+          {
+            "week": 9,
+            "min_5y": 102.8,
+            "max_5y": 120.68,
+            "mean_5y": 111.74,
+            "current_year": 113.97,
+            "prev_year": 109.5
+          },
+          {
+            "week": 10,
+            "min_5y": 103.77,
+            "max_5y": 121.82,
+            "mean_5y": 112.8,
+            "current_year": 115.05,
+            "prev_year": 110.54
+          },
+          {
+            "week": 11,
+            "min_5y": 104.78,
+            "max_5y": 123.0,
+            "mean_5y": 113.89,
+            "current_year": 116.17,
+            "prev_year": 111.61
+          },
+          {
+            "week": 12,
+            "min_5y": 105.8,
+            "max_5y": 124.2,
+            "mean_5y": 115.0,
+            "current_year": 117.3,
+            "prev_year": 112.7
+          },
+          {
+            "week": 13,
+            "min_5y": 106.82,
+            "max_5y": 125.4,
+            "mean_5y": 116.11,
+            "current_year": 118.43,
+            "prev_year": 113.79
+          },
+          {
+            "week": 14,
+            "min_5y": 107.83,
+            "max_5y": 126.58,
+            "mean_5y": 117.2,
+            "current_year": 119.55,
+            "prev_year": 114.86
+          },
+          {
+            "week": 15,
+            "min_5y": 108.8,
+            "max_5y": 127.72,
+            "mean_5y": 118.26,
+            "current_year": 120.63,
+            "prev_year": 115.9
+          },
+          {
+            "week": 16,
+            "min_5y": 109.73,
+            "max_5y": 128.82,
+            "mean_5y": 119.28,
+            "current_year": 121.66,
+            "prev_year": 116.89
+          },
+          {
+            "week": 17,
+            "min_5y": 110.61,
+            "max_5y": 129.84,
+            "mean_5y": 120.23,
+            "current_year": 122.63,
+            "prev_year": 117.82
+          },
+          {
+            "week": 18,
+            "min_5y": 111.41,
+            "max_5y": 130.79,
+            "mean_5y": 121.1,
+            "current_year": 123.52,
+            "prev_year": 118.68
+          },
+          {
+            "week": 19,
+            "min_5y": 112.14,
+            "max_5y": 131.64,
+            "mean_5y": 121.89,
+            "current_year": 124.32,
+            "prev_year": 119.45
+          },
+          {
+            "week": 20,
+            "min_5y": 112.77,
+            "max_5y": 132.38,
+            "mean_5y": 122.57,
+            "current_year": 125.02,
+            "prev_year": 120.12
+          },
+          {
+            "week": 21,
+            "min_5y": 113.29,
+            "max_5y": 133.0,
+            "mean_5y": 123.15,
+            "current_year": 125.61,
+            "prev_year": 120.68
+          },
+          {
+            "week": 22,
+            "min_5y": 113.71,
+            "max_5y": 133.49,
+            "mean_5y": 123.6,
+            "current_year": 126.07,
+            "prev_year": 121.13
+          },
+          {
+            "week": 23,
+            "min_5y": 114.02,
+            "max_5y": 133.85,
+            "mean_5y": 123.93,
+            "current_year": 126.41,
+            "prev_year": 121.45
+          },
+          {
+            "week": 24,
+            "min_5y": 114.2,
+            "max_5y": 134.06,
+            "mean_5y": 124.13,
+            "current_year": 126.62,
+            "prev_year": 121.65
+          },
+          {
+            "week": 25,
+            "min_5y": 114.26,
+            "max_5y": 134.14,
+            "mean_5y": 124.2,
+            "current_year": 126.68,
+            "prev_year": 121.72
+          },
+          {
+            "week": 26,
+            "min_5y": 114.2,
+            "max_5y": 134.06,
+            "mean_5y": 124.13,
+            "current_year": 126.62,
+            "prev_year": 121.65
+          },
+          {
+            "week": 27,
+            "min_5y": 114.02,
+            "max_5y": 133.85,
+            "mean_5y": 123.93,
+            "current_year": 126.41,
+            "prev_year": 121.45
+          },
+          {
+            "week": 28,
+            "min_5y": 113.71,
+            "max_5y": 133.49,
+            "mean_5y": 123.6,
+            "current_year": 126.07,
+            "prev_year": 121.13
+          },
+          {
+            "week": 29,
+            "min_5y": 113.29,
+            "max_5y": 133.0,
+            "mean_5y": 123.15,
+            "current_year": 125.61,
+            "prev_year": 120.68
+          },
+          {
+            "week": 30,
+            "min_5y": 112.77,
+            "max_5y": 132.38,
+            "mean_5y": 122.57,
+            "current_year": 125.02,
+            "prev_year": 120.12
+          },
+          {
+            "week": 31,
+            "min_5y": 112.14,
+            "max_5y": 131.64,
+            "mean_5y": 121.89,
+            "current_year": 124.32,
+            "prev_year": 119.45
+          },
+          {
+            "week": 32,
+            "min_5y": 111.41,
+            "max_5y": 130.79,
+            "mean_5y": 121.1,
+            "current_year": 123.52,
+            "prev_year": 118.68
+          },
+          {
+            "week": 33,
+            "min_5y": 110.61,
+            "max_5y": 129.84,
+            "mean_5y": 120.23,
+            "current_year": 122.63,
+            "prev_year": 117.82
+          },
+          {
+            "week": 34,
+            "min_5y": 109.73,
+            "max_5y": 128.82,
+            "mean_5y": 119.28,
+            "current_year": 121.66,
+            "prev_year": 116.89
+          },
+          {
+            "week": 35,
+            "min_5y": 108.8,
+            "max_5y": 127.72,
+            "mean_5y": 118.26,
+            "current_year": 120.63,
+            "prev_year": 115.9
+          },
+          {
+            "week": 36,
+            "min_5y": 107.83,
+            "max_5y": 126.58,
+            "mean_5y": 117.2,
+            "current_year": 119.55,
+            "prev_year": 114.86
+          },
+          {
+            "week": 37,
+            "min_5y": 106.82,
+            "max_5y": 125.4,
+            "mean_5y": 116.11,
+            "current_year": 118.43,
+            "prev_year": 113.79
+          },
+          {
+            "week": 38,
+            "min_5y": 105.8,
+            "max_5y": 124.2,
+            "mean_5y": 115.0,
+            "current_year": 117.3,
+            "prev_year": 112.7
+          },
+          {
+            "week": 39,
+            "min_5y": 104.78,
+            "max_5y": 123.0,
+            "mean_5y": 113.89,
+            "current_year": 116.17,
+            "prev_year": 111.61
+          },
+          {
+            "week": 40,
+            "min_5y": 103.77,
+            "max_5y": 121.82,
+            "mean_5y": 112.8,
+            "current_year": 115.05,
+            "prev_year": 110.54
+          },
+          {
+            "week": 41,
+            "min_5y": 102.8,
+            "max_5y": 120.68,
+            "mean_5y": 111.74,
+            "current_year": 113.97,
+            "prev_year": 109.5
+          },
+          {
+            "week": 42,
+            "min_5y": 101.87,
+            "max_5y": 119.58,
+            "mean_5y": 110.72,
+            "current_year": 112.94,
+            "prev_year": 108.51
+          },
+          {
+            "week": 43,
+            "min_5y": 100.99,
+            "max_5y": 118.56,
+            "mean_5y": 109.77,
+            "current_year": 111.97,
+            "prev_year": 107.58
+          },
+          {
+            "week": 44,
+            "min_5y": 100.19,
+            "max_5y": 117.61,
+            "mean_5y": 108.9,
+            "current_year": 111.08,
+            "prev_year": 106.72
+          },
+          {
+            "week": 45,
+            "min_5y": 99.46,
+            "max_5y": 116.76,
+            "mean_5y": 108.11,
+            "current_year": 110.28,
+            "prev_year": 105.95
+          },
+          {
+            "week": 46,
+            "min_5y": 98.83,
+            "max_5y": 116.02,
+            "mean_5y": 107.43,
+            "current_year": 109.58,
+            "prev_year": 105.28
+          },
+          {
+            "week": 47,
+            "min_5y": 98.31,
+            "max_5y": 115.4,
+            "mean_5y": 106.85,
+            "current_year": 108.99,
+            "prev_year": 104.72
+          },
+          {
+            "week": 48,
+            "min_5y": 97.89,
+            "max_5y": 114.91,
+            "mean_5y": 106.4,
+            "current_year": null,
+            "prev_year": 104.27
+          },
+          {
+            "week": 49,
+            "min_5y": 97.58,
+            "max_5y": 114.55,
+            "mean_5y": 106.07,
+            "current_year": null,
+            "prev_year": 103.95
+          },
+          {
+            "week": 50,
+            "min_5y": 97.4,
+            "max_5y": 114.34,
+            "mean_5y": 105.87,
+            "current_year": null,
+            "prev_year": 103.75
+          },
+          {
+            "week": 51,
+            "min_5y": 97.34,
+            "max_5y": 114.26,
+            "mean_5y": 105.8,
+            "current_year": null,
+            "prev_year": 103.68
+          },
+          {
+            "week": 52,
+            "min_5y": 97.4,
+            "max_5y": 114.34,
+            "mean_5y": 105.87,
+            "current_year": null,
+            "prev_year": 103.75
+          }
+        ]
+      },
+      {
+        "id": "natgas",
+        "name": "Natural Gas Underground Storage (Lower 48)",
+        "unit": "Billion Cubic Feet",
+        "as_of": "2026-11-20",
+        "current_level": 3264.0,
+        "mean_5y": 3200.0,
+        "min_5y": 2944.0,
+        "max_5y": 3456.0,
+        "deviation": 64.0,
+        "deviation_pct": 2.0,
+        "deviation_percentile": 58.0,
+        "build_draw_1w": -1.4,
+        "band_years_label": "2021-2025 Range",
+        "weeks": [
+          {
+            "week": 1,
+            "min_5y": 2715.32,
+            "max_5y": 3187.55,
+            "mean_5y": 2951.44,
+            "current_year": 3010.47,
+            "prev_year": 2892.41
+          },
+          {
+            "week": 2,
+            "min_5y": 2723.78,
+            "max_5y": 3197.49,
+            "mean_5y": 2960.64,
+            "current_year": 3019.85,
+            "prev_year": 2901.42
+          },
+          {
+            "week": 3,
+            "min_5y": 2735.46,
+            "max_5y": 3211.19,
+            "mean_5y": 2973.32,
+            "current_year": 3032.79,
+            "prev_year": 2913.86
+          },
+          {
+            "week": 4,
+            "min_5y": 2750.17,
+            "max_5y": 3228.46,
+            "mean_5y": 2989.32,
+            "current_year": 3049.1,
+            "prev_year": 2929.53
+          },
+          {
+            "week": 5,
+            "min_5y": 2767.71,
+            "max_5y": 3249.05,
+            "mean_5y": 3008.38,
+            "current_year": 3068.55,
+            "prev_year": 2948.21
+          },
+          {
+            "week": 6,
+            "min_5y": 2787.82,
+            "max_5y": 3272.66,
+            "mean_5y": 3030.24,
+            "current_year": 3090.85,
+            "prev_year": 2969.64
+          },
+          {
+            "week": 7,
+            "min_5y": 2810.21,
+            "max_5y": 3298.94,
+            "mean_5y": 3054.58,
+            "current_year": 3115.67,
+            "prev_year": 2993.48
+          },
+          {
+            "week": 8,
+            "min_5y": 2834.55,
+            "max_5y": 3327.51,
+            "mean_5y": 3081.03,
+            "current_year": 3142.65,
+            "prev_year": 3019.41
+          },
+          {
+            "week": 9,
+            "min_5y": 2860.48,
+            "max_5y": 3357.96,
+            "mean_5y": 3109.22,
+            "current_year": 3171.41,
+            "prev_year": 3047.04
+          },
+          {
+            "week": 10,
+            "min_5y": 2887.64,
+            "max_5y": 3389.83,
+            "mean_5y": 3138.74,
+            "current_year": 3201.51,
+            "prev_year": 3075.96
+          },
+          {
+            "week": 11,
+            "min_5y": 2915.61,
+            "max_5y": 3422.67,
+            "mean_5y": 3169.14,
+            "current_year": 3232.53,
+            "prev_year": 3105.76
+          },
+          {
+            "week": 12,
+            "min_5y": 2944.0,
+            "max_5y": 3456.0,
+            "mean_5y": 3200.0,
+            "current_year": 3264.0,
+            "prev_year": 3136.0
+          },
+          {
+            "week": 13,
+            "min_5y": 2972.39,
+            "max_5y": 3489.33,
+            "mean_5y": 3230.86,
+            "current_year": 3295.47,
+            "prev_year": 3166.24
+          },
+          {
+            "week": 14,
+            "min_5y": 3000.36,
+            "max_5y": 3522.17,
+            "mean_5y": 3261.26,
+            "current_year": 3326.49,
+            "prev_year": 3196.04
+          },
+          {
+            "week": 15,
+            "min_5y": 3027.52,
+            "max_5y": 3554.04,
+            "mean_5y": 3290.78,
+            "current_year": 3356.59,
+            "prev_year": 3224.96
+          },
+          {
+            "week": 16,
+            "min_5y": 3053.45,
+            "max_5y": 3584.49,
+            "mean_5y": 3318.97,
+            "current_year": 3385.35,
+            "prev_year": 3252.59
+          },
+          {
+            "week": 17,
+            "min_5y": 3077.79,
+            "max_5y": 3613.06,
+            "mean_5y": 3345.42,
+            "current_year": 3412.33,
+            "prev_year": 3278.52
+          },
+          {
+            "week": 18,
+            "min_5y": 3100.18,
+            "max_5y": 3639.34,
+            "mean_5y": 3369.76,
+            "current_year": 3437.15,
+            "prev_year": 3302.36
+          },
+          {
+            "week": 19,
+            "min_5y": 3120.29,
+            "max_5y": 3662.95,
+            "mean_5y": 3391.62,
+            "current_year": 3459.45,
+            "prev_year": 3323.79
+          },
+          {
+            "week": 20,
+            "min_5y": 3137.83,
+            "max_5y": 3683.54,
+            "mean_5y": 3410.68,
+            "current_year": 3478.9,
+            "prev_year": 3342.47
+          },
+          {
+            "week": 21,
+            "min_5y": 3152.54,
+            "max_5y": 3700.81,
+            "mean_5y": 3426.68,
+            "current_year": 3495.21,
+            "prev_year": 3358.14
+          },
+          {
+            "week": 22,
+            "min_5y": 3164.22,
+            "max_5y": 3714.51,
+            "mean_5y": 3439.36,
+            "current_year": 3508.15,
+            "prev_year": 3370.58
+          },
+          {
+            "week": 23,
+            "min_5y": 3172.68,
+            "max_5y": 3724.45,
+            "mean_5y": 3448.56,
+            "current_year": 3517.53,
+            "prev_year": 3379.59
+          },
+          {
+            "week": 24,
+            "min_5y": 3177.8,
+            "max_5y": 3730.46,
+            "mean_5y": 3454.13,
+            "current_year": 3523.22,
+            "prev_year": 3385.05
+          },
+          {
+            "week": 25,
+            "min_5y": 3179.52,
+            "max_5y": 3732.48,
+            "mean_5y": 3456.0,
+            "current_year": 3525.12,
+            "prev_year": 3386.88
+          },
+          {
+            "week": 26,
+            "min_5y": 3177.8,
+            "max_5y": 3730.46,
+            "mean_5y": 3454.13,
+            "current_year": 3523.22,
+            "prev_year": 3385.05
+          },
+          {
+            "week": 27,
+            "min_5y": 3172.68,
+            "max_5y": 3724.45,
+            "mean_5y": 3448.56,
+            "current_year": 3517.53,
+            "prev_year": 3379.59
+          },
+          {
+            "week": 28,
+            "min_5y": 3164.22,
+            "max_5y": 3714.51,
+            "mean_5y": 3439.36,
+            "current_year": 3508.15,
+            "prev_year": 3370.58
+          },
+          {
+            "week": 29,
+            "min_5y": 3152.54,
+            "max_5y": 3700.81,
+            "mean_5y": 3426.68,
+            "current_year": 3495.21,
+            "prev_year": 3358.14
+          },
+          {
+            "week": 30,
+            "min_5y": 3137.83,
+            "max_5y": 3683.54,
+            "mean_5y": 3410.68,
+            "current_year": 3478.9,
+            "prev_year": 3342.47
+          },
+          {
+            "week": 31,
+            "min_5y": 3120.29,
+            "max_5y": 3662.95,
+            "mean_5y": 3391.62,
+            "current_year": 3459.45,
+            "prev_year": 3323.79
+          },
+          {
+            "week": 32,
+            "min_5y": 3100.18,
+            "max_5y": 3639.34,
+            "mean_5y": 3369.76,
+            "current_year": 3437.15,
+            "prev_year": 3302.36
+          },
+          {
+            "week": 33,
+            "min_5y": 3077.79,
+            "max_5y": 3613.06,
+            "mean_5y": 3345.42,
+            "current_year": 3412.33,
+            "prev_year": 3278.52
+          },
+          {
+            "week": 34,
+            "min_5y": 3053.45,
+            "max_5y": 3584.49,
+            "mean_5y": 3318.97,
+            "current_year": 3385.35,
+            "prev_year": 3252.59
+          },
+          {
+            "week": 35,
+            "min_5y": 3027.52,
+            "max_5y": 3554.04,
+            "mean_5y": 3290.78,
+            "current_year": 3356.59,
+            "prev_year": 3224.96
+          },
+          {
+            "week": 36,
+            "min_5y": 3000.36,
+            "max_5y": 3522.17,
+            "mean_5y": 3261.26,
+            "current_year": 3326.49,
+            "prev_year": 3196.04
+          },
+          {
+            "week": 37,
+            "min_5y": 2972.39,
+            "max_5y": 3489.33,
+            "mean_5y": 3230.86,
+            "current_year": 3295.47,
+            "prev_year": 3166.24
+          },
+          {
+            "week": 38,
+            "min_5y": 2944.0,
+            "max_5y": 3456.0,
+            "mean_5y": 3200.0,
+            "current_year": 3264.0,
+            "prev_year": 3136.0
+          },
+          {
+            "week": 39,
+            "min_5y": 2915.61,
+            "max_5y": 3422.67,
+            "mean_5y": 3169.14,
+            "current_year": 3232.53,
+            "prev_year": 3105.76
+          },
+          {
+            "week": 40,
+            "min_5y": 2887.64,
+            "max_5y": 3389.83,
+            "mean_5y": 3138.74,
+            "current_year": 3201.51,
+            "prev_year": 3075.96
+          },
+          {
+            "week": 41,
+            "min_5y": 2860.48,
+            "max_5y": 3357.96,
+            "mean_5y": 3109.22,
+            "current_year": 3171.41,
+            "prev_year": 3047.04
+          },
+          {
+            "week": 42,
+            "min_5y": 2834.55,
+            "max_5y": 3327.51,
+            "mean_5y": 3081.03,
+            "current_year": 3142.65,
+            "prev_year": 3019.41
+          },
+          {
+            "week": 43,
+            "min_5y": 2810.21,
+            "max_5y": 3298.94,
+            "mean_5y": 3054.58,
+            "current_year": 3115.67,
+            "prev_year": 2993.48
+          },
+          {
+            "week": 44,
+            "min_5y": 2787.82,
+            "max_5y": 3272.66,
+            "mean_5y": 3030.24,
+            "current_year": 3090.85,
+            "prev_year": 2969.64
+          },
+          {
+            "week": 45,
+            "min_5y": 2767.71,
+            "max_5y": 3249.05,
+            "mean_5y": 3008.38,
+            "current_year": 3068.55,
+            "prev_year": 2948.21
+          },
+          {
+            "week": 46,
+            "min_5y": 2750.17,
+            "max_5y": 3228.46,
+            "mean_5y": 2989.32,
+            "current_year": 3049.1,
+            "prev_year": 2929.53
+          },
+          {
+            "week": 47,
+            "min_5y": 2735.46,
+            "max_5y": 3211.19,
+            "mean_5y": 2973.32,
+            "current_year": 3032.79,
+            "prev_year": 2913.86
+          },
+          {
+            "week": 48,
+            "min_5y": 2723.78,
+            "max_5y": 3197.49,
+            "mean_5y": 2960.64,
+            "current_year": null,
+            "prev_year": 2901.42
+          },
+          {
+            "week": 49,
+            "min_5y": 2715.32,
+            "max_5y": 3187.55,
+            "mean_5y": 2951.44,
+            "current_year": null,
+            "prev_year": 2892.41
+          },
+          {
+            "week": 50,
+            "min_5y": 2710.2,
+            "max_5y": 3181.54,
+            "mean_5y": 2945.87,
+            "current_year": null,
+            "prev_year": 2886.95
+          },
+          {
+            "week": 51,
+            "min_5y": 2708.48,
+            "max_5y": 3179.52,
+            "mean_5y": 2944.0,
+            "current_year": null,
+            "prev_year": 2885.12
+          },
+          {
+            "week": 52,
+            "min_5y": 2710.2,
+            "max_5y": 3181.54,
+            "mean_5y": 2945.87,
+            "current_year": null,
+            "prev_year": 2886.95
+          }
+        ]
+      }
+    ],
+    "lag_label": "EIA Weekly Petroleum & Gas Status (published Wednesdays, data as of prior Friday)",
+    "interpretation": "US Commercial Crude inventories stand at 433.5 Million Barrels (+2.0% vs 5-year seasonal normal, 58th pct). Natural gas storage is at 3264.0 Billion Cubic Feet (+2.0% vs 5y normal)."
+  }
+}

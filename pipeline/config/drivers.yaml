@@ -1,0 +1,65 @@
+# pipeline/config/drivers.yaml
+# Factor definitions for the Move Decomposer (Section 3.2)
+# Standard fixed set of global drivers used for multi-factor regression attribution.
+
+factors:
+  - id: row_equity
+    name: Rest-of-World Equity
+    type: dynamic_composite
+    description: "Equal-weighted USD return of the other tracked launch countries, excluding the target country"
+    transform: log_return
+    economic_prior: positive
+
+  - id: brent
+    name: Brent Crude Oil
+    type: asset_series
+    series_id: brent
+    description: "Global energy cost driver"
+    transform: log_return
+    economic_priors:
+      oil_importers: negative  # e.g., India, Japan, Germany
+      oil_exporters: positive  # e.g., Canada, Brazil
+
+  - id: copper
+    name: Copper
+    type: asset_series
+    series_id: copper
+    description: "Global industrial activity and growth proxy (Dr. Copper)"
+    transform: log_return
+    economic_prior: positive
+
+  - id: gold
+    name: Gold
+    type: asset_series
+    series_id: gold
+    description: "Safe haven, store of value, and real yield hedge"
+    transform: log_return
+    economic_prior: neutral
+
+  - id: dxy
+    name: US Dollar Index
+    type: asset_series
+    series_id: dxy
+    description: "Global financial conditions and dollar liquidity proxy"
+    transform: log_return
+    economic_priors:
+      emerging_markets: negative
+      us_equities: negative
+
+  - id: us10y
+    name: US 10Y Yield Change
+    type: asset_series
+    series_id: us10y
+    description: "Global risk-free discount rate (change in basis points)"
+    transform: diff_bps
+    economic_priors:
+      growth_assets: negative
+      financials: positive
+
+estimation:
+  prior_window_days: 250     # Trading days ending day before horizon starts
+  min_obs: 120               # Minimum valid observations required
+  hac_lags: 5                # Newey-West lag truncation
+  vif_threshold: 5.0         # Multicollinearity switch to Ridge
+  ridge_alpha: 1.0           # Documented fixed L2 regularization penalty
+  unexplained_r2_floor: 0.10 # Below this out-of-sample R2, labeled "Mostly unexplained"

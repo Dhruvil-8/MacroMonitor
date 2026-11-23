@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "niftypharma",
+    "name": "Nifty Pharma Index",
+    "group": "india_sector",
+    "region": "IN",
+    "unit": "index",
+    "current_value": 28386.9,
+    "percentile": 99.3,
+    "z_score": 2.28,
+    "n": 755,
+    "n_eff": 755.0,
+    "histogram_bins": [
+      -5.209,
+      -4.775,
+      -4.341,
+      -3.907,
+      -3.473,
+      -3.039,
+      -2.6051,
+      -2.1711,
+      -1.7371,
+      -1.3031,
+      -0.8691,
+      -0.4351,
+      -0.0011,
+      0.4329,
+      0.8669,
+      1.3009,
+      1.7349,
+      2.1688,
+      2.6028,
+      3.0368,
+      3.4708,
+      3.9048,
+      4.3388,
+      4.7728,
+      5.2068
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      752,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-08-31",
+        "value": 27186.45,
+        "distance": 1200.4512
+      },
+      {
+        "date": "2026-09-23",
+        "value": 27152.1,
+        "distance": 1234.8008
+      },
+      {
+        "date": "2026-10-30",
+        "value": 27124.85,
+        "distance": 1262.0508
+      },
+      {
+        "date": "2026-08-11",
+        "value": 26750.45,
+        "distance": 1636.4512
+      },
+      {
+        "date": "2026-07-21",
+        "value": 26092.85,
+        "distance": 2294.0508
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Nifty Pharma Index.",
+    "source_note": "Attribution: NSE"
+  }
+}

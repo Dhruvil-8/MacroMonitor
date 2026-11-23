@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "observations": [
+      {
+        "id": "vol_cone_breach_v1:spx:2026-11-20",
+        "type": "vol_cone_breach",
+        "asset": "spx",
+        "severity": "high",
+        "headline": "Realized volatility elevated across multiple horizons for S&P 500",
+        "body": "Realized volatility exceeded the 90th historical percentile across 3 horizons simultaneously (10D, 20D, 60D).",
+        "metrics": {
+          "num_breaches": 3,
+          "horizons": [
+            "10D",
+            "20D",
+            "60D"
+          ]
+        },
+        "window": "20D",
+        "inputs": [
+          "spx"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "risk",
+        "rule_id": "vol_cone_breach_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_cone_breach_v1:ibov:2026-11-20",
+        "type": "vol_cone_breach",
+        "asset": "ibov",
+        "severity": "high",
+        "headline": "Realized volatility elevated across multiple horizons for Ibovespa",
+        "body": "Realized volatility exceeded the 90th historical percentile across 4 horizons simultaneously (20D, 60D, 120D, 250D).",
+        "metrics": {
+          "num_breaches": 4,
+          "horizons": [
+            "20D",
+            "60D",
+            "120D",
+            "250D"
+          ]
+        },
+        "window": "20D",
+        "inputs": [
+          "ibov"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "risk",
+        "rule_id": "vol_cone_breach_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_cone_breach_v1:vix:2026-11-20",
+        "type": "vol_cone_breach",
+        "asset": "vix",
+        "severity": "high",
+        "headline": "Realized volatility elevated across multiple horizons for CBOE VIX",
+        "body": "Realized volatility exceeded the 90th historical percentile across 3 horizons simultaneously (10D, 20D, 60D).",
+        "metrics": {
+          "num_breaches": 3,
+          "horizons": [
+            "10D",
+            "20D",
+            "60D"
+          ]
+        },
+        "window": "20D",
+        "inputs": [
+          "vix"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "risk",
+        "rule_id": "vol_cone_breach_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "country_divergence_v1:brent_vs_nifty50:2026-11-20",
+        "type": "country_divergence",
+        "asset": "brent_vs_nifty50",
+        "severity": "medium",
+        "headline": "Momentum divergence between BRENT and NIFTY50",
+        "body": "The 20-day momentum divergence spread reached -5.89 standard deviations, persisting for 3 consecutive sessions.",
+        "metrics": {
+          "spread_z": -5.8942752089376045,
+          "percentile": 97.44318181818183
+        },
+        "window": "20D",
+        "inputs": [
+          "brent_vs_nifty50"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "radar",
+        "rule_id": "country_divergence_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "country_divergence_v1:vix_vs_spx:2026-11-20",
+        "type": "country_divergence",
+        "asset": "vix_vs_spx",
+        "severity": "medium",
+        "headline": "Momentum divergence between VIX and SPX",
+        "body": "The 20-day momentum divergence spread reached +6.38 standard deviations, persisting for 3 consecutive sessions.",
+        "metrics": {
+          "spread_z": 6.377784115176757,
+          "percentile": 98.1534090909091
+        },
+        "window": "20D",
+        "inputs": [
+          "vix_vs_spx"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "radar",
+        "rule_id": "country_divergence_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "country_divergence_v1:usdinr_vs_nifty50:2026-11-20",
+        "type": "country_divergence",
+        "asset": "usdinr_vs_nifty50",
+        "severity": "medium",
+        "headline": "Momentum divergence between USDINR and NIFTY50",
+        "body": "The 20-day momentum divergence spread reached -5.76 standard deviations, persisting for 3 consecutive sessions.",
+        "metrics": {
+          "spread_z": -5.76139339012195,
+          "percentile": 97.30496453900709
+        },
+        "window": "20D",
+        "inputs": [
+          "usdinr_vs_nifty50"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "radar",
+        "rule_id": "country_divergence_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_shift_v1:dji:2026-11-20",
+        "type": "vol_shift",
+        "asset": "dji",
+        "severity": "medium",
+        "headline": "Dow Jones Industrial Average realized volatility moved above historical baseline",
+        "body": "20-day realized volatility is 22.9%, corresponding to the 96th percentile of historical observations (N=734, effective N=7.3).",
+        "metrics": {
+          "vol20": 0.2289,
+          "percentile": 96.9,
+          "n": 734,
+          "n_eff": 7.3
+        },
+        "window": "20D",
+        "inputs": [
+          "dji"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_shift_v1:eem:2026-11-20",
+        "type": "vol_shift",
+        "asset": "eem",
+        "severity": "medium",
+        "headline": "MSCI Emerging Markets Index ETF realized volatility moved above historical baseline",
+        "body": "20-day realized volatility is 37.4%, corresponding to the 95th percentile of historical observations (N=734, effective N=5.2).",
+        "metrics": {
+          "vol20": 0.3735,
+          "percentile": 95.4,
+          "n": 734,
+          "n_eff": 5.2
+        },
+        "window": "20D",
+        "inputs": [
+          "eem"
+        ],
+        "as_of": "2026-11-20",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      }
+    ]
+  }
+}

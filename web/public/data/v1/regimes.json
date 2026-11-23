@@ -1,0 +1,1523 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "f1687f268479",
+  "target_name": "S&P 500",
+  "regimes": {
+    "current_regime": "stress",
+    "current_prob_stress": 1.0,
+    "transition_matrix": {
+      "p00_calm_to_calm": 0.95,
+      "p01_calm_to_stress": 0.05,
+      "p10_stress_to_calm": 0.12,
+      "p11_stress_to_stress": 0.88
+    },
+    "expected_duration_days": {
+      "calm_regime": 20.0,
+      "stress_regime": 8.3
+    },
+    "ribbon": [
+      {
+        "date": "2025-12-08",
+        "filtered_prob_stress": 0.233,
+        "smoothed_prob_stress": 0.264,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-09",
+        "filtered_prob_stress": 0.162,
+        "smoothed_prob_stress": 0.239,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-10",
+        "filtered_prob_stress": 0.175,
+        "smoothed_prob_stress": 0.223,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-11",
+        "filtered_prob_stress": 0.176,
+        "smoothed_prob_stress": 0.211,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-12",
+        "filtered_prob_stress": 0.117,
+        "smoothed_prob_stress": 0.188,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-15",
+        "filtered_prob_stress": 0.119,
+        "smoothed_prob_stress": 0.17,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-16",
+        "filtered_prob_stress": 0.086,
+        "smoothed_prob_stress": 0.149,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-17",
+        "filtered_prob_stress": 0.113,
+        "smoothed_prob_stress": 0.14,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-18",
+        "filtered_prob_stress": 0.128,
+        "smoothed_prob_stress": 0.137,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-19",
+        "filtered_prob_stress": 0.036,
+        "smoothed_prob_stress": 0.112,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-22",
+        "filtered_prob_stress": 0.019,
+        "smoothed_prob_stress": 0.089,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-23",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.066,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-24",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.05,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-25",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.037,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-26",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.028,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-29",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.021,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-30",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.016,
+        "regime": "calm"
+      },
+      {
+        "date": "2025-12-31",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.012,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-01",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.009,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-02",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.007,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-05",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.005,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-06",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.004,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-07",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.003,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-08",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.002,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-09",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.002,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-12",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.001,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-13",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.001,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-14",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.001,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-15",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.0,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-16",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.0,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-19",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.0,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-20",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.0,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-21",
+        "filtered_prob_stress": 0.001,
+        "smoothed_prob_stress": 0.001,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-22",
+        "filtered_prob_stress": 0.01,
+        "smoothed_prob_stress": 0.003,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-23",
+        "filtered_prob_stress": 0.01,
+        "smoothed_prob_stress": 0.005,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-26",
+        "filtered_prob_stress": 0.02,
+        "smoothed_prob_stress": 0.009,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-27",
+        "filtered_prob_stress": 0.02,
+        "smoothed_prob_stress": 0.011,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-28",
+        "filtered_prob_stress": 0.019,
+        "smoothed_prob_stress": 0.013,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-29",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.01,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-01-30",
+        "filtered_prob_stress": 0.004,
+        "smoothed_prob_stress": 0.008,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-02",
+        "filtered_prob_stress": 0.013,
+        "smoothed_prob_stress": 0.009,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-03",
+        "filtered_prob_stress": 0.031,
+        "smoothed_prob_stress": 0.015,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-04",
+        "filtered_prob_stress": 0.025,
+        "smoothed_prob_stress": 0.017,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-05",
+        "filtered_prob_stress": 0.075,
+        "smoothed_prob_stress": 0.032,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-06",
+        "filtered_prob_stress": 0.213,
+        "smoothed_prob_stress": 0.077,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-09",
+        "filtered_prob_stress": 0.206,
+        "smoothed_prob_stress": 0.109,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-10",
+        "filtered_prob_stress": 0.209,
+        "smoothed_prob_stress": 0.134,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-11",
+        "filtered_prob_stress": 0.208,
+        "smoothed_prob_stress": 0.153,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-12",
+        "filtered_prob_stress": 0.274,
+        "smoothed_prob_stress": 0.183,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-13",
+        "filtered_prob_stress": 0.271,
+        "smoothed_prob_stress": 0.205,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-16",
+        "filtered_prob_stress": 0.271,
+        "smoothed_prob_stress": 0.222,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-17",
+        "filtered_prob_stress": 0.272,
+        "smoothed_prob_stress": 0.234,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-18",
+        "filtered_prob_stress": 0.142,
+        "smoothed_prob_stress": 0.211,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-19",
+        "filtered_prob_stress": 0.1,
+        "smoothed_prob_stress": 0.183,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-20",
+        "filtered_prob_stress": 0.107,
+        "smoothed_prob_stress": 0.164,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-23",
+        "filtered_prob_stress": 0.143,
+        "smoothed_prob_stress": 0.159,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-24",
+        "filtered_prob_stress": 0.156,
+        "smoothed_prob_stress": 0.158,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-25",
+        "filtered_prob_stress": 0.173,
+        "smoothed_prob_stress": 0.162,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-26",
+        "filtered_prob_stress": 0.182,
+        "smoothed_prob_stress": 0.167,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-02-27",
+        "filtered_prob_stress": 0.186,
+        "smoothed_prob_stress": 0.172,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-02",
+        "filtered_prob_stress": 0.182,
+        "smoothed_prob_stress": 0.174,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-03",
+        "filtered_prob_stress": 0.195,
+        "smoothed_prob_stress": 0.179,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-04",
+        "filtered_prob_stress": 0.198,
+        "smoothed_prob_stress": 0.184,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-05",
+        "filtered_prob_stress": 0.2,
+        "smoothed_prob_stress": 0.188,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-06",
+        "filtered_prob_stress": 0.209,
+        "smoothed_prob_stress": 0.193,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-09",
+        "filtered_prob_stress": 0.096,
+        "smoothed_prob_stress": 0.169,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-10",
+        "filtered_prob_stress": 0.084,
+        "smoothed_prob_stress": 0.148,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-11",
+        "filtered_prob_stress": 0.082,
+        "smoothed_prob_stress": 0.131,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-12",
+        "filtered_prob_stress": 0.15,
+        "smoothed_prob_stress": 0.136,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-13",
+        "filtered_prob_stress": 0.086,
+        "smoothed_prob_stress": 0.123,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-16",
+        "filtered_prob_stress": 0.131,
+        "smoothed_prob_stress": 0.125,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-17",
+        "filtered_prob_stress": 0.134,
+        "smoothed_prob_stress": 0.128,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-18",
+        "filtered_prob_stress": 0.186,
+        "smoothed_prob_stress": 0.142,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-19",
+        "filtered_prob_stress": 0.169,
+        "smoothed_prob_stress": 0.149,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-20",
+        "filtered_prob_stress": 0.224,
+        "smoothed_prob_stress": 0.168,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-23",
+        "filtered_prob_stress": 0.256,
+        "smoothed_prob_stress": 0.19,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-24",
+        "filtered_prob_stress": 0.236,
+        "smoothed_prob_stress": 0.201,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-25",
+        "filtered_prob_stress": 0.224,
+        "smoothed_prob_stress": 0.207,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-26",
+        "filtered_prob_stress": 0.256,
+        "smoothed_prob_stress": 0.219,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-27",
+        "filtered_prob_stress": 0.308,
+        "smoothed_prob_stress": 0.241,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-30",
+        "filtered_prob_stress": 0.308,
+        "smoothed_prob_stress": 0.258,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-03-31",
+        "filtered_prob_stress": 0.566,
+        "smoothed_prob_stress": 0.335,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-01",
+        "filtered_prob_stress": 0.573,
+        "smoothed_prob_stress": 0.395,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-02",
+        "filtered_prob_stress": 0.554,
+        "smoothed_prob_stress": 0.434,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-03",
+        "filtered_prob_stress": 0.552,
+        "smoothed_prob_stress": 0.464,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-06",
+        "filtered_prob_stress": 0.525,
+        "smoothed_prob_stress": 0.479,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-07",
+        "filtered_prob_stress": 0.505,
+        "smoothed_prob_stress": 0.486,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-08",
+        "filtered_prob_stress": 0.652,
+        "smoothed_prob_stress": 0.527,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-09",
+        "filtered_prob_stress": 0.66,
+        "smoothed_prob_stress": 0.56,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-10",
+        "filtered_prob_stress": 0.604,
+        "smoothed_prob_stress": 0.571,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-13",
+        "filtered_prob_stress": 0.608,
+        "smoothed_prob_stress": 0.581,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-14",
+        "filtered_prob_stress": 0.615,
+        "smoothed_prob_stress": 0.589,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-15",
+        "filtered_prob_stress": 0.623,
+        "smoothed_prob_stress": 0.598,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-16",
+        "filtered_prob_stress": 0.563,
+        "smoothed_prob_stress": 0.589,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-17",
+        "filtered_prob_stress": 0.573,
+        "smoothed_prob_stress": 0.585,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-20",
+        "filtered_prob_stress": 0.495,
+        "smoothed_prob_stress": 0.562,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-04-21",
+        "filtered_prob_stress": 0.506,
+        "smoothed_prob_stress": 0.548,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-22",
+        "filtered_prob_stress": 0.503,
+        "smoothed_prob_stress": 0.537,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-23",
+        "filtered_prob_stress": 0.518,
+        "smoothed_prob_stress": 0.532,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-04-24",
+        "filtered_prob_stress": 0.402,
+        "smoothed_prob_stress": 0.5,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-04-27",
+        "filtered_prob_stress": 0.269,
+        "smoothed_prob_stress": 0.442,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-04-28",
+        "filtered_prob_stress": 0.274,
+        "smoothed_prob_stress": 0.4,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-04-29",
+        "filtered_prob_stress": 0.096,
+        "smoothed_prob_stress": 0.324,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-04-30",
+        "filtered_prob_stress": 0.106,
+        "smoothed_prob_stress": 0.27,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-01",
+        "filtered_prob_stress": 0.103,
+        "smoothed_prob_stress": 0.228,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-04",
+        "filtered_prob_stress": 0.122,
+        "smoothed_prob_stress": 0.201,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-05",
+        "filtered_prob_stress": 0.127,
+        "smoothed_prob_stress": 0.183,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-06",
+        "filtered_prob_stress": 0.154,
+        "smoothed_prob_stress": 0.175,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-07",
+        "filtered_prob_stress": 0.025,
+        "smoothed_prob_stress": 0.138,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-08",
+        "filtered_prob_stress": 0.031,
+        "smoothed_prob_stress": 0.111,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-11",
+        "filtered_prob_stress": 0.022,
+        "smoothed_prob_stress": 0.089,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-12",
+        "filtered_prob_stress": 0.017,
+        "smoothed_prob_stress": 0.071,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-13",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.053,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-14",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.04,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-15",
+        "filtered_prob_stress": 0.082,
+        "smoothed_prob_stress": 0.05,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-18",
+        "filtered_prob_stress": 0.047,
+        "smoothed_prob_stress": 0.05,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-19",
+        "filtered_prob_stress": 0.068,
+        "smoothed_prob_stress": 0.054,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-20",
+        "filtered_prob_stress": 0.071,
+        "smoothed_prob_stress": 0.058,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-21",
+        "filtered_prob_stress": 0.045,
+        "smoothed_prob_stress": 0.055,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-22",
+        "filtered_prob_stress": 0.03,
+        "smoothed_prob_stress": 0.049,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-25",
+        "filtered_prob_stress": 0.018,
+        "smoothed_prob_stress": 0.041,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-26",
+        "filtered_prob_stress": 0.024,
+        "smoothed_prob_stress": 0.037,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-27",
+        "filtered_prob_stress": 0.004,
+        "smoothed_prob_stress": 0.029,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-28",
+        "filtered_prob_stress": 0.005,
+        "smoothed_prob_stress": 0.023,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-05-29",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.017,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-01",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.013,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-02",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.01,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-03",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.007,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-04",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.005,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-05",
+        "filtered_prob_stress": 0.203,
+        "smoothed_prob_stress": 0.055,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-08",
+        "filtered_prob_stress": 0.184,
+        "smoothed_prob_stress": 0.087,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-09",
+        "filtered_prob_stress": 0.185,
+        "smoothed_prob_stress": 0.111,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-10",
+        "filtered_prob_stress": 0.264,
+        "smoothed_prob_stress": 0.15,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-11",
+        "filtered_prob_stress": 0.346,
+        "smoothed_prob_stress": 0.199,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-12",
+        "filtered_prob_stress": 0.336,
+        "smoothed_prob_stress": 0.233,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-15",
+        "filtered_prob_stress": 0.364,
+        "smoothed_prob_stress": 0.266,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-16",
+        "filtered_prob_stress": 0.375,
+        "smoothed_prob_stress": 0.293,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-17",
+        "filtered_prob_stress": 0.404,
+        "smoothed_prob_stress": 0.321,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-18",
+        "filtered_prob_stress": 0.405,
+        "smoothed_prob_stress": 0.342,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-19",
+        "filtered_prob_stress": 0.404,
+        "smoothed_prob_stress": 0.357,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-22",
+        "filtered_prob_stress": 0.405,
+        "smoothed_prob_stress": 0.369,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-23",
+        "filtered_prob_stress": 0.457,
+        "smoothed_prob_stress": 0.391,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-24",
+        "filtered_prob_stress": 0.444,
+        "smoothed_prob_stress": 0.404,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-25",
+        "filtered_prob_stress": 0.444,
+        "smoothed_prob_stress": 0.414,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-26",
+        "filtered_prob_stress": 0.432,
+        "smoothed_prob_stress": 0.419,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-29",
+        "filtered_prob_stress": 0.471,
+        "smoothed_prob_stress": 0.432,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-06-30",
+        "filtered_prob_stress": 0.486,
+        "smoothed_prob_stress": 0.445,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-01",
+        "filtered_prob_stress": 0.486,
+        "smoothed_prob_stress": 0.456,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-02",
+        "filtered_prob_stress": 0.475,
+        "smoothed_prob_stress": 0.46,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-03",
+        "filtered_prob_stress": 0.469,
+        "smoothed_prob_stress": 0.463,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-06",
+        "filtered_prob_stress": 0.285,
+        "smoothed_prob_stress": 0.418,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-07",
+        "filtered_prob_stress": 0.292,
+        "smoothed_prob_stress": 0.387,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-08",
+        "filtered_prob_stress": 0.293,
+        "smoothed_prob_stress": 0.363,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-09",
+        "filtered_prob_stress": 0.213,
+        "smoothed_prob_stress": 0.326,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-10",
+        "filtered_prob_stress": 0.13,
+        "smoothed_prob_stress": 0.277,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-13",
+        "filtered_prob_stress": 0.151,
+        "smoothed_prob_stress": 0.245,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-14",
+        "filtered_prob_stress": 0.06,
+        "smoothed_prob_stress": 0.199,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-15",
+        "filtered_prob_stress": 0.052,
+        "smoothed_prob_stress": 0.162,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-16",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.122,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-17",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.091,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-20",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.068,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-21",
+        "filtered_prob_stress": 0.025,
+        "smoothed_prob_stress": 0.058,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-22",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.043,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-23",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.032,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-24",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.024,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-27",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.018,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-28",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.014,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-29",
+        "filtered_prob_stress": 0.005,
+        "smoothed_prob_stress": 0.012,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-30",
+        "filtered_prob_stress": 0.119,
+        "smoothed_prob_stress": 0.038,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-07-31",
+        "filtered_prob_stress": 0.137,
+        "smoothed_prob_stress": 0.063,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-03",
+        "filtered_prob_stress": 0.205,
+        "smoothed_prob_stress": 0.098,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-04",
+        "filtered_prob_stress": 0.281,
+        "smoothed_prob_stress": 0.144,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-05",
+        "filtered_prob_stress": 0.273,
+        "smoothed_prob_stress": 0.176,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-06",
+        "filtered_prob_stress": 0.271,
+        "smoothed_prob_stress": 0.2,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-07",
+        "filtered_prob_stress": 0.264,
+        "smoothed_prob_stress": 0.216,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-10",
+        "filtered_prob_stress": 0.262,
+        "smoothed_prob_stress": 0.228,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-11",
+        "filtered_prob_stress": 0.242,
+        "smoothed_prob_stress": 0.231,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-12",
+        "filtered_prob_stress": 0.241,
+        "smoothed_prob_stress": 0.234,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-13",
+        "filtered_prob_stress": 0.248,
+        "smoothed_prob_stress": 0.237,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-14",
+        "filtered_prob_stress": 0.237,
+        "smoothed_prob_stress": 0.237,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-17",
+        "filtered_prob_stress": 0.208,
+        "smoothed_prob_stress": 0.23,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-18",
+        "filtered_prob_stress": 0.227,
+        "smoothed_prob_stress": 0.229,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-19",
+        "filtered_prob_stress": 0.21,
+        "smoothed_prob_stress": 0.224,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-20",
+        "filtered_prob_stress": 0.238,
+        "smoothed_prob_stress": 0.228,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-21",
+        "filtered_prob_stress": 0.183,
+        "smoothed_prob_stress": 0.217,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-24",
+        "filtered_prob_stress": 0.189,
+        "smoothed_prob_stress": 0.21,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-25",
+        "filtered_prob_stress": 0.189,
+        "smoothed_prob_stress": 0.205,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-26",
+        "filtered_prob_stress": 0.19,
+        "smoothed_prob_stress": 0.201,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-27",
+        "filtered_prob_stress": 0.094,
+        "smoothed_prob_stress": 0.174,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-28",
+        "filtered_prob_stress": 0.023,
+        "smoothed_prob_stress": 0.136,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-08-31",
+        "filtered_prob_stress": 0.02,
+        "smoothed_prob_stress": 0.107,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-01",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.081,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-02",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.06,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-03",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.045,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-04",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.034,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-07",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.025,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-08",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.019,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-09",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.014,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-10",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.011,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-11",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.008,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-14",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.006,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-15",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.005,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-16",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.003,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-17",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.003,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-18",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.002,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-21",
+        "filtered_prob_stress": 0.017,
+        "smoothed_prob_stress": 0.006,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-22",
+        "filtered_prob_stress": 0.012,
+        "smoothed_prob_stress": 0.007,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-23",
+        "filtered_prob_stress": 0.035,
+        "smoothed_prob_stress": 0.014,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-24",
+        "filtered_prob_stress": 0.035,
+        "smoothed_prob_stress": 0.019,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-25",
+        "filtered_prob_stress": 0.025,
+        "smoothed_prob_stress": 0.021,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-28",
+        "filtered_prob_stress": 0.046,
+        "smoothed_prob_stress": 0.027,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-29",
+        "filtered_prob_stress": 0.043,
+        "smoothed_prob_stress": 0.031,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-09-30",
+        "filtered_prob_stress": 0.025,
+        "smoothed_prob_stress": 0.03,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-01",
+        "filtered_prob_stress": 0.018,
+        "smoothed_prob_stress": 0.027,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-02",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.02,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-05",
+        "filtered_prob_stress": 0.006,
+        "smoothed_prob_stress": 0.016,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-06",
+        "filtered_prob_stress": 0.017,
+        "smoothed_prob_stress": 0.017,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-07",
+        "filtered_prob_stress": 0.003,
+        "smoothed_prob_stress": 0.013,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-08",
+        "filtered_prob_stress": 0.002,
+        "smoothed_prob_stress": 0.01,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-09",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.008,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-12",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.006,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-13",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.004,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-14",
+        "filtered_prob_stress": 0.005,
+        "smoothed_prob_stress": 0.005,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-15",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.003,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-16",
+        "filtered_prob_stress": 0.004,
+        "smoothed_prob_stress": 0.004,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-19",
+        "filtered_prob_stress": 0.009,
+        "smoothed_prob_stress": 0.005,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-20",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.004,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-21",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.003,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-22",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.002,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-23",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.002,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-26",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.001,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-27",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.001,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-28",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.001,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-29",
+        "filtered_prob_stress": 0.0,
+        "smoothed_prob_stress": 0.0,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-10-30",
+        "filtered_prob_stress": 0.115,
+        "smoothed_prob_stress": 0.029,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-11-02",
+        "filtered_prob_stress": 0.097,
+        "smoothed_prob_stress": 0.046,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-11-03",
+        "filtered_prob_stress": 0.083,
+        "smoothed_prob_stress": 0.055,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-11-04",
+        "filtered_prob_stress": 0.166,
+        "smoothed_prob_stress": 0.083,
+        "regime": "calm"
+      },
+      {
+        "date": "2026-11-05",
+        "filtered_prob_stress": 0.649,
+        "smoothed_prob_stress": 0.224,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-11-06",
+        "filtered_prob_stress": 0.655,
+        "smoothed_prob_stress": 0.332,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-11-09",
+        "filtered_prob_stress": 0.773,
+        "smoothed_prob_stress": 0.442,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-11-10",
+        "filtered_prob_stress": 0.774,
+        "smoothed_prob_stress": 0.525,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-11-11",
+        "filtered_prob_stress": 0.814,
+        "smoothed_prob_stress": 0.598,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-11-12",
+        "filtered_prob_stress": 0.796,
+        "smoothed_prob_stress": 0.647,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-11-13",
+        "filtered_prob_stress": 0.794,
+        "smoothed_prob_stress": 0.684,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-11-16",
+        "filtered_prob_stress": 0.839,
+        "smoothed_prob_stress": 0.723,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-11-17",
+        "filtered_prob_stress": 0.846,
+        "smoothed_prob_stress": 0.753,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-11-18",
+        "filtered_prob_stress": 0.84,
+        "smoothed_prob_stress": 0.775,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-11-19",
+        "filtered_prob_stress": 0.882,
+        "smoothed_prob_stress": 0.802,
+        "regime": "stress"
+      },
+      {
+        "date": "2026-11-20",
+        "filtered_prob_stress": 1.0,
+        "smoothed_prob_stress": 0.851,
+        "regime": "stress"
+      }
+    ]
+  }
+}

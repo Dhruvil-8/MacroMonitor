@@ -1,0 +1,288 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "as_of": "2026-11-20",
+    "horizon_weeks": 10,
+    "tci": 60.81,
+    "countries": [
+      {
+        "id": "germany",
+        "name": "Germany",
+        "own": 28.7,
+        "from_others": 71.3,
+        "to_others": 98.64,
+        "net": 27.35,
+        "role": "net_transmitter"
+      },
+      {
+        "id": "us",
+        "name": "US",
+        "own": 29.26,
+        "from_others": 70.74,
+        "to_others": 86.18,
+        "net": 15.44,
+        "role": "net_transmitter"
+      },
+      {
+        "id": "uk",
+        "name": "UK",
+        "own": 35.07,
+        "from_others": 64.93,
+        "to_others": 76.53,
+        "net": 11.6,
+        "role": "net_transmitter"
+      },
+      {
+        "id": "japan",
+        "name": "Japan",
+        "own": 39.45,
+        "from_others": 60.55,
+        "to_others": 64.86,
+        "net": 4.31,
+        "role": "net_transmitter"
+      },
+      {
+        "id": "australia",
+        "name": "Australia",
+        "own": 24.2,
+        "from_others": 75.8,
+        "to_others": 75.46,
+        "net": -0.35,
+        "role": "net_receiver"
+      },
+      {
+        "id": "brazil",
+        "name": "Brazil",
+        "own": 64.0,
+        "from_others": 36.0,
+        "to_others": 35.45,
+        "net": -0.55,
+        "role": "net_receiver"
+      },
+      {
+        "id": "india",
+        "name": "India",
+        "own": 64.77,
+        "from_others": 35.23,
+        "to_others": 18.78,
+        "net": -16.46,
+        "role": "net_receiver"
+      },
+      {
+        "id": "china",
+        "name": "China",
+        "own": 28.07,
+        "from_others": 71.93,
+        "to_others": 30.59,
+        "net": -41.34,
+        "role": "net_receiver"
+      }
+    ],
+    "matrix": [
+      {
+        "from_country": "US",
+        "US": 29.26,
+        "India": 1.27,
+        "Germany": 15.49,
+        "UK": 10.37,
+        "Japan": 16.07,
+        "China": 4.05,
+        "Brazil": 11.03,
+        "Australia": 12.46
+      },
+      {
+        "from_country": "India",
+        "US": 4.08,
+        "India": 64.77,
+        "Germany": 6.49,
+        "UK": 6.64,
+        "Japan": 2.23,
+        "China": 1.01,
+        "Brazil": 4.9,
+        "Australia": 9.87
+      },
+      {
+        "from_country": "Germany",
+        "US": 15.44,
+        "India": 3.91,
+        "Germany": 28.7,
+        "UK": 19.09,
+        "Japan": 9.6,
+        "China": 5.87,
+        "Brazil": 3.9,
+        "Australia": 13.49
+      },
+      {
+        "from_country": "UK",
+        "US": 11.36,
+        "India": 4.21,
+        "Germany": 22.98,
+        "UK": 35.07,
+        "Japan": 5.05,
+        "China": 3.03,
+        "Brazil": 3.6,
+        "Australia": 14.69
+      },
+      {
+        "from_country": "Japan",
+        "US": 17.47,
+        "India": 1.05,
+        "Germany": 15.32,
+        "UK": 7.46,
+        "Japan": 39.45,
+        "China": 6.52,
+        "Brazil": 1.58,
+        "Australia": 11.15
+      },
+      {
+        "from_country": "China",
+        "US": 13.38,
+        "India": 2.06,
+        "Germany": 13.05,
+        "UK": 9.85,
+        "Japan": 16.19,
+        "China": 28.07,
+        "Brazil": 8.54,
+        "Australia": 8.86
+      },
+      {
+        "from_country": "Brazil",
+        "US": 7.91,
+        "India": 0.21,
+        "Germany": 4.59,
+        "UK": 6.68,
+        "Japan": 5.46,
+        "China": 6.21,
+        "Brazil": 64.0,
+        "Australia": 4.93
+      },
+      {
+        "from_country": "Australia",
+        "US": 16.54,
+        "India": 6.07,
+        "Germany": 20.72,
+        "UK": 16.43,
+        "Japan": 10.25,
+        "China": 3.9,
+        "Brazil": 1.9,
+        "Australia": 24.2
+      }
+    ],
+    "labels": [
+      "US",
+      "India",
+      "Germany",
+      "UK",
+      "Japan",
+      "China",
+      "Brazil",
+      "Australia"
+    ],
+    "tci_history": [
+      {
+        "date": "2025-01-03",
+        "tci": 70.78
+      },
+      {
+        "date": "2025-01-31",
+        "tci": 70.19
+      },
+      {
+        "date": "2025-02-28",
+        "tci": 66.04
+      },
+      {
+        "date": "2025-03-28",
+        "tci": 64.73
+      },
+      {
+        "date": "2025-04-25",
+        "tci": 69.15
+      },
+      {
+        "date": "2025-05-23",
+        "tci": 71.46
+      },
+      {
+        "date": "2025-06-20",
+        "tci": 70.48
+      },
+      {
+        "date": "2025-07-18",
+        "tci": 68.91
+      },
+      {
+        "date": "2025-08-15",
+        "tci": 69.0
+      },
+      {
+        "date": "2025-09-12",
+        "tci": 67.84
+      },
+      {
+        "date": "2025-10-10",
+        "tci": 65.6
+      },
+      {
+        "date": "2025-11-07",
+        "tci": 64.33
+      },
+      {
+        "date": "2025-12-05",
+        "tci": 64.38
+      },
+      {
+        "date": "2026-01-02",
+        "tci": 62.79
+      },
+      {
+        "date": "2026-01-30",
+        "tci": 61.52
+      },
+      {
+        "date": "2026-02-27",
+        "tci": 61.35
+      },
+      {
+        "date": "2026-03-27",
+        "tci": 61.11
+      },
+      {
+        "date": "2026-04-24",
+        "tci": 62.87
+      },
+      {
+        "date": "2026-05-22",
+        "tci": 62.86
+      },
+      {
+        "date": "2026-06-19",
+        "tci": 62.38
+      },
+      {
+        "date": "2026-07-17",
+        "tci": 62.22
+      },
+      {
+        "date": "2026-08-14",
+        "tci": 61.86
+      },
+      {
+        "date": "2026-09-11",
+        "tci": 60.57
+      },
+      {
+        "date": "2026-10-09",
+        "tci": 62.37
+      },
+      {
+        "date": "2026-11-06",
+        "tci": 59.61
+      }
+    ],
+    "interpretation": "Global system-wide Total Connectedness Index (TCI) stands at 60.8%. Germany is the largest net transmitter of shocks (+27.4%), while China is the primary net receiver (-41.3%)."
+  }
+}

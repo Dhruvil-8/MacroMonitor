@@ -1,0 +1,69 @@
+# Global Market Radar v2 — Historical Analogue Presets & Evaluation Config
+
+version: "2.0.0"
+
+engine:
+  min_expanding_obs: 500
+  decluster_gap_days: 20
+  top_k: 15
+  horizons_days:
+    "1M": 21
+    "3M": 63
+    "6M": 126
+  target_assets: ["SPX", "NDX", "US10Y", "DXY", "GOLD", "NIFTY50", "HYG"]
+  bootstrap_seed: 42
+  bootstrap_iterations: 400
+  bootstrap_block_days: 10
+  walk_forward_step_days: 21
+  min_eval_points: 36
+  skill_threshold: 0.02
+
+presets:
+  - id: "rates_dollar_pressure"
+    name: "Rates & Dollar Tightening"
+    rationale: "Captures joint shocks in long-end Treasury yields, dollar strength, crude inflation impulse, equity momentum, and implied volatility."
+    features:
+      - { asset: "US10Y", metric: "mom_20", label: "US 10Y Yield 20D Chg" }
+      - { asset: "DXY", metric: "mom_20", label: "DXY 20D Return" }
+      - { asset: "WTI", metric: "mom_20", label: "WTI Crude 20D Return" }
+      - { asset: "SPX", metric: "mom_20", label: "S&P 500 20D Return" }
+      - { asset: "VIX", metric: "vol20", label: "VIX 20D Volatility" }
+
+  - id: "risk_off_stress"
+    name: "Cross-Asset Risk-Off Stress"
+    rationale: "Matches episodes of synchronized equity drawdowns, credit ETF weakness, elevated volatility, and defensive gold/duration bid."
+    features:
+      - { asset: "SPX", metric: "drawdown_252d", label: "S&P 500 1Y Drawdown" }
+      - { asset: "VIX", metric: "trend_tstat", label: "VIX 60D Trend t-stat" }
+      - { asset: "HYG", metric: "mom_20", label: "HYG Credit 20D Return" }
+      - { asset: "GOLD", metric: "mom_20", label: "Gold 20D Return" }
+      - { asset: "TLT", metric: "mom_20", label: "20Y+ Treasury 20D Return" }
+
+  - id: "cyclical_reflation"
+    name: "Cyclical Metals & Yield Expansion"
+    rationale: "Tracks industrial metals (Copper), energy, small-cap relative performance, and nominal yield trend alignment."
+    features:
+      - { asset: "COPPER", metric: "mom_20", label: "Copper 20D Return" }
+      - { asset: "WTI", metric: "trend_tstat", label: "WTI 60D Trend t-stat" }
+      - { asset: "RUT", metric: "mom_20", label: "Russell 2000 20D Return" }
+      - { asset: "XLE", metric: "mom_20", label: "US Energy ETF 20D Return" }
+      - { asset: "US10Y", metric: "trend_tstat", label: "US 10Y 60D Trend" }
+
+  - id: "equity_breadth_concentration"
+    name: "Equity Concentration & Dispersion"
+    rationale: "Measures mega-cap Nasdaq momentum vs equal-weight breadth, semiconductor intensity, and broad index volatility."
+    features:
+      - { asset: "NDX", metric: "mom_20", label: "Nasdaq 100 20D Return" }
+      - { asset: "RSP", metric: "mom_20", label: "Equal-Weight S&P 20D Return" }
+      - { asset: "XLK", metric: "trend_tstat", label: "Tech Sector 60D Trend" }
+      - { asset: "SPX", metric: "vol20", label: "S&P 500 20D Vol" }
+
+  - id: "india_flow_stress"
+    name: "India Volatility & Currency Pressure"
+    rationale: "Pairs Indian equity index momentum, India VIX regime, USD/INR pressure, and global US 10Y / EM backdrop."
+    features:
+      - { asset: "NIFTY50", metric: "mom_20", label: "Nifty 50 20D Return" }
+      - { asset: "INDIAVIX", metric: "vol20", label: "India VIX 20D Vol" }
+      - { asset: "USDINR", metric: "mom_20", label: "USD/INR 20D Return" }
+      - { asset: "EEM", metric: "mom_20", label: "EM Proxy 20D Return" }
+      - { asset: "US10Y", metric: "mom_20", label: "US 10Y 20D Chg" }

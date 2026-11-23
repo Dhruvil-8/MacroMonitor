@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "target": "Germany (DAX)",
+    "target_id": "dax",
+    "horizon_days": 5,
+    "lens": "usd",
+    "total_return": -0.0607,
+    "contributions": {
+      "brent": 0.0041,
+      "copper": -0.0045,
+      "gold": 0.002,
+      "dxy": -0.0013,
+      "us10y": 0.0005,
+      "row_equity": -0.0168,
+      "fx_effect": -0.0112
+    },
+    "intervals": {
+      "brent": [
+        0.0032,
+        0.0051
+      ],
+      "copper": [
+        -0.0091,
+        0.0001
+      ],
+      "gold": [
+        -0.0006,
+        0.0046
+      ],
+      "dxy": [
+        -0.003,
+        0.0004
+      ],
+      "us10y": [
+        -0.0023,
+        0.0033
+      ],
+      "row_equity": [
+        -0.0201,
+        -0.0135
+      ],
+      "fx_effect": [
+        -0.0112,
+        -0.0112
+      ]
+    },
+    "residual": -0.0335,
+    "betas": {
+      "brent": -0.1006,
+      "copper": 0.0479,
+      "gold": -0.0373,
+      "dxy": -0.1833,
+      "us10y": -0.0001,
+      "row_equity": 0.6396
+    },
+    "r2_in_sample": 0.488,
+    "r2_out_sample": 0.4861,
+    "mostly_unexplained": false,
+    "regularized": false,
+    "n_obs": 250,
+    "window_dates": {
+      "prior_start": "2025-11-28",
+      "prior_end": "2026-11-12",
+      "horizon_start": "2026-11-13",
+      "horizon_end": "2026-11-19"
+    },
+    "narrative": "Over 5 days, Germany (DAX)'s USD return of -6.1% was associated with: row equity -1.7%, fx effect -1.1%, copper -0.5%, brent +0.4%, gold +0.2%, dxy -0.1%, us10y +0.1%, unexplained -3.4% (out-of-sample R-squared 0.49).",
+    "history": []
+  }
+}

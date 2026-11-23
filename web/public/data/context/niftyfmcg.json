@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "niftyfmcg",
+    "name": "Nifty FMCG Index",
+    "group": "india_sector",
+    "region": "IN",
+    "unit": "index",
+    "current_value": 48535.7,
+    "percentile": 14.5,
+    "z_score": -0.92,
+    "n": 754,
+    "n_eff": 754.0,
+    "histogram_bins": [
+      -6.0669,
+      -5.5636,
+      -5.0603,
+      -4.557,
+      -4.0537,
+      -3.5505,
+      -3.0472,
+      -2.5439,
+      -2.0406,
+      -1.5373,
+      -1.034,
+      -0.5307,
+      -0.0275,
+      0.4758,
+      0.9791,
+      1.4824,
+      1.9857,
+      2.489,
+      2.9923,
+      3.4955,
+      3.9988,
+      4.5021,
+      5.0054,
+      5.5087,
+      6.012
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      751,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-07-14",
+        "value": 48524.95,
+        "distance": 10.75
+      },
+      {
+        "date": "2026-06-11",
+        "value": 48521.8,
+        "distance": 13.8984
+      },
+      {
+        "date": "2026-03-16",
+        "value": 48468.85,
+        "distance": 66.8477
+      },
+      {
+        "date": "2026-08-14",
+        "value": 48615.05,
+        "distance": 79.3516
+      },
+      {
+        "date": "2026-04-16",
+        "value": 48377.9,
+        "distance": 157.8008
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Nifty FMCG Index.",
+    "source_note": "Attribution: NSE"
+  }
+}

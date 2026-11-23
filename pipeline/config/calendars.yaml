@@ -1,0 +1,195 @@
+# pipeline/config/calendars.yaml
+# Market close timestamp rules for time-zone synchronization (Section 3.4)
+# Used by Move Decomposer to align asynchronous international market closes.
+# Format:
+#   id: series slug
+#   tz: IANA time zone identifier (handled via Python zoneinfo)
+#   close_time: local market close time (HH:MM in 24h format) or reference fix time
+#   source_note: official exchange or fix provider documentation
+
+# =============================================================================
+# 1. Equity Indices (10 Launch Countries)
+# =============================================================================
+spx:
+  tz: "America/New_York"
+  close_time: "16:00"
+  source_note: "NYSE/NASDAQ regular session close 16:00 ET"
+
+ndx:
+  tz: "America/New_York"
+  close_time: "16:00"
+  source_note: "NASDAQ regular session close 16:00 ET"
+
+rut:
+  tz: "America/New_York"
+  close_time: "16:00"
+  source_note: "NYSE regular session close 16:00 ET"
+
+dji:
+  tz: "America/New_York"
+  close_time: "16:00"
+  source_note: "NYSE regular session close 16:00 ET"
+
+tsse:
+  tz: "America/Toronto"
+  close_time: "16:00"
+  source_note: "TSX regular session close 16:00 ET"
+
+ibov:
+  tz: "America/Sao_Paulo"
+  close_time: "17:00"
+  source_note: "B3 regular trading session close 17:00 BRT"
+
+ftse:
+  tz: "Europe/London"
+  close_time: "16:30"
+  source_note: "London Stock Exchange close 16:30 GMT/BST"
+
+dax:
+  tz: "Europe/Berlin"
+  close_time: "17:30"
+  source_note: "XETRA Deutsche Börse close 17:30 CET/CEST"
+
+n225:
+  tz: "Asia/Tokyo"
+  close_time: "15:30"
+  source_note: "Tokyo Stock Exchange afternoon session close 15:30 JST (updated 2024)"
+
+ssec:
+  tz: "Asia/Shanghai"
+  close_time: "15:00"
+  source_note: "Shanghai Stock Exchange afternoon session close 15:00 CST"
+
+nifty50:
+  tz: "Asia/Kolkata"
+  close_time: "15:30"
+  source_note: "National Stock Exchange of India normal market close 15:30 IST"
+
+kospi:
+  tz: "Asia/Seoul"
+  close_time: "15:30"
+  source_note: "Korea Exchange close 15:30 KST"
+
+asx200:
+  tz: "Australia/Sydney"
+  close_time: "16:00"
+  source_note: "Australian Securities Exchange close 16:00 AEST/AEDT"
+
+# =============================================================================
+# 2. Currencies (WM/Refinitiv 4pm London Fix or NY 5pm Close)
+# =============================================================================
+dxy:
+  tz: "America/New_York"
+  close_time: "17:00"
+  source_note: "ICE US Dollar Index futures daily settle / spot snapshot 17:00 ET"
+
+eurusd:
+  tz: "America/New_York"
+  close_time: "17:00"
+  source_note: "New York 5pm FX market convention (end of day)"
+
+gbpusd:
+  tz: "America/New_York"
+  close_time: "17:00"
+  source_note: "New York 5pm FX market convention"
+
+usdjpy:
+  tz: "America/New_York"
+  close_time: "17:00"
+  source_note: "New York 5pm FX market convention"
+
+usdinr:
+  tz: "Asia/Kolkata"
+  close_time: "13:30"
+  source_note: "RBI Reference Rate 13:30 IST / FBIL fix"
+
+usdcny:
+  tz: "Asia/Shanghai"
+  close_time: "16:30"
+  source_note: "CFETS onshore CNY closing rate 16:30 CST"
+
+usdcad:
+  tz: "America/New_York"
+  close_time: "17:00"
+  source_note: "Bank of Canada daily rate / NY 5pm convention"
+
+usdbrl:
+  tz: "America/Sao_Paulo"
+  close_time: "13:00"
+  source_note: "BCB PTAX reference rate / 17:00 closing spot"
+
+usdkrw:
+  tz: "Asia/Seoul"
+  close_time: "15:30"
+  source_note: "Seoul onshore FX market regular close 15:30 KST"
+
+audusd:
+  tz: "America/New_York"
+  close_time: "17:00"
+  source_note: "New York 5pm FX market convention"
+
+# =============================================================================
+# 3. Commodities (Settle Times)
+# =============================================================================
+brent:
+  tz: "Europe/London"
+  close_time: "19:30"
+  source_note: "ICE Brent Crude settlement 19:30 London time"
+
+wti:
+  tz: "America/New_York"
+  close_time: "14:30"
+  source_note: "NYMEX Light Sweet Crude settlement 14:30 ET"
+
+gold:
+  tz: "America/New_York"
+  close_time: "13:30"
+  source_note: "COMEX Gold settlement 13:30 ET"
+
+silver:
+  tz: "America/New_York"
+  close_time: "13:25"
+  source_note: "COMEX Silver settlement 13:25 ET"
+
+copper:
+  tz: "America/New_York"
+  close_time: "13:00"
+  source_note: "COMEX Copper settlement 13:00 ET"
+
+natgas:
+  tz: "America/New_York"
+  close_time: "14:30"
+  source_note: "NYMEX Natural Gas settlement 14:30 ET"
+
+# =============================================================================
+# 4. Rates & Spreads
+# =============================================================================
+us2y:
+  tz: "America/New_York"
+  close_time: "15:00"
+  source_note: "Treasury market 15:00 ET close"
+
+us5y:
+  tz: "America/New_York"
+  close_time: "15:00"
+  source_note: "Treasury market 15:00 ET close"
+
+us10y:
+  tz: "America/New_York"
+  close_time: "15:00"
+  source_note: "Treasury market 15:00 ET close"
+
+us30y:
+  tz: "America/New_York"
+  close_time: "15:00"
+  source_note: "Treasury market 15:00 ET close"
+
+vix:
+  tz: "America/New_York"
+  close_time: "16:15"
+  source_note: "Cboe VIX settlement 16:15 ET"
+
+indiavix:
+  tz: "Asia/Kolkata"
+  close_time: "15:30"
+  source_note: "NSE India VIX market close 15:30 IST"

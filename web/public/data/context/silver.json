@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "silver",
+    "name": "Silver Futures",
+    "group": "commodity",
+    "region": "Global",
+    "unit": "usd_per_oz",
+    "current_value": 41.03,
+    "percentile": 58.1,
+    "z_score": -0.21,
+    "n": 754,
+    "n_eff": 754.0,
+    "histogram_bins": [
+      -0.3615,
+      -0.3323,
+      -0.303,
+      -0.2738,
+      -0.2445,
+      -0.2153,
+      -0.1861,
+      -0.1568,
+      -0.1276,
+      -0.0984,
+      -0.0691,
+      -0.0399,
+      -0.0107,
+      0.0186,
+      0.0478,
+      0.077,
+      0.1063,
+      0.1355,
+      0.1647,
+      0.194,
+      0.2232,
+      0.2524,
+      0.2817,
+      0.3109,
+      0.3401
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      8,
+      16,
+      59,
+      341,
+      255,
+      60,
+      9,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2025-09-02",
+        "value": 41.07,
+        "distance": 0.036
+      },
+      {
+        "date": "2025-07-22",
+        "value": 39.32,
+        "distance": 1.715
+      },
+      {
+        "date": "2025-08-13",
+        "value": 38.5,
+        "distance": 2.536
+      },
+      {
+        "date": "2025-09-24",
+        "value": 43.78,
+        "distance": 2.742
+      },
+      {
+        "date": "2025-06-17",
+        "value": 37.09,
+        "distance": 3.945
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Silver Futures.",
+    "source_note": "Attribution: YAHOO"
+  }
+}

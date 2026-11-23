@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "target": "United States (S&P 500)",
+    "target_id": "spx",
+    "horizon_days": 5,
+    "lens": "local",
+    "total_return": -0.0564,
+    "contributions": {
+      "brent": 0.0007,
+      "copper": -0.0006,
+      "gold": -0.0008,
+      "dxy": 0.0,
+      "us10y": 0.0025,
+      "row_equity": -0.0004
+    },
+    "intervals": {
+      "brent": [
+        0.0006,
+        0.0007
+      ],
+      "copper": [
+        -0.0008,
+        -0.0005
+      ],
+      "gold": [
+        -0.0009,
+        -0.0007
+      ],
+      "dxy": [
+        -0.0,
+        0.0
+      ],
+      "us10y": [
+        -0.0049,
+        0.01
+      ],
+      "row_equity": [
+        -0.0004,
+        -0.0004
+      ]
+    },
+    "residual": -0.0578,
+    "betas": {
+      "brent": -0.0159,
+      "copper": 0.0067,
+      "gold": 0.0153,
+      "dxy": 0.0003,
+      "us10y": -0.0004,
+      "row_equity": 0.0154
+    },
+    "r2_in_sample": 0.9993,
+    "r2_out_sample": 0.9993,
+    "mostly_unexplained": false,
+    "regularized": true,
+    "n_obs": 250,
+    "window_dates": {
+      "prior_start": "2025-11-28",
+      "prior_end": "2026-11-12",
+      "horizon_start": "2026-11-13",
+      "horizon_end": "2026-11-19"
+    },
+    "narrative": "Over 5 days, United States (S&P 500)'s LOCAL return of -5.6% was associated with: us10y +0.3%, gold -0.1%, brent +0.1%, copper -0.1%, row equity -0.0%, dxy +0.0%, unexplained -5.8% (out-of-sample R-squared 1.00).",
+    "history": []
+  }
+}

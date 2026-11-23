@@ -1,0 +1,12 @@
+{
+  "name": "macromonitor",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix web install && npm --prefix web run build",
+    "deploy": "wrangler pages deploy web/out --project-name=macromonitor"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

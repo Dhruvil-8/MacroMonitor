@@ -1,0 +1,105 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables & Credentials
+.env
+.env*
+*.env
+*.env.*
+*.key
+*.pem
+*.cert
+*.crt
+*.secret
+*.token
+credentials.json
+secrets/
+
+# Processed data files (generated, not committed)
+data/raw/
+*.db
+*.sqlite
+data/processed/alerts/*.jsonl
+data/processed/alerts/latest.json
+data/processed/validation/
+
+# Logs
+*.log
+logs/
+
+# Local documentation
+DEPLOYMENT.md
+audit_report.md
+# validation_report.md (Uploaded as proof of quality)
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Frontend Node dependencies
+node_modules/
+frontend/node_modules/
+frontend/dist/
+web/node_modules/
+web/.next/
+web/out/
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# Internal Agent and Build Planning Blueprints (Skip for public repository)
+AGENTS.md
+AGENT_PLAN.md
+MARKET_RADAR_AGENT_PLAN.md
+MASTER_PLAN.md
+PROGRESS.md
+PUSH_PACK_PLAN.md
+docs/AGENT_PLAN.md
+docs/MASTER_PLAN.md
+docs/backlog.md
+docs/glossary.md
+

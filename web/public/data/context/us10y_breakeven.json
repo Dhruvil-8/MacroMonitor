@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "us10y_breakeven",
+    "name": "US 10-Year Breakeven Inflation Rate",
+    "group": "rates",
+    "region": "US",
+    "unit": "pct",
+    "current_value": 2.15,
+    "percentile": 42.2,
+    "z_score": -0.0,
+    "n": 6232,
+    "n_eff": 6231.5,
+    "histogram_bins": [
+      -9578.04,
+      -8788.12,
+      -7998.2,
+      -7208.28,
+      -6418.36,
+      -5628.44,
+      -4838.52,
+      -4048.6,
+      -3258.68,
+      -2468.76,
+      -1678.84,
+      -888.92,
+      -99.0,
+      690.92,
+      1480.84,
+      2270.76,
+      3060.68,
+      3850.6,
+      4640.52,
+      5430.44,
+      6220.36,
+      7010.28,
+      7800.2,
+      8590.12,
+      9380.04
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      6229,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2021-02-26",
+        "value": 2.15,
+        "distance": 0.0
+      },
+      {
+        "date": "2013-08-20",
+        "value": 2.15,
+        "distance": 0.0
+      },
+      {
+        "date": "2024-08-27",
+        "value": 2.15,
+        "distance": 0.0
+      },
+      {
+        "date": "2024-09-20",
+        "value": 2.15,
+        "distance": 0.0
+      },
+      {
+        "date": "2022-09-30",
+        "value": 2.15,
+        "distance": 0.0
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for US 10-Year Breakeven Inflation Rate.",
+    "source_note": "Attribution: FRED"
+  }
+}

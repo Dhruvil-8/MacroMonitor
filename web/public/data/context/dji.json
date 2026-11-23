@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "dji",
+    "name": "Dow Jones Industrial Average",
+    "group": "equity_index",
+    "region": "US",
+    "unit": "index",
+    "current_value": 48147.33,
+    "percentile": 71.8,
+    "z_score": 0.64,
+    "n": 754,
+    "n_eff": 754.0,
+    "histogram_bins": [
+      -5.9279,
+      -5.4336,
+      -4.9392,
+      -4.4448,
+      -3.9505,
+      -3.4561,
+      -2.9617,
+      -2.4674,
+      -1.973,
+      -1.4786,
+      -0.9843,
+      -0.4899,
+      0.0044,
+      0.4988,
+      0.9932,
+      1.4875,
+      1.9819,
+      2.4763,
+      2.9706,
+      3.465,
+      3.9594,
+      4.4537,
+      4.9481,
+      5.4424,
+      5.9368
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      751,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2025-12-19",
+        "value": 48134.89,
+        "distance": 12.4375
+      },
+      {
+        "date": "2026-04-09",
+        "value": 48185.8,
+        "distance": 38.4727
+      },
+      {
+        "date": "2025-11-12",
+        "value": 48254.82,
+        "distance": 107.4922
+      },
+      {
+        "date": "2026-03-05",
+        "value": 47954.74,
+        "distance": 192.5898
+      },
+      {
+        "date": "2026-01-20",
+        "value": 48488.59,
+        "distance": 341.2617
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Dow Jones Industrial Average.",
+    "source_note": "Attribution: YAHOO"
+  }
+}

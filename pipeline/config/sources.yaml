@@ -1,0 +1,90 @@
+# pipeline/config/sources.yaml
+# Specification P0: Source Registry & Reliability Metadata
+sources:
+  - id: fred
+    name: "Federal Reserve Economic Data (FRED)"
+    provider: "Federal Reserve Bank of St. Louis"
+    documentation_url: "https://fred.stlouisfed.org/docs/api/fred/"
+    terms_url: "https://fred.stlouisfed.org/legal/"
+    rate_limit: "120 requests/minute"
+    schedule: "Daily 17:00 US Eastern (Market close + 1h)"
+    fallback_source_id: null
+    last_verified: "2026-11-20"
+    owner_notes: "Requires free API key. Unlimited daily queries. Official public domain macro data."
+
+  - id: yahoo
+    name: "Yahoo Finance Market Aggregator"
+    provider: "Yahoo Inc."
+    documentation_url: "https://finance.yahoo.com/"
+    terms_url: "https://legal.yahoo.com/us/en/yahoo/terms/otos/index.html"
+    rate_limit: "30 requests/minute with jitter"
+    schedule: "Continuous / End-of-Day close"
+    fallback_source_id: null
+    last_verified: "2026-11-20"
+    owner_notes: "Used for broad global index closes and commodities. Wrapped with retries and exponential backoff."
+
+  - id: nse
+    name: "National Stock Exchange of India"
+    provider: "NSE India Ltd."
+    documentation_url: "https://www.nseindia.com/all-reports"
+    terms_url: "https://www.nseindia.com/disclaimer"
+    rate_limit: "10 requests/minute"
+    schedule: "Daily 19:00 IST (Indian Market Close)"
+    fallback_source_id: "yahoo"
+    last_verified: "2026-11-20"
+    owner_notes: "Official public archives for Nifty indices, India VIX, FII/DII cash flows, and F&O derivatives."
+
+  - id: cftc
+    name: "Commodity Futures Trading Commission (COT)"
+    provider: "U.S. Federal Government (CFTC)"
+    documentation_url: "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm"
+    terms_url: "https://www.cftc.gov/About/PrivacyWebsiteNotices"
+    rate_limit: "60 requests/minute"
+    schedule: "Weekly on Friday 15:30 US Eastern (As of Tuesday)"
+    fallback_source_id: null
+    last_verified: "2026-11-20"
+    owner_notes: "Socrata Public API. Free open public domain data for speculative and hedging commitments."
+
+  - id: cboe
+    name: "Cboe Global Markets Volatility Indices"
+    provider: "Cboe Options Exchange"
+    documentation_url: "https://www.cboe.com/tradable_products/vix/"
+    terms_url: "https://www.cboe.com/terms/"
+    rate_limit: "20 requests/minute"
+    schedule: "Daily 17:00 US Eastern"
+    fallback_source_id: "yahoo"
+    last_verified: "2026-11-20"
+    owner_notes: "Term structure indices (VIX9D, VIX, VIX3M, VIX6M) and sentiment gauges (SKEW, VVIX)."
+
+  - id: treasury
+    name: "U.S. Department of the Treasury"
+    provider: "U.S. Department of the Treasury FiscalData"
+    documentation_url: "https://fiscaldata.treasury.gov/api-documentation/"
+    terms_url: "https://fiscaldata.treasury.gov/about-us/"
+    rate_limit: "60 requests/minute"
+    schedule: "Daily 17:00 US Eastern"
+    fallback_source_id: "fred"
+    last_verified: "2026-11-20"
+    owner_notes: "Daily par yield curves from 1 month to 30 years and Federal debt balances."
+
+  - id: eia
+    name: "U.S. Energy Information Administration"
+    provider: "U.S. Department of Energy"
+    documentation_url: "https://www.eia.gov/opendata/"
+    terms_url: "https://www.eia.gov/about/copyrights_reuse.php"
+    rate_limit: "100 requests/minute"
+    schedule: "Weekly Wednesday 10:30 US Eastern"
+    fallback_source_id: null
+    last_verified: "2026-11-20"
+    owner_notes: "Commercial crude stocks, gasoline inventories, distillates, and natural gas underground storage."
+
+  - id: bis
+    name: "Bank for International Settlements"
+    provider: "BIS Monetary and Economic Department"
+    documentation_url: "https://www.bis.org/statistics/index.htm"
+    terms_url: "https://www.bis.org/terms_conditions.htm"
+    rate_limit: "30 requests/minute"
+    schedule: "Monthly / Quarterly"
+    fallback_source_id: null
+    last_verified: "2026-11-20"
+    owner_notes: "Real Effective Exchange Rates (REER) and Credit-to-GDP gap early warning indicators."

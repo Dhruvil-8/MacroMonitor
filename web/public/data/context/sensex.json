@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "sensex",
+    "name": "BSE Sensex Index",
+    "group": "india_equity",
+    "region": "IN",
+    "unit": "index",
+    "current_value": 83919.71,
+    "percentile": 91.5,
+    "z_score": 0.92,
+    "n": 754,
+    "n_eff": 754.0,
+    "histogram_bins": [
+      -6.4783,
+      -5.9394,
+      -5.4004,
+      -4.8615,
+      -4.3225,
+      -3.7835,
+      -3.2446,
+      -2.7056,
+      -2.1667,
+      -1.6277,
+      -1.0887,
+      -0.5498,
+      -0.0108,
+      0.5281,
+      1.0671,
+      1.6061,
+      2.145,
+      2.684,
+      3.2229,
+      3.7619,
+      4.3009,
+      4.8398,
+      5.3788,
+      5.9177,
+      6.4567
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      751,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2025-10-31",
+        "value": 83938.71,
+        "distance": 19.0
+      },
+      {
+        "date": "2026-01-12",
+        "value": 83878.17,
+        "distance": 41.5391
+      },
+      {
+        "date": "2026-02-04",
+        "value": 83817.69,
+        "distance": 102.0234
+      },
+      {
+        "date": "2025-06-27",
+        "value": 84058.9,
+        "distance": 139.1875
+      },
+      {
+        "date": "2024-10-02",
+        "value": 84266.29,
+        "distance": 346.5781
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for BSE Sensex Index.",
+    "source_note": "Attribution: YAHOO"
+  }
+}

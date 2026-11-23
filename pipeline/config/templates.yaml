@@ -1,0 +1,70 @@
+# pipeline/config/templates.yaml
+# Deterministic, audited insight templates (Section 9.5)
+# Tone: Neutral, quantitative, past or present tense.
+# FORBIDDEN: buy, sell, bullish, bearish, target, will rise, will fall, recommend, signal to.
+
+templates:
+  volatility_shift:
+    headline: "{name} realized volatility moved above historical baseline"
+    body: "{window}-day realized volatility is {value:.1f}%, corresponding to the {percentile:d}th percentile of historical observations (N={n}, effective N={n_eff})."
+
+  divergence:
+    headline: "Statistical divergence detected between {asset_a} and {asset_b}"
+    body: "The 20-day momentum divergence reached {spread_z:.2f} standard deviations, exceeding the {percentile:d}th historical percentile for {days} consecutive days."
+
+  correlation_breakdown:
+    headline: "Correlation shift between {asset_a} and {asset_b}"
+    body: "{window_short}-day rolling correlation shifted to {curr_corr:.2f} compared to the {window_long}-day baseline of {baseline_corr:.2f} (Z-score: {z_score:.2f})."
+
+  unusual_return:
+    headline: "Unusual return recorded for {name}"
+    body: "Single-day price change of {return_pct:+.2f}% represents an expanding-window move of {z_score:.2f} standard deviations."
+
+  liquidity_shift:
+    headline: "Central bank net liquidity expansion/contraction"
+    body: "US Net Liquidity 4-week change reached {change_bn:+.1f}B, resting at the {percentile:d}th percentile of the historical distribution."
+
+  india_flow_extreme:
+    headline: "Institutional flow concentration in Indian equities"
+    body: "Combined institutional net flow of {flow_cr:+.0f} Cr places at the {percentile:d}th percentile over a rolling 20-day horizon."
+
+  # Section 4.6 Observation Rules
+  country_divergence:
+    headline: "Momentum divergence between {country_a} and {country_b}"
+    body: "The 20-day momentum divergence spread reached {spread_z:+.2f} standard deviations, persisting for {days} consecutive sessions."
+
+  fx_driven_move:
+    headline: "Currency component drove USD return in {country}"
+    body: "Local currency movement accounted for {fx_share:.0f}% of the total USD return ({usd_ret:+.2f}%), with the local asset recording {local_ret:+.2f}%."
+
+  sector_leadership:
+    headline: "Sector momentum leadership shifted to {sector}"
+    body: "{sector} moved to the highest 20-day momentum rank among sectors, with a 20-day return of {return_pct:+.2f}%."
+
+  driver_shift:
+    headline: "Sensitivity of {asset} to {driver} shifted outside historical band"
+    body: "Rolling regression coefficient moved to {beta:.2f}, outside the historical 2-standard-error band of [{band_low:.2f}, {band_high:.2f}]."
+
+  commodity_shock:
+    headline: "Unusual price move recorded in {commodity}"
+    body: "Single-session move of {return_pct:+.2f}% (Z-score: {z_score:+.2f}). Historically more sensitive economies include {sensitive_countries}."
+
+  dollar_regime:
+    headline: "US Dollar Index recorded multi-week momentum shift"
+    body: "DXY 20-day momentum Z-score reached {z_score:+.2f}, placing at the {percentile:d}th historical percentile."
+
+  breadth_deterioration:
+    headline: "Global equity breadth contraction"
+    body: "The share of major equity markets above their 200-day moving average moved to {breadth_pct:.0f}%, compared to {prev_breadth_pct:.0f}% in the prior window."
+
+  pc1_sync_spike:
+    headline: "Global equity co-movement elevated"
+    body: "The first principal component (PC1) accounts for {pc1_share:.1f}% of total cross-market variance, resting at the {percentile:d}th historical percentile."
+
+  downside_corr_jump:
+    headline: "Downside correlation premium widened for {asset}"
+    body: "Downside correlation exceeded unconditional correlation by {spread:+.2f} (downside: {downside_corr:.2f}, unconditional: {unconditional_corr:.2f})."
+
+  vol_cone_breach:
+    headline: "Realized volatility elevated across multiple horizons for {asset}"
+    body: "Realized volatility exceeded the 90th historical percentile across {num_breaches} horizons simultaneously ({horizons})."

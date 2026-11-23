@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "rrp",
+    "name": "Overnight Reverse Repurchase Agreements",
+    "group": "liquidity",
+    "region": "US",
+    "unit": "usd_bn",
+    "current_value": 0.4,
+    "percentile": 10.1,
+    "z_score": -0.6,
+    "n": 3422,
+    "n_eff": 3422.0,
+    "histogram_bins": [
+      -35322.718,
+      -32879.354,
+      -30435.99,
+      -27992.626,
+      -25549.262,
+      -23105.898,
+      -20662.534,
+      -18219.17,
+      -15775.806,
+      -13332.442,
+      -10889.078,
+      -8445.714,
+      -6002.35,
+      -3558.986,
+      -1115.622,
+      1327.742,
+      3771.106,
+      6214.47,
+      8657.834,
+      11101.198,
+      13544.562,
+      15987.926,
+      18431.29,
+      20874.654,
+      23318.018
+    ],
+    "histogram_counts": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      2,
+      2,
+      7,
+      4,
+      10,
+      16,
+      42,
+      70,
+      205,
+      1742,
+      963,
+      222,
+      79,
+      25,
+      14,
+      5,
+      3,
+      2,
+      3,
+      2
+    ],
+    "analogs": [
+      {
+        "date": "2020-01-09",
+        "value": 0.4,
+        "distance": 0.0
+      },
+      {
+        "date": "2018-11-09",
+        "value": 0.4,
+        "distance": 0.0
+      },
+      {
+        "date": "2026-04-09",
+        "value": 0.4,
+        "distance": 0.001
+      },
+      {
+        "date": "2020-02-06",
+        "value": 0.4,
+        "distance": 0.002
+      },
+      {
+        "date": "2026-08-25",
+        "value": 0.41,
+        "distance": 0.004
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Overnight Reverse Repurchase Agreements.",
+    "source_note": "Attribution: FRED"
+  }
+}

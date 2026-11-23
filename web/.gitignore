@@ -1,0 +1,9 @@
+# Next.js & Frontend ignores
+node_modules/
+.next/
+out/
+.env
+.env*
+*.env
+*.env.*
+*.log

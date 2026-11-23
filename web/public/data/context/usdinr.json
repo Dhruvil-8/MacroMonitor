@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "usdinr",
+    "name": "USD / INR Currency Pair",
+    "group": "fx",
+    "region": "IN",
+    "unit": "rate",
+    "current_value": 93.29,
+    "percentile": 78.1,
+    "z_score": 1.14,
+    "n": 755,
+    "n_eff": 755.0,
+    "histogram_bins": [
+      -0.118,
+      -0.1087,
+      -0.0995,
+      -0.0903,
+      -0.0811,
+      -0.0719,
+      -0.0626,
+      -0.0534,
+      -0.0442,
+      -0.035,
+      -0.0258,
+      -0.0165,
+      -0.0073,
+      0.0019,
+      0.0111,
+      0.0203,
+      0.0296,
+      0.0388,
+      0.048,
+      0.0572,
+      0.0664,
+      0.0757,
+      0.0849,
+      0.0941,
+      0.1033
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      89,
+      638,
+      20,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-03-19",
+        "value": 93.25,
+        "distance": 0.0484
+      },
+      {
+        "date": "2026-04-16",
+        "value": 93.39,
+        "distance": 0.0918
+      },
+      {
+        "date": "2026-08-26",
+        "value": 93.55,
+        "distance": 0.2511
+      },
+      {
+        "date": "2026-05-08",
+        "value": 94.25,
+        "distance": 0.958
+      },
+      {
+        "date": "2026-10-22",
+        "value": 94.31,
+        "distance": 1.0173
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for USD / INR Currency Pair.",
+    "source_note": "Attribution: YAHOO"
+  }
+}

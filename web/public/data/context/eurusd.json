@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "eurusd",
+    "name": "EUR / USD Currency Pair",
+    "group": "fx",
+    "region": "EU",
+    "unit": "rate",
+    "current_value": 1.1,
+    "percentile": 38.0,
+    "z_score": -0.07,
+    "n": 755,
+    "n_eff": 755.0,
+    "histogram_bins": [
+      -4.2885,
+      -3.932,
+      -3.5756,
+      -3.2192,
+      -2.8627,
+      -2.5063,
+      -2.1499,
+      -1.7934,
+      -1.437,
+      -1.0806,
+      -0.7241,
+      -0.3677,
+      -0.0113,
+      0.3452,
+      0.7016,
+      1.058,
+      1.4145,
+      1.7709,
+      2.1273,
+      2.4838,
+      2.8402,
+      3.1966,
+      3.5531,
+      3.9095,
+      4.2659
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      752,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2024-08-16",
+        "value": 1.1,
+        "distance": 0.0003
+      },
+      {
+        "date": "2024-10-07",
+        "value": 1.1,
+        "distance": 0.0005
+      },
+      {
+        "date": "2024-01-11",
+        "value": 1.1,
+        "distance": 0.0005
+      },
+      {
+        "date": "2025-04-09",
+        "value": 1.1,
+        "distance": 0.0011
+      },
+      {
+        "date": "2024-03-14",
+        "value": 1.1,
+        "distance": 0.0014
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for EUR / USD Currency Pair.",
+    "source_note": "Attribution: YAHOO"
+  }
+}

@@ -1,0 +1,1591 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "f1687f268479",
+  "contract": {
+    "id": "nasdaq_100",
+    "name": "Nasdaq 100 Mini",
+    "cftc_code": "209742",
+    "asset_class": "equities",
+    "category": "leveraged_funds",
+    "n": 312,
+    "n_eff": 25,
+    "latest_date": "2026-11-17",
+    "open_interest": 354502,
+    "net_speculative": 6823,
+    "net_pct_oi": 0.0192,
+    "chg_1w_pct_oi": -0.073,
+    "chg_4w_pct_oi": -0.1449,
+    "chg_13w_pct_oi": 0.0451,
+    "percentile": 33.4,
+    "percentile_4w_ago": 98.4,
+    "percentile_13w_ago": 11.1,
+    "z_score": -0.44,
+    "is_extreme": false,
+    "extreme_type": "neutral",
+    "lag_label": "Positions as of Tuesday, published Friday",
+    "series": [
+      {
+        "date": "2023-11-28",
+        "open_interest": 342607,
+        "noncomm_long": 78504,
+        "noncomm_short": 69889,
+        "net_speculative": 8615,
+        "net_pct_oi": 0.0251,
+        "percentile": 50.0,
+        "z_score": 0.04
+      },
+      {
+        "date": "2023-12-05",
+        "open_interest": 326485,
+        "noncomm_long": 74791,
+        "noncomm_short": 63941,
+        "net_speculative": 10850,
+        "net_pct_oi": 0.0332,
+        "percentile": 56.7,
+        "z_score": 0.2
+      },
+      {
+        "date": "2023-12-12",
+        "open_interest": 393316,
+        "noncomm_long": 71701,
+        "noncomm_short": 63292,
+        "net_speculative": 8409,
+        "net_pct_oi": 0.0214,
+        "percentile": 46.8,
+        "z_score": -0.04
+      },
+      {
+        "date": "2023-12-19",
+        "open_interest": 316181,
+        "noncomm_long": 73189,
+        "noncomm_short": 48546,
+        "net_speculative": 24643,
+        "net_pct_oi": 0.0779,
+        "percentile": 84.3,
+        "z_score": 1.09
+      },
+      {
+        "date": "2023-12-26",
+        "open_interest": 314930,
+        "noncomm_long": 80239,
+        "noncomm_short": 49621,
+        "net_speculative": 30618,
+        "net_pct_oi": 0.0972,
+        "percentile": 93.8,
+        "z_score": 1.47
+      },
+      {
+        "date": "2024-01-02",
+        "open_interest": 308131,
+        "noncomm_long": 82772,
+        "noncomm_short": 40981,
+        "net_speculative": 41791,
+        "net_pct_oi": 0.1356,
+        "percentile": 98.1,
+        "z_score": 2.22
+      },
+      {
+        "date": "2024-01-09",
+        "open_interest": 316378,
+        "noncomm_long": 84125,
+        "noncomm_short": 44508,
+        "net_speculative": 39617,
+        "net_pct_oi": 0.1252,
+        "percentile": 97.5,
+        "z_score": 1.98
+      },
+      {
+        "date": "2024-01-16",
+        "open_interest": 313804,
+        "noncomm_long": 83702,
+        "noncomm_short": 44954,
+        "net_speculative": 38748,
+        "net_pct_oi": 0.1235,
+        "percentile": 96.9,
+        "z_score": 1.92
+      },
+      {
+        "date": "2024-01-23",
+        "open_interest": 336192,
+        "noncomm_long": 88651,
+        "noncomm_short": 54408,
+        "net_speculative": 34243,
+        "net_pct_oi": 0.1019,
+        "percentile": 92.7,
+        "z_score": 1.47
+      },
+      {
+        "date": "2024-01-30",
+        "open_interest": 343177,
+        "noncomm_long": 94273,
+        "noncomm_short": 54039,
+        "net_speculative": 40234,
+        "net_pct_oi": 0.1172,
+        "percentile": 95.8,
+        "z_score": 1.75
+      },
+      {
+        "date": "2024-02-06",
+        "open_interest": 329487,
+        "noncomm_long": 94013,
+        "noncomm_short": 59439,
+        "net_speculative": 34574,
+        "net_pct_oi": 0.1049,
+        "percentile": 94.6,
+        "z_score": 1.5
+      },
+      {
+        "date": "2024-02-13",
+        "open_interest": 346355,
+        "noncomm_long": 96915,
+        "noncomm_short": 63198,
+        "net_speculative": 33717,
+        "net_pct_oi": 0.0973,
+        "percentile": 90.4,
+        "z_score": 1.34
+      },
+      {
+        "date": "2024-02-20",
+        "open_interest": 331700,
+        "noncomm_long": 92511,
+        "noncomm_short": 63736,
+        "net_speculative": 28775,
+        "net_pct_oi": 0.0868,
+        "percentile": 85.1,
+        "z_score": 1.12
+      },
+      {
+        "date": "2024-02-27",
+        "open_interest": 332083,
+        "noncomm_long": 91093,
+        "noncomm_short": 77975,
+        "net_speculative": 13118,
+        "net_pct_oi": 0.0395,
+        "percentile": 58.0,
+        "z_score": 0.21
+      },
+      {
+        "date": "2024-03-05",
+        "open_interest": 337041,
+        "noncomm_long": 83810,
+        "noncomm_short": 80815,
+        "net_speculative": 2995,
+        "net_pct_oi": 0.0089,
+        "percentile": 35.9,
+        "z_score": -0.37
+      },
+      {
+        "date": "2024-03-12",
+        "open_interest": 382396,
+        "noncomm_long": 88918,
+        "noncomm_short": 84625,
+        "net_speculative": 4293,
+        "net_pct_oi": 0.0112,
+        "percentile": 38.0,
+        "z_score": -0.33
+      },
+      {
+        "date": "2024-03-19",
+        "open_interest": 282781,
+        "noncomm_long": 67976,
+        "noncomm_short": 54913,
+        "net_speculative": 13063,
+        "net_pct_oi": 0.0462,
+        "percentile": 64.0,
+        "z_score": 0.35
+      },
+      {
+        "date": "2024-03-26",
+        "open_interest": 287092,
+        "noncomm_long": 64424,
+        "noncomm_short": 69113,
+        "net_speculative": -4689,
+        "net_pct_oi": -0.0163,
+        "percentile": 23.7,
+        "z_score": -0.86
+      },
+      {
+        "date": "2024-04-02",
+        "open_interest": 298533,
+        "noncomm_long": 65775,
+        "noncomm_short": 68561,
+        "net_speculative": -2786,
+        "net_pct_oi": -0.0093,
+        "percentile": 27.0,
+        "z_score": -0.72
+      },
+      {
+        "date": "2024-04-09",
+        "open_interest": 299170,
+        "noncomm_long": 66928,
+        "noncomm_short": 57147,
+        "net_speculative": 9781,
+        "net_pct_oi": 0.0327,
+        "percentile": 53.7,
+        "z_score": 0.1
+      },
+      {
+        "date": "2024-04-16",
+        "open_interest": 301693,
+        "noncomm_long": 67146,
+        "noncomm_short": 57384,
+        "net_speculative": 9762,
+        "net_pct_oi": 0.0324,
+        "percentile": 52.8,
+        "z_score": 0.09
+      },
+      {
+        "date": "2024-04-23",
+        "open_interest": 305091,
+        "noncomm_long": 63833,
+        "noncomm_short": 57008,
+        "net_speculative": 6825,
+        "net_pct_oi": 0.0224,
+        "percentile": 45.2,
+        "z_score": -0.11
+      },
+      {
+        "date": "2024-04-30",
+        "open_interest": 298004,
+        "noncomm_long": 63017,
+        "noncomm_short": 58466,
+        "net_speculative": 4551,
+        "net_pct_oi": 0.0153,
+        "percentile": 41.0,
+        "z_score": -0.24
+      },
+      {
+        "date": "2024-05-07",
+        "open_interest": 280664,
+        "noncomm_long": 65288,
+        "noncomm_short": 59045,
+        "net_speculative": 6243,
+        "net_pct_oi": 0.0222,
+        "percentile": 44.7,
+        "z_score": -0.11
+      },
+      {
+        "date": "2024-05-14",
+        "open_interest": 296513,
+        "noncomm_long": 68507,
+        "noncomm_short": 64573,
+        "net_speculative": 3934,
+        "net_pct_oi": 0.0133,
+        "percentile": 38.3,
+        "z_score": -0.28
+      },
+      {
+        "date": "2024-05-21",
+        "open_interest": 291632,
+        "noncomm_long": 67109,
+        "noncomm_short": 59484,
+        "net_speculative": 7625,
+        "net_pct_oi": 0.0261,
+        "percentile": 49.2,
+        "z_score": -0.03
+      },
+      {
+        "date": "2024-05-28",
+        "open_interest": 296576,
+        "noncomm_long": 66997,
+        "noncomm_short": 68587,
+        "net_speculative": -1590,
+        "net_pct_oi": -0.0054,
+        "percentile": 27.5,
+        "z_score": -0.65
+      },
+      {
+        "date": "2024-06-04",
+        "open_interest": 287077,
+        "noncomm_long": 58766,
+        "noncomm_short": 56326,
+        "net_speculative": 2440,
+        "net_pct_oi": 0.0085,
+        "percentile": 35.0,
+        "z_score": -0.37
+      },
+      {
+        "date": "2024-06-11",
+        "open_interest": 300888,
+        "noncomm_long": 61709,
+        "noncomm_short": 67168,
+        "net_speculative": -5459,
+        "net_pct_oi": -0.0181,
+        "percentile": 21.2,
+        "z_score": -0.9
+      },
+      {
+        "date": "2024-06-18",
+        "open_interest": 387984,
+        "noncomm_long": 67310,
+        "noncomm_short": 67033,
+        "net_speculative": 277,
+        "net_pct_oi": 0.0007,
+        "percentile": 31.4,
+        "z_score": -0.52
+      },
+      {
+        "date": "2024-06-25",
+        "open_interest": 282842,
+        "noncomm_long": 69750,
+        "noncomm_short": 61237,
+        "net_speculative": 8513,
+        "net_pct_oi": 0.0301,
+        "percentile": 52.7,
+        "z_score": 0.06
+      },
+      {
+        "date": "2024-07-02",
+        "open_interest": 293568,
+        "noncomm_long": 71331,
+        "noncomm_short": 59476,
+        "net_speculative": 11855,
+        "net_pct_oi": 0.0404,
+        "percentile": 62.0,
+        "z_score": 0.27
+      },
+      {
+        "date": "2024-07-09",
+        "open_interest": 302669,
+        "noncomm_long": 66883,
+        "noncomm_short": 60452,
+        "net_speculative": 6431,
+        "net_pct_oi": 0.0212,
+        "percentile": 44.7,
+        "z_score": -0.11
+      },
+      {
+        "date": "2024-07-16",
+        "open_interest": 297828,
+        "noncomm_long": 65637,
+        "noncomm_short": 58928,
+        "net_speculative": 6709,
+        "net_pct_oi": 0.0225,
+        "percentile": 47.6,
+        "z_score": -0.09
+      },
+      {
+        "date": "2024-07-23",
+        "open_interest": 286494,
+        "noncomm_long": 52568,
+        "noncomm_short": 52339,
+        "net_speculative": 229,
+        "net_pct_oi": 0.0008,
+        "percentile": 31.1,
+        "z_score": -0.52
+      },
+      {
+        "date": "2024-07-30",
+        "open_interest": 308736,
+        "noncomm_long": 50803,
+        "noncomm_short": 47595,
+        "net_speculative": 3208,
+        "net_pct_oi": 0.0104,
+        "percentile": 37.2,
+        "z_score": -0.33
+      },
+      {
+        "date": "2024-08-06",
+        "open_interest": 311012,
+        "noncomm_long": 56437,
+        "noncomm_short": 39261,
+        "net_speculative": 17176,
+        "net_pct_oi": 0.0552,
+        "percentile": 72.9,
+        "z_score": 0.57
+      },
+      {
+        "date": "2024-08-13",
+        "open_interest": 299905,
+        "noncomm_long": 52682,
+        "noncomm_short": 40373,
+        "net_speculative": 12309,
+        "net_pct_oi": 0.041,
+        "percentile": 62.7,
+        "z_score": 0.29
+      },
+      {
+        "date": "2024-08-20",
+        "open_interest": 302854,
+        "noncomm_long": 55521,
+        "noncomm_short": 42326,
+        "net_speculative": 13195,
+        "net_pct_oi": 0.0436,
+        "percentile": 65.5,
+        "z_score": 0.34
+      },
+      {
+        "date": "2024-08-27",
+        "open_interest": 298915,
+        "noncomm_long": 66479,
+        "noncomm_short": 43659,
+        "net_speculative": 22820,
+        "net_pct_oi": 0.0763,
+        "percentile": 82.1,
+        "z_score": 1.0
+      },
+      {
+        "date": "2024-09-03",
+        "open_interest": 304581,
+        "noncomm_long": 71105,
+        "noncomm_short": 41436,
+        "net_speculative": 29669,
+        "net_pct_oi": 0.0974,
+        "percentile": 91.8,
+        "z_score": 1.42
+      },
+      {
+        "date": "2024-09-10",
+        "open_interest": 311722,
+        "noncomm_long": 74073,
+        "noncomm_short": 42750,
+        "net_speculative": 31323,
+        "net_pct_oi": 0.1005,
+        "percentile": 92.4,
+        "z_score": 1.47
+      },
+      {
+        "date": "2024-09-17",
+        "open_interest": 323352,
+        "noncomm_long": 74759,
+        "noncomm_short": 48337,
+        "net_speculative": 26422,
+        "net_pct_oi": 0.0817,
+        "percentile": 82.3,
+        "z_score": 1.08
+      },
+      {
+        "date": "2024-09-24",
+        "open_interest": 272657,
+        "noncomm_long": 57805,
+        "noncomm_short": 36995,
+        "net_speculative": 20810,
+        "net_pct_oi": 0.0763,
+        "percentile": 80.4,
+        "z_score": 0.97
+      },
+      {
+        "date": "2024-10-01",
+        "open_interest": 273558,
+        "noncomm_long": 58122,
+        "noncomm_short": 39553,
+        "net_speculative": 18569,
+        "net_pct_oi": 0.0679,
+        "percentile": 76.5,
+        "z_score": 0.79
+      },
+      {
+        "date": "2024-10-08",
+        "open_interest": 293046,
+        "noncomm_long": 60322,
+        "noncomm_short": 40862,
+        "net_speculative": 19460,
+        "net_pct_oi": 0.0664,
+        "percentile": 75.6,
+        "z_score": 0.76
+      },
+      {
+        "date": "2024-10-15",
+        "open_interest": 285561,
+        "noncomm_long": 51037,
+        "noncomm_short": 43708,
+        "net_speculative": 7329,
+        "net_pct_oi": 0.0257,
+        "percentile": 47.5,
+        "z_score": -0.06
+      },
+      {
+        "date": "2024-10-22",
+        "open_interest": 280839,
+        "noncomm_long": 50356,
+        "noncomm_short": 44031,
+        "net_speculative": 6325,
+        "net_pct_oi": 0.0225,
+        "percentile": 45.3,
+        "z_score": -0.13
+      },
+      {
+        "date": "2024-10-29",
+        "open_interest": 297555,
+        "noncomm_long": 60103,
+        "noncomm_short": 49993,
+        "net_speculative": 10110,
+        "net_pct_oi": 0.034,
+        "percentile": 55.9,
+        "z_score": 0.1
+      },
+      {
+        "date": "2024-11-05",
+        "open_interest": 288452,
+        "noncomm_long": 65342,
+        "noncomm_short": 47137,
+        "net_speculative": 18205,
+        "net_pct_oi": 0.0631,
+        "percentile": 75.6,
+        "z_score": 0.7
+      },
+      {
+        "date": "2024-11-12",
+        "open_interest": 326776,
+        "noncomm_long": 73985,
+        "noncomm_short": 48828,
+        "net_speculative": 25157,
+        "net_pct_oi": 0.077,
+        "percentile": 81.6,
+        "z_score": 0.98
+      },
+      {
+        "date": "2024-11-19",
+        "open_interest": 313093,
+        "noncomm_long": 68056,
+        "noncomm_short": 46777,
+        "net_speculative": 21279,
+        "net_pct_oi": 0.068,
+        "percentile": 76.8,
+        "z_score": 0.79
+      },
+      {
+        "date": "2024-11-26",
+        "open_interest": 314173,
+        "noncomm_long": 74934,
+        "noncomm_short": 54285,
+        "net_speculative": 20649,
+        "net_pct_oi": 0.0657,
+        "percentile": 75.0,
+        "z_score": 0.74
+      },
+      {
+        "date": "2024-12-03",
+        "open_interest": 335542,
+        "noncomm_long": 91159,
+        "noncomm_short": 59557,
+        "net_speculative": 31602,
+        "net_pct_oi": 0.0942,
+        "percentile": 90.0,
+        "z_score": 1.32
+      },
+      {
+        "date": "2024-12-10",
+        "open_interest": 337720,
+        "noncomm_long": 93282,
+        "noncomm_short": 57043,
+        "net_speculative": 36239,
+        "net_pct_oi": 0.1073,
+        "percentile": 95.7,
+        "z_score": 1.57
+      },
+      {
+        "date": "2024-12-17",
+        "open_interest": 387000,
+        "noncomm_long": 95949,
+        "noncomm_short": 58758,
+        "net_speculative": 37191,
+        "net_pct_oi": 0.0961,
+        "percentile": 90.0,
+        "z_score": 1.33
+      },
+      {
+        "date": "2024-12-24",
+        "open_interest": 284905,
+        "noncomm_long": 79748,
+        "noncomm_short": 53254,
+        "net_speculative": 26494,
+        "net_pct_oi": 0.093,
+        "percentile": 87.7,
+        "z_score": 1.26
+      },
+      {
+        "date": "2024-12-31",
+        "open_interest": 285839,
+        "noncomm_long": 74814,
+        "noncomm_short": 51683,
+        "net_speculative": 23131,
+        "net_pct_oi": 0.0809,
+        "percentile": 81.2,
+        "z_score": 1.01
+      },
+      {
+        "date": "2025-01-07",
+        "open_interest": 276840,
+        "noncomm_long": 71034,
+        "noncomm_short": 53773,
+        "net_speculative": 17261,
+        "net_pct_oi": 0.0624,
+        "percentile": 72.0,
+        "z_score": 0.63
+      },
+      {
+        "date": "2025-01-14",
+        "open_interest": 295264,
+        "noncomm_long": 62759,
+        "noncomm_short": 53440,
+        "net_speculative": 9319,
+        "net_pct_oi": 0.0316,
+        "percentile": 49.8,
+        "z_score": 0.01
+      },
+      {
+        "date": "2025-01-21",
+        "open_interest": 289269,
+        "noncomm_long": 70601,
+        "noncomm_short": 54181,
+        "net_speculative": 16420,
+        "net_pct_oi": 0.0568,
+        "percentile": 68.5,
+        "z_score": 0.52
+      },
+      {
+        "date": "2025-01-28",
+        "open_interest": 308861,
+        "noncomm_long": 87101,
+        "noncomm_short": 58588,
+        "net_speculative": 28513,
+        "net_pct_oi": 0.0923,
+        "percentile": 87.6,
+        "z_score": 1.24
+      },
+      {
+        "date": "2025-02-04",
+        "open_interest": 299209,
+        "noncomm_long": 78161,
+        "noncomm_short": 60514,
+        "net_speculative": 17647,
+        "net_pct_oi": 0.059,
+        "percentile": 70.6,
+        "z_score": 0.55
+      },
+      {
+        "date": "2025-02-11",
+        "open_interest": 301086,
+        "noncomm_long": 75968,
+        "noncomm_short": 65078,
+        "net_speculative": 10890,
+        "net_pct_oi": 0.0362,
+        "percentile": 54.8,
+        "z_score": 0.09
+      },
+      {
+        "date": "2025-02-18",
+        "open_interest": 334856,
+        "noncomm_long": 90814,
+        "noncomm_short": 84406,
+        "net_speculative": 6408,
+        "net_pct_oi": 0.0191,
+        "percentile": 38.2,
+        "z_score": -0.26
+      },
+      {
+        "date": "2025-02-25",
+        "open_interest": 325502,
+        "noncomm_long": 87478,
+        "noncomm_short": 58832,
+        "net_speculative": 28646,
+        "net_pct_oi": 0.088,
+        "percentile": 86.9,
+        "z_score": 1.15
+      },
+      {
+        "date": "2025-03-04",
+        "open_interest": 332873,
+        "noncomm_long": 85306,
+        "noncomm_short": 58834,
+        "net_speculative": 26472,
+        "net_pct_oi": 0.0795,
+        "percentile": 80.6,
+        "z_score": 0.97
+      },
+      {
+        "date": "2025-03-11",
+        "open_interest": 364833,
+        "noncomm_long": 82573,
+        "noncomm_short": 55914,
+        "net_speculative": 26659,
+        "net_pct_oi": 0.0731,
+        "percentile": 77.6,
+        "z_score": 0.83
+      },
+      {
+        "date": "2025-03-18",
+        "open_interest": 353003,
+        "noncomm_long": 74408,
+        "noncomm_short": 49433,
+        "net_speculative": 24975,
+        "net_pct_oi": 0.0708,
+        "percentile": 76.3,
+        "z_score": 0.78
+      },
+      {
+        "date": "2025-03-25",
+        "open_interest": 263939,
+        "noncomm_long": 60892,
+        "noncomm_short": 51544,
+        "net_speculative": 9348,
+        "net_pct_oi": 0.0354,
+        "percentile": 52.9,
+        "z_score": 0.06
+      },
+      {
+        "date": "2025-04-01",
+        "open_interest": 294889,
+        "noncomm_long": 70308,
+        "noncomm_short": 55404,
+        "net_speculative": 14904,
+        "net_pct_oi": 0.0505,
+        "percentile": 63.7,
+        "z_score": 0.37
+      },
+      {
+        "date": "2025-04-08",
+        "open_interest": 341971,
+        "noncomm_long": 72691,
+        "noncomm_short": 48927,
+        "net_speculative": 23764,
+        "net_pct_oi": 0.0695,
+        "percentile": 75.8,
+        "z_score": 0.76
+      },
+      {
+        "date": "2025-04-15",
+        "open_interest": 298057,
+        "noncomm_long": 72227,
+        "noncomm_short": 40179,
+        "net_speculative": 32048,
+        "net_pct_oi": 0.1075,
+        "percentile": 96.5,
+        "z_score": 1.53
+      },
+      {
+        "date": "2025-04-22",
+        "open_interest": 304638,
+        "noncomm_long": 75545,
+        "noncomm_short": 37814,
+        "net_speculative": 37731,
+        "net_pct_oi": 0.1239,
+        "percentile": 97.8,
+        "z_score": 1.86
+      },
+      {
+        "date": "2025-04-29",
+        "open_interest": 306051,
+        "noncomm_long": 78190,
+        "noncomm_short": 44876,
+        "net_speculative": 33314,
+        "net_pct_oi": 0.1089,
+        "percentile": 96.1,
+        "z_score": 1.53
+      },
+      {
+        "date": "2025-05-06",
+        "open_interest": 308982,
+        "noncomm_long": 87246,
+        "noncomm_short": 51643,
+        "net_speculative": 35603,
+        "net_pct_oi": 0.1152,
+        "percentile": 96.1,
+        "z_score": 1.65
+      },
+      {
+        "date": "2025-05-13",
+        "open_interest": 344475,
+        "noncomm_long": 87790,
+        "noncomm_short": 66529,
+        "net_speculative": 21261,
+        "net_pct_oi": 0.0617,
+        "percentile": 69.0,
+        "z_score": 0.56
+      },
+      {
+        "date": "2025-05-20",
+        "open_interest": 323779,
+        "noncomm_long": 83295,
+        "noncomm_short": 68610,
+        "net_speculative": 14685,
+        "net_pct_oi": 0.0454,
+        "percentile": 58.8,
+        "z_score": 0.22
+      },
+      {
+        "date": "2025-05-27",
+        "open_interest": 319631,
+        "noncomm_long": 85856,
+        "noncomm_short": 67843,
+        "net_speculative": 18013,
+        "net_pct_oi": 0.0564,
+        "percentile": 65.0,
+        "z_score": 0.45
+      },
+      {
+        "date": "2025-06-03",
+        "open_interest": 316439,
+        "noncomm_long": 84520,
+        "noncomm_short": 68056,
+        "net_speculative": 16464,
+        "net_pct_oi": 0.052,
+        "percentile": 62.6,
+        "z_score": 0.36
+      },
+      {
+        "date": "2025-06-10",
+        "open_interest": 316564,
+        "noncomm_long": 85948,
+        "noncomm_short": 66920,
+        "net_speculative": 19028,
+        "net_pct_oi": 0.0601,
+        "percentile": 69.1,
+        "z_score": 0.52
+      },
+      {
+        "date": "2025-06-17",
+        "open_interest": 351567,
+        "noncomm_long": 84662,
+        "noncomm_short": 66355,
+        "net_speculative": 18307,
+        "net_pct_oi": 0.0521,
+        "percentile": 62.4,
+        "z_score": 0.36
+      },
+      {
+        "date": "2025-06-24",
+        "open_interest": 285979,
+        "noncomm_long": 77483,
+        "noncomm_short": 59594,
+        "net_speculative": 17889,
+        "net_pct_oi": 0.0626,
+        "percentile": 70.6,
+        "z_score": 0.57
+      },
+      {
+        "date": "2025-07-01",
+        "open_interest": 300893,
+        "noncomm_long": 79103,
+        "noncomm_short": 49848,
+        "net_speculative": 29255,
+        "net_pct_oi": 0.0972,
+        "percentile": 90.0,
+        "z_score": 1.28
+      },
+      {
+        "date": "2025-07-08",
+        "open_interest": 308189,
+        "noncomm_long": 78460,
+        "noncomm_short": 44572,
+        "net_speculative": 33888,
+        "net_pct_oi": 0.11,
+        "percentile": 95.8,
+        "z_score": 1.53
+      },
+      {
+        "date": "2025-07-15",
+        "open_interest": 313304,
+        "noncomm_long": 82280,
+        "noncomm_short": 44625,
+        "net_speculative": 37655,
+        "net_pct_oi": 0.1202,
+        "percentile": 96.7,
+        "z_score": 1.73
+      },
+      {
+        "date": "2025-07-22",
+        "open_interest": 303868,
+        "noncomm_long": 76560,
+        "noncomm_short": 45060,
+        "net_speculative": 31500,
+        "net_pct_oi": 0.1037,
+        "percentile": 91.7,
+        "z_score": 1.38
+      },
+      {
+        "date": "2025-07-29",
+        "open_interest": 315710,
+        "noncomm_long": 86012,
+        "noncomm_short": 49303,
+        "net_speculative": 36709,
+        "net_pct_oi": 0.1163,
+        "percentile": 95.9,
+        "z_score": 1.63
+      },
+      {
+        "date": "2025-08-05",
+        "open_interest": 314755,
+        "noncomm_long": 85248,
+        "noncomm_short": 50807,
+        "net_speculative": 34441,
+        "net_pct_oi": 0.1094,
+        "percentile": 94.7,
+        "z_score": 1.48
+      },
+      {
+        "date": "2025-08-12",
+        "open_interest": 345417,
+        "noncomm_long": 96978,
+        "noncomm_short": 52106,
+        "net_speculative": 44872,
+        "net_pct_oi": 0.1299,
+        "percentile": 98.4,
+        "z_score": 1.88
+      },
+      {
+        "date": "2025-08-19",
+        "open_interest": 327398,
+        "noncomm_long": 85090,
+        "noncomm_short": 50588,
+        "net_speculative": 34502,
+        "net_pct_oi": 0.1054,
+        "percentile": 92.3,
+        "z_score": 1.37
+      },
+      {
+        "date": "2025-08-26",
+        "open_interest": 322489,
+        "noncomm_long": 87723,
+        "noncomm_short": 49706,
+        "net_speculative": 38017,
+        "net_pct_oi": 0.1179,
+        "percentile": 96.0,
+        "z_score": 1.61
+      },
+      {
+        "date": "2025-09-02",
+        "open_interest": 322132,
+        "noncomm_long": 78119,
+        "noncomm_short": 61234,
+        "net_speculative": 16885,
+        "net_pct_oi": 0.0524,
+        "percentile": 60.1,
+        "z_score": 0.29
+      },
+      {
+        "date": "2025-09-09",
+        "open_interest": 336896,
+        "noncomm_long": 86879,
+        "noncomm_short": 59886,
+        "net_speculative": 26993,
+        "net_pct_oi": 0.0801,
+        "percentile": 77.5,
+        "z_score": 0.85
+      },
+      {
+        "date": "2025-09-16",
+        "open_interest": 397900,
+        "noncomm_long": 87286,
+        "noncomm_short": 66972,
+        "net_speculative": 20314,
+        "net_pct_oi": 0.0511,
+        "percentile": 58.4,
+        "z_score": 0.26
+      },
+      {
+        "date": "2025-09-23",
+        "open_interest": 314384,
+        "noncomm_long": 89369,
+        "noncomm_short": 62556,
+        "net_speculative": 26813,
+        "net_pct_oi": 0.0853,
+        "percentile": 80.5,
+        "z_score": 0.95
+      },
+      {
+        "date": "2025-09-30",
+        "open_interest": 313974,
+        "noncomm_long": 89730,
+        "noncomm_short": 44432,
+        "net_speculative": 45298,
+        "net_pct_oi": 0.1443,
+        "percentile": 99.2,
+        "z_score": 2.13
+      },
+      {
+        "date": "2025-10-07",
+        "open_interest": 328519,
+        "noncomm_long": 93906,
+        "noncomm_short": 46017,
+        "net_speculative": 47889,
+        "net_pct_oi": 0.1458,
+        "percentile": 99.2,
+        "z_score": 2.13
+      },
+      {
+        "date": "2025-10-14",
+        "open_interest": 328253,
+        "noncomm_long": 94729,
+        "noncomm_short": 37312,
+        "net_speculative": 57417,
+        "net_pct_oi": 0.1749,
+        "percentile": 100.0,
+        "z_score": 2.69
+      },
+      {
+        "date": "2025-10-21",
+        "open_interest": 334707,
+        "noncomm_long": 102558,
+        "noncomm_short": 50713,
+        "net_speculative": 51845,
+        "net_pct_oi": 0.1549,
+        "percentile": 99.2,
+        "z_score": 2.25
+      },
+      {
+        "date": "2025-10-28",
+        "open_interest": 355897,
+        "noncomm_long": 101609,
+        "noncomm_short": 54950,
+        "net_speculative": 46659,
+        "net_pct_oi": 0.1311,
+        "percentile": 96.9,
+        "z_score": 1.77
+      },
+      {
+        "date": "2025-11-04",
+        "open_interest": 343570,
+        "noncomm_long": 97277,
+        "noncomm_short": 45376,
+        "net_speculative": 51901,
+        "net_pct_oi": 0.1511,
+        "percentile": 98.8,
+        "z_score": 2.14
+      },
+      {
+        "date": "2025-11-10",
+        "open_interest": 349406,
+        "noncomm_long": 105825,
+        "noncomm_short": 51716,
+        "net_speculative": 54109,
+        "net_pct_oi": 0.1549,
+        "percentile": 98.8,
+        "z_score": 2.19
+      },
+      {
+        "date": "2025-11-18",
+        "open_interest": 352619,
+        "noncomm_long": 99488,
+        "noncomm_short": 49881,
+        "net_speculative": 49607,
+        "net_pct_oi": 0.1407,
+        "percentile": 96.9,
+        "z_score": 1.89
+      },
+      {
+        "date": "2025-11-25",
+        "open_interest": 343327,
+        "noncomm_long": 105311,
+        "noncomm_short": 45373,
+        "net_speculative": 59938,
+        "net_pct_oi": 0.1746,
+        "percentile": 99.6,
+        "z_score": 2.52
+      },
+      {
+        "date": "2025-12-02",
+        "open_interest": 353959,
+        "noncomm_long": 107538,
+        "noncomm_short": 57898,
+        "net_speculative": 49640,
+        "net_pct_oi": 0.1402,
+        "percentile": 96.2,
+        "z_score": 1.84
+      },
+      {
+        "date": "2025-12-09",
+        "open_interest": 370276,
+        "noncomm_long": 110050,
+        "noncomm_short": 60874,
+        "net_speculative": 49176,
+        "net_pct_oi": 0.1328,
+        "percentile": 95.0,
+        "z_score": 1.69
+      },
+      {
+        "date": "2025-12-16",
+        "open_interest": 424310,
+        "noncomm_long": 118996,
+        "noncomm_short": 68555,
+        "net_speculative": 50441,
+        "net_pct_oi": 0.1189,
+        "percentile": 92.0,
+        "z_score": 1.41
+      },
+      {
+        "date": "2025-12-23",
+        "open_interest": 298273,
+        "noncomm_long": 93175,
+        "noncomm_short": 63472,
+        "net_speculative": 29703,
+        "net_pct_oi": 0.0996,
+        "percentile": 84.5,
+        "z_score": 1.05
+      },
+      {
+        "date": "2025-12-30",
+        "open_interest": 307501,
+        "noncomm_long": 95983,
+        "noncomm_short": 72799,
+        "net_speculative": 23184,
+        "net_pct_oi": 0.0754,
+        "percentile": 70.9,
+        "z_score": 0.6
+      },
+      {
+        "date": "2026-01-06",
+        "open_interest": 303862,
+        "noncomm_long": 96998,
+        "noncomm_short": 65944,
+        "net_speculative": 31054,
+        "net_pct_oi": 0.1022,
+        "percentile": 85.3,
+        "z_score": 1.09
+      },
+      {
+        "date": "2026-01-13",
+        "open_interest": 310588,
+        "noncomm_long": 97335,
+        "noncomm_short": 69521,
+        "net_speculative": 27814,
+        "net_pct_oi": 0.0896,
+        "percentile": 79.4,
+        "z_score": 0.85
+      },
+      {
+        "date": "2026-01-20",
+        "open_interest": 302510,
+        "noncomm_long": 87179,
+        "noncomm_short": 65887,
+        "net_speculative": 21292,
+        "net_pct_oi": 0.0704,
+        "percentile": 68.3,
+        "z_score": 0.49
+      },
+      {
+        "date": "2026-01-27",
+        "open_interest": 296950,
+        "noncomm_long": 90431,
+        "noncomm_short": 63428,
+        "net_speculative": 27003,
+        "net_pct_oi": 0.0909,
+        "percentile": 79.6,
+        "z_score": 0.88
+      },
+      {
+        "date": "2026-02-03",
+        "open_interest": 307036,
+        "noncomm_long": 84404,
+        "noncomm_short": 70465,
+        "net_speculative": 13939,
+        "net_pct_oi": 0.0454,
+        "percentile": 51.1,
+        "z_score": 0.02
+      },
+      {
+        "date": "2026-02-10",
+        "open_interest": 300599,
+        "noncomm_long": 80205,
+        "noncomm_short": 67593,
+        "net_speculative": 12612,
+        "net_pct_oi": 0.042,
+        "percentile": 48.0,
+        "z_score": -0.04
+      },
+      {
+        "date": "2026-02-17",
+        "open_interest": 315298,
+        "noncomm_long": 88692,
+        "noncomm_short": 65012,
+        "net_speculative": 23680,
+        "net_pct_oi": 0.0751,
+        "percentile": 70.2,
+        "z_score": 0.58
+      },
+      {
+        "date": "2026-02-24",
+        "open_interest": 308182,
+        "noncomm_long": 80348,
+        "noncomm_short": 69820,
+        "net_speculative": 10528,
+        "net_pct_oi": 0.0342,
+        "percentile": 42.9,
+        "z_score": -0.19
+      },
+      {
+        "date": "2026-03-03",
+        "open_interest": 311880,
+        "noncomm_long": 75853,
+        "noncomm_short": 73329,
+        "net_speculative": 2524,
+        "net_pct_oi": 0.0081,
+        "percentile": 24.1,
+        "z_score": -0.68
+      },
+      {
+        "date": "2026-03-10",
+        "open_interest": 299569,
+        "noncomm_long": 76355,
+        "noncomm_short": 52462,
+        "net_speculative": 23893,
+        "net_pct_oi": 0.0798,
+        "percentile": 73.1,
+        "z_score": 0.67
+      },
+      {
+        "date": "2026-03-17",
+        "open_interest": 335813,
+        "noncomm_long": 75785,
+        "noncomm_short": 51151,
+        "net_speculative": 24634,
+        "net_pct_oi": 0.0734,
+        "percentile": 69.6,
+        "z_score": 0.55
+      },
+      {
+        "date": "2026-03-24",
+        "open_interest": 263276,
+        "noncomm_long": 69678,
+        "noncomm_short": 62685,
+        "net_speculative": 6993,
+        "net_pct_oi": 0.0266,
+        "percentile": 37.2,
+        "z_score": -0.33
+      },
+      {
+        "date": "2026-03-31",
+        "open_interest": 275858,
+        "noncomm_long": 80181,
+        "noncomm_short": 57567,
+        "net_speculative": 22614,
+        "net_pct_oi": 0.082,
+        "percentile": 74.5,
+        "z_score": 0.71
+      },
+      {
+        "date": "2026-04-07",
+        "open_interest": 276495,
+        "noncomm_long": 73207,
+        "noncomm_short": 59865,
+        "net_speculative": 13342,
+        "net_pct_oi": 0.0483,
+        "percentile": 52.3,
+        "z_score": 0.07
+      },
+      {
+        "date": "2026-04-14",
+        "open_interest": 303927,
+        "noncomm_long": 70572,
+        "noncomm_short": 58038,
+        "net_speculative": 12534,
+        "net_pct_oi": 0.0412,
+        "percentile": 47.5,
+        "z_score": -0.06
+      },
+      {
+        "date": "2026-04-21",
+        "open_interest": 308753,
+        "noncomm_long": 75462,
+        "noncomm_short": 66295,
+        "net_speculative": 9167,
+        "net_pct_oi": 0.0297,
+        "percentile": 38.1,
+        "z_score": -0.28
+      },
+      {
+        "date": "2026-04-28",
+        "open_interest": 322231,
+        "noncomm_long": 78327,
+        "noncomm_short": 80204,
+        "net_speculative": -1877,
+        "net_pct_oi": -0.0058,
+        "percentile": 18.1,
+        "z_score": -0.95
+      },
+      {
+        "date": "2026-05-05",
+        "open_interest": 332505,
+        "noncomm_long": 83718,
+        "noncomm_short": 80144,
+        "net_speculative": 3574,
+        "net_pct_oi": 0.0107,
+        "percentile": 26.5,
+        "z_score": -0.63
+      },
+      {
+        "date": "2026-05-12",
+        "open_interest": 341155,
+        "noncomm_long": 71542,
+        "noncomm_short": 85519,
+        "net_speculative": -13977,
+        "net_pct_oi": -0.041,
+        "percentile": 6.0,
+        "z_score": -1.61
+      },
+      {
+        "date": "2026-05-19",
+        "open_interest": 339196,
+        "noncomm_long": 86988,
+        "noncomm_short": 86828,
+        "net_speculative": 160,
+        "net_pct_oi": 0.0005,
+        "percentile": 21.1,
+        "z_score": -0.82
+      },
+      {
+        "date": "2026-05-26",
+        "open_interest": 352721,
+        "noncomm_long": 84537,
+        "noncomm_short": 89547,
+        "net_speculative": -5010,
+        "net_pct_oi": -0.0142,
+        "percentile": 16.1,
+        "z_score": -1.09
+      },
+      {
+        "date": "2026-06-02",
+        "open_interest": 363928,
+        "noncomm_long": 85571,
+        "noncomm_short": 99740,
+        "net_speculative": -14169,
+        "net_pct_oi": -0.0389,
+        "percentile": 6.3,
+        "z_score": -1.56
+      },
+      {
+        "date": "2026-06-09",
+        "open_interest": 359891,
+        "noncomm_long": 90856,
+        "noncomm_short": 91828,
+        "net_speculative": -972,
+        "net_pct_oi": -0.0027,
+        "percentile": 21.2,
+        "z_score": -0.86
+      },
+      {
+        "date": "2026-06-16",
+        "open_interest": 399837,
+        "noncomm_long": 90679,
+        "noncomm_short": 98715,
+        "net_speculative": -8036,
+        "net_pct_oi": -0.0201,
+        "percentile": 12.8,
+        "z_score": -1.19
+      },
+      {
+        "date": "2026-06-23",
+        "open_interest": 307168,
+        "noncomm_long": 62997,
+        "noncomm_short": 72426,
+        "net_speculative": -9429,
+        "net_pct_oi": -0.0307,
+        "percentile": 8.3,
+        "z_score": -1.38
+      },
+      {
+        "date": "2026-06-30",
+        "open_interest": 315625,
+        "noncomm_long": 65990,
+        "noncomm_short": 72170,
+        "net_speculative": -6180,
+        "net_pct_oi": -0.0196,
+        "percentile": 14.1,
+        "z_score": -1.17
+      },
+      {
+        "date": "2026-07-07",
+        "open_interest": 324070,
+        "noncomm_long": 73821,
+        "noncomm_short": 71148,
+        "net_speculative": 2673,
+        "net_pct_oi": 0.0082,
+        "percentile": 26.0,
+        "z_score": -0.64
+      },
+      {
+        "date": "2026-07-14",
+        "open_interest": 321300,
+        "noncomm_long": 73834,
+        "noncomm_short": 70497,
+        "net_speculative": 3337,
+        "net_pct_oi": 0.0104,
+        "percentile": 28.0,
+        "z_score": -0.6
+      },
+      {
+        "date": "2026-07-21",
+        "open_interest": 322633,
+        "noncomm_long": 72107,
+        "noncomm_short": 67278,
+        "net_speculative": 4829,
+        "net_pct_oi": 0.015,
+        "percentile": 31.3,
+        "z_score": -0.51
+      },
+      {
+        "date": "2026-07-28",
+        "open_interest": 340611,
+        "noncomm_long": 78081,
+        "noncomm_short": 74288,
+        "net_speculative": 3793,
+        "net_pct_oi": 0.0111,
+        "percentile": 29.2,
+        "z_score": -0.58
+      },
+      {
+        "date": "2026-08-04",
+        "open_interest": 353833,
+        "noncomm_long": 83643,
+        "noncomm_short": 96867,
+        "net_speculative": -13224,
+        "net_pct_oi": -0.0374,
+        "percentile": 6.8,
+        "z_score": -1.5
+      },
+      {
+        "date": "2026-08-11",
+        "open_interest": 321880,
+        "noncomm_long": 70094,
+        "noncomm_short": 107747,
+        "net_speculative": -37653,
+        "net_pct_oi": -0.117,
+        "percentile": 0.0,
+        "z_score": -2.99
+      },
+      {
+        "date": "2026-08-18",
+        "open_interest": 337745,
+        "noncomm_long": 82749,
+        "noncomm_short": 91485,
+        "net_speculative": -8736,
+        "net_pct_oi": -0.0259,
+        "percentile": 11.1,
+        "z_score": -1.25
+      },
+      {
+        "date": "2026-08-25",
+        "open_interest": 338076,
+        "noncomm_long": 87874,
+        "noncomm_short": 75846,
+        "net_speculative": 12028,
+        "net_pct_oi": 0.0356,
+        "percentile": 47.2,
+        "z_score": -0.1
+      },
+      {
+        "date": "2026-09-01",
+        "open_interest": 335330,
+        "noncomm_long": 88662,
+        "noncomm_short": 61573,
+        "net_speculative": 27089,
+        "net_pct_oi": 0.0808,
+        "percentile": 75.3,
+        "z_score": 0.75
+      },
+      {
+        "date": "2026-09-08",
+        "open_interest": 332371,
+        "noncomm_long": 87935,
+        "noncomm_short": 65223,
+        "net_speculative": 22712,
+        "net_pct_oi": 0.0683,
+        "percentile": 68.1,
+        "z_score": 0.51
+      },
+      {
+        "date": "2026-09-15",
+        "open_interest": 363168,
+        "noncomm_long": 86075,
+        "noncomm_short": 51138,
+        "net_speculative": 34937,
+        "net_pct_oi": 0.0962,
+        "percentile": 84.1,
+        "z_score": 1.03
+      },
+      {
+        "date": "2026-09-22",
+        "open_interest": 329896,
+        "noncomm_long": 87822,
+        "noncomm_short": 31409,
+        "net_speculative": 56413,
+        "net_pct_oi": 0.171,
+        "percentile": 99.3,
+        "z_score": 2.43
+      },
+      {
+        "date": "2026-09-29",
+        "open_interest": 307428,
+        "noncomm_long": 80017,
+        "noncomm_short": 27912,
+        "net_speculative": 52105,
+        "net_pct_oi": 0.1695,
+        "percentile": 99.0,
+        "z_score": 2.37
+      },
+      {
+        "date": "2026-10-06",
+        "open_interest": 321940,
+        "noncomm_long": 87018,
+        "noncomm_short": 26006,
+        "net_speculative": 61012,
+        "net_pct_oi": 0.1895,
+        "percentile": 100.0,
+        "z_score": 2.71
+      },
+      {
+        "date": "2026-10-13",
+        "open_interest": 315756,
+        "noncomm_long": 83383,
+        "noncomm_short": 32607,
+        "net_speculative": 50776,
+        "net_pct_oi": 0.1608,
+        "percentile": 98.0,
+        "z_score": 2.15
+      },
+      {
+        "date": "2026-10-20",
+        "open_interest": 311686,
+        "noncomm_long": 86933,
+        "noncomm_short": 35781,
+        "net_speculative": 51152,
+        "net_pct_oi": 0.1641,
+        "percentile": 98.4,
+        "z_score": 2.19
+      },
+      {
+        "date": "2026-10-27",
+        "open_interest": 307271,
+        "noncomm_long": 85068,
+        "noncomm_short": 35642,
+        "net_speculative": 49426,
+        "net_pct_oi": 0.1609,
+        "percentile": 97.7,
+        "z_score": 2.12
+      },
+      {
+        "date": "2026-11-03",
+        "open_interest": 341568,
+        "noncomm_long": 88157,
+        "noncomm_short": 44387,
+        "net_speculative": 43770,
+        "net_pct_oi": 0.1281,
+        "percentile": 92.9,
+        "z_score": 1.51
+      },
+      {
+        "date": "2026-11-10",
+        "open_interest": 338428,
+        "noncomm_long": 79128,
+        "noncomm_short": 47921,
+        "net_speculative": 31207,
+        "net_pct_oi": 0.0922,
+        "percentile": 79.7,
+        "z_score": 0.86
+      },
+      {
+        "date": "2026-11-17",
+        "open_interest": 354502,
+        "noncomm_long": 74223,
+        "noncomm_short": 67400,
+        "net_speculative": 6823,
+        "net_pct_oi": 0.0192,
+        "percentile": 33.4,
+        "z_score": -0.44
+      }
+    ]
+  }
+}

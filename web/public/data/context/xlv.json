@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "xlv",
+    "name": "Health Care Select Sector SPDR",
+    "group": "us_sector",
+    "region": "US",
+    "unit": "index",
+    "current_value": 177.24,
+    "percentile": 96.9,
+    "z_score": 2.48,
+    "n": 754,
+    "n_eff": 733.8,
+    "histogram_bins": [
+      -0.4076,
+      -0.3736,
+      -0.3396,
+      -0.3056,
+      -0.2715,
+      -0.2375,
+      -0.2035,
+      -0.1695,
+      -0.1355,
+      -0.1014,
+      -0.0674,
+      -0.0334,
+      0.0006,
+      0.0346,
+      0.0687,
+      0.1027,
+      0.1367,
+      0.1707,
+      0.2047,
+      0.2388,
+      0.2728,
+      0.3068,
+      0.3408,
+      0.3748,
+      0.4089
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      27,
+      692,
+      31,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2026-10-15",
+        "value": 177.19,
+        "distance": 0.05
+      },
+      {
+        "date": "2026-08-19",
+        "value": 175.01,
+        "distance": 2.2298
+      },
+      {
+        "date": "2026-09-25",
+        "value": 170.7,
+        "distance": 6.54
+      },
+      {
+        "date": "2026-07-28",
+        "value": 166.62,
+        "distance": 10.6177
+      },
+      {
+        "date": "2026-07-07",
+        "value": 163.81,
+        "distance": 13.4269
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for Health Care Select Sector SPDR.",
+    "source_note": "Attribution: YAHOO"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "hy_spread",
+    "name": "US High Yield Option-Adjusted Spread",
+    "group": "credit",
+    "region": "US",
+    "unit": "bps",
+    "current_value": 3.52,
+    "percentile": 91.4,
+    "z_score": 0.01,
+    "n": 783,
+    "n_eff": 783.0,
+    "histogram_bins": [
+      -9528.2,
+      -8742.6,
+      -7957.0,
+      -7171.4,
+      -6385.8,
+      -5600.2,
+      -4814.6,
+      -4029.0,
+      -3243.4,
+      -2457.8,
+      -1672.2,
+      -886.6,
+      -101.0,
+      684.6,
+      1470.2,
+      2255.8,
+      3041.4,
+      3827.0,
+      4612.6,
+      5398.2,
+      6183.8,
+      6969.4,
+      7755.0,
+      8540.6,
+      9326.2
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      780,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2024-02-06",
+        "value": 3.52,
+        "distance": 0.0
+      },
+      {
+        "date": "2024-08-12",
+        "value": 3.52,
+        "distance": 0.0
+      },
+      {
+        "date": "2025-05-09",
+        "value": 3.53,
+        "distance": 0.01
+      },
+      {
+        "date": "2023-12-15",
+        "value": 3.51,
+        "distance": 0.01
+      },
+      {
+        "date": "2024-01-15",
+        "value": 3.54,
+        "distance": 0.02
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for US High Yield Option-Adjusted Spread.",
+    "source_note": "Attribution: FRED"
+  }
+}

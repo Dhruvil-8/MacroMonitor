@@ -1,0 +1,838 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "manifest": {
+    "datasets": [
+      {
+        "path": "/v1/series/brent.json",
+        "schema_version": "1.0",
+        "size_bytes": 25166,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/copper.json",
+        "schema_version": "1.0",
+        "size_bytes": 25498,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/dax.json",
+        "schema_version": "1.0",
+        "size_bytes": 27327,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/dji.json",
+        "schema_version": "1.0",
+        "size_bytes": 27325,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/dxy.json",
+        "schema_version": "1.0",
+        "size_bytes": 25502,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/eem.json",
+        "schema_version": "1.0",
+        "size_bytes": 25063,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/eurusd.json",
+        "schema_version": "1.0",
+        "size_bytes": 25861,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/fed_assets.json",
+        "schema_version": "1.0",
+        "size_bytes": 183366,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/ftse.json",
+        "schema_version": "1.0",
+        "size_bytes": 26113,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/gbpusd.json",
+        "schema_version": "1.0",
+        "size_bytes": 25848,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/gold.json",
+        "schema_version": "1.0",
+        "size_bytes": 27074,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/hsi.json",
+        "schema_version": "1.0",
+        "size_bytes": 27334,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/hy_spread.json",
+        "schema_version": "1.0",
+        "size_bytes": 25257,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/ig_spread.json",
+        "schema_version": "1.0",
+        "size_bytes": 25257,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/indiavix.json",
+        "schema_version": "1.0",
+        "size_bytes": 25037,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/n225.json",
+        "schema_version": "1.0",
+        "size_bytes": 27202,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/natgas.json",
+        "schema_version": "1.0",
+        "size_bytes": 25061,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/ndx.json",
+        "schema_version": "1.0",
+        "size_bytes": 27314,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/nifty50.json",
+        "schema_version": "1.0",
+        "size_bytes": 27028,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/niftyauto.json",
+        "schema_version": "1.0",
+        "size_bytes": 27003,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/niftybank.json",
+        "schema_version": "1.0",
+        "size_bytes": 27060,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/niftyfmcg.json",
+        "schema_version": "1.0",
+        "size_bytes": 27024,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/niftyit.json",
+        "schema_version": "1.0",
+        "size_bytes": 27050,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/niftymetal.json",
+        "schema_version": "1.0",
+        "size_bytes": 26586,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/niftymid.json",
+        "schema_version": "1.0",
+        "size_bytes": 27033,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/niftypharma.json",
+        "schema_version": "1.0",
+        "size_bytes": 27043,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/niftyrealty.json",
+        "schema_version": "1.0",
+        "size_bytes": 25705,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/rrp.json",
+        "schema_version": "1.0",
+        "size_bytes": 117210,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/rsp.json",
+        "schema_version": "1.0",
+        "size_bytes": 25805,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/rut.json",
+        "schema_version": "1.0",
+        "size_bytes": 26567,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/sensex.json",
+        "schema_version": "1.0",
+        "size_bytes": 27320,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/silver.json",
+        "schema_version": "1.0",
+        "size_bytes": 25818,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/sofr.json",
+        "schema_version": "1.0",
+        "size_bytes": 71957,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/spx.json",
+        "schema_version": "1.0",
+        "size_bytes": 26555,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/ssec.json",
+        "schema_version": "1.0",
+        "size_bytes": 25994,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/tga.json",
+        "schema_version": "1.0",
+        "size_bytes": 175712,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/us10y.json",
+        "schema_version": "1.0",
+        "size_bytes": 224028,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/us10y_breakeven.json",
+        "schema_version": "1.0",
+        "size_bytes": 199135,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/us10y_real.json",
+        "schema_version": "1.0",
+        "size_bytes": 200045,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/us2s10s.json",
+        "schema_version": "1.0",
+        "size_bytes": 225136,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/us2y.json",
+        "schema_version": "1.0",
+        "size_bytes": 224027,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/us30y.json",
+        "schema_version": "1.0",
+        "size_bytes": 224009,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/us5y.json",
+        "schema_version": "1.0",
+        "size_bytes": 224053,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/usdcny.json",
+        "schema_version": "1.0",
+        "size_bytes": 25759,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/usdinr.json",
+        "schema_version": "1.0",
+        "size_bytes": 26568,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/usdjpy.json",
+        "schema_version": "1.0",
+        "size_bytes": 26589,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/vix.json",
+        "schema_version": "1.0",
+        "size_bytes": 25056,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/wti.json",
+        "schema_version": "1.0",
+        "size_bytes": 25119,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/xlb.json",
+        "schema_version": "1.0",
+        "size_bytes": 25064,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/xlc.json",
+        "schema_version": "1.0",
+        "size_bytes": 25493,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/xle.json",
+        "schema_version": "1.0",
+        "size_bytes": 25065,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/xlf.json",
+        "schema_version": "1.0",
+        "size_bytes": 25085,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/xli.json",
+        "schema_version": "1.0",
+        "size_bytes": 25826,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/xlk.json",
+        "schema_version": "1.0",
+        "size_bytes": 25767,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/xlp.json",
+        "schema_version": "1.0",
+        "size_bytes": 25087,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/xlre.json",
+        "schema_version": "1.0",
+        "size_bytes": 25087,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/xlu.json",
+        "schema_version": "1.0",
+        "size_bytes": 25078,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/xlv.json",
+        "schema_version": "1.0",
+        "size_bytes": 25828,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/series/xly.json",
+        "schema_version": "1.0",
+        "size_bytes": 25568,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/vol_landscape.json",
+        "schema_version": "1.0",
+        "size_bytes": 19064,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/state_map.json",
+        "schema_version": "1.0",
+        "size_bytes": 15825,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/pulse.json",
+        "schema_version": "1.0",
+        "size_bytes": 4909,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/divergences.json",
+        "schema_version": "1.0",
+        "size_bytes": 22388,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/observations.json",
+        "schema_version": "1.0",
+        "size_bytes": 5828,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/correlations.json",
+        "schema_version": "1.0",
+        "size_bytes": 27369,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/rotation_global.json",
+        "schema_version": "1.0",
+        "size_bytes": 47849,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/brent.json",
+        "schema_version": "1.0",
+        "size_bytes": 1717,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/copper.json",
+        "schema_version": "1.0",
+        "size_bytes": 1694,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/dax.json",
+        "schema_version": "1.0",
+        "size_bytes": 1729,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/dji.json",
+        "schema_version": "1.0",
+        "size_bytes": 1748,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/dxy.json",
+        "schema_version": "1.0",
+        "size_bytes": 1695,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/eem.json",
+        "schema_version": "1.0",
+        "size_bytes": 1731,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/eurusd.json",
+        "schema_version": "1.0",
+        "size_bytes": 1694,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/fed_assets.json",
+        "schema_version": "1.0",
+        "size_bytes": 1877,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/ftse.json",
+        "schema_version": "1.0",
+        "size_bytes": 1699,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/gbpusd.json",
+        "schema_version": "1.0",
+        "size_bytes": 1700,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/gold.json",
+        "schema_version": "1.0",
+        "size_bytes": 1708,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/hsi.json",
+        "schema_version": "1.0",
+        "size_bytes": 1721,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/hy_spread.json",
+        "schema_version": "1.0",
+        "size_bytes": 1718,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/ig_spread.json",
+        "schema_version": "1.0",
+        "size_bytes": 1748,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/indiavix.json",
+        "schema_version": "1.0",
+        "size_bytes": 1675,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/n225.json",
+        "schema_version": "1.0",
+        "size_bytes": 1725,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/natgas.json",
+        "schema_version": "1.0",
+        "size_bytes": 1697,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/ndx.json",
+        "schema_version": "1.0",
+        "size_bytes": 1717,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/nifty50.json",
+        "schema_version": "1.0",
+        "size_bytes": 1715,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/niftyauto.json",
+        "schema_version": "1.0",
+        "size_bytes": 1716,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/niftybank.json",
+        "schema_version": "1.0",
+        "size_bytes": 1728,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/niftyfmcg.json",
+        "schema_version": "1.0",
+        "size_bytes": 1722,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/niftyit.json",
+        "schema_version": "1.0",
+        "size_bytes": 1718,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/niftymetal.json",
+        "schema_version": "1.0",
+        "size_bytes": 1724,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/niftymid.json",
+        "schema_version": "1.0",
+        "size_bytes": 1736,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/niftypharma.json",
+        "schema_version": "1.0",
+        "size_bytes": 1737,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/niftyrealty.json",
+        "schema_version": "1.0",
+        "size_bytes": 1697,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/rrp.json",
+        "schema_version": "1.0",
+        "size_bytes": 1805,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/rsp.json",
+        "schema_version": "1.0",
+        "size_bytes": 1708,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/rut.json",
+        "schema_version": "1.0",
+        "size_bytes": 1711,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/sensex.json",
+        "schema_version": "1.0",
+        "size_bytes": 1725,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/silver.json",
+        "schema_version": "1.0",
+        "size_bytes": 1704,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/sofr.json",
+        "schema_version": "1.0",
+        "size_bytes": 1726,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/spx.json",
+        "schema_version": "1.0",
+        "size_bytes": 1701,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/ssec.json",
+        "schema_version": "1.0",
+        "size_bytes": 1728,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/tga.json",
+        "schema_version": "1.0",
+        "size_bytes": 1858,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/us10y.json",
+        "schema_version": "1.0",
+        "size_bytes": 1711,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/us10y_breakeven.json",
+        "schema_version": "1.0",
+        "size_bytes": 1740,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/us10y_real.json",
+        "schema_version": "1.0",
+        "size_bytes": 1721,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/us2s10s.json",
+        "schema_version": "1.0",
+        "size_bytes": 1720,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/us2y.json",
+        "schema_version": "1.0",
+        "size_bytes": 1708,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/us30y.json",
+        "schema_version": "1.0",
+        "size_bytes": 1684,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/us5y.json",
+        "schema_version": "1.0",
+        "size_bytes": 1688,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/usdcny.json",
+        "schema_version": "1.0",
+        "size_bytes": 1697,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/usdinr.json",
+        "schema_version": "1.0",
+        "size_bytes": 1706,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/usdjpy.json",
+        "schema_version": "1.0",
+        "size_bytes": 1705,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/vix.json",
+        "schema_version": "1.0",
+        "size_bytes": 1697,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/wti.json",
+        "schema_version": "1.0",
+        "size_bytes": 1709,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/xlb.json",
+        "schema_version": "1.0",
+        "size_bytes": 1715,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/xlc.json",
+        "schema_version": "1.0",
+        "size_bytes": 1733,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/xle.json",
+        "schema_version": "1.0",
+        "size_bytes": 1708,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/xlf.json",
+        "schema_version": "1.0",
+        "size_bytes": 1714,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/xli.json",
+        "schema_version": "1.0",
+        "size_bytes": 1729,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/xlk.json",
+        "schema_version": "1.0",
+        "size_bytes": 1730,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/xlp.json",
+        "schema_version": "1.0",
+        "size_bytes": 1735,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/xlre.json",
+        "schema_version": "1.0",
+        "size_bytes": 1722,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/xlu.json",
+        "schema_version": "1.0",
+        "size_bytes": 1713,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/xlv.json",
+        "schema_version": "1.0",
+        "size_bytes": 1731,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/context/xly.json",
+        "schema_version": "1.0",
+        "size_bytes": 1739,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/liquidity.json",
+        "schema_version": "1.0",
+        "size_bytes": 52716,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/india_flows.json",
+        "schema_version": "1.0",
+        "size_bytes": 10143,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/stress.json",
+        "schema_version": "1.0",
+        "size_bytes": 10713,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/briefing/2026-11-20.json",
+        "schema_version": "1.0",
+        "size_bytes": 1556,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/decomposition/nifty50.json",
+        "schema_version": "1.0",
+        "size_bytes": 1640,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/decomposition/featured.json",
+        "schema_version": "1.0",
+        "size_bytes": 1640,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/decomposition/spx.json",
+        "schema_version": "1.0",
+        "size_bytes": 1551,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/decomposition/dax.json",
+        "schema_version": "1.0",
+        "size_bytes": 1634,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/decomposition/ftse.json",
+        "schema_version": "1.0",
+        "size_bytes": 1656,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/decomposition/n225.json",
+        "schema_version": "1.0",
+        "size_bytes": 1642,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/decomposition/ssec.json",
+        "schema_version": "1.0",
+        "size_bytes": 1648,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/countries.json",
+        "schema_version": "1.0",
+        "size_bytes": 6013,
+        "as_of": "2026-11-20"
+      },
+      {
+        "path": "/v1/sectors.json",
+        "schema_version": "1.0",
+        "size_bytes": 41474,
+        "as_of": "2026-11-20"
+      }
+    ]
+  }
+}

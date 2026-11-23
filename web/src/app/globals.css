@@ -1,0 +1,39 @@
+@import '../../styles/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: var(--bg-0);
+  color: var(--tx-0);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-0);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--line-strong);
+}
+
+.panel {
+  background-color: var(--bg-1);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.panel:hover {
+  border-color: var(--line-strong);
+}

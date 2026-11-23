@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "us2y",
+    "name": "US 2-Year Treasury Yield",
+    "group": "rates",
+    "region": "US",
+    "unit": "pct",
+    "current_value": 4.76,
+    "percentile": 90.1,
+    "z_score": 0.89,
+    "n": 7014,
+    "n_eff": 7013.7,
+    "histogram_bins": [
+      -9462.88,
+      -8682.64,
+      -7902.4,
+      -7122.16,
+      -6341.92,
+      -5561.68,
+      -4781.44,
+      -4001.2,
+      -3220.96,
+      -2440.72,
+      -1660.48,
+      -880.24,
+      -100.0,
+      680.24,
+      1460.48,
+      2240.72,
+      3020.96,
+      3801.2,
+      4581.44,
+      5361.68,
+      6141.92,
+      6922.16,
+      7702.4,
+      8482.64,
+      9262.88
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      7011,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2023-08-07",
+        "value": 4.76,
+        "distance": 0.0
+      },
+      {
+        "date": "2026-09-18",
+        "value": 4.76,
+        "distance": 0.0
+      },
+      {
+        "date": "2006-03-03",
+        "value": 4.76,
+        "distance": 0.0
+      },
+      {
+        "date": "2006-11-13",
+        "value": 4.76,
+        "distance": 0.0
+      },
+      {
+        "date": "2007-04-13",
+        "value": 4.76,
+        "distance": 0.0
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for US 2-Year Treasury Yield.",
+    "source_note": "Attribution: FRED"
+  }
+}

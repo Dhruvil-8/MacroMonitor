@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-20",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "id": "eem",
+    "name": "MSCI Emerging Markets Index ETF",
+    "group": "equity_index",
+    "region": "EM",
+    "unit": "index",
+    "current_value": 53.84,
+    "percentile": 66.4,
+    "z_score": 0.37,
+    "n": 754,
+    "n_eff": 754.0,
+    "histogram_bins": [
+      -0.5584,
+      -0.5108,
+      -0.4632,
+      -0.4155,
+      -0.3679,
+      -0.3203,
+      -0.2727,
+      -0.2251,
+      -0.1774,
+      -0.1298,
+      -0.0822,
+      -0.0346,
+      0.0131,
+      0.0607,
+      0.1083,
+      0.1559,
+      0.2035,
+      0.2512,
+      0.2988,
+      0.3464,
+      0.394,
+      0.4416,
+      0.4893,
+      0.5369,
+      0.5845
+    ],
+    "histogram_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      106,
+      637,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "analogs": [
+      {
+        "date": "2025-12-11",
+        "value": 53.83,
+        "distance": 0.0141
+      },
+      {
+        "date": "2025-10-20",
+        "value": 53.87,
+        "distance": 0.0252
+      },
+      {
+        "date": "2025-11-13",
+        "value": 53.87,
+        "distance": 0.035
+      },
+      {
+        "date": "2025-12-31",
+        "value": 54.43,
+        "distance": 0.5871
+      },
+      {
+        "date": "2026-03-30",
+        "value": 54.47,
+        "distance": 0.6269
+      }
+    ],
+    "peer_rank": 1,
+    "peer_count": 10,
+    "description": "Empirical historical distribution and regime context for MSCI Emerging Markets Index ETF.",
+    "source_note": "Attribution: YAHOO"
+  }
+}
