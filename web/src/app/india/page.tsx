@@ -26,7 +26,8 @@ export default function IndiaPage() {
   useEffect(() => {
     async function loadIndiaFlows() {
       try {
-        const res = await fetch("/data/v1/india_flows.json");
+        const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+        const res = await fetch(`${basePath}/data/v1/india_flows.json`);
         if (!res.ok) throw new Error(`HTTP ${res.status} while loading India flows data`);
         const json = await res.json();
         setDataEnvelope(json);

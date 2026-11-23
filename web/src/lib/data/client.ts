@@ -65,7 +65,8 @@ import {
 } from "./schemas";
 import { z } from "zod";
 
-const DATA_BASE_URL = process.env.NEXT_PUBLIC_DATA_BASE_URL || "/data/v1";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const DATA_BASE_URL = process.env.NEXT_PUBLIC_DATA_BASE_URL || `${basePath}/data/v1`;
 const STALE_AFTER_HOURS = 36;
 
 export type LoadResult<T> =

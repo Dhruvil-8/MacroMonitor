@@ -26,6 +26,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -36,7 +38,11 @@ jobs:
         run: npm ci || npm install
 
       - name: Build Static Export
-        run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: '/MacroMonitor'
+        run: |
+          npm run build
+          touch out/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

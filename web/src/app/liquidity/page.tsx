@@ -25,7 +25,8 @@ export default function LiquidityPage() {
   useEffect(() => {
     async function loadLiquidity() {
       try {
-        const res = await fetch("/data/v1/liquidity.json");
+        const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+        const res = await fetch(`${basePath}/data/v1/liquidity.json`);
         if (!res.ok) throw new Error(`HTTP ${res.status} while loading liquidity data`);
         const json = await res.json();
         setDataEnvelope(json);
