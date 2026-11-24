@@ -10,11 +10,11 @@
       "rationale": "Captures joint shocks in long-end Treasury yields, dollar strength, crude inflation impulse, equity momentum, and implied volatility.",
       "query_date": "2026-11-23",
       "n_features": 5,
-      "n_indep": 3.99,
-      "top_match_date": "2008-09-19",
-      "top_match_distance": 1.024,
+      "n_indep": 4.54,
+      "top_match_date": "2025-11-21",
+      "top_match_distance": 1.641,
       "verdict_class": "no_reliable_improvement",
-      "mae_skill": -0.0594
+      "mae_skill": -0.0743
     },
     {
       "id": "risk_off_stress",
@@ -22,11 +22,11 @@
       "rationale": "Matches episodes of synchronized equity drawdowns, credit ETF weakness, elevated volatility, and defensive gold/duration bid.",
       "query_date": "2026-11-23",
       "n_features": 5,
-      "n_indep": 4.89,
+      "n_indep": 4.95,
       "top_match_date": "2025-11-17",
-      "top_match_distance": 1.429,
+      "top_match_distance": 1.332,
       "verdict_class": "no_reliable_improvement",
-      "mae_skill": -0.0639
+      "mae_skill": -0.0383
     },
     {
       "id": "cyclical_reflation",
@@ -35,8 +35,8 @@
       "query_date": "2026-11-23",
       "n_features": 5,
       "n_indep": 3.65,
-      "top_match_date": "2007-01-10",
-      "top_match_distance": 0.691,
+      "top_match_date": "2020-01-31",
+      "top_match_distance": 0.678,
       "verdict_class": "no_reliable_improvement",
       "mae_skill": -0.0394
     },

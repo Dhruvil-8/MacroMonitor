@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "f1687f268479",
+  "params_hash": "default_hash",
   "data": {
     "id": "xlc",
     "name": "Communication Services Select SPDR",
@@ -3668,7 +3668,7 @@
       71.48,
       71.07,
       70.63,
-      71.5,
+      71.49,
       72.46,
       72.61,
       73.33,

@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "f1687f268479",
+  "params_hash": "default_hash",
   "data": {
     "assets": [
       {
@@ -10,40 +10,40 @@
         "name": "S&P/ASX 200 Index",
         "group": "equity_index",
         "region": "AU",
-        "trend_t": 1.64,
-        "vol_percentile": 78.3,
+        "trend_t": 1.59,
+        "vol_percentile": 76.9,
         "quadrant": "Choppy",
-        "momentum_20d": -0.014
+        "momentum_20d": -0.0168
       },
       {
         "asset": "audusd",
         "name": "AUD / USD Currency Pair",
         "group": "fx",
         "region": "AU",
-        "trend_t": -12.59,
-        "vol_percentile": 25.5,
+        "trend_t": -12.57,
+        "vol_percentile": 25.4,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0549
+        "momentum_20d": -0.0555
       },
       {
         "asset": "brent",
         "name": "Brent Crude Oil Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -2.18,
-        "vol_percentile": 93.3,
-        "quadrant": "Violent trend",
-        "momentum_20d": -0.2415
+        "trend_t": -1.51,
+        "vol_percentile": 93.7,
+        "quadrant": "Choppy",
+        "momentum_20d": -0.254
       },
       {
         "asset": "copper",
         "name": "Copper Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -7.37,
-        "vol_percentile": 77.6,
+        "trend_t": -6.8,
+        "vol_percentile": 74.9,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.17
+        "momentum_20d": -0.1542
       },
       {
         "asset": "dax",
@@ -70,10 +70,10 @@
         "name": "US Dollar Index",
         "group": "fx",
         "region": "US",
-        "trend_t": 15.3,
+        "trend_t": 15.09,
         "vol_percentile": 27.9,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0192
+        "momentum_20d": 0.0226
       },
       {
         "asset": "eem",
@@ -91,9 +91,9 @@
         "group": "fx",
         "region": "EU",
         "trend_t": -21.61,
-        "vol_percentile": 21.0,
+        "vol_percentile": 20.8,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0234
+        "momentum_20d": -0.0233
       },
       {
         "asset": "fed_assets",
@@ -121,29 +121,29 @@
         "group": "fx",
         "region": "UK",
         "trend_t": -4.97,
-        "vol_percentile": 16.9,
+        "vol_percentile": 17.3,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0225
+        "momentum_20d": -0.0229
       },
       {
         "asset": "gold",
         "name": "Gold Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -18.59,
-        "vol_percentile": 96.4,
+        "trend_t": -18.16,
+        "vol_percentile": 96.2,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1118
+        "momentum_20d": -0.1015
       },
       {
         "asset": "hsi",
         "name": "Hang Seng Index",
         "group": "equity_index",
         "region": "HK",
-        "trend_t": -10.06,
-        "vol_percentile": 69.7,
+        "trend_t": -10.08,
+        "vol_percentile": 69.5,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0358
+        "momentum_20d": -0.0326
       },
       {
         "asset": "hy_spread",
@@ -190,30 +190,30 @@
         "name": "KOSPI Composite Index",
         "group": "equity_index",
         "region": "KR",
-        "trend_t": -16.44,
-        "vol_percentile": 97.8,
+        "trend_t": -16.4,
+        "vol_percentile": 98.1,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1113
+        "momentum_20d": -0.1049
       },
       {
         "asset": "n225",
         "name": "Nikkei 225 Index",
         "group": "equity_index",
         "region": "JP",
-        "trend_t": -6.59,
-        "vol_percentile": 95.4,
+        "trend_t": -6.57,
+        "vol_percentile": 95.7,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0751
+        "momentum_20d": -0.0716
       },
       {
         "asset": "natgas",
         "name": "Natural Gas Futures",
         "group": "commodity",
         "region": "US",
-        "trend_t": 3.43,
-        "vol_percentile": 76.7,
+        "trend_t": 3.38,
+        "vol_percentile": 53.9,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.3144
+        "momentum_20d": 0.3616
       },
       {
         "asset": "ndx",
@@ -370,10 +370,10 @@
         "name": "Silver Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -24.06,
-        "vol_percentile": 94.2,
+        "trend_t": -23.02,
+        "vol_percentile": 93.2,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.2261
+        "momentum_20d": -0.2159
       },
       {
         "asset": "sofr",
@@ -400,10 +400,10 @@
         "name": "Shanghai Composite Index",
         "group": "equity_index",
         "region": "CN",
-        "trend_t": -28.36,
-        "vol_percentile": 34.7,
+        "trend_t": -28.33,
+        "vol_percentile": 35.5,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0274
+        "momentum_20d": -0.0254
       },
       {
         "asset": "tga",
@@ -520,8 +520,8 @@
         "name": "USD / CNY Currency Pair",
         "group": "fx",
         "region": "CN",
-        "trend_t": -16.55,
-        "vol_percentile": 43.9,
+        "trend_t": -16.54,
+        "vol_percentile": 43.7,
         "quadrant": "Orderly trend",
         "momentum_20d": -0.0014
       },
@@ -540,10 +540,10 @@
         "name": "USD / JPY Currency Pair",
         "group": "fx",
         "region": "JP",
-        "trend_t": 6.58,
-        "vol_percentile": 8.4,
+        "trend_t": 6.52,
+        "vol_percentile": 8.1,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0111
+        "momentum_20d": 0.0092
       },
       {
         "asset": "usdkrw",
@@ -553,7 +553,7 @@
         "trend_t": -4.9,
         "vol_percentile": 59.3,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0136
+        "momentum_20d": 0.0134
       },
       {
         "asset": "vix",
@@ -570,10 +570,10 @@
         "name": "WTI Crude Oil Futures",
         "group": "commodity",
         "region": "US",
-        "trend_t": -3.78,
-        "vol_percentile": 88.7,
+        "trend_t": -3.12,
+        "vol_percentile": 88.9,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.2013
+        "momentum_20d": -0.215
       },
       {
         "asset": "xlb",
