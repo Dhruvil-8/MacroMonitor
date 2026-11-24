@@ -86,6 +86,54 @@ def run_publish_gate(data_dir: Path = Path("data/v1")) -> bool:
         if ": NaN" in text or ": Infinity" in text or ": -Infinity" in text:
             failures.append(f"CRITICAL: Forbidden NaN or Infinity token in {jf.name}")
 
+    # 7. Global Financial Sanity & Return Range Gate (Asset-Class Aware)
+    # Distinguishes genuine extreme market shocks (e.g. +30% Nvidia earnings surge, -20% index circuit breaker)
+    # from code bugs, point-change leaks (-825.9 pts), or arithmetic overflows
+    ctx_dir = data_dir / "context"
+    if ctx_dir.exists():
+        for cpath in ctx_dir.glob("*.json"):
+            with open(cpath, "r", encoding="utf-8") as f:
+                cdata = json.load(f).get("data", {})
+            s_id = cdata.get("id", "")
+            unit = cdata.get("unit", "")
+            cal = cdata.get("calendar_heatmap", [])
+            for row in cal:
+                ret = row.get("return")
+                if ret is None or not isinstance(ret, (int, float)):
+                    continue
+                y = row.get("year")
+                m = row.get("month")
+
+                # Volatility gauges (VIX, India VIX) are in points, allowing historic crisis spikes (e.g. March 2020 +41 pts)
+                if s_id in {"vix", "indiavix"}:
+                    if abs(ret) > 100.0:
+                        failures.append(f"CRITICAL: Volatility index {s_id} point move out of bounds in {y}-{m}: {ret} pts")
+                # Credit spreads in bps (allow up to 2,000 bps crisis widening)
+                elif unit == "bps":
+                    if abs(ret) > 2000.0:
+                        failures.append(f"CRITICAL: Credit spread {s_id} move out of bounds in {y}-{m}: {ret} bps")
+                # Yields in % (allow up to 10% / 1000 bps rate shock)
+                elif unit == "pct":
+                    if abs(ret) > 10.0:
+                        failures.append(f"CRITICAL: Yield move {s_id} out of bounds in {y}-{m}: {ret}%")
+                # Macro balance sheet in USD mn / bn
+                elif unit in {"usd_mn", "usd_bn"}:
+                    max_change = 2_000_000 if unit == "usd_mn" else 2000
+                    if abs(ret) > max_change:
+                        failures.append(f"CRITICAL: Balance sheet change {s_id} out of bounds in {y}-{m}: {ret}")
+                # Equity & commodity price indices (standard fractional return)
+                else:
+                    # Allow up to +200% monthly move and down to -90% crash (permits historic single-month surges like 1933 or single-day +30% events)
+                    # Catches point-difference bugs (-825.9) and exponential compounding overflows
+                    if ret < -0.90 or ret > 2.00:
+                        failures.append(f"CRITICAL: Monthly return overflow in {s_id} for {y}-{m}: {ret*100:.1f}% (must be within [-90%, +200%])")
+
+    # 8. Detection of uncontrolled exponential notation in financial JSON exports
+    for jf in data_dir.rglob("*.json"):
+        text = jf.read_text(encoding="utf-8", errors="ignore")
+        if "e+" in text:
+            failures.append(f"CRITICAL: Uncontrolled exponential overflow token ('e+') detected in {jf.name}")
+
     # Summary
     if failures:
         print("\n[PUBLISH GATE FAILED] - The following Critical checks failed:")
