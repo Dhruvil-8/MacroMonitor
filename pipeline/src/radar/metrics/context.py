@@ -130,38 +130,50 @@ def compute_calendar_heatmap(prices_or_returns: pd.Series, is_prices: bool = Tru
     if len(s) < 30:
         return []
 
+    # Sort index chronologically to guarantee contiguous inter-month continuity
+    s = s.sort_index()
+
     df = pd.DataFrame({"val": s})
     df["year"] = df.index.year
     df["month"] = df.index.month
 
     records: list[dict[str, Any]] = []
 
+    grouped = df.groupby(["year", "month"], sort=False)["val"]
+    first_vals = grouped.first()
+    last_vals = grouped.last()
+
     if is_prices:
-        # For price series, compute monthly return as pct change from first to last in month
-        grouped = df.groupby(["year", "month"])["val"]
-        first_vals = grouped.first()
-        last_vals = grouped.last()
-        monthly_rets = (last_vals / first_vals - 1.0).reset_index()
-        for _, row in monthly_rets.iterrows():
-            val = float(row["val"])
+        # Month-over-month return from previous month-end close to preserve continuous annual compounding:
+        # Product of (1 + r_m) across the 12 calendar months exactly matches annual return (P_Dec / P_Dec_prior - 1).
+        monthly_rets = last_vals.pct_change()
+        if len(first_vals) > 0 and len(last_vals) > 0:
+            f0 = float(first_vals.iloc[0])
+            l0 = float(last_vals.iloc[0])
+            if f0 > 0:
+                monthly_rets.iloc[0] = (l0 / f0) - 1.0
+
+        for (year, month), val in monthly_rets.items():
+            val = float(val)
             if not np.isnan(val) and not np.isinf(val):
                 records.append({
-                    "year": int(row["year"]),
-                    "month": int(row["month"]),
+                    "year": int(year),
+                    "month": int(month),
                     "return": round(val, 4),
                 })
     else:
-        # For difference series (rates, spreads), compute total monthly change
-        grouped = df.groupby(["year", "month"])["val"]
-        first_vals = grouped.first()
-        last_vals = grouped.last()
-        monthly_diffs = (last_vals - first_vals).reset_index()
-        for _, row in monthly_diffs.iterrows():
-            val = float(row["val"])
+        # For difference series (rates, spreads), compute month-over-month level difference:
+        # Sum of diffs across the 12 months matches full year net change.
+        monthly_diffs = last_vals.diff()
+        if len(first_vals) > 0 and len(last_vals) > 0:
+            monthly_diffs.iloc[0] = float(last_vals.iloc[0]) - float(first_vals.iloc[0])
+
+        for (year, month), val in monthly_diffs.items():
+            val = float(val)
             if not np.isnan(val) and not np.isinf(val):
                 records.append({
-                    "year": int(row["year"]),
-                    "month": int(row["month"]),
+                    "year": int(year),
+                    "month": int(month),
                     "return": round(val, 4),
                 })
 

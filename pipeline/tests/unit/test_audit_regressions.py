@@ -17,11 +17,30 @@ def test_vix_august_2024_spike_preserved():
     """Regression test for FINDING-DATA-01:
     Verify that filter_jumps and clean_series do not classify the genuine
     August 5, 2024 VIX spike of 38.57 as an outlier and do not forward fill it.
+    Works reliably both locally and in clean-room CI environments without data/raw dependencies.
     """
+    # 1. Verify processed series artifact tracked in git
+    proc_vix_path = Path("data/processed/series/vix.parquet")
+    if proc_vix_path.exists():
+        proc_df = pd.read_parquet(proc_vix_path)
+        if "2024-08-05" in proc_df.index:
+            aug5_val = proc_df.loc["2024-08-05", "value"]
+            assert np.isclose(aug5_val, 38.57, atol=0.01), f"Expected 38.57 in processed series on 2024-08-05, got {aug5_val}"
+            assert not proc_df.loc["2024-08-05", "is_filled"], "Processed 2024-08-05 was flagged as forward-filled"
+
+    # 2. Verify clean_series algorithm preserves the genuine volatility spike
     raw_vix_path = Path("data/raw/yahoo/2026-11-21/VIX.parquet")
-    assert raw_vix_path.exists(), f"Raw VIX parquet missing at {raw_vix_path}"
-    
-    raw_df = pd.read_parquet(raw_vix_path)
+    if raw_vix_path.exists():
+        raw_df = pd.read_parquet(raw_vix_path)
+    else:
+        # Self-contained synthetic fixture reproducing the August 2024 VIX sequence
+        dates = pd.date_range("2024-05-01", "2024-08-10", freq="B")
+        raw_df = pd.DataFrame({"value": 15.0}, index=dates)
+        raw_df.loc["2024-08-01", "value"] = 18.59
+        raw_df.loc["2024-08-02", "value"] = 23.39
+        raw_df.loc["2024-08-05", "value"] = 38.57
+        raw_df.loc["2024-08-06", "value"] = 27.71
+
     clean_df = clean_series(
         raw_df,
         series_id="vix",

@@ -124,6 +124,21 @@ def test_calendar_heatmap_monthly_returns():
         assert 1 <= row["month"] <= 12
         assert isinstance(row["return"], float)
 
+    # Compounding identity check: product of 12 months in 2024 matches P_end_2024 / P_end_2023 - 1
+    rets_2024 = [r["return"] for r in cal if r["year"] == 2024]
+    prod_2024 = float(np.prod([1.0 + r for r in rets_2024])) - 1.0
+    p_end_2023 = prices.loc["2023"].iloc[-1]
+    p_end_2024 = prices.loc["2024"].iloc[-1]
+    expected_annual = (p_end_2024 / p_end_2023) - 1.0
+    assert np.isclose(prod_2024, expected_annual, atol=0.005)
+
+    # Difference series check (is_prices=False)
+    diff_cal = compute_calendar_heatmap(prices, is_prices=False)
+    diffs_2024 = [r["return"] for r in diff_cal if r["year"] == 2024]
+    sum_diff_2024 = float(sum(diffs_2024))
+    expected_diff = float(p_end_2024 - p_end_2023)
+    assert np.isclose(sum_diff_2024, expected_diff, atol=0.01)
+
 
 def test_analog_forward_outcomes():
     """Verify that declustered analogs accurately compute forward 5D and 20D returns."""

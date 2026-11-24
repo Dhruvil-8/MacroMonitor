@@ -274,50 +274,64 @@ export function ContextClientView({ id }: { id: string }) {
           </div>
 
           {/* Row 2: Seasonality Calendar Heatmap (C25) */}
-          {ctxData.calendar_heatmap && ctxData.calendar_heatmap.length > 0 && (
-            <ChartCard
-              eyebrow="Seasonality Matrix (C25)"
-              title={`${ctxData.name} Calendar Return Heatmap`}
-              subtitle="Monthly compounded returns grouped by Year and Month"
-              asOf={asOf}
-              methodData={{
-                chartTitle: `Calendar Heatmap (C25) — ${ctxData.name}`,
-                whatItShows: "Monthly returns across calendar years, accompanied by a mandatory caveat that small sample sizes preclude statistical significance.",
-                definitionFormula: "R_{\\text{month}} = \\frac{P_{\\text{month-end}}}{P_{\\text{month-start}}} - 1",
-                parameters: {
-                  aggregation: "Monthly geometric compounded return",
-                },
-                dataSources: [{ series: ctxData.id, source: ctxData.source_note, frequency: "Monthly" }],
-                sample: {
+          {ctxData.calendar_heatmap && ctxData.calendar_heatmap.length > 0 && (() => {
+            const isDiff = ctxData.unit === "bps" || ctxData.unit === "pct" || ctxData.unit === "usd_bn" || ctxData.unit === "usd_mn" || ctxData.id === "vix" || ctxData.id === "indiavix";
+            const lastVal = ctxData.calendar_heatmap.slice(-1)[0]?.return;
+            const currentFormatted = lastVal !== undefined
+              ? isDiff
+                ? `${lastVal > 0 ? "+" : ""}${lastVal} ${ctxData.unit}`
+                : `${lastVal > 0 ? "+" : ""}${(lastVal * 100).toFixed(1)}%`
+              : "—";
+
+            return (
+              <ChartCard
+                eyebrow="Seasonality Matrix (C25)"
+                title={`${ctxData.name} ${isDiff ? "Calendar Change Heatmap" : "Calendar Return Heatmap"}`}
+                subtitle={isDiff ? "Monthly net changes grouped by Year and Month" : "Monthly compounded returns grouped by Year and Month"}
+                asOf={asOf}
+                methodData={{
+                  chartTitle: `Calendar Heatmap (C25) — ${ctxData.name}`,
+                  whatItShows: isDiff
+                    ? "Monthly net level changes across calendar years, accompanied by a mandatory caveat that small sample sizes preclude statistical significance."
+                    : "Monthly returns across calendar years, accompanied by a mandatory caveat that small sample sizes preclude statistical significance.",
+                  definitionFormula: isDiff
+                    ? "\\Delta_{\\text{month}} = P_{\\text{month-end}} - P_{\\text{prev-month-end}}"
+                    : "R_{\\text{month}} = \\frac{P_{\\text{month-end}}}{P_{\\text{prev-month-end}}} - 1",
+                  parameters: {
+                    aggregation: isDiff ? "Monthly net difference" : "Monthly geometric compounded return",
+                  },
+                  dataSources: [{ series: ctxData.id, source: ctxData.source_note, frequency: "Monthly" }],
+                  sample: {
+                    n: ctxData.calendar_heatmap.length,
+                    dateRange: "All available calendar years",
+                  },
+                  interpretationNotes: [
+                    "Calendar patterns often reflect data mining or random noise; never base strategic positioning solely on calendar seasonality.",
+                    "Displayed strictly for descriptive historical context.",
+                  ],
+                  reproduce: {
+                    functionName: "compute_calendar_heatmap",
+                    filePath: "pipeline/src/radar/metrics/context.py",
+                    testPath: "pipeline/tests/unit/test_context.py",
+                  },
+                }}
+                auditData={{
+                  metricName: isDiff ? "Monthly Calendar Net Changes" : "Monthly Calendar Returns",
+                  formula: isDiff ? "P_end - P_prev_end" : "P_end / P_prev_end - 1.0",
+                  formulaPlain: isDiff ? "Net change for each calendar month." : "Compounded monthly percentage return for each calendar month.",
+                  parameters: { sample_years: Array.from(new Set(ctxData.calendar_heatmap.map((d) => d.year))).length },
+                  inputs: [{ id: ctxData.id, name: ctxData.name, source: ctxData.source_note, unit: ctxData.unit }],
+                  window: "Multi-year monthly aggregation",
+                  currentValue: currentFormatted,
                   n: ctxData.calendar_heatmap.length,
-                  dateRange: "All available calendar years",
-                },
-                interpretationNotes: [
-                  "Calendar patterns often reflect data mining or random noise; never base strategic positioning solely on calendar seasonality.",
-                  "Displayed strictly for descriptive historical context.",
-                ],
-                reproduce: {
-                  functionName: "compute_calendar_heatmap",
-                  filePath: "pipeline/src/radar/metrics/context.py",
-                  testPath: "pipeline/tests/unit/test_context.py",
-                },
-              }}
-              auditData={{
-                metricName: "Monthly Calendar Returns",
-                formula: "P_end / P_start - 1.0",
-                formulaPlain: "Compounded monthly percentage return for each calendar month.",
-                parameters: { sample_years: Array.from(new Set(ctxData.calendar_heatmap.map((d) => d.year))).length },
-                inputs: [{ id: ctxData.id, name: ctxData.name, source: ctxData.source_note, unit: "%" }],
-                window: "Multi-year monthly aggregation",
-                currentValue: `${ctxData.calendar_heatmap.slice(-1)[0]?.return ? (ctxData.calendar_heatmap.slice(-1)[0].return * 100).toFixed(1) + "%" : "—"}`,
-                n: ctxData.calendar_heatmap.length,
-              }}
-              onOpenAudit={handleOpenAudit}
-              onOpenMethod={handleOpenMethod}
-            >
-              <CalendarHeatmap data={ctxData.calendar_heatmap} assetName={ctxData.name} />
-            </ChartCard>
-          )}
+                }}
+                onOpenAudit={handleOpenAudit}
+                onOpenMethod={handleOpenMethod}
+              >
+                <CalendarHeatmap data={ctxData.calendar_heatmap} assetName={ctxData.name} unit={ctxData.unit} />
+              </ChartCard>
+            );
+          })()}
 
           {/* Row 3: Declustered Analogs & Forward Outcomes (C26) */}
           <div className="p-5 rounded-lg bg-[var(--bg-1)] border border-[var(--line)] space-y-4">

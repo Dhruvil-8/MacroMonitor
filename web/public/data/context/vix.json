@@ -98,6 +98,183 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for Cboe Volatility Index.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "calendar_heatmap": [
+      {
+        "year": 2024,
+        "month": 1,
+        "return": 1.15
+      },
+      {
+        "year": 2024,
+        "month": 2,
+        "return": -0.95
+      },
+      {
+        "year": 2024,
+        "month": 3,
+        "return": -0.39
+      },
+      {
+        "year": 2024,
+        "month": 4,
+        "return": 2.64
+      },
+      {
+        "year": 2024,
+        "month": 5,
+        "return": -2.73
+      },
+      {
+        "year": 2024,
+        "month": 6,
+        "return": -0.48
+      },
+      {
+        "year": 2024,
+        "month": 7,
+        "return": 3.92
+      },
+      {
+        "year": 2024,
+        "month": 8,
+        "return": -1.36
+      },
+      {
+        "year": 2024,
+        "month": 9,
+        "return": 1.73
+      },
+      {
+        "year": 2024,
+        "month": 10,
+        "return": 6.43
+      },
+      {
+        "year": 2024,
+        "month": 11,
+        "return": -9.65
+      },
+      {
+        "year": 2024,
+        "month": 12,
+        "return": 3.84
+      },
+      {
+        "year": 2025,
+        "month": 1,
+        "return": -0.92
+      },
+      {
+        "year": 2025,
+        "month": 2,
+        "return": 3.2
+      },
+      {
+        "year": 2025,
+        "month": 3,
+        "return": 2.65
+      },
+      {
+        "year": 2025,
+        "month": 4,
+        "return": 2.42
+      },
+      {
+        "year": 2025,
+        "month": 5,
+        "return": -6.13
+      },
+      {
+        "year": 2025,
+        "month": 6,
+        "return": -1.84
+      },
+      {
+        "year": 2025,
+        "month": 7,
+        "return": -0.01
+      },
+      {
+        "year": 2025,
+        "month": 8,
+        "return": -1.36
+      },
+      {
+        "year": 2025,
+        "month": 9,
+        "return": 0.92
+      },
+      {
+        "year": 2025,
+        "month": 10,
+        "return": 1.16
+      },
+      {
+        "year": 2025,
+        "month": 11,
+        "return": -1.09
+      },
+      {
+        "year": 2025,
+        "month": 12,
+        "return": -1.4
+      },
+      {
+        "year": 2026,
+        "month": 1,
+        "return": 2.49
+      },
+      {
+        "year": 2026,
+        "month": 2,
+        "return": 2.42
+      },
+      {
+        "year": 2026,
+        "month": 3,
+        "return": 5.39
+      },
+      {
+        "year": 2026,
+        "month": 4,
+        "return": -8.36
+      },
+      {
+        "year": 2026,
+        "month": 5,
+        "return": -1.57
+      },
+      {
+        "year": 2026,
+        "month": 6,
+        "return": 1.13
+      },
+      {
+        "year": 2026,
+        "month": 7,
+        "return": -0.46
+      },
+      {
+        "year": 2026,
+        "month": 8,
+        "return": -1.07
+      },
+      {
+        "year": 2026,
+        "month": 9,
+        "return": 1.42
+      },
+      {
+        "year": 2026,
+        "month": 10,
+        "return": 3.08
+      },
+      {
+        "year": 2026,
+        "month": 11,
+        "return": 16.47
+      }
+    ]
   }
 }

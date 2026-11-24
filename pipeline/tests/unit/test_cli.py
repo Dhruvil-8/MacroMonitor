@@ -22,7 +22,8 @@ def test_cli_subcommands(tmp_path):
          patch("radar.ingest.yahoo.YahooIngestor.fetch_series", return_value=mock_df), \
          patch("radar.ingest.fred.FREDIngestor.fetch_series", return_value=mock_df), \
          patch("radar.ingest.nse.NSEIngestor.fetch_series", return_value=mock_df), \
-         patch("radar.export.writers.export_all_datasets", return_value=mock_manifest):
+         patch("radar.export.writers.export_all_datasets", return_value=mock_manifest), \
+         patch("radar.metrics.run_analogues.run", return_value=None):
 
         assert main(["ingest", "--source", "fred"]) == 0
         assert main(["compute", "--metrics", "all"]) == 0

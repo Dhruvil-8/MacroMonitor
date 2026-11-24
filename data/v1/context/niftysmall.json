@@ -399,13 +399,13 @@
       -0.00073,
       -0.00049,
       -0.00036,
-      -0.00006,
+      -6e-05,
       0.0,
       0.0,
       0.0,
       0.0,
       0.0,
-      0.00008,
+      8e-05,
       0.0003,
       0.0006,
       0.00077,
@@ -566,177 +566,177 @@
       {
         "year": 2024,
         "month": 1,
-        "return": 933.7998
+        "return": 0.0661
       },
       {
         "year": 2024,
         "month": 2,
-        "return": -119.1504
+        "return": -0.0065
       },
       {
         "year": 2024,
         "month": 3,
-        "return": -730.8496
+        "return": -0.0424
       },
       {
         "year": 2024,
         "month": 4,
-        "return": 1071.25
+        "return": 0.1049
       },
       {
         "year": 2024,
         "month": 5,
-        "return": -206.75
+        "return": -0.0131
       },
       {
         "year": 2024,
         "month": 6,
-        "return": 1162.3008
+        "return": 0.095
       },
       {
         "year": 2024,
         "month": 7,
-        "return": 580.3496
+        "return": 0.0489
       },
       {
         "year": 2024,
         "month": 8,
-        "return": 345.1992
+        "return": 0.0124
       },
       {
         "year": 2024,
         "month": 9,
-        "return": 253.0
+        "return": 0.0132
       },
       {
         "year": 2024,
         "month": 10,
-        "return": -780.6016
+        "return": -0.0358
       },
       {
         "year": 2024,
         "month": 11,
-        "return": -222.4004
+        "return": -0.002
       },
       {
         "year": 2024,
         "month": 12,
-        "return": -87.8496
+        "return": 0.002
       },
       {
         "year": 2025,
         "month": 1,
-        "return": -2057.751
+        "return": -0.1071
       },
       {
         "year": 2025,
         "month": 2,
-        "return": -1833.1006
+        "return": -0.1266
       },
       {
         "year": 2025,
         "month": 3,
-        "return": 1348.1494
+        "return": 0.091
       },
       {
         "year": 2025,
         "month": 4,
-        "return": 329.3506
+        "return": 0.0169
       },
       {
         "year": 2025,
         "month": 5,
-        "return": 1473.6006
+        "return": 0.0959
       },
       {
         "year": 2025,
         "month": 6,
-        "return": 844.0508
+        "return": 0.0573
       },
       {
         "year": 2025,
         "month": 7,
-        "return": -617.75
+        "return": -0.0367
       },
       {
         "year": 2025,
         "month": 8,
-        "return": -357.0996
+        "return": -0.0372
       },
       {
         "year": 2025,
         "month": 9,
-        "return": -45.5996
+        "return": 0.0113
       },
       {
         "year": 2025,
         "month": 10,
-        "return": 444.5
+        "return": 0.0372
       },
       {
         "year": 2025,
         "month": 11,
-        "return": -702.25
+        "return": -0.0336
       },
       {
         "year": 2025,
         "month": 12,
-        "return": -85.8496
+        "return": -0.0029
       },
       {
         "year": 2026,
         "month": 1,
-        "return": -947.9873
+        "return": -0.0552
       },
       {
         "year": 2026,
         "month": 2,
-        "return": 373.8994
+        "return": 0.0075
       },
       {
         "year": 2026,
         "month": 3,
-        "return": -1291.9502
+        "return": -0.1003
       },
       {
         "year": 2026,
         "month": 4,
-        "return": 1982.0996
+        "return": 0.171
       },
       {
         "year": 2026,
         "month": 5,
-        "return": 260.9004
+        "return": 0.0156
       },
       {
         "year": 2026,
         "month": 6,
-        "return": 863.2012
+        "return": 0.0429
       },
       {
         "year": 2026,
         "month": 7,
-        "return": 118.3496
+        "return": 0.0113
       },
       {
         "year": 2026,
         "month": 8,
-        "return": 205.4492
+        "return": 0.0252
       },
       {
         "year": 2026,
         "month": 9,
-        "return": -564.2988
+        "return": -0.0312
       },
       {
         "year": 2026,
         "month": 10,
-        "return": -824.5
+        "return": -0.0581
       },
       {
         "year": 2026,
         "month": 11,
-        "return": 2323.4004
+        "return": 0.1521
       }
     ],
     "analogs": [

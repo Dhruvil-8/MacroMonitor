@@ -98,6 +98,1163 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for Nifty 50 Index.",
-    "source_note": "Attribution: NSE"
+    "source_note": "Attribution: NSE",
+    "calendar_heatmap": [
+      {
+        "year": 2007,
+        "month": 9,
+        "return": 0.1172
+      },
+      {
+        "year": 2007,
+        "month": 10,
+        "return": 0.1751
+      },
+      {
+        "year": 2007,
+        "month": 11,
+        "return": -0.0234
+      },
+      {
+        "year": 2007,
+        "month": 12,
+        "return": 0.0652
+      },
+      {
+        "year": 2008,
+        "month": 1,
+        "return": -0.1631
+      },
+      {
+        "year": 2008,
+        "month": 2,
+        "return": 0.0167
+      },
+      {
+        "year": 2008,
+        "month": 3,
+        "return": -0.0936
+      },
+      {
+        "year": 2008,
+        "month": 4,
+        "return": 0.0911
+      },
+      {
+        "year": 2008,
+        "month": 5,
+        "return": -0.0573
+      },
+      {
+        "year": 2008,
+        "month": 6,
+        "return": -0.1703
+      },
+      {
+        "year": 2008,
+        "month": 7,
+        "return": 0.0724
+      },
+      {
+        "year": 2008,
+        "month": 8,
+        "return": 0.0062
+      },
+      {
+        "year": 2008,
+        "month": 9,
+        "return": -0.1006
+      },
+      {
+        "year": 2008,
+        "month": 10,
+        "return": -0.2641
+      },
+      {
+        "year": 2008,
+        "month": 11,
+        "return": -0.0452
+      },
+      {
+        "year": 2008,
+        "month": 12,
+        "return": 0.0741
+      },
+      {
+        "year": 2009,
+        "month": 1,
+        "return": -0.0285
+      },
+      {
+        "year": 2009,
+        "month": 2,
+        "return": -0.0387
+      },
+      {
+        "year": 2009,
+        "month": 3,
+        "return": 0.0931
+      },
+      {
+        "year": 2009,
+        "month": 4,
+        "return": 0.15
+      },
+      {
+        "year": 2009,
+        "month": 5,
+        "return": 0.2807
+      },
+      {
+        "year": 2009,
+        "month": 6,
+        "return": -0.0355
+      },
+      {
+        "year": 2009,
+        "month": 7,
+        "return": 0.0805
+      },
+      {
+        "year": 2009,
+        "month": 8,
+        "return": 0.0055
+      },
+      {
+        "year": 2009,
+        "month": 9,
+        "return": 0.0905
+      },
+      {
+        "year": 2009,
+        "month": 10,
+        "return": -0.0732
+      },
+      {
+        "year": 2009,
+        "month": 11,
+        "return": 0.0681
+      },
+      {
+        "year": 2009,
+        "month": 12,
+        "return": 0.0335
+      },
+      {
+        "year": 2010,
+        "month": 1,
+        "return": -0.0613
+      },
+      {
+        "year": 2010,
+        "month": 2,
+        "return": 0.0082
+      },
+      {
+        "year": 2010,
+        "month": 3,
+        "return": 0.0664
+      },
+      {
+        "year": 2010,
+        "month": 4,
+        "return": 0.0055
+      },
+      {
+        "year": 2010,
+        "month": 5,
+        "return": -0.0363
+      },
+      {
+        "year": 2010,
+        "month": 6,
+        "return": 0.0445
+      },
+      {
+        "year": 2010,
+        "month": 7,
+        "return": 0.0104
+      },
+      {
+        "year": 2010,
+        "month": 8,
+        "return": 0.0065
+      },
+      {
+        "year": 2010,
+        "month": 9,
+        "return": 0.1162
+      },
+      {
+        "year": 2010,
+        "month": 10,
+        "return": -0.002
+      },
+      {
+        "year": 2010,
+        "month": 11,
+        "return": -0.0258
+      },
+      {
+        "year": 2010,
+        "month": 12,
+        "return": 0.0464
+      },
+      {
+        "year": 2011,
+        "month": 1,
+        "return": -0.1025
+      },
+      {
+        "year": 2011,
+        "month": 2,
+        "return": -0.0314
+      },
+      {
+        "year": 2011,
+        "month": 3,
+        "return": 0.0938
+      },
+      {
+        "year": 2011,
+        "month": 4,
+        "return": -0.0144
+      },
+      {
+        "year": 2011,
+        "month": 5,
+        "return": -0.0481
+      },
+      {
+        "year": 2011,
+        "month": 6,
+        "return": 0.0318
+      },
+      {
+        "year": 2011,
+        "month": 7,
+        "return": -0.0293
+      },
+      {
+        "year": 2011,
+        "month": 8,
+        "return": -0.0877
+      },
+      {
+        "year": 2011,
+        "month": 9,
+        "return": -0.0115
+      },
+      {
+        "year": 2011,
+        "month": 10,
+        "return": 0.0776
+      },
+      {
+        "year": 2011,
+        "month": 11,
+        "return": -0.0928
+      },
+      {
+        "year": 2011,
+        "month": 12,
+        "return": -0.043
+      },
+      {
+        "year": 2012,
+        "month": 1,
+        "return": 0.1243
+      },
+      {
+        "year": 2012,
+        "month": 2,
+        "return": 0.0358
+      },
+      {
+        "year": 2012,
+        "month": 3,
+        "return": -0.0166
+      },
+      {
+        "year": 2012,
+        "month": 4,
+        "return": -0.009
+      },
+      {
+        "year": 2012,
+        "month": 5,
+        "return": -0.0617
+      },
+      {
+        "year": 2012,
+        "month": 6,
+        "return": 0.072
+      },
+      {
+        "year": 2012,
+        "month": 7,
+        "return": -0.0095
+      },
+      {
+        "year": 2012,
+        "month": 8,
+        "return": 0.0056
+      },
+      {
+        "year": 2012,
+        "month": 9,
+        "return": 0.0846
+      },
+      {
+        "year": 2012,
+        "month": 10,
+        "return": -0.0147
+      },
+      {
+        "year": 2012,
+        "month": 11,
+        "return": 0.0463
+      },
+      {
+        "year": 2012,
+        "month": 12,
+        "return": 0.0043
+      },
+      {
+        "year": 2013,
+        "month": 1,
+        "return": 0.022
+      },
+      {
+        "year": 2013,
+        "month": 2,
+        "return": -0.0566
+      },
+      {
+        "year": 2013,
+        "month": 3,
+        "return": -0.0018
+      },
+      {
+        "year": 2013,
+        "month": 4,
+        "return": 0.0436
+      },
+      {
+        "year": 2013,
+        "month": 5,
+        "return": 0.0094
+      },
+      {
+        "year": 2013,
+        "month": 6,
+        "return": -0.024
+      },
+      {
+        "year": 2013,
+        "month": 7,
+        "return": -0.0172
+      },
+      {
+        "year": 2013,
+        "month": 8,
+        "return": -0.0471
+      },
+      {
+        "year": 2013,
+        "month": 9,
+        "return": 0.0482
+      },
+      {
+        "year": 2013,
+        "month": 10,
+        "return": 0.0983
+      },
+      {
+        "year": 2013,
+        "month": 11,
+        "return": -0.0195
+      },
+      {
+        "year": 2013,
+        "month": 12,
+        "return": 0.0207
+      },
+      {
+        "year": 2014,
+        "month": 1,
+        "return": -0.034
+      },
+      {
+        "year": 2014,
+        "month": 2,
+        "return": 0.0308
+      },
+      {
+        "year": 2014,
+        "month": 3,
+        "return": 0.0681
+      },
+      {
+        "year": 2014,
+        "month": 4,
+        "return": -0.0012
+      },
+      {
+        "year": 2014,
+        "month": 5,
+        "return": 0.0797
+      },
+      {
+        "year": 2014,
+        "month": 6,
+        "return": 0.0528
+      },
+      {
+        "year": 2014,
+        "month": 7,
+        "return": 0.0144
+      },
+      {
+        "year": 2014,
+        "month": 8,
+        "return": 0.0302
+      },
+      {
+        "year": 2014,
+        "month": 9,
+        "return": 0.0013
+      },
+      {
+        "year": 2014,
+        "month": 10,
+        "return": 0.0449
+      },
+      {
+        "year": 2014,
+        "month": 11,
+        "return": 0.032
+      },
+      {
+        "year": 2014,
+        "month": 12,
+        "return": -0.0356
+      },
+      {
+        "year": 2015,
+        "month": 1,
+        "return": 0.0635
+      },
+      {
+        "year": 2015,
+        "month": 2,
+        "return": 0.0041
+      },
+      {
+        "year": 2015,
+        "month": 3,
+        "return": -0.04
+      },
+      {
+        "year": 2015,
+        "month": 4,
+        "return": -0.0365
+      },
+      {
+        "year": 2015,
+        "month": 5,
+        "return": 0.0308
+      },
+      {
+        "year": 2015,
+        "month": 6,
+        "return": -0.0077
+      },
+      {
+        "year": 2015,
+        "month": 7,
+        "return": 0.0196
+      },
+      {
+        "year": 2015,
+        "month": 8,
+        "return": -0.0658
+      },
+      {
+        "year": 2015,
+        "month": 9,
+        "return": -0.0028
+      },
+      {
+        "year": 2015,
+        "month": 10,
+        "return": 0.0147
+      },
+      {
+        "year": 2015,
+        "month": 11,
+        "return": -0.0162
+      },
+      {
+        "year": 2015,
+        "month": 12,
+        "return": 0.0014
+      },
+      {
+        "year": 2016,
+        "month": 1,
+        "return": -0.0482
+      },
+      {
+        "year": 2016,
+        "month": 2,
+        "return": -0.0762
+      },
+      {
+        "year": 2016,
+        "month": 3,
+        "return": 0.1075
+      },
+      {
+        "year": 2016,
+        "month": 4,
+        "return": 0.0144
+      },
+      {
+        "year": 2016,
+        "month": 5,
+        "return": 0.0395
+      },
+      {
+        "year": 2016,
+        "month": 6,
+        "return": 0.0156
+      },
+      {
+        "year": 2016,
+        "month": 7,
+        "return": 0.0423
+      },
+      {
+        "year": 2016,
+        "month": 8,
+        "return": 0.0171
+      },
+      {
+        "year": 2016,
+        "month": 9,
+        "return": -0.0199
+      },
+      {
+        "year": 2016,
+        "month": 10,
+        "return": 0.0031
+      },
+      {
+        "year": 2016,
+        "month": 11,
+        "return": -0.0479
+      },
+      {
+        "year": 2016,
+        "month": 12,
+        "return": -0.0047
+      },
+      {
+        "year": 2017,
+        "month": 1,
+        "return": 0.0459
+      },
+      {
+        "year": 2017,
+        "month": 2,
+        "return": 0.0372
+      },
+      {
+        "year": 2017,
+        "month": 3,
+        "return": 0.0331
+      },
+      {
+        "year": 2017,
+        "month": 4,
+        "return": 0.0142
+      },
+      {
+        "year": 2017,
+        "month": 5,
+        "return": 0.0341
+      },
+      {
+        "year": 2017,
+        "month": 6,
+        "return": -0.0104
+      },
+      {
+        "year": 2017,
+        "month": 7,
+        "return": 0.0584
+      },
+      {
+        "year": 2017,
+        "month": 8,
+        "return": -0.0158
+      },
+      {
+        "year": 2017,
+        "month": 9,
+        "return": -0.013
+      },
+      {
+        "year": 2017,
+        "month": 10,
+        "return": 0.0559
+      },
+      {
+        "year": 2017,
+        "month": 11,
+        "return": -0.0105
+      },
+      {
+        "year": 2017,
+        "month": 12,
+        "return": 0.0297
+      },
+      {
+        "year": 2018,
+        "month": 1,
+        "return": 0.0472
+      },
+      {
+        "year": 2018,
+        "month": 2,
+        "return": -0.0485
+      },
+      {
+        "year": 2018,
+        "month": 3,
+        "return": -0.0361
+      },
+      {
+        "year": 2018,
+        "month": 4,
+        "return": 0.0619
+      },
+      {
+        "year": 2018,
+        "month": 5,
+        "return": -0.0003
+      },
+      {
+        "year": 2018,
+        "month": 6,
+        "return": -0.002
+      },
+      {
+        "year": 2018,
+        "month": 7,
+        "return": 0.0599
+      },
+      {
+        "year": 2018,
+        "month": 8,
+        "return": 0.0285
+      },
+      {
+        "year": 2018,
+        "month": 9,
+        "return": -0.0642
+      },
+      {
+        "year": 2018,
+        "month": 10,
+        "return": -0.0498
+      },
+      {
+        "year": 2018,
+        "month": 11,
+        "return": 0.0472
+      },
+      {
+        "year": 2018,
+        "month": 12,
+        "return": -0.0013
+      },
+      {
+        "year": 2019,
+        "month": 1,
+        "return": -0.0029
+      },
+      {
+        "year": 2019,
+        "month": 2,
+        "return": -0.0036
+      },
+      {
+        "year": 2019,
+        "month": 3,
+        "return": 0.072
+      },
+      {
+        "year": 2019,
+        "month": 4,
+        "return": 0.0154
+      },
+      {
+        "year": 2019,
+        "month": 5,
+        "return": 0.0149
+      },
+      {
+        "year": 2019,
+        "month": 6,
+        "return": -0.0112
+      },
+      {
+        "year": 2019,
+        "month": 7,
+        "return": -0.0569
+      },
+      {
+        "year": 2019,
+        "month": 8,
+        "return": -0.0085
+      },
+      {
+        "year": 2019,
+        "month": 9,
+        "return": 0.0409
+      },
+      {
+        "year": 2019,
+        "month": 10,
+        "return": 0.0351
+      },
+      {
+        "year": 2019,
+        "month": 11,
+        "return": 0.015
+      },
+      {
+        "year": 2019,
+        "month": 12,
+        "return": 0.0093
+      },
+      {
+        "year": 2020,
+        "month": 1,
+        "return": -0.017
+      },
+      {
+        "year": 2020,
+        "month": 2,
+        "return": -0.0636
+      },
+      {
+        "year": 2020,
+        "month": 3,
+        "return": -0.2325
+      },
+      {
+        "year": 2020,
+        "month": 4,
+        "return": 0.1468
+      },
+      {
+        "year": 2020,
+        "month": 5,
+        "return": -0.0284
+      },
+      {
+        "year": 2020,
+        "month": 6,
+        "return": 0.0753
+      },
+      {
+        "year": 2020,
+        "month": 7,
+        "return": 0.0749
+      },
+      {
+        "year": 2020,
+        "month": 8,
+        "return": 0.0284
+      },
+      {
+        "year": 2020,
+        "month": 9,
+        "return": -0.0123
+      },
+      {
+        "year": 2020,
+        "month": 10,
+        "return": 0.0351
+      },
+      {
+        "year": 2020,
+        "month": 11,
+        "return": 0.1139
+      },
+      {
+        "year": 2020,
+        "month": 12,
+        "return": 0.0781
+      },
+      {
+        "year": 2021,
+        "month": 1,
+        "return": -0.0248
+      },
+      {
+        "year": 2021,
+        "month": 2,
+        "return": 0.0656
+      },
+      {
+        "year": 2021,
+        "month": 3,
+        "return": 0.0111
+      },
+      {
+        "year": 2021,
+        "month": 4,
+        "return": -0.0041
+      },
+      {
+        "year": 2021,
+        "month": 5,
+        "return": 0.065
+      },
+      {
+        "year": 2021,
+        "month": 6,
+        "return": 0.0089
+      },
+      {
+        "year": 2021,
+        "month": 7,
+        "return": 0.0026
+      },
+      {
+        "year": 2021,
+        "month": 8,
+        "return": 0.0869
+      },
+      {
+        "year": 2021,
+        "month": 9,
+        "return": 0.0284
+      },
+      {
+        "year": 2021,
+        "month": 10,
+        "return": 0.003
+      },
+      {
+        "year": 2021,
+        "month": 11,
+        "return": -0.039
+      },
+      {
+        "year": 2021,
+        "month": 12,
+        "return": 0.0218
+      },
+      {
+        "year": 2022,
+        "month": 1,
+        "return": -0.0008
+      },
+      {
+        "year": 2022,
+        "month": 2,
+        "return": -0.0315
+      },
+      {
+        "year": 2022,
+        "month": 3,
+        "return": 0.0399
+      },
+      {
+        "year": 2022,
+        "month": 4,
+        "return": -0.0207
+      },
+      {
+        "year": 2022,
+        "month": 5,
+        "return": -0.0303
+      },
+      {
+        "year": 2022,
+        "month": 6,
+        "return": -0.0485
+      },
+      {
+        "year": 2022,
+        "month": 7,
+        "return": 0.0873
+      },
+      {
+        "year": 2022,
+        "month": 8,
+        "return": 0.035
+      },
+      {
+        "year": 2022,
+        "month": 9,
+        "return": -0.0374
+      },
+      {
+        "year": 2022,
+        "month": 10,
+        "return": 0.0537
+      },
+      {
+        "year": 2022,
+        "month": 11,
+        "return": 0.0414
+      },
+      {
+        "year": 2022,
+        "month": 12,
+        "return": -0.0348
+      },
+      {
+        "year": 2023,
+        "month": 1,
+        "return": -0.0245
+      },
+      {
+        "year": 2023,
+        "month": 2,
+        "return": -0.0203
+      },
+      {
+        "year": 2023,
+        "month": 3,
+        "return": 0.0032
+      },
+      {
+        "year": 2023,
+        "month": 4,
+        "return": 0.0406
+      },
+      {
+        "year": 2023,
+        "month": 5,
+        "return": 0.026
+      },
+      {
+        "year": 2023,
+        "month": 6,
+        "return": 0.0353
+      },
+      {
+        "year": 2023,
+        "month": 7,
+        "return": 0.0294
+      },
+      {
+        "year": 2023,
+        "month": 8,
+        "return": -0.0253
+      },
+      {
+        "year": 2023,
+        "month": 9,
+        "return": 0.02
+      },
+      {
+        "year": 2023,
+        "month": 10,
+        "return": -0.0284
+      },
+      {
+        "year": 2023,
+        "month": 11,
+        "return": 0.0552
+      },
+      {
+        "year": 2023,
+        "month": 12,
+        "return": 0.0794
+      },
+      {
+        "year": 2024,
+        "month": 1,
+        "return": -0.0003
+      },
+      {
+        "year": 2024,
+        "month": 2,
+        "return": 0.0118
+      },
+      {
+        "year": 2024,
+        "month": 3,
+        "return": 0.0157
+      },
+      {
+        "year": 2024,
+        "month": 4,
+        "return": 0.0124
+      },
+      {
+        "year": 2024,
+        "month": 5,
+        "return": -0.0033
+      },
+      {
+        "year": 2024,
+        "month": 6,
+        "return": 0.0657
+      },
+      {
+        "year": 2024,
+        "month": 7,
+        "return": 0.0392
+      },
+      {
+        "year": 2024,
+        "month": 8,
+        "return": 0.0114
+      },
+      {
+        "year": 2024,
+        "month": 9,
+        "return": 0.0228
+      },
+      {
+        "year": 2024,
+        "month": 10,
+        "return": -0.0622
+      },
+      {
+        "year": 2024,
+        "month": 11,
+        "return": -0.0031
+      },
+      {
+        "year": 2024,
+        "month": 12,
+        "return": -0.0202
+      },
+      {
+        "year": 2025,
+        "month": 1,
+        "return": -0.0058
+      },
+      {
+        "year": 2025,
+        "month": 2,
+        "return": -0.0589
+      },
+      {
+        "year": 2025,
+        "month": 3,
+        "return": 0.063
+      },
+      {
+        "year": 2025,
+        "month": 4,
+        "return": 0.0346
+      },
+      {
+        "year": 2025,
+        "month": 5,
+        "return": 0.0171
+      },
+      {
+        "year": 2025,
+        "month": 6,
+        "return": 0.031
+      },
+      {
+        "year": 2025,
+        "month": 7,
+        "return": -0.0293
+      },
+      {
+        "year": 2025,
+        "month": 8,
+        "return": -0.0138
+      },
+      {
+        "year": 2025,
+        "month": 9,
+        "return": 0.0075
+      },
+      {
+        "year": 2025,
+        "month": 10,
+        "return": 0.0451
+      },
+      {
+        "year": 2025,
+        "month": 11,
+        "return": 0.0187
+      },
+      {
+        "year": 2025,
+        "month": 12,
+        "return": -0.0028
+      },
+      {
+        "year": 2026,
+        "month": 1,
+        "return": -0.031
+      },
+      {
+        "year": 2026,
+        "month": 2,
+        "return": -0.0056
+      },
+      {
+        "year": 2026,
+        "month": 3,
+        "return": -0.1131
+      },
+      {
+        "year": 2026,
+        "month": 4,
+        "return": 0.0746
+      },
+      {
+        "year": 2026,
+        "month": 5,
+        "return": -0.0187
+      },
+      {
+        "year": 2026,
+        "month": 6,
+        "return": 0.0135
+      },
+      {
+        "year": 2026,
+        "month": 7,
+        "return": 0.0217
+      },
+      {
+        "year": 2026,
+        "month": 8,
+        "return": -0.0124
+      },
+      {
+        "year": 2026,
+        "month": 9,
+        "return": -0.0606
+      },
+      {
+        "year": 2026,
+        "month": 10,
+        "return": 0.0191
+      },
+      {
+        "year": 2026,
+        "month": 11,
+        "return": 0.0996
+      }
+    ]
   }
 }

@@ -734,7 +734,7 @@ def export_all_datasets(
         ecdf_res = compute_ecdf(ret, num_points=100)
 
         # Calendar heatmap
-        cal_res = compute_calendar_heatmap(s_val, is_prices=(transform == "log_diff"))
+        cal_res = compute_calendar_heatmap(s_val, is_prices=(transform != "diff"))
 
         # Analogs
         analogs_list = compute_declustered_analogs(s_val, target_idx=-1, top_k=5, min_gap_days=20)
