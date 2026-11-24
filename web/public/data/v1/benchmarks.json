@@ -1,116 +1,116 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-20",
+  "as_of": "2026-11-24",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
     "stress_cross_checks": [
       {
         "benchmark_name": "Chicago Fed NFCI",
-        "n_obs": 753,
-        "effective_n": 17.0,
-        "pearson_corr": 0.45,
-        "spearman_rank_corr": 0.388,
-        "best_lead_lag": -1,
+        "n_obs": 784,
+        "effective_n": 13.2,
+        "pearson_corr": 0.354,
+        "spearman_rank_corr": 0.192,
+        "best_lead_lag": 0,
         "cross_correlation": [
           {
             "lag_weeks": -4,
-            "correlation": 0.436,
+            "correlation": 0.32,
             "interpretation": "Internal lags"
           },
           {
             "lag_weeks": -3,
-            "correlation": 0.445,
+            "correlation": 0.332,
             "interpretation": "Internal lags"
           },
           {
             "lag_weeks": -2,
-            "correlation": 0.451,
+            "correlation": 0.342,
             "interpretation": "Internal lags"
           },
           {
             "lag_weeks": -1,
-            "correlation": 0.452,
+            "correlation": 0.349,
             "interpretation": "Internal lags"
           },
           {
             "lag_weeks": 0,
-            "correlation": 0.45,
+            "correlation": 0.354,
             "interpretation": "Synchronous"
           },
           {
             "lag_weeks": 1,
-            "correlation": 0.431,
+            "correlation": 0.336,
             "interpretation": "Internal leads"
           },
           {
             "lag_weeks": 2,
-            "correlation": 0.41,
+            "correlation": 0.315,
             "interpretation": "Internal leads"
           },
           {
             "lag_weeks": 3,
-            "correlation": 0.391,
+            "correlation": 0.296,
             "interpretation": "Internal leads"
           },
           {
             "lag_weeks": 4,
-            "correlation": 0.374,
+            "correlation": 0.279,
             "interpretation": "Internal leads"
           }
         ]
       },
       {
         "benchmark_name": "St. Louis Fed Financial Stress",
-        "n_obs": 754,
-        "effective_n": 17.0,
-        "pearson_corr": 0.546,
-        "spearman_rank_corr": 0.5,
+        "n_obs": 6986,
+        "effective_n": 62.6,
+        "pearson_corr": 0.753,
+        "spearman_rank_corr": 0.764,
         "best_lead_lag": 0,
         "cross_correlation": [
           {
             "lag_weeks": -4,
-            "correlation": 0.521,
+            "correlation": 0.742,
             "interpretation": "Internal lags"
           },
           {
             "lag_weeks": -3,
-            "correlation": 0.529,
+            "correlation": 0.744,
             "interpretation": "Internal lags"
           },
           {
             "lag_weeks": -2,
-            "correlation": 0.538,
+            "correlation": 0.747,
             "interpretation": "Internal lags"
           },
           {
             "lag_weeks": -1,
-            "correlation": 0.544,
+            "correlation": 0.75,
             "interpretation": "Internal lags"
           },
           {
             "lag_weeks": 0,
-            "correlation": 0.546,
+            "correlation": 0.753,
             "interpretation": "Synchronous"
           },
           {
             "lag_weeks": 1,
-            "correlation": 0.504,
+            "correlation": 0.742,
             "interpretation": "Internal leads"
           },
           {
             "lag_weeks": 2,
-            "correlation": 0.469,
+            "correlation": 0.732,
             "interpretation": "Internal leads"
           },
           {
             "lag_weeks": 3,
-            "correlation": 0.433,
+            "correlation": 0.723,
             "interpretation": "Internal leads"
           },
           {
             "lag_weeks": 4,
-            "correlation": 0.399,
+            "correlation": 0.715,
             "interpretation": "Internal leads"
           }
         ]
@@ -123,11 +123,11 @@
         "start_date": "2007-10-09",
         "end_date": "2009-03-09",
         "category": "systemic_credit",
-        "peak_stress_score": 94.2,
-        "peak_stress_date": "2008-11-20",
-        "mean_stress_score": 78.4,
-        "lead_lag_to_official_peak_days": -5,
-        "elevated_ratio": 2.35,
+        "peak_stress_score": 91.7,
+        "peak_stress_date": "2008-10-09",
+        "mean_stress_score": 75.3,
+        "lead_lag_to_official_peak_days": -42,
+        "elevated_ratio": 1.66,
         "description": "Subprime mortgage collapse, Lehman Brothers failure, and global credit freeze."
       },
       {
@@ -136,11 +136,11 @@
         "start_date": "2011-07-22",
         "end_date": "2011-10-04",
         "category": "sovereign_debt",
-        "peak_stress_score": 76.5,
-        "peak_stress_date": "2011-08-08",
-        "mean_stress_score": 62.1,
-        "lead_lag_to_official_peak_days": 0,
-        "elevated_ratio": 1.86,
+        "peak_stress_score": 82.8,
+        "peak_stress_date": "2011-08-18",
+        "mean_stress_score": 68.4,
+        "lead_lag_to_official_peak_days": 10,
+        "elevated_ratio": 1.51,
         "description": "S&P downgrades US sovereign debt to AA+; European sovereign debt crisis contagion."
       },
       {
@@ -149,11 +149,11 @@
         "start_date": "2013-05-22",
         "end_date": "2013-09-05",
         "category": "rate_shock",
-        "peak_stress_score": 64.2,
-        "peak_stress_date": "2013-06-24",
-        "mean_stress_score": 54.8,
-        "lead_lag_to_official_peak_days": -3,
-        "elevated_ratio": 1.64,
+        "peak_stress_score": 54.0,
+        "peak_stress_date": "2013-07-15",
+        "mean_stress_score": 37.8,
+        "lead_lag_to_official_peak_days": 21,
+        "elevated_ratio": 0.83,
         "description": "Chairman Bernanke hints at QE tapering; sharp spike in US 10Y Treasury yields."
       },
       {
@@ -162,11 +162,11 @@
         "start_date": "2015-08-11",
         "end_date": "2016-02-11",
         "category": "fx_growth",
-        "peak_stress_score": 68.4,
-        "peak_stress_date": "2015-08-24",
-        "mean_stress_score": 56.2,
-        "lead_lag_to_official_peak_days": -1,
-        "elevated_ratio": 1.68,
+        "peak_stress_score": 77.0,
+        "peak_stress_date": "2015-09-01",
+        "mean_stress_score": 57.8,
+        "lead_lag_to_official_peak_days": 8,
+        "elevated_ratio": 1.28,
         "description": "PBOC surprise RMB devaluation; global equity and commodity liquidation."
       },
       {
@@ -175,11 +175,11 @@
         "start_date": "2018-10-03",
         "end_date": "2018-12-24",
         "category": "policy_overtightening",
-        "peak_stress_score": 67.8,
+        "peak_stress_score": 53.3,
         "peak_stress_date": "2018-12-24",
-        "mean_stress_score": 55.4,
+        "mean_stress_score": 45.1,
         "lead_lag_to_official_peak_days": 0,
-        "elevated_ratio": 1.66,
+        "elevated_ratio": 0.99,
         "description": "Fed rate hikes and quantitative tightening trigger near-20% S&P 500 correction."
       },
       {
@@ -188,11 +188,11 @@
         "start_date": "2020-02-19",
         "end_date": "2020-03-23",
         "category": "exogenous_liquidity",
-        "peak_stress_score": 91.5,
-        "peak_stress_date": "2020-03-23",
-        "mean_stress_score": 79.6,
-        "lead_lag_to_official_peak_days": -2,
-        "elevated_ratio": 2.38,
+        "peak_stress_score": 90.0,
+        "peak_stress_date": "2020-03-20",
+        "mean_stress_score": 67.1,
+        "lead_lag_to_official_peak_days": -3,
+        "elevated_ratio": 1.48,
         "description": "Worldwide pandemic lockdowns, extreme flight to cash, and emergency Fed liquidity."
       },
       {
@@ -201,11 +201,11 @@
         "start_date": "2022-01-03",
         "end_date": "2022-10-12",
         "category": "inflation_rate_shock",
-        "peak_stress_score": 78.4,
-        "peak_stress_date": "2022-06-13",
-        "mean_stress_score": 63.8,
-        "lead_lag_to_official_peak_days": 0,
-        "elevated_ratio": 1.91,
+        "peak_stress_score": 82.9,
+        "peak_stress_date": "2022-03-14",
+        "mean_stress_score": 69.9,
+        "lead_lag_to_official_peak_days": -91,
+        "elevated_ratio": 1.54,
         "description": "Fastest Federal Reserve rate hiking cycle in 40 years; simultaneous equity and bond rout."
       },
       {
@@ -214,11 +214,11 @@
         "start_date": "2023-03-08",
         "end_date": "2023-05-04",
         "category": "banking_liquidity",
-        "peak_stress_score": 71.0,
-        "peak_stress_date": "2023-03-13",
-        "mean_stress_score": 58.4,
-        "lead_lag_to_official_peak_days": -1,
-        "elevated_ratio": 1.75,
+        "peak_stress_score": 73.6,
+        "peak_stress_date": "2023-03-17",
+        "mean_stress_score": 64.0,
+        "lead_lag_to_official_peak_days": 4,
+        "elevated_ratio": 1.41,
         "description": "Run on Silicon Valley Bank, Signature Bank, and Credit Suisse forced emergency takeover."
       }
     ],
