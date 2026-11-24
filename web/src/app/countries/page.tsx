@@ -157,7 +157,7 @@ export default function CountriesPage() {
         onOpenAudit={handleOpenAudit}
         onOpenMethod={handleOpenMethod}
       >
-        <WorldChoropleth />
+        <WorldChoropleth countries={data?.data?.countries} lens={lens} />
       </ChartCard>
 
       {/* Performance Matrix Card */}

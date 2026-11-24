@@ -226,11 +226,10 @@ export const DriverClientView: React.FC = () => {
                 key={r.target_id}
                 type="button"
                 onClick={() => setSelectedTargetId(r.target_id)}
-                className={`px-2.5 py-1 rounded text-xs font-medium whitespace-nowrap transition ${
-                  selectedTargetId === r.target_id
+                className={`px-2.5 py-1 rounded text-xs font-medium whitespace-nowrap transition ${selectedTargetId === r.target_id
                     ? "bg-[var(--accent)] text-slate-900 font-semibold"
                     : "text-[var(--tx-2)] hover:text-[var(--tx-0)] bg-[var(--bg-0)] border border-[var(--line)]"
-                }`}
+                  }`}
               >
                 {r.target_code.toUpperCase()} ({r.target_id.toUpperCase()})
               </button>
@@ -243,22 +242,20 @@ export const DriverClientView: React.FC = () => {
             <button
               type="button"
               onClick={() => setWindowDays(250)}
-              className={`px-2.5 py-1 rounded text-xs font-mono font-medium transition ${
-                windowDays === 250
+              className={`px-2.5 py-1 rounded text-xs font-mono font-medium transition ${windowDays === 250
                   ? "bg-[var(--bg-2)] text-[var(--tx-0)] font-semibold"
                   : "text-[var(--tx-2)] hover:text-[var(--tx-0)]"
-              }`}
+                }`}
             >
               250D (~1Y)
             </button>
             <button
               type="button"
               onClick={() => setWindowDays(120)}
-              className={`px-2.5 py-1 rounded text-xs font-mono font-medium transition ${
-                windowDays === 120
+              className={`px-2.5 py-1 rounded text-xs font-mono font-medium transition ${windowDays === 120
                   ? "bg-[var(--bg-2)] text-[var(--tx-0)] font-semibold"
                   : "text-[var(--tx-2)] hover:text-[var(--tx-0)]"
-              }`}
+                }`}
             >
               120D (~6M)
             </button>
