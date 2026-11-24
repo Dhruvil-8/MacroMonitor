@@ -44,14 +44,15 @@ export const CalendarHeatmap: React.FC<CalendarHeatmapProps> = ({ data, assetNam
       return `${val > 0 ? "+" : ""}${val.toFixed(2)}%`;
     }
     if (unit === "usd_bn" || unit === "usd_mn") {
-      return `${val > 0 ? "+" : ""}${val.toFixed(1)}${unit === "usd_bn" ? "B" : "M"}`;
+      const valBn = unit === "usd_mn" ? val / 1000 : val;
+      return `${valBn > 0 ? "+" : ""}$${valBn.toFixed(1)}B`;
     }
     return `${val > 0 ? "+" : ""}${(val * 100).toFixed(1)}%`;
   };
 
   const getColor = (val: number | undefined) => {
     if (val === undefined || isNaN(val)) return "rgba(255, 255, 255, 0.03)";
-    const scale = unit === "bps" ? 0.02 : unit === "pct" ? 2.0 : unit === "usd_bn" ? 0.05 : 10;
+    const scale = unit === "bps" ? 0.02 : unit === "pct" ? 2.0 : unit === "usd_bn" ? 0.05 : unit === "usd_mn" ? 0.00005 : 10;
     const alpha = Math.min(Math.abs(val) * scale, 0.75);
     if (val > 0) {
       return `rgba(63, 185, 80, ${alpha.toFixed(2)})`;
