@@ -64,7 +64,7 @@ export default function PositioningPage() {
 
         <div className="flex items-center gap-3">
           <HealthDot status="ok" label="CFTC Socrata Synchronized" />
-          <DataAgeBadge asOf={data.as_of || (data as any).data?.as_of || "2026-11-20"} />
+          <DataAgeBadge asOf={data.as_of || (data as any).data?.as_of || ""} />
         </div>
       </div>
 

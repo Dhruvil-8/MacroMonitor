@@ -199,7 +199,7 @@ export default function ChartsCataloguePage() {
             narrative: "Nifty 50 advanced +2.61% over 5D, led by global ROW equity strength and rupee stability.",
             lens: "usd",
             n_obs: 250,
-            window_dates: { prior_start: "2025-11-15", prior_end: "2026-11-15", horizon_start: "2026-11-16", horizon_end: "2026-11-20" },
+            window_dates: { prior_start: "2025-11-15", prior_end: "2026-11-15", horizon_start: "2026-11-16", horizon_end: "2026-11-24" },
           }}
         />
       ),
@@ -279,10 +279,10 @@ export default function ChartsCataloguePage() {
         <RotationMap
           benchmark="SPY"
           assets={[
-            { asset: "tech", name: "Technology", group: "sector", rs_ratio: 104.5, rs_mom: 101.2, phase: "Leading", tail_dates: ["2026-11-10", "2026-11-15", "2026-11-20"], tail_x: [102.1, 103.4, 104.5], tail_y: [100.2, 100.8, 101.2] },
-            { asset: "fin", name: "Financials", group: "sector", rs_ratio: 101.2, rs_mom: 98.4, phase: "Fading", tail_dates: ["2026-11-10", "2026-11-15", "2026-11-20"], tail_x: [102.5, 101.8, 101.2], tail_y: [99.5, 98.9, 98.4] },
-            { asset: "energy", name: "Energy", group: "sector", rs_ratio: 96.5, rs_mom: 97.2, phase: "Lagging", tail_dates: ["2026-11-10", "2026-11-15", "2026-11-20"], tail_x: [97.8, 97.0, 96.5], tail_y: [98.0, 97.5, 97.2] },
-            { asset: "util", name: "Utilities", group: "sector", rs_ratio: 98.2, rs_mom: 102.5, phase: "Recovering", tail_dates: ["2026-11-10", "2026-11-15", "2026-11-20"], tail_x: [96.5, 97.3, 98.2], tail_y: [101.0, 101.8, 102.5] },
+            { asset: "tech", name: "Technology", group: "sector", rs_ratio: 104.5, rs_mom: 101.2, phase: "Leading", tail_dates: ["2026-11-10", "2026-11-15", "2026-11-24"], tail_x: [102.1, 103.4, 104.5], tail_y: [100.2, 100.8, 101.2] },
+            { asset: "fin", name: "Financials", group: "sector", rs_ratio: 101.2, rs_mom: 98.4, phase: "Fading", tail_dates: ["2026-11-10", "2026-11-15", "2026-11-24"], tail_x: [102.5, 101.8, 101.2], tail_y: [99.5, 98.9, 98.4] },
+            { asset: "energy", name: "Energy", group: "sector", rs_ratio: 96.5, rs_mom: 97.2, phase: "Lagging", tail_dates: ["2026-11-10", "2026-11-15", "2026-11-24"], tail_x: [97.8, 97.0, 96.5], tail_y: [98.0, 97.5, 97.2] },
+            { asset: "util", name: "Utilities", group: "sector", rs_ratio: 98.2, rs_mom: 102.5, phase: "Recovering", tail_dates: ["2026-11-10", "2026-11-15", "2026-11-24"], tail_x: [96.5, 97.3, 98.2], tail_y: [101.0, 101.8, 102.5] },
           ]}
         />
       ),
@@ -538,7 +538,7 @@ export default function ChartsCataloguePage() {
             { date: "2026-11", drawdown: -0.098 },
           ]}
           episodes={[
-            { status: "active", peak_date: "2026-10-18", trough_date: "2026-11-20", depth: -0.098, duration_days: 34, recovery_date: null, recovery_days: null },
+            { status: "active", peak_date: "2026-10-18", trough_date: "2026-11-24", depth: -0.098, duration_days: 34, recovery_date: null, recovery_days: null },
           ]}
         />
       ),
@@ -680,7 +680,7 @@ export default function ChartsCataloguePage() {
             rationale: "Equity markets and 10-year yields have decoupled by 2.85 sigma.",
             spread_z: 2.85,
             consecutive_days: 12,
-            history_dates: ["2026-10-01", "2026-10-15", "2026-11-01", "2026-11-20"],
+            history_dates: ["2026-10-01", "2026-10-15", "2026-11-01", "2026-11-24"],
             history_spread: [0.0, 1.2, 2.1, 2.85],
           }}
         />
@@ -700,14 +700,14 @@ export default function ChartsCataloguePage() {
             dates: [
               "2026-08-31", "2026-09-08", "2026-09-15", "2026-09-22", "2026-09-29",
               "2026-10-06", "2026-10-13", "2026-10-20", "2026-10-27", "2026-11-03",
-              "2026-11-10", "2026-11-17", "2026-11-20"
+              "2026-11-10", "2026-11-17", "2026-11-24"
             ],
             cusum_pos: [0.0, 0.42, 0.85, 1.45, 1.92, 2.50, 3.12, 3.85, 4.40, 4.25, 3.90, 4.15, 4.40],
             cusum_neg: [0.0, 0.0, 0.15, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.20, 0.10, 0.0],
             threshold: 4.0,
             shifts: [
               { date: "2026-10-27", direction: "up", value: 4.40 },
-              { date: "2026-11-20", direction: "up", value: 4.40 }
+              { date: "2026-11-24", direction: "up", value: 4.40 }
             ],
           }}
           pairName="SPX vs NDX (Tech Premium Innovation Drift)"
@@ -879,7 +879,7 @@ export default function ChartsCataloguePage() {
         <PositioningChart
           data={{
             schema_version: "1.0",
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             code_version: "v1.0.0",
             contracts: [
               {
@@ -918,11 +918,11 @@ export default function ChartsCataloguePage() {
         <TermStructureChart
           data={({
             schema_version: "1.0",
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             code_version: "v1.0.0",
             params_hash: "mock",
             data: {
-              as_of: "2026-11-20",
+              as_of: "2026-11-24",
               current_state: "contango",
               slope_3m: 0.05,
               slope_9d: 0.0526,
@@ -947,7 +947,7 @@ export default function ChartsCataloguePage() {
                 { date: "2026-10-01", vix: 16.5, vix3m: 17.8, slope_3m: 0.08, slope_9d: 0.05, state: "contango", percentile: 55 },
                 { date: "2026-10-15", vix: 19.2, vix3m: 18.4, slope_3m: -0.04, slope_9d: -0.03, state: "backwardation", percentile: 25 },
                 { date: "2026-11-01", vix: 17.0, vix3m: 17.3, slope_3m: 0.02, slope_9d: 0.01, state: "contango", percentile: 40 },
-                { date: "2026-11-20", vix: 15.5, vix3m: 16.3, slope_3m: 0.05, slope_9d: 0.05, state: "contango", percentile: 50 },
+                { date: "2026-11-24", vix: 15.5, vix3m: 16.3, slope_3m: 0.05, slope_9d: 0.05, state: "contango", percentile: 50 },
               ],
             },
           } as any)}
@@ -966,18 +966,18 @@ export default function ChartsCataloguePage() {
         <CurveRibbon
           data={({
             schema_version: "1.0",
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             code_version: "v1.0.0",
             params_hash: "mock",
             data: {
-              as_of: "2026-11-20",
+              as_of: "2026-11-24",
               factors: { level: 5.32, slope: -1.53, curvature: 0.32, rmse: 0.12, level_percentile: 82.7, slope_percentile: 41.2, curvature_percentile: 90.5 },
               spreads: [],
               ten_year_anatomy: [],
               curves: [
                 {
                   label: "Current",
-                  date: "2026-11-20",
+                  date: "2026-11-24",
                   points: [{ maturity: "3M", months: 3, yield_pct: 5.42, fitted_pct: 5.40 }, { maturity: "2Y", months: 24, yield_pct: 4.88, fitted_pct: 4.85 }, { maturity: "5Y", months: 60, yield_pct: 4.35, fitted_pct: 4.38 }, { maturity: "10Y", months: 120, yield_pct: 4.45, fitted_pct: 4.44 }, { maturity: "30Y", months: 360, yield_pct: 4.62, fitted_pct: 4.61 }],
                   smooth_fitted: [{ months: 3, yield_pct: 5.40 }, { months: 12, yield_pct: 5.10 }, { months: 24, yield_pct: 4.85 }, { months: 60, yield_pct: 4.38 }, { months: 120, yield_pct: 4.44 }, { months: 360, yield_pct: 4.61 }],
                 },
@@ -1011,11 +1011,11 @@ export default function ChartsCataloguePage() {
         <FactorPanel
           data={({
             schema_version: "1.0",
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             code_version: "v1.0.0",
             params_hash: "mock",
             data: {
-              as_of: "2026-11-20",
+              as_of: "2026-11-24",
               factors: { level: 5.32, slope: -1.53, curvature: 0.32, rmse: 0.12, level_percentile: 82.7, slope_percentile: 41.2, curvature_percentile: 90.5 },
               spreads: [],
               ten_year_anatomy: [],
@@ -1037,11 +1037,11 @@ export default function ChartsCataloguePage() {
         <YieldHeatmap
           data={({
             schema_version: "1.0",
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             code_version: "v1.0.0",
             params_hash: "mock",
             data: {
-              as_of: "2026-11-20",
+              as_of: "2026-11-24",
               factors: { level: 5.32, slope: -1.53, curvature: 0.32, rmse: 0.12, level_percentile: 82.7, slope_percentile: 41.2, curvature_percentile: 90.5 },
               spreads: [
                 { name: "10Y - 2Y Curve Spread", current: 0.28, chg_1m: -0.03, percentile: 27.4, inverted: false },
@@ -1054,7 +1054,7 @@ export default function ChartsCataloguePage() {
               curves: [
                 {
                   label: "Current",
-                  date: "2026-11-20",
+                  date: "2026-11-24",
                   points: [{ maturity: "3M", months: 3, yield_pct: 5.42 }, { maturity: "2Y", months: 24, yield_pct: 4.88 }, { maturity: "5Y", months: 60, yield_pct: 4.35 }, { maturity: "10Y", months: 120, yield_pct: 4.45 }, { maturity: "30Y", months: 360, yield_pct: 4.62 }],
                   smooth_fitted: [{ months: 3, yield_pct: 5.40 }, { months: 12, yield_pct: 5.10 }, { months: 24, yield_pct: 4.85 }, { months: 60, yield_pct: 4.38 }, { months: 120, yield_pct: 4.44 }, { months: 360, yield_pct: 4.61 }],
                 },
@@ -1086,7 +1086,7 @@ export default function ChartsCataloguePage() {
         <ReactionRibbon
           data={{
             schema_version: "1.0",
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             code_version: "v1.0.0",
             data: {
               event_type: "fomc",
@@ -1127,10 +1127,10 @@ export default function ChartsCataloguePage() {
         <ConnectednessMatrix
           data={{
             schema_version: "1.0",
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             code_version: "v1.0.0",
             data: {
-              as_of: "2026-11-20",
+              as_of: "2026-11-24",
               horizon_weeks: 10,
               tci: 60.81,
               labels: ["Germany", "US", "UK", "Japan", "India"],
@@ -1152,7 +1152,7 @@ export default function ChartsCataloguePage() {
                 { date: "2026-08-01", tci: 58.2 },
                 { date: "2026-09-01", tci: 59.4 },
                 { date: "2026-10-01", tci: 62.1 },
-                { date: "2026-11-20", tci: 60.8 },
+                { date: "2026-11-24", tci: 60.8 },
               ],
             },
           }}
@@ -1171,10 +1171,10 @@ export default function ChartsCataloguePage() {
         <NetSpilloverBars
           data={{
             schema_version: "1.0",
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             code_version: "v1.0.0",
             data: {
-              as_of: "2026-11-20",
+              as_of: "2026-11-24",
               horizon_weeks: 10,
               tci: 60.81,
               labels: ["Germany", "US", "UK", "Japan", "India"],
@@ -1204,10 +1204,10 @@ export default function ChartsCataloguePage() {
         <ChordView
           data={{
             schema_version: "1.0",
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             code_version: "v1.0.0",
             data: {
-              as_of: "2026-11-20",
+              as_of: "2026-11-24",
               horizon_weeks: 10,
               tci: 60.81,
               labels: ["Germany", "US", "UK", "Japan", "India"],
@@ -1243,16 +1243,16 @@ export default function ChartsCataloguePage() {
         <SeasonalBandChart
           data={{
             schema_version: "1.0",
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             code_version: "v1.0.0",
             data: {
-              as_of: "2026-11-20",
+              as_of: "2026-11-24",
               inventories: [
                 {
                   id: "crude_oil",
                   name: "US Commercial Crude Oil Stocks (ex-SPR)",
                   unit: "Million Barrels",
-                  as_of: "2026-11-20",
+                  as_of: "2026-11-24",
                   current_level: 433.5,
                   mean_5y: 425.0,
                   min_5y: 391.0,
@@ -1267,7 +1267,7 @@ export default function ChartsCataloguePage() {
                     { week: 42, date: "2026-10-16", current_year: 425.5, mean_5y: 422.0, min_5y: 390.0, max_5y: 455.0 },
                     { week: 44, date: "2026-10-30", current_year: 428.1, mean_5y: 423.5, min_5y: 391.0, max_5y: 456.0 },
                     { week: 46, date: "2026-11-13", current_year: 434.9, mean_5y: 424.8, min_5y: 391.0, max_5y: 458.0 },
-                    { week: 47, date: "2026-11-20", current_year: 433.5, mean_5y: 425.0, min_5y: 391.0, max_5y: 459.0 },
+                    { week: 47, date: "2026-11-24", current_year: 433.5, mean_5y: 425.0, min_5y: 391.0, max_5y: 459.0 },
                   ],
                 },
               ],
@@ -1287,7 +1287,7 @@ export default function ChartsCataloguePage() {
       renderComponent: () => (
         <EvtRegimePanel
           data={{
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             target_name: "S&P 500",
             interpretation: "Heavy-tailed risk profile with xi = 0.347. EVT 99.5% VaR is 1.39x higher than Gaussian expectation.",
             evt: {
@@ -1324,7 +1324,7 @@ export default function ChartsCataloguePage() {
               history: [
                 { date: "2026-11-10", prob_stress: 0.10, regime: "calm" },
                 { date: "2026-11-15", prob_stress: 0.14, regime: "calm" },
-                { date: "2026-11-20", prob_stress: 0.12, regime: "calm" },
+                { date: "2026-11-24", prob_stress: 0.12, regime: "calm" },
               ],
             },
           }}
@@ -1348,7 +1348,7 @@ export default function ChartsCataloguePage() {
             { date: "2026-10-15", prob_stress: 0.42, regime: "calm" },
             { date: "2026-11-01", prob_stress: 0.18, regime: "calm" },
             { date: "2026-11-10", prob_stress: 0.10, regime: "calm" },
-            { date: "2026-11-20", prob_stress: 0.12, regime: "calm" },
+            { date: "2026-11-24", prob_stress: 0.12, regime: "calm" },
           ]}
         />
       ),
@@ -1513,7 +1513,7 @@ export default function ChartsCataloguePage() {
           residual={0.004}
           horizon="1D"
           weightsSource="S&P Dow Jones Indices"
-          asOf="2026-11-20"
+          asOf="2026-11-24"
           sectors={[
             { id: "tech", name: "Information Technology", weight: 0.315, returns: { "1D": -0.042, "5D": -0.095, "1M": -0.112, "3M": -0.125, "1Y": 0.082 }, contributions: { "1D": -0.0132, "5D": -0.0299, "1M": -0.0353, "3M": -0.0394, "1Y": 0.0258 }, dispersion_z: 1.2, phase: "Leading", benchmark_rel: 0.073 },
             { id: "fin", name: "Financials", weight: 0.132, returns: { "1D": -0.031, "5D": -0.072, "1M": -0.084, "3M": -0.088, "1Y": 0.035 }, contributions: { "1D": -0.0041, "5D": -0.0095, "1M": -0.0111, "3M": -0.0116, "1Y": 0.0046 }, dispersion_z: -0.4, phase: "Fading", benchmark_rel: 0.026 },
@@ -1534,7 +1534,7 @@ export default function ChartsCataloguePage() {
       deployedPage: "/india",
       renderComponent: () => (
         <FiiDiiFlowChart
-          dates={["2026-11-13", "2026-11-14", "2026-11-17", "2026-11-18", "2026-11-19", "2026-11-20"]}
+          dates={["2026-11-13", "2026-11-14", "2026-11-17", "2026-11-18", "2026-11-19", "2026-11-24"]}
           fiiDaily={[1450, -820, 2100, -1250, 1840, 1250]}
           diiDaily={[850, 1240, -450, 2100, 1520, 1840]}
           fiiCum20d={[11200, 10380, 12480, 11230, 13070, 16684]}
@@ -1594,11 +1594,11 @@ export default function ChartsCataloguePage() {
         <StressStackChart
           data={{
             schema_version: "1.0",
-            as_of: "2026-11-20",
+            as_of: "2026-11-24",
             code_version: "v1.0.0",
             data: {
               latest: {
-                date: "2026-11-20",
+                date: "2026-11-24",
                 composite: 42.0,
                 tercile: "Moderate",
                 components: { equity: 48.0, rates: 52.0, fx: 31.0, commodity: 44.0, credit: 38.0, correlation: 35.0 },
@@ -1615,7 +1615,7 @@ export default function ChartsCataloguePage() {
                 { date: "2026-08-01", composite: 0.28, components: { equity: 0.30, rates: 0.25, fx: 0.22, commodity: 0.32, credit: 0.26, correlation: 0.28 } },
                 { date: "2026-09-01", composite: 0.35, components: { equity: 0.38, rates: 0.42, fx: 0.26, commodity: 0.36, credit: 0.30, correlation: 0.31 } },
                 { date: "2026-10-01", composite: 0.58, components: { equity: 0.68, rates: 0.62, fx: 0.45, commodity: 0.54, credit: 0.51, correlation: 0.48 } },
-                { date: "2026-11-20", composite: 0.42, components: { equity: 0.48, rates: 0.52, fx: 0.31, commodity: 0.44, credit: 0.38, correlation: 0.35 } },
+                { date: "2026-11-24", composite: 0.42, components: { equity: 0.48, rates: 0.52, fx: 0.31, commodity: 0.44, credit: 0.38, correlation: 0.35 } },
               ],
               episodes: [
                 { name: "October 2026 Spike", start: "2026-09-28", end: "2026-10-18", peak_date: "2026-10-08", peak_composite: 0.68 },
@@ -1635,7 +1635,7 @@ export default function ChartsCataloguePage() {
       deployedPage: "/risk",
       renderComponent: () => (
         <StressHistoryChart
-          dates={["2026-06-01", "2026-07-01", "2026-08-01", "2026-09-01", "2026-10-01", "2026-11-01", "2026-11-20"]}
+          dates={["2026-06-01", "2026-07-01", "2026-08-01", "2026-09-01", "2026-10-01", "2026-11-01", "2026-11-24"]}
           history={[0.22, 0.25, 0.28, 0.35, 0.58, 0.46, 0.42]}
           episodes={[
             { id: "oct26", name: "October 2026 Liquidity Squeeze", start: "2026-09-28", end: "2026-10-18", peak_date: "2026-10-08", peak_composite: 0.68 },
@@ -1666,8 +1666,8 @@ export default function ChartsCataloguePage() {
               rate_limit: "20 req/min",
               schedule: "Daily 17:00 US Eastern",
               status: "healthy",
-              last_success: "2026-11-20 22:30 UTC",
-              last_verified: "2026-11-20",
+              last_success: "2026-11-24 22:30 UTC",
+              last_verified: "2026-11-24",
               tracked_series_count: 5,
               stale_series_count: 0,
               circuit_state: "Closed",
@@ -1682,8 +1682,8 @@ export default function ChartsCataloguePage() {
               rate_limit: "60 req/min",
               schedule: "Daily 17:00 US Eastern",
               status: "healthy",
-              last_success: "2026-11-20 21:45 UTC",
-              last_verified: "2026-11-20",
+              last_success: "2026-11-24 21:45 UTC",
+              last_verified: "2026-11-24",
               tracked_series_count: 12,
               stale_series_count: 0,
               circuit_state: "Closed",
@@ -1698,8 +1698,8 @@ export default function ChartsCataloguePage() {
               rate_limit: "60 req/min",
               schedule: "Weekly (Friday 15:30 US Eastern)",
               status: "healthy",
-              last_success: "2026-11-20 20:30 UTC",
-              last_verified: "2026-11-20",
+              last_success: "2026-11-24 20:30 UTC",
+              last_verified: "2026-11-24",
               tracked_series_count: 16,
               stale_series_count: 0,
               circuit_state: "Closed",
@@ -1715,7 +1715,7 @@ export default function ChartsCataloguePage() {
               schedule: "Weekly (Wed/Thu)",
               status: "healthy",
               last_success: "2026-11-18 15:30 UTC",
-              last_verified: "2026-11-20",
+              last_verified: "2026-11-24",
               tracked_series_count: 4,
               stale_series_count: 0,
               circuit_state: "Closed",
@@ -1730,8 +1730,8 @@ export default function ChartsCataloguePage() {
               rate_limit: "120 req/min",
               schedule: "Daily & Weekly",
               status: "healthy",
-              last_success: "2026-11-20 23:00 UTC",
-              last_verified: "2026-11-20",
+              last_success: "2026-11-24 23:00 UTC",
+              last_verified: "2026-11-24",
               tracked_series_count: 8,
               stale_series_count: 0,
               circuit_state: "Closed",

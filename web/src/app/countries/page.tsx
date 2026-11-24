@@ -17,7 +17,7 @@ import { Globe, ArrowRight, Layers, TrendingUp } from "lucide-react";
 export default function CountriesPage() {
   const [data, setData] = useState<CountriesEnvelope | null>(null);
   const [lens, setLens] = useState<"local" | "usd" | "fx">("usd");
-  const [asOf, setAsOf] = useState<string>("2026-11-20");
+  const [asOf, setAsOf] = useState<string>("");
   const [isStale, setIsStale] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
 

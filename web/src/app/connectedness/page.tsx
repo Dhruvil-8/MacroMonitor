@@ -82,7 +82,7 @@ export default function ConnectednessPage() {
             </button>
           </div>
           <HealthDot status="ok" label="VAR Model Converged" />
-          <DataAgeBadge asOf={conn.as_of || "2026-11-20"} />
+          <DataAgeBadge asOf={data.as_of || conn.as_of || ""} />
         </div>
       </div>
 

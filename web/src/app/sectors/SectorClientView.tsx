@@ -17,7 +17,7 @@ import { SectorsEnvelope, SectorRegionData } from "@/lib/data/schemas";
 
 export const SectorClientView: React.FC = () => {
   const [sectorsData, setSectorsData] = useState<SectorsEnvelope | null>(null);
-  const [asOf, setAsOf] = useState<string>("2026-11-20");
+  const [asOf, setAsOf] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
   const [selectedRegion, setSelectedRegion] = useState<string>("us");
   const [selectedHorizon, setSelectedHorizon] = useState<string>("1D");

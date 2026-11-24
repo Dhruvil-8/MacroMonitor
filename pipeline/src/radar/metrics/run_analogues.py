@@ -100,6 +100,7 @@ def run() -> None:
 
     print("Running Ledoit-Wolf Mahalanobis Historical Analogue Engine...")
     payloads = build_analogues_payloads(cfg, asset_metrics)
+    as_of_date = list(asset_metrics.values())[0]["dates"][-1] if asset_metrics else "2026-11-24"
 
     for out_dir in OUT_DIRS:
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -107,7 +108,7 @@ def run() -> None:
         # Write presets index
         presets_index = {
             "schema_version": "1.0.0",
-            "as_of": "2026-11-20",
+            "as_of": as_of_date,
             "code_version": "v1.0.0",
             "status": "ok",
             "presets": payloads["presets_index"]["presets"],
@@ -118,7 +119,7 @@ def run() -> None:
         # Write evaluation
         eval_payload = {
             "schema_version": "1.0.0",
-            "as_of": "2026-11-20",
+            "as_of": as_of_date,
             "code_version": "v1.0.0",
             "status": "ok",
             **payloads["evaluation"],
@@ -130,7 +131,7 @@ def run() -> None:
         for pid, preset_detail in payloads["by_preset"].items():
             wrapped = {
                 "schema_version": "1.0.0",
-                "as_of": "2026-11-20",
+                "as_of": as_of_date,
                 "code_version": "v1.0.0",
                 "status": "ok",
                 **preset_detail,

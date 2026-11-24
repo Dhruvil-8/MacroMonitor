@@ -16,7 +16,7 @@ export default function CrossAssetPage() {
   const [corrData, setCorrData] = useState<CorrelationsEnvelope | null>(null);
   const [rotData, setRotData] = useState<RotationEnvelope | null>(null);
   const [posData, setPosData] = useState<PositioningEnvelope | null>(null);
-  const [asOf, setAsOf] = useState<string>("2026-11-20");
+  const [asOf, setAsOf] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
 
   // Audit Drawer

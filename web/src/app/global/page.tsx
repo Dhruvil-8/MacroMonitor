@@ -58,7 +58,7 @@ export default function GlobalSlowPage() {
 
         <div className="flex items-center gap-3">
           <HealthDot status="ok" label="BIS & TIC Synchronized" />
-          <DataAgeBadge asOf={gs.as_of || "2026-11-20"} />
+          <DataAgeBadge asOf={data.as_of || gs.as_of || ""} />
         </div>
       </div>
 

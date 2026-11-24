@@ -17,7 +17,7 @@ export default function RadarPage() {
   const [observations, setObservations] = useState<ObservationItem[]>([]);
   const [divergences, setDivergences] = useState<DivergenceItem[]>([]);
   const [testedCount, setTestedCount] = useState<number>(10);
-  const [asOf, setAsOf] = useState<string>("2026-11-20");
+  const [asOf, setAsOf] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
 
   // Filters

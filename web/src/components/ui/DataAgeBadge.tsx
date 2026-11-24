@@ -11,6 +11,7 @@ interface DataAgeBadgeProps {
 }
 
 export const DataAgeBadge: React.FC<DataAgeBadgeProps> = ({ asOf, isStale, ageHours }) => {
+  if (!asOf) return null;
   return (
     <div className="flex items-center gap-2">
       <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[var(--bg-1)] border border-[var(--line)] text-xs text-[var(--tx-2)]">

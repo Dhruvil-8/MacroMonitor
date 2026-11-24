@@ -18,7 +18,7 @@ import { ContextData } from "@/lib/data/schemas";
 
 export function ContextClientView({ id }: { id: string }) {
   const [ctxData, setCtxData] = useState<ContextData | null>(null);
-  const [asOf, setAsOf] = useState<string>("2026-11-20");
+  const [asOf, setAsOf] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
 
   // Drawers

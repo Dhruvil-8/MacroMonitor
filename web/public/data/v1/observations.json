@@ -86,50 +86,6 @@
         "code_version": "v1.0.0"
       },
       {
-        "id": "vol_shift_v1:spx:2026-11-24",
-        "type": "vol_shift",
-        "asset": "spx",
-        "severity": "medium",
-        "headline": "S&P 500 Index realized volatility moved above historical baseline",
-        "body": "20-day realized volatility is 32.0%, corresponding to the 95th percentile of historical observations (N=6995, effective N=35.2).",
-        "metrics": {
-          "vol20": 0.3196,
-          "percentile": 95.4,
-          "n": 6995,
-          "n_eff": 35.2
-        },
-        "window": "20D",
-        "inputs": [
-          "spx"
-        ],
-        "as_of": "2026-11-24",
-        "chart_ref": "vol_landscape",
-        "rule_id": "vol_shift_v1",
-        "code_version": "v1.0.0"
-      },
-      {
-        "id": "vol_shift_v1:n225:2026-11-24",
-        "type": "vol_shift",
-        "asset": "n225",
-        "severity": "medium",
-        "headline": "Nikkei 225 Index realized volatility moved above historical baseline",
-        "body": "20-day realized volatility is 39.0%, corresponding to the 95th percentile of historical observations (N=6985, effective N=42.6).",
-        "metrics": {
-          "vol20": 0.3897,
-          "percentile": 95.7,
-          "n": 6985,
-          "n_eff": 42.6
-        },
-        "window": "20D",
-        "inputs": [
-          "n225"
-        ],
-        "as_of": "2026-11-24",
-        "chart_ref": "vol_landscape",
-        "rule_id": "vol_shift_v1",
-        "code_version": "v1.0.0"
-      },
-      {
         "id": "vol_shift_v1:eem:2026-11-24",
         "type": "vol_shift",
         "asset": "eem",
@@ -152,21 +108,65 @@
         "code_version": "v1.0.0"
       },
       {
-        "id": "vol_shift_v1:niftysmall:2026-11-24",
+        "id": "vol_shift_v1:gold:2026-11-24",
         "type": "vol_shift",
-        "asset": "niftysmall",
+        "asset": "gold",
         "severity": "medium",
-        "headline": "Nifty Smallcap 100 Index realized volatility moved above historical baseline",
-        "body": "20-day realized volatility is 32.2%, corresponding to the 97th percentile of historical observations (N=736, effective N=10.7).",
+        "headline": "Gold Futures realized volatility moved above historical baseline",
+        "body": "20-day realized volatility is 33.3%, corresponding to the 96th percentile of historical observations (N=6824, effective N=60.8).",
         "metrics": {
-          "vol20": 0.3225,
-          "percentile": 97.0,
-          "n": 736,
-          "n_eff": 10.7
+          "vol20": 0.3329,
+          "percentile": 96.2,
+          "n": 6824,
+          "n_eff": 60.8
         },
         "window": "20D",
         "inputs": [
-          "niftysmall"
+          "gold"
+        ],
+        "as_of": "2026-11-24",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_shift_v1:kospi:2026-11-24",
+        "type": "vol_shift",
+        "asset": "kospi",
+        "severity": "medium",
+        "headline": "KOSPI Composite Index realized volatility moved above historical baseline",
+        "body": "20-day realized volatility is 60.6%, corresponding to the 98th percentile of historical observations (N=6988, effective N=35.1).",
+        "metrics": {
+          "vol20": 0.6064,
+          "percentile": 98.1,
+          "n": 6988,
+          "n_eff": 35.1
+        },
+        "window": "20D",
+        "inputs": [
+          "kospi"
+        ],
+        "as_of": "2026-11-24",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_shift_v1:n225:2026-11-24",
+        "type": "vol_shift",
+        "asset": "n225",
+        "severity": "medium",
+        "headline": "Nikkei 225 Index realized volatility moved above historical baseline",
+        "body": "20-day realized volatility is 39.0%, corresponding to the 95th percentile of historical observations (N=6985, effective N=42.6).",
+        "metrics": {
+          "vol20": 0.3897,
+          "percentile": 95.7,
+          "n": 6985,
+          "n_eff": 42.6
+        },
+        "window": "20D",
+        "inputs": [
+          "n225"
         ],
         "as_of": "2026-11-24",
         "chart_ref": "vol_landscape",

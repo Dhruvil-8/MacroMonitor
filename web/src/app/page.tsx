@@ -32,7 +32,7 @@ export default function TodayPage() {
   const [volData, setVolData] = useState<VolLandscapeEnvelope | null>(null);
   const [decompData, setDecompData] = useState<DecompositionEnvelope | null>(null);
   const [activeTarget, setActiveTarget] = useState<string>("featured");
-  const [asOf, setAsOf] = useState<string>("2026-11-20");
+  const [asOf, setAsOf] = useState<string>("");
   const [isStale, setIsStale] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
 

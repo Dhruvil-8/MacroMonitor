@@ -27,7 +27,7 @@ import { RiskEnvelope, AssetRiskProfile, StressEnvelope, ContextData, BenchmarkD
 export const RiskClientView: React.FC = () => {
   const [riskData, setRiskData] = useState<RiskEnvelope | null>(null);
   const [stressData, setStressData] = useState<StressEnvelope | null>(null);
-  const [asOf, setAsOf] = useState<string>("2026-11-20");
+  const [asOf, setAsOf] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
   const [selectedAssetId, setSelectedAssetId] = useState<string>("spx");
   const [contextData, setContextData] = useState<ContextData | null>(null);

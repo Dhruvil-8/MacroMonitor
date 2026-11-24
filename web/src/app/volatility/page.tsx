@@ -58,7 +58,7 @@ export default function VolatilityPage() {
 
         <div className="flex items-center gap-3">
           <HealthDot status="ok" label="Cboe Data Feed Active" />
-          <DataAgeBadge asOf={volData.as_of || "2026-11-20"} />
+          <DataAgeBadge asOf={data.as_of || volData.as_of || ""} />
         </div>
       </div>
 

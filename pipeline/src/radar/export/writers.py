@@ -1156,6 +1156,9 @@ def export_all_datasets(
             curr_factors = curr_factors.dropna()
 
             common_idx = target_series.index.intersection(curr_factors.index)
+            if fx_s is not None:
+                common_idx = common_idx.intersection(fx_s.index)
+
             if len(common_idx) > 270:
                 try:
                     decomp_res = compute_decomposition(
@@ -1791,8 +1794,8 @@ def export_all_datasets(
                 "as_of": as_of,
                 "severity": "medium" if top_ds.stress_premium >= 0.25 else "low",
                 "headline": f"Downside correlation premium widened for {top_ds.target_name}",
-                "body": f"Downside correlation exceeded unconditional correlation by {top_ds.stress_premium:+.2f} (downside: {top_ds.downside_corr:.2f}, unconditional: {top_ds.unconditional_corr:.2f}).",
-                "metrics": {"spread": top_ds.stress_premium, "downside_corr": top_ds.downside_corr, "unconditional_corr": top_ds.unconditional_corr},
+                "body": f"Downside correlation exceeded unconditional correlation by {top_ds.stress_premium:+.2f} (downside: {top_ds.downside_corr:.2f}, unconditional: {top_ds.all_day_corr:.2f}).",
+                "metrics": {"spread": top_ds.stress_premium, "downside_corr": top_ds.downside_corr, "unconditional_corr": top_ds.all_day_corr},
                 "chart_ref": "risk",
                 "code_version": code_version,
             })
@@ -2212,34 +2215,24 @@ def export_all_datasets(
             weekly_cols[c_name] = ret_w
 
     conn_file = out_path / "connectedness.json"
-    if cadence == "daily" and conn_file.exists():
-        manifest_entries.append(
-            ManifestFileEntry(
-                path="/v1/connectedness.json",
-                schema_version="1.0",
-                size_bytes=conn_file.stat().st_size,
-                as_of=as_of,
-            )
-        )
-    else:
-        df_weekly_ret = pd.DataFrame(weekly_cols).dropna()
-        conn_payload = compute_connectedness_payload(df_weekly_ret)
-        conn_env = ConnectednessEnvelope(
+    df_weekly_ret = pd.DataFrame(weekly_cols).dropna()
+    conn_payload = compute_connectedness_payload(df_weekly_ret)
+    conn_env = ConnectednessEnvelope(
+        schema_version="1.0",
+        as_of=as_of,
+        code_version=code_version,
+        params_hash=params_hash,
+        data=ConnectednessData(**conn_payload),
+    )
+    conn_size = write_json_file(conn_file, conn_env)
+    manifest_entries.append(
+        ManifestFileEntry(
+            path="/v1/connectedness.json",
             schema_version="1.0",
+            size_bytes=conn_size,
             as_of=as_of,
-            code_version=code_version,
-            params_hash=params_hash,
-            data=ConnectednessData(**conn_payload),
         )
-        conn_size = write_json_file(conn_file, conn_env)
-        manifest_entries.append(
-            ManifestFileEntry(
-                path="/v1/connectedness.json",
-                schema_version="1.0",
-                size_bytes=conn_size,
-                as_of=as_of,
-            )
-        )
+    )
 
     # 24. Export Fundamentals Layer (P9)
     from radar.metrics.fundamentals import compute_fundamentals_payload
@@ -2355,11 +2348,19 @@ def export_all_datasets(
 
     pos_file = out_path / "positioning.json"
     if cadence == "daily" and pos_file.exists():
+        try:
+            with open(pos_file, "r", encoding="utf-8") as f:
+                pos_data = json.load(f)
+            pos_data["as_of"] = as_of
+            pos_size = write_json_file(pos_file, pos_data)
+        except Exception:
+            pos_size = pos_file.stat().st_size
+
         manifest_entries.append(
             ManifestFileEntry(
                 path="/v1/positioning.json",
                 schema_version="1.0",
-                size_bytes=pos_file.stat().st_size,
+                size_bytes=pos_size,
                 as_of=as_of,
             )
         )
@@ -2368,11 +2369,18 @@ def export_all_datasets(
             if c_id:
                 c_file = out_path / f"positioning_{c_id}.json"
                 if c_file.exists():
+                    try:
+                        with open(c_file, "r", encoding="utf-8") as cf:
+                            c_data = json.load(cf)
+                        c_data["as_of"] = as_of
+                        c_sz = write_json_file(c_file, c_data)
+                    except Exception:
+                        c_sz = c_file.stat().st_size
                     manifest_entries.append(
                         ManifestFileEntry(
                             path=f"/v1/positioning_{c_id}.json",
                             schema_version="1.0",
-                            size_bytes=c_file.stat().st_size,
+                            size_bytes=c_sz,
                             as_of=as_of,
                         )
                     )

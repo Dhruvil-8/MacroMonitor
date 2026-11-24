@@ -58,7 +58,7 @@ export default function RatesPage() {
 
         <div className="flex items-center gap-3">
           <HealthDot status="ok" label="Treasury & FRED Active" />
-          <DataAgeBadge asOf={yc.as_of || "2026-11-20"} />
+          <DataAgeBadge asOf={data.as_of || yc.as_of || ""} />
         </div>
       </div>
 

@@ -33,7 +33,7 @@ export default function DataHealthPage() {
     fetchData();
   }, []);
 
-  const asOf = data?.as_of || "2026-11-20";
+  const asOf = data?.as_of || "";
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto pb-12">

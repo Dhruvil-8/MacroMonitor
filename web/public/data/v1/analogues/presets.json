@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "as_of": "2026-11-20",
+  "as_of": "2026-11-23",
   "code_version": "v1.0.0",
   "status": "ok",
   "presets": [
@@ -8,61 +8,61 @@
       "id": "rates_dollar_pressure",
       "name": "Rates & Dollar Tightening",
       "rationale": "Captures joint shocks in long-end Treasury yields, dollar strength, crude inflation impulse, equity momentum, and implied volatility.",
-      "query_date": "2026-11-20",
+      "query_date": "2026-11-23",
       "n_features": 5,
-      "n_indep": 5.0,
-      "top_match_date": "2025-10-15",
-      "top_match_distance": 0.025,
+      "n_indep": 3.99,
+      "top_match_date": "2008-09-19",
+      "top_match_distance": 1.024,
       "verdict_class": "no_reliable_improvement",
-      "mae_skill": 0.0002
+      "mae_skill": -0.0594
     },
     {
       "id": "risk_off_stress",
       "name": "Cross-Asset Risk-Off Stress",
       "rationale": "Matches episodes of synchronized equity drawdowns, credit ETF weakness, elevated volatility, and defensive gold/duration bid.",
-      "query_date": "2026-11-20",
+      "query_date": "2026-11-23",
       "n_features": 5,
-      "n_indep": 5.0,
-      "top_match_date": "2025-04-29",
-      "top_match_distance": 0.078,
+      "n_indep": 4.89,
+      "top_match_date": "2025-11-17",
+      "top_match_distance": 1.429,
       "verdict_class": "no_reliable_improvement",
-      "mae_skill": -0.0227
+      "mae_skill": -0.0639
     },
     {
       "id": "cyclical_reflation",
       "name": "Cyclical Metals & Yield Expansion",
       "rationale": "Tracks industrial metals (Copper), energy, small-cap relative performance, and nominal yield trend alignment.",
-      "query_date": "2026-11-20",
+      "query_date": "2026-11-23",
       "n_features": 5,
-      "n_indep": 5.0,
-      "top_match_date": "2025-04-28",
-      "top_match_distance": 0.161,
+      "n_indep": 3.65,
+      "top_match_date": "2007-01-10",
+      "top_match_distance": 0.691,
       "verdict_class": "no_reliable_improvement",
-      "mae_skill": -0.0516
+      "mae_skill": -0.0394
     },
     {
       "id": "equity_breadth_concentration",
       "name": "Equity Concentration & Dispersion",
       "rationale": "Measures mega-cap Nasdaq momentum vs equal-weight breadth, semiconductor intensity, and broad index volatility.",
-      "query_date": "2026-11-20",
+      "query_date": "2026-11-23",
       "n_features": 4,
-      "n_indep": 4.0,
-      "top_match_date": "2026-03-27",
-      "top_match_distance": 0.009,
+      "n_indep": 2.67,
+      "top_match_date": "2022-05-26",
+      "top_match_distance": 0.172,
       "verdict_class": "no_reliable_improvement",
-      "mae_skill": 0.0654
+      "mae_skill": -0.0922
     },
     {
       "id": "india_flow_stress",
       "name": "India Volatility & Currency Pressure",
       "rationale": "Pairs Indian equity index momentum, India VIX regime, USD/INR pressure, and global US 10Y / EM backdrop.",
-      "query_date": "2026-11-20",
+      "query_date": "2026-11-23",
       "n_features": 5,
       "n_indep": 5.0,
-      "top_match_date": "2026-03-10",
-      "top_match_distance": 0.029,
+      "top_match_date": "2008-07-23",
+      "top_match_distance": 0.363,
       "verdict_class": "no_reliable_improvement",
-      "mae_skill": 0.0001
+      "mae_skill": 0.0104
     }
   ]
 }

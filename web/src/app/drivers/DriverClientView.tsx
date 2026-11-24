@@ -27,7 +27,7 @@ const DRIVER_NAMES: Record<string, string> = {
 
 export const DriverClientView: React.FC = () => {
   const [driversData, setDriversData] = useState<DriversEnvelope | null>(null);
-  const [asOf, setAsOf] = useState<string>("2026-11-20");
+  const [asOf, setAsOf] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(true);
   const [windowDays, setWindowDays] = useState<250 | 120>(250);
   const [selectedTargetId, setSelectedTargetId] = useState<string>("spx");

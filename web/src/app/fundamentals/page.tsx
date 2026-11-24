@@ -58,7 +58,7 @@ export default function FundamentalsPage() {
 
         <div className="flex items-center gap-3">
           <HealthDot status="ok" label="EIA Socrata Synchronized" />
-          <DataAgeBadge asOf={fund.as_of || "2026-11-20"} />
+          <DataAgeBadge asOf={data.as_of || fund.as_of || ""} />
         </div>
       </div>
 
