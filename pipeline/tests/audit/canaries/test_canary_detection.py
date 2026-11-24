@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-RESULTS_DIR = Path("audit/results")
+RESULTS_DIR = Path("docs/audit/results")
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 canary_results = []

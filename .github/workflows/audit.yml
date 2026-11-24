@@ -39,11 +39,11 @@ jobs:
 
       - name: 2. Run Clean-Room Mathematical Oracles
         run: |
-          PYTHONPATH=pipeline/src python audit/oracles/run_all_oracles.py
+          PYTHONPATH=pipeline/src python pipeline/tests/audit/oracles/run_all_oracles.py
 
       - name: 3. Run Canary Fault Injection Suite (100% Detection Gate)
         run: |
-          PYTHONPATH=pipeline/src python audit/canaries/test_canary_detection.py
+          PYTHONPATH=pipeline/src python pipeline/tests/audit/canaries/test_canary_detection.py
 
       - name: 4. Verify Continuous Publishing Guardrails
         run: |

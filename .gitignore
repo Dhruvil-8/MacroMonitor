@@ -68,8 +68,7 @@ data/processed/validation/
 logs/
 
 # Local documentation
-DEPLOYMENT.md
-audit_report.md
+# DEPLOYMENT.md
 # validation_report.md (Uploaded as proof of quality)
 
 # OS files
@@ -105,4 +104,4 @@ docs/backlog.md
 docs/glossary.md
 AUDIT_PLAN.md
 
-audit/snapshot/
+/audit/

@@ -25,7 +25,7 @@ from pathlib import Path
 
 # Add paths
 sys.path.insert(0, "pipeline/src")
-sys.path.insert(0, "audit/oracles")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from radar.metrics.returns_vol import compute_returns, compute_realized_volatility, compute_vol_trend
 from radar.metrics.stats import compute_expanding_percentile, compute_expanding_zscore, compute_lag1_autocorr, compute_effective_n
@@ -45,7 +45,8 @@ from oracle_decomposition_and_fx import oracle_fx_identity, oracle_multi_factor_
 from oracle_yield_curve import oracle_fit_nelson_siegel
 from oracle_risk_and_tails import oracle_historical_var_es, oracle_pca_sign_alignment
 
-RESULTS_FILE = Path("audit/results/oracle_results.csv")
+RESULTS_FILE = Path("docs/audit/results/oracle_results.csv")
+RESULTS_FILE.parent.mkdir(parents=True, exist_ok=True)
 results = []
 findings = []
 
