@@ -1018,6 +1018,102 @@
         "schema_version": "1.0",
         "size_bytes": 1779,
         "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_aud_usd.json",
+        "schema_version": "1.0",
+        "size_bytes": 43173,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_cad_usd.json",
+        "schema_version": "1.0",
+        "size_bytes": 43270,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_chf_usd.json",
+        "schema_version": "1.0",
+        "size_bytes": 42924,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_copper.json",
+        "schema_version": "1.0",
+        "size_bytes": 42815,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_eur_usd.json",
+        "schema_version": "1.0",
+        "size_bytes": 43262,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_gbp_usd.json",
+        "schema_version": "1.0",
+        "size_bytes": 43036,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_gold.json",
+        "schema_version": "1.0",
+        "size_bytes": 43097,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_jpy_usd.json",
+        "schema_version": "1.0",
+        "size_bytes": 43184,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_nasdaq_100.json",
+        "schema_version": "1.0",
+        "size_bytes": 42769,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_natural_gas.json",
+        "schema_version": "1.0",
+        "size_bytes": 43700,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_silver.json",
+        "schema_version": "1.0",
+        "size_bytes": 42768,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_sp500_emini.json",
+        "schema_version": "1.0",
+        "size_bytes": 43649,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_us_10y_note.json",
+        "schema_version": "1.0",
+        "size_bytes": 43948,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_us_2y_note.json",
+        "schema_version": "1.0",
+        "size_bytes": 44103,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_us_30y_bond.json",
+        "schema_version": "1.0",
+        "size_bytes": 43562,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/positioning_wti_crude.json",
+        "schema_version": "1.0",
+        "size_bytes": 43411,
+        "as_of": "2026-11-24"
       }
     ]
   }

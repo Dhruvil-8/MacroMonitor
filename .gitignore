@@ -30,9 +30,10 @@ venv/
 ENV/
 env/
 
-# IDE
+# IDE & Local Agent configuration
 .idea/
 .vscode/
+.agents/
 *.swp
 *.swo
 *~

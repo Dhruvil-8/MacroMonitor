@@ -9,7 +9,7 @@ sources:
     rate_limit: "120 requests/minute"
     schedule: "Daily 17:00 US Eastern (Market close + 1h)"
     fallback_source_id: null
-    last_verified: "2026-11-20"
+    last_verified: "2026-11-24"
     owner_notes: "Requires free API key. Unlimited daily queries. Official public domain macro data."
 
   - id: yahoo
@@ -20,7 +20,7 @@ sources:
     rate_limit: "30 requests/minute with jitter"
     schedule: "Continuous / End-of-Day close"
     fallback_source_id: null
-    last_verified: "2026-11-20"
+    last_verified: "2026-11-24"
     owner_notes: "Used for broad global index closes and commodities. Wrapped with retries and exponential backoff."
 
   - id: nse
@@ -31,7 +31,7 @@ sources:
     rate_limit: "10 requests/minute"
     schedule: "Daily 19:00 IST (Indian Market Close)"
     fallback_source_id: "yahoo"
-    last_verified: "2026-11-20"
+    last_verified: "2026-11-24"
     owner_notes: "Official public archives for Nifty indices, India VIX, FII/DII cash flows, and F&O derivatives."
 
   - id: cftc
@@ -42,7 +42,7 @@ sources:
     rate_limit: "60 requests/minute"
     schedule: "Weekly on Friday 15:30 US Eastern (As of Tuesday)"
     fallback_source_id: null
-    last_verified: "2026-11-20"
+    last_verified: "2026-11-24"
     owner_notes: "Socrata Public API. Free open public domain data for speculative and hedging commitments."
 
   - id: cboe
@@ -53,7 +53,7 @@ sources:
     rate_limit: "20 requests/minute"
     schedule: "Daily 17:00 US Eastern"
     fallback_source_id: "yahoo"
-    last_verified: "2026-11-20"
+    last_verified: "2026-11-24"
     owner_notes: "Term structure indices (VIX9D, VIX, VIX3M, VIX6M) and sentiment gauges (SKEW, VVIX)."
 
   - id: treasury
@@ -64,7 +64,7 @@ sources:
     rate_limit: "60 requests/minute"
     schedule: "Daily 17:00 US Eastern"
     fallback_source_id: "fred"
-    last_verified: "2026-11-20"
+    last_verified: "2026-11-24"
     owner_notes: "Daily par yield curves from 1 month to 30 years and Federal debt balances."
 
   - id: eia
@@ -75,7 +75,7 @@ sources:
     rate_limit: "100 requests/minute"
     schedule: "Weekly Wednesday 10:30 US Eastern"
     fallback_source_id: null
-    last_verified: "2026-11-20"
+    last_verified: "2026-11-24"
     owner_notes: "Commercial crude stocks, gasoline inventories, distillates, and natural gas underground storage."
 
   - id: bis
@@ -86,5 +86,5 @@ sources:
     rate_limit: "30 requests/minute"
     schedule: "Monthly / Quarterly"
     fallback_source_id: null
-    last_verified: "2026-11-20"
+    last_verified: "2026-11-24"
     owner_notes: "Real Effective Exchange Rates (REER) and Credit-to-GDP gap early warning indicators."

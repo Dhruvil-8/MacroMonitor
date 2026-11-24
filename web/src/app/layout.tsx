@@ -3,6 +3,7 @@ import Link from 'next/link';
 import './globals.css';
 import { GlobalModals } from '@/components/ui/GlobalModals';
 import { HeaderActions } from '@/components/ui/HeaderActions';
+import { SyncStatusBadge } from '@/components/ui/SyncStatusBadge';
 import { HeaderNav, MobileNav } from '@/components/layout/HeaderNav';
 
 export const metadata: Metadata = {
@@ -53,10 +54,7 @@ export default function RootLayout({
                   <span>Market Clock</span>
                 </Link>
                 <HeaderActions />
-                <div className="hidden sm:flex items-center space-x-1.5 px-2 py-1 rounded bg-[#121823] border border-[#1d2633]">
-                  <span className="w-2 h-2 rounded-full bg-[#3fb6a8]"></span>
-                  <span className="text-[#a9b4c4] text-[11px]">Synced: 2026-11-22</span>
-                </div>
+                <SyncStatusBadge />
               </div>
             </div>
 

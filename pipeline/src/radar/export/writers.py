@@ -1973,7 +1973,7 @@ def export_all_datasets(
                 schedule=s.get("schedule", ""),
                 status=status_str,
                 last_success=as_of,
-                last_verified=s.get("last_verified", as_of),
+                last_verified=as_of,
                 tracked_series_count=len(tracked),
                 stale_series_count=stale_count,
                 circuit_state="CLOSED",
@@ -2337,13 +2337,13 @@ def export_all_datasets(
     from radar.metrics.positioning import build_positioning_payload
     from radar.ingest.cftc import ingest_cftc_cot
 
-    params_yaml_path = Path(__file__).resolve().parents[2] / "config" / "params.yaml"
+    params_yaml_path = Path(__file__).resolve().parents[3] / "config" / "params.yaml"
     pipeline_params: dict[str, Any] = {}
     if params_yaml_path.exists():
         with open(params_yaml_path, "r", encoding="utf-8") as f:
             pipeline_params = yaml.safe_load(f) or {}
 
-    cot_yaml_path = Path(__file__).resolve().parents[2] / "config" / "cot_contracts.yaml"
+    cot_yaml_path = Path(__file__).resolve().parents[3] / "config" / "cot_contracts.yaml"
     cot_contracts_list = []
     if cot_yaml_path.exists():
         with open(cot_yaml_path, "r", encoding="utf-8") as f:
