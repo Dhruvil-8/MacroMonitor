@@ -11,10 +11,10 @@
         "asset": "brent_vs_nifty50",
         "severity": "high",
         "headline": "Momentum divergence between BRENT and NIFTY50",
-        "body": "The 20-day momentum divergence spread reached -4.36 standard deviations, persisting for 3 consecutive sessions.",
+        "body": "The 20-day momentum divergence spread reached -4.11 standard deviations, persisting for 3 consecutive sessions.",
         "metrics": {
-          "spread_z": -4.357123591593807,
-          "percentile": 99.27228623408126
+          "spread_z": -4.1104690336029925,
+          "percentile": 99.19142914897918
         },
         "window": "20D",
         "inputs": [
@@ -46,15 +46,117 @@
         "code_version": "v1.0.0"
       },
       {
+        "id": "vol_cone_breach_v1:n225:2026-11-24",
+        "type": "vol_cone_breach",
+        "asset": "n225",
+        "severity": "high",
+        "headline": "Realized volatility elevated across multiple horizons for Nikkei 225",
+        "body": "Realized volatility exceeded the 90th historical percentile across 4 horizons simultaneously (10D, 20D, 120D, 250D).",
+        "metrics": {
+          "num_breaches": 4,
+          "horizons": [
+            "10D",
+            "20D",
+            "120D",
+            "250D"
+          ]
+        },
+        "window": "20D",
+        "inputs": [
+          "n225"
+        ],
+        "as_of": "2026-11-24",
+        "chart_ref": "risk",
+        "rule_id": "vol_cone_breach_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_cone_breach_v1:kospi:2026-11-24",
+        "type": "vol_cone_breach",
+        "asset": "kospi",
+        "severity": "high",
+        "headline": "Realized volatility elevated across multiple horizons for KOSPI",
+        "body": "Realized volatility exceeded the 90th historical percentile across 5 horizons simultaneously (10D, 20D, 60D, 120D, 250D).",
+        "metrics": {
+          "num_breaches": 5,
+          "horizons": [
+            "10D",
+            "20D",
+            "60D",
+            "120D",
+            "250D"
+          ]
+        },
+        "window": "20D",
+        "inputs": [
+          "kospi"
+        ],
+        "as_of": "2026-11-24",
+        "chart_ref": "risk",
+        "rule_id": "vol_cone_breach_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_cone_breach_v1:gold:2026-11-24",
+        "type": "vol_cone_breach",
+        "asset": "gold",
+        "severity": "high",
+        "headline": "Realized volatility elevated across multiple horizons for Gold",
+        "body": "Realized volatility exceeded the 90th historical percentile across 4 horizons simultaneously (10D, 20D, 120D, 250D).",
+        "metrics": {
+          "num_breaches": 4,
+          "horizons": [
+            "10D",
+            "20D",
+            "120D",
+            "250D"
+          ]
+        },
+        "window": "20D",
+        "inputs": [
+          "gold"
+        ],
+        "as_of": "2026-11-24",
+        "chart_ref": "risk",
+        "rule_id": "vol_cone_breach_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "vol_cone_breach_v1:vix:2026-11-24",
+        "type": "vol_cone_breach",
+        "asset": "vix",
+        "severity": "high",
+        "headline": "Realized volatility elevated across multiple horizons for CBOE VIX",
+        "body": "Realized volatility exceeded the 90th historical percentile across 5 horizons simultaneously (10D, 20D, 60D, 120D, 250D).",
+        "metrics": {
+          "num_breaches": 5,
+          "horizons": [
+            "10D",
+            "20D",
+            "60D",
+            "120D",
+            "250D"
+          ]
+        },
+        "window": "20D",
+        "inputs": [
+          "vix"
+        ],
+        "as_of": "2026-11-24",
+        "chart_ref": "risk",
+        "rule_id": "vol_cone_breach_v1",
+        "code_version": "v1.0.0"
+      },
+      {
         "id": "country_divergence_v1:dxy_vs_gold:2026-11-24",
         "type": "country_divergence",
         "asset": "dxy_vs_gold",
         "severity": "medium",
         "headline": "Momentum divergence between DXY and GOLD",
-        "body": "The 20-day momentum divergence spread reached +3.44 standard deviations, persisting for 3 consecutive sessions.",
+        "body": "The 20-day momentum divergence spread reached +3.50 standard deviations, persisting for 3 consecutive sessions.",
         "metrics": {
-          "spread_z": 3.4414355832432104,
-          "percentile": 95.61313116443398
+          "spread_z": 3.5013989273517936,
+          "percentile": 95.84927877539005
         },
         "window": "20D",
         "inputs": [
@@ -83,94 +185,6 @@
         "as_of": "2026-11-24",
         "chart_ref": "radar",
         "rule_id": "country_divergence_v1",
-        "code_version": "v1.0.0"
-      },
-      {
-        "id": "vol_shift_v1:eem:2026-11-24",
-        "type": "vol_shift",
-        "asset": "eem",
-        "severity": "medium",
-        "headline": "MSCI Emerging Markets Index ETF realized volatility moved above historical baseline",
-        "body": "20-day realized volatility is 46.6%, corresponding to the 96th percentile of historical observations (N=6141, effective N=30.9).",
-        "metrics": {
-          "vol20": 0.4664,
-          "percentile": 96.0,
-          "n": 6141,
-          "n_eff": 30.9
-        },
-        "window": "20D",
-        "inputs": [
-          "eem"
-        ],
-        "as_of": "2026-11-24",
-        "chart_ref": "vol_landscape",
-        "rule_id": "vol_shift_v1",
-        "code_version": "v1.0.0"
-      },
-      {
-        "id": "vol_shift_v1:gold:2026-11-24",
-        "type": "vol_shift",
-        "asset": "gold",
-        "severity": "medium",
-        "headline": "Gold Futures realized volatility moved above historical baseline",
-        "body": "20-day realized volatility is 33.3%, corresponding to the 96th percentile of historical observations (N=6824, effective N=60.8).",
-        "metrics": {
-          "vol20": 0.3329,
-          "percentile": 96.2,
-          "n": 6824,
-          "n_eff": 60.8
-        },
-        "window": "20D",
-        "inputs": [
-          "gold"
-        ],
-        "as_of": "2026-11-24",
-        "chart_ref": "vol_landscape",
-        "rule_id": "vol_shift_v1",
-        "code_version": "v1.0.0"
-      },
-      {
-        "id": "vol_shift_v1:kospi:2026-11-24",
-        "type": "vol_shift",
-        "asset": "kospi",
-        "severity": "medium",
-        "headline": "KOSPI Composite Index realized volatility moved above historical baseline",
-        "body": "20-day realized volatility is 60.6%, corresponding to the 98th percentile of historical observations (N=6988, effective N=35.1).",
-        "metrics": {
-          "vol20": 0.6064,
-          "percentile": 98.1,
-          "n": 6988,
-          "n_eff": 35.1
-        },
-        "window": "20D",
-        "inputs": [
-          "kospi"
-        ],
-        "as_of": "2026-11-24",
-        "chart_ref": "vol_landscape",
-        "rule_id": "vol_shift_v1",
-        "code_version": "v1.0.0"
-      },
-      {
-        "id": "vol_shift_v1:n225:2026-11-24",
-        "type": "vol_shift",
-        "asset": "n225",
-        "severity": "medium",
-        "headline": "Nikkei 225 Index realized volatility moved above historical baseline",
-        "body": "20-day realized volatility is 39.0%, corresponding to the 95th percentile of historical observations (N=6985, effective N=42.6).",
-        "metrics": {
-          "vol20": 0.3897,
-          "percentile": 95.7,
-          "n": 6985,
-          "n_eff": 42.6
-        },
-        "window": "20D",
-        "inputs": [
-          "n225"
-        ],
-        "as_of": "2026-11-24",
-        "chart_ref": "vol_landscape",
-        "rule_id": "vol_shift_v1",
         "code_version": "v1.0.0"
       }
     ]
