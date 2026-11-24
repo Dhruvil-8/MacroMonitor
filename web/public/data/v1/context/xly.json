@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "xly",
     "name": "Consumer Discretionary Select SPDR",
@@ -403,7 +403,7 @@
       -0.0009,
       -0.00064,
       -0.00034,
-      -7e-05,
+      -0.00007,
       0.0,
       0.0,
       0.0,
@@ -2219,6 +2219,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for Consumer Discretionary Select SPDR.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "latest_return": 0.039,
+    "return_percentile": 99.1
   }
 }

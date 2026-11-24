@@ -14,12 +14,12 @@ interface DriverSensitivityHeatmapProps {
 }
 
 const FACTOR_ORDER = [
-  { id: "row_equity", name: "ROW Equity" },
-  { id: "brent", name: "Brent Oil" },
-  { id: "copper", name: "Copper" },
-  { id: "gold", name: "Gold" },
-  { id: "dxy", name: "US Dollar (DXY)" },
-  { id: "us10y", name: "US 10Y Yield" },
+  { id: "row_equity", name: "ROW Equity", sub: "% / %" },
+  { id: "brent", name: "Brent Oil", sub: "% / %" },
+  { id: "copper", name: "Copper", sub: "% / %" },
+  { id: "gold", name: "Gold", sub: "% / %" },
+  { id: "dxy", name: "US Dollar (DXY)", sub: "% / %" },
+  { id: "us10y", name: "US 10Y Yield", sub: "per 1 bp" },
 ];
 
 export const DriverSensitivityHeatmap: React.FC<DriverSensitivityHeatmapProps> = ({
@@ -29,21 +29,25 @@ export const DriverSensitivityHeatmap: React.FC<DriverSensitivityHeatmapProps> =
   selectedDriverId,
   onSelectDriver,
 }) => {
-  const getCellBg = (beta: number, stability: number, significant: boolean) => {
+  const getCellBg = (driverId: string, beta: number, stability: number, significant: boolean) => {
     const isUnstable = stability < 0.70 || !significant;
     const opacity = isUnstable ? 0.35 : 0.85;
 
-    if (Math.abs(beta) < 0.0001) {
+    // US 10Y is in basis points, so its beta is in decimal-return-per-bp (e.g. 0.0001 = 1% per 100 bps)
+    const scaleFactor = driverId === "us10y" ? 2500 : 25;
+    const mag = Math.abs(beta) * scaleFactor;
+
+    if (mag < 0.005) {
       return "rgba(29, 38, 51, 0.4)";
     }
 
     if (beta > 0) {
       // Teal / positive
-      const intensity = Math.min(1.0, Math.max(0.15, Math.abs(beta) * 25));
+      const intensity = Math.min(1.0, Math.max(0.15, mag));
       return `rgba(63, 182, 168, ${intensity * opacity})`;
     } else {
       // Coral / negative
-      const intensity = Math.min(1.0, Math.max(0.15, Math.abs(beta) * 25));
+      const intensity = Math.min(1.0, Math.max(0.15, mag));
       return `rgba(232, 118, 90, ${intensity * opacity})`;
     }
   };
@@ -81,13 +85,14 @@ export const DriverSensitivityHeatmap: React.FC<DriverSensitivityHeatmapProps> =
                 <th
                   key={f.id}
                   onClick={() => onSelectDriver(f.id)}
-                  className={`py-2.5 px-3 font-medium text-center cursor-pointer transition ${
+                  className={`py-2 px-3 font-medium text-center cursor-pointer transition ${
                     selectedDriverId === f.id
                       ? "text-[var(--accent)] font-semibold bg-[var(--bg-2)]"
                       : "hover:text-[var(--tx-0)]"
                   }`}
                 >
-                  {f.name}
+                  <div>{f.name}</div>
+                  <div className="text-[10px] font-normal text-[var(--tx-3)] font-mono">{f.sub}</div>
                 </th>
               ))}
             </tr>
@@ -126,7 +131,7 @@ export const DriverSensitivityHeatmap: React.FC<DriverSensitivityHeatmapProps> =
                       );
                     }
                     const isUnstable = item.stability < 0.70 || !item.significant;
-                    const bg = getCellBg(item.beta, item.stability, item.significant);
+                    const bg = getCellBg(f.id, item.beta, item.stability, item.significant);
                     const isCellActive = isSelectedTarget && selectedDriverId === f.id;
 
                     return (
@@ -141,7 +146,7 @@ export const DriverSensitivityHeatmap: React.FC<DriverSensitivityHeatmapProps> =
                         className={`py-2 px-3 text-center transition relative ${
                           isUnstable ? "border-dashed" : ""
                         } ${isCellActive ? "ring-2 ring-[var(--accent)] font-bold z-10" : ""}`}
-                        title={`${r.target_name} vs ${f.name}\nBeta: ${item.beta.toFixed(4)}\n95% CI: [${item.ci_lower.toFixed(4)}, ${item.ci_upper.toFixed(4)}]\nStability: ${(item.stability * 100).toFixed(0)}%\nPrior: ${item.prior} (${item.prior_aligned ? "Aligned" : "Divergent"})`}
+                        title={`${r.target_name} vs ${f.name}\nBeta: ${item.beta.toFixed(4)}${f.id === "us10y" ? ` (${(item.beta * 10000 >= 0 ? "+" : "")}${(item.beta * 10000).toFixed(1)}% per 100 bps yield change)` : ""}\n95% CI: [${item.ci_lower.toFixed(4)}, ${item.ci_upper.toFixed(4)}]\nStability: ${(item.stability * 100).toFixed(0)}%\nPrior: ${item.prior} (${item.prior_aligned ? "Aligned" : "Divergent"})`}
                       >
                         <div className="flex items-center justify-center space-x-1">
                           <span
@@ -150,7 +155,7 @@ export const DriverSensitivityHeatmap: React.FC<DriverSensitivityHeatmapProps> =
                             }
                           >
                             {item.beta >= 0 ? "+" : ""}
-                            {item.beta.toFixed(3)}
+                            {f.id === "us10y" ? item.beta.toFixed(4) : item.beta.toFixed(3)}
                           </span>
                           {isUnstable && (
                             <span title="Unstable or statistically insignificant coefficient">

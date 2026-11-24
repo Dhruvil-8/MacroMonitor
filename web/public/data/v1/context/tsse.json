@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "tsse",
     "name": "S&P/TSX Composite Index",
@@ -402,11 +402,11 @@
       -0.00056,
       -0.00038,
       -0.00022,
-      -3e-05,
+      -0.00003,
       0.0,
       0.0,
       0.0,
-      1e-05,
+      0.00001,
       0.0002,
       0.00039,
       0.00055,
@@ -2209,16 +2209,18 @@
         "fwd_20d": 0.023
       },
       {
-        "date": "2026-06-30",
+        "date": "2026-07-01",
         "value": 34857.0,
         "distance": 774.8984,
-        "fwd_5d": 0.0119,
-        "fwd_20d": 0.0256
+        "fwd_5d": 0.0023,
+        "fwd_20d": 0.0137
       }
     ],
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for S&P/TSX Composite Index.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "latest_return": 0.0265,
+    "return_percentile": 98.9
   }
 }

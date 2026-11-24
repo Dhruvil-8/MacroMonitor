@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "copper",
     "name": "Copper Futures",
@@ -2153,11 +2153,11 @@
         "fwd_20d": -0.1846
       },
       {
-        "date": "2025-12-25",
+        "date": "2025-12-24",
         "value": 5.5,
         "distance": 0.0025,
         "fwd_5d": 0.0239,
-        "fwd_20d": 0.0444
+        "fwd_20d": 0.042
       },
       {
         "date": "2026-03-30",
@@ -2167,23 +2167,25 @@
         "fwd_20d": 0.099
       },
       {
-        "date": "2025-12-05",
-        "value": 5.38,
-        "distance": 0.114,
-        "fwd_5d": -0.0183,
-        "fwd_20d": 0.0479
-      },
-      {
         "date": "2026-02-17",
         "value": 5.63,
         "distance": 0.137,
         "fwd_5d": 0.0515,
         "fwd_20d": 0.0166
+      },
+      {
+        "date": "2025-12-03",
+        "value": 5.31,
+        "distance": 0.188,
+        "fwd_5d": -0.0061,
+        "fwd_20d": 0.0607
       }
     ],
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for Copper Futures.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "latest_return": -0.0236,
+    "return_percentile": 6.2
   }
 }

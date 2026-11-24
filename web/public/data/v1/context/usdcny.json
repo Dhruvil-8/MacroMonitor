@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "usdcny",
     "name": "USD / CNY Currency Pair",
@@ -402,11 +402,11 @@
       -0.00016,
       -0.00013,
       -0.00011,
-      -9e-05,
-      -6e-05,
-      -4e-05,
-      -3e-05,
-      -1e-05,
+      -0.00009,
+      -0.00006,
+      -0.00004,
+      -0.00003,
+      -0.00001,
       0.0,
       0.0,
       0.0,
@@ -416,10 +416,10 @@
       0.0,
       0.0,
       0.0,
-      2e-05,
-      4e-05,
-      6e-05,
-      9e-05,
+      0.00002,
+      0.00004,
+      0.00006,
+      0.00009,
       0.00011,
       0.00013,
       0.00016,
@@ -1902,10 +1902,10 @@
         "fwd_20d": 0.0046
       },
       {
-        "date": "2026-11-02",
+        "date": "2026-10-30",
         "value": 6.66,
         "distance": 0.0005,
-        "fwd_5d": 0.0023,
+        "fwd_5d": 0.0041,
         "fwd_20d": null
       },
       {
@@ -1919,6 +1919,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for USD / CNY Currency Pair.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "latest_return": -0.0025,
+    "return_percentile": 7.0
   }
 }

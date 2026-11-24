@@ -13,6 +13,8 @@ interface DistributionHistogramProps {
   currentValue: number;
   percentile: number;
   unit: string;
+  latestReturn?: number;
+  returnPercentile?: number;
 }
 
 export const DistributionHistogram: React.FC<DistributionHistogramProps> = ({
@@ -24,6 +26,8 @@ export const DistributionHistogram: React.FC<DistributionHistogramProps> = ({
   currentValue,
   percentile,
   unit,
+  latestReturn,
+  returnPercentile,
 }) => {
   const option = useMemo(() => {
     if (!bins || bins.length === 0 || !counts || counts.length === 0) {
@@ -74,18 +78,35 @@ export const DistributionHistogram: React.FC<DistributionHistogramProps> = ({
       return Number(((normalDensity[closestIdx] || 0) * scaleFactor).toFixed(1));
     });
 
-    // Place current realization marker accurately based on percentile rank
-    const clampedPct = Math.max(0, Math.min(100, percentile));
-    const currentBinIdx = Math.max(
-      0,
-      Math.min(bins.length - 1, Math.round((clampedPct / 100) * (bins.length - 1)))
-    );
+    // Determine the exact bin index for today's realization
+    let currentBinIdx = -1;
+    if (latestReturn !== undefined && !isNaN(latestReturn)) {
+      let minDiff = Infinity;
+      for (let i = 0; i < bins.length; i++) {
+        const diff = Math.abs(bins[i] - latestReturn);
+        if (diff < minDiff) {
+          minDiff = diff;
+          currentBinIdx = i;
+        }
+      }
+    } else {
+      const clampedPct = Math.max(0, Math.min(100, returnPercentile ?? percentile));
+      currentBinIdx = Math.max(
+        0,
+        Math.min(bins.length - 1, Math.round((clampedPct / 100) * (bins.length - 1)))
+      );
+    }
+
+    const effectiveRetPct = returnPercentile ?? percentile;
+    const returnLabel = latestReturn !== undefined
+      ? `Today: ${latestReturn >= 0 ? "+" : ""}${(latestReturn * 100).toFixed(1)}% (${effectiveRetPct.toFixed(0)}th pct)`
+      : `Today (${effectiveRetPct.toFixed(0)}th pct)`;
 
     return {
       backgroundColor: "transparent",
       animationDuration: 300,
       grid: {
-        top: 35,
+        top: 55,
         right: 25,
         bottom: 30,
         left: 35,
@@ -94,8 +115,8 @@ export const DistributionHistogram: React.FC<DistributionHistogramProps> = ({
       legend: {
         data: ["Empirical Histogram", "Gaussian KDE (Silverman)", "Normal Equivalent N(μ, σ²)"],
         textStyle: { color: "#8b949e", fontSize: 11, fontFamily: "monospace" },
-        top: 0,
-        right: 10,
+        top: 4,
+        left: "center",
         icon: "roundRect",
       },
       tooltip: {
@@ -155,11 +176,16 @@ export const DistributionHistogram: React.FC<DistributionHistogramProps> = ({
             },
             label: {
               show: true,
-              formatter: `Today (${percentile.toFixed(0)}th pct)`,
+              formatter: returnLabel,
               color: "#f0883e",
+              backgroundColor: "rgba(10, 14, 20, 0.90)",
+              borderColor: "rgba(240, 136, 62, 0.5)",
+              borderWidth: 1,
+              borderRadius: 3,
+              padding: [3, 6],
               fontFamily: "var(--font-mono)",
               fontSize: 10,
-              position: "insideEndTop",
+              position: currentBinIdx > bins.length - 5 ? "insideEndBottom" : "insideEndTop",
             },
             data: [{ xAxis: currentBinIdx }],
           },
@@ -192,11 +218,13 @@ export const DistributionHistogram: React.FC<DistributionHistogramProps> = ({
           : []),
       ],
     };
-  }, [bins, counts, kdeGrid, kdeDensity, normalDensity, percentile]);
+  }, [bins, counts, kdeGrid, kdeDensity, normalDensity, percentile, latestReturn, returnPercentile]);
+
+  const effectiveRetPct = returnPercentile ?? percentile;
 
   return (
     <div className="space-y-2">
-      <div className="w-full h-[280px]">
+      <div className="w-full h-[320px]">
         <ReactECharts
           option={option}
           style={{ height: "100%", width: "100%" }}
@@ -205,9 +233,15 @@ export const DistributionHistogram: React.FC<DistributionHistogramProps> = ({
           lazyUpdate={true}
         />
       </div>
-      <div className="flex justify-between items-center text-[11px] font-mono text-[var(--tx-2)] px-1 pt-1 border-t border-[var(--line)]">
+      <div className="flex flex-wrap justify-between items-center text-[11px] font-mono text-[var(--tx-2)] px-1 pt-1 border-t border-[var(--line)] gap-2">
         <span>Empirical Daily Return Distribution ({bins.length} bins)</span>
-        <span>Current Percentile: <strong className="text-[var(--accent)]">{percentile.toFixed(0)}th</strong></span>
+        <span>
+          Today:{" "}
+          <strong className="text-[var(--accent)]">
+            {latestReturn !== undefined ? `${latestReturn >= 0 ? "+" : ""}${(latestReturn * 100).toFixed(2)}%` : "—"}
+          </strong>{" "}
+          ({effectiveRetPct.toFixed(0)}th percentile of daily returns)
+        </span>
       </div>
     </div>
   );

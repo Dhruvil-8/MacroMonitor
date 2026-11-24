@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "usdinr",
     "name": "USD / INR Currency Pair",
@@ -406,11 +406,11 @@
       -0.00029,
       -0.00022,
       -0.00017,
-      -9e-05,
+      -0.00009,
       -0.0,
       0.0,
       0.0,
-      7e-05,
+      0.00007,
       0.00014,
       0.00019,
       0.00024,
@@ -1919,6 +1919,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for USD / INR Currency Pair.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "latest_return": 0.0024,
+    "return_percentile": 77.5
   }
 }

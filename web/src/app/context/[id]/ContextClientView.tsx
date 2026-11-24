@@ -126,9 +126,9 @@ export function ContextClientView({ id }: { id: string }) {
           />
           <StatBlock
             id="hist-percentile"
-            name="Expanding Percentile"
+            name="Price Level Percentile"
             value={`${ctxData.percentile.toFixed(0)}th`}
-            unit="Historical Rank"
+            unit="Price Rank (ATH=100)"
             percentile={ctxData.percentile}
           />
           <StatBlock
@@ -211,6 +211,8 @@ export function ContextClientView({ id }: { id: string }) {
                   currentValue={ctxData.current_value}
                   percentile={ctxData.percentile}
                   unit={ctxData.unit}
+                  latestReturn={ctxData.latest_return}
+                  returnPercentile={ctxData.return_percentile}
                 />
               </ChartCard>
             </div>

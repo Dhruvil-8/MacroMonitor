@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "niftymetal",
     "name": "Nifty Metal Index",
@@ -403,7 +403,7 @@
       -0.00109,
       -0.0008,
       -0.00047,
-      -5e-05,
+      -0.00005,
       0.0,
       0.0,
       0.0,
@@ -1529,6 +1529,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for Nifty Metal Index.",
-    "source_note": "Attribution: NSE"
+    "source_note": "Attribution: NSE",
+    "latest_return": -0.0375,
+    "return_percentile": 2.2
   }
 }

@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "sofr",
     "name": "Secured Overnight Financing Rate",
@@ -134,10 +134,10 @@
       0.0003,
       0.00044,
       0.0006,
-      8e-05,
-      2e-05,
+      0.00008,
+      0.00002,
       0.00058,
-      9e-05,
+      0.00009,
       0.0,
       0.0,
       0.00017,
@@ -181,12 +181,12 @@
       0.00105,
       0.00103,
       0.00062,
-      5e-05,
-      3e-05,
+      0.00005,
+      0.00003,
       0.00062,
       0.00058,
       0.00075,
-      1e-05,
+      0.00001,
       0.00024,
       0.00047,
       0.0018,
@@ -1124,6 +1124,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for Secured Overnight Financing Rate.",
-    "source_note": "Attribution: FRED"
+    "source_note": "Attribution: FRED",
+    "latest_return": 1.0,
+    "return_percentile": 80.3
   }
 }

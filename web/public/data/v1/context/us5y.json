@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "us5y",
     "name": "US 5-Year Treasury Yield",
@@ -2181,13 +2181,6 @@
     ],
     "analogs": [
       {
-        "date": "2007-05-21",
-        "value": 4.71,
-        "distance": 0.0,
-        "fwd_5d": 0.0191,
-        "fwd_20d": 0.0764
-      },
-      {
         "date": "2026-10-30",
         "value": 4.71,
         "distance": 0.0,
@@ -2202,23 +2195,32 @@
         "fwd_20d": 0.0234
       },
       {
-        "date": "2006-09-12",
+        "date": "2007-05-21",
         "value": 4.71,
         "distance": 0.0,
-        "fwd_5d": -0.0042,
-        "fwd_20d": 0.0
+        "fwd_5d": 0.0191,
+        "fwd_20d": 0.0764
       },
       {
-        "date": "2001-07-26",
+        "date": "2001-08-06",
         "value": 4.71,
         "distance": 0.0,
-        "fwd_5d": -0.0042,
-        "fwd_20d": -0.0403
+        "fwd_5d": -0.0297,
+        "fwd_20d": -0.0531
+      },
+      {
+        "date": "2006-09-08",
+        "value": 4.71,
+        "distance": 0.0,
+        "fwd_5d": 0.0106,
+        "fwd_20d": -0.0149
       }
     ],
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for US 5-Year Treasury Yield.",
-    "source_note": "Attribution: FRED"
+    "source_note": "Attribution: FRED",
+    "latest_return": -15.0,
+    "return_percentile": 1.1
   }
 }

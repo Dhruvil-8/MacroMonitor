@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "audusd",
     "name": "AUD / USD Currency Pair",
@@ -407,8 +407,8 @@
       -0.00049,
       -0.00035,
       -0.00019,
-      -3e-05,
-      7e-05,
+      -0.00003,
+      0.00007,
       0.00022,
       0.00037,
       0.00048,
@@ -1839,6 +1839,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for AUD / USD Currency Pair.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "latest_return": -0.001,
+    "return_percentile": 41.0
   }
 }

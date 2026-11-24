@@ -386,7 +386,7 @@ export const DriverClientView: React.FC = () => {
                   <th className="py-1.5 px-2 text-right">Copper</th>
                   <th className="py-1.5 px-2 text-right">Gold</th>
                   <th className="py-1.5 px-2 text-right">DXY</th>
-                  <th className="py-1.5 px-2 text-right">US 10Y</th>
+                  <th className="py-1.5 px-2 text-right" title="US 10Y Yield sensitivity (decimal return per 1 bp; -0.00010 = -1.0% per 100 bps)">US 10Y (per bp)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[var(--line)]">
@@ -399,11 +399,14 @@ export const DriverClientView: React.FC = () => {
                     <td className="py-1.5 px-2 text-right">{r.drivers["copper"]?.beta.toFixed(3) ?? "—"}</td>
                     <td className="py-1.5 px-2 text-right">{r.drivers["gold"]?.beta.toFixed(3) ?? "—"}</td>
                     <td className="py-1.5 px-2 text-right">{r.drivers["dxy"]?.beta.toFixed(3) ?? "—"}</td>
-                    <td className="py-1.5 px-2 text-right">{r.drivers["us10y"]?.beta.toFixed(4) ?? "—"}</td>
+                    <td className="py-1.5 px-2 text-right font-mono" title={`${(r.drivers["us10y"]?.beta ?? 0) * 10000 >= 0 ? "+" : ""}${((r.drivers["us10y"]?.beta ?? 0) * 10000).toFixed(1)}% per 100 bps shift`}>{r.drivers["us10y"]?.beta.toFixed(4) ?? "—"}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
+            <div className="mt-2 text-[10px] text-[var(--tx-3)] font-mono">
+              * Note: Equity and commodity drivers are measured in percentage returns (%/%), while US 10Y is modeled in yield basis points (bps). A beta of -0.0001 equals -1.0% equity return per 100 bps yield change.
+            </div>
           </div>
         }
       >

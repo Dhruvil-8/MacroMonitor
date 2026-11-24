@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "us2y",
     "name": "US 2-Year Treasury Yield",
@@ -2181,25 +2181,18 @@
     ],
     "analogs": [
       {
-        "date": "2006-09-25",
+        "date": "2007-04-25",
         "value": 4.63,
         "distance": 0.0,
-        "fwd_5d": 0.0065,
-        "fwd_20d": 0.0583
+        "fwd_5d": 0.0043,
+        "fwd_20d": 0.0475
       },
       {
-        "date": "2007-04-03",
+        "date": "2001-02-22",
         "value": 4.63,
         "distance": 0.0,
-        "fwd_5d": 0.0173,
-        "fwd_20d": 0.0
-      },
-      {
-        "date": "2026-09-11",
-        "value": 4.63,
-        "distance": 0.0,
-        "fwd_5d": 0.0281,
-        "fwd_20d": 0.0367
+        "fwd_5d": -0.0475,
+        "fwd_20d": -0.0994
       },
       {
         "date": "2007-03-01",
@@ -2209,16 +2202,25 @@
         "fwd_20d": -0.0108
       },
       {
-        "date": "2001-02-22",
+        "date": "2006-09-25",
         "value": 4.63,
         "distance": 0.0,
-        "fwd_5d": -0.0475,
-        "fwd_20d": -0.0994
+        "fwd_5d": 0.0065,
+        "fwd_20d": 0.0583
+      },
+      {
+        "date": "2026-09-11",
+        "value": 4.63,
+        "distance": 0.0,
+        "fwd_5d": 0.0281,
+        "fwd_20d": 0.0367
       }
     ],
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for US 2-Year Treasury Yield.",
-    "source_note": "Attribution: FRED"
+    "source_note": "Attribution: FRED",
+    "latest_return": -13.0,
+    "return_percentile": 1.8
   }
 }

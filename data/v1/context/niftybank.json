@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "niftybank",
     "name": "Nifty Bank Index",
@@ -403,13 +403,13 @@
       -0.00092,
       -0.00065,
       -0.00032,
-      -8e-05,
+      -0.00008,
       0.0,
       0.0,
       0.0,
       0.0,
       0.0,
-      6e-05,
+      0.00006,
       0.00029,
       0.0006,
       0.0009,
@@ -1759,6 +1759,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for Nifty Bank Index.",
-    "source_note": "Attribution: NSE"
+    "source_note": "Attribution: NSE",
+    "latest_return": -0.0322,
+    "return_percentile": 2.8
   }
 }

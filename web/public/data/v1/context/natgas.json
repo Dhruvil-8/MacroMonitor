@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "natgas",
     "name": "Natural Gas Futures",
@@ -2160,13 +2160,6 @@
         "fwd_20d": 0.0815
       },
       {
-        "date": "2018-12-26",
-        "value": 3.54,
-        "distance": 0.002,
-        "fwd_5d": -0.1651,
-        "fwd_20d": -0.1589
-      },
-      {
         "date": "2018-11-08",
         "value": 3.54,
         "distance": 0.002,
@@ -2174,16 +2167,25 @@
         "fwd_20d": 0.2213
       },
       {
-        "date": "2013-10-02",
+        "date": "2018-12-26",
+        "value": 3.54,
+        "distance": 0.002,
+        "fwd_5d": -0.1651,
+        "fwd_20d": -0.1589
+      },
+      {
+        "date": "2011-11-25",
         "value": 3.54,
         "distance": 0.003,
-        "fwd_5d": 0.0387,
-        "fwd_20d": 0.022
+        "fwd_5d": 0.0119,
+        "fwd_20d": -0.1208
       }
     ],
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for Natural Gas Futures.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "latest_return": 0.1074,
+    "return_percentile": 99.2
   }
 }

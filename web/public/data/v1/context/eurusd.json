@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "eurusd",
     "name": "EUR / USD Currency Pair",
@@ -408,7 +408,7 @@
       -0.00037,
       -0.00028,
       -0.00017,
-      -8e-05,
+      -0.00008,
       0.0,
       0.00013,
       0.00024,
@@ -1984,6 +1984,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for EUR / USD Currency Pair.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "latest_return": -0.0054,
+    "return_percentile": 13.8
   }
 }

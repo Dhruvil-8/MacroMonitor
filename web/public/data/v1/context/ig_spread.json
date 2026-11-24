@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "ig_spread",
     "name": "US Investment Grade Option-Adjusted Spread",
@@ -758,18 +758,18 @@
         "fwd_20d": 0.0816
       },
       {
-        "date": "2024-09-03",
+        "date": "2024-08-15",
         "value": 0.98,
         "distance": 0.0,
-        "fwd_5d": 0.0306,
-        "fwd_20d": -0.0612
+        "fwd_5d": -0.0102,
+        "fwd_20d": 0.0102
       },
       {
-        "date": "2024-02-28",
+        "date": "2024-09-16",
         "value": 0.98,
         "distance": 0.0,
-        "fwd_5d": 0.0306,
-        "fwd_20d": -0.0408
+        "fwd_5d": -0.0612,
+        "fwd_20d": -0.1429
       },
       {
         "date": "2024-01-29",
@@ -779,16 +779,18 @@
         "fwd_20d": -0.0204
       },
       {
-        "date": "2024-07-31",
-        "value": 0.97,
-        "distance": 0.01,
-        "fwd_5d": 0.1031,
-        "fwd_20d": -0.0103
+        "date": "2024-02-28",
+        "value": 0.98,
+        "distance": 0.0,
+        "fwd_5d": 0.0306,
+        "fwd_20d": -0.0408
       }
     ],
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for US Investment Grade Option-Adjusted Spread.",
-    "source_note": "Attribution: FRED"
+    "source_note": "Attribution: FRED",
+    "latest_return": 4.0,
+    "return_percentile": 99.2
   }
 }

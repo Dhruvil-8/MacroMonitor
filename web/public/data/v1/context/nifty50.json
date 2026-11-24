@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "nifty50",
     "name": "Nifty 50 Index",
@@ -409,7 +409,7 @@
       0.0,
       0.0,
       0.0,
-      5e-05,
+      0.00005,
       0.00025,
       0.00046,
       0.00071,
@@ -1759,6 +1759,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for Nifty 50 Index.",
-    "source_note": "Attribution: NSE"
+    "source_note": "Attribution: NSE",
+    "latest_return": -0.0176,
+    "return_percentile": 5.3
   }
 }

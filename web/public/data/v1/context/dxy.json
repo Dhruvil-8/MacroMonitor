@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "dxy",
     "name": "US Dollar Index",
@@ -406,7 +406,7 @@
       -0.00036,
       -0.00026,
       -0.00013,
-      -8e-05,
+      -0.00008,
       0.0,
       0.0,
       0.0,
@@ -2181,18 +2181,18 @@
     ],
     "analogs": [
       {
-        "date": "2000-02-04",
-        "value": 104.29,
-        "distance": 0.004,
-        "fwd_5d": -0.001,
-        "fwd_20d": 0.0164
-      },
-      {
         "date": "2024-03-26",
         "value": 104.29,
         "distance": 0.004,
         "fwd_5d": 0.0051,
         "fwd_20d": 0.0134
+      },
+      {
+        "date": "2000-02-04",
+        "value": 104.29,
+        "distance": 0.004,
+        "fwd_5d": -0.001,
+        "fwd_20d": 0.0164
       },
       {
         "date": "2024-02-19",
@@ -2202,11 +2202,11 @@
         "fwd_20d": -0.0067
       },
       {
-        "date": "2024-11-01",
+        "date": "2024-10-29",
         "value": 104.28,
         "distance": 0.006,
-        "fwd_5d": 0.0069,
-        "fwd_20d": 0.014
+        "fwd_5d": -0.0082,
+        "fwd_20d": 0.0262
       },
       {
         "date": "2024-06-05",
@@ -2219,6 +2219,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for US Dollar Index.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "latest_return": -0.0003,
+    "return_percentile": 44.7
   }
 }

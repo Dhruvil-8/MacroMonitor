@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "ndx",
     "name": "Nasdaq 100 Index",
@@ -2183,35 +2183,35 @@
       {
         "date": "2026-04-16",
         "value": 24102.7,
-        "distance": 13.1406,
+        "distance": 13.1387,
         "fwd_5d": 0.0139,
         "fwd_20d": 0.1051
       },
       {
         "date": "2025-10-29",
         "value": 23958.47,
-        "distance": 131.0879,
+        "distance": 131.0898,
         "fwd_5d": -0.0191,
         "fwd_20d": -0.031
       },
       {
         "date": "2026-01-28",
         "value": 23857.45,
-        "distance": 232.1094,
+        "distance": 232.1113,
         "fwd_5d": -0.0399,
         "fwd_20d": -0.0296
       },
       {
         "date": "2026-07-29",
         "value": 24442.94,
-        "distance": 353.3809,
+        "distance": 353.3789,
         "fwd_5d": 0.0786,
         "fwd_20d": 0.069
       },
       {
         "date": "2025-12-10",
         "value": 23654.15,
-        "distance": 435.4082,
+        "distance": 435.4102,
         "fwd_5d": -0.0406,
         "fwd_20d": -0.003
       }
@@ -2219,6 +2219,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for Nasdaq 100 Index.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "latest_return": 0.063,
+    "return_percentile": 99.7
   }
 }

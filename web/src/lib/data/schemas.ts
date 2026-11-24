@@ -270,6 +270,8 @@ export const ContextDataSchema = z.object({
   peer_count: z.number(),
   description: z.string(),
   source_note: z.string(),
+  latest_return: z.number().optional(),
+  return_percentile: z.number().optional(),
 });
 
 export type ContextData = z.infer<typeof ContextDataSchema>;

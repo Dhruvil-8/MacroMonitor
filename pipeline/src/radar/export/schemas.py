@@ -263,6 +263,8 @@ class ContextData(BaseModel):
     peer_count: int
     description: str
     source_note: str
+    latest_return: Optional[float] = None
+    return_percentile: Optional[float] = None
 
 
 class ContextEnvelope(BaseEnvelope[ContextData]):

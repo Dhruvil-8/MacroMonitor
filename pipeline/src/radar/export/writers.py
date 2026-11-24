@@ -749,9 +749,13 @@ def export_all_datasets(
             for a in analogs_list
         ]
 
-        # Percentile
+        # Percentile (price level rank)
         pct_series = compute_expanding_percentile(s_val, min_obs=min(len(s_val) // 2, 60))
         last_pct = float(pct_series.iloc[-1]) if not np.isnan(pct_series.iloc[-1]) else 50.0
+
+        # Stationary daily return metrics
+        latest_ret = float(ret.iloc[-1]) if len(ret) > 0 else 0.0
+        ret_pct = float((ret <= latest_ret).mean() * 100.0) if len(ret) > 0 else 50.0
 
         # Z-score
         z_series = compute_expanding_zscore(s_val, min_obs=min(len(s_val) // 2, 30))
@@ -792,6 +796,8 @@ def export_all_datasets(
                 peer_count=10,
                 description=f"Empirical historical distribution and regime context for {name}.",
                 source_note=f"Attribution: {meta.get('source', 'open-data').upper()}",
+                latest_return=round(latest_ret, 4),
+                return_percentile=round(ret_pct, 1),
             ),
         )
 

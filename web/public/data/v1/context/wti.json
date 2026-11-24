@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "wti",
     "name": "WTI Crude Oil Futures",
@@ -2146,13 +2146,6 @@
     ],
     "analogs": [
       {
-        "date": "2024-07-22",
-        "value": 79.78,
-        "distance": 0.01,
-        "fwd_5d": -0.0498,
-        "fwd_20d": -0.0678
-      },
-      {
         "date": "2024-05-20",
         "value": 79.8,
         "distance": 0.01,
@@ -2165,6 +2158,13 @@
         "distance": 0.01,
         "fwd_5d": 0.0182,
         "fwd_20d": 0.0569
+      },
+      {
+        "date": "2024-07-22",
+        "value": 79.78,
+        "distance": 0.01,
+        "fwd_5d": -0.0498,
+        "fwd_20d": -0.0678
       },
       {
         "date": "2010-02-19",
@@ -2184,6 +2184,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for WTI Crude Oil Futures.",
-    "source_note": "Attribution: YAHOO"
+    "source_note": "Attribution: YAHOO",
+    "latest_return": -0.0048,
+    "return_percentile": 36.6
   }
 }

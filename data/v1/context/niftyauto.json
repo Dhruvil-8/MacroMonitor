@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "niftyauto",
     "name": "Nifty Auto Index",
@@ -409,7 +409,7 @@
       0.0,
       0.0,
       0.0,
-      8e-05,
+      0.00008,
       0.00035,
       0.00065,
       0.00087,
@@ -1529,6 +1529,8 @@
     "peer_rank": 1,
     "peer_count": 10,
     "description": "Empirical historical distribution and regime context for Nifty Auto Index.",
-    "source_note": "Attribution: NSE"
+    "source_note": "Attribution: NSE",
+    "latest_return": -0.0104,
+    "return_percentile": 14.8
   }
 }
