@@ -1,0 +1,10 @@
+country,fx_id,quote_type,weakening_return,strengthening_return,direction_correct
+ca,usdcad,usd_per_foreign_inv,-0.0476,0.05,True
+br,usdbrl,usd_per_foreign_inv,-0.0476,0.05,True
+gb,gbpusd,foreign_per_usd,-0.0455,0.0476,True
+de,eurusd,foreign_per_usd,-0.0455,0.0476,True
+jp,usdjpy,usd_per_foreign_inv,-0.0476,0.05,True
+cn,usdcny,usd_per_foreign_inv,-0.0476,0.05,True
+in,usdinr,usd_per_foreign_inv,-0.0476,0.05,True
+kr,usdkrw,usd_per_foreign_inv,-0.0476,0.05,True
+au,audusd,foreign_per_usd,-0.0455,0.0476,True

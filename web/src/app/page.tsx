@@ -145,7 +145,7 @@ export default function TodayPage() {
           asOf={asOf}
           sourceText="Global Equities, ICE Brent, COMEX Gold/Copper, US Treasury, FX Markets"
           headerControls={
-            <div className="flex items-center gap-1.5 bg-[var(--bg-0)] p-1 rounded border border-[var(--line)] text-xs">
+            <div className="flex flex-wrap items-center gap-1.5 bg-[var(--bg-0)] p-1 rounded border border-[var(--line)] text-xs">
               <span className="text-[11px] font-mono text-[var(--tx-2)] px-1">Target:</span>
               {[
                 { id: "featured", label: "India (Nifty)" },

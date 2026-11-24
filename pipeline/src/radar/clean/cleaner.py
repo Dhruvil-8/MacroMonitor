@@ -48,15 +48,13 @@ def filter_jumps(
 
     Points where absolute deviation from rolling median exceeds `jump_sigma * (1.4826 * MAD)`
     are flagged as outliers and replaced with NaN.
+    Uses strictly trailing rolling window (center=False) to prevent look-ahead bias.
     """
     s_clean = s.copy()
-    roll_median = s_clean.rolling(window=window, min_periods=10, center=True).median()
-    # Fallback to non-centered for the boundary edges
-    roll_median = roll_median.fillna(s_clean.rolling(window=window, min_periods=5).median())
+    roll_median = s_clean.rolling(window=window, min_periods=5, center=False).median()
 
     abs_dev = (s_clean - roll_median).abs()
-    roll_mad = abs_dev.rolling(window=window, min_periods=10, center=True).median()
-    roll_mad = roll_mad.fillna(abs_dev.rolling(window=window, min_periods=5).median())
+    roll_mad = abs_dev.rolling(window=window, min_periods=5, center=False).median()
 
     # Scale factor for normal consistency
     norm_mad = 1.4826 * roll_mad.replace(0, np.nan)
@@ -116,8 +114,12 @@ def clean_series(
     full_calendar = pd.date_range(start_date, end_date, freq=calendar_freq)
     reindexed = df_clean["value"].reindex(full_calendar)
 
-    # Jump filter
-    jump_filtered = filter_jumps(reindexed, jump_sigma=jump_sigma)
+    # Jump filter (adaptive threshold for volatility/crisis-sensitive gauges to preserve real market events)
+    effective_jump_sigma = jump_sigma
+    if series_id.lower() in {"vix", "indiavix", "move", "skew", "vvix"}:
+        effective_jump_sigma = max(jump_sigma, 20.0)
+
+    jump_filtered = filter_jumps(reindexed, jump_sigma=effective_jump_sigma)
 
     # Forward fill with limits and tracking
     filled, is_filled = apply_forward_fill(jump_filtered, max_ffill_days=max_ffill_days)

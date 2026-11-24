@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-24",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "data": {
+    "as_of": "2026-11-24",
+    "headline": "MacroMonitor Briefing: Normal Market Conditions (57.0/100)",
+    "executive_summary": "As of 2026-11-24, the Global Financial Stress Composite registered 57.0/100, reflecting normal market conditions. US Net Liquidity has expanded by $23.1B over the trailing 4-week window, while institutional cash participants in India recorded net inflows (FII: ₹1,250.4 Cr) and recorded net inflows (DII: ₹1,840.2 Cr).",
+    "stress_score": 57.0,
+    "stress_regime": "Normal Market Conditions",
+    "sections": [
+      {
+        "title": "Financial Stress & Volatility Breakdown",
+        "content": "The composite score is derived as the arithmetic mean of available cross-asset frictions: Equity: 99.2th percentile, Rates: 82.6th percentile, Fx: 20.8th percentile, Commodity: 93.7th percentile, Correlation: 58.5th percentile. No values are imputed for missing series."
+      },
+      {
+        "title": "Primary Statistical Observations",
+        "content": "• Momentum divergence between BRENT and NIFTY50\n• Unusual price move recorded in Gold\n• Realized volatility elevated across multiple horizons for Nikkei 225\n• Realized volatility elevated across multiple horizons for KOSPI"
+      },
+      {
+        "title": "Funding & Institutional Positioning",
+        "content": "Federal Reserve Net Liquidity stands at its current historical baseline with a 4-week delta of +23.1B. Total circulating USD stablecoins aggregate is $282.6B. In Indian equities, cumulative institutional absorption continues to reflect countercyclical domestic liquidity provisioning."
+      }
+    ]
+  }
+}

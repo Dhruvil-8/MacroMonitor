@@ -1,0 +1,19 @@
+metric,test_type,dataset,max_abs_err,max_rel_err,tolerance,status,notes
+Log Returns,Oracle Parity,Hand-Calculated (N=6),0.00e+00,0.00e+00,1.00e-09,PASS,
+Realized Volatility (20D),Oracle Parity,Synthetic Normal (N=500),2.22e-16,1.20e-15,1.00e-09,PASS,
+Realized Volatility (20D),Look-Ahead Truncation Invariance,Synthetic Normal (t=250),0.00e+00,0.00e+00,1.00e-09,PASS,
+Rolling Drawdown,Formula Invariants (<= 0),Hand-Calculated (N=7),4.55e-08,4.55e-08,1.00e-06,PASS,Verified <= 0 and 0 at peak
+Expanding Percentile,Oracle Parity,Synthetic Random Walk (N=1000),0.00e+00,0.00e+00,1.00e-07,PASS,
+Expanding Z-Score,Anti-Lookahead Oracle Parity,"Synthetic (N=1000, min_obs=60)",7.99e-15,1.96e-15,1.00e-07,PASS,
+Effective N (Neff),Oracle Parity,"AR(1) Simulation (phi=0.85, N=600)",4.26e-14,7.38e-16,1.00e-09,PASS,"Raw N=600, Neff=57.8"
+Trend t-statistic (60D),Oracle Parity,Synthetic Trend Window (N=60),1.42e-14,1.20e-16,1.00e-09,PASS,
+Rolling Correlation (60D),Oracle Parity,Synthetic Bivariate (N=300),7.77e-16,7.77e-16,1.00e-09,PASS,
+Net Liquidity (2024-01-03),Hand Verification,Fed H.4.1 Baseline,9.00e-03,1.45e-06,1.00e-04,PASS,"Expected 6225.8B, Got 6225.81B"
+Net Liquidity (2025-01-08),Hand Verification,Fed H.4.1 Baseline,0.00e+00,0.00e+00,1.00e-04,PASS,"Expected 6074.32B, Got 6074.32B"
+Net Liquidity (2026-11-18),Hand Verification,Fed H.4.1 Baseline,1.00e-03,1.72e-07,1.00e-04,PASS,"Expected 5824.44B, Got 5824.44B"
+Stress Composite,Zero Imputation Oracle,5 Available + 1 Missing,0.00e+00,0.00e+00,1.00e-09,PASS,Missing: ['credit']
+FX Identity,Exact Identity Verification,"Hypothetical Return (+4.5% local, -1.2% FX)",0.00e+00,0.00e+00,1.00e-12,PASS,
+Move Decomposer Residual,Exact Sum-to-Total Identity,Synthetic 4-Factor OLS (N=250),3.47e-18,3.47e-18,1.00e-12,PASS,
+Nelson-Siegel Yield Fit,Planted Parameter Recovery,10 Treasury Tenors (Planted NS),2.24e-14,4.98e-15,1.00e-07,PASS,RMSE=1.38e-15
+PCA Sign Alignment,US Loading Positive Invariant,Bivariate Normal (N=500),0.00e+00,0.00e+00,1.00e-09,PASS,US loading = 0.6181 >= 0
+Historical VaR / ES,ES >= VaR Invariant,Normal Sample (alpha=0.95),0.00e+00,0.00e+00,1.00e-09,PASS,"VaR95=1.7801, ES95=2.1448"

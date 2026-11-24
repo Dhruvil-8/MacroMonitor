@@ -1,179 +1,179 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-20",
+  "as_of": "2026-11-24",
   "code_version": "v1.0.0",
   "params_hash": "default_hash",
   "data": {
     "event_type": "fomc",
     "target_name": "S&P 500",
-    "n_events": 4,
+    "n_events": 8,
     "ribbon": [
       {
         "day": -5,
-        "mean_car": -0.532,
-        "median_car": -0.493,
-        "ci_lower_90": -1.159,
-        "ci_lower_50": -1.052,
-        "ci_upper_50": -0.008,
-        "ci_upper_90": 0.551
+        "mean_car": -0.231,
+        "median_car": 0.272,
+        "ci_lower_90": -0.819,
+        "ci_lower_50": -0.461,
+        "ci_upper_50": -0.028,
+        "ci_upper_90": 0.232
       },
       {
         "day": -4,
-        "mean_car": -0.596,
-        "median_car": -0.518,
-        "ci_lower_90": -1.525,
-        "ci_lower_50": -0.956,
-        "ci_upper_50": -0.158,
-        "ci_upper_90": 0.339
+        "mean_car": -0.127,
+        "median_car": 0.084,
+        "ci_lower_90": -0.761,
+        "ci_lower_50": -0.364,
+        "ci_upper_50": 0.106,
+        "ci_upper_90": 0.362
       },
       {
         "day": -3,
-        "mean_car": -0.617,
-        "median_car": -0.749,
-        "ci_lower_90": -1.425,
-        "ci_lower_50": -1.12,
-        "ci_upper_50": -0.195,
-        "ci_upper_90": 0.316
+        "mean_car": -0.201,
+        "median_car": 0.142,
+        "ci_lower_90": -0.829,
+        "ci_lower_50": -0.444,
+        "ci_upper_50": 0.011,
+        "ci_upper_90": 0.305
       },
       {
         "day": -2,
-        "mean_car": -0.376,
-        "median_car": -0.37,
-        "ci_lower_90": -1.039,
-        "ci_lower_50": -0.907,
-        "ci_upper_50": 0.156,
-        "ci_upper_90": 0.726
+        "mean_car": 0.149,
+        "median_car": 0.647,
+        "ci_lower_90": -0.496,
+        "ci_lower_50": -0.127,
+        "ci_upper_50": 0.389,
+        "ci_upper_90": 0.718
       },
       {
         "day": -1,
-        "mean_car": 0.231,
-        "median_car": 0.549,
-        "ci_lower_90": -0.94,
-        "ci_lower_50": -0.171,
-        "ci_upper_50": 0.682,
-        "ci_upper_90": 1.088
+        "mean_car": 0.464,
+        "median_car": 0.517,
+        "ci_lower_90": -0.193,
+        "ci_lower_50": 0.192,
+        "ci_upper_50": 0.751,
+        "ci_upper_90": 1.1
       },
       {
         "day": 0,
-        "mean_car": -0.33,
-        "median_car": -0.397,
-        "ci_lower_90": -1.415,
-        "ci_lower_50": -0.828,
-        "ci_upper_50": 0.168,
-        "ci_upper_90": 0.689
+        "mean_car": -0.289,
+        "median_car": -0.335,
+        "ci_lower_90": -0.811,
+        "ci_lower_50": -0.512,
+        "ci_upper_50": -0.059,
+        "ci_upper_90": 0.28
       },
       {
         "day": 1,
-        "mean_car": -0.003,
-        "median_car": -0.424,
-        "ci_lower_90": -1.842,
-        "ci_lower_50": -0.689,
-        "ci_upper_50": 0.683,
-        "ci_upper_90": 1.619
+        "mean_car": -0.464,
+        "median_car": -1.051,
+        "ci_lower_90": -1.263,
+        "ci_lower_50": -0.797,
+        "ci_upper_50": -0.084,
+        "ci_upper_90": 0.526
       },
       {
         "day": 2,
-        "mean_car": -0.008,
-        "median_car": -0.076,
-        "ci_lower_90": -2.092,
-        "ci_lower_50": -0.633,
-        "ci_upper_50": 0.617,
-        "ci_upper_90": 1.712
+        "mean_car": -0.535,
+        "median_car": -0.99,
+        "ci_lower_90": -1.478,
+        "ci_lower_50": -0.902,
+        "ci_upper_50": -0.103,
+        "ci_upper_90": 0.583
       },
       {
         "day": 3,
-        "mean_car": -0.19,
-        "median_car": -0.009,
-        "ci_lower_90": -2.75,
-        "ci_lower_50": -1.265,
-        "ci_upper_50": 0.886,
-        "ci_upper_90": 2.09
+        "mean_car": -0.66,
+        "median_car": -0.803,
+        "ci_lower_90": -1.893,
+        "ci_lower_50": -1.184,
+        "ci_upper_50": -0.065,
+        "ci_upper_90": 0.735
       },
       {
         "day": 4,
-        "mean_car": -0.174,
-        "median_car": -0.488,
-        "ci_lower_90": -2.752,
-        "ci_lower_50": -1.305,
-        "ci_upper_50": 0.958,
-        "ci_upper_90": 2.017
+        "mean_car": -0.724,
+        "median_car": -1.084,
+        "ci_lower_90": -1.859,
+        "ci_lower_50": -1.275,
+        "ci_upper_50": -0.177,
+        "ci_upper_90": 0.793
       },
       {
         "day": 5,
-        "mean_car": -0.458,
-        "median_car": -0.314,
-        "ci_lower_90": -3.132,
-        "ci_lower_50": -1.723,
-        "ci_upper_50": 0.806,
-        "ci_upper_90": 1.945
+        "mean_car": -0.526,
+        "median_car": -0.654,
+        "ci_lower_90": -1.75,
+        "ci_lower_50": -1.094,
+        "ci_upper_50": 0.051,
+        "ci_upper_90": 0.838
       },
       {
         "day": 6,
-        "mean_car": -0.978,
-        "median_car": -1.195,
-        "ci_lower_90": -3.178,
-        "ci_lower_50": -2.015,
-        "ci_upper_50": 0.06,
-        "ci_upper_90": 0.937
+        "mean_car": -0.986,
+        "median_car": -0.886,
+        "ci_lower_90": -2.108,
+        "ci_lower_50": -1.444,
+        "ci_upper_50": -0.496,
+        "ci_upper_90": 0.19
       },
       {
         "day": 7,
-        "mean_car": -1.292,
-        "median_car": -1.696,
-        "ci_lower_90": -3.334,
-        "ci_lower_50": -2.193,
-        "ci_upper_50": -0.392,
-        "ci_upper_90": 0.38
+        "mean_car": -0.839,
+        "median_car": -1.168,
+        "ci_lower_90": -1.939,
+        "ci_lower_50": -1.268,
+        "ci_upper_50": -0.331,
+        "ci_upper_90": 0.365
       },
       {
         "day": 8,
-        "mean_car": -1.1,
-        "median_car": -1.377,
-        "ci_lower_90": -2.942,
-        "ci_lower_50": -2.137,
-        "ci_upper_50": -0.307,
-        "ci_upper_90": 0.73
+        "mean_car": -0.747,
+        "median_car": -1.216,
+        "ci_lower_90": -1.826,
+        "ci_lower_50": -1.183,
+        "ci_upper_50": -0.232,
+        "ci_upper_90": 0.439
       },
       {
         "day": 9,
-        "mean_car": -1.274,
-        "median_car": -2.25,
-        "ci_lower_90": -3.007,
-        "ci_lower_50": -2.25,
-        "ci_upper_50": -0.298,
-        "ci_upper_90": 0.303
+        "mean_car": -1.065,
+        "median_car": -1.266,
+        "ci_lower_90": -2.112,
+        "ci_lower_50": -1.522,
+        "ci_upper_50": -0.517,
+        "ci_upper_90": 0.12
       },
       {
         "day": 10,
-        "mean_car": -1.303,
-        "median_car": -2.309,
-        "ci_lower_90": -3.471,
-        "ci_lower_50": -2.311,
-        "ci_upper_50": -0.297,
-        "ci_upper_90": 0.576
+        "mean_car": -1.078,
+        "median_car": -1.683,
+        "ci_lower_90": -2.429,
+        "ci_lower_50": -1.56,
+        "ci_upper_50": -0.419,
+        "ci_upper_90": 0.357
       }
     ],
     "by_decision": {
       "hike": {
-        "count": 0,
-        "mean_day_0_ar": 0.0,
-        "median_day_0_ar": 0.0,
-        "pct_positive": 50.0
+        "count": 4,
+        "mean_day_0_ar": -0.926,
+        "median_day_0_ar": -0.629,
+        "pct_positive": 0.0
       },
       "hold": {
         "count": 1,
-        "mean_day_0_ar": 0.399,
-        "median_day_0_ar": 0.399,
+        "mean_day_0_ar": 0.343,
+        "median_day_0_ar": 0.343,
         "pct_positive": 100.0
       },
       "cut": {
         "count": 3,
-        "mean_day_0_ar": -0.881,
-        "median_day_0_ar": -0.66,
+        "mean_day_0_ar": -0.89,
+        "median_day_0_ar": -0.69,
         "pct_positive": 0.0
       }
     },
-    "magnitude_ratio": 1.13,
+    "magnitude_ratio": 1.22,
     "events": [
       {
         "id": "fomc_2024_09_18",
@@ -181,8 +181,8 @@
         "decision": "cut",
         "rate_before": 5.5,
         "rate_after": 5.0,
-        "day_0_ar": -0.13,
-        "car_10d": -4.055,
+        "day_0_ar": -0.121,
+        "car_10d": -4.228,
         "description": "FOMC initiated policy easing with a 50 bps federal funds rate reduction."
       },
       {
@@ -191,8 +191,8 @@
         "decision": "cut",
         "rate_before": 5.0,
         "rate_after": 4.75,
-        "day_0_ar": -0.66,
-        "car_10d": 3.461,
+        "day_0_ar": -0.69,
+        "car_10d": 3.413,
         "description": "FOMC lowered federal funds target range by 25 bps to 4.50-4.75%."
       },
       {
@@ -201,8 +201,8 @@
         "decision": "cut",
         "rate_before": 4.75,
         "rate_after": 4.5,
-        "day_0_ar": -1.852,
-        "car_10d": -1.73,
+        "day_0_ar": -1.858,
+        "car_10d": -1.828,
         "description": "FOMC lowered policy rate by 25 bps to 4.25-4.50%."
       },
       {
@@ -211,11 +211,51 @@
         "decision": "hold",
         "rate_before": 5.5,
         "rate_after": 5.5,
-        "day_0_ar": 0.399,
-        "car_10d": -2.888,
+        "day_0_ar": 0.343,
+        "car_10d": -2.479,
         "description": "FOMC maintained target range at 5.25-5.50%."
+      },
+      {
+        "id": "fomc_2023_07_26",
+        "date": "2023-07-26",
+        "decision": "hike",
+        "rate_before": 5.25,
+        "rate_after": 5.5,
+        "day_0_ar": -0.471,
+        "car_10d": -1.537,
+        "description": "Final rate increase of the 2022-2023 tightening cycle (+25 bps)."
+      },
+      {
+        "id": "fomc_2023_05_03",
+        "date": "2023-05-03",
+        "decision": "hike",
+        "rate_before": 5.0,
+        "rate_after": 5.25,
+        "day_0_ar": -0.58,
+        "car_10d": 0.037,
+        "description": "FOMC raised federal funds rate by 25 bps amid banking sector stresses."
+      },
+      {
+        "id": "fomc_2023_03_22",
+        "date": "2023-03-22",
+        "decision": "hike",
+        "rate_before": 4.75,
+        "rate_after": 5.0,
+        "day_0_ar": -1.975,
+        "car_10d": 1.329,
+        "description": "FOMC raised rate by 25 bps following SVB resolution."
+      },
+      {
+        "id": "fomc_2022_12_14",
+        "date": "2022-12-14",
+        "decision": "hike",
+        "rate_before": 4.0,
+        "rate_after": 4.5,
+        "day_0_ar": -0.677,
+        "car_10d": -3.333,
+        "description": "FOMC slowed hike pace to 50 bps after four consecutive 75 bps increases."
       }
     ],
-    "interpretation": "Across 4 FOMC decisions, S&P 500 experienced an average cumulative abnormal return of -1.30% over [-5, +10] days. Day-0 absolute move was 1.1x the unconditional trading day median."
+    "interpretation": "Across 8 FOMC decisions, S&P 500 experienced an average cumulative abnormal return of -1.08% over [-5, +10] days. Day-0 absolute move was 1.2x the unconditional trading day median."
   }
 }

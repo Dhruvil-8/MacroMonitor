@@ -1,0 +1,23 @@
+{
+  "phase_g_language_scan": {
+    "violations_count": 0,
+    "violations": [],
+    "status": "PASS"
+  },
+  "phase_g_uncertainty_and_drawers": {
+    "drivers_confidence_intervals": "PASS",
+    "observations_neff_reporting": "CHECK",
+    "global_root_disclaimer": "PASS (Present in RootLayout across 100% of routes)"
+  },
+  "phase_h_security_and_compliance": {
+    "secrets_found_count": 0,
+    "secrets": [],
+    "trackers_found_count": 0,
+    "trackers": [],
+    "unlicensed_sources_count": 0,
+    "unlicensed_sources": [],
+    "dependencies_count": 19,
+    "total_sources_audited": 8,
+    "status": "PASS"
+  }
+}

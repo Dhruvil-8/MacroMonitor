@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "f1687f268479",
+  "params_hash": "default_hash",
   "data": {
     "headline": "MacroMonitor: cross-asset volatility and trend monitor",
     "risk_regime": "Orderly Macro Regime",
@@ -190,11 +190,12 @@
       {
         "id": "vix",
         "name": "Cboe Volatility Index",
-        "value": 26.62,
-        "change_1d": -25.83,
+        "value": 35.89,
+        "change_1d": 26.2,
         "unit": "index",
-        "percentile": 98.1,
+        "percentile": 94.3,
         "sparkline": [
+          18.39,
           17.52,
           16.91,
           17.2,
@@ -213,8 +214,7 @@
           25.46,
           24.56,
           28.44,
-          35.89,
-          26.62
+          35.89
         ]
       },
       {

@@ -35,6 +35,10 @@ jobs:
         run: |
           PYTHONPATH=pipeline/src python -m radar.cli all --cadence daily
 
+      - name: Continuous Publishing Guardrails Gate
+        run: |
+          PYTHONPATH=pipeline/src python pipeline/src/radar/verify/publish_gate.py
+
       - name: Auto-Commit & Push Daily Data
         run: |
           git config --global user.name "github-actions[bot]"

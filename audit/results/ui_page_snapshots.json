@@ -1,0 +1,539 @@
+[
+  {
+    "route": "/",
+    "headings": [
+      "Why did the market move?",
+      "Move Decomposer",
+      "Macro Percentile Strips — 'You Are Here'",
+      "Market State Map (Trend vs Volatility)",
+      "Volatility Landscape"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 2,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 1,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 6,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/radar",
+    "headings": [
+      "Cross-Asset Radar & Change Feed",
+      "Pre-Registered Divergence Pairs",
+      "CUSUM Change-Point Detector (Page's Two-Sided)",
+      "Standardized Z-Score Outlier Bands"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 10,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 1,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 2,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 3,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 4,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 5,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 6,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 7,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 8,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 9,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 4,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/countries",
+    "headings": [
+      "Global Equity Performance Matrix",
+      "World Equity Performance & Volatility Barometer",
+      "Cross-Country Return Matrix"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 1,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 6,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/countries/us",
+    "headings": [
+      "United States",
+      "Move Decomposer: United States",
+      "Deep Statistical Distribution & Analogs"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 1,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 4,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/countries/in",
+    "headings": [
+      "India",
+      "Move Decomposer: India",
+      "Deep Statistical Distribution & Analogs"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 1,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 4,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/sectors",
+    "headings": [
+      "Sector Dynamics & Attribution",
+      "Approximate Sector Contribution",
+      "Sector Rotation Cycle",
+      "Multi-Horizon Sector Performance Heatmap"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 2,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 1,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/drivers",
+    "headings": [
+      "Global Macro Sensitivities",
+      "Driver Sensitivity Heatmap with Stability Hatching",
+      "Forest Plot: United States (S&P 500)",
+      "Rolling Beta: United States (S&P 500) vs Brent Crude Oil",
+      "Bivariate Scatter: United States (S&P 500) vs Brent Crude Oil"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 3,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 1,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 2,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/risk",
+    "headings": [
+      "Statistical Risk Lab",
+      "Stress Composite Cross-Check & Crisis Episodes",
+      "Advanced Tail Risk & Latent Regimes (P10)",
+      "Realized Volatility Cone — S&P 500",
+      "S&P 500 Return Distribution"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 10,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 1,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 2,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 3,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 4,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 5,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 6,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 7,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 8,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 9,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 7,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/rates",
+    "headings": [
+      "US Treasury Yield Curve Lab",
+      "US Treasury Yield Curve Snapshots & Nelson-Siegel Fits"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 1,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": false
+  },
+  {
+    "route": "/positioning",
+    "headings": [
+      "Futures Positioning & Crowding (COT)",
+      "Positioning Percentile Ladder (Cross-Asset)",
+      "CFTC Commitments of Traders Positioning (Futures Only)"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 1,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": false
+  },
+  {
+    "route": "/events",
+    "headings": [
+      "Event Studies: Central Bank Decision Days",
+      "Cumulative Abnormal Return Path (CAR [-5, +10] Days)"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 1,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": false
+  },
+  {
+    "route": "/connectedness",
+    "headings": [
+      "Cross-Border Connectedness & Spillover Map",
+      "Diebold-Yilmaz Directed Spillover Matrix (% of Forecast Error Variance)"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 0,
+    "echarts": [],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": false
+  },
+  {
+    "route": "/fundamentals",
+    "headings": [
+      "Energy Fundamentals: 5-Year Seasonal Inventory Bands",
+      "US Commercial Crude Oil Stocks (ex-SPR) vs. 5-Year Seasonal Band (2021-2025 Range)"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 1,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": false
+  },
+  {
+    "route": "/liquidity",
+    "headings": [
+      "Global Liquidity & Funding Monitor",
+      "Federal Reserve Net Liquidity Decomposition & Equity Overlay"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 2,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 1,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/india",
+    "headings": [
+      "India Flows & Positioning Analytics",
+      "FII & DII Institutional Net Purchases",
+      "F&O Open Interest Buildup"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 1,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/context/spx",
+    "headings": [
+      "S&P 500 Index SPX",
+      "S&P 500 Index Return Distribution",
+      "Quantile-Quantile (QQ) Plot",
+      "S&P 500 Index Calendar Return Heatmap",
+      "Declustered Similar Historical Readings (C26)"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 2,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 1,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/context/nifty50",
+    "headings": [
+      "Nifty 50 Index NIFTY50",
+      "Nifty 50 Index Return Distribution",
+      "Quantile-Quantile (QQ) Plot",
+      "Nifty 50 Index Calendar Return Heatmap",
+      "Declustered Similar Historical Readings (C26)"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 2,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 1,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/briefing",
+    "headings": [
+      "Why did the market move?",
+      "Move Decomposer",
+      "Macro Percentile Strips — 'You Are Here'",
+      "Market State Map (Trend vs Volatility)",
+      "Volatility Landscape"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 2,
+    "echarts": [
+      {
+        "index": 0,
+        "status": "instance_not_found"
+      },
+      {
+        "index": 1,
+        "status": "instance_not_found"
+      }
+    ],
+    "requestsCount": 6,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": true
+  },
+  {
+    "route": "/track-record",
+    "headings": [
+      "Track Record & Validation (P11)",
+      "Empirical Hit Rate vs Unconditioned Base Rate by Rule",
+      "Calibration by Alert Severity Band",
+      "Rule-by-Rule Validation Ledger",
+      "Observation Rule Version Changelog"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 0,
+    "echarts": [],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": false
+  },
+  {
+    "route": "/data-health",
+    "headings": [
+      "Data Source Health & Reliability Registry",
+      "External Source Registry & Health Matrix"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 0,
+    "echarts": [],
+    "requestsCount": 3,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": false
+  },
+  {
+    "route": "/methodology",
+    "headings": [
+      "Methodology, Specifications & Traceability",
+      "1. Effective Sample Size (N_eff)",
+      "2. Expanding Empirical Percentile",
+      "3. Move Decomposer (OLS + HAC + Ridge)",
+      "4. Sector Contribution & Arithmetic Residual"
+    ],
+    "statsCount": 0,
+    "statsSample": [],
+    "echartsCount": 0,
+    "echarts": [],
+    "requestsCount": 2,
+    "consoleErrorsCount": 0,
+    "failedRequestsCount": 0,
+    "auditDrawerWorking": false
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-24",
+  "code_version": "v1.0.0",
+  "params_hash": "default_hash",
+  "lambda_diebold_li": 0.0609,
+  "current_factors": {
+    "level": 5.243,
+    "slope": -1.395,
+    "curvature": -0.112,
+    "rmse": 0.123,
+    "level_percentile": 81.2,
+    "slope_percentile": 44.0,
+    "curvature_percentile": 88.2
+  },
+  "spreads": [
+    {
+      "name": "10Y - 2Y Curve Spread",
+      "current": 0.29,
+      "chg_1m": -0.02,
+      "percentile": 27.8,
+      "inverted": false
+    },
+    {
+      "name": "10Y - 3M Near-Term Spread",
+      "current": 1.0,
+      "chg_1m": -0.08,
+      "percentile": 72.9,
+      "inverted": false
+    },
+    {
+      "name": "30Y - 5Y Ultra-Long Spread",
+      "current": 0.6,
+      "chg_1m": 0.09,
+      "percentile": 30.6,
+      "inverted": false
+    }
+  ]
+}

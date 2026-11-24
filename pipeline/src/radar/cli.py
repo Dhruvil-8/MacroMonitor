@@ -190,6 +190,15 @@ def cmd_export(args: argparse.Namespace) -> int:
         cadence=cadence,
     )
     LOGGER.info(f"Export completed. {len(manifest.manifest.datasets)} datasets written to {out_dir}")
+
+    if cadence in {"all", "weekly"}:
+        try:
+            from radar.metrics.run_analogues import run as run_analogues_batch
+            LOGGER.info("Executing Historical Analogue Engine batch runner...")
+            run_analogues_batch()
+        except Exception as e:
+            LOGGER.warning(f"Failed to run analogues batch: {e}")
+
     return 0
 
 

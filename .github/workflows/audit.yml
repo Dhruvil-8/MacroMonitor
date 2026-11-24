@@ -1,0 +1,50 @@
+name: Audit & Verification Suite
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Independent Mathematical & Data Integrity Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e pipeline/
+          pip install pytest pytest-cov
+
+      - name: 1. Run Unit & Audit Regression Tests
+        run: |
+          PYTHONPATH=pipeline/src pytest pipeline/tests/
+
+      - name: 2. Run Clean-Room Mathematical Oracles
+        run: |
+          PYTHONPATH=pipeline/src python audit/oracles/run_all_oracles.py
+
+      - name: 3. Run Canary Fault Injection Suite (100% Detection Gate)
+        run: |
+          PYTHONPATH=pipeline/src python audit/canaries/test_canary_detection.py
+
+      - name: 4. Verify Continuous Publishing Guardrails
+        run: |
+          PYTHONPATH=pipeline/src python pipeline/src/radar/verify/publish_gate.py

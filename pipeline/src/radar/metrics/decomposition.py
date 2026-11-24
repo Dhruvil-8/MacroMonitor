@@ -399,14 +399,19 @@ def compute_decomposition(
         r2_oos=r2_out_sample,
     )
 
+    rounded_total = round(total_return, 4)
+    rounded_contribs = {k: round(v, 4) for k, v in contributions.items()}
+    # Reconcile residual so the accounting identity sum(contributions) + residual == total_return holds exactly after rounding
+    rounded_residual = round(rounded_total - sum(rounded_contribs.values()), 4)
+
     return {
         "target": target_name,
         "horizon_days": horizon_days,
         "lens": lens,
-        "total_return": round(total_return, 4),
-        "contributions": {k: round(v, 4) for k, v in contributions.items()},
+        "total_return": rounded_total,
+        "contributions": rounded_contribs,
         "intervals": {k: (round(v[0], 4), round(v[1], 4)) for k, v in intervals.items()},
-        "residual": round(residual, 4),
+        "residual": rounded_residual,
         "betas": {k: round(v, 4) for k, v in betas.items()},
         "r2_in_sample": round(fit_result["r2_in_sample"], 4),
         "r2_out_sample": round(r2_out_sample, 4),

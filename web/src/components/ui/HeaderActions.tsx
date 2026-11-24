@@ -8,15 +8,15 @@ export function HeaderActions() {
   const setSearchOpen = useRadarStore((s) => s.setSearchOpen);
 
   return (
-    <div className="flex items-center space-x-2">
+    <div className="flex items-center space-x-1 sm:space-x-2">
       <button
         type="button"
         onClick={() => setSearchOpen(true)}
-        className="flex items-center space-x-1.5 px-2.5 py-1 rounded-[6px] border border-[#1d2633] bg-[#121823] text-xs text-[#8c9bb0] hover:text-[#e8edf5] cursor-pointer transition-colors"
+        className="flex items-center space-x-1 sm:space-x-1.5 px-2 sm:px-2.5 py-1 rounded-[6px] border border-[#1d2633] bg-[#121823] text-xs text-[#8c9bb0] hover:text-[#e8edf5] cursor-pointer transition-colors"
         aria-label="Search assets (Cmd+K)"
       >
         <Search className="w-3.5 h-3.5 text-[#38bdf8]" />
-        <span>Search</span>
+        <span className="hidden sm:inline">Search</span>
         <kbd className="hidden sm:inline font-mono text-[10px] bg-[#07090d] px-1.5 py-0.5 rounded border border-[#1d2633] text-[#6f7c90]">
           ⌘K
         </kbd>
@@ -26,7 +26,7 @@ export function HeaderActions() {
         href="https://github.com/Dhruvil-8/MacroMonitor"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center space-x-1 px-2.5 py-1 rounded-[6px] border border-[#1d2633] bg-[#121823] text-xs text-[#8c9bb0] hover:text-[#e8edf5] hover:border-[#38bdf8] transition-colors"
+        className="hidden sm:flex items-center space-x-1 px-2.5 py-1 rounded-[6px] border border-[#1d2633] bg-[#121823] text-xs text-[#8c9bb0] hover:text-[#e8edf5] hover:border-[#38bdf8] transition-colors"
         title="GitHub Repository"
         aria-label="GitHub Repository"
       >

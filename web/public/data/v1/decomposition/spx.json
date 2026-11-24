@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "f1687f268479",
+  "params_hash": "default_hash",
   "data": {
     "target": "United States (S&P 500)",
     "target_id": "spx",

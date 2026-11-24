@@ -44,7 +44,7 @@ export default function RootLayout({
               </nav>
 
               {/* Right Side Tools: Search Modal, Market Clock, Saved Views, Data Sync */}
-              <div className="flex items-center space-x-2 text-xs font-mono shrink-0">
+              <div className="flex items-center space-x-1 sm:space-x-2 text-xs font-mono shrink-0">
                 <Link
                   href="/market-clock"
                   className="hidden md:flex items-center space-x-1.5 px-2.5 py-1 rounded-[6px] border border-[#1d2633] bg-[#121823] text-xs font-mono text-[#8c9bb0] hover:text-[#e8edf5] hover:border-[#38bdf8] transition-colors"
@@ -78,7 +78,7 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-2">
               <span className="font-mono">MacroMonitor &bull; Macro Statistics</span>
-              <div className="flex items-center space-x-4">
+              <div className="flex flex-wrap items-center justify-center sm:justify-end gap-x-4 gap-y-2">
                 <Link href="/analogues" className="hover:text-[#a9b4c4] transition">
                   Historical Analogues
                 </Link>

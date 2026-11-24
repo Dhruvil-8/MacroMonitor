@@ -7,6 +7,7 @@
     "deploy": "wrangler pages deploy web/out --project-name=macromonitor"
   },
   "devDependencies": {
+    "playwright": "^1.65.1",
     "wrangler": "^3.90.0"
   }
 }

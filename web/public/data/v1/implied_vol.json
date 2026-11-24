@@ -2,61 +2,62 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "f1687f268479",
+  "params_hash": "default_hash",
   "data": {
-    "as_of": "2026-11-23",
+    "as_of": "2026-11-20",
     "current_state": "backwardation",
-    "slope_3m": -0.0889,
-    "slope_9d": -0.0455,
-    "slope_percentile": 3.3,
+    "slope_3m": -0.1398,
+    "slope_9d": -0.0697,
+    "slope_percentile": 0.5,
     "curve": [
       {
         "tenor": "9D",
         "days": 9,
-        "current": 27.89,
-        "one_month_ago": 19.99,
-        "one_year_median": 16.84,
+        "current": 38.58,
+        "one_month_ago": 19.52,
+        "one_year_median": 16.83,
         "p10": 14.59,
-        "p90": 24.69
+        "p90": 24.59
       },
       {
         "tenor": "30D",
         "days": 30,
-        "current": 26.62,
-        "one_month_ago": 19.45,
-        "one_year_median": 17.09,
+        "current": 35.89,
+        "one_month_ago": 19.03,
+        "one_year_median": 17.08,
         "p10": 14.9,
-        "p90": 24.02
+        "p90": 23.87
       },
       {
         "tenor": "3M",
         "days": 90,
-        "current": 24.25,
-        "one_month_ago": 18.43,
-        "one_year_median": 17.3,
+        "current": 30.87,
+        "one_month_ago": 18.11,
+        "one_year_median": 17.27,
         "p10": 15.43,
-        "p90": 22.62
+        "p90": 22.53
       },
       {
         "tenor": "6M",
         "days": 180,
-        "current": 23.24,
-        "one_month_ago": 18.0,
-        "one_year_median": 17.43,
+        "current": 28.72,
+        "one_month_ago": 17.72,
+        "one_year_median": 17.4,
         "p10": 15.67,
-        "p90": 21.96
+        "p90": 21.71
       }
     ],
     "fear_tail_indices": [
       {
         "id": "vix",
         "name": "Cboe VIX (30-Day Vol)",
-        "current": 26.62,
-        "percentile": 85.4,
-        "z_score": 0.84,
-        "chg_1w": 3.71,
-        "chg_1m": 7.17,
+        "current": 35.89,
+        "percentile": 99.2,
+        "z_score": 4.15,
+        "chg_1w": 16.59,
+        "chg_1m": 16.86,
         "sparkline": [
+          15.21,
           15.27,
           16.87,
           16.46,
@@ -85,19 +86,19 @@
           25.46,
           24.56,
           28.44,
-          35.89,
-          26.62
+          35.89
         ]
       },
       {
         "id": "vvix",
         "name": "Cboe VVIX (Vol of Vol)",
-        "current": 138.42,
-        "percentile": 85.4,
-        "z_score": 0.84,
-        "chg_1w": 19.29,
-        "chg_1m": 37.28,
+        "current": 186.63,
+        "percentile": 99.2,
+        "z_score": 4.15,
+        "chg_1w": 86.27,
+        "chg_1m": 87.67,
         "sparkline": [
+          79.09,
           79.4,
           87.72,
           85.59,
@@ -126,19 +127,19 @@
           132.39,
           127.71,
           147.89,
-          186.63,
-          138.42
+          186.63
         ]
       },
       {
         "id": "skew",
         "name": "Cboe SKEW (Tail Risk)",
-        "current": 199.65,
-        "percentile": 85.4,
-        "z_score": 0.84,
-        "chg_1w": 27.83,
-        "chg_1m": 53.78,
+        "current": 269.17,
+        "percentile": 99.2,
+        "z_score": 4.15,
+        "chg_1w": 124.43,
+        "chg_1m": 126.45,
         "sparkline": [
+          114.08,
           114.53,
           126.53,
           123.45,
@@ -167,8 +168,7 @@
           190.95,
           184.2,
           213.3,
-          269.17,
-          199.65
+          269.17
         ]
       },
       {
@@ -216,11 +216,11 @@
     "implied_vs_realized": [
       {
         "market": "US (S&P 500)",
-        "implied_vol": 26.62,
-        "realized_vol_21d": 31.34,
-        "gap": -4.72,
-        "gap_percentile": 4.1,
-        "vrp_proxy": -273.6,
+        "implied_vol": 35.89,
+        "realized_vol_21d": 25.86,
+        "gap": 10.03,
+        "gap_percentile": 92.8,
+        "vrp_proxy": 619.4,
         "vrp_label": "Trailing proxy: VIX² - σ²_21d (Labeled descriptive)"
       },
       {
@@ -235,13 +235,22 @@
     ],
     "slope_history": [
       {
+        "date": "2024-12-23",
+        "vix": 16.78,
+        "vix3m": 16.98,
+        "slope_3m": 0.0118,
+        "slope_9d": 0.0063,
+        "state": "flat",
+        "percentile": 61.0
+      },
+      {
         "date": "2024-12-24",
         "vix": 14.27,
         "vix3m": 15.15,
         "slope_3m": 0.0615,
         "slope_9d": 0.034,
         "state": "contango",
-        "percentile": 88.5
+        "percentile": 92.5
       },
       {
         "date": "2024-12-25",
@@ -250,7 +259,7 @@
         "slope_3m": 0.0599,
         "slope_9d": 0.0332,
         "state": "contango",
-        "percentile": 87.6
+        "percentile": 91.4
       },
       {
         "date": "2024-12-26",
@@ -259,7 +268,7 @@
         "slope_3m": 0.0475,
         "slope_9d": 0.0261,
         "state": "contango",
-        "percentile": 80.6
+        "percentile": 86.8
       },
       {
         "date": "2024-12-27",
@@ -268,7 +277,7 @@
         "slope_3m": 0.0215,
         "slope_9d": 0.0116,
         "state": "contango",
-        "percentile": 58.4
+        "percentile": 69.8
       },
       {
         "date": "2024-12-30",
@@ -277,7 +286,7 @@
         "slope_3m": -0.005,
         "slope_9d": -0.0027,
         "state": "flat",
-        "percentile": 35.7
+        "percentile": 42.5
       },
       {
         "date": "2024-12-31",
@@ -286,7 +295,7 @@
         "slope_3m": -0.0053,
         "slope_9d": -0.0029,
         "state": "flat",
-        "percentile": 35.5
+        "percentile": 41.5
       },
       {
         "date": "2025-01-01",
@@ -295,7 +304,7 @@
         "slope_3m": -0.0063,
         "slope_9d": -0.0034,
         "state": "flat",
-        "percentile": 34.7
+        "percentile": 40.2
       },
       {
         "date": "2025-01-02",
@@ -304,7 +313,7 @@
         "slope_3m": -0.0159,
         "slope_9d": -0.0085,
         "state": "flat",
-        "percentile": 28.6
+        "percentile": 29.4
       },
       {
         "date": "2025-01-03",
@@ -313,7 +322,7 @@
         "slope_3m": 0.0123,
         "slope_9d": 0.0066,
         "state": "flat",
-        "percentile": 49.4
+        "percentile": 61.2
       },
       {
         "date": "2025-01-06",
@@ -322,7 +331,7 @@
         "slope_3m": 0.0129,
         "slope_9d": 0.0069,
         "state": "flat",
-        "percentile": 50.1
+        "percentile": 62.1
       },
       {
         "date": "2025-01-07",
@@ -331,7 +340,7 @@
         "slope_3m": -0.0171,
         "slope_9d": -0.0091,
         "state": "flat",
-        "percentile": 27.6
+        "percentile": 26.8
       },
       {
         "date": "2025-01-08",
@@ -340,7 +349,7 @@
         "slope_3m": -0.0158,
         "slope_9d": -0.0084,
         "state": "flat",
-        "percentile": 28.7
+        "percentile": 29.7
       },
       {
         "date": "2025-01-09",
@@ -349,7 +358,7 @@
         "slope_3m": -0.0162,
         "slope_9d": -0.0086,
         "state": "flat",
-        "percentile": 28.3
+        "percentile": 28.5
       },
       {
         "date": "2025-01-10",
@@ -358,7 +367,7 @@
         "slope_3m": -0.0407,
         "slope_9d": -0.0213,
         "state": "backwardation",
-        "percentile": 14.8
+        "percentile": 13.8
       },
       {
         "date": "2025-01-13",
@@ -367,7 +376,7 @@
         "slope_3m": -0.0361,
         "slope_9d": -0.019,
         "state": "backwardation",
-        "percentile": 16.8
+        "percentile": 15.2
       },
       {
         "date": "2025-01-14",
@@ -376,7 +385,7 @@
         "slope_3m": -0.0297,
         "slope_9d": -0.0157,
         "state": "backwardation",
-        "percentile": 20.1
+        "percentile": 18.9
       },
       {
         "date": "2025-01-15",
@@ -385,7 +394,7 @@
         "slope_3m": 0.0096,
         "slope_9d": 0.0052,
         "state": "flat",
-        "percentile": 47.1
+        "percentile": 57.9
       },
       {
         "date": "2025-01-16",
@@ -394,7 +403,7 @@
         "slope_3m": 0.0005,
         "slope_9d": 0.0003,
         "state": "flat",
-        "percentile": 39.8
+        "percentile": 50.0
       },
       {
         "date": "2025-01-17",
@@ -403,7 +412,7 @@
         "slope_3m": 0.0103,
         "slope_9d": 0.0055,
         "state": "flat",
-        "percentile": 47.8
+        "percentile": 59.7
       },
       {
         "date": "2025-01-20",
@@ -412,7 +421,7 @@
         "slope_3m": 0.0092,
         "slope_9d": 0.0049,
         "state": "flat",
-        "percentile": 46.6
+        "percentile": 57.7
       },
       {
         "date": "2025-01-21",
@@ -421,7 +430,7 @@
         "slope_3m": 0.0253,
         "slope_9d": 0.0138,
         "state": "contango",
-        "percentile": 62.4
+        "percentile": 74.9
       },
       {
         "date": "2025-01-22",
@@ -430,7 +439,7 @@
         "slope_3m": 0.0229,
         "slope_9d": 0.0124,
         "state": "contango",
-        "percentile": 60.1
+        "percentile": 72.1
       },
       {
         "date": "2025-01-23",
@@ -439,7 +448,7 @@
         "slope_3m": 0.022,
         "slope_9d": 0.0119,
         "state": "contango",
-        "percentile": 59.0
+        "percentile": 71.8
       },
       {
         "date": "2025-01-24",
@@ -448,7 +457,7 @@
         "slope_3m": 0.0232,
         "slope_9d": 0.0126,
         "state": "contango",
-        "percentile": 60.4
+        "percentile": 72.7
       },
       {
         "date": "2025-01-27",
@@ -457,7 +466,7 @@
         "slope_3m": -0.0295,
         "slope_9d": -0.0156,
         "state": "backwardation",
-        "percentile": 20.1
+        "percentile": 19.0
       },
       {
         "date": "2025-01-28",
@@ -466,7 +475,7 @@
         "slope_3m": -0.0079,
         "slope_9d": -0.0042,
         "state": "flat",
-        "percentile": 33.7
+        "percentile": 39.3
       },
       {
         "date": "2025-01-29",
@@ -475,7 +484,7 @@
         "slope_3m": -0.0103,
         "slope_9d": -0.0055,
         "state": "flat",
-        "percentile": 31.9
+        "percentile": 37.7
       },
       {
         "date": "2025-01-30",
@@ -484,7 +493,7 @@
         "slope_3m": 0.0021,
         "slope_9d": 0.0011,
         "state": "flat",
-        "percentile": 41.2
+        "percentile": 51.8
       },
       {
         "date": "2025-01-31",
@@ -493,7 +502,7 @@
         "slope_3m": -0.0076,
         "slope_9d": -0.004,
         "state": "flat",
-        "percentile": 33.9
+        "percentile": 39.6
       },
       {
         "date": "2025-02-03",
@@ -502,7 +511,7 @@
         "slope_3m": -0.0387,
         "slope_9d": -0.0203,
         "state": "backwardation",
-        "percentile": 15.7
+        "percentile": 13.7
       },
       {
         "date": "2025-02-04",
@@ -511,7 +520,7 @@
         "slope_3m": -0.0182,
         "slope_9d": -0.0097,
         "state": "flat",
-        "percentile": 26.7
+        "percentile": 24.9
       },
       {
         "date": "2025-02-05",
@@ -520,7 +529,7 @@
         "slope_3m": 0.0062,
         "slope_9d": 0.0033,
         "state": "flat",
-        "percentile": 44.5
+        "percentile": 54.9
       },
       {
         "date": "2025-02-06",
@@ -529,7 +538,7 @@
         "slope_3m": 0.0115,
         "slope_9d": 0.0062,
         "state": "flat",
-        "percentile": 48.8
+        "percentile": 61.3
       },
       {
         "date": "2025-02-07",
@@ -538,7 +547,7 @@
         "slope_3m": -0.0067,
         "slope_9d": -0.0036,
         "state": "flat",
-        "percentile": 34.5
+        "percentile": 40.6
       },
       {
         "date": "2025-02-10",
@@ -547,7 +556,7 @@
         "slope_3m": 0.006,
         "slope_9d": 0.0032,
         "state": "flat",
-        "percentile": 44.3
+        "percentile": 54.7
       },
       {
         "date": "2025-02-11",
@@ -556,7 +565,7 @@
         "slope_3m": 0.0021,
         "slope_9d": 0.0011,
         "state": "flat",
-        "percentile": 41.2
+        "percentile": 51.7
       },
       {
         "date": "2025-02-12",
@@ -565,7 +574,7 @@
         "slope_3m": 0.0041,
         "slope_9d": 0.0022,
         "state": "flat",
-        "percentile": 42.8
+        "percentile": 54.0
       },
       {
         "date": "2025-02-13",
@@ -574,7 +583,7 @@
         "slope_3m": 0.0184,
         "slope_9d": 0.01,
         "state": "flat",
-        "percentile": 55.7
+        "percentile": 70.5
       },
       {
         "date": "2025-02-14",
@@ -583,7 +592,7 @@
         "slope_3m": 0.0249,
         "slope_9d": 0.0135,
         "state": "contango",
-        "percentile": 62.0
+        "percentile": 74.7
       },
       {
         "date": "2025-02-17",
@@ -592,7 +601,7 @@
         "slope_3m": 0.025,
         "slope_9d": 0.0136,
         "state": "contango",
-        "percentile": 62.1
+        "percentile": 74.8
       },
       {
         "date": "2025-02-18",
@@ -601,7 +610,7 @@
         "slope_3m": 0.0138,
         "slope_9d": 0.0075,
         "state": "flat",
-        "percentile": 51.2
+        "percentile": 64.4
       },
       {
         "date": "2025-02-19",
@@ -610,7 +619,7 @@
         "slope_3m": 0.0157,
         "slope_9d": 0.0085,
         "state": "flat",
-        "percentile": 53.2
+        "percentile": 67.9
       },
       {
         "date": "2025-02-20",
@@ -619,7 +628,7 @@
         "slope_3m": 0.0088,
         "slope_9d": 0.0047,
         "state": "flat",
-        "percentile": 46.5
+        "percentile": 56.6
       },
       {
         "date": "2025-02-21",
@@ -628,7 +637,7 @@
         "slope_3m": -0.0304,
         "slope_9d": -0.016,
         "state": "backwardation",
-        "percentile": 19.7
+        "percentile": 17.4
       },
       {
         "date": "2025-02-24",
@@ -637,7 +646,7 @@
         "slope_3m": -0.0392,
         "slope_9d": -0.0205,
         "state": "backwardation",
-        "percentile": 15.4
+        "percentile": 13.0
       },
       {
         "date": "2025-02-25",
@@ -646,7 +655,7 @@
         "slope_3m": -0.0433,
         "slope_9d": -0.0227,
         "state": "backwardation",
-        "percentile": 13.8
+        "percentile": 11.3
       },
       {
         "date": "2025-02-26",
@@ -655,7 +664,7 @@
         "slope_3m": -0.0378,
         "slope_9d": -0.0198,
         "state": "backwardation",
-        "percentile": 16.0
+        "percentile": 14.0
       },
       {
         "date": "2025-02-27",
@@ -664,7 +673,7 @@
         "slope_3m": -0.0594,
         "slope_9d": -0.0308,
         "state": "backwardation",
-        "percentile": 8.4
+        "percentile": 7.3
       },
       {
         "date": "2025-02-28",
@@ -673,7 +682,7 @@
         "slope_3m": -0.0409,
         "slope_9d": -0.0214,
         "state": "backwardation",
-        "percentile": 14.7
+        "percentile": 12.9
       },
       {
         "date": "2025-03-03",
@@ -682,7 +691,7 @@
         "slope_3m": -0.0722,
         "slope_9d": -0.0372,
         "state": "backwardation",
-        "percentile": 5.6
+        "percentile": 4.6
       },
       {
         "date": "2025-03-04",
@@ -691,7 +700,7 @@
         "slope_3m": -0.0768,
         "slope_9d": -0.0395,
         "state": "backwardation",
-        "percentile": 4.9
+        "percentile": 3.6
       },
       {
         "date": "2025-03-05",
@@ -700,7 +709,7 @@
         "slope_3m": -0.0604,
         "slope_9d": -0.0313,
         "state": "backwardation",
-        "percentile": 8.0
+        "percentile": 6.9
       },
       {
         "date": "2025-03-06",
@@ -709,7 +718,7 @@
         "slope_3m": -0.0843,
         "slope_9d": -0.0432,
         "state": "backwardation",
-        "percentile": 3.6
+        "percentile": 2.0
       },
       {
         "date": "2025-03-07",
@@ -718,7 +727,7 @@
         "slope_3m": -0.0698,
         "slope_9d": -0.0361,
         "state": "backwardation",
-        "percentile": 6.1
+        "percentile": 5.5
       },
       {
         "date": "2025-03-10",
@@ -727,7 +736,7 @@
         "slope_3m": -0.1015,
         "slope_9d": -0.0516,
         "state": "backwardation",
-        "percentile": 2.1
+        "percentile": 1.9
       },
       {
         "date": "2025-03-11",
@@ -736,7 +745,7 @@
         "slope_3m": -0.0933,
         "slope_9d": -0.0476,
         "state": "backwardation",
-        "percentile": 2.7
+        "percentile": 2.3
       },
       {
         "date": "2025-03-12",
@@ -745,7 +754,7 @@
         "slope_3m": -0.0733,
         "slope_9d": -0.0378,
         "state": "backwardation",
-        "percentile": 5.5
+        "percentile": 5.8
       },
       {
         "date": "2025-03-13",
@@ -754,7 +763,7 @@
         "slope_3m": -0.0768,
         "slope_9d": -0.0395,
         "state": "backwardation",
-        "percentile": 5.0
+        "percentile": 4.8
       },
       {
         "date": "2025-03-14",
@@ -763,7 +772,7 @@
         "slope_3m": -0.0491,
         "slope_9d": -0.0256,
         "state": "backwardation",
-        "percentile": 11.8
+        "percentile": 12.8
       },
       {
         "date": "2025-03-17",
@@ -772,7 +781,7 @@
         "slope_3m": -0.034,
         "slope_9d": -0.0179,
         "state": "backwardation",
-        "percentile": 17.9
+        "percentile": 19.1
       },
       {
         "date": "2025-03-18",
@@ -781,7 +790,7 @@
         "slope_3m": -0.0459,
         "slope_9d": -0.024,
         "state": "backwardation",
-        "percentile": 12.8
+        "percentile": 14.0
       },
       {
         "date": "2025-03-19",
@@ -790,7 +799,7 @@
         "slope_3m": -0.0234,
         "slope_9d": -0.0124,
         "state": "backwardation",
-        "percentile": 23.7
+        "percentile": 25.9
       },
       {
         "date": "2025-03-20",
@@ -799,7 +808,7 @@
         "slope_3m": -0.0209,
         "slope_9d": -0.0111,
         "state": "backwardation",
-        "percentile": 25.1
+        "percentile": 26.5
       },
       {
         "date": "2025-03-21",
@@ -808,7 +817,7 @@
         "slope_3m": -0.0131,
         "slope_9d": -0.007,
         "state": "flat",
-        "percentile": 30.5
+        "percentile": 37.1
       },
       {
         "date": "2025-03-24",
@@ -817,7 +826,7 @@
         "slope_3m": 0.0144,
         "slope_9d": 0.0078,
         "state": "flat",
-        "percentile": 51.8
+        "percentile": 67.4
       },
       {
         "date": "2025-03-25",
@@ -826,7 +835,7 @@
         "slope_3m": 0.02,
         "slope_9d": 0.0108,
         "state": "flat",
-        "percentile": 57.3
+        "percentile": 73.1
       },
       {
         "date": "2025-03-26",
@@ -835,7 +844,7 @@
         "slope_3m": 0.0009,
         "slope_9d": 0.0005,
         "state": "flat",
-        "percentile": 40.1
+        "percentile": 52.0
       },
       {
         "date": "2025-03-27",
@@ -844,7 +853,7 @@
         "slope_3m": -0.0043,
         "slope_9d": -0.0023,
         "state": "flat",
-        "percentile": 36.5
+        "percentile": 46.3
       },
       {
         "date": "2025-03-28",
@@ -853,7 +862,7 @@
         "slope_3m": -0.0408,
         "slope_9d": -0.0214,
         "state": "backwardation",
-        "percentile": 14.8
+        "percentile": 15.8
       },
       {
         "date": "2025-03-31",
@@ -862,7 +871,7 @@
         "slope_3m": -0.0463,
         "slope_9d": -0.0242,
         "state": "backwardation",
-        "percentile": 12.7
+        "percentile": 13.3
       },
       {
         "date": "2025-04-01",
@@ -871,7 +880,7 @@
         "slope_3m": -0.0399,
         "slope_9d": -0.0209,
         "state": "backwardation",
-        "percentile": 15.1
+        "percentile": 16.6
       },
       {
         "date": "2025-04-02",
@@ -880,7 +889,7 @@
         "slope_3m": -0.0362,
         "slope_9d": -0.019,
         "state": "backwardation",
-        "percentile": 16.9
+        "percentile": 18.7
       },
       {
         "date": "2025-04-03",
@@ -889,7 +898,7 @@
         "slope_3m": -0.1034,
         "slope_9d": -0.0525,
         "state": "backwardation",
-        "percentile": 2.0
+        "percentile": 1.8
       },
       {
         "date": "2025-04-04",
@@ -916,7 +925,7 @@
         "slope_3m": -0.1709,
         "slope_9d": -0.0839,
         "state": "backwardation",
-        "percentile": 0.2
+        "percentile": 0.3
       },
       {
         "date": "2025-04-09",
@@ -925,7 +934,7 @@
         "slope_3m": -0.1078,
         "slope_9d": -0.0546,
         "state": "backwardation",
-        "percentile": 1.7
+        "percentile": 2.1
       },
       {
         "date": "2025-04-10",
@@ -934,7 +943,7 @@
         "slope_3m": -0.135,
         "slope_9d": -0.0675,
         "state": "backwardation",
-        "percentile": 0.8
+        "percentile": 1.5
       },
       {
         "date": "2025-04-11",
@@ -943,7 +952,7 @@
         "slope_3m": -0.1202,
         "slope_9d": -0.0605,
         "state": "backwardation",
-        "percentile": 1.2
+        "percentile": 2.1
       },
       {
         "date": "2025-04-14",
@@ -952,7 +961,7 @@
         "slope_3m": -0.0834,
         "slope_9d": -0.0428,
         "state": "backwardation",
-        "percentile": 3.9
+        "percentile": 4.8
       },
       {
         "date": "2025-04-15",
@@ -961,7 +970,7 @@
         "slope_3m": -0.076,
         "slope_9d": -0.0391,
         "state": "backwardation",
-        "percentile": 5.1
+        "percentile": 7.2
       },
       {
         "date": "2025-04-16",
@@ -970,7 +979,7 @@
         "slope_3m": -0.0893,
         "slope_9d": -0.0456,
         "state": "backwardation",
-        "percentile": 3.2
+        "percentile": 4.5
       },
       {
         "date": "2025-04-17",
@@ -979,7 +988,7 @@
         "slope_3m": -0.0678,
         "slope_9d": -0.035,
         "state": "backwardation",
-        "percentile": 6.8
+        "percentile": 10.1
       },
       {
         "date": "2025-04-18",
@@ -988,7 +997,7 @@
         "slope_3m": -0.0654,
         "slope_9d": -0.0339,
         "state": "backwardation",
-        "percentile": 7.2
+        "percentile": 10.4
       },
       {
         "date": "2025-04-21",
@@ -997,7 +1006,7 @@
         "slope_3m": -0.0897,
         "slope_9d": -0.0458,
         "state": "backwardation",
-        "percentile": 3.2
+        "percentile": 4.4
       },
       {
         "date": "2025-04-22",
@@ -1006,7 +1015,7 @@
         "slope_3m": -0.0673,
         "slope_9d": -0.0348,
         "state": "backwardation",
-        "percentile": 6.9
+        "percentile": 10.6
       },
       {
         "date": "2025-04-23",
@@ -1015,7 +1024,7 @@
         "slope_3m": -0.0495,
         "slope_9d": -0.0258,
         "state": "backwardation",
-        "percentile": 11.8
+        "percentile": 15.8
       },
       {
         "date": "2025-04-24",
@@ -1024,7 +1033,7 @@
         "slope_3m": -0.0304,
         "slope_9d": -0.016,
         "state": "backwardation",
-        "percentile": 20.1
+        "percentile": 26.0
       },
       {
         "date": "2025-04-25",
@@ -1033,7 +1042,7 @@
         "slope_3m": -0.0124,
         "slope_9d": -0.0066,
         "state": "flat",
-        "percentile": 31.2
+        "percentile": 41.1
       },
       {
         "date": "2025-04-28",
@@ -1042,7 +1051,7 @@
         "slope_3m": -0.0145,
         "slope_9d": -0.0077,
         "state": "flat",
-        "percentile": 30.0
+        "percentile": 38.4
       },
       {
         "date": "2025-04-29",
@@ -1051,7 +1060,7 @@
         "slope_3m": -0.0024,
         "slope_9d": -0.0013,
         "state": "flat",
-        "percentile": 38.1
+        "percentile": 51.3
       },
       {
         "date": "2025-04-30",
@@ -1060,7 +1069,7 @@
         "slope_3m": -0.0067,
         "slope_9d": -0.0036,
         "state": "flat",
-        "percentile": 34.8
+        "percentile": 46.5
       },
       {
         "date": "2025-05-01",
@@ -1069,7 +1078,7 @@
         "slope_3m": -0.0038,
         "slope_9d": -0.002,
         "state": "flat",
-        "percentile": 37.1
+        "percentile": 50.1
       },
       {
         "date": "2025-05-02",
@@ -1078,7 +1087,7 @@
         "slope_3m": 0.0208,
         "slope_9d": 0.0113,
         "state": "contango",
-        "percentile": 58.2
+        "percentile": 75.6
       },
       {
         "date": "2025-05-05",
@@ -1087,7 +1096,7 @@
         "slope_3m": 0.0102,
         "slope_9d": 0.0055,
         "state": "flat",
-        "percentile": 48.1
+        "percentile": 64.2
       },
       {
         "date": "2025-05-06",
@@ -1096,7 +1105,7 @@
         "slope_3m": -0.0013,
         "slope_9d": -0.0007,
         "state": "flat",
-        "percentile": 38.7
+        "percentile": 52.6
       },
       {
         "date": "2025-05-07",
@@ -1105,7 +1114,7 @@
         "slope_3m": 0.0145,
         "slope_9d": 0.0078,
         "state": "flat",
-        "percentile": 52.2
+        "percentile": 69.8
       },
       {
         "date": "2025-05-08",
@@ -1114,7 +1123,7 @@
         "slope_3m": 0.0301,
         "slope_9d": 0.0164,
         "state": "contango",
-        "percentile": 67.0
+        "percentile": 81.8
       },
       {
         "date": "2025-05-09",
@@ -1123,7 +1132,7 @@
         "slope_3m": 0.0398,
         "slope_9d": 0.0218,
         "state": "contango",
-        "percentile": 75.4
+        "percentile": 87.8
       },
       {
         "date": "2025-05-12",
@@ -1132,7 +1141,7 @@
         "slope_3m": 0.1018,
         "slope_9d": 0.0577,
         "state": "contango",
-        "percentile": 98.1
+        "percentile": 100.0
       },
       {
         "date": "2025-05-13",
@@ -1141,7 +1150,7 @@
         "slope_3m": 0.106,
         "slope_9d": 0.0602,
         "state": "contango",
-        "percentile": 98.5
+        "percentile": 100.0
       },
       {
         "date": "2025-05-14",
@@ -1150,7 +1159,7 @@
         "slope_3m": 0.0986,
         "slope_9d": 0.0558,
         "state": "contango",
-        "percentile": 97.8
+        "percentile": 99.2
       },
       {
         "date": "2025-05-15",
@@ -1159,7 +1168,7 @@
         "slope_3m": 0.1159,
         "slope_9d": 0.0662,
         "state": "contango",
-        "percentile": 99.0
+        "percentile": 100.0
       },
       {
         "date": "2025-05-16",
@@ -1168,7 +1177,7 @@
         "slope_3m": 0.1292,
         "slope_9d": 0.0744,
         "state": "contango",
-        "percentile": 99.5
+        "percentile": 100.0
       },
       {
         "date": "2025-05-19",
@@ -1177,7 +1186,7 @@
         "slope_3m": 0.1087,
         "slope_9d": 0.0618,
         "state": "contango",
-        "percentile": 98.7
+        "percentile": 99.4
       },
       {
         "date": "2025-05-20",
@@ -1186,7 +1195,7 @@
         "slope_3m": 0.1094,
         "slope_9d": 0.0623,
         "state": "contango",
-        "percentile": 98.7
+        "percentile": 99.4
       },
       {
         "date": "2025-05-21",
@@ -1195,7 +1204,7 @@
         "slope_3m": 0.058,
         "slope_9d": 0.032,
         "state": "contango",
-        "percentile": 86.7
+        "percentile": 91.1
       },
       {
         "date": "2025-05-22",
@@ -1204,7 +1213,7 @@
         "slope_3m": 0.0676,
         "slope_9d": 0.0376,
         "state": "contango",
-        "percentile": 91.2
+        "percentile": 94.2
       },
       {
         "date": "2025-05-23",
@@ -1213,7 +1222,7 @@
         "slope_3m": 0.0368,
         "slope_9d": 0.0201,
         "state": "contango",
-        "percentile": 72.9
+        "percentile": 84.0
       },
       {
         "date": "2025-05-26",
@@ -1222,7 +1231,7 @@
         "slope_3m": 0.0367,
         "slope_9d": 0.0201,
         "state": "contango",
-        "percentile": 72.8
+        "percentile": 83.5
       },
       {
         "date": "2025-05-27",
@@ -1231,7 +1240,7 @@
         "slope_3m": 0.0912,
         "slope_9d": 0.0514,
         "state": "contango",
-        "percentile": 97.0
+        "percentile": 97.8
       },
       {
         "date": "2025-05-28",
@@ -1240,7 +1249,7 @@
         "slope_3m": 0.0838,
         "slope_9d": 0.047,
         "state": "contango",
-        "percentile": 95.6
+        "percentile": 96.2
       },
       {
         "date": "2025-05-29",
@@ -1249,7 +1258,7 @@
         "slope_3m": 0.0849,
         "slope_9d": 0.0477,
         "state": "contango",
-        "percentile": 95.8
+        "percentile": 96.5
       },
       {
         "date": "2025-05-30",
@@ -1258,7 +1267,7 @@
         "slope_3m": 0.0957,
         "slope_9d": 0.054,
         "state": "contango",
-        "percentile": 97.4
+        "percentile": 97.8
       },
       {
         "date": "2025-06-02",
@@ -1267,7 +1276,7 @@
         "slope_3m": 0.0976,
         "slope_9d": 0.0552,
         "state": "contango",
-        "percentile": 97.6
+        "percentile": 97.8
       },
       {
         "date": "2025-06-03",
@@ -1276,7 +1285,7 @@
         "slope_3m": 0.1095,
         "slope_9d": 0.0623,
         "state": "contango",
-        "percentile": 98.7
+        "percentile": 99.5
       },
       {
         "date": "2025-06-04",
@@ -1285,7 +1294,7 @@
         "slope_3m": 0.1095,
         "slope_9d": 0.0623,
         "state": "contango",
-        "percentile": 98.7
+        "percentile": 99.5
       },
       {
         "date": "2025-06-05",
@@ -1294,7 +1303,7 @@
         "slope_3m": 0.0896,
         "slope_9d": 0.0504,
         "state": "contango",
-        "percentile": 96.5
+        "percentile": 96.0
       },
       {
         "date": "2025-06-06",
@@ -1303,7 +1312,7 @@
         "slope_3m": 0.1259,
         "slope_9d": 0.0723,
         "state": "contango",
-        "percentile": 99.3
+        "percentile": 99.7
       },
       {
         "date": "2025-06-09",
@@ -1312,7 +1321,7 @@
         "slope_3m": 0.1157,
         "slope_9d": 0.0661,
         "state": "contango",
-        "percentile": 98.9
+        "percentile": 99.2
       },
       {
         "date": "2025-06-10",
@@ -1321,7 +1330,7 @@
         "slope_3m": 0.1193,
         "slope_9d": 0.0683,
         "state": "contango",
-        "percentile": 99.1
+        "percentile": 99.5
       },
       {
         "date": "2025-06-11",
@@ -1339,7 +1348,7 @@
         "slope_3m": 0.0945,
         "slope_9d": 0.0533,
         "state": "contango",
-        "percentile": 97.2
+        "percentile": 95.8
       },
       {
         "date": "2025-06-13",
@@ -1348,7 +1357,7 @@
         "slope_3m": 0.0445,
         "slope_9d": 0.0244,
         "state": "contango",
-        "percentile": 78.5
+        "percentile": 83.9
       },
       {
         "date": "2025-06-16",
@@ -1357,7 +1366,7 @@
         "slope_3m": 0.0739,
         "slope_9d": 0.0412,
         "state": "contango",
-        "percentile": 93.3
+        "percentile": 91.6
       },
       {
         "date": "2025-06-17",
@@ -1366,7 +1375,7 @@
         "slope_3m": 0.0341,
         "slope_9d": 0.0186,
         "state": "contango",
-        "percentile": 70.3
+        "percentile": 78.2
       },
       {
         "date": "2025-06-18",
@@ -1375,7 +1384,7 @@
         "slope_3m": 0.0572,
         "slope_9d": 0.0316,
         "state": "contango",
-        "percentile": 86.1
+        "percentile": 86.9
       },
       {
         "date": "2025-06-19",
@@ -1384,7 +1393,7 @@
         "slope_3m": 0.0576,
         "slope_9d": 0.0318,
         "state": "contango",
-        "percentile": 86.3
+        "percentile": 87.2
       },
       {
         "date": "2025-06-20",
@@ -1393,7 +1402,7 @@
         "slope_3m": 0.0495,
         "slope_9d": 0.0272,
         "state": "contango",
-        "percentile": 81.8
+        "percentile": 85.6
       },
       {
         "date": "2025-06-23",
@@ -1402,7 +1411,7 @@
         "slope_3m": 0.062,
         "slope_9d": 0.0344,
         "state": "contango",
-        "percentile": 88.7
+        "percentile": 89.3
       },
       {
         "date": "2025-06-24",
@@ -1411,7 +1420,7 @@
         "slope_3m": 0.1069,
         "slope_9d": 0.0607,
         "state": "contango",
-        "percentile": 98.5
+        "percentile": 97.4
       },
       {
         "date": "2025-06-25",
@@ -1420,7 +1429,7 @@
         "slope_3m": 0.1222,
         "slope_9d": 0.07,
         "state": "contango",
-        "percentile": 99.2
+        "percentile": 99.5
       },
       {
         "date": "2025-06-26",
@@ -1429,7 +1438,7 @@
         "slope_3m": 0.1225,
         "slope_9d": 0.0702,
         "state": "contango",
-        "percentile": 99.2
+        "percentile": 99.5
       },
       {
         "date": "2025-06-27",
@@ -1438,7 +1447,7 @@
         "slope_3m": 0.1209,
         "slope_9d": 0.0692,
         "state": "contango",
-        "percentile": 99.2
+        "percentile": 99.0
       },
       {
         "date": "2025-06-30",
@@ -1447,7 +1456,7 @@
         "slope_3m": 0.1026,
         "slope_9d": 0.0582,
         "state": "contango",
-        "percentile": 98.0
+        "percentile": 96.1
       },
       {
         "date": "2025-07-01",
@@ -1456,7 +1465,7 @@
         "slope_3m": 0.0905,
         "slope_9d": 0.051,
         "state": "contango",
-        "percentile": 96.6
+        "percentile": 93.8
       },
       {
         "date": "2025-07-02",
@@ -1465,7 +1474,7 @@
         "slope_3m": 0.09,
         "slope_9d": 0.0506,
         "state": "contango",
-        "percentile": 96.4
+        "percentile": 93.4
       },
       {
         "date": "2025-07-03",
@@ -1474,7 +1483,7 @@
         "slope_3m": 0.0889,
         "slope_9d": 0.05,
         "state": "contango",
-        "percentile": 96.2
+        "percentile": 92.9
       },
       {
         "date": "2025-07-04",
@@ -1483,7 +1492,7 @@
         "slope_3m": 0.0829,
         "slope_9d": 0.0465,
         "state": "contango",
-        "percentile": 95.1
+        "percentile": 91.3
       },
       {
         "date": "2025-07-07",
@@ -1492,7 +1501,7 @@
         "slope_3m": 0.0507,
         "slope_9d": 0.0279,
         "state": "contango",
-        "percentile": 82.4
+        "percentile": 83.5
       },
       {
         "date": "2025-07-08",
@@ -1501,7 +1510,7 @@
         "slope_3m": 0.0663,
         "slope_9d": 0.0368,
         "state": "contango",
-        "percentile": 90.3
+        "percentile": 88.4
       },
       {
         "date": "2025-07-09",
@@ -1510,7 +1519,7 @@
         "slope_3m": 0.0803,
         "slope_9d": 0.0449,
         "state": "contango",
-        "percentile": 94.5
+        "percentile": 90.7
       },
       {
         "date": "2025-07-10",
@@ -1519,7 +1528,7 @@
         "slope_3m": 0.0798,
         "slope_9d": 0.0447,
         "state": "contango",
-        "percentile": 94.5
+        "percentile": 90.4
       },
       {
         "date": "2025-07-11",
@@ -1528,7 +1537,7 @@
         "slope_3m": 0.0624,
         "slope_9d": 0.0346,
         "state": "contango",
-        "percentile": 88.8
+        "percentile": 86.9
       },
       {
         "date": "2025-07-14",
@@ -1537,7 +1546,7 @@
         "slope_3m": 0.042,
         "slope_9d": 0.023,
         "state": "contango",
-        "percentile": 76.5
+        "percentile": 79.4
       },
       {
         "date": "2025-07-15",
@@ -1546,7 +1555,7 @@
         "slope_3m": 0.0351,
         "slope_9d": 0.0192,
         "state": "contango",
-        "percentile": 71.0
+        "percentile": 75.0
       },
       {
         "date": "2025-07-16",
@@ -1555,7 +1564,7 @@
         "slope_3m": 0.0361,
         "slope_9d": 0.0197,
         "state": "contango",
-        "percentile": 71.9
+        "percentile": 75.6
       },
       {
         "date": "2025-07-17",
@@ -1564,7 +1573,7 @@
         "slope_3m": 0.0455,
         "slope_9d": 0.025,
         "state": "contango",
-        "percentile": 79.1
+        "percentile": 80.3
       },
       {
         "date": "2025-07-18",
@@ -1573,7 +1582,7 @@
         "slope_3m": 0.0453,
         "slope_9d": 0.0249,
         "state": "contango",
-        "percentile": 79.0
+        "percentile": 80.1
       },
       {
         "date": "2025-07-21",
@@ -1582,7 +1591,7 @@
         "slope_3m": 0.0382,
         "slope_9d": 0.0209,
         "state": "contango",
-        "percentile": 73.7
+        "percentile": 77.7
       },
       {
         "date": "2025-07-22",
@@ -1591,7 +1600,7 @@
         "slope_3m": 0.039,
         "slope_9d": 0.0213,
         "state": "contango",
-        "percentile": 74.4
+        "percentile": 77.8
       },
       {
         "date": "2025-07-23",
@@ -1600,7 +1609,7 @@
         "slope_3m": 0.0596,
         "slope_9d": 0.033,
         "state": "contango",
-        "percentile": 87.2
+        "percentile": 85.5
       },
       {
         "date": "2025-07-24",
@@ -1609,7 +1618,7 @@
         "slope_3m": 0.0564,
         "slope_9d": 0.0311,
         "state": "contango",
-        "percentile": 85.4
+        "percentile": 83.5
       },
       {
         "date": "2025-07-25",
@@ -1618,7 +1627,7 @@
         "slope_3m": 0.0643,
         "slope_9d": 0.0357,
         "state": "contango",
-        "percentile": 89.5
+        "percentile": 87.7
       },
       {
         "date": "2025-07-28",
@@ -1627,7 +1636,7 @@
         "slope_3m": 0.0593,
         "slope_9d": 0.0328,
         "state": "contango",
-        "percentile": 87.1
+        "percentile": 85.1
       },
       {
         "date": "2025-07-29",
@@ -1636,7 +1645,7 @@
         "slope_3m": 0.0366,
         "slope_9d": 0.02,
         "state": "contango",
-        "percentile": 72.3
+        "percentile": 74.9
       },
       {
         "date": "2025-07-30",
@@ -1645,7 +1654,7 @@
         "slope_3m": 0.0444,
         "slope_9d": 0.0244,
         "state": "contango",
-        "percentile": 78.2
+        "percentile": 78.8
       },
       {
         "date": "2025-07-31",
@@ -1654,7 +1663,7 @@
         "slope_3m": 0.0187,
         "slope_9d": 0.0101,
         "state": "flat",
-        "percentile": 55.9
+        "percentile": 63.8
       },
       {
         "date": "2025-08-01",
@@ -1663,7 +1672,7 @@
         "slope_3m": -0.0353,
         "slope_9d": -0.0185,
         "state": "backwardation",
-        "percentile": 17.4
+        "percentile": 19.4
       },
       {
         "date": "2025-08-04",
@@ -1672,7 +1681,7 @@
         "slope_3m": 0.0044,
         "slope_9d": 0.0024,
         "state": "flat",
-        "percentile": 43.0
+        "percentile": 50.2
       },
       {
         "date": "2025-08-05",
@@ -1681,7 +1690,7 @@
         "slope_3m": -0.0009,
         "slope_9d": -0.0005,
         "state": "flat",
-        "percentile": 38.7
+        "percentile": 44.8
       },
       {
         "date": "2025-08-06",
@@ -1690,7 +1699,7 @@
         "slope_3m": 0.0166,
         "slope_9d": 0.0089,
         "state": "flat",
-        "percentile": 53.9
+        "percentile": 62.0
       },
       {
         "date": "2025-08-07",
@@ -1699,7 +1708,7 @@
         "slope_3m": 0.0198,
         "slope_9d": 0.0107,
         "state": "flat",
-        "percentile": 56.7
+        "percentile": 64.5
       },
       {
         "date": "2025-08-08",
@@ -1708,7 +1717,7 @@
         "slope_3m": 0.0472,
         "slope_9d": 0.026,
         "state": "contango",
-        "percentile": 80.1
+        "percentile": 80.6
       },
       {
         "date": "2025-08-11",
@@ -1717,7 +1726,7 @@
         "slope_3m": 0.0245,
         "slope_9d": 0.0133,
         "state": "contango",
-        "percentile": 61.4
+        "percentile": 67.3
       },
       {
         "date": "2025-08-12",
@@ -1726,7 +1735,7 @@
         "slope_3m": 0.0549,
         "slope_9d": 0.0303,
         "state": "contango",
-        "percentile": 84.8
+        "percentile": 83.1
       },
       {
         "date": "2025-08-13",
@@ -1735,7 +1744,7 @@
         "slope_3m": 0.0584,
         "slope_9d": 0.0323,
         "state": "contango",
-        "percentile": 86.6
+        "percentile": 85.0
       },
       {
         "date": "2025-08-14",
@@ -1744,7 +1753,7 @@
         "slope_3m": 0.0489,
         "slope_9d": 0.0269,
         "state": "contango",
-        "percentile": 81.2
+        "percentile": 81.8
       },
       {
         "date": "2025-08-15",
@@ -1753,7 +1762,7 @@
         "slope_3m": 0.041,
         "slope_9d": 0.0225,
         "state": "contango",
-        "percentile": 75.7
+        "percentile": 77.8
       },
       {
         "date": "2025-08-18",
@@ -1762,7 +1771,7 @@
         "slope_3m": 0.0409,
         "slope_9d": 0.0224,
         "state": "contango",
-        "percentile": 75.6
+        "percentile": 77.4
       },
       {
         "date": "2025-08-19",
@@ -1771,7 +1780,7 @@
         "slope_3m": 0.0279,
         "slope_9d": 0.0152,
         "state": "contango",
-        "percentile": 64.6
+        "percentile": 68.9
       },
       {
         "date": "2025-08-20",
@@ -1780,7 +1789,7 @@
         "slope_3m": 0.0245,
         "slope_9d": 0.0133,
         "state": "contango",
-        "percentile": 61.3
+        "percentile": 66.2
       },
       {
         "date": "2025-08-21",
@@ -1789,7 +1798,7 @@
         "slope_3m": 0.0071,
         "slope_9d": 0.0038,
         "state": "flat",
-        "percentile": 45.1
+        "percentile": 50.8
       },
       {
         "date": "2025-08-22",
@@ -1798,7 +1807,7 @@
         "slope_3m": 0.0537,
         "slope_9d": 0.0296,
         "state": "contango",
-        "percentile": 84.2
+        "percentile": 82.7
       },
       {
         "date": "2025-08-25",
@@ -1807,7 +1816,7 @@
         "slope_3m": 0.0397,
         "slope_9d": 0.0217,
         "state": "contango",
-        "percentile": 74.7
+        "percentile": 76.5
       },
       {
         "date": "2025-08-26",
@@ -1816,7 +1825,7 @@
         "slope_3m": 0.0424,
         "slope_9d": 0.0233,
         "state": "contango",
-        "percentile": 76.8
+        "percentile": 78.1
       },
       {
         "date": "2025-08-27",
@@ -1825,7 +1834,7 @@
         "slope_3m": 0.0366,
         "slope_9d": 0.02,
         "state": "contango",
-        "percentile": 72.2
+        "percentile": 73.5
       },
       {
         "date": "2025-08-28",
@@ -1834,7 +1843,7 @@
         "slope_3m": 0.0445,
         "slope_9d": 0.0244,
         "state": "contango",
-        "percentile": 78.3
+        "percentile": 78.9
       },
       {
         "date": "2025-08-29",
@@ -1843,7 +1852,7 @@
         "slope_3m": 0.0244,
         "slope_9d": 0.0133,
         "state": "contango",
-        "percentile": 61.2
+        "percentile": 65.4
       },
       {
         "date": "2025-09-01",
@@ -1852,7 +1861,7 @@
         "slope_3m": 0.0239,
         "slope_9d": 0.013,
         "state": "contango",
-        "percentile": 60.7
+        "percentile": 65.2
       },
       {
         "date": "2025-09-02",
@@ -1861,7 +1870,7 @@
         "slope_3m": -0.0081,
         "slope_9d": -0.0043,
         "state": "flat",
-        "percentile": 33.4
+        "percentile": 36.1
       },
       {
         "date": "2025-09-03",
@@ -1870,7 +1879,7 @@
         "slope_3m": 0.0053,
         "slope_9d": 0.0028,
         "state": "flat",
-        "percentile": 43.5
+        "percentile": 48.6
       },
       {
         "date": "2025-09-04",
@@ -1879,7 +1888,7 @@
         "slope_3m": 0.024,
         "slope_9d": 0.013,
         "state": "contango",
-        "percentile": 60.9
+        "percentile": 65.4
       },
       {
         "date": "2025-09-05",
@@ -1888,7 +1897,7 @@
         "slope_3m": 0.0247,
         "slope_9d": 0.0134,
         "state": "contango",
-        "percentile": 61.6
+        "percentile": 66.2
       },
       {
         "date": "2025-09-08",
@@ -1897,7 +1906,7 @@
         "slope_3m": 0.0249,
         "slope_9d": 0.0135,
         "state": "contango",
-        "percentile": 61.7
+        "percentile": 66.3
       },
       {
         "date": "2025-09-09",
@@ -1906,7 +1915,7 @@
         "slope_3m": 0.0242,
         "slope_9d": 0.0132,
         "state": "contango",
-        "percentile": 61.0
+        "percentile": 65.2
       },
       {
         "date": "2025-09-10",
@@ -1915,7 +1924,7 @@
         "slope_3m": 0.0166,
         "slope_9d": 0.009,
         "state": "flat",
-        "percentile": 53.8
+        "percentile": 59.4
       },
       {
         "date": "2025-09-11",
@@ -1924,7 +1933,7 @@
         "slope_3m": 0.0278,
         "slope_9d": 0.0151,
         "state": "contango",
-        "percentile": 64.6
+        "percentile": 68.8
       },
       {
         "date": "2025-09-12",
@@ -1933,7 +1942,7 @@
         "slope_3m": 0.0249,
         "slope_9d": 0.0135,
         "state": "contango",
-        "percentile": 61.7
+        "percentile": 66.6
       },
       {
         "date": "2025-09-15",
@@ -1942,7 +1951,7 @@
         "slope_3m": 0.0056,
         "slope_9d": 0.003,
         "state": "flat",
-        "percentile": 43.8
+        "percentile": 48.2
       },
       {
         "date": "2025-09-16",
@@ -1951,7 +1960,7 @@
         "slope_3m": -0.0064,
         "slope_9d": -0.0034,
         "state": "flat",
-        "percentile": 34.6
+        "percentile": 37.1
       },
       {
         "date": "2025-09-17",
@@ -1960,7 +1969,7 @@
         "slope_3m": 0.0044,
         "slope_9d": 0.0024,
         "state": "flat",
-        "percentile": 42.9
+        "percentile": 47.3
       },
       {
         "date": "2025-09-18",
@@ -1969,7 +1978,7 @@
         "slope_3m": 0.0045,
         "slope_9d": 0.0024,
         "state": "flat",
-        "percentile": 42.9
+        "percentile": 47.7
       },
       {
         "date": "2025-09-19",
@@ -1978,7 +1987,7 @@
         "slope_3m": 0.0089,
         "slope_9d": 0.0048,
         "state": "flat",
-        "percentile": 46.3
+        "percentile": 50.9
       },
       {
         "date": "2025-09-22",
@@ -1987,7 +1996,7 @@
         "slope_3m": -0.003,
         "slope_9d": -0.0016,
         "state": "flat",
-        "percentile": 37.1
+        "percentile": 40.1
       },
       {
         "date": "2025-09-23",
@@ -1996,7 +2005,7 @@
         "slope_3m": -0.012,
         "slope_9d": -0.0064,
         "state": "flat",
-        "percentile": 30.9
+        "percentile": 32.0
       },
       {
         "date": "2025-09-24",
@@ -2005,7 +2014,7 @@
         "slope_3m": -0.0045,
         "slope_9d": -0.0024,
         "state": "flat",
-        "percentile": 36.0
+        "percentile": 39.0
       },
       {
         "date": "2025-09-25",
@@ -2014,7 +2023,7 @@
         "slope_3m": -0.0136,
         "slope_9d": -0.0073,
         "state": "flat",
-        "percentile": 29.9
+        "percentile": 30.3
       },
       {
         "date": "2025-09-26",
@@ -2023,7 +2032,7 @@
         "slope_3m": 0.0113,
         "slope_9d": 0.0061,
         "state": "flat",
-        "percentile": 48.4
+        "percentile": 53.9
       },
       {
         "date": "2025-09-29",
@@ -2032,7 +2041,7 @@
         "slope_3m": -0.0042,
         "slope_9d": -0.0022,
         "state": "flat",
-        "percentile": 36.3
+        "percentile": 39.4
       },
       {
         "date": "2025-09-30",
@@ -2041,7 +2050,7 @@
         "slope_3m": -0.0071,
         "slope_9d": -0.0038,
         "state": "flat",
-        "percentile": 34.1
+        "percentile": 35.8
       },
       {
         "date": "2025-10-01",
@@ -2050,7 +2059,7 @@
         "slope_3m": -0.0071,
         "slope_9d": -0.0038,
         "state": "flat",
-        "percentile": 34.1
+        "percentile": 35.7
       },
       {
         "date": "2025-10-02",
@@ -2059,7 +2068,7 @@
         "slope_3m": -0.0125,
         "slope_9d": -0.0066,
         "state": "flat",
-        "percentile": 30.7
+        "percentile": 31.5
       },
       {
         "date": "2025-10-03",
@@ -2068,7 +2077,7 @@
         "slope_3m": -0.0127,
         "slope_9d": -0.0068,
         "state": "flat",
-        "percentile": 30.5
+        "percentile": 31.0
       },
       {
         "date": "2025-10-06",
@@ -2077,7 +2086,7 @@
         "slope_3m": -0.0084,
         "slope_9d": -0.0045,
         "state": "flat",
-        "percentile": 33.1
+        "percentile": 34.9
       },
       {
         "date": "2025-10-07",
@@ -2086,7 +2095,7 @@
         "slope_3m": -0.0221,
         "slope_9d": -0.0117,
         "state": "backwardation",
-        "percentile": 24.2
+        "percentile": 22.8
       },
       {
         "date": "2025-10-08",
@@ -2095,7 +2104,7 @@
         "slope_3m": -0.0075,
         "slope_9d": -0.004,
         "state": "flat",
-        "percentile": 33.8
+        "percentile": 36.0
       },
       {
         "date": "2025-10-09",
@@ -2104,7 +2113,7 @@
         "slope_3m": -0.0097,
         "slope_9d": -0.0052,
         "state": "flat",
-        "percentile": 32.2
+        "percentile": 34.4
       },
       {
         "date": "2025-10-10",
@@ -2113,7 +2122,7 @@
         "slope_3m": -0.0738,
         "slope_9d": -0.038,
         "state": "backwardation",
-        "percentile": 5.4
+        "percentile": 6.5
       },
       {
         "date": "2025-10-13",
@@ -2122,7 +2131,7 @@
         "slope_3m": -0.0447,
         "slope_9d": -0.0234,
         "state": "backwardation",
-        "percentile": 13.2
+        "percentile": 13.4
       },
       {
         "date": "2025-10-14",
@@ -2131,7 +2140,7 @@
         "slope_3m": -0.0639,
         "slope_9d": -0.0331,
         "state": "backwardation",
-        "percentile": 7.4
+        "percentile": 8.6
       },
       {
         "date": "2025-10-15",
@@ -2140,7 +2149,7 @@
         "slope_3m": -0.0609,
         "slope_9d": -0.0316,
         "state": "backwardation",
-        "percentile": 8.1
+        "percentile": 9.2
       },
       {
         "date": "2025-10-16",
@@ -2149,7 +2158,7 @@
         "slope_3m": -0.0995,
         "slope_9d": -0.0506,
         "state": "backwardation",
-        "percentile": 2.3
+        "percentile": 3.0
       },
       {
         "date": "2025-10-17",
@@ -2158,7 +2167,7 @@
         "slope_3m": -0.0589,
         "slope_9d": -0.0306,
         "state": "backwardation",
-        "percentile": 8.8
+        "percentile": 10.7
       },
       {
         "date": "2025-10-20",
@@ -2167,7 +2176,7 @@
         "slope_3m": -0.0271,
         "slope_9d": -0.0143,
         "state": "backwardation",
-        "percentile": 21.6
+        "percentile": 22.2
       },
       {
         "date": "2025-10-21",
@@ -2176,7 +2185,7 @@
         "slope_3m": -0.0215,
         "slope_9d": -0.0114,
         "state": "backwardation",
-        "percentile": 24.7
+        "percentile": 24.0
       },
       {
         "date": "2025-10-22",
@@ -2185,7 +2194,7 @@
         "slope_3m": -0.0309,
         "slope_9d": -0.0163,
         "state": "backwardation",
-        "percentile": 19.6
+        "percentile": 20.2
       },
       {
         "date": "2025-10-23",
@@ -2194,7 +2203,7 @@
         "slope_3m": -0.012,
         "slope_9d": -0.0064,
         "state": "flat",
-        "percentile": 31.0
+        "percentile": 33.5
       },
       {
         "date": "2025-10-24",
@@ -2203,7 +2212,7 @@
         "slope_3m": 0.0021,
         "slope_9d": 0.0011,
         "state": "flat",
-        "percentile": 41.2
+        "percentile": 47.8
       },
       {
         "date": "2025-10-27",
@@ -2212,7 +2221,7 @@
         "slope_3m": 0.0119,
         "slope_9d": 0.0064,
         "state": "flat",
-        "percentile": 49.2
+        "percentile": 57.0
       },
       {
         "date": "2025-10-28",
@@ -2221,7 +2230,7 @@
         "slope_3m": 0.0003,
         "slope_9d": 0.0002,
         "state": "flat",
-        "percentile": 39.7
+        "percentile": 45.9
       },
       {
         "date": "2025-10-29",
@@ -2230,7 +2239,7 @@
         "slope_3m": -0.0079,
         "slope_9d": -0.0042,
         "state": "flat",
-        "percentile": 33.6
+        "percentile": 36.8
       },
       {
         "date": "2025-10-30",
@@ -2239,7 +2248,7 @@
         "slope_3m": -0.0077,
         "slope_9d": -0.0041,
         "state": "flat",
-        "percentile": 33.8
+        "percentile": 37.1
       },
       {
         "date": "2025-10-31",
@@ -2248,7 +2257,7 @@
         "slope_3m": -0.0153,
         "slope_9d": -0.0081,
         "state": "flat",
-        "percentile": 28.8
+        "percentile": 29.1
       },
       {
         "date": "2025-11-03",
@@ -2257,7 +2266,7 @@
         "slope_3m": -0.0109,
         "slope_9d": -0.0058,
         "state": "flat",
-        "percentile": 31.6
+        "percentile": 34.2
       },
       {
         "date": "2025-11-04",
@@ -2266,7 +2275,7 @@
         "slope_3m": -0.0358,
         "slope_9d": -0.0188,
         "state": "backwardation",
-        "percentile": 17.1
+        "percentile": 17.5
       },
       {
         "date": "2025-11-05",
@@ -2275,7 +2284,7 @@
         "slope_3m": -0.0215,
         "slope_9d": -0.0114,
         "state": "backwardation",
-        "percentile": 24.7
+        "percentile": 24.1
       },
       {
         "date": "2025-11-06",
@@ -2284,7 +2293,7 @@
         "slope_3m": -0.0401,
         "slope_9d": -0.021,
         "state": "backwardation",
-        "percentile": 15.1
+        "percentile": 15.6
       },
       {
         "date": "2025-11-07",
@@ -2293,7 +2302,7 @@
         "slope_3m": -0.0338,
         "slope_9d": -0.0178,
         "state": "backwardation",
-        "percentile": 18.1
+        "percentile": 18.6
       },
       {
         "date": "2025-11-10",
@@ -2302,7 +2311,7 @@
         "slope_3m": -0.0124,
         "slope_9d": -0.0066,
         "state": "flat",
-        "percentile": 30.8
+        "percentile": 33.3
       },
       {
         "date": "2025-11-11",
@@ -2311,7 +2320,7 @@
         "slope_3m": -0.007,
         "slope_9d": -0.0037,
         "state": "flat",
-        "percentile": 34.4
+        "percentile": 39.2
       },
       {
         "date": "2025-11-12",
@@ -2320,7 +2329,7 @@
         "slope_3m": -0.0101,
         "slope_9d": -0.0054,
         "state": "flat",
-        "percentile": 32.1
+        "percentile": 36.0
       },
       {
         "date": "2025-11-13",
@@ -2329,7 +2338,7 @@
         "slope_3m": -0.0429,
         "slope_9d": -0.0225,
         "state": "backwardation",
-        "percentile": 14.1
+        "percentile": 14.2
       },
       {
         "date": "2025-11-14",
@@ -2338,7 +2347,7 @@
         "slope_3m": -0.0396,
         "slope_9d": -0.0208,
         "state": "backwardation",
-        "percentile": 15.3
+        "percentile": 16.2
       },
       {
         "date": "2025-11-17",
@@ -2347,7 +2356,7 @@
         "slope_3m": -0.0654,
         "slope_9d": -0.0338,
         "state": "backwardation",
-        "percentile": 7.1
+        "percentile": 8.2
       },
       {
         "date": "2025-11-18",
@@ -2356,7 +2365,7 @@
         "slope_3m": -0.0836,
         "slope_9d": -0.0428,
         "state": "backwardation",
-        "percentile": 3.8
+        "percentile": 3.9
       },
       {
         "date": "2025-11-19",
@@ -2365,7 +2374,7 @@
         "slope_3m": -0.0733,
         "slope_9d": -0.0378,
         "state": "backwardation",
-        "percentile": 5.6
+        "percentile": 6.7
       },
       {
         "date": "2025-11-20",
@@ -2374,7 +2383,7 @@
         "slope_3m": -0.0928,
         "slope_9d": -0.0473,
         "state": "backwardation",
-        "percentile": 2.9
+        "percentile": 3.3
       },
       {
         "date": "2025-11-21",
@@ -2383,7 +2392,7 @@
         "slope_3m": -0.0673,
         "slope_9d": -0.0348,
         "state": "backwardation",
-        "percentile": 6.8
+        "percentile": 8.5
       },
       {
         "date": "2025-11-24",
@@ -2392,7 +2401,7 @@
         "slope_3m": -0.0359,
         "slope_9d": -0.0189,
         "state": "backwardation",
-        "percentile": 17.1
+        "percentile": 18.6
       },
       {
         "date": "2025-11-25",
@@ -2401,7 +2410,7 @@
         "slope_3m": -0.0098,
         "slope_9d": -0.0052,
         "state": "flat",
-        "percentile": 32.4
+        "percentile": 37.4
       },
       {
         "date": "2025-11-26",
@@ -2410,7 +2419,7 @@
         "slope_3m": 0.012,
         "slope_9d": 0.0065,
         "state": "flat",
-        "percentile": 49.5
+        "percentile": 58.9
       },
       {
         "date": "2025-11-27",
@@ -2419,7 +2428,7 @@
         "slope_3m": 0.0125,
         "slope_9d": 0.0067,
         "state": "flat",
-        "percentile": 49.8
+        "percentile": 59.8
       },
       {
         "date": "2025-11-28",
@@ -2428,7 +2437,7 @@
         "slope_3m": 0.0279,
         "slope_9d": 0.0151,
         "state": "contango",
-        "percentile": 64.9
+        "percentile": 72.3
       },
       {
         "date": "2025-12-01",
@@ -2437,7 +2446,7 @@
         "slope_3m": 0.0125,
         "slope_9d": 0.0068,
         "state": "flat",
-        "percentile": 49.9
+        "percentile": 59.7
       },
       {
         "date": "2025-12-02",
@@ -2446,7 +2455,7 @@
         "slope_3m": 0.0244,
         "slope_9d": 0.0133,
         "state": "contango",
-        "percentile": 61.6
+        "percentile": 69.0
       },
       {
         "date": "2025-12-03",
@@ -2455,7 +2464,7 @@
         "slope_3m": 0.0343,
         "slope_9d": 0.0187,
         "state": "contango",
-        "percentile": 70.5
+        "percentile": 75.0
       },
       {
         "date": "2025-12-04",
@@ -2464,7 +2473,7 @@
         "slope_3m": 0.0406,
         "slope_9d": 0.0222,
         "state": "contango",
-        "percentile": 75.6
+        "percentile": 80.1
       },
       {
         "date": "2025-12-05",
@@ -2473,7 +2482,7 @@
         "slope_3m": 0.0485,
         "slope_9d": 0.0267,
         "state": "contango",
-        "percentile": 81.1
+        "percentile": 84.1
       },
       {
         "date": "2025-12-08",
@@ -2482,7 +2491,7 @@
         "slope_3m": 0.0241,
         "slope_9d": 0.0131,
         "state": "contango",
-        "percentile": 61.2
+        "percentile": 68.1
       },
       {
         "date": "2025-12-09",
@@ -2491,7 +2500,7 @@
         "slope_3m": 0.0194,
         "slope_9d": 0.0105,
         "state": "flat",
-        "percentile": 56.6
+        "percentile": 64.8
       },
       {
         "date": "2025-12-10",
@@ -2500,7 +2509,7 @@
         "slope_3m": 0.0415,
         "slope_9d": 0.0227,
         "state": "contango",
-        "percentile": 76.4
+        "percentile": 80.6
       },
       {
         "date": "2025-12-11",
@@ -2509,7 +2518,7 @@
         "slope_3m": 0.0611,
         "slope_9d": 0.0338,
         "state": "contango",
-        "percentile": 88.3
+        "percentile": 88.4
       },
       {
         "date": "2025-12-12",
@@ -2518,7 +2527,7 @@
         "slope_3m": 0.0419,
         "slope_9d": 0.023,
         "state": "contango",
-        "percentile": 76.6
+        "percentile": 80.5
       },
       {
         "date": "2025-12-15",
@@ -2527,7 +2536,7 @@
         "slope_3m": 0.0272,
         "slope_9d": 0.0148,
         "state": "contango",
-        "percentile": 64.4
+        "percentile": 71.3
       },
       {
         "date": "2025-12-16",
@@ -2536,7 +2545,7 @@
         "slope_3m": 0.0275,
         "slope_9d": 0.015,
         "state": "contango",
-        "percentile": 64.6
+        "percentile": 71.4
       },
       {
         "date": "2025-12-17",
@@ -2545,7 +2554,7 @@
         "slope_3m": 0.008,
         "slope_9d": 0.0043,
         "state": "flat",
-        "percentile": 45.9
+        "percentile": 52.8
       },
       {
         "date": "2025-12-18",
@@ -2554,7 +2563,7 @@
         "slope_3m": 0.0208,
         "slope_9d": 0.0113,
         "state": "contango",
-        "percentile": 57.9
+        "percentile": 65.2
       },
       {
         "date": "2025-12-19",
@@ -2563,7 +2572,7 @@
         "slope_3m": 0.0603,
         "slope_9d": 0.0334,
         "state": "contango",
-        "percentile": 87.8
+        "percentile": 88.3
       },
       {
         "date": "2025-12-22",
@@ -2572,7 +2581,7 @@
         "slope_3m": 0.0797,
         "slope_9d": 0.0446,
         "state": "contango",
-        "percentile": 94.5
+        "percentile": 92.4
       },
       {
         "date": "2025-12-23",
@@ -2581,7 +2590,7 @@
         "slope_3m": 0.081,
         "slope_9d": 0.0453,
         "state": "contango",
-        "percentile": 94.9
+        "percentile": 93.2
       },
       {
         "date": "2025-12-24",
@@ -2590,7 +2599,7 @@
         "slope_3m": 0.0942,
         "slope_9d": 0.0531,
         "state": "contango",
-        "percentile": 97.2
+        "percentile": 95.7
       },
       {
         "date": "2025-12-25",
@@ -2599,7 +2608,7 @@
         "slope_3m": 0.0931,
         "slope_9d": 0.0525,
         "state": "contango",
-        "percentile": 97.0
+        "percentile": 95.6
       },
       {
         "date": "2025-12-26",
@@ -2608,7 +2617,7 @@
         "slope_3m": 0.0885,
         "slope_9d": 0.0498,
         "state": "contango",
-        "percentile": 96.2
+        "percentile": 94.0
       },
       {
         "date": "2025-12-29",
@@ -2617,7 +2626,7 @@
         "slope_3m": 0.0722,
         "slope_9d": 0.0402,
         "state": "contango",
-        "percentile": 92.6
+        "percentile": 90.6
       },
       {
         "date": "2025-12-30",
@@ -2626,7 +2635,7 @@
         "slope_3m": 0.068,
         "slope_9d": 0.0378,
         "state": "contango",
-        "percentile": 91.0
+        "percentile": 90.0
       },
       {
         "date": "2025-12-31",
@@ -2644,7 +2653,7 @@
         "slope_3m": 0.0527,
         "slope_9d": 0.0291,
         "state": "contango",
-        "percentile": 83.6
+        "percentile": 83.7
       },
       {
         "date": "2026-01-02",
@@ -2653,7 +2662,7 @@
         "slope_3m": 0.0605,
         "slope_9d": 0.0335,
         "state": "contango",
-        "percentile": 87.8
+        "percentile": 87.2
       },
       {
         "date": "2026-01-05",
@@ -2662,7 +2671,7 @@
         "slope_3m": 0.0503,
         "slope_9d": 0.0277,
         "state": "contango",
-        "percentile": 82.1
+        "percentile": 83.0
       },
       {
         "date": "2026-01-06",
@@ -2671,7 +2680,7 @@
         "slope_3m": 0.0518,
         "slope_9d": 0.0285,
         "state": "contango",
-        "percentile": 83.0
+        "percentile": 83.4
       },
       {
         "date": "2026-01-07",
@@ -2680,7 +2689,7 @@
         "slope_3m": 0.0366,
         "slope_9d": 0.02,
         "state": "contango",
-        "percentile": 72.3
+        "percentile": 74.5
       },
       {
         "date": "2026-01-08",
@@ -2689,7 +2698,7 @@
         "slope_3m": 0.0322,
         "slope_9d": 0.0175,
         "state": "contango",
-        "percentile": 68.4
+        "percentile": 71.7
       },
       {
         "date": "2026-01-09",
@@ -2698,7 +2707,7 @@
         "slope_3m": 0.0508,
         "slope_9d": 0.028,
         "state": "contango",
-        "percentile": 82.5
+        "percentile": 83.1
       },
       {
         "date": "2026-01-12",
@@ -2707,7 +2716,7 @@
         "slope_3m": 0.0361,
         "slope_9d": 0.0197,
         "state": "contango",
-        "percentile": 71.7
+        "percentile": 73.5
       },
       {
         "date": "2026-01-13",
@@ -2716,7 +2725,7 @@
         "slope_3m": 0.0185,
         "slope_9d": 0.01,
         "state": "flat",
-        "percentile": 55.6
+        "percentile": 61.5
       },
       {
         "date": "2026-01-14",
@@ -2725,7 +2734,7 @@
         "slope_3m": 0.0043,
         "slope_9d": 0.0023,
         "state": "flat",
-        "percentile": 42.9
+        "percentile": 48.2
       },
       {
         "date": "2026-01-15",
@@ -2734,7 +2743,7 @@
         "slope_3m": 0.0202,
         "slope_9d": 0.0109,
         "state": "contango",
-        "percentile": 57.2
+        "percentile": 62.8
       },
       {
         "date": "2026-01-16",
@@ -2743,7 +2752,7 @@
         "slope_3m": 0.0196,
         "slope_9d": 0.0106,
         "state": "flat",
-        "percentile": 56.6
+        "percentile": 62.3
       },
       {
         "date": "2026-01-19",
@@ -2752,7 +2761,7 @@
         "slope_3m": 0.0197,
         "slope_9d": 0.0106,
         "state": "flat",
-        "percentile": 56.7
+        "percentile": 62.4
       },
       {
         "date": "2026-01-20",
@@ -2770,7 +2779,7 @@
         "slope_3m": 0.0022,
         "slope_9d": 0.0012,
         "state": "flat",
-        "percentile": 41.3
+        "percentile": 46.8
       },
       {
         "date": "2026-01-22",
@@ -2779,7 +2788,7 @@
         "slope_3m": 0.0246,
         "slope_9d": 0.0133,
         "state": "contango",
-        "percentile": 61.5
+        "percentile": 66.9
       },
       {
         "date": "2026-01-23",
@@ -2788,7 +2797,7 @@
         "slope_3m": 0.0157,
         "slope_9d": 0.0085,
         "state": "flat",
-        "percentile": 53.0
+        "percentile": 59.3
       },
       {
         "date": "2026-01-26",
@@ -2797,7 +2806,7 @@
         "slope_3m": 0.0143,
         "slope_9d": 0.0077,
         "state": "flat",
-        "percentile": 51.5
+        "percentile": 57.3
       },
       {
         "date": "2026-01-27",
@@ -2806,7 +2815,7 @@
         "slope_3m": 0.0099,
         "slope_9d": 0.0053,
         "state": "flat",
-        "percentile": 47.4
+        "percentile": 52.6
       },
       {
         "date": "2026-01-28",
@@ -2815,7 +2824,7 @@
         "slope_3m": 0.0095,
         "slope_9d": 0.0051,
         "state": "flat",
-        "percentile": 46.9
+        "percentile": 51.9
       },
       {
         "date": "2026-01-29",
@@ -2824,7 +2833,7 @@
         "slope_3m": -0.0004,
         "slope_9d": -0.0002,
         "state": "flat",
-        "percentile": 39.1
+        "percentile": 43.4
       },
       {
         "date": "2026-01-30",
@@ -2833,7 +2842,7 @@
         "slope_3m": -0.0098,
         "slope_9d": -0.0052,
         "state": "flat",
-        "percentile": 32.2
+        "percentile": 34.4
       },
       {
         "date": "2026-02-02",
@@ -2842,7 +2851,7 @@
         "slope_3m": 0.0081,
         "slope_9d": 0.0043,
         "state": "flat",
-        "percentile": 45.8
+        "percentile": 50.7
       },
       {
         "date": "2026-02-03",
@@ -2851,7 +2860,7 @@
         "slope_3m": -0.0183,
         "slope_9d": -0.0097,
         "state": "flat",
-        "percentile": 26.5
+        "percentile": 24.8
       },
       {
         "date": "2026-02-04",
@@ -2869,7 +2878,7 @@
         "slope_3m": -0.063,
         "slope_9d": -0.0327,
         "state": "backwardation",
-        "percentile": 7.6
+        "percentile": 9.0
       },
       {
         "date": "2026-02-06",
@@ -2878,7 +2887,7 @@
         "slope_3m": -0.048,
         "slope_9d": -0.0251,
         "state": "backwardation",
-        "percentile": 12.1
+        "percentile": 12.2
       },
       {
         "date": "2026-02-09",
@@ -2887,7 +2896,7 @@
         "slope_3m": -0.0091,
         "slope_9d": -0.0049,
         "state": "flat",
-        "percentile": 32.7
+        "percentile": 35.3
       },
       {
         "date": "2026-02-10",
@@ -2896,7 +2905,7 @@
         "slope_3m": -0.0175,
         "slope_9d": -0.0093,
         "state": "flat",
-        "percentile": 27.2
+        "percentile": 26.4
       },
       {
         "date": "2026-02-11",
@@ -2905,7 +2914,7 @@
         "slope_3m": -0.017,
         "slope_9d": -0.009,
         "state": "flat",
-        "percentile": 27.6
+        "percentile": 27.0
       },
       {
         "date": "2026-02-12",
@@ -2914,7 +2923,7 @@
         "slope_3m": -0.0583,
         "slope_9d": -0.0303,
         "state": "backwardation",
-        "percentile": 8.9
+        "percentile": 10.3
       },
       {
         "date": "2026-02-13",
@@ -2923,7 +2932,7 @@
         "slope_3m": -0.0565,
         "slope_9d": -0.0294,
         "state": "backwardation",
-        "percentile": 9.3
+        "percentile": 10.7
       },
       {
         "date": "2026-02-16",
@@ -2932,7 +2941,7 @@
         "slope_3m": -0.0565,
         "slope_9d": -0.0294,
         "state": "backwardation",
-        "percentile": 9.3
+        "percentile": 10.8
       },
       {
         "date": "2026-02-17",
@@ -2941,7 +2950,7 @@
         "slope_3m": -0.0527,
         "slope_9d": -0.0275,
         "state": "backwardation",
-        "percentile": 10.4
+        "percentile": 11.7
       },
       {
         "date": "2026-02-18",
@@ -2950,7 +2959,7 @@
         "slope_3m": -0.0444,
         "slope_9d": -0.0232,
         "state": "backwardation",
-        "percentile": 13.4
+        "percentile": 14.0
       },
       {
         "date": "2026-02-19",
@@ -2959,7 +2968,7 @@
         "slope_3m": -0.0508,
         "slope_9d": -0.0265,
         "state": "backwardation",
-        "percentile": 11.3
+        "percentile": 12.4
       },
       {
         "date": "2026-02-20",
@@ -2968,7 +2977,7 @@
         "slope_3m": -0.0364,
         "slope_9d": -0.0191,
         "state": "backwardation",
-        "percentile": 16.8
+        "percentile": 17.7
       },
       {
         "date": "2026-02-23",
@@ -2977,7 +2986,7 @@
         "slope_3m": -0.0578,
         "slope_9d": -0.0301,
         "state": "backwardation",
-        "percentile": 9.0
+        "percentile": 10.4
       },
       {
         "date": "2026-02-24",
@@ -2986,7 +2995,7 @@
         "slope_3m": -0.0405,
         "slope_9d": -0.0213,
         "state": "backwardation",
-        "percentile": 15.0
+        "percentile": 16.2
       },
       {
         "date": "2026-02-25",
@@ -2995,7 +3004,7 @@
         "slope_3m": -0.0184,
         "slope_9d": -0.0098,
         "state": "flat",
-        "percentile": 26.6
+        "percentile": 26.0
       },
       {
         "date": "2026-02-26",
@@ -3004,7 +3013,7 @@
         "slope_3m": -0.0275,
         "slope_9d": -0.0145,
         "state": "backwardation",
-        "percentile": 21.4
+        "percentile": 22.6
       },
       {
         "date": "2026-02-27",
@@ -3013,7 +3022,7 @@
         "slope_3m": -0.0421,
         "slope_9d": -0.0221,
         "state": "backwardation",
-        "percentile": 14.5
+        "percentile": 15.5
       },
       {
         "date": "2026-03-02",
@@ -3022,7 +3031,7 @@
         "slope_3m": -0.0586,
         "slope_9d": -0.0304,
         "state": "backwardation",
-        "percentile": 8.8
+        "percentile": 10.1
       },
       {
         "date": "2026-03-03",
@@ -3031,7 +3040,7 @@
         "slope_3m": -0.0773,
         "slope_9d": -0.0398,
         "state": "backwardation",
-        "percentile": 4.9
+        "percentile": 4.4
       },
       {
         "date": "2026-03-04",
@@ -3040,7 +3049,7 @@
         "slope_3m": -0.0529,
         "slope_9d": -0.0276,
         "state": "backwardation",
-        "percentile": 10.4
+        "percentile": 12.0
       },
       {
         "date": "2026-03-05",
@@ -3049,7 +3058,7 @@
         "slope_3m": -0.076,
         "slope_9d": -0.0391,
         "state": "backwardation",
-        "percentile": 5.1
+        "percentile": 5.5
       },
       {
         "date": "2026-03-06",
@@ -3058,7 +3067,7 @@
         "slope_3m": -0.1136,
         "slope_9d": -0.0573,
         "state": "backwardation",
-        "percentile": 1.4
+        "percentile": 1.6
       },
       {
         "date": "2026-03-09",
@@ -3085,7 +3094,7 @@
         "slope_3m": -0.0728,
         "slope_9d": -0.0375,
         "state": "backwardation",
-        "percentile": 5.7
+        "percentile": 7.2
       },
       {
         "date": "2026-03-12",
@@ -3094,7 +3103,7 @@
         "slope_3m": -0.0942,
         "slope_9d": -0.0481,
         "state": "backwardation",
-        "percentile": 2.7
+        "percentile": 2.8
       },
       {
         "date": "2026-03-13",
@@ -3103,7 +3112,7 @@
         "slope_3m": -0.0915,
         "slope_9d": -0.0467,
         "state": "backwardation",
-        "percentile": 2.9
+        "percentile": 3.3
       },
       {
         "date": "2026-03-16",
@@ -3112,7 +3121,7 @@
         "slope_3m": -0.0601,
         "slope_9d": -0.0312,
         "state": "backwardation",
-        "percentile": 8.4
+        "percentile": 10.5
       },
       {
         "date": "2026-03-17",
@@ -3121,7 +3130,7 @@
         "slope_3m": -0.0471,
         "slope_9d": -0.0246,
         "state": "backwardation",
-        "percentile": 12.6
+        "percentile": 14.8
       },
       {
         "date": "2026-03-18",
@@ -3130,7 +3139,7 @@
         "slope_3m": -0.0702,
         "slope_9d": -0.0362,
         "state": "backwardation",
-        "percentile": 6.2
+        "percentile": 7.8
       },
       {
         "date": "2026-03-19",
@@ -3139,7 +3148,7 @@
         "slope_3m": -0.0592,
         "slope_9d": -0.0307,
         "state": "backwardation",
-        "percentile": 8.7
+        "percentile": 11.4
       },
       {
         "date": "2026-03-20",
@@ -3148,7 +3157,7 @@
         "slope_3m": -0.0793,
         "slope_9d": -0.0408,
         "state": "backwardation",
-        "percentile": 4.5
+        "percentile": 4.8
       },
       {
         "date": "2026-03-23",
@@ -3157,7 +3166,7 @@
         "slope_3m": -0.0723,
         "slope_9d": -0.0373,
         "state": "backwardation",
-        "percentile": 5.8
+        "percentile": 7.8
       },
       {
         "date": "2026-03-24",
@@ -3166,7 +3175,7 @@
         "slope_3m": -0.0763,
         "slope_9d": -0.0393,
         "state": "backwardation",
-        "percentile": 5.1
+        "percentile": 6.2
       },
       {
         "date": "2026-03-25",
@@ -3175,7 +3184,7 @@
         "slope_3m": -0.0614,
         "slope_9d": -0.0318,
         "state": "backwardation",
-        "percentile": 8.2
+        "percentile": 10.7
       },
       {
         "date": "2026-03-26",
@@ -3184,7 +3193,7 @@
         "slope_3m": -0.0761,
         "slope_9d": -0.0392,
         "state": "backwardation",
-        "percentile": 5.1
+        "percentile": 6.4
       },
       {
         "date": "2026-03-27",
@@ -3193,7 +3202,7 @@
         "slope_3m": -0.0973,
         "slope_9d": -0.0495,
         "state": "backwardation",
-        "percentile": 2.5
+        "percentile": 2.7
       },
       {
         "date": "2026-03-30",
@@ -3202,7 +3211,7 @@
         "slope_3m": -0.0923,
         "slope_9d": -0.0471,
         "state": "backwardation",
-        "percentile": 2.9
+        "percentile": 3.4
       },
       {
         "date": "2026-03-31",
@@ -3211,7 +3220,7 @@
         "slope_3m": -0.0505,
         "slope_9d": -0.0263,
         "state": "backwardation",
-        "percentile": 11.6
+        "percentile": 15.6
       },
       {
         "date": "2026-04-01",
@@ -3220,7 +3229,7 @@
         "slope_3m": -0.0421,
         "slope_9d": -0.0221,
         "state": "backwardation",
-        "percentile": 14.8
+        "percentile": 18.8
       },
       {
         "date": "2026-04-02",
@@ -3229,7 +3238,7 @@
         "slope_3m": -0.0338,
         "slope_9d": -0.0178,
         "state": "backwardation",
-        "percentile": 18.5
+        "percentile": 23.0
       },
       {
         "date": "2026-04-03",
@@ -3238,7 +3247,7 @@
         "slope_3m": -0.0319,
         "slope_9d": -0.0168,
         "state": "backwardation",
-        "percentile": 19.5
+        "percentile": 24.1
       },
       {
         "date": "2026-04-06",
@@ -3247,7 +3256,7 @@
         "slope_3m": -0.0333,
         "slope_9d": -0.0175,
         "state": "backwardation",
-        "percentile": 18.7
+        "percentile": 23.4
       },
       {
         "date": "2026-04-07",
@@ -3256,7 +3265,7 @@
         "slope_3m": -0.0469,
         "slope_9d": -0.0245,
         "state": "backwardation",
-        "percentile": 12.8
+        "percentile": 16.4
       },
       {
         "date": "2026-04-08",
@@ -3265,7 +3274,7 @@
         "slope_3m": 0.0066,
         "slope_9d": 0.0035,
         "state": "flat",
-        "percentile": 45.1
+        "percentile": 53.6
       },
       {
         "date": "2026-04-09",
@@ -3274,7 +3283,7 @@
         "slope_3m": 0.0302,
         "slope_9d": 0.0165,
         "state": "contango",
-        "percentile": 66.9
+        "percentile": 73.5
       },
       {
         "date": "2026-04-10",
@@ -3283,7 +3292,7 @@
         "slope_3m": 0.0352,
         "slope_9d": 0.0192,
         "state": "contango",
-        "percentile": 71.3
+        "percentile": 75.9
       },
       {
         "date": "2026-04-13",
@@ -3292,7 +3301,7 @@
         "slope_3m": 0.0379,
         "slope_9d": 0.0207,
         "state": "contango",
-        "percentile": 73.7
+        "percentile": 78.6
       },
       {
         "date": "2026-04-14",
@@ -3301,7 +3310,7 @@
         "slope_3m": 0.0506,
         "slope_9d": 0.0278,
         "state": "contango",
-        "percentile": 82.5
+        "percentile": 84.7
       },
       {
         "date": "2026-04-15",
@@ -3310,7 +3319,7 @@
         "slope_3m": 0.0544,
         "slope_9d": 0.03,
         "state": "contango",
-        "percentile": 84.7
+        "percentile": 86.1
       },
       {
         "date": "2026-04-16",
@@ -3319,7 +3328,7 @@
         "slope_3m": 0.0592,
         "slope_9d": 0.0328,
         "state": "contango",
-        "percentile": 87.3
+        "percentile": 87.9
       },
       {
         "date": "2026-04-17",
@@ -3337,7 +3346,7 @@
         "slope_3m": 0.0435,
         "slope_9d": 0.0239,
         "state": "contango",
-        "percentile": 77.9
+        "percentile": 80.8
       },
       {
         "date": "2026-04-21",
@@ -3346,7 +3355,7 @@
         "slope_3m": 0.0338,
         "slope_9d": 0.0185,
         "state": "contango",
-        "percentile": 70.1
+        "percentile": 74.2
       },
       {
         "date": "2026-04-22",
@@ -3355,7 +3364,7 @@
         "slope_3m": 0.0441,
         "slope_9d": 0.0242,
         "state": "contango",
-        "percentile": 78.2
+        "percentile": 80.9
       },
       {
         "date": "2026-04-23",
@@ -3364,7 +3373,7 @@
         "slope_3m": 0.0381,
         "slope_9d": 0.0209,
         "state": "contango",
-        "percentile": 73.8
+        "percentile": 78.1
       },
       {
         "date": "2026-04-24",
@@ -3373,7 +3382,7 @@
         "slope_3m": 0.0486,
         "slope_9d": 0.0268,
         "state": "contango",
-        "percentile": 81.2
+        "percentile": 83.6
       },
       {
         "date": "2026-04-27",
@@ -3382,7 +3391,7 @@
         "slope_3m": 0.0617,
         "slope_9d": 0.0342,
         "state": "contango",
-        "percentile": 88.5
+        "percentile": 89.4
       },
       {
         "date": "2026-04-28",
@@ -3391,7 +3400,7 @@
         "slope_3m": 0.0653,
         "slope_9d": 0.0362,
         "state": "contango",
-        "percentile": 90.1
+        "percentile": 90.6
       },
       {
         "date": "2026-04-29",
@@ -3400,7 +3409,7 @@
         "slope_3m": 0.0473,
         "slope_9d": 0.026,
         "state": "contango",
-        "percentile": 80.3
+        "percentile": 82.2
       },
       {
         "date": "2026-04-30",
@@ -3409,7 +3418,7 @@
         "slope_3m": 0.0832,
         "slope_9d": 0.0466,
         "state": "contango",
-        "percentile": 95.3
+        "percentile": 93.9
       },
       {
         "date": "2026-05-01",
@@ -3418,7 +3427,7 @@
         "slope_3m": 0.0801,
         "slope_9d": 0.0448,
         "state": "contango",
-        "percentile": 94.6
+        "percentile": 92.9
       },
       {
         "date": "2026-05-04",
@@ -3427,7 +3436,7 @@
         "slope_3m": 0.0548,
         "slope_9d": 0.0302,
         "state": "contango",
-        "percentile": 84.8
+        "percentile": 85.4
       },
       {
         "date": "2026-05-05",
@@ -3436,7 +3445,7 @@
         "slope_3m": 0.0722,
         "slope_9d": 0.0402,
         "state": "contango",
-        "percentile": 92.6
+        "percentile": 91.5
       },
       {
         "date": "2026-05-06",
@@ -3445,7 +3454,7 @@
         "slope_3m": 0.0719,
         "slope_9d": 0.0401,
         "state": "contango",
-        "percentile": 92.5
+        "percentile": 91.3
       },
       {
         "date": "2026-05-07",
@@ -3454,7 +3463,7 @@
         "slope_3m": 0.0773,
         "slope_9d": 0.0432,
         "state": "contango",
-        "percentile": 93.9
+        "percentile": 92.3
       },
       {
         "date": "2026-05-08",
@@ -3463,7 +3472,7 @@
         "slope_3m": 0.0741,
         "slope_9d": 0.0413,
         "state": "contango",
-        "percentile": 93.2
+        "percentile": 91.7
       },
       {
         "date": "2026-05-11",
@@ -3472,7 +3481,7 @@
         "slope_3m": 0.0506,
         "slope_9d": 0.0278,
         "state": "contango",
-        "percentile": 82.3
+        "percentile": 83.1
       },
       {
         "date": "2026-05-12",
@@ -3481,7 +3490,7 @@
         "slope_3m": 0.0571,
         "slope_9d": 0.0316,
         "state": "contango",
-        "percentile": 86.0
+        "percentile": 85.4
       },
       {
         "date": "2026-05-13",
@@ -3490,7 +3499,7 @@
         "slope_3m": 0.0589,
         "slope_9d": 0.0326,
         "state": "contango",
-        "percentile": 87.0
+        "percentile": 86.7
       },
       {
         "date": "2026-05-14",
@@ -3499,7 +3508,7 @@
         "slope_3m": 0.0701,
         "slope_9d": 0.039,
         "state": "contango",
-        "percentile": 91.9
+        "percentile": 90.9
       },
       {
         "date": "2026-05-15",
@@ -3508,7 +3517,7 @@
         "slope_3m": 0.0477,
         "slope_9d": 0.0262,
         "state": "contango",
-        "percentile": 80.5
+        "percentile": 81.1
       },
       {
         "date": "2026-05-18",
@@ -3517,7 +3526,7 @@
         "slope_3m": 0.0581,
         "slope_9d": 0.0321,
         "state": "contango",
-        "percentile": 86.5
+        "percentile": 86.1
       },
       {
         "date": "2026-05-19",
@@ -3526,7 +3535,7 @@
         "slope_3m": 0.0532,
         "slope_9d": 0.0294,
         "state": "contango",
-        "percentile": 84.0
+        "percentile": 83.7
       },
       {
         "date": "2026-05-20",
@@ -3535,7 +3544,7 @@
         "slope_3m": 0.0649,
         "slope_9d": 0.036,
         "state": "contango",
-        "percentile": 89.8
+        "percentile": 89.4
       },
       {
         "date": "2026-05-21",
@@ -3544,7 +3553,7 @@
         "slope_3m": 0.0784,
         "slope_9d": 0.0439,
         "state": "contango",
-        "percentile": 94.2
+        "percentile": 92.6
       },
       {
         "date": "2026-05-22",
@@ -3553,7 +3562,7 @@
         "slope_3m": 0.0788,
         "slope_9d": 0.0441,
         "state": "contango",
-        "percentile": 94.3
+        "percentile": 92.6
       },
       {
         "date": "2026-05-25",
@@ -3562,7 +3571,7 @@
         "slope_3m": 0.0798,
         "slope_9d": 0.0447,
         "state": "contango",
-        "percentile": 94.6
+        "percentile": 92.9
       },
       {
         "date": "2026-05-26",
@@ -3571,7 +3580,7 @@
         "slope_3m": 0.0692,
         "slope_9d": 0.0385,
         "state": "contango",
-        "percentile": 91.4
+        "percentile": 90.2
       },
       {
         "date": "2026-05-27",
@@ -3580,7 +3589,7 @@
         "slope_3m": 0.0832,
         "slope_9d": 0.0466,
         "state": "contango",
-        "percentile": 95.3
+        "percentile": 94.1
       },
       {
         "date": "2026-05-28",
@@ -3589,7 +3598,7 @@
         "slope_3m": 0.0935,
         "slope_9d": 0.0527,
         "state": "contango",
-        "percentile": 97.1
+        "percentile": 96.3
       },
       {
         "date": "2026-05-29",
@@ -3598,7 +3607,7 @@
         "slope_3m": 0.0994,
         "slope_9d": 0.0563,
         "state": "contango",
-        "percentile": 97.7
+        "percentile": 97.1
       },
       {
         "date": "2026-06-01",
@@ -3607,7 +3616,7 @@
         "slope_3m": 0.0794,
         "slope_9d": 0.0444,
         "state": "contango",
-        "percentile": 94.4
+        "percentile": 92.1
       },
       {
         "date": "2026-06-02",
@@ -3616,7 +3625,7 @@
         "slope_3m": 0.0831,
         "slope_9d": 0.0466,
         "state": "contango",
-        "percentile": 95.2
+        "percentile": 93.5
       },
       {
         "date": "2026-06-03",
@@ -3625,7 +3634,7 @@
         "slope_3m": 0.0742,
         "slope_9d": 0.0414,
         "state": "contango",
-        "percentile": 93.2
+        "percentile": 90.6
       },
       {
         "date": "2026-06-04",
@@ -3634,7 +3643,7 @@
         "slope_3m": 0.0857,
         "slope_9d": 0.0481,
         "state": "contango",
-        "percentile": 95.8
+        "percentile": 94.5
       },
       {
         "date": "2026-06-05",
@@ -3643,7 +3652,7 @@
         "slope_3m": -0.0194,
         "slope_9d": -0.0103,
         "state": "flat",
-        "percentile": 26.1
+        "percentile": 27.5
       },
       {
         "date": "2026-06-08",
@@ -3652,7 +3661,7 @@
         "slope_3m": 0.0152,
         "slope_9d": 0.0082,
         "state": "flat",
-        "percentile": 52.3
+        "percentile": 58.5
       },
       {
         "date": "2026-06-09",
@@ -3661,7 +3670,7 @@
         "slope_3m": 0.0005,
         "slope_9d": 0.0003,
         "state": "flat",
-        "percentile": 39.9
+        "percentile": 45.5
       },
       {
         "date": "2026-06-10",
@@ -3670,7 +3679,7 @@
         "slope_3m": -0.0298,
         "slope_9d": -0.0157,
         "state": "backwardation",
-        "percentile": 20.4
+        "percentile": 23.4
       },
       {
         "date": "2026-06-11",
@@ -3679,7 +3688,7 @@
         "slope_3m": 0.0049,
         "slope_9d": 0.0026,
         "state": "flat",
-        "percentile": 43.4
+        "percentile": 49.3
       },
       {
         "date": "2026-06-12",
@@ -3688,7 +3697,7 @@
         "slope_3m": 0.0308,
         "slope_9d": 0.0168,
         "state": "contango",
-        "percentile": 67.0
+        "percentile": 69.3
       },
       {
         "date": "2026-06-15",
@@ -3697,7 +3706,7 @@
         "slope_3m": 0.0564,
         "slope_9d": 0.0311,
         "state": "contango",
-        "percentile": 85.3
+        "percentile": 83.4
       },
       {
         "date": "2026-06-16",
@@ -3706,7 +3715,7 @@
         "slope_3m": 0.0491,
         "slope_9d": 0.027,
         "state": "contango",
-        "percentile": 81.2
+        "percentile": 80.5
       },
       {
         "date": "2026-06-17",
@@ -3715,7 +3724,7 @@
         "slope_3m": 0.0111,
         "slope_9d": 0.006,
         "state": "flat",
-        "percentile": 48.4
+        "percentile": 53.8
       },
       {
         "date": "2026-06-18",
@@ -3724,7 +3733,7 @@
         "slope_3m": 0.0442,
         "slope_9d": 0.0242,
         "state": "contango",
-        "percentile": 77.9
+        "percentile": 77.1
       },
       {
         "date": "2026-06-19",
@@ -3733,7 +3742,7 @@
         "slope_3m": 0.04,
         "slope_9d": 0.0219,
         "state": "contango",
-        "percentile": 74.8
+        "percentile": 75.1
       },
       {
         "date": "2026-06-22",
@@ -3742,7 +3751,7 @@
         "slope_3m": 0.0201,
         "slope_9d": 0.0109,
         "state": "contango",
-        "percentile": 57.1
+        "percentile": 61.8
       },
       {
         "date": "2026-06-23",
@@ -3751,7 +3760,7 @@
         "slope_3m": -0.0153,
         "slope_9d": -0.0081,
         "state": "flat",
-        "percentile": 29.1
+        "percentile": 31.0
       },
       {
         "date": "2026-06-24",
@@ -3760,7 +3769,7 @@
         "slope_3m": -0.0046,
         "slope_9d": -0.0024,
         "state": "flat",
-        "percentile": 36.3
+        "percentile": 41.0
       },
       {
         "date": "2026-06-25",
@@ -3769,7 +3778,7 @@
         "slope_3m": -0.0096,
         "slope_9d": -0.0051,
         "state": "flat",
-        "percentile": 32.6
+        "percentile": 36.6
       },
       {
         "date": "2026-06-26",
@@ -3778,7 +3787,7 @@
         "slope_3m": -0.0039,
         "slope_9d": -0.0021,
         "state": "flat",
-        "percentile": 36.8
+        "percentile": 42.0
       },
       {
         "date": "2026-06-29",
@@ -3787,7 +3796,7 @@
         "slope_3m": 0.0062,
         "slope_9d": 0.0033,
         "state": "flat",
-        "percentile": 44.6
+        "percentile": 49.9
       },
       {
         "date": "2026-06-30",
@@ -3796,7 +3805,7 @@
         "slope_3m": 0.0245,
         "slope_9d": 0.0133,
         "state": "contango",
-        "percentile": 61.4
+        "percentile": 65.1
       },
       {
         "date": "2026-07-01",
@@ -3805,7 +3814,7 @@
         "slope_3m": 0.0206,
         "slope_9d": 0.0112,
         "state": "contango",
-        "percentile": 57.6
+        "percentile": 62.4
       },
       {
         "date": "2026-07-02",
@@ -3814,7 +3823,7 @@
         "slope_3m": 0.0279,
         "slope_9d": 0.0152,
         "state": "contango",
-        "percentile": 64.7
+        "percentile": 68.3
       },
       {
         "date": "2026-07-03",
@@ -3823,7 +3832,7 @@
         "slope_3m": 0.027,
         "slope_9d": 0.0147,
         "state": "contango",
-        "percentile": 64.0
+        "percentile": 67.4
       },
       {
         "date": "2026-07-06",
@@ -3832,7 +3841,7 @@
         "slope_3m": 0.0374,
         "slope_9d": 0.0204,
         "state": "contango",
-        "percentile": 72.9
+        "percentile": 74.2
       },
       {
         "date": "2026-07-07",
@@ -3841,7 +3850,7 @@
         "slope_3m": 0.0257,
         "slope_9d": 0.014,
         "state": "contango",
-        "percentile": 62.7
+        "percentile": 66.9
       },
       {
         "date": "2026-07-08",
@@ -3850,7 +3859,7 @@
         "slope_3m": 0.0114,
         "slope_9d": 0.0062,
         "state": "flat",
-        "percentile": 48.7
+        "percentile": 53.8
       },
       {
         "date": "2026-07-09",
@@ -3859,7 +3868,7 @@
         "slope_3m": 0.0303,
         "slope_9d": 0.0165,
         "state": "contango",
-        "percentile": 66.6
+        "percentile": 69.3
       },
       {
         "date": "2026-07-10",
@@ -3868,7 +3877,7 @@
         "slope_3m": 0.0463,
         "slope_9d": 0.0254,
         "state": "contango",
-        "percentile": 79.4
+        "percentile": 78.9
       },
       {
         "date": "2026-07-13",
@@ -3877,7 +3886,7 @@
         "slope_3m": 0.0053,
         "slope_9d": 0.0028,
         "state": "flat",
-        "percentile": 43.7
+        "percentile": 48.6
       },
       {
         "date": "2026-07-14",
@@ -3886,7 +3895,7 @@
         "slope_3m": 0.0159,
         "slope_9d": 0.0086,
         "state": "flat",
-        "percentile": 53.2
+        "percentile": 58.6
       },
       {
         "date": "2026-07-15",
@@ -3895,7 +3904,7 @@
         "slope_3m": 0.0306,
         "slope_9d": 0.0166,
         "state": "contango",
-        "percentile": 66.9
+        "percentile": 69.3
       },
       {
         "date": "2026-07-16",
@@ -3904,7 +3913,7 @@
         "slope_3m": 0.0102,
         "slope_9d": 0.0055,
         "state": "flat",
-        "percentile": 47.7
+        "percentile": 52.6
       },
       {
         "date": "2026-07-17",
@@ -3913,7 +3922,7 @@
         "slope_3m": -0.0214,
         "slope_9d": -0.0113,
         "state": "backwardation",
-        "percentile": 24.9
+        "percentile": 25.6
       },
       {
         "date": "2026-07-20",
@@ -3922,7 +3931,7 @@
         "slope_3m": -0.0195,
         "slope_9d": -0.0104,
         "state": "flat",
-        "percentile": 26.0
+        "percentile": 26.4
       },
       {
         "date": "2026-07-21",
@@ -3931,7 +3940,7 @@
         "slope_3m": 0.0047,
         "slope_9d": 0.0025,
         "state": "flat",
-        "percentile": 43.2
+        "percentile": 48.0
       },
       {
         "date": "2026-07-22",
@@ -3940,7 +3949,7 @@
         "slope_3m": 0.0111,
         "slope_9d": 0.006,
         "state": "flat",
-        "percentile": 48.4
+        "percentile": 53.5
       },
       {
         "date": "2026-07-23",
@@ -3949,7 +3958,7 @@
         "slope_3m": -0.0205,
         "slope_9d": -0.0109,
         "state": "backwardation",
-        "percentile": 25.4
+        "percentile": 25.9
       },
       {
         "date": "2026-07-24",
@@ -3958,7 +3967,7 @@
         "slope_3m": -0.0184,
         "slope_9d": -0.0098,
         "state": "flat",
-        "percentile": 26.6
+        "percentile": 26.9
       },
       {
         "date": "2026-07-27",
@@ -3967,7 +3976,7 @@
         "slope_3m": -0.0196,
         "slope_9d": -0.0104,
         "state": "flat",
-        "percentile": 25.9
+        "percentile": 26.2
       },
       {
         "date": "2026-07-28",
@@ -3976,7 +3985,7 @@
         "slope_3m": -0.0128,
         "slope_9d": -0.0068,
         "state": "flat",
-        "percentile": 30.6
+        "percentile": 32.7
       },
       {
         "date": "2026-07-29",
@@ -3985,7 +3994,7 @@
         "slope_3m": -0.0438,
         "slope_9d": -0.0229,
         "state": "backwardation",
-        "percentile": 13.7
+        "percentile": 15.5
       },
       {
         "date": "2026-07-30",
@@ -3994,7 +4003,7 @@
         "slope_3m": 0.0056,
         "slope_9d": 0.003,
         "state": "flat",
-        "percentile": 44.0
+        "percentile": 49.1
       },
       {
         "date": "2026-07-31",
@@ -4003,7 +4012,7 @@
         "slope_3m": 0.0249,
         "slope_9d": 0.0135,
         "state": "contango",
-        "percentile": 61.8
+        "percentile": 66.0
       },
       {
         "date": "2026-08-03",
@@ -4012,7 +4021,7 @@
         "slope_3m": 0.0266,
         "slope_9d": 0.0145,
         "state": "contango",
-        "percentile": 63.7
+        "percentile": 67.5
       },
       {
         "date": "2026-08-04",
@@ -4021,7 +4030,7 @@
         "slope_3m": 0.0143,
         "slope_9d": 0.0077,
         "state": "flat",
-        "percentile": 51.6
+        "percentile": 57.0
       },
       {
         "date": "2026-08-05",
@@ -4030,7 +4039,7 @@
         "slope_3m": 0.0266,
         "slope_9d": 0.0144,
         "state": "contango",
-        "percentile": 63.6
+        "percentile": 67.5
       },
       {
         "date": "2026-08-06",
@@ -4039,7 +4048,7 @@
         "slope_3m": 0.0393,
         "slope_9d": 0.0215,
         "state": "contango",
-        "percentile": 74.5
+        "percentile": 75.8
       },
       {
         "date": "2026-08-07",
@@ -4048,7 +4057,7 @@
         "slope_3m": 0.0435,
         "slope_9d": 0.0239,
         "state": "contango",
-        "percentile": 77.6
+        "percentile": 77.7
       },
       {
         "date": "2026-08-10",
@@ -4057,7 +4066,7 @@
         "slope_3m": 0.0311,
         "slope_9d": 0.0169,
         "state": "contango",
-        "percentile": 67.4
+        "percentile": 70.1
       },
       {
         "date": "2026-08-11",
@@ -4066,7 +4075,7 @@
         "slope_3m": 0.0339,
         "slope_9d": 0.0185,
         "state": "contango",
-        "percentile": 69.9
+        "percentile": 71.3
       },
       {
         "date": "2026-08-12",
@@ -4075,7 +4084,7 @@
         "slope_3m": 0.0487,
         "slope_9d": 0.0268,
         "state": "contango",
-        "percentile": 81.1
+        "percentile": 81.2
       },
       {
         "date": "2026-08-13",
@@ -4084,7 +4093,7 @@
         "slope_3m": 0.0462,
         "slope_9d": 0.0254,
         "state": "contango",
-        "percentile": 79.5
+        "percentile": 79.3
       },
       {
         "date": "2026-08-14",
@@ -4093,7 +4102,7 @@
         "slope_3m": 0.0541,
         "slope_9d": 0.0299,
         "state": "contango",
-        "percentile": 84.4
+        "percentile": 83.6
       },
       {
         "date": "2026-08-17",
@@ -4102,7 +4111,7 @@
         "slope_3m": 0.033,
         "slope_9d": 0.018,
         "state": "contango",
-        "percentile": 69.0
+        "percentile": 70.8
       },
       {
         "date": "2026-08-18",
@@ -4111,7 +4120,7 @@
         "slope_3m": 0.0198,
         "slope_9d": 0.0107,
         "state": "flat",
-        "percentile": 56.7
+        "percentile": 60.9
       },
       {
         "date": "2026-08-19",
@@ -4120,7 +4129,7 @@
         "slope_3m": 0.0385,
         "slope_9d": 0.0211,
         "state": "contango",
-        "percentile": 73.9
+        "percentile": 75.1
       },
       {
         "date": "2026-08-20",
@@ -4129,7 +4138,7 @@
         "slope_3m": 0.0163,
         "slope_9d": 0.0088,
         "state": "flat",
-        "percentile": 53.6
+        "percentile": 58.2
       },
       {
         "date": "2026-08-21",
@@ -4138,7 +4147,7 @@
         "slope_3m": 0.0335,
         "slope_9d": 0.0183,
         "state": "contango",
-        "percentile": 69.4
+        "percentile": 70.8
       },
       {
         "date": "2026-08-24",
@@ -4147,7 +4156,7 @@
         "slope_3m": 0.0192,
         "slope_9d": 0.0104,
         "state": "flat",
-        "percentile": 56.1
+        "percentile": 59.9
       },
       {
         "date": "2026-08-25",
@@ -4156,7 +4165,7 @@
         "slope_3m": 0.0269,
         "slope_9d": 0.0146,
         "state": "contango",
-        "percentile": 63.9
+        "percentile": 67.0
       },
       {
         "date": "2026-08-26",
@@ -4165,7 +4174,7 @@
         "slope_3m": 0.0314,
         "slope_9d": 0.0171,
         "state": "contango",
-        "percentile": 67.8
+        "percentile": 69.8
       },
       {
         "date": "2026-08-27",
@@ -4174,7 +4183,7 @@
         "slope_3m": 0.0462,
         "slope_9d": 0.0254,
         "state": "contango",
-        "percentile": 79.4
+        "percentile": 79.3
       },
       {
         "date": "2026-08-28",
@@ -4183,7 +4192,7 @@
         "slope_3m": 0.0457,
         "slope_9d": 0.0251,
         "state": "contango",
-        "percentile": 79.2
+        "percentile": 79.1
       },
       {
         "date": "2026-08-31",
@@ -4192,7 +4201,7 @@
         "slope_3m": 0.0338,
         "slope_9d": 0.0184,
         "state": "contango",
-        "percentile": 69.8
+        "percentile": 70.7
       },
       {
         "date": "2026-09-01",
@@ -4201,7 +4210,7 @@
         "slope_3m": 0.0055,
         "slope_9d": 0.0029,
         "state": "flat",
-        "percentile": 43.7
+        "percentile": 47.5
       },
       {
         "date": "2026-09-02",
@@ -4210,7 +4219,7 @@
         "slope_3m": 0.0247,
         "slope_9d": 0.0134,
         "state": "contango",
-        "percentile": 61.6
+        "percentile": 64.4
       },
       {
         "date": "2026-09-03",
@@ -4219,7 +4228,7 @@
         "slope_3m": 0.0418,
         "slope_9d": 0.0229,
         "state": "contango",
-        "percentile": 76.3
+        "percentile": 77.0
       },
       {
         "date": "2026-09-04",
@@ -4228,7 +4237,7 @@
         "slope_3m": 0.0361,
         "slope_9d": 0.0197,
         "state": "contango",
-        "percentile": 71.7
+        "percentile": 72.5
       },
       {
         "date": "2026-09-07",
@@ -4237,7 +4246,7 @@
         "slope_3m": 0.0199,
         "slope_9d": 0.0108,
         "state": "flat",
-        "percentile": 56.8
+        "percentile": 60.2
       },
       {
         "date": "2026-09-08",
@@ -4246,7 +4255,7 @@
         "slope_3m": 0.0117,
         "slope_9d": 0.0063,
         "state": "flat",
-        "percentile": 49.0
+        "percentile": 52.7
       },
       {
         "date": "2026-09-09",
@@ -4255,7 +4264,7 @@
         "slope_3m": -0.002,
         "slope_9d": -0.001,
         "state": "flat",
-        "percentile": 38.0
+        "percentile": 41.1
       },
       {
         "date": "2026-09-10",
@@ -4273,7 +4282,7 @@
         "slope_3m": 0.0092,
         "slope_9d": 0.0049,
         "state": "flat",
-        "percentile": 46.6
+        "percentile": 50.2
       },
       {
         "date": "2026-09-14",
@@ -4282,7 +4291,7 @@
         "slope_3m": -0.0122,
         "slope_9d": -0.0065,
         "state": "flat",
-        "percentile": 30.9
+        "percentile": 32.4
       },
       {
         "date": "2026-09-15",
@@ -4291,7 +4300,7 @@
         "slope_3m": -0.0143,
         "slope_9d": -0.0076,
         "state": "flat",
-        "percentile": 29.6
+        "percentile": 30.2
       },
       {
         "date": "2026-09-16",
@@ -4300,7 +4309,7 @@
         "slope_3m": -0.0222,
         "slope_9d": -0.0118,
         "state": "backwardation",
-        "percentile": 24.2
+        "percentile": 23.9
       },
       {
         "date": "2026-09-17",
@@ -4309,7 +4318,7 @@
         "slope_3m": 0.0146,
         "slope_9d": 0.0079,
         "state": "flat",
-        "percentile": 51.8
+        "percentile": 56.4
       },
       {
         "date": "2026-09-18",
@@ -4318,7 +4327,7 @@
         "slope_3m": 0.026,
         "slope_9d": 0.0141,
         "state": "contango",
-        "percentile": 63.0
+        "percentile": 66.2
       },
       {
         "date": "2026-09-21",
@@ -4327,7 +4336,7 @@
         "slope_3m": 0.0239,
         "slope_9d": 0.013,
         "state": "contango",
-        "percentile": 60.7
+        "percentile": 63.0
       },
       {
         "date": "2026-09-22",
@@ -4336,7 +4345,7 @@
         "slope_3m": 0.0373,
         "slope_9d": 0.0204,
         "state": "contango",
-        "percentile": 72.9
+        "percentile": 74.6
       },
       {
         "date": "2026-09-23",
@@ -4345,7 +4354,7 @@
         "slope_3m": 0.0166,
         "slope_9d": 0.009,
         "state": "flat",
-        "percentile": 53.9
+        "percentile": 57.8
       },
       {
         "date": "2026-09-24",
@@ -4354,7 +4363,7 @@
         "slope_3m": 0.0072,
         "slope_9d": 0.0039,
         "state": "flat",
-        "percentile": 45.2
+        "percentile": 48.6
       },
       {
         "date": "2026-09-25",
@@ -4363,7 +4372,7 @@
         "slope_3m": 0.0222,
         "slope_9d": 0.012,
         "state": "contango",
-        "percentile": 59.1
+        "percentile": 62.1
       },
       {
         "date": "2026-09-28",
@@ -4372,7 +4381,7 @@
         "slope_3m": -0.0002,
         "slope_9d": -0.0001,
         "state": "flat",
-        "percentile": 39.2
+        "percentile": 42.2
       },
       {
         "date": "2026-09-29",
@@ -4381,7 +4390,7 @@
         "slope_3m": 0.0003,
         "slope_9d": 0.0002,
         "state": "flat",
-        "percentile": 39.6
+        "percentile": 42.8
       },
       {
         "date": "2026-09-30",
@@ -4390,7 +4399,7 @@
         "slope_3m": -0.005,
         "slope_9d": -0.0027,
         "state": "flat",
-        "percentile": 35.8
+        "percentile": 38.7
       },
       {
         "date": "2026-10-01",
@@ -4399,7 +4408,7 @@
         "slope_3m": -0.0057,
         "slope_9d": -0.003,
         "state": "flat",
-        "percentile": 35.3
+        "percentile": 37.8
       },
       {
         "date": "2026-10-02",
@@ -4408,7 +4417,7 @@
         "slope_3m": 0.0137,
         "slope_9d": 0.0074,
         "state": "flat",
-        "percentile": 50.9
+        "percentile": 54.9
       },
       {
         "date": "2026-10-05",
@@ -4417,7 +4426,7 @@
         "slope_3m": 0.0093,
         "slope_9d": 0.005,
         "state": "flat",
-        "percentile": 46.7
+        "percentile": 50.3
       },
       {
         "date": "2026-10-06",
@@ -4426,7 +4435,7 @@
         "slope_3m": 0.0186,
         "slope_9d": 0.0101,
         "state": "flat",
-        "percentile": 55.7
+        "percentile": 59.4
       },
       {
         "date": "2026-10-07",
@@ -4435,7 +4444,7 @@
         "slope_3m": 0.0171,
         "slope_9d": 0.0092,
         "state": "flat",
-        "percentile": 54.2
+        "percentile": 58.5
       },
       {
         "date": "2026-10-08",
@@ -4444,7 +4453,7 @@
         "slope_3m": 0.0103,
         "slope_9d": 0.0055,
         "state": "flat",
-        "percentile": 47.8
+        "percentile": 51.7
       },
       {
         "date": "2026-10-09",
@@ -4453,7 +4462,7 @@
         "slope_3m": 0.0202,
         "slope_9d": 0.0109,
         "state": "contango",
-        "percentile": 57.2
+        "percentile": 61.4
       },
       {
         "date": "2026-10-12",
@@ -4462,7 +4471,7 @@
         "slope_3m": 0.0119,
         "slope_9d": 0.0064,
         "state": "flat",
-        "percentile": 49.1
+        "percentile": 53.2
       },
       {
         "date": "2026-10-13",
@@ -4471,7 +4480,7 @@
         "slope_3m": 0.0102,
         "slope_9d": 0.0055,
         "state": "flat",
-        "percentile": 47.6
+        "percentile": 51.2
       },
       {
         "date": "2026-10-14",
@@ -4480,7 +4489,7 @@
         "slope_3m": -0.0173,
         "slope_9d": -0.0092,
         "state": "flat",
-        "percentile": 27.4
+        "percentile": 26.9
       },
       {
         "date": "2026-10-15",
@@ -4489,7 +4498,7 @@
         "slope_3m": -0.0114,
         "slope_9d": -0.0061,
         "state": "flat",
-        "percentile": 31.3
+        "percentile": 32.5
       },
       {
         "date": "2026-10-16",
@@ -4498,7 +4507,7 @@
         "slope_3m": -0.0585,
         "slope_9d": -0.0304,
         "state": "backwardation",
-        "percentile": 8.9
+        "percentile": 10.4
       },
       {
         "date": "2026-10-19",
@@ -4507,7 +4516,7 @@
         "slope_3m": -0.0399,
         "slope_9d": -0.0209,
         "state": "backwardation",
-        "percentile": 15.2
+        "percentile": 16.6
       },
       {
         "date": "2026-10-20",
@@ -4516,7 +4525,7 @@
         "slope_3m": -0.0245,
         "slope_9d": -0.013,
         "state": "backwardation",
-        "percentile": 22.8
+        "percentile": 22.6
       },
       {
         "date": "2026-10-21",
@@ -4525,7 +4534,7 @@
         "slope_3m": -0.016,
         "slope_9d": -0.0085,
         "state": "flat",
-        "percentile": 28.4
+        "percentile": 28.3
       },
       {
         "date": "2026-10-22",
@@ -4534,7 +4543,7 @@
         "slope_3m": -0.0481,
         "slope_9d": -0.0251,
         "state": "backwardation",
-        "percentile": 12.2
+        "percentile": 13.0
       },
       {
         "date": "2026-10-23",
@@ -4543,7 +4552,7 @@
         "slope_3m": -0.0523,
         "slope_9d": -0.0272,
         "state": "backwardation",
-        "percentile": 10.7
+        "percentile": 12.0
       },
       {
         "date": "2026-10-26",
@@ -4552,7 +4561,7 @@
         "slope_3m": -0.0385,
         "slope_9d": -0.0202,
         "state": "backwardation",
-        "percentile": 16.0
+        "percentile": 17.4
       },
       {
         "date": "2026-10-27",
@@ -4561,7 +4570,7 @@
         "slope_3m": -0.0262,
         "slope_9d": -0.0139,
         "state": "backwardation",
-        "percentile": 22.0
+        "percentile": 22.6
       },
       {
         "date": "2026-10-28",
@@ -4570,7 +4579,7 @@
         "slope_3m": -0.0168,
         "slope_9d": -0.0089,
         "state": "flat",
-        "percentile": 27.8
+        "percentile": 28.4
       },
       {
         "date": "2026-10-29",
@@ -4579,7 +4588,7 @@
         "slope_3m": -0.0207,
         "slope_9d": -0.0109,
         "state": "backwardation",
-        "percentile": 25.2
+        "percentile": 24.8
       },
       {
         "date": "2026-10-30",
@@ -4588,7 +4597,7 @@
         "slope_3m": -0.0492,
         "slope_9d": -0.0257,
         "state": "backwardation",
-        "percentile": 11.8
+        "percentile": 12.9
       },
       {
         "date": "2026-11-02",
@@ -4597,7 +4606,7 @@
         "slope_3m": -0.0668,
         "slope_9d": -0.0346,
         "state": "backwardation",
-        "percentile": 6.9
+        "percentile": 7.8
       },
       {
         "date": "2026-11-03",
@@ -4606,7 +4615,7 @@
         "slope_3m": -0.0623,
         "slope_9d": -0.0323,
         "state": "backwardation",
-        "percentile": 7.8
+        "percentile": 8.9
       },
       {
         "date": "2026-11-04",
@@ -4615,7 +4624,7 @@
         "slope_3m": -0.0064,
         "slope_9d": -0.0034,
         "state": "flat",
-        "percentile": 34.8
+        "percentile": 38.2
       },
       {
         "date": "2026-11-05",
@@ -4624,7 +4633,7 @@
         "slope_3m": -0.1165,
         "slope_9d": -0.0588,
         "state": "backwardation",
-        "percentile": 1.3
+        "percentile": 1.2
       },
       {
         "date": "2026-11-06",
@@ -4642,7 +4651,7 @@
         "slope_3m": -0.0449,
         "slope_9d": -0.0235,
         "state": "backwardation",
-        "percentile": 13.3
+        "percentile": 14.8
       },
       {
         "date": "2026-11-10",
@@ -4651,7 +4660,7 @@
         "slope_3m": -0.0385,
         "slope_9d": -0.0202,
         "state": "backwardation",
-        "percentile": 16.1
+        "percentile": 18.0
       },
       {
         "date": "2026-11-11",
@@ -4660,7 +4669,7 @@
         "slope_3m": -0.0106,
         "slope_9d": -0.0057,
         "state": "flat",
-        "percentile": 31.9
+        "percentile": 34.9
       },
       {
         "date": "2026-11-12",
@@ -4669,7 +4678,7 @@
         "slope_3m": -0.0274,
         "slope_9d": -0.0145,
         "state": "backwardation",
-        "percentile": 21.5
+        "percentile": 22.8
       },
       {
         "date": "2026-11-13",
@@ -4678,7 +4687,7 @@
         "slope_3m": -0.0342,
         "slope_9d": -0.018,
         "state": "backwardation",
-        "percentile": 18.0
+        "percentile": 19.7
       },
       {
         "date": "2026-11-16",
@@ -4687,7 +4696,7 @@
         "slope_3m": -0.0715,
         "slope_9d": -0.0369,
         "state": "backwardation",
-        "percentile": 5.9
+        "percentile": 7.1
       },
       {
         "date": "2026-11-17",
@@ -4696,7 +4705,7 @@
         "slope_3m": -0.0906,
         "slope_9d": -0.0463,
         "state": "backwardation",
-        "percentile": 3.1
+        "percentile": 3.2
       },
       {
         "date": "2026-11-18",
@@ -4714,7 +4723,7 @@
         "slope_3m": -0.1066,
         "slope_9d": -0.054,
         "state": "backwardation",
-        "percentile": 1.8
+        "percentile": 1.7
       },
       {
         "date": "2026-11-20",
@@ -4723,18 +4732,9 @@
         "slope_3m": -0.1398,
         "slope_9d": -0.0697,
         "state": "backwardation",
-        "percentile": 0.6
-      },
-      {
-        "date": "2026-11-23",
-        "vix": 26.62,
-        "vix3m": 24.25,
-        "slope_3m": -0.0889,
-        "slope_9d": -0.0455,
-        "state": "backwardation",
-        "percentile": 3.3
+        "percentile": 0.5
       }
     ],
-    "interpretation": "VIX term structure is currently in BACKWARDATION (3M/30D slope at -8.9%, 3th percentile). Front-month VIX stands at 26.6 (85th pct)."
+    "interpretation": "VIX term structure is currently in BACKWARDATION (3M/30D slope at -14.0%, 1th percentile). Front-month VIX stands at 35.9 (99th pct)."
   }
 }

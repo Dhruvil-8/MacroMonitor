@@ -2,67 +2,31 @@
   "schema_version": "1.0",
   "as_of": "2026-11-24",
   "code_version": "v1.0.0",
-  "params_hash": "f1687f268479",
+  "params_hash": "default_hash",
   "manifest": {
     "datasets": [
       {
-        "path": "/v1/series/eem.json",
+        "path": "/v1/series/asx200.json",
         "schema_version": "1.0",
-        "size_bytes": 202832,
+        "size_bytes": 238771,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/xlf.json",
+        "path": "/v1/series/audusd.json",
         "schema_version": "1.0",
-        "size_bytes": 230045,
+        "size_bytes": 181704,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/ndx.json",
+        "path": "/v1/series/brent.json",
         "schema_version": "1.0",
-        "size_bytes": 246773,
+        "size_bytes": 167072,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/xle.json",
+        "path": "/v1/series/copper.json",
         "schema_version": "1.0",
-        "size_bytes": 229735,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/niftyauto.json",
-        "schema_version": "1.0",
-        "size_bytes": 140487,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/wti.json",
-        "schema_version": "1.0",
-        "size_bytes": 226182,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/xlu.json",
-        "schema_version": "1.0",
-        "size_bytes": 228368,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/us10y.json",
-        "schema_version": "1.0",
-        "size_bytes": 224057,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/xlp.json",
-        "schema_version": "1.0",
-        "size_bytes": 231077,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/niftymetal.json",
-        "schema_version": "1.0",
-        "size_bytes": 138978,
+        "size_bytes": 229062,
         "as_of": "2026-11-24"
       },
       {
@@ -72,15 +36,27 @@
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/rrp.json",
+        "path": "/v1/series/dji.json",
         "schema_version": "1.0",
-        "size_bytes": 117243,
+        "size_bytes": 251300,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/ssec.json",
+        "path": "/v1/series/dxy.json",
         "schema_version": "1.0",
-        "size_bytes": 239455,
+        "size_bytes": 232902,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/eem.json",
+        "schema_version": "1.0",
+        "size_bytes": 202832,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/eurusd.json",
+        "schema_version": "1.0",
+        "size_bytes": 203175,
         "as_of": "2026-11-24"
       },
       {
@@ -90,69 +66,21 @@
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/usdkrw.json",
+        "path": "/v1/series/ftse.json",
         "schema_version": "1.0",
-        "size_bytes": 207107,
+        "size_bytes": 238992,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/niftypharma.json",
+        "path": "/v1/series/gbpusd.json",
         "schema_version": "1.0",
-        "size_bytes": 145012,
+        "size_bytes": 203420,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/silver.json",
+        "path": "/v1/series/gold.json",
         "schema_version": "1.0",
-        "size_bytes": 230609,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/natgas.json",
-        "schema_version": "1.0",
-        "size_bytes": 225330,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/n225.json",
-        "schema_version": "1.0",
-        "size_bytes": 250636,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/spx.json",
-        "schema_version": "1.0",
-        "size_bytes": 244560,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/niftymid.json",
-        "schema_version": "1.0",
-        "size_bytes": 194134,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/nifty50.json",
-        "schema_version": "1.0",
-        "size_bytes": 175189,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/audusd.json",
-        "schema_version": "1.0",
-        "size_bytes": 181705,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/rsp.json",
-        "schema_version": "1.0",
-        "size_bytes": 204228,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/brent.json",
-        "schema_version": "1.0",
-        "size_bytes": 167106,
+        "size_bytes": 231798,
         "as_of": "2026-11-24"
       },
       {
@@ -162,171 +90,15 @@
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/xly.json",
+        "path": "/v1/series/hy_spread.json",
         "schema_version": "1.0",
-        "size_bytes": 230867,
+        "size_bytes": 25286,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/usdinr.json",
+        "path": "/v1/series/ibov.json",
         "schema_version": "1.0",
-        "size_bytes": 194075,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/gold.json",
-        "schema_version": "1.0",
-        "size_bytes": 231832,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/dji.json",
-        "schema_version": "1.0",
-        "size_bytes": 251300,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/niftysmall.json",
-        "schema_version": "1.0",
-        "size_bytes": 27104,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/xlb.json",
-        "schema_version": "1.0",
-        "size_bytes": 229205,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/niftybank.json",
-        "schema_version": "1.0",
-        "size_bytes": 178639,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/xli.json",
-        "schema_version": "1.0",
-        "size_bytes": 231900,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/niftyfmcg.json",
-        "schema_version": "1.0",
-        "size_bytes": 146602,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/sofr.json",
-        "schema_version": "1.0",
-        "size_bytes": 71985,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/niftyit.json",
-        "schema_version": "1.0",
-        "size_bytes": 176108,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/niftyrealty.json",
-        "schema_version": "1.0",
-        "size_bytes": 143418,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/us2s10s.json",
-        "schema_version": "1.0",
-        "size_bytes": 225165,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/usdcad.json",
-        "schema_version": "1.0",
-        "size_bytes": 205303,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/usdjpy.json",
-        "schema_version": "1.0",
-        "size_bytes": 240418,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/xlre.json",
-        "schema_version": "1.0",
-        "size_bytes": 95785,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/vix.json",
-        "schema_version": "1.0",
-        "size_bytes": 230992,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/usdcny.json",
-        "schema_version": "1.0",
-        "size_bytes": 193253,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/us10y_real.json",
-        "schema_version": "1.0",
-        "size_bytes": 200074,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/dxy.json",
-        "schema_version": "1.0",
-        "size_bytes": 232936,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/us30y.json",
-        "schema_version": "1.0",
-        "size_bytes": 224038,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/kospi.json",
-        "schema_version": "1.0",
-        "size_bytes": 243398,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/us2y.json",
-        "schema_version": "1.0",
-        "size_bytes": 224056,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/copper.json",
-        "schema_version": "1.0",
-        "size_bytes": 229094,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/gbpusd.json",
-        "schema_version": "1.0",
-        "size_bytes": 203421,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/ftse.json",
-        "schema_version": "1.0",
-        "size_bytes": 238992,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/tga.json",
-        "schema_version": "1.0",
-        "size_bytes": 220329,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/series/sensex.json",
-        "schema_version": "1.0",
-        "size_bytes": 204891,
+        "size_bytes": 247521,
         "as_of": "2026-11-24"
       },
       {
@@ -336,21 +108,189 @@
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/xlv.json",
+        "path": "/v1/series/indiavix.json",
         "schema_version": "1.0",
-        "size_bytes": 232611,
+        "size_bytes": 153758,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/xlc.json",
+        "path": "/v1/series/kospi.json",
         "schema_version": "1.0",
-        "size_bytes": 73067,
+        "size_bytes": 243398,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/n225.json",
+        "schema_version": "1.0",
+        "size_bytes": 250636,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/natgas.json",
+        "schema_version": "1.0",
+        "size_bytes": 225297,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/ndx.json",
+        "schema_version": "1.0",
+        "size_bytes": 246773,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/nifty50.json",
+        "schema_version": "1.0",
+        "size_bytes": 175189,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/niftyauto.json",
+        "schema_version": "1.0",
+        "size_bytes": 140487,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/niftybank.json",
+        "schema_version": "1.0",
+        "size_bytes": 178639,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/niftyfmcg.json",
+        "schema_version": "1.0",
+        "size_bytes": 146602,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/niftyit.json",
+        "schema_version": "1.0",
+        "size_bytes": 176108,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/niftymetal.json",
+        "schema_version": "1.0",
+        "size_bytes": 138978,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/niftymid.json",
+        "schema_version": "1.0",
+        "size_bytes": 194134,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/niftypharma.json",
+        "schema_version": "1.0",
+        "size_bytes": 145012,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/niftyrealty.json",
+        "schema_version": "1.0",
+        "size_bytes": 143418,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/niftysmall.json",
+        "schema_version": "1.0",
+        "size_bytes": 27104,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/rrp.json",
+        "schema_version": "1.0",
+        "size_bytes": 117243,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/rsp.json",
+        "schema_version": "1.0",
+        "size_bytes": 204226,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/rut.json",
+        "schema_version": "1.0",
+        "size_bytes": 241541,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/sensex.json",
+        "schema_version": "1.0",
+        "size_bytes": 204891,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/silver.json",
+        "schema_version": "1.0",
+        "size_bytes": 230576,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/sofr.json",
+        "schema_version": "1.0",
+        "size_bytes": 71985,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/spx.json",
+        "schema_version": "1.0",
+        "size_bytes": 244560,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/ssec.json",
+        "schema_version": "1.0",
+        "size_bytes": 239455,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/tga.json",
+        "schema_version": "1.0",
+        "size_bytes": 220329,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/tsse.json",
+        "schema_version": "1.0",
+        "size_bytes": 244291,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/us10y.json",
+        "schema_version": "1.0",
+        "size_bytes": 224057,
         "as_of": "2026-11-24"
       },
       {
         "path": "/v1/series/us10y_breakeven.json",
         "schema_version": "1.0",
         "size_bytes": 199164,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/us10y_real.json",
+        "schema_version": "1.0",
+        "size_bytes": 200074,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/us2s10s.json",
+        "schema_version": "1.0",
+        "size_bytes": 225165,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/us2y.json",
+        "schema_version": "1.0",
+        "size_bytes": 224056,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/us30y.json",
+        "schema_version": "1.0",
+        "size_bytes": 224038,
         "as_of": "2026-11-24"
       },
       {
@@ -366,147 +306,171 @@
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/hy_spread.json",
+        "path": "/v1/series/usdcad.json",
         "schema_version": "1.0",
-        "size_bytes": 25286,
+        "size_bytes": 205303,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/tsse.json",
+        "path": "/v1/series/usdcny.json",
         "schema_version": "1.0",
-        "size_bytes": 244290,
+        "size_bytes": 193253,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/ibov.json",
+        "path": "/v1/series/usdinr.json",
         "schema_version": "1.0",
-        "size_bytes": 247521,
+        "size_bytes": 194075,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/rut.json",
+        "path": "/v1/series/usdjpy.json",
         "schema_version": "1.0",
-        "size_bytes": 241541,
+        "size_bytes": 240419,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/eurusd.json",
+        "path": "/v1/series/usdkrw.json",
         "schema_version": "1.0",
-        "size_bytes": 203175,
+        "size_bytes": 207107,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/indiavix.json",
+        "path": "/v1/series/vix.json",
         "schema_version": "1.0",
-        "size_bytes": 153758,
+        "size_bytes": 25055,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/series/asx200.json",
+        "path": "/v1/series/wti.json",
         "schema_version": "1.0",
-        "size_bytes": 238771,
+        "size_bytes": 226149,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/xlb.json",
+        "schema_version": "1.0",
+        "size_bytes": 229205,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/xlc.json",
+        "schema_version": "1.0",
+        "size_bytes": 73068,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/xle.json",
+        "schema_version": "1.0",
+        "size_bytes": 229735,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/xlf.json",
+        "schema_version": "1.0",
+        "size_bytes": 230046,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/xli.json",
+        "schema_version": "1.0",
+        "size_bytes": 231900,
         "as_of": "2026-11-24"
       },
       {
         "path": "/v1/series/xlk.json",
         "schema_version": "1.0",
-        "size_bytes": 229348,
+        "size_bytes": 229347,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/xlp.json",
+        "schema_version": "1.0",
+        "size_bytes": 231077,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/xlre.json",
+        "schema_version": "1.0",
+        "size_bytes": 95785,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/xlu.json",
+        "schema_version": "1.0",
+        "size_bytes": 228367,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/xlv.json",
+        "schema_version": "1.0",
+        "size_bytes": 232611,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/series/xly.json",
+        "schema_version": "1.0",
+        "size_bytes": 230868,
         "as_of": "2026-11-24"
       },
       {
         "path": "/v1/vol_landscape.json",
         "schema_version": "1.0",
-        "size_bytes": 21942,
+        "size_bytes": 21941,
         "as_of": "2026-11-24"
       },
       {
         "path": "/v1/state_map.json",
         "schema_version": "1.0",
-        "size_bytes": 18175,
+        "size_bytes": 18168,
         "as_of": "2026-11-24"
       },
       {
         "path": "/v1/pulse.json",
         "schema_version": "1.0",
-        "size_bytes": 4906,
+        "size_bytes": 4901,
         "as_of": "2026-11-24"
       },
       {
         "path": "/v1/divergences.json",
         "schema_version": "1.0",
-        "size_bytes": 58221,
+        "size_bytes": 58232,
         "as_of": "2026-11-24"
       },
       {
         "path": "/v1/correlations.json",
         "schema_version": "1.0",
-        "size_bytes": 27366,
+        "size_bytes": 27364,
         "as_of": "2026-11-24"
       },
       {
         "path": "/v1/rotation_global.json",
         "schema_version": "1.0",
-        "size_bytes": 55778,
+        "size_bytes": 55783,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/eem.json",
+        "path": "/v1/context/asx200.json",
         "schema_version": "1.0",
-        "size_bytes": 33221,
+        "size_bytes": 36792,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/xlf.json",
+        "path": "/v1/context/audusd.json",
         "schema_version": "1.0",
-        "size_bytes": 36522,
+        "size_bytes": 30133,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/ndx.json",
+        "path": "/v1/context/brent.json",
         "schema_version": "1.0",
-        "size_bytes": 36914,
+        "size_bytes": 28481,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/xle.json",
+        "path": "/v1/context/copper.json",
         "schema_version": "1.0",
-        "size_bytes": 36540,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/niftyauto.json",
-        "schema_version": "1.0",
-        "size_bytes": 25181,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/wti.json",
-        "schema_version": "1.0",
-        "size_bytes": 35326,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/xlu.json",
-        "schema_version": "1.0",
-        "size_bytes": 36503,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/us10y.json",
-        "schema_version": "1.0",
-        "size_bytes": 35444,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/xlp.json",
-        "schema_version": "1.0",
-        "size_bytes": 36551,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/niftymetal.json",
-        "schema_version": "1.0",
-        "size_bytes": 25037,
+        "size_bytes": 35777,
         "as_of": "2026-11-24"
       },
       {
@@ -516,15 +480,27 @@
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/rrp.json",
+        "path": "/v1/context/dji.json",
         "schema_version": "1.0",
-        "size_bytes": 22522,
+        "size_bytes": 37203,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/ssec.json",
+        "path": "/v1/context/dxy.json",
         "schema_version": "1.0",
-        "size_bytes": 36901,
+        "size_bytes": 35917,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/eem.json",
+        "schema_version": "1.0",
+        "size_bytes": 33220,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/eurusd.json",
+        "schema_version": "1.0",
+        "size_bytes": 32580,
         "as_of": "2026-11-24"
       },
       {
@@ -534,279 +510,27 @@
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/usdkrw.json",
-        "schema_version": "1.0",
-        "size_bytes": 32278,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/niftypharma.json",
-        "schema_version": "1.0",
-        "size_bytes": 25703,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/silver.json",
-        "schema_version": "1.0",
-        "size_bytes": 35626,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/natgas.json",
-        "schema_version": "1.0",
-        "size_bytes": 35592,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/n225.json",
-        "schema_version": "1.0",
-        "size_bytes": 37192,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/spx.json",
-        "schema_version": "1.0",
-        "size_bytes": 36570,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/niftymid.json",
-        "schema_version": "1.0",
-        "size_bytes": 31184,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/nifty50.json",
-        "schema_version": "1.0",
-        "size_bytes": 29070,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/audusd.json",
-        "schema_version": "1.0",
-        "size_bytes": 30127,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/rsp.json",
-        "schema_version": "1.0",
-        "size_bytes": 33133,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/brent.json",
-        "schema_version": "1.0",
-        "size_bytes": 28476,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/hsi.json",
-        "schema_version": "1.0",
-        "size_bytes": 37277,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/xly.json",
-        "schema_version": "1.0",
-        "size_bytes": 36545,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/usdinr.json",
-        "schema_version": "1.0",
-        "size_bytes": 31274,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/gold.json",
-        "schema_version": "1.0",
-        "size_bytes": 35493,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/dji.json",
-        "schema_version": "1.0",
-        "size_bytes": 37203,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/niftysmall.json",
-        "schema_version": "1.0",
-        "size_bytes": 12260,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/xlb.json",
-        "schema_version": "1.0",
-        "size_bytes": 36535,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/niftybank.json",
-        "schema_version": "1.0",
-        "size_bytes": 29300,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/xli.json",
-        "schema_version": "1.0",
-        "size_bytes": 36530,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/niftyfmcg.json",
-        "schema_version": "1.0",
-        "size_bytes": 25733,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/sofr.json",
-        "schema_version": "1.0",
-        "size_bytes": 17307,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/niftyit.json",
-        "schema_version": "1.0",
-        "size_bytes": 29162,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/niftyrealty.json",
-        "schema_version": "1.0",
-        "size_bytes": 25547,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/us2s10s.json",
-        "schema_version": "1.0",
-        "size_bytes": 35450,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/usdcad.json",
-        "schema_version": "1.0",
-        "size_bytes": 32865,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/usdjpy.json",
-        "schema_version": "1.0",
-        "size_bytes": 36119,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/xlre.json",
-        "schema_version": "1.0",
-        "size_bytes": 20553,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/vix.json",
-        "schema_version": "1.0",
-        "size_bytes": 36163,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/usdcny.json",
-        "schema_version": "1.0",
-        "size_bytes": 31514,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/us10y_real.json",
-        "schema_version": "1.0",
-        "size_bytes": 32515,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/dxy.json",
-        "schema_version": "1.0",
-        "size_bytes": 35923,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/us30y.json",
-        "schema_version": "1.0",
-        "size_bytes": 35494,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/kospi.json",
-        "schema_version": "1.0",
-        "size_bytes": 36525,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/us2y.json",
-        "schema_version": "1.0",
-        "size_bytes": 35428,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/copper.json",
-        "schema_version": "1.0",
-        "size_bytes": 35787,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/gbpusd.json",
-        "schema_version": "1.0",
-        "size_bytes": 32600,
-        "as_of": "2026-11-24"
-      },
-      {
         "path": "/v1/context/ftse.json",
         "schema_version": "1.0",
         "size_bytes": 36914,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/tga.json",
+        "path": "/v1/context/gbpusd.json",
         "schema_version": "1.0",
-        "size_bytes": 33510,
+        "size_bytes": 32592,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/sensex.json",
+        "path": "/v1/context/gold.json",
         "schema_version": "1.0",
-        "size_bytes": 32082,
+        "size_bytes": 35482,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/ig_spread.json",
+        "path": "/v1/context/hsi.json",
         "schema_version": "1.0",
-        "size_bytes": 11768,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/xlv.json",
-        "schema_version": "1.0",
-        "size_bytes": 36535,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/xlc.json",
-        "schema_version": "1.0",
-        "size_bytes": 17860,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/us10y_breakeven.json",
-        "schema_version": "1.0",
-        "size_bytes": 32497,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/us5y.json",
-        "schema_version": "1.0",
-        "size_bytes": 35460,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/usdbrl.json",
-        "schema_version": "1.0",
-        "size_bytes": 31016,
+        "size_bytes": 37283,
         "as_of": "2026-11-24"
       },
       {
@@ -816,27 +540,15 @@
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/tsse.json",
-        "schema_version": "1.0",
-        "size_bytes": 36998,
-        "as_of": "2026-11-24"
-      },
-      {
         "path": "/v1/context/ibov.json",
         "schema_version": "1.0",
         "size_bytes": 36472,
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/rut.json",
+        "path": "/v1/context/ig_spread.json",
         "schema_version": "1.0",
-        "size_bytes": 36394,
-        "as_of": "2026-11-24"
-      },
-      {
-        "path": "/v1/context/eurusd.json",
-        "schema_version": "1.0",
-        "size_bytes": 32571,
+        "size_bytes": 11768,
         "as_of": "2026-11-24"
       },
       {
@@ -846,15 +558,303 @@
         "as_of": "2026-11-24"
       },
       {
-        "path": "/v1/context/asx200.json",
+        "path": "/v1/context/kospi.json",
         "schema_version": "1.0",
-        "size_bytes": 36787,
+        "size_bytes": 36513,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/n225.json",
+        "schema_version": "1.0",
+        "size_bytes": 37211,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/natgas.json",
+        "schema_version": "1.0",
+        "size_bytes": 35589,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/ndx.json",
+        "schema_version": "1.0",
+        "size_bytes": 36915,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/nifty50.json",
+        "schema_version": "1.0",
+        "size_bytes": 29070,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/niftyauto.json",
+        "schema_version": "1.0",
+        "size_bytes": 25181,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/niftybank.json",
+        "schema_version": "1.0",
+        "size_bytes": 29300,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/niftyfmcg.json",
+        "schema_version": "1.0",
+        "size_bytes": 25733,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/niftyit.json",
+        "schema_version": "1.0",
+        "size_bytes": 29162,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/niftymetal.json",
+        "schema_version": "1.0",
+        "size_bytes": 25037,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/niftymid.json",
+        "schema_version": "1.0",
+        "size_bytes": 31184,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/niftypharma.json",
+        "schema_version": "1.0",
+        "size_bytes": 25703,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/niftyrealty.json",
+        "schema_version": "1.0",
+        "size_bytes": 25547,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/niftysmall.json",
+        "schema_version": "1.0",
+        "size_bytes": 12260,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/rrp.json",
+        "schema_version": "1.0",
+        "size_bytes": 22522,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/rsp.json",
+        "schema_version": "1.0",
+        "size_bytes": 33135,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/rut.json",
+        "schema_version": "1.0",
+        "size_bytes": 36389,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/sensex.json",
+        "schema_version": "1.0",
+        "size_bytes": 32082,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/silver.json",
+        "schema_version": "1.0",
+        "size_bytes": 35622,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/sofr.json",
+        "schema_version": "1.0",
+        "size_bytes": 17307,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/spx.json",
+        "schema_version": "1.0",
+        "size_bytes": 36570,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/ssec.json",
+        "schema_version": "1.0",
+        "size_bytes": 36900,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/tga.json",
+        "schema_version": "1.0",
+        "size_bytes": 33510,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/tsse.json",
+        "schema_version": "1.0",
+        "size_bytes": 36999,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/us10y.json",
+        "schema_version": "1.0",
+        "size_bytes": 35443,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/us10y_breakeven.json",
+        "schema_version": "1.0",
+        "size_bytes": 32503,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/us10y_real.json",
+        "schema_version": "1.0",
+        "size_bytes": 32515,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/us2s10s.json",
+        "schema_version": "1.0",
+        "size_bytes": 35440,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/us2y.json",
+        "schema_version": "1.0",
+        "size_bytes": 35431,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/us30y.json",
+        "schema_version": "1.0",
+        "size_bytes": 35495,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/us5y.json",
+        "schema_version": "1.0",
+        "size_bytes": 35463,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/usdbrl.json",
+        "schema_version": "1.0",
+        "size_bytes": 31016,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/usdcad.json",
+        "schema_version": "1.0",
+        "size_bytes": 32869,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/usdcny.json",
+        "schema_version": "1.0",
+        "size_bytes": 31503,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/usdinr.json",
+        "schema_version": "1.0",
+        "size_bytes": 31274,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/usdjpy.json",
+        "schema_version": "1.0",
+        "size_bytes": 36124,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/usdkrw.json",
+        "schema_version": "1.0",
+        "size_bytes": 32272,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/vix.json",
+        "schema_version": "1.0",
+        "size_bytes": 12312,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/wti.json",
+        "schema_version": "1.0",
+        "size_bytes": 35329,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/xlb.json",
+        "schema_version": "1.0",
+        "size_bytes": 36541,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/xlc.json",
+        "schema_version": "1.0",
+        "size_bytes": 17864,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/xle.json",
+        "schema_version": "1.0",
+        "size_bytes": 36536,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/xlf.json",
+        "schema_version": "1.0",
+        "size_bytes": 36528,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/xli.json",
+        "schema_version": "1.0",
+        "size_bytes": 36528,
         "as_of": "2026-11-24"
       },
       {
         "path": "/v1/context/xlk.json",
         "schema_version": "1.0",
-        "size_bytes": 36530,
+        "size_bytes": 36535,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/xlp.json",
+        "schema_version": "1.0",
+        "size_bytes": 36564,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/xlre.json",
+        "schema_version": "1.0",
+        "size_bytes": 20553,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/xlu.json",
+        "schema_version": "1.0",
+        "size_bytes": 36505,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/xlv.json",
+        "schema_version": "1.0",
+        "size_bytes": 36532,
+        "as_of": "2026-11-24"
+      },
+      {
+        "path": "/v1/context/xly.json",
+        "schema_version": "1.0",
+        "size_bytes": 36558,
         "as_of": "2026-11-24"
       },
       {
@@ -938,13 +938,13 @@
       {
         "path": "/v1/risk.json",
         "schema_version": "1.0",
-        "size_bytes": 1424102,
+        "size_bytes": 1424068,
         "as_of": "2026-11-24"
       },
       {
         "path": "/v1/observations.json",
         "schema_version": "1.0",
-        "size_bytes": 6085,
+        "size_bytes": 6017,
         "as_of": "2026-11-24"
       },
       {
@@ -968,13 +968,13 @@
       {
         "path": "/v1/benchmarks.json",
         "schema_version": "1.0",
-        "size_bytes": 7234,
+        "size_bytes": 7231,
         "as_of": "2026-11-24"
       },
       {
         "path": "/v1/implied_vol.json",
         "schema_version": "1.0",
-        "size_bytes": 107616,
+        "size_bytes": 107628,
         "as_of": "2026-11-24"
       },
       {

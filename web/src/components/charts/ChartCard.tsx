@@ -49,7 +49,7 @@ export const ChartCard: React.FC<ChartCardProps> = ({
       className={`p-5 rounded-lg bg-[var(--bg-1)] border border-[var(--line)] shadow-sm flex flex-col justify-between ${className}`}
     >
       {/* Header */}
-      <div className="flex items-start justify-between gap-4 pb-4 border-b border-[var(--line)]">
+      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 pb-4 border-b border-[var(--line)]">
         <div>
           {eyebrow && (
             <span className="text-[10px] uppercase font-mono tracking-widest text-[var(--tx-2)] block mb-1">
@@ -64,7 +64,7 @@ export const ChartCard: React.FC<ChartCardProps> = ({
           )}
         </div>
 
-        <div className="flex items-center gap-1.5">
+        <div className="flex flex-wrap items-center gap-1.5">
           {headerControls}
 
           {dataTable && (
