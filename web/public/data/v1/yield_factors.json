@@ -5,34 +5,34 @@
   "params_hash": "f1687f268479",
   "lambda_diebold_li": 0.0609,
   "current_factors": {
-    "level": 5.243,
-    "slope": -1.395,
-    "curvature": -0.112,
-    "rmse": 0.123,
-    "level_percentile": 81.2,
-    "slope_percentile": 44.0,
-    "curvature_percentile": 88.2
+    "level": 5.229,
+    "slope": -1.368,
+    "curvature": -0.049,
+    "rmse": 0.11,
+    "level_percentile": 80.9,
+    "slope_percentile": 44.6,
+    "curvature_percentile": 88.5
   },
   "spreads": [
     {
       "name": "10Y - 2Y Curve Spread",
       "current": 0.29,
-      "chg_1m": -0.02,
+      "chg_1m": 0.0,
       "percentile": 27.8,
       "inverted": false
     },
     {
       "name": "10Y - 3M Near-Term Spread",
-      "current": 1.0,
-      "chg_1m": -0.08,
-      "percentile": 72.9,
+      "current": 0.98,
+      "chg_1m": -0.06,
+      "percentile": 72.3,
       "inverted": false
     },
     {
       "name": "30Y - 5Y Ultra-Long Spread",
-      "current": 0.6,
-      "chg_1m": 0.09,
-      "percentile": 30.6,
+      "current": 0.55,
+      "chg_1m": 0.07,
+      "percentile": 28.5,
       "inverted": false
     }
   ]

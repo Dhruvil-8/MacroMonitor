@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T09:20:10Z",
+  "fetched_at": "2026-11-25T20:21:00Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
     "id": "jkse",
-    "name": "JKSE",
+    "name": "IDX Composite (Jakarta)",
     "unit": "index",
     "frequency": "D",
     "d": [
@@ -8343,7 +8343,7 @@
       1095.02,
       1100.16,
       1096.48,
-      1103.25,
+      1103.24,
       1111.58,
       1111.18,
       1105.94,

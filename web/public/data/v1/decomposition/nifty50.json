@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T09:21:21Z",
+  "fetched_at": "2026-11-25T20:21:23Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -9,15 +9,15 @@
     "target_id": "nifty50",
     "horizon_days": 5,
     "lens": "usd",
-    "total_return": 0.0177,
+    "total_return": -0.0145,
     "contributions": {
       "brent": 0.0012,
-      "copper": 0.0056,
-      "gold": -0.0074,
-      "dxy": 0.0003,
-      "us10y": 0.0077,
-      "row_equity": -0.0292,
-      "fx_effect": -0.0079
+      "copper": 0.0036,
+      "gold": -0.0042,
+      "dxy": 0.0006,
+      "us10y": 0.0074,
+      "row_equity": -0.016,
+      "fx_effect": -0.0167
     },
     "intervals": {
       "brent": [
@@ -25,51 +25,51 @@
         0.002
       ],
       "copper": [
-        0.0006,
-        0.0106
+        0.0005,
+        0.0067
       ],
       "gold": [
-        -0.0121,
-        -0.0026
+        -0.0068,
+        -0.0017
       ],
       "dxy": [
-        -0.0006,
-        0.0012
+        -0.0012,
+        0.0024
       ],
       "us10y": [
-        -0.0029,
-        0.0183
+        -0.0023,
+        0.017
       ],
       "row_equity": [
-        -0.0369,
-        -0.0215
+        -0.0204,
+        -0.0116
       ],
       "fx_effect": [
-        -0.0079,
-        -0.0079
+        -0.0167,
+        -0.0167
       ]
     },
-    "residual": 0.0474,
+    "residual": 0.0096,
     "betas": {
-      "brent": -0.0338,
-      "copper": -0.0539,
-      "gold": 0.0735,
-      "dxy": 0.0752,
-      "us10y": -0.0003,
-      "row_equity": 0.4473
+      "brent": -0.0356,
+      "copper": -0.0571,
+      "gold": 0.0784,
+      "dxy": 0.0839,
+      "us10y": -0.0004,
+      "row_equity": 0.4344
     },
-    "r2_in_sample": 0.135,
-    "r2_out_sample": 0.1375,
+    "r2_in_sample": 0.1259,
+    "r2_out_sample": 0.1291,
     "mostly_unexplained": false,
     "regularized": false,
     "n_obs": 250,
     "window_dates": {
-      "prior_start": "2025-12-01",
-      "prior_end": "2026-11-13",
-      "horizon_start": "2026-11-16",
-      "horizon_end": "2026-11-20"
+      "prior_start": "2025-12-02",
+      "prior_end": "2026-11-16",
+      "horizon_start": "2026-11-17",
+      "horizon_end": "2026-11-23"
     },
-    "narrative": "Over 5 days, India (Nifty 50)'s USD return of +1.8% was associated with: row equity -2.9%, fx effect -0.8%, us10y +0.8%, gold -0.7%, copper +0.6%, brent +0.1%, dxy +0.0%, unexplained +4.7% (out-of-sample R-squared 0.14).",
+    "narrative": "Over 5 days, India (Nifty 50)'s USD return of -1.4% was associated with: fx effect -1.7%, row equity -1.6%, us10y +0.7%, gold -0.4%, copper +0.4%, brent +0.1%, dxy +0.1%, unexplained +1.0% (out-of-sample R-squared 0.13).",
     "history": []
   }
 }

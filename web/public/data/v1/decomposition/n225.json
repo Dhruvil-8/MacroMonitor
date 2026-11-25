@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T09:21:22Z",
+  "fetched_at": "2026-11-25T20:21:23Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -9,67 +9,67 @@
     "target_id": "n225",
     "horizon_days": 5,
     "lens": "usd",
-    "total_return": -0.0811,
+    "total_return": -0.0606,
     "contributions": {
       "brent": 0.0001,
-      "copper": -0.0054,
-      "gold": -0.0115,
-      "dxy": 0.0022,
-      "us10y": -0.0209,
-      "row_equity": -0.0563,
-      "fx_effect": -0.0011
+      "copper": -0.0036,
+      "gold": -0.0062,
+      "dxy": 0.0041,
+      "us10y": -0.0192,
+      "row_equity": -0.0322,
+      "fx_effect": -0.0053
     },
     "intervals": {
       "brent": [
-        -0.0029,
-        0.0031
+        -0.0028,
+        0.0029
       ],
       "copper": [
-        -0.0187,
-        0.008
+        -0.0117,
+        0.0045
       ],
       "gold": [
-        -0.0244,
-        0.0013
+        -0.0131,
+        0.0007
       ],
       "dxy": [
-        -0.0006,
-        0.0051
+        -0.0014,
+        0.0095
       ],
       "us10y": [
-        -0.0342,
+        -0.0307,
         -0.0076
       ],
       "row_equity": [
-        -0.0769,
-        -0.0357
+        -0.0439,
+        -0.0205
       ],
       "fx_effect": [
-        -0.0011,
-        -0.0011
+        -0.0053,
+        -0.0053
       ]
     },
-    "residual": 0.0118,
+    "residual": 0.0017,
     "betas": {
-      "brent": -0.0025,
-      "copper": 0.0514,
-      "gold": 0.1151,
-      "dxy": 0.5756,
-      "us10y": 0.0009,
-      "row_equity": 1.2781
+      "brent": -0.0023,
+      "copper": 0.0566,
+      "gold": 0.1155,
+      "dxy": 0.5473,
+      "us10y": 0.001,
+      "row_equity": 1.2772
     },
-    "r2_in_sample": 0.2435,
-    "r2_out_sample": 0.2435,
+    "r2_in_sample": 0.2501,
+    "r2_out_sample": 0.2501,
     "mostly_unexplained": false,
     "regularized": false,
     "n_obs": 250,
     "window_dates": {
-      "prior_start": "2025-12-01",
-      "prior_end": "2026-11-13",
-      "horizon_start": "2026-11-16",
-      "horizon_end": "2026-11-20"
+      "prior_start": "2025-12-02",
+      "prior_end": "2026-11-16",
+      "horizon_start": "2026-11-17",
+      "horizon_end": "2026-11-23"
     },
-    "narrative": "Over 5 days, Japan (Nikkei 225)'s USD return of -8.1% was associated with: row equity -5.6%, us10y -2.1%, gold -1.2%, copper -0.5%, dxy +0.2%, fx effect -0.1%, brent +0.0%, unexplained +1.2% (out-of-sample R-squared 0.24).",
+    "narrative": "Over 5 days, Japan (Nikkei 225)'s USD return of -6.1% was associated with: row equity -3.2%, us10y -1.9%, gold -0.6%, fx effect -0.5%, dxy +0.4%, copper -0.4%, brent +0.0%, unexplained +0.2% (out-of-sample R-squared 0.25).",
     "history": []
   }
 }

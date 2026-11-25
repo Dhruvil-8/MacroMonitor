@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T09:27:06Z",
+  "fetched_at": "2026-11-25T20:23:05Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -18,7 +18,7 @@
         "last_success": "2026-11-25",
         "last_verified": "2026-11-25",
         "tracked_series_count": 13,
-        "stale_series_count": 10,
+        "stale_series_count": 2,
         "circuit_state": "CLOSED",
         "owner_notes": "Requires free API key. Unlimited daily queries. Official public domain macro data."
       },
@@ -33,7 +33,7 @@
         "status": "healthy",
         "last_success": "2026-11-25",
         "last_verified": "2026-11-25",
-        "tracked_series_count": 44,
+        "tracked_series_count": 54,
         "stale_series_count": 0,
         "circuit_state": "CLOSED",
         "owner_notes": "Used for broad global index closes and commodities. Wrapped with retries and exponential backoff."
@@ -136,7 +136,7 @@
       }
     ],
     "overall_status": "degraded",
-    "total_tracked_series": 68,
-    "total_healthy_series": 58
+    "total_tracked_series": 78,
+    "total_healthy_series": 76
   }
 }

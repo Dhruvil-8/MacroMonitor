@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T09:27:12Z",
+  "fetched_at": "2026-11-25T20:23:06Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -12,7 +12,7 @@
       {
         "day": -5,
         "mean_car": 0.021,
-        "median_car": -0.194,
+        "median_car": -0.195,
         "ci_lower_90": -0.45,
         "ci_lower_50": -0.189,
         "ci_upper_50": 0.23,

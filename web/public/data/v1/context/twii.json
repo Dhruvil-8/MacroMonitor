@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T09:21:17Z",
+  "fetched_at": "2026-11-25T20:21:22Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
     "id": "twii",
-    "name": "TWII",
-    "group": "general",
-    "region": "Global",
+    "name": "Taiwan Weighted Index (TAIEX)",
+    "group": "equity_index",
+    "region": "TW",
     "unit": "index",
     "current_value": 38195.43,
     "percentile": 97.8,
@@ -163,7 +163,7 @@
       43.36229,
       55.99996,
       54.45276,
-      43.24848,
+      43.24849,
       36.94763,
       32.60866,
       28.87864,
@@ -2219,8 +2219,8 @@
     ],
     "peer_rank": 1,
     "peer_count": 10,
-    "description": "Empirical historical distribution and regime context for TWII.",
-    "source_note": "Attribution: OPEN-DATA",
+    "description": "Empirical historical distribution and regime context for Taiwan Weighted Index (TAIEX).",
+    "source_note": "Attribution: YAHOO",
     "latest_return": -0.0492,
     "return_percentile": 0.4
   }

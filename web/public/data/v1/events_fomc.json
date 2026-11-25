@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T09:27:12Z",
+  "fetched_at": "2026-11-25T20:23:06Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -120,11 +120,11 @@
       {
         "day": 7,
         "mean_car": -0.5,
-        "median_car": -0.712,
+        "median_car": -0.711,
         "ci_lower_90": -1.108,
         "ci_lower_50": -0.76,
         "ci_upper_50": -0.213,
-        "ci_upper_90": 0.171
+        "ci_upper_90": 0.172
       },
       {
         "day": 8,
@@ -137,9 +137,9 @@
       },
       {
         "day": 9,
-        "mean_car": -0.384,
+        "mean_car": -0.385,
         "median_car": -0.521,
-        "ci_lower_90": -0.977,
+        "ci_lower_90": -0.978,
         "ci_lower_50": -0.632,
         "ci_upper_50": -0.124,
         "ci_upper_90": 0.248

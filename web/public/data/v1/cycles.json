@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T09:27:19Z",
+  "fetched_at": "2026-11-25T20:23:07Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
-    "current_quadrant": "Recovery",
-    "current_growth_z": 0.24,
-    "current_inflation_z": -1.72,
+    "current_quadrant": "Reflation",
+    "current_growth_z": -0.23,
+    "current_inflation_z": -1.71,
     "trail": [
       {
         "date": "2024-12",
@@ -23,37 +23,37 @@
       },
       {
         "date": "2025-02",
-        "growth_z": -0.44,
+        "growth_z": -0.45,
         "inflation_z": 0.42,
         "quadrant": "Stagflation"
       },
       {
         "date": "2025-03",
-        "growth_z": -1.33,
+        "growth_z": -1.34,
         "inflation_z": 0.69,
         "quadrant": "Stagflation"
       },
       {
         "date": "2025-04",
-        "growth_z": -1.22,
-        "inflation_z": 0.05,
+        "growth_z": -1.25,
+        "inflation_z": 0.04,
         "quadrant": "Stagflation"
       },
       {
         "date": "2025-05",
-        "growth_z": -0.14,
+        "growth_z": -0.15,
         "inflation_z": 0.31,
         "quadrant": "Stagflation"
       },
       {
         "date": "2025-06",
-        "growth_z": 1.49,
+        "growth_z": 1.2,
         "inflation_z": 0.59,
         "quadrant": "Overheat"
       },
       {
         "date": "2025-07",
-        "growth_z": 0.48,
+        "growth_z": 0.49,
         "inflation_z": 0.22,
         "quadrant": "Overheat"
       },
@@ -83,25 +83,25 @@
       },
       {
         "date": "2025-12",
-        "growth_z": 0.21,
+        "growth_z": 0.2,
         "inflation_z": -0.08,
         "quadrant": "Recovery"
       },
       {
         "date": "2026-01",
-        "growth_z": 0.09,
+        "growth_z": 0.1,
         "inflation_z": 0.93,
         "quadrant": "Overheat"
       },
       {
         "date": "2026-02",
-        "growth_z": -0.89,
+        "growth_z": -0.9,
         "inflation_z": 1.07,
         "quadrant": "Stagflation"
       },
       {
         "date": "2026-03",
-        "growth_z": -1.17,
+        "growth_z": -1.18,
         "inflation_z": 1.18,
         "quadrant": "Stagflation"
       },
@@ -137,69 +137,69 @@
       },
       {
         "date": "2026-09",
-        "growth_z": -0.18,
+        "growth_z": -0.19,
         "inflation_z": 0.59,
         "quadrant": "Stagflation"
       },
       {
         "date": "2026-10",
-        "growth_z": -0.61,
+        "growth_z": -0.63,
         "inflation_z": -0.01,
         "quadrant": "Reflation"
       },
       {
         "date": "2026-11",
-        "growth_z": 0.24,
-        "inflation_z": -1.72,
-        "quadrant": "Recovery"
+        "growth_z": -0.23,
+        "inflation_z": -1.71,
+        "quadrant": "Reflation"
       }
     ],
     "quadrant_returns": [
       {
         "quadrant": "Recovery",
-        "days": 1223,
+        "days": 1222,
         "share_pct": 18.2,
         "returns": {
           "spx": 26.3,
           "nifty50": 5.4,
-          "gold": -21.9,
-          "brent": -9.1,
+          "gold": -21.7,
+          "brent": -8.1,
           "us10y": 63.5
         }
       },
       {
         "quadrant": "Overheat",
-        "days": 2032,
+        "days": 2031,
         "share_pct": 30.2,
         "returns": {
-          "spx": 18.4,
+          "spx": 18.3,
           "nifty50": 16.6,
-          "gold": 17.3,
+          "gold": 17.4,
           "brent": 43.0,
-          "us10y": 76.8
+          "us10y": 77.4
         }
       },
       {
         "quadrant": "Stagflation",
-        "days": 1608,
+        "days": 1609,
         "share_pct": 23.9,
         "returns": {
-          "spx": -11.6,
-          "nifty50": 13.7,
-          "gold": 39.9,
+          "spx": -11.5,
+          "nifty50": 13.6,
+          "gold": 39.8,
           "brent": 46.3,
-          "us10y": -35.6
+          "us10y": -36.3
         }
       },
       {
         "quadrant": "Reflation",
-        "days": 1862,
+        "days": 1864,
         "share_pct": 27.7,
         "returns": {
-          "spx": -4.2,
+          "spx": -4.4,
           "nifty50": -1.6,
-          "gold": -3.4,
-          "brent": -72.6,
+          "gold": -3.6,
+          "brent": -72.3,
           "us10y": -96.8
         }
       }
@@ -208,33 +208,33 @@
       {
         "id": "us2s10s",
         "name": "10Y - 2Y Yield Curve",
-        "value": 0.29,
+        "value": 0.28,
         "unit": "pct",
-        "percentile": 28.1,
+        "percentile": 27.5,
         "note": "Steepening (>0) signals expansion / easing; inverted (<0) signals tight policy"
       },
       {
         "id": "hy_spread",
         "name": "US High Yield OAS",
-        "value": 3.76,
+        "value": 3.72,
         "unit": "pct",
-        "percentile": 95.9,
+        "percentile": 95.2,
         "note": "Credit stress indicator; >5.0% indicates acute tightening"
       },
       {
         "id": "us10y_real",
         "name": "US 10Y Real Yield (TIPS)",
-        "value": 2.77,
+        "value": 2.79,
         "unit": "pct",
-        "percentile": 99.1,
+        "percentile": 99.2,
         "note": "Real cost of capital; >2.0% tightens financial conditions"
       },
       {
         "id": "us10y_breakeven",
         "name": "10Y Breakeven Inflation",
-        "value": 2.13,
+        "value": 2.12,
         "unit": "pct",
-        "percentile": 40.4,
+        "percentile": 39.3,
         "note": "Market-implied long-term CPI expectations"
       }
     ]
