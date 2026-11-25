@@ -1,8 +1,9 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-24",
+  "fetched_at": "2026-11-25T04:06:16Z",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "usdcad",
     "name": "USD / CAD Currency Pair",
@@ -12110,7 +12111,7 @@
       1.4331,
       1.4344,
       1.4339,
-      1.4357
+      1.4358
     ]
   }
 }

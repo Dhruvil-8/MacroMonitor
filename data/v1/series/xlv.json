@@ -1,8 +1,9 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-24",
+  "fetched_at": "2026-11-25T04:06:27Z",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "xlv",
     "name": "Health Care Select Sector SPDR",
@@ -8772,7 +8773,7 @@
       23.1,
       23.25,
       23.51,
-      23.46,
+      23.47,
       23.44,
       23.47,
       23.47,

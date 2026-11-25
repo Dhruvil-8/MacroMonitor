@@ -154,7 +154,7 @@ export function ContextClientView({ id }: { id: string }) {
             {/* C11: Histogram & KDE */}
             <div className="lg:col-span-7">
               <ChartCard
-                eyebrow="Distribution Modeling (C11)"
+                eyebrow="Distribution Modeling"
                 title={`${ctxData.name} Return Distribution`}
                 subtitle="Empirical histogram overlaid with Silverman's Gaussian KDE and Normal N(μ, σ²)"
                 asOf={asOf}
@@ -220,7 +220,7 @@ export function ContextClientView({ id }: { id: string }) {
             {/* C12: QQ Plot */}
             <div className="lg:col-span-5">
               <ChartCard
-                eyebrow="Normality Diagnostic (C12)"
+                eyebrow="Normality Diagnostic"
                 title="Quantile-Quantile (QQ) Plot"
                 subtitle="Empirical standardized quantiles vs Theoretical Gaussian Normal quantiles"
                 asOf={asOf}
@@ -287,7 +287,7 @@ export function ContextClientView({ id }: { id: string }) {
 
             return (
               <ChartCard
-                eyebrow="Seasonality Matrix (C25)"
+                eyebrow="Seasonality Matrix"
                 title={`${ctxData.name} ${isDiff ? "Calendar Change Heatmap" : "Calendar Return Heatmap"}`}
                 subtitle={isDiff ? "Monthly net changes grouped by Year and Month" : "Monthly compounded returns grouped by Year and Month"}
                 asOf={asOf}

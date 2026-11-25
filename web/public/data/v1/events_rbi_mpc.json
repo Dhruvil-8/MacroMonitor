@@ -1,170 +1,171 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-24",
+  "fetched_at": "2026-11-25T04:09:30Z",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "event_type": "rbi_mpc",
     "target_name": "Nifty 50",
-    "n_events": 4,
+    "n_events": 9,
     "ribbon": [
       {
         "day": -5,
-        "mean_car": -0.172,
-        "median_car": -0.407,
-        "ci_lower_90": -0.631,
-        "ci_lower_50": -0.407,
-        "ci_upper_50": 0.063,
-        "ci_upper_90": 0.192
+        "mean_car": 0.021,
+        "median_car": -0.194,
+        "ci_lower_90": -0.45,
+        "ci_lower_50": -0.189,
+        "ci_upper_50": 0.23,
+        "ci_upper_90": 0.529
       },
       {
         "day": -4,
-        "mean_car": -0.414,
-        "median_car": -0.18,
-        "ci_lower_90": -1.583,
-        "ci_lower_50": -0.914,
-        "ci_upper_50": 0.085,
-        "ci_upper_90": 0.52
+        "mean_car": -0.371,
+        "median_car": -0.519,
+        "ci_lower_90": -1.15,
+        "ci_lower_50": -0.673,
+        "ci_upper_50": -0.024,
+        "ci_upper_90": 0.424
       },
       {
         "day": -3,
-        "mean_car": -0.319,
-        "median_car": 0.346,
-        "ci_lower_90": -2.396,
-        "ci_lower_50": -1.115,
-        "ci_upper_50": 0.44,
-        "ci_upper_90": 1.228
+        "mean_car": -0.009,
+        "median_car": 1.314,
+        "ci_lower_90": -1.079,
+        "ci_lower_50": -0.361,
+        "ci_upper_50": 0.474,
+        "ci_upper_90": 1.049
       },
       {
         "day": -2,
-        "mean_car": -0.587,
-        "median_car": 0.457,
-        "ci_lower_90": -3.321,
-        "ci_lower_50": -1.631,
-        "ci_upper_50": 0.492,
-        "ci_upper_90": 1.188
+        "mean_car": 0.241,
+        "median_car": 1.185,
+        "ci_lower_90": -1.104,
+        "ci_lower_50": -0.207,
+        "ci_upper_50": 0.849,
+        "ci_upper_90": 1.514
       },
       {
         "day": -1,
-        "mean_car": -0.185,
-        "median_car": 0.112,
-        "ci_lower_90": -2.018,
-        "ci_lower_50": -0.953,
-        "ci_upper_50": 0.533,
-        "ci_upper_90": 1.301
+        "mean_car": 0.483,
+        "median_car": 0.806,
+        "ci_lower_90": -0.607,
+        "ci_lower_50": 0.088,
+        "ci_upper_50": 0.977,
+        "ci_upper_90": 1.629
       },
       {
         "day": 0,
-        "mean_car": -0.094,
-        "median_car": 0.389,
-        "ci_lower_90": -2.182,
-        "ci_lower_50": -0.896,
-        "ci_upper_50": 0.709,
-        "ci_upper_90": 1.537
+        "mean_car": 0.82,
+        "median_car": 1.062,
+        "ci_lower_90": -0.493,
+        "ci_lower_50": 0.266,
+        "ci_upper_50": 1.423,
+        "ci_upper_90": 2.333
       },
       {
         "day": 1,
-        "mean_car": -0.362,
-        "median_car": 0.241,
-        "ci_lower_90": -2.286,
-        "ci_lower_50": -1.018,
-        "ci_upper_50": 0.302,
-        "ci_upper_90": 0.987
+        "mean_car": 0.366,
+        "median_car": 1.518,
+        "ci_lower_90": -1.024,
+        "ci_lower_50": -0.207,
+        "ci_upper_50": 1.048,
+        "ci_upper_90": 2.001
       },
       {
         "day": 2,
-        "mean_car": -0.498,
-        "median_car": 0.089,
-        "ci_lower_90": -2.58,
-        "ci_lower_50": -1.278,
-        "ci_upper_50": 0.283,
-        "ci_upper_90": 1.024
+        "mean_car": 0.609,
+        "median_car": 1.649,
+        "ci_lower_90": -0.856,
+        "ci_lower_50": -0.031,
+        "ci_upper_50": 1.276,
+        "ci_upper_90": 2.298
       },
       {
         "day": 3,
-        "mean_car": -0.5,
-        "median_car": -0.246,
-        "ci_lower_90": -2.232,
-        "ci_lower_50": -1.178,
-        "ci_upper_50": 0.178,
-        "ci_upper_90": 0.922
+        "mean_car": 0.43,
+        "median_car": 0.919,
+        "ci_lower_90": -0.869,
+        "ci_lower_50": -0.095,
+        "ci_upper_50": 1.05,
+        "ci_upper_90": 1.916
       },
       {
         "day": 4,
-        "mean_car": -0.198,
-        "median_car": 0.18,
-        "ci_lower_90": -1.883,
-        "ci_lower_50": -0.828,
-        "ci_upper_50": 0.529,
-        "ci_upper_90": 1.124
+        "mean_car": 0.533,
+        "median_car": 1.179,
+        "ci_lower_90": -0.719,
+        "ci_lower_50": 0.031,
+        "ci_upper_50": 1.094,
+        "ci_upper_90": 1.814
       },
       {
         "day": 5,
-        "mean_car": 0.065,
-        "median_car": 0.691,
-        "ci_lower_90": -2.168,
-        "ci_lower_50": -0.708,
-        "ci_upper_50": 0.905,
-        "ci_upper_90": 1.699
+        "mean_car": 0.824,
+        "median_car": 0.035,
+        "ci_lower_90": -0.572,
+        "ci_lower_50": 0.228,
+        "ci_upper_50": 1.385,
+        "ci_upper_90": 2.33
       },
       {
         "day": 6,
-        "mean_car": -0.387,
-        "median_car": 0.208,
-        "ci_lower_90": -2.942,
-        "ci_lower_50": -1.328,
-        "ci_upper_50": 0.628,
-        "ci_upper_90": 1.594
+        "mean_car": 0.923,
+        "median_car": 1.597,
+        "ci_lower_90": -0.557,
+        "ci_lower_50": 0.322,
+        "ci_upper_50": 1.517,
+        "ci_upper_90": 2.498
       },
       {
         "day": 7,
-        "mean_car": -1.009,
-        "median_car": -0.94,
-        "ci_lower_90": -3.255,
-        "ci_lower_50": -1.988,
-        "ci_upper_50": -0.029,
-        "ci_upper_90": 1.158
+        "mean_car": 0.872,
+        "median_car": 0.795,
+        "ci_lower_90": -0.702,
+        "ci_lower_50": 0.191,
+        "ci_upper_50": 1.524,
+        "ci_upper_90": 2.545
       },
       {
         "day": 8,
-        "mean_car": -1.016,
-        "median_car": -0.586,
-        "ci_lower_90": -3.15,
-        "ci_lower_50": -1.868,
-        "ci_upper_50": -0.165,
-        "ci_upper_90": 0.911
+        "mean_car": 0.791,
+        "median_car": 1.042,
+        "ci_lower_90": -0.705,
+        "ci_lower_50": 0.197,
+        "ci_upper_50": 1.438,
+        "ci_upper_90": 2.403
       },
       {
         "day": 9,
-        "mean_car": -1.629,
-        "median_car": -1.288,
-        "ci_lower_90": -3.944,
-        "ci_lower_50": -2.642,
-        "ci_upper_50": -0.616,
-        "ci_upper_90": 0.634
+        "mean_car": 0.451,
+        "median_car": 0.896,
+        "ci_lower_90": -1.339,
+        "ci_lower_50": -0.291,
+        "ci_upper_50": 1.218,
+        "ci_upper_90": 2.345
       },
       {
         "day": 10,
-        "mean_car": -2.76,
-        "median_car": -2.811,
-        "ci_lower_90": -4.585,
-        "ci_lower_50": -3.647,
-        "ci_upper_50": -1.873,
-        "ci_upper_90": -0.936
+        "mean_car": -0.321,
+        "median_car": 0.294,
+        "ci_lower_90": -1.992,
+        "ci_lower_50": -1.073,
+        "ci_upper_50": 0.442,
+        "ci_upper_90": 1.495
       }
     ],
     "by_decision": {
       "hike": {
-        "count": 2,
-        "mean_day_0_ar": 0.278,
-        "median_day_0_ar": 0.278,
-        "pct_positive": 50.0
+        "count": 3,
+        "mean_day_0_ar": -0.037,
+        "median_day_0_ar": -0.294,
+        "pct_positive": 33.3
       },
       "hold": {
-        "count": 2,
-        "mean_day_0_ar": -0.096,
-        "median_day_0_ar": -0.096,
-        "pct_positive": 0.0
+        "count": 6,
+        "mean_day_0_ar": 0.524,
+        "median_day_0_ar": 0.041,
+        "pct_positive": 50.0
       },
       "cut": {
         "count": 0,
@@ -173,8 +174,58 @@
         "pct_positive": 50.0
       }
     },
-    "magnitude_ratio": 0.42,
+    "magnitude_ratio": 0.56,
     "events": [
+      {
+        "id": "rbi_2026_10_07",
+        "date": "2026-10-07",
+        "decision": "hike",
+        "rate_before": 5.25,
+        "rate_after": 5.5,
+        "day_0_ar": -0.667,
+        "car_10d": 1.022,
+        "description": "RBI MPC raised repo rate by 25 bps to 5.50% and shifted stance to calibrated tightening."
+      },
+      {
+        "id": "rbi_2026_08_05",
+        "date": "2026-08-05",
+        "decision": "hold",
+        "rate_before": 5.25,
+        "rate_after": 5.25,
+        "day_0_ar": 0.115,
+        "car_10d": 0.518,
+        "description": "RBI MPC held repo rate steady at 5.25% with a neutral stance."
+      },
+      {
+        "id": "rbi_2026_06_05",
+        "date": "2026-06-05",
+        "decision": "hold",
+        "rate_before": 5.25,
+        "rate_after": 5.25,
+        "day_0_ar": 0.682,
+        "car_10d": 0.294,
+        "description": "RBI MPC held repo rate steady at 5.25%."
+      },
+      {
+        "id": "rbi_2026_04_08",
+        "date": "2026-04-08",
+        "decision": "hold",
+        "rate_before": 5.25,
+        "rate_after": 5.25,
+        "day_0_ar": 2.835,
+        "car_10d": 6.625,
+        "description": "RBI MPC held repo rate steady at 5.25%."
+      },
+      {
+        "id": "rbi_2026_02_06",
+        "date": "2026-02-06",
+        "decision": "hold",
+        "rate_before": 5.25,
+        "rate_after": 5.25,
+        "day_0_ar": -0.3,
+        "car_10d": -0.308,
+        "description": "RBI MPC held repo rate steady at 5.25% with a neutral stance."
+      },
       {
         "id": "rbi_2024_10_09",
         "date": "2024-10-09",
@@ -216,6 +267,6 @@
         "description": "RBI increased repo rate by 35 bps to 6.25%."
       }
     ],
-    "interpretation": "Across 4 RBI_MPC decisions, Nifty 50 experienced an average cumulative abnormal return of -2.76% over [-5, +10] days. Day-0 absolute move was 0.4x the unconditional trading day median."
+    "interpretation": "Across 9 RBI_MPC decisions, Nifty 50 experienced an average cumulative abnormal return of -0.32% over [-5, +10] days. Day-0 absolute move was 0.6x the unconditional trading day median."
   }
 }

@@ -46,7 +46,7 @@ export default function FundamentalsPage() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-[#1d2633]">
         <div>
           <div className="text-[10px] font-mono uppercase tracking-widest text-[#6f7c90]">
-            Physical Supply & Storage • Module P9
+            Physical Supply &amp; Storage
           </div>
           <h1 className="text-2xl font-bold tracking-tight text-[#e8edf5] mt-0.5">
             Energy Fundamentals: 5-Year Seasonal Inventory Bands

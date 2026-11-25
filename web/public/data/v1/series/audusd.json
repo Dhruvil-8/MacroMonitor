@@ -1,8 +1,9 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-24",
+  "fetched_at": "2026-11-25T04:05:35Z",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "audusd",
     "name": "AUD / USD Currency Pair",
@@ -10722,7 +10723,7 @@
       0.6713,
       0.6656,
       0.6641,
-      0.663
+      0.6634
     ]
   }
 }

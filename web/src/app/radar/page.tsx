@@ -9,7 +9,7 @@ import { ZScoreBandChart } from "@/components/charts/ZScoreBandChart";
 import { AuditData, AuditDrawer } from "@/components/ui/AuditDrawer";
 import { DataAgeBadge } from "@/components/ui/DataAgeBadge";
 import { HealthDot } from "@/components/ui/HealthDot";
-import { loadDivergences, loadObservations } from "@/lib/data/client";
+import { loadDivergences, loadObservations, fetchManifest } from "@/lib/data/client";
 import { DivergenceItem, ObservationItem } from "@/lib/data/schemas";
 import { Filter, SlidersHorizontal } from "lucide-react";
 
@@ -24,6 +24,10 @@ export default function RadarPage() {
   const [severityFilter, setSeverityFilter] = useState<string>("all");
   const [categoryFilter, setCategoryFilter] = useState<string>("all");
 
+  // Z-Score asset selector
+  const [zAssetId, setZAssetId] = useState<string>("spx");
+  const [availableSeries, setAvailableSeries] = useState<string[]>(["spx", "nifty50", "dax", "us10y", "brent", "gold", "dxy"]);
+
   // Audit Drawer
   const [auditTarget, setAuditTarget] = useState<AuditData | null>(null);
   const [isAuditOpen, setIsAuditOpen] = useState<boolean>(false);
@@ -37,9 +41,10 @@ export default function RadarPage() {
     async function loadData() {
       setLoading(true);
       try {
-        const [obsRes, divRes] = await Promise.all([
+        const [obsRes, divRes, manRes] = await Promise.all([
           loadObservations(),
           loadDivergences(),
+          fetchManifest(),
         ]);
 
         if (obsRes.status !== "error") {
@@ -49,6 +54,14 @@ export default function RadarPage() {
         if (divRes.status !== "error") {
           setDivergences(divRes.data.data.pairs);
           setTestedCount(divRes.data.data.tested_pairs_count);
+        }
+        if (manRes.status !== "error") {
+          const ids = manRes.data.manifest.datasets
+            .map((d) => d.path)
+            .filter((p) => p.startsWith("/v1/series/") && p.endsWith(".json"))
+            .map((p) => p.replace("/v1/series/", "").replace(".json", ""))
+            .sort();
+          if (ids.length > 0) setAvailableSeries(ids);
         }
       } catch (err) {
         console.error("Failed to load radar data:", err);
@@ -221,7 +234,7 @@ export default function RadarPage() {
           <div>
             <div className="flex items-center gap-2">
               <span className="text-[10px] font-mono uppercase tracking-widest text-[var(--accent)] font-semibold">
-                C21 / Innovation Monitor
+                Innovation Monitor
               </span>
               <h3 className="text-sm font-semibold text-[var(--tx-0)] font-mono">
                 Standardized Z-Score Outlier Bands
@@ -231,11 +244,25 @@ export default function RadarPage() {
               Normalized innovation trajectories plotted against &plusmn;2&sigma; and &plusmn;3&sigma; thresholds to isolate regime shifts.
             </p>
           </div>
-          <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[var(--bg-2)] border border-[var(--line)] text-[var(--tx-2)]">
-            Expanding 60D Horizon
-          </span>
+          <div className="flex items-center gap-2">
+            <select
+              value={zAssetId}
+              onChange={(e) => setZAssetId(e.target.value)}
+              aria-label="Select asset for Z-Score bands"
+              className="px-2 py-1 rounded bg-[var(--bg-0)] border border-[var(--line)] text-[11px] font-mono text-[var(--tx-0)]"
+            >
+              {availableSeries.map((id) => (
+                <option key={id} value={id}>
+                  {id.toUpperCase()}
+                </option>
+              ))}
+            </select>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[var(--bg-2)] border border-[var(--line)] text-[var(--tx-2)]">
+              Expanding 60D Horizon
+            </span>
+          </div>
         </div>
-        <ZScoreBandChart />
+        <ZScoreBandChart assetId={zAssetId} />
       </div>
 
       {/* Audit Drawer */}

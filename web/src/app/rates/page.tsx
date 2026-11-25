@@ -45,8 +45,8 @@ export default function RatesPage() {
     <div className="flex flex-col gap-6 max-w-7xl mx-auto pb-12">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-[#1d2633]">
         <div>
-          <div className="text-[10px] font-mono uppercase tracking-widest text-[#6f7c90]">
-            Sovereign Rates & Inflation Expectations • Module P4
+          <div className="text-[10px] font-mono uppercase tracking-widest text-[var(--tx-2)]">
+            Sovereign Rates &amp; Inflation Expectations
           </div>
           <h1 className="text-2xl font-bold tracking-tight text-[#e8edf5] mt-0.5">
             US Treasury Yield Curve Lab

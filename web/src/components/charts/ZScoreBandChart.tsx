@@ -2,35 +2,132 @@
 // C21: Standardized z-score band chart with outlier thresholds (Section 5.1)
 "use client";
 
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import ReactECharts from "echarts-for-react";
+import { loadCompactSeries } from "@/lib/data/client";
 
 interface ZScoreBandChartProps {
   seriesName?: string;
+  assetId?: string;
+  dates?: string[];
+  zScores?: number[];
 }
 
 export const ZScoreBandChart: React.FC<ZScoreBandChartProps> = ({
-  seriesName = "S&P 500 Daily Innovation Z-Score",
+  seriesName,
+  assetId = "spx",
+  dates: propDates,
+  zScores: propZScores,
 }) => {
-  // Generate sample trailing 60-day expanding z-score series
-  const { dates, zScores } = useMemo(() => {
-    const ds: string[] = [];
-    const zs: number[] = [];
-    const baseDate = new Date("2026-08-25");
-    let currentZ = 0.2;
-    for (let i = 0; i < 60; i++) {
-      const d = new Date(baseDate);
-      d.setDate(d.getDate() + i);
-      ds.push(d.toISOString().slice(5, 10));
-      // Random walk with mean reversion
-      const noise = (Math.random() - 0.5) * 1.2;
-      currentZ = currentZ * 0.7 + noise;
-      if (i === 58) currentZ = -2.85; // extreme outlier move
-      if (i === 59) currentZ = -3.20;
-      zs.push(parseFloat(currentZ.toFixed(2)));
+  const [loadedSeries, setLoadedSeries] = useState<{
+    name: string;
+    dates: string[];
+    zScores: number[];
+  } | null>(null);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (propDates && propZScores && propDates.length > 0) return;
+    let active = true;
+    setLoading(true);
+    setError(null);
+    loadCompactSeries(assetId)
+      .then((res) => {
+        if (!active) return;
+        if (res.status === "error") {
+          setError(res.error || "Failed to load series");
+          return;
+        }
+        const d = res.data.data.d;
+        const v = res.data.data.v;
+        const isRate = assetId === "us10y" || assetId === "us2y" || assetId === "us10y_real";
+
+        // Compute daily stationary changes (log returns or yield diffs)
+        const rets: { date: string; ret: number }[] = [];
+        for (let i = 1; i < v.length; i++) {
+          const prev = v[i - 1];
+          const curr = v[i];
+          if (prev !== null && curr !== null && (isRate || (prev > 0 && curr > 0))) {
+            const r = isRate ? curr - prev : Math.log(curr / prev);
+            rets.push({ date: d[i], ret: r });
+          }
+        }
+
+        // Compute expanding z-score of daily innovations (anti-lookahead: mean & std up to t-1, min 30 obs)
+        const outDates: string[] = [];
+        const outZ: number[] = [];
+        let sum = 0;
+        let sumSq = 0;
+        let count = 0;
+        const startIdx = Math.max(30, rets.length - 60);
+
+        for (let i = 0; i < rets.length; i++) {
+          const r = rets[i].ret;
+          if (i >= startIdx && count >= 30) {
+            const mean = sum / count;
+            const variance = Math.max(1e-12, sumSq / count - mean * mean);
+            const std = Math.sqrt(variance);
+            const z = (r - mean) / std;
+            outDates.push(rets[i].date.slice(5));
+            outZ.push(parseFloat(Math.max(-5, Math.min(5, z)).toFixed(2)));
+          }
+          sum += r;
+          sumSq += r * r;
+          count += 1;
+        }
+
+        setLoadedSeries({
+          name: seriesName || `${res.data.data.name} Daily Innovation Z-Score`,
+          dates: outDates,
+          zScores: outZ,
+        });
+      })
+      .catch((e) => {
+        if (active) setError(e instanceof Error ? e.message : String(e));
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [assetId, propDates, propZScores, seriesName]);
+
+  const { dates, zScores, activeName } = useMemo(() => {
+    if (propDates && propZScores && propDates.length > 0) {
+      return {
+        dates: propDates,
+        zScores: propZScores,
+        activeName: seriesName || "Daily Innovation Z-Score",
+      };
     }
-    return { dates: ds, zScores: zs };
-  }, []);
+    if (loadedSeries) {
+      return {
+        dates: loadedSeries.dates,
+        zScores: loadedSeries.zScores,
+        activeName: loadedSeries.name,
+      };
+    }
+    return { dates: [], zScores: [], activeName: seriesName || "Daily Innovation Z-Score" };
+  }, [propDates, propZScores, loadedSeries, seriesName]);
+
+  if (error) {
+    return (
+      <div className="h-[280px] flex items-center justify-center text-xs font-mono text-[var(--neg)]">
+        Failed to load z-score series: {error}
+      </div>
+    );
+  }
+
+  if (loading || dates.length === 0) {
+    return (
+      <div className="h-[280px] flex items-center justify-center text-xs font-mono text-[var(--tx-2)] animate-pulse">
+        Computing trailing 60-day innovation z-scores from series data...
+      </div>
+    );
+  }
 
   const option = {
     backgroundColor: "transparent",
@@ -71,7 +168,7 @@ export const ZScoreBandChart: React.FC<ZScoreBandChartProps> = ({
     },
     series: [
       {
-        name: seriesName,
+        name: activeName,
         type: "line",
         data: zScores,
         smooth: false,

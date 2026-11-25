@@ -22,8 +22,6 @@ import { AutocorrelationBarChart } from "@/components/charts/AutocorrelationBarC
 import { UnderwaterDrawdownChart } from "@/components/charts/UnderwaterDrawdownChart";
 import { PcaSynchronizationChart } from "@/components/charts/PcaSynchronizationChart";
 import { DownsideCorrelationChart } from "@/components/charts/DownsideCorrelationChart";
-import { HexbinJointDensityChart } from "@/components/charts/HexbinJointDensityChart";
-import { RidgelineDensityChart } from "@/components/charts/RidgelineDensityChart";
 import { PercentileStrip } from "@/components/charts/PercentileStrip";
 import { ZScoreBandChart } from "@/components/charts/ZScoreBandChart";
 import { CorrelationHeatmap } from "@/components/charts/CorrelationHeatmap";
@@ -588,26 +586,6 @@ export default function ChartsCataloguePage() {
           ]}
         />
       ),
-    },
-    {
-      id: "c18",
-      code: "C18",
-      name: "Hexbin Joint Tail Density",
-      category: "drivers",
-      idea: "Non-Linear Joint Distribution & Bivariate Tail Clustering",
-      insight: "Precomputed bivariate hexagonal binning showing joint tail co-dependence without assuming linearity.",
-      deployedPage: "/risk",
-      renderComponent: () => <HexbinJointDensityChart />,
-    },
-    {
-      id: "c19",
-      code: "C19",
-      name: "Ridgeline Return Distributions",
-      category: "risk",
-      idea: "Cross-Market Distributional Shape Comparison",
-      insight: "Overlapping KDE curves across 8 key asset classes highlighting asymmetry and current position marker.",
-      deployedPage: "/risk",
-      renderComponent: () => <RidgelineDensityChart />,
     },
     {
       id: "c20",

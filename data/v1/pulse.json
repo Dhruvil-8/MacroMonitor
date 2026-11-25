@@ -1,8 +1,9 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-24",
+  "fetched_at": "2026-11-25T04:06:28Z",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "headline": "MacroMonitor: cross-asset volatility and trend monitor",
     "risk_regime": "Orderly Macro Regime",
@@ -10,12 +11,11 @@
       {
         "id": "brent",
         "name": "Brent Crude Oil Futures",
-        "value": 86.4,
-        "change_1d": -6.67,
+        "value": 86.38,
+        "change_1d": -3.35,
         "unit": "usd_per_barrel",
-        "percentile": 93.7,
+        "percentile": 93.3,
         "sparkline": [
-          113.88,
           115.32,
           114.88,
           117.64,
@@ -34,18 +34,18 @@
           91.95,
           91.98,
           92.57,
-          86.4
+          89.37,
+          86.38
         ]
       },
       {
         "id": "dxy",
         "name": "US Dollar Index",
-        "value": 104.26,
-        "change_1d": 0.43,
+        "value": 104.29,
+        "change_1d": -0.03,
         "unit": "index",
         "percentile": 27.9,
         "sparkline": [
-          102.32,
           102.19,
           102.04,
           101.88,
@@ -64,18 +64,18 @@
           103.86,
           103.9,
           103.81,
-          104.26
+          104.32,
+          104.29
         ]
       },
       {
         "id": "gold",
         "name": "Gold Futures",
-        "value": 3628.6,
-        "change_1d": 3.22,
+        "value": 3619.2,
+        "change_1d": -0.88,
         "unit": "usd_per_oz",
-        "percentile": 96.2,
+        "percentile": 96.4,
         "sparkline": [
-          4074.6,
           4051.6,
           4031.4,
           3898.9,
@@ -94,7 +94,8 @@
           3741.9,
           3685.5,
           3515.4,
-          3628.6
+          3651.4,
+          3619.2
         ]
       },
       {

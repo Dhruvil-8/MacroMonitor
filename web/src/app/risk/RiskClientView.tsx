@@ -17,8 +17,6 @@ import { UnderwaterDrawdownChart } from "@/components/charts/UnderwaterDrawdownC
 import { PcaSynchronizationChart } from "@/components/charts/PcaSynchronizationChart";
 import { DownsideCorrelationChart } from "@/components/charts/DownsideCorrelationChart";
 import { StressStackChart } from "@/components/charts/StressStackChart";
-import { HexbinJointDensityChart } from "@/components/charts/HexbinJointDensityChart";
-import { RidgelineDensityChart } from "@/components/charts/RidgelineDensityChart";
 import { StressCrossCheckPanel } from "@/components/charts/StressCrossCheckPanel";
 import { EvtRegimePanel } from "@/components/charts/EvtRegimePanel";
 import { loadRisk, loadStress, loadContext, loadBenchmarks, loadTailsRegimes } from "@/lib/data/client";
@@ -203,7 +201,7 @@ export const RiskClientView: React.FC = () => {
       {/* P1: Stress Cross-Check & Historical Episode Benchmarks */}
       {benchmarkData && (
         <ChartCard
-          eyebrow="Independent Validation (P1)"
+          eyebrow="Independent Validation"
           title="Stress Composite Cross-Check & Crisis Episodes"
           subtitle="Empirical alignment against St. Louis Fed & Chicago Fed benchmark indices and historical market shocks"
           asOf={asOf}
@@ -251,7 +249,7 @@ export const RiskClientView: React.FC = () => {
       {/* Chart 1: Volatility Cone (C10) */}
       {profile && (
         <ChartCard
-          eyebrow="Horizon Volatility Analysis (C10)"
+          eyebrow="Horizon Volatility Analysis"
           title={`Realized Volatility Cone — ${profile.asset_name}`}
           subtitle="Non-parametric realized volatility distribution across {10D, 20D, 60D, 120D, 250D} windows"
           asOf={asOf}
@@ -341,7 +339,7 @@ export const RiskClientView: React.FC = () => {
         {/* C11: Histogram & KDE */}
         <div className="lg:col-span-7">
           <ChartCard
-            eyebrow="Distribution Modeling (C11)"
+            eyebrow="Distribution Modeling"
             title={`${profile?.asset_name || "S&P 500"} Return Distribution`}
             subtitle="Empirical histogram overlaid with Silverman's Gaussian KDE and Normal N(μ, σ²)"
             asOf={asOf}
@@ -405,7 +403,7 @@ export const RiskClientView: React.FC = () => {
         {/* C12: QQ Plot */}
         <div className="lg:col-span-5">
           <ChartCard
-            eyebrow="Normality Diagnostic (C12)"
+            eyebrow="Normality Diagnostic"
             title="Quantile-Quantile (QQ) Plot"
             subtitle="Empirical standardized quantiles vs Theoretical Gaussian Normal quantiles"
             asOf={asOf}
@@ -465,7 +463,7 @@ export const RiskClientView: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* C13: Tail Risk */}
           <ChartCard
-            eyebrow="Tail Risk Diagnostics (C13)"
+            eyebrow="Tail Risk Diagnostics"
             title={`Expected Shortfall & Tail Ratio — ${profile.asset_name}`}
             subtitle="Historical Value at Risk and Expected Shortfall vs Gaussian Parametric Bell Curve"
             asOf={asOf}
@@ -544,7 +542,7 @@ export const RiskClientView: React.FC = () => {
 
           {/* C14: Autocorrelation & Vol Clustering */}
           <ChartCard
-            eyebrow="ARCH Volatility Memory (C14)"
+            eyebrow="ARCH Volatility Memory"
             title={`Volatility Clustering & ACF — ${profile.asset_name}`}
             subtitle="Autocorrelation Function of raw returns (linear memory) vs squared returns (ARCH vol persistence)"
             asOf={asOf}
@@ -622,7 +620,7 @@ export const RiskClientView: React.FC = () => {
       {/* Row 4: Underwater Drawdowns & Historical Episodes (C15) */}
       {profile && (
         <ChartCard
-          eyebrow="Crisis Analysis (C15)"
+          eyebrow="Crisis Analysis"
           title={`Underwater Drawdown Series & Crisis Episodes — ${profile.asset_name}`}
           subtitle="Continuous drawdown from running peak and audit table of the 5 deepest historical crisis drawdowns"
           asOf={asOf}
@@ -709,7 +707,7 @@ export const RiskClientView: React.FC = () => {
       {/* Row 5: Global Market Synchronization & PCA (C16) */}
       {riskData?.data?.pca && (
         <ChartCard
-          eyebrow="Factor Structure (C16)"
+          eyebrow="Factor Structure"
           title="Global Market Synchronization & PCA Factor Structure"
           subtitle="Rolling 250D PCA on standardized USD returns across 10 global equity markets (sign-aligned to US)"
           asOf={asOf}
@@ -790,7 +788,7 @@ export const RiskClientView: React.FC = () => {
       {/* Row 6: Downside Correlation & Stress Correlation Premium (C17) */}
       {riskData?.data?.downside_correlations && riskData.data.downside_correlations.length > 0 && (
         <ChartCard
-          eyebrow="Diversification Stress Test (C17)"
+          eyebrow="Diversification Stress Test"
           title="Downside Stress Correlation & Diversification Breakdown"
           subtitle="Unconditional all-day correlation vs Downside correlation during worst 10% benchmark days"
           asOf={asOf}
@@ -873,103 +871,6 @@ export const RiskClientView: React.FC = () => {
           />
         </ChartCard>
       )}
-
-
-      {/* Row 7: Non-Linear Joint Tail Density (C18) & Ridgeline Return Distributions (C19) */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* C18: Hexbin Joint Tail Density */}
-        <div className="lg:col-span-6">
-          <ChartCard
-            eyebrow="Non-Linear Tail Dependency (C18)"
-            title="Hexbin Joint Tail Density"
-            subtitle={`Bivariate empirical density of ${profile?.asset_name || "S&P 500"} vs US 10Y Yield`}
-            asOf={asOf}
-            methodData={{
-              chartTitle: `Hexbin Joint Tail Density (C18) — ${profile?.asset_name || "S&P 500"} vs Macro Drivers`,
-              whatItShows: "2D hexagonal binning of joint returns showing asymmetric tail co-dependence without assuming linear correlation.",
-              definitionFormula: "\\hat{f}(x, y) = \\frac{1}{n b_x b_y} \\sum_{i=1}^n K\\left(\\frac{x - x_i}{b_x}\\right) K\\left(\\frac{y - y_i}{b_y}\\right)",
-              symbolsDefined: [
-                { symbol: "b_x, b_y", meaning: "Bandwidths along x and y coordinates" },
-                { symbol: "K", meaning: "Hexagonal kernel weighting function" },
-              ],
-              parameters: { grid_size: "30x30", density_scale: "Empirical density mapped" },
-              dataSources: [{ series: "SPX & US10Y", source: "Daily aligned changes", frequency: "Daily" }],
-              sample: { n: 250, nEff: 250, dateRange: "Trailing 250 trading days" },
-              interpretationNotes: [
-                "Hexagonal clusters in the lower quadrants highlight simultaneous extreme joint sell-offs or flight-to-safety episodes.",
-              ],
-              reproduce: {
-                functionName: "compute_bivariate_tail_density",
-                filePath: "pipeline/src/radar/metrics/risk.py",
-                testPath: "pipeline/tests/unit/test_risk.py",
-              },
-            }}
-            auditData={{
-              metricName: "Hexbin Joint Tail Density",
-              formula: "Bivariate 2D empirical histogram / density",
-              formulaPlain: "Hexagonal binning of daily asset return vs macro factor changes.",
-              parameters: { grid: "hexagonal", lookback: "250D" },
-              inputs: [
-                { id: "spx", name: "S&P 500", source: "Market Returns", unit: "%" },
-                { id: "us10y", name: "US 10Y Yield", source: "FRED", unit: "bps" },
-              ],
-              window: "Trailing 250 trading days",
-              currentValue: "Asymmetric tail cluster",
-            }}
-            onOpenAudit={handleOpenAudit}
-            onOpenMethod={handleOpenMethod}
-          >
-            <HexbinJointDensityChart
-              xLabel={`${profile?.asset_name || "S&P 500"} Daily Return (%)`}
-              yLabel="US 10Y Yield Change (bps)"
-            />
-          </ChartCard>
-        </div>
-
-        {/* C19: Ridgeline Return Distributions */}
-        <div className="lg:col-span-6">
-          <ChartCard
-            eyebrow="Distribution Shape Comparison (C19)"
-            title="Ridgeline Return Distributions"
-            subtitle="Overlapping KDE curves across 8 key asset classes highlighting asymmetry and current position"
-            asOf={asOf}
-            methodData={{
-              chartTitle: "Cross-Market Ridgeline Return Distributions (C19)",
-              whatItShows: "Stacked density curves across global equity markets and commodities, with pin markers showing today's 1-day return.",
-              definitionFormula: "\\hat{f}_m(x) = \\frac{1}{nh} \\sum_{i=1}^n \\frac{1}{\\sqrt{2\\pi}} e^{-\\frac{(x - r_{m,i})^2}{2h^2}}",
-              symbolsDefined: [
-                { symbol: "r_{m,i}", meaning: "Daily return for market m" },
-                { symbol: "h", meaning: "Silverman bandwidth" },
-              ],
-              parameters: { markets: "8 core international assets", span: "-5% to +5%" },
-              dataSources: [{ series: "8 Launch Indexes", source: "Exchange Returns", frequency: "Daily" }],
-              sample: { n: 250, nEff: 250, dateRange: "Full available history" },
-              interpretationNotes: [
-                "Broader ridges indicate higher volatility regimes (e.g. Crude Oil vs FTSE 100).",
-                "Pin markers shifted to the tails reveal which markets experienced abnormal 1-day shocks.",
-              ],
-              reproduce: {
-                functionName: "compute_ridgeline_densities",
-                filePath: "pipeline/src/radar/metrics/risk.py",
-                testPath: "pipeline/tests/unit/test_risk.py",
-              },
-            }}
-            auditData={{
-              metricName: "Cross-Asset Ridgeline Density Stack",
-              formula: "Stacked Kernel Density Estimates across markets",
-              formulaPlain: "Multi-market KDE comparison of daily returns with current realization pins.",
-              parameters: { n_markets: 8 },
-              inputs: [{ id: "universe", name: "Global Equity & Commodity Core", source: "Exchange Closes", unit: "%" }],
-              window: "250-Day lookback",
-              currentValue: "8 Market Profiles Mapped",
-            }}
-            onOpenAudit={handleOpenAudit}
-            onOpenMethod={handleOpenMethod}
-          >
-            <RidgelineDensityChart />
-          </ChartCard>
-        </div>
-      </div>
 
       {/* Drawers */}
       <AuditDrawer

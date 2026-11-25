@@ -1,11 +1,25 @@
 // web/src/components/charts/ChartCard.tsx
 "use client";
 
-import React, { useState } from "react";
-import { ShieldCheck, HelpCircle, Table, BarChart2 } from "lucide-react";
+import React, { useEffect, useRef, useState } from "react";
+import { ShieldCheck, HelpCircle, Table, BarChart2, Download, Camera } from "lucide-react";
 import { InsightStrip } from "../insight/InsightStrip";
 import { AuditData } from "../ui/AuditDrawer";
 import { MethodData } from "../ui/MethodDrawer";
+import { fetchManifest } from "@/lib/data/client";
+
+function formatFetchTimestamp(iso?: string | null): string | null {
+  if (!iso) return null;
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return null;
+  return d.toLocaleString(undefined, {
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
+}
 
 interface ChartCardProps {
   eyebrow?: string;
@@ -15,6 +29,7 @@ interface ChartCardProps {
   insightDetail?: string;
   sourceText?: string;
   asOf?: string;
+  fetchedAt?: string;
   auditData?: AuditData;
   onOpenAudit?: (data: AuditData) => void;
   methodData?: MethodData;
@@ -33,6 +48,7 @@ export const ChartCard: React.FC<ChartCardProps> = ({
   insightDetail,
   sourceText = "Federal Reserve, Yahoo Finance, NSE",
   asOf,
+  fetchedAt,
   auditData,
   onOpenAudit,
   methodData,
@@ -43,6 +59,104 @@ export const ChartCard: React.FC<ChartCardProps> = ({
   className = "",
 }) => {
   const [showTable, setShowTable] = useState(false);
+  const [manifestFetchedAt, setManifestFetchedAt] = useState<string | null>(null);
+  const [hasCanvas, setHasCanvas] = useState(false);
+  const chartContainerRef = useRef<HTMLDivElement>(null);
+  const hiddenTableRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (fetchedAt) return;
+    let active = true;
+    fetchManifest().then((res) => {
+      if (!active) return;
+      if (res.status === "ok" || res.status === "stale") {
+        setManifestFetchedAt(res.data.fetched_at ?? null);
+      }
+    });
+    return () => {
+      active = false;
+    };
+  }, [fetchedAt]);
+
+  useEffect(() => {
+    const checkCanvas = () => {
+      const canvas = chartContainerRef.current?.querySelector("canvas");
+      setHasCanvas(Boolean(canvas));
+    };
+    checkCanvas();
+    const timer = setTimeout(checkCanvas, 600);
+    return () => clearTimeout(timer);
+  }, [children, showTable]);
+
+  const formattedFetch = formatFetchTimestamp(fetchedAt ?? manifestFetchedAt);
+
+  const handleDownloadPng = () => {
+    const srcCanvas = chartContainerRef.current?.querySelector("canvas");
+    if (!srcCanvas) return;
+
+    const padX = 24;
+    const headerH = subtitle ? 58 : 42;
+    const footerH = 30;
+    const out = document.createElement("canvas");
+    out.width = srcCanvas.width + padX * 2;
+    out.height = srcCanvas.height + headerH + footerH;
+    const ctx = out.getContext("2d");
+    if (!ctx) return;
+
+    ctx.fillStyle = "#0c1017";
+    ctx.fillRect(0, 0, out.width, out.height);
+
+    ctx.fillStyle = "#e8edf5";
+    ctx.font = "600 16px system-ui, -apple-system, sans-serif";
+    ctx.fillText(title, padX, 26);
+
+    if (subtitle) {
+      ctx.fillStyle = "#8c9bb0";
+      ctx.font = "12px system-ui, -apple-system, sans-serif";
+      ctx.fillText(subtitle, padX, 45);
+    }
+
+    ctx.drawImage(srcCanvas, padX, headerH);
+
+    ctx.fillStyle = "#6f7c90";
+    ctx.font = "11px monospace";
+    const leftMeta = `MacroMonitor • dhruvil-8.github.io/MacroMonitor`;
+    const rightMeta = asOf ? `As of: ${asOf}` : "";
+    ctx.fillText(leftMeta, padX, out.height - 10);
+    if (rightMeta) {
+      const m = ctx.measureText(rightMeta);
+      ctx.fillText(rightMeta, out.width - padX - m.width, out.height - 10);
+    }
+
+    const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    const link = document.createElement("a");
+    link.download = `${slug || "chart"}.png`;
+    link.href = out.toDataURL("image/png");
+    link.click();
+  };
+
+  const handleDownloadCsv = () => {
+    const root = showTable ? chartContainerRef.current : hiddenTableRef.current;
+    const tableEl = root?.querySelector("table");
+    if (!tableEl) return;
+
+    const rows = Array.from(tableEl.querySelectorAll("tr")).map((tr) =>
+      Array.from(tr.querySelectorAll("th, td"))
+        .map((cell) => {
+          const text = (cell.textContent || "").replace(/\s+/g, " ").trim();
+          return /[",\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
+        })
+        .join(",")
+    );
+    const blob = new Blob([rows.join("\n")], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `${slug || "data"}.csv`;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
 
   return (
     <div
@@ -67,19 +181,40 @@ export const ChartCard: React.FC<ChartCardProps> = ({
         <div className="flex flex-wrap items-center gap-1.5">
           {headerControls}
 
-          {dataTable && (
+          {hasCanvas && !showTable && (
             <button
-              onClick={() => setShowTable(!showTable)}
-              className={`p-1.5 rounded transition-colors border border-[var(--line)] ${
-                showTable
-                  ? "bg-[var(--accent)]/10 text-[var(--accent)] border-[var(--accent)]"
-                  : "hover:bg-[var(--bg-2)] text-[var(--tx-2)] hover:text-[var(--tx-0)]"
-              }`}
-              title={showTable ? "Show visual chart" : "Show data table (accessible view)"}
-              aria-label={showTable ? "Switch to chart" : "Switch to data table"}
+              onClick={handleDownloadPng}
+              className="p-1.5 rounded hover:bg-[var(--bg-2)] text-[var(--tx-2)] hover:text-[var(--tx-0)] transition-colors border border-[var(--line)]"
+              title="Download chart as PNG"
+              aria-label={`Download PNG for ${title}`}
             >
-              {showTable ? <BarChart2 className="w-4 h-4" /> : <Table className="w-4 h-4" />}
+              <Camera className="w-4 h-4" />
             </button>
+          )}
+
+          {dataTable && (
+            <>
+              <button
+                onClick={handleDownloadCsv}
+                className="p-1.5 rounded hover:bg-[var(--bg-2)] text-[var(--tx-2)] hover:text-[var(--tx-0)] transition-colors border border-[var(--line)]"
+                title="Download underlying data as CSV"
+                aria-label={`Download CSV for ${title}`}
+              >
+                <Download className="w-4 h-4" />
+              </button>
+              <button
+                onClick={() => setShowTable(!showTable)}
+                className={`p-1.5 rounded transition-colors border border-[var(--line)] ${
+                  showTable
+                    ? "bg-[var(--accent)]/10 text-[var(--accent)] border-[var(--accent)]"
+                    : "hover:bg-[var(--bg-2)] text-[var(--tx-2)] hover:text-[var(--tx-0)]"
+                }`}
+                title={showTable ? "Show visual chart" : "Show data table (accessible view)"}
+                aria-label={showTable ? "Switch to chart" : "Switch to data table"}
+              >
+                {showTable ? <BarChart2 className="w-4 h-4" /> : <Table className="w-4 h-4" />}
+              </button>
+            </>
           )}
 
           {methodData && onOpenMethod && (
@@ -107,7 +242,7 @@ export const ChartCard: React.FC<ChartCardProps> = ({
       </div>
 
       {/* Chart Viewport or Accessible Data Table */}
-      <div className="my-4 flex-1 min-h-[340px] flex flex-col justify-center">
+      <div ref={chartContainerRef} className="my-4 flex-1 min-h-[340px] flex flex-col justify-center">
         {showTable && dataTable ? (
           <div className="overflow-x-auto max-h-[380px] p-2 rounded bg-[var(--bg-0)] border border-[var(--line)] text-xs font-mono">
             {dataTable}
@@ -117,15 +252,27 @@ export const ChartCard: React.FC<ChartCardProps> = ({
         )}
       </div>
 
+      {dataTable && !showTable && (
+        <div ref={hiddenTableRef} className="hidden" aria-hidden="true">
+          {dataTable}
+        </div>
+      )}
+
       {/* Footer & Insight Strip */}
       <div className="space-y-3 pt-3 border-t border-[var(--line)]">
         {insightHeadline && (
           <InsightStrip headline={insightHeadline} detail={insightDetail} />
         )}
 
-        <div className="flex items-center justify-between text-[11px] font-mono text-[var(--tx-2)]">
+        <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono text-[var(--tx-2)]">
           <span>Sources: {sourceText}</span>
-          {asOf && <span>As of: {asOf}</span>}
+          {(asOf || formattedFetch) && (
+            <span>
+              {asOf ? `As of: ${asOf}` : ""}
+              {asOf && formattedFetch ? " · " : ""}
+              {formattedFetch ? `Last fetch: ${formattedFetch}` : ""}
+            </span>
+          )}
         </div>
       </div>
     </div>

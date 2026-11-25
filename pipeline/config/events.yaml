@@ -1,7 +1,118 @@
 # pipeline/config/events.yaml
 # Specification P6: Central Bank Decision Calendars
 events:
-  # Federal Reserve (FOMC) Decisions
+  # Federal Reserve (FOMC) Decisions (2025-2026)
+  - id: fomc_2026_10_28
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2026-10-28"
+    decision: "hold"
+    rate_before: 4.00
+    rate_after: 4.00
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC held target range at 3.75-4.00% on a 10-2 split vote."
+
+  - id: fomc_2026_09_16
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2026-09-16"
+    decision: "hike"
+    rate_before: 3.75
+    rate_after: 4.00
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC raised target range by 25 bps to 3.75-4.00% amid persistent inflation."
+
+  - id: fomc_2026_07_29
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2026-07-29"
+    decision: "hold"
+    rate_before: 3.75
+    rate_after: 3.75
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC maintained target range at 3.50-3.75%."
+
+  - id: fomc_2026_06_17
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2026-06-17"
+    decision: "hold"
+    rate_before: 3.75
+    rate_after: 3.75
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC maintained target range at 3.50-3.75%."
+
+  - id: fomc_2026_04_29
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2026-04-29"
+    decision: "hold"
+    rate_before: 3.75
+    rate_after: 3.75
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC maintained target range at 3.50-3.75%."
+
+  - id: fomc_2026_03_18
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2026-03-18"
+    decision: "hold"
+    rate_before: 3.75
+    rate_after: 3.75
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC maintained target range at 3.50-3.75%."
+
+  - id: fomc_2026_01_28
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2026-01-28"
+    decision: "hold"
+    rate_before: 3.75
+    rate_after: 3.75
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC maintained target range at 3.50-3.75%."
+
+  - id: fomc_2025_12_11
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2025-12-11"
+    decision: "cut"
+    rate_before: 4.00
+    rate_after: 3.75
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC lowered target range by 25 bps to 3.50-3.75%."
+
+  - id: fomc_2025_10_29
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2025-10-29"
+    decision: "cut"
+    rate_before: 4.25
+    rate_after: 4.00
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC lowered target range by 25 bps to 3.75-4.00%."
+
+  - id: fomc_2025_09_17
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2025-09-17"
+    decision: "cut"
+    rate_before: 4.50
+    rate_after: 4.25
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC lowered target range by 25 bps to 4.00-4.25%."
+
+  - id: fomc_2025_07_30
+    event_type: "fomc"
+    institution: "Federal Reserve"
+    date: "2025-07-30"
+    decision: "hold"
+    rate_before: 4.50
+    rate_after: 4.50
+    source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+    description: "FOMC maintained target range at 4.25-4.50%."
+
+  # Federal Reserve (FOMC) Decisions (2022-2024)
   - id: fomc_2024_09_18
     event_type: "fomc"
     institution: "Federal Reserve"
@@ -82,7 +193,58 @@ events:
     source_url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
     description: "FOMC slowed hike pace to 50 bps after four consecutive 75 bps increases."
 
-  # Reserve Bank of India (RBI MPC) Decisions
+  # Reserve Bank of India (RBI MPC) Decisions (2025-2026)
+  - id: rbi_2026_10_07
+    event_type: "rbi_mpc"
+    institution: "Reserve Bank of India"
+    date: "2026-10-07"
+    decision: "hike"
+    rate_before: 5.25
+    rate_after: 5.50
+    source_url: "https://www.rbi.org.in"
+    description: "RBI MPC raised repo rate by 25 bps to 5.50% and shifted stance to calibrated tightening."
+
+  - id: rbi_2026_08_05
+    event_type: "rbi_mpc"
+    institution: "Reserve Bank of India"
+    date: "2026-08-05"
+    decision: "hold"
+    rate_before: 5.25
+    rate_after: 5.25
+    source_url: "https://www.rbi.org.in"
+    description: "RBI MPC held repo rate steady at 5.25% with a neutral stance."
+
+  - id: rbi_2026_06_05
+    event_type: "rbi_mpc"
+    institution: "Reserve Bank of India"
+    date: "2026-06-05"
+    decision: "hold"
+    rate_before: 5.25
+    rate_after: 5.25
+    source_url: "https://www.rbi.org.in"
+    description: "RBI MPC held repo rate steady at 5.25%."
+
+  - id: rbi_2026_04_08
+    event_type: "rbi_mpc"
+    institution: "Reserve Bank of India"
+    date: "2026-04-08"
+    decision: "hold"
+    rate_before: 5.25
+    rate_after: 5.25
+    source_url: "https://www.rbi.org.in"
+    description: "RBI MPC held repo rate steady at 5.25%."
+
+  - id: rbi_2026_02_06
+    event_type: "rbi_mpc"
+    institution: "Reserve Bank of India"
+    date: "2026-02-06"
+    decision: "hold"
+    rate_before: 5.25
+    rate_after: 5.25
+    source_url: "https://www.rbi.org.in"
+    description: "RBI MPC held repo rate steady at 5.25% with a neutral stance."
+
+  # Reserve Bank of India (RBI MPC) Decisions (2022-2024)
   - id: rbi_2024_10_09
     event_type: "rbi_mpc"
     institution: "Reserve Bank of India"

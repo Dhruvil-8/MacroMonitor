@@ -544,7 +544,7 @@ export const SectorClientView: React.FC = () => {
 
         {/* Chart 2: Sector Rotation Map */}
         <ChartCard
-          eyebrow="Cyclical Momentum (C05)"
+          eyebrow="Cyclical Momentum"
           title="Sector Rotation Cycle"
           subtitle={`Relative Strength vs ${currentRegionData.benchmark_name} & Momentum`}
           asOf={asOf}

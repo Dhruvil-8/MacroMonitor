@@ -1,8 +1,9 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-24",
+  "fetched_at": "2026-11-25T04:06:25Z",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "xlp",
     "name": "Consumer Staples Select Sector SPDR",
@@ -12351,7 +12352,7 @@
       49.79,
       49.85,
       50.19,
-      50.33,
+      50.32,
       50.39,
       50.15,
       50.85,
@@ -12899,7 +12900,7 @@
       64.94,
       65.13,
       65.19,
-      65.08,
+      65.07,
       64.99,
       64.8,
       64.84,

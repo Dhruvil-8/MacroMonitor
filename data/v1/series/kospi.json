@@ -1,8 +1,9 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-24",
+  "fetched_at": "2026-11-25T04:05:50Z",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
     "id": "kospi",
     "name": "KOSPI Composite Index",
@@ -14026,7 +14027,7 @@
       5137.89,
       4869.96,
       4708.54,
-      5047.14
+      5010.53
     ]
   }
 }

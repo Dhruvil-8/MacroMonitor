@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-24",
+  "fetched_at": "2026-11-25T04:06:37Z",
   "code_version": "v1.0.0",
-  "params_hash": "default_hash",
+  "params_hash": "f1687f268479",
   "data": {
-    "current_stress": 57.0,
+    "current_stress": 57.2,
     "regime": "Normal Market Conditions",
     "components": {
       "equity": 99.2,
       "rates": 82.6,
-      "fx": 20.8,
-      "commodity": 93.7,
+      "fx": 21.0,
+      "commodity": 93.3,
       "correlation": 58.5
     },
     "missing_components": [
       "credit"
     ],
     "dates": [
-      "2025-09-30",
       "2025-10-01",
       "2025-10-02",
       "2025-10-03",
@@ -316,10 +316,10 @@
       "2026-11-18",
       "2026-11-19",
       "2026-11-20",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-24"
     ],
     "history": [
-      41.1,
       41.7,
       42.1,
       41.6,
@@ -618,7 +618,8 @@
       66.6,
       66.1,
       70.3,
-      57.0
+      56.8,
+      57.2
     ],
     "episodes": [
       {
@@ -649,8 +650,8 @@
         "eurusd",
         "brent"
       ],
-      "n": 6976,
-      "n_eff": 4534.4
+      "n": 6977,
+      "n_eff": 4535.1
     }
   }
 }

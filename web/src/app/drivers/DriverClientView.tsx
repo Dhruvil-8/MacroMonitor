@@ -366,7 +366,7 @@ export const DriverClientView: React.FC = () => {
 
       {/* Chart 1: Sensitivity Heatmap (C06) */}
       <ChartCard
-        eyebrow="Cross-Economy Matrix (C06)"
+        eyebrow="Cross-Economy Matrix"
         title="Driver Sensitivity Heatmap with Stability Hatching"
         subtitle={`Multi-factor betas across 10 economies · Trailing ${windowDays} trading sessions`}
         asOf={asOf}
@@ -423,7 +423,7 @@ export const DriverClientView: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Chart 2: Forest Plot (C08) */}
         <ChartCard
-          eyebrow="Estimation Uncertainty (C08)"
+          eyebrow="Estimation Uncertainty"
           title={`Forest Plot: ${activeTargetRow.target_name}`}
           subtitle="Point estimates with 95% Newey-West HAC confidence intervals"
           asOf={asOf}
@@ -450,7 +450,7 @@ export const DriverClientView: React.FC = () => {
 
         {/* Chart 3: Rolling Beta Drift (C07) */}
         <ChartCard
-          eyebrow="Structural Stability (C07)"
+          eyebrow="Structural Stability"
           title={`Rolling Beta: ${activeTargetRow.target_name} vs ${DRIVER_NAMES[selectedDriverId] || selectedDriverId}`}
           subtitle="Trailing rolling regression with 95% HAC confidence band"
           asOf={asOf}
@@ -485,7 +485,7 @@ export const DriverClientView: React.FC = () => {
       {/* Chart 4: Bivariate Scatter (C09) */}
       {activeScatterData && (
         <ChartCard
-          eyebrow="Empirical Fit (C09)"
+          eyebrow="Empirical Fit"
           title={`Bivariate Scatter: ${activeTargetRow.target_name} vs ${DRIVER_NAMES[selectedDriverId] || selectedDriverId}`}
           subtitle="Daily return scatter with fitted OLS regression line and confidence band"
           asOf={asOf}

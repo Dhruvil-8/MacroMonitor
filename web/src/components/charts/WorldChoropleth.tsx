@@ -17,19 +17,6 @@ interface CountryPoint {
   vol20d: number;
 }
 
-const FALLBACK_COUNTRIES: CountryPoint[] = [
-  { code: "US", name: "United States", indexId: "spx", return1d: 0.0473, return5d: -0.0242, return20d: -0.0507, vol20d: 32.0 },
-  { code: "CA", name: "Canada", indexId: "tsse", return1d: 0.0256, return5d: -0.0499, return20d: -0.0706, vol20d: 23.1 },
-  { code: "BR", name: "Brazil", indexId: "ibov", return1d: -0.0063, return5d: -0.0506, return20d: -0.3277, vol20d: 18.5 },
-  { code: "GB", name: "United Kingdom", indexId: "ftse", return1d: 0.0087, return5d: -0.0474, return20d: -0.0444, vol20d: 14.8 },
-  { code: "DE", name: "Germany", indexId: "dax", return1d: 0.0161, return5d: -0.0547, return20d: -0.0211, vol20d: 21.8 },
-  { code: "JP", name: "Japan", indexId: "n225", return1d: 0.0405, return5d: 0.0014, return20d: -0.0683, vol20d: 39.0 },
-  { code: "CN", name: "China", indexId: "ssec", return1d: 0.0071, return5d: -0.0076, return20d: -0.0359, vol20d: 14.1 },
-  { code: "IN", name: "India", indexId: "nifty50", return1d: -0.0199, return5d: 0.0137, return20d: 0.1463, vol20d: 15.6 },
-  { code: "KR", name: "South Korea", indexId: "kospi", return1d: 0.0734, return5d: 0.0106, return20d: -0.0914, vol20d: 60.6 },
-  { code: "AU", name: "Australia", indexId: "asx200", return1d: 0.0136, return5d: -0.0361, return20d: -0.0685, vol20d: 16.1 },
-];
-
 export interface WorldChoroplethProps {
   countries?: CountryMatrixRow[];
   lens?: "usd" | "local" | "fx";
@@ -68,17 +55,14 @@ export const WorldChoropleth: React.FC<WorldChoroplethProps> = ({
 
   const dataPoints: CountryPoint[] = useMemo(() => {
     if (!activeCountriesList || activeCountriesList.length === 0) {
-      return FALLBACK_COUNTRIES;
+      return [];
     }
     return activeCountriesList.map((c) => {
       const retDict = lens === "local" ? c.returns_local : lens === "fx" ? c.returns_fx : c.returns_usd;
       const r1 = retDict["1D"] ?? 0;
       const r5 = retDict["5D"] ?? 0;
       const r20 = retDict["1M"] ?? retDict["20D"] ?? 0;
-      const vol =
-        volMap[c.index_id.toLowerCase()] ??
-        FALLBACK_COUNTRIES.find((fc) => fc.indexId === c.index_id.toLowerCase())?.vol20d ??
-        15.0;
+      const vol = volMap[c.index_id.toLowerCase()] ?? 0;
 
       return {
         code: c.code.toUpperCase(),

@@ -6,6 +6,7 @@ export const BaseEnvelopeSchema = <T extends z.ZodTypeAny>(dataSchema: T) =>
   z.object({
     schema_version: z.string(),
     as_of: z.string(),
+    fetched_at: z.string().optional(),
     code_version: z.string(),
     params_hash: z.string(),
     data: dataSchema,
@@ -22,6 +23,7 @@ export const ManifestFileEntrySchema = z.object({
 export const ManifestEnvelopeSchema = z.object({
   schema_version: z.string(),
   as_of: z.string(),
+  fetched_at: z.string().optional(),
   code_version: z.string(),
   params_hash: z.string(),
   manifest: z.object({

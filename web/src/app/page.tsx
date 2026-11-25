@@ -1,8 +1,9 @@
 // web/src/app/page.tsx
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { Star, ArrowUpRight, Activity } from "lucide-react";
 import { ChartCard } from "@/components/charts/ChartCard";
 import { MarketStateMap } from "@/components/charts/MarketStateMap";
 import { VolatilityLandscape } from "@/components/charts/VolatilityLandscape";
@@ -35,6 +36,35 @@ export default function TodayPage() {
   const [asOf, setAsOf] = useState<string>("");
   const [isStale, setIsStale] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
+  const [pinnedIds, setPinnedIds] = useState<string[]>(["spx", "nifty50", "us10y", "gold"]);
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("macromonitor_watchlist");
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setPinnedIds(parsed);
+        }
+      }
+    } catch {
+      // ignore storage errors
+    }
+  }, []);
+
+  const togglePin = (id: string) => {
+    setPinnedIds((prev) => {
+      const next = prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id];
+      try {
+        localStorage.setItem("macromonitor_watchlist", JSON.stringify(next));
+      } catch {
+        // ignore storage errors
+      }
+      return next;
+    });
+  };
+
+  const pulseStats = useMemo(() => pulseData?.data?.stats ?? [], [pulseData]);
 
   // Drawer states
   const [auditTarget, setAuditTarget] = useState<AuditData | null>(null);
@@ -122,11 +152,11 @@ export default function TodayPage() {
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
           <Link
-            href="/charts"
+            href="/compare"
             className="flex items-center gap-1.5 px-3 py-1.5 rounded bg-[var(--accent)] text-slate-900 font-mono text-xs font-semibold shadow hover:opacity-90 transition"
           >
-            <span>Explore All 51 Charts</span>
-            <span className="text-[10px] bg-slate-900/20 px-1 rounded">&rarr;</span>
+            <span>Compare &amp; Stress Test</span>
+            <ArrowUpRight className="w-3.5 h-3.5" />
           </Link>
           <div className="flex items-center gap-3">
             <HealthDot status={isStale ? "stale" : "ok"} label={isStale ? "Stale Data" : "Verified Live"} />
@@ -134,6 +164,119 @@ export default function TodayPage() {
           </div>
         </div>
       </div>
+
+      {/* Global Market Pulse Strip & Watchlist */}
+      {pulseStats.length > 0 && (
+        <div className="space-y-3">
+          <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono">
+            <div className="flex items-center gap-2 text-[var(--tx-2)]">
+              <Activity className="w-3.5 h-3.5 text-[var(--accent)]" />
+              <span className="uppercase tracking-wider">Global Benchmarks</span>
+              {pulseData?.data?.risk_regime && (
+                <span className="px-2 py-0.5 rounded bg-[var(--bg-1)] border border-[var(--line)] text-[var(--tx-0)]">
+                  Regime: <strong>{pulseData.data.risk_regime}</strong>
+                </span>
+              )}
+              {pulseData?.data?.observations_count !== undefined && (
+                <Link
+                  href="/radar"
+                  className="px-2 py-0.5 rounded bg-[var(--bg-1)] border border-[var(--line)] text-[var(--accent)] hover:border-[var(--accent)] transition"
+                >
+                  {pulseData.data.observations_count} Active Signals &rarr;
+                </Link>
+              )}
+            </div>
+            <span className="text-[var(--tx-3)]">Click ★ to pin to Watchlist</span>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5">
+            {pulseStats.map((s) => {
+              const isPos = s.change_1d >= 0;
+              const isPinned = pinnedIds.includes(s.id);
+              const isYield = s.unit === "percent" || s.id.includes("us10y");
+              return (
+                <div
+                  key={s.id}
+                  className={`p-2.5 rounded-lg border transition bg-[var(--bg-1)] flex flex-col justify-between ${
+                    isPinned ? "border-[var(--accent)]/40" : "border-[var(--line)]"
+                  }`}
+                >
+                  <div className="flex items-center justify-between gap-1">
+                    <Link
+                      href={`/context/${s.id}`}
+                      className="text-[11px] font-mono font-semibold text-[var(--tx-0)] hover:text-[var(--accent)] truncate"
+                      title={s.name}
+                    >
+                      {s.id.toUpperCase()}
+                    </Link>
+                    <button
+                      type="button"
+                      onClick={() => togglePin(s.id)}
+                      className={`transition ${
+                        isPinned ? "text-amber-400" : "text-[var(--tx-3)] hover:text-[var(--tx-1)]"
+                      }`}
+                      title={isPinned ? "Remove from Watchlist" : "Pin to Watchlist"}
+                      aria-label={`Toggle watchlist for ${s.name}`}
+                    >
+                      <Star className="w-3 h-3" fill={isPinned ? "currentColor" : "none"} />
+                    </button>
+                  </div>
+                  <div className="mt-1.5 flex items-baseline justify-between gap-1 tabular-nums">
+                    <span className="text-sm font-semibold text-[var(--tx-0)]">
+                      {s.value.toLocaleString(undefined, { maximumFractionDigits: 2 })}
+                      {isYield ? "%" : ""}
+                    </span>
+                    <span
+                      className={`text-[11px] font-mono font-medium ${
+                        isPos ? "text-[var(--pos)]" : "text-[var(--neg)]"
+                      }`}
+                    >
+                      {isPos ? "+" : ""}
+                      {s.change_1d.toFixed(2)}%
+                    </span>
+                  </div>
+                  <div className="mt-1 text-[10px] font-mono text-[var(--tx-3)]">
+                    Rank {s.percentile.toFixed(0)}th pct
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {pinnedIds.length > 0 && (
+            <div className="flex flex-wrap items-center gap-2 px-3 py-2 rounded-lg bg-[var(--bg-1)] border border-[var(--line)] text-xs font-mono">
+              <span className="text-[10px] uppercase tracking-wider text-amber-400 font-semibold flex items-center gap-1">
+                <Star className="w-3 h-3 fill-amber-400" /> My Watchlist:
+              </span>
+              {pinnedIds.map((pid) => {
+                const st = pulseStats.find((x) => x.id === pid);
+                const sm = stateMapData?.data?.assets?.find((x) => x.asset === pid);
+                if (!st && !sm) return null;
+                return (
+                  <Link
+                    key={pid}
+                    href={`/context/${pid}`}
+                    className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-[var(--bg-0)] border border-[var(--line)] hover:border-[var(--accent)] transition tabular-nums"
+                  >
+                    <span className="text-[var(--tx-0)] font-semibold">{pid.toUpperCase()}</span>
+                    {st ? (
+                      <span className={st.change_1d >= 0 ? "text-[var(--pos)]" : "text-[var(--neg)]"}>
+                        {st.change_1d >= 0 ? "+" : ""}
+                        {st.change_1d.toFixed(2)}%
+                      </span>
+                    ) : sm ? (
+                      <span className={sm.momentum_20d >= 0 ? "text-[var(--pos)]" : "text-[var(--neg)]"}>
+                        20D {sm.momentum_20d >= 0 ? "+" : ""}
+                        {(sm.momentum_20d * 100).toFixed(1)}%
+                      </span>
+                    ) : null}
+                  </Link>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Signature Module: The Move Decomposer */}
       {decompData && (
@@ -272,7 +415,7 @@ export default function TodayPage() {
       {/* Contextual Percentile Strips (C20) */}
       {pulseData && pulseData.data.stats && (
         <ChartCard
-          eyebrow="Contextual Distribution Ranking (C20)"
+          eyebrow="Historical Percentile Strip"
           title="Macro Percentile Strips — 'You Are Here'"
           subtitle="Realized levels ranked against expanding historical distributions [0% min to 100% max]"
           insightHeadline="Equities and implied volatility are trading in their upper tercile (>80th percentile) alongside crude oil and gold."

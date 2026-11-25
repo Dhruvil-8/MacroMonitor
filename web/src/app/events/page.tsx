@@ -31,7 +31,7 @@ export default function EventsPage() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-2 border-b border-[#1d2633]">
         <div>
           <div className="text-[10px] font-mono uppercase tracking-widest text-[#6f7c90]">
-            Central Bank Policy Reactions • Module P6
+            Central Bank Policy Reactions
           </div>
           <h1 className="text-2xl font-bold tracking-tight text-[#e8edf5] mt-0.5">
             Event Studies: Central Bank Decision Days

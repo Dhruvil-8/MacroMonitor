@@ -123,7 +123,7 @@ export default function CountriesPage() {
 
       {/* C03: World Spatial Performance & Volatility Matrix */}
       <ChartCard
-        eyebrow="Spatial Macro Map (C03)"
+        eyebrow="Global Equity & FX Map"
         title="World Equity Performance & Volatility Barometer"
         subtitle="Cross-market return and 20-day realized volatility comparison across the 10 launch economies"
         asOf={asOf}

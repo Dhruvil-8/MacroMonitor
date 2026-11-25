@@ -5,15 +5,21 @@ Implements Section 10 and docs/spec/s04-export-contracts.md.
 Single source of truth for exported JSON data contracts.
 """
 
+from datetime import datetime, timezone
 from typing import Any, Generic, List, Optional, TypeVar
 from pydantic import BaseModel, ConfigDict, Field
 
 T = TypeVar("T")
 
 
+def _utc_now_iso() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
 class BaseEnvelope(BaseModel, Generic[T]):
     schema_version: str = Field(default="1.0", description="Contract schema version")
     as_of: str = Field(description="ISO date string YYYY-MM-DD")
+    fetched_at: Optional[str] = Field(default_factory=_utc_now_iso, description="UTC timestamp of pipeline fetch/export")
     code_version: str = Field(default="v1.0.0", description="Git commit hash or release tag")
     params_hash: str = Field(description="SHA256 hash of params.yaml")
     data: T
@@ -34,6 +40,7 @@ class ManifestData(BaseModel):
 class ManifestEnvelope(BaseModel):
     schema_version: str = "1.0"
     as_of: str
+    fetched_at: Optional[str] = Field(default_factory=_utc_now_iso, description="UTC timestamp of pipeline fetch/export")
     code_version: str = "v1.0.0"
     params_hash: str
     manifest: ManifestData

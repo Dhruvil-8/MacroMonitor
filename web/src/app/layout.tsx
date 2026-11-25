@@ -34,7 +34,7 @@ export default function RootLayout({
                   </span>
                 </Link>
                 <span className="text-[11px] font-mono text-[#6f7c90] hidden xl:inline">
-                  / Macro Statistics
+                  / Global Macro Intelligence
                 </span>
               </div>
 
