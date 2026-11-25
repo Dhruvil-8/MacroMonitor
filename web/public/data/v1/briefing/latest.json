@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-24",
-  "fetched_at": "2026-11-25T04:09:26Z",
+  "as_of": "2026-11-25",
+  "fetched_at": "2026-11-25T09:27:06Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
-    "as_of": "2026-11-24",
+    "as_of": "2026-11-25",
     "headline": "MacroMonitor Briefing: Normal Market Conditions (57.2/100)",
-    "executive_summary": "As of 2026-11-24, the Global Financial Stress Composite registered 57.2/100, reflecting normal market conditions. US Net Liquidity has expanded by $23.1B over the trailing 4-week window, while institutional cash participants in India recorded net inflows (FII: ₹1,250.4 Cr) and recorded net inflows (DII: ₹1,840.2 Cr).",
+    "executive_summary": "As of 2026-11-25, the Global Financial Stress Composite registered 57.2/100, reflecting normal market conditions. US Net Liquidity has expanded by $23.1B over the trailing 4-week window, while institutional cash participants in India recorded net inflows (FII: ₹1,250.4 Cr) and recorded net inflows (DII: ₹1,840.2 Cr).",
     "stress_score": 57.2,
     "stress_regime": "Normal Market Conditions",
     "sections": [
@@ -17,7 +17,7 @@
       },
       {
         "title": "Primary Statistical Observations",
-        "content": "• Momentum divergence between BRENT and NIFTY50\n• Unusual price move recorded in Gold\n• Realized volatility elevated across multiple horizons for Nikkei 225\n• Realized volatility elevated across multiple horizons for KOSPI"
+        "content": "• Momentum divergence between BRENT and NIFTY50\n• TWII realized volatility moved above historical baseline\n• Unusual price move recorded in Gold\n• Realized volatility elevated across multiple horizons for Nikkei 225"
       },
       {
         "title": "Funding & Institutional Positioning",

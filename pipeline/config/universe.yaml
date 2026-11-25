@@ -200,6 +200,84 @@
   fallback: yahoo:EWA
   license_note: "ASX derived"
 
+- id: twii
+  name: Taiwan Weighted Index (TAIEX)
+  source: yahoo
+  source_symbol: "^TWII"
+  group: equity_index
+  region: TW
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:EWT
+  license_note: "TWSE derived"
+
+- id: smi
+  name: Swiss Market Index (SMI)
+  source: yahoo
+  source_symbol: "^SSMI"
+  group: equity_index
+  region: CH
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:EWL
+  license_note: "SIX Swiss Exchange derived"
+
+- id: cac40
+  name: CAC 40 Index
+  source: yahoo
+  source_symbol: "^FCHI"
+  group: equity_index
+  region: FR
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:EWQ
+  license_note: "Euronext Paris derived"
+
+- id: ipc
+  name: S&P/BMV IPC Mexico Index
+  source: yahoo
+  source_symbol: "^MXX"
+  group: equity_index
+  region: MX
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:EWW
+  license_note: "BMV derived"
+
+- id: jkse
+  name: IDX Composite (Jakarta)
+  source: yahoo
+  source_symbol: "^JKSE"
+  group: equity_index
+  region: ID
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:EIDO
+  license_note: "IDX derived"
+
+- id: ksa
+  name: iShares MSCI Saudi Arabia ETF
+  source: yahoo
+  source_symbol: "KSA"
+  group: equity_index
+  region: SA
+  unit: index
+  frequency: D
+  transform_default: log_return
+  start_date: "2015-09-01"
+  fallback: yahoo:KSA
+  license_note: "BlackRock iShares Saudi proxy (USD)"
+
 # =============================================================================
 # 2. US Sector ETFs (11)
 # =============================================================================
@@ -744,6 +822,58 @@
   start_date: "2000-01-01"
   fallback: yahoo:FXA
   license_note: "RBA / FX benchmark derived"
+
+- id: usdtwd
+  name: USD / TWD Currency Pair
+  source: yahoo
+  source_symbol: "TWD=X"
+  group: fx
+  region: TW
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2003-01-01"
+  fallback: yahoo:TWD=X
+  license_note: "CBC / FX benchmark derived"
+
+- id: usdchf
+  name: USD / CHF Currency Pair
+  source: yahoo
+  source_symbol: "CHF=X"
+  group: fx
+  region: CH
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:FXF
+  license_note: "SNB / FX benchmark derived"
+
+- id: usdmxn
+  name: USD / MXN Currency Pair
+  source: yahoo
+  source_symbol: "MXN=X"
+  group: fx
+  region: MX
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2000-01-01"
+  fallback: yahoo:MXN=X
+  license_note: "Banxico / FX benchmark derived"
+
+- id: usdidr
+  name: USD / IDR Currency Pair
+  source: yahoo
+  source_symbol: "IDR=X"
+  group: fx
+  region: ID
+  unit: rate
+  frequency: D
+  transform_default: log_return
+  start_date: "2003-01-01"
+  fallback: yahoo:IDR=X
+  license_note: "Bank Indonesia / FX benchmark derived"
 
 # =============================================================================
 # 6. Global Commodities (6)

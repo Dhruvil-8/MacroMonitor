@@ -62,6 +62,10 @@ import {
   TailsRegimesEnvelopeSchema,
   TrackRecordEnvelope,
   TrackRecordEnvelopeSchema,
+  RatiosEnvelope,
+  RatiosEnvelopeSchema,
+  CyclesEnvelope,
+  CyclesEnvelopeSchema,
 } from "./schemas";
 import { z } from "zod";
 
@@ -245,6 +249,14 @@ export async function loadTailsRegimes(): Promise<LoadResult<TailsRegimesEnvelop
 
 export async function loadTrackRecord(): Promise<LoadResult<TrackRecordEnvelope>> {
   return loadDataset("/track_record.json", TrackRecordEnvelopeSchema);
+}
+
+export async function loadRatios(): Promise<LoadResult<RatiosEnvelope>> {
+  return loadDataset("/ratios.json", RatiosEnvelopeSchema);
+}
+
+export async function loadCycles(): Promise<LoadResult<CyclesEnvelope>> {
+  return loadDataset("/cycles.json", CyclesEnvelopeSchema);
 }
 
 

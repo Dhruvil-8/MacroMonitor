@@ -10,9 +10,7 @@ import { AuditData, AuditDrawer } from "@/components/ui/AuditDrawer";
 import { MethodData, MethodDrawer } from "@/components/ui/MethodDrawer";
 import { VolatilityConeChart } from "@/components/charts/VolatilityConeChart";
 import { DistributionHistogram } from "@/components/charts/DistributionHistogram";
-import { ContextQqPlot } from "@/components/charts/ContextQqPlot";
 import { TailRiskBarChart } from "@/components/charts/TailRiskBarChart";
-import { AutocorrelationBarChart } from "@/components/charts/AutocorrelationBarChart";
 import { UnderwaterDrawdownChart } from "@/components/charts/UnderwaterDrawdownChart";
 import { PcaSynchronizationChart } from "@/components/charts/PcaSynchronizationChart";
 import { DownsideCorrelationChart } from "@/components/charts/DownsideCorrelationChart";
@@ -337,7 +335,7 @@ export const RiskClientView: React.FC = () => {
       {/* Row 2: Distribution Modeling (C11) & Normality Diagnostic (C12) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* C11: Histogram & KDE */}
-        <div className="lg:col-span-7">
+        <div className="lg:col-span-6">
           <ChartCard
             eyebrow="Distribution Modeling"
             title={`${profile?.asset_name || "S&P 500"} Return Distribution`}
@@ -400,67 +398,8 @@ export const RiskClientView: React.FC = () => {
           </ChartCard>
         </div>
 
-        {/* C12: QQ Plot */}
-        <div className="lg:col-span-5">
-          <ChartCard
-            eyebrow="Normality Diagnostic"
-            title="Quantile-Quantile (QQ) Plot"
-            subtitle="Empirical standardized quantiles vs Theoretical Gaussian Normal quantiles"
-            asOf={asOf}
-            methodData={{
-              chartTitle: `Quantile-Quantile Plot (C12) — ${profile?.asset_name || "S&P 500"}`,
-              whatItShows: "Empirical quantiles plotted against theoretical normal quantiles; departures from the 45-degree diagonal line immediately expose heavy tails and skewness.",
-              definitionFormula: "q_{\\text{theoretical}} = \\Phi^{-1}(p), \\quad q_{\\text{empirical}} = \\frac{\\text{percentile}(r, p) - \\hat{\\mu}}{\\hat{\\sigma}}",
-              symbolsDefined: [
-                { symbol: "Phi^-1", meaning: "Standard normal inverse cumulative distribution function (probit)" },
-                { symbol: "p", meaning: "Quantile probabilities spanning 0.01 to 0.99" },
-              ],
-              parameters: {
-                num_quantiles: 50,
-                bounds: "0.01 to 0.99 (excluding asymptotic limits)",
-              },
-              dataSources: [{ series: selectedAssetId, source: "Primary Exchange Feeds", frequency: "Daily" }],
-              sample: { n: 250, nEff: 250, dateRange: "Full available history" },
-              interpretationNotes: [
-                "Points sagging below the diagonal in the left tail indicate negative crash risk heavier than a normal distribution.",
-                "S-shaped deviations indicate excess kurtosis (leptokurtic distribution).",
-              ],
-              reproduce: {
-                functionName: "compute_qq_quantiles",
-                filePath: "pipeline/src/radar/metrics/context.py",
-                testPath: "pipeline/tests/unit/test_context.py",
-              },
-            }}
-            auditData={{
-              metricName: "Normal Quantile-Quantile Plot",
-              formula: "norm.ppf(p) vs standardized sample quantiles",
-              formulaPlain: "50 quantile points compared against theoretical normal distribution.",
-              parameters: { points: 50 },
-              inputs: [{ id: selectedAssetId, name: profile?.asset_name || "S&P 500", source: "Primary Feeds", unit: "sigma" }],
-              window: "Full sample",
-              currentValue: `${profile?.distribution?.skewness ?? 0} skew, ${profile?.distribution?.excess_kurtosis ?? 0} kurtosis`,
-            }}
-            onOpenAudit={handleOpenAudit}
-            onOpenMethod={handleOpenMethod}
-          >
-            {contextData || (profile?.distribution?.qq_theoretical && profile.distribution.qq_theoretical.length > 0) ? (
-              <ContextQqPlot
-                theoretical={contextData?.qq_theoretical || profile!.distribution.qq_theoretical}
-                empirical={contextData?.qq_empirical || profile!.distribution.qq_empirical}
-                assetName={profile?.asset_name || selectedAssetId.toUpperCase()}
-              />
-            ) : (
-              <div className="h-[280px] flex items-center justify-center font-mono text-xs text-[var(--tx-2)]">
-                Loading QQ Normality Diagnostics...
-              </div>
-            )}
-          </ChartCard>
-        </div>
-      </div>
-
-      {/* Row 3: Tail Risk (C13) & Autocorrelation / Vol Clustering (C14) */}
-      {profile && (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {profile && (
+          <div className="lg:col-span-6">
           {/* C13: Tail Risk */}
           <ChartCard
             eyebrow="Tail Risk Diagnostics"
@@ -539,83 +478,9 @@ export const RiskClientView: React.FC = () => {
           >
             <TailRiskBarChart tailMetrics={profile.tail_risk} assetName={profile.asset_name} />
           </ChartCard>
-
-          {/* C14: Autocorrelation & Vol Clustering */}
-          <ChartCard
-            eyebrow="ARCH Volatility Memory"
-            title={`Volatility Clustering & ACF — ${profile.asset_name}`}
-            subtitle="Autocorrelation Function of raw returns (linear memory) vs squared returns (ARCH vol persistence)"
-            asOf={asOf}
-            methodData={{
-              chartTitle: `Volatility Clustering & ACF (C14) — ${profile.asset_name}`,
-              whatItShows: "Persistence of return magnitudes (squared returns) demonstrating volatility clustering, alongside raw return autocorrelations with N_eff confidence bands.",
-              definitionFormula: "\\text{ACF}(k) = \\frac{\\sum_{t=k+1}^T (x_t - \\bar{x})(x_{t-k} - \\bar{x})}{\\sum_{t=1}^T (x_t - \\bar{x})^2}, \\quad \\text{Band} = \\pm \\frac{1.96}{\\sqrt{N_{\\text{eff}}}}",
-              symbolsDefined: [
-                { symbol: "ACF(k)", meaning: "Autocorrelation at lag k" },
-                { symbol: "N_eff", meaning: "Effective sample size adjusted for lag-1 serial correlation" },
-              ],
-              parameters: {
-                max_lags: 20,
-                significance: "95% two-sided HAC-adjusted band",
-              },
-              dataSources: [{ series: profile.asset_id, source: "Market Returns", frequency: "Daily" }],
-              sample: {
-                n: profile.autocorrelation.lags.length,
-                nEff: profile.autocorrelation.n_eff,
-                dateRange: "Full available history",
-              },
-              interpretationNotes: [
-                "Raw returns near zero with no significant spikes confirm market informational efficiency (no linear predictability).",
-                "Positive, decaying autocorrelation in squared returns (orange) proves ARCH volatility clustering: large moves cluster together.",
-              ],
-              reproduce: {
-                functionName: "compute_autocorrelations",
-                filePath: "pipeline/src/radar/metrics/risk.py",
-                testPath: "pipeline/tests/unit/test_risk.py",
-              },
-            }}
-            auditData={{
-              metricName: "Autocorrelation Function",
-              formula: "ACF(k) = cov(x_t, x_{t-k}) / var(x)",
-              formulaPlain: "Lagged correlation of returns and squared returns with N_eff confidence limits.",
-              parameters: { lags: 20 },
-              inputs: [{ id: profile.asset_id, name: profile.asset_name, source: "Market Returns", unit: "%" }],
-              window: "Lags 1 to 20",
-              currentValue: `Lag 1 ACF(r²): ${profile.autocorrelation.acf_squared[0]?.toFixed(3) ?? "—"}`,
-              n: profile.autocorrelation.lags.length,
-              nEff: profile.autocorrelation.n_eff,
-            }}
-            dataTable={
-              <div className="overflow-x-auto text-xs font-mono">
-                <table className="w-full text-left border-collapse">
-                  <thead>
-                    <tr className="border-b border-[var(--line)] text-[var(--tx-2)]">
-                      <th className="py-1.5 px-2">Lag</th>
-                      <th className="py-1.5 px-2 text-right">ACF(r²) Vol Persistence</th>
-                      <th className="py-1.5 px-2 text-right">ACF(r) Linear Return</th>
-                      <th className="py-1.5 px-2 text-right">95% Conf Band</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-[var(--line)]">
-                    {profile.autocorrelation.lags.map((lag, i) => (
-                      <tr key={lag}>
-                        <td className="py-1.5 px-2 font-semibold">Lag {lag}</td>
-                        <td className="py-1.5 px-2 text-right text-amber-400 font-bold">{profile.autocorrelation.acf_squared[i]?.toFixed(3) ?? "—"}</td>
-                        <td className="py-1.5 px-2 text-right">{profile.autocorrelation.acf_returns[i]?.toFixed(3) ?? "—"}</td>
-                        <td className="py-1.5 px-2 text-right text-[var(--tx-3)]">±{profile.autocorrelation.band.toFixed(3)}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            }
-            onOpenAudit={handleOpenAudit}
-            onOpenMethod={handleOpenMethod}
-          >
-            <AutocorrelationBarChart acfData={profile.autocorrelation} assetName={profile.asset_name} />
-          </ChartCard>
-        </div>
-      )}
+          </div>
+        )}
+      </div>
 
       {/* Row 4: Underwater Drawdowns & Historical Episodes (C15) */}
       {profile && (

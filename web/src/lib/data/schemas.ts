@@ -1455,6 +1455,71 @@ export const TrackRecordEnvelopeSchema = z.object({
 });
 export type TrackRecordEnvelope = z.infer<typeof TrackRecordEnvelopeSchema>;
 
+// 22. Cross-Asset Ratios & Fair-Value Models
+export const RatioItemSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  category: z.string(),
+  op: z.string(),
+  current: z.number(),
+  chg_1d: z.number(),
+  chg_20d: z.number(),
+  z_score: z.number(),
+  percentile: z.number(),
+  interpretation: z.string(),
+  history_dates: z.array(z.string()).default([]),
+  history_values: z.array(z.number()).default([]),
+});
+export type RatioItem = z.infer<typeof RatioItemSchema>;
+
+export const RatiosDataSchema = z.object({
+  ratios: z.array(RatioItemSchema).default([]),
+  gold_valuation: z.record(z.string(), z.any()).default({}),
+  cu_au_vs_10y: z.record(z.string(), z.any()).default({}),
+  credit_vs_vol: z.record(z.string(), z.any()).default({}),
+});
+export type RatiosData = z.infer<typeof RatiosDataSchema>;
+
+export const RatiosEnvelopeSchema = BaseEnvelopeSchema(RatiosDataSchema);
+export type RatiosEnvelope = z.infer<typeof RatiosEnvelopeSchema>;
+
+// 23. 4-Quadrant Growth-Inflation Macro Cycles
+export const CycleTrailPointSchema = z.object({
+  date: z.string(),
+  growth_z: z.number(),
+  inflation_z: z.number(),
+  quadrant: z.string(),
+});
+
+export const CycleQuadrantReturnSchema = z.object({
+  quadrant: z.string(),
+  days: z.number(),
+  share_pct: z.number(),
+  returns: z.record(z.string(), z.number().nullable()).default({}),
+});
+
+export const CycleGaugeItemSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  value: z.number(),
+  unit: z.string(),
+  percentile: z.number(),
+  note: z.string(),
+});
+
+export const CyclesDataSchema = z.object({
+  current_quadrant: z.string(),
+  current_growth_z: z.number(),
+  current_inflation_z: z.number(),
+  trail: z.array(CycleTrailPointSchema).default([]),
+  quadrant_returns: z.array(CycleQuadrantReturnSchema).default([]),
+  gauges: z.array(CycleGaugeItemSchema).default([]),
+});
+export type CyclesData = z.infer<typeof CyclesDataSchema>;
+
+export const CyclesEnvelopeSchema = BaseEnvelopeSchema(CyclesDataSchema);
+export type CyclesEnvelope = z.infer<typeof CyclesEnvelopeSchema>;
+
 
 
 

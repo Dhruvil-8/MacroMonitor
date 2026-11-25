@@ -1123,6 +1123,70 @@ class TrackRecordEnvelope(BaseEnvelope[TrackRecordData]):
     pass
 
 
+# 22. Cross-Asset Ratios & Fair-Value Models
+class RatioItem(BaseModel):
+    id: str
+    name: str
+    category: str
+    op: str
+    current: float
+    chg_1d: float
+    chg_20d: float
+    z_score: float
+    percentile: float
+    interpretation: str
+    history_dates: List[str] = Field(default_factory=list)
+    history_values: List[float] = Field(default_factory=list)
+
+
+class RatiosData(BaseModel):
+    ratios: List[RatioItem] = Field(default_factory=list)
+    gold_valuation: dict[str, Any] = Field(default_factory=dict)
+    cu_au_vs_10y: dict[str, Any] = Field(default_factory=dict)
+    credit_vs_vol: dict[str, Any] = Field(default_factory=dict)
+
+
+class RatiosEnvelope(BaseEnvelope[RatiosData]):
+    pass
+
+
+# 23. 4-Quadrant Growth-Inflation Macro Cycles
+class CycleTrailPoint(BaseModel):
+    date: str
+    growth_z: float
+    inflation_z: float
+    quadrant: str
+
+
+class CycleQuadrantReturn(BaseModel):
+    quadrant: str
+    days: int
+    share_pct: float
+    returns: dict[str, Optional[float]] = Field(default_factory=dict)
+
+
+class CycleGaugeItem(BaseModel):
+    id: str
+    name: str
+    value: float
+    unit: str
+    percentile: float
+    note: str
+
+
+class CyclesData(BaseModel):
+    current_quadrant: str
+    current_growth_z: float
+    current_inflation_z: float
+    trail: List[CycleTrailPoint] = Field(default_factory=list)
+    quadrant_returns: List[CycleQuadrantReturn] = Field(default_factory=list)
+    gauges: List[CycleGaugeItem] = Field(default_factory=list)
+
+
+class CyclesEnvelope(BaseEnvelope[CyclesData]):
+    pass
+
+
 
 
 

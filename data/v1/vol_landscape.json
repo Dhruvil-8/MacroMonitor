@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-24",
-  "fetched_at": "2026-11-25T04:06:28Z",
+  "as_of": "2026-11-25",
+  "fetched_at": "2026-11-25T09:21:00Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -44,6 +44,19 @@
         "vol20_percentile": 93.3,
         "n": 5013,
         "n_eff": 26.6
+      },
+      {
+        "asset": "cac40",
+        "name": "CAC40",
+        "group": "general",
+        "region": "Global",
+        "vol10": 0.1725,
+        "vol20": 0.1611,
+        "vol60": 0.1375,
+        "vol_trend": 0.1714,
+        "vol20_percentile": 49.7,
+        "n": 6992,
+        "n_eff": 35.1
       },
       {
         "asset": "copper",
@@ -241,6 +254,32 @@
         "n_eff": 26.0
       },
       {
+        "asset": "ipc",
+        "name": "IPC",
+        "group": "general",
+        "region": "Global",
+        "vol10": 0.1237,
+        "vol20": 0.1153,
+        "vol60": 0.1242,
+        "vol_trend": -0.0714,
+        "vol20_percentile": 23.1,
+        "n": 6997,
+        "n_eff": 35.8
+      },
+      {
+        "asset": "jkse",
+        "name": "JKSE",
+        "group": "general",
+        "region": "Global",
+        "vol10": 0.2106,
+        "vol20": 0.2605,
+        "vol60": 0.3472,
+        "vol_trend": -0.2497,
+        "vol20_percentile": 87.2,
+        "n": 6947,
+        "n_eff": 44.8
+      },
+      {
         "asset": "kospi",
         "name": "KOSPI Composite Index",
         "group": "equity_index",
@@ -252,6 +291,19 @@
         "vol20_percentile": 97.8,
         "n": 6988,
         "n_eff": 35.1
+      },
+      {
+        "asset": "ksa",
+        "name": "KSA",
+        "group": "general",
+        "region": "Global",
+        "vol10": 0.1125,
+        "vol20": 0.133,
+        "vol60": 0.1324,
+        "vol_trend": 0.0043,
+        "vol20_percentile": 38.9,
+        "n": 2892,
+        "n_eff": 18.6
       },
       {
         "asset": "n225",
@@ -488,6 +540,19 @@
         "n_eff": 52.2
       },
       {
+        "asset": "smi",
+        "name": "SMI",
+        "group": "general",
+        "region": "Global",
+        "vol10": 0.1443,
+        "vol20": 0.1435,
+        "vol60": 0.1296,
+        "vol_trend": 0.1067,
+        "vol20_percentile": 63.1,
+        "n": 6997,
+        "n_eff": 35.2
+      },
+      {
         "asset": "sofr",
         "name": "Secured Overnight Financing Rate",
         "group": "rates",
@@ -551,6 +616,19 @@
         "vol20_percentile": 90.4,
         "n": 6995,
         "n_eff": 35.2
+      },
+      {
+        "asset": "twii",
+        "name": "TWII",
+        "group": "general",
+        "region": "Global",
+        "vol10": 0.7409,
+        "vol20": 0.6232,
+        "vol60": 0.3929,
+        "vol_trend": 0.586,
+        "vol20_percentile": 100.0,
+        "n": 6901,
+        "n_eff": 36.7
       },
       {
         "asset": "us10y",
@@ -670,6 +748,19 @@
         "n_eff": 31.1
       },
       {
+        "asset": "usdchf",
+        "name": "USDCHF",
+        "group": "general",
+        "region": "Global",
+        "vol10": 0.0756,
+        "vol20": 0.0719,
+        "vol60": 0.0601,
+        "vol_trend": 0.1956,
+        "vol20_percentile": 37.9,
+        "n": 6031,
+        "n_eff": 86.1
+      },
+      {
         "asset": "usdcny",
         "name": "USD / CNY Currency Pair",
         "group": "fx",
@@ -681,6 +772,19 @@
         "vol20_percentile": 43.9,
         "n": 5689,
         "n_eff": 35.1
+      },
+      {
+        "asset": "usdidr",
+        "name": "USDIDR",
+        "group": "general",
+        "region": "Global",
+        "vol10": 0.3734,
+        "vol20": 0.3165,
+        "vol60": 0.1952,
+        "vol_trend": 0.6214,
+        "vol20_percentile": 97.5,
+        "n": 6053,
+        "n_eff": 30.4
       },
       {
         "asset": "usdinr",
@@ -720,6 +824,32 @@
         "vol20_percentile": 59.3,
         "n": 5963,
         "n_eff": 30.8
+      },
+      {
+        "asset": "usdmxn",
+        "name": "USDMXN",
+        "group": "general",
+        "region": "Global",
+        "vol10": 0.1677,
+        "vol20": 0.161,
+        "vol60": 0.1229,
+        "vol_trend": 0.3099,
+        "vol20_percentile": 90.0,
+        "n": 5965,
+        "n_eff": 34.5
+      },
+      {
+        "asset": "usdtwd",
+        "name": "USDTWD",
+        "group": "general",
+        "region": "Global",
+        "vol10": 0.0576,
+        "vol20": 0.0707,
+        "vol60": 0.0533,
+        "vol_trend": 0.3255,
+        "vol20_percentile": 70.9,
+        "n": 5455,
+        "n_eff": 27.4
       },
       {
         "asset": "vix",

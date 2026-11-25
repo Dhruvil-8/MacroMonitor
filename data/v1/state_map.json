@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-24",
-  "fetched_at": "2026-11-25T04:06:28Z",
+  "as_of": "2026-11-25",
+  "fetched_at": "2026-11-25T09:21:00Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -35,6 +35,16 @@
         "vol_percentile": 93.3,
         "quadrant": "Violent trend",
         "momentum_20d": -0.2415
+      },
+      {
+        "asset": "cac40",
+        "name": "CAC40",
+        "group": "general",
+        "region": "Global",
+        "trend_t": -0.13,
+        "vol_percentile": 49.7,
+        "quadrant": "Quiet range",
+        "momentum_20d": 0.0307
       },
       {
         "asset": "copper",
@@ -187,6 +197,26 @@
         "momentum_20d": 0.0315
       },
       {
+        "asset": "ipc",
+        "name": "IPC",
+        "group": "general",
+        "region": "Global",
+        "trend_t": 14.07,
+        "vol_percentile": 23.1,
+        "quadrant": "Orderly trend",
+        "momentum_20d": -0.0059
+      },
+      {
+        "asset": "jkse",
+        "name": "JKSE",
+        "group": "general",
+        "region": "Global",
+        "trend_t": -17.79,
+        "vol_percentile": 87.2,
+        "quadrant": "Violent trend",
+        "momentum_20d": -0.016
+      },
+      {
         "asset": "kospi",
         "name": "KOSPI Composite Index",
         "group": "equity_index",
@@ -195,6 +225,16 @@
         "vol_percentile": 97.8,
         "quadrant": "Violent trend",
         "momentum_20d": -0.1113
+      },
+      {
+        "asset": "ksa",
+        "name": "KSA",
+        "group": "general",
+        "region": "Global",
+        "trend_t": -10.29,
+        "vol_percentile": 38.9,
+        "quadrant": "Orderly trend",
+        "momentum_20d": 0.0058
       },
       {
         "asset": "n225",
@@ -377,6 +417,16 @@
         "momentum_20d": -0.2261
       },
       {
+        "asset": "smi",
+        "name": "SMI",
+        "group": "general",
+        "region": "Global",
+        "trend_t": 10.45,
+        "vol_percentile": 63.1,
+        "quadrant": "Violent trend",
+        "momentum_20d": 0.0198
+      },
+      {
         "asset": "sofr",
         "name": "Secured Overnight Financing Rate",
         "group": "rates",
@@ -425,6 +475,16 @@
         "vol_percentile": 90.4,
         "quadrant": "Violent trend",
         "momentum_20d": -0.0518
+      },
+      {
+        "asset": "twii",
+        "name": "TWII",
+        "group": "general",
+        "region": "Global",
+        "trend_t": -8.12,
+        "vol_percentile": 100.0,
+        "quadrant": "Violent trend",
+        "momentum_20d": -0.1879
       },
       {
         "asset": "us10y",
@@ -517,6 +577,16 @@
         "momentum_20d": 0.0246
       },
       {
+        "asset": "usdchf",
+        "name": "USDCHF",
+        "group": "general",
+        "region": "Global",
+        "trend_t": 5.86,
+        "vol_percentile": 37.9,
+        "quadrant": "Orderly trend",
+        "momentum_20d": 0.0064
+      },
+      {
         "asset": "usdcny",
         "name": "USD / CNY Currency Pair",
         "group": "fx",
@@ -525,6 +595,16 @@
         "vol_percentile": 43.9,
         "quadrant": "Orderly trend",
         "momentum_20d": -0.0014
+      },
+      {
+        "asset": "usdidr",
+        "name": "USDIDR",
+        "group": "general",
+        "region": "Global",
+        "trend_t": 3.54,
+        "vol_percentile": 97.5,
+        "quadrant": "Violent trend",
+        "momentum_20d": 0.0094
       },
       {
         "asset": "usdinr",
@@ -555,6 +635,26 @@
         "vol_percentile": 59.3,
         "quadrant": "Violent trend",
         "momentum_20d": 0.0136
+      },
+      {
+        "asset": "usdmxn",
+        "name": "USDMXN",
+        "group": "general",
+        "region": "Global",
+        "trend_t": 19.11,
+        "vol_percentile": 90.0,
+        "quadrant": "Violent trend",
+        "momentum_20d": 0.0493
+      },
+      {
+        "asset": "usdtwd",
+        "name": "USDTWD",
+        "group": "general",
+        "region": "Global",
+        "trend_t": 25.4,
+        "vol_percentile": 70.9,
+        "quadrant": "Violent trend",
+        "momentum_20d": 0.0216
       },
       {
         "asset": "vix",

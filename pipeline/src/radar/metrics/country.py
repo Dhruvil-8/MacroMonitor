@@ -28,6 +28,12 @@ LAUNCH_COUNTRIES = [
     {"code": "in", "name": "India", "index_id": "nifty50", "fx_id": "usdinr", "quote_type": "usd_per_foreign_inv"},
     {"code": "kr", "name": "South Korea", "index_id": "kospi", "fx_id": "usdkrw", "quote_type": "usd_per_foreign_inv"},
     {"code": "au", "name": "Australia", "index_id": "asx200", "fx_id": "audusd", "quote_type": "foreign_per_usd"},
+    {"code": "tw", "name": "Taiwan", "index_id": "twii", "fx_id": "usdtwd", "quote_type": "usd_per_foreign_inv"},
+    {"code": "ch", "name": "Switzerland", "index_id": "smi", "fx_id": "usdchf", "quote_type": "usd_per_foreign_inv"},
+    {"code": "fr", "name": "France", "index_id": "cac40", "fx_id": "eurusd", "quote_type": "foreign_per_usd"},
+    {"code": "mx", "name": "Mexico", "index_id": "ipc", "fx_id": "usdmxn", "quote_type": "usd_per_foreign_inv"},
+    {"code": "id", "name": "Indonesia", "index_id": "jkse", "fx_id": "usdidr", "quote_type": "usd_per_foreign_inv"},
+    {"code": "sa", "name": "Saudi Arabia", "index_id": "ksa", "fx_id": None, "quote_type": "base"},
 ]
 
 

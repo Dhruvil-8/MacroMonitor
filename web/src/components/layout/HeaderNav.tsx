@@ -21,9 +21,11 @@ const NAV_GROUPS: NavGroup[] = [
   {
     name: 'Markets',
     items: [
-      { label: 'Today (Market Pulse)', href: '/', description: 'Global market strip, attribution & state map' },
+      { label: 'Today (Morning Desk)', href: '/', description: 'Regime verdict, signals, attribution & state map' },
+      { label: 'Macro Cycle Clock', href: '/cycles', description: '4-quadrant Growth × Inflation regime & empirical returns' },
+      { label: 'Ratios & Valuations', href: '/ratios', description: 'Gold/Silver, Copper/Gold, Breadth & real-rate fair value' },
       { label: 'Asset Compare & Stress', href: '/compare', description: 'Compare any 2–4 assets & test portfolio macro shocks' },
-      { label: 'Country Profiles', href: '/countries', description: '10 global equity markets & FX performance' },
+      { label: 'Country Profiles', href: '/countries', description: '16 global equity markets & FX performance' },
       { label: 'Sector Breakdown', href: '/sectors', description: '11 GICS sector performance and dispersion' },
       { label: 'Historical Analogues', href: '/analogues', description: 'Nearest-neighbor historical macro trajectory search' },
       { label: 'Cross-Asset Radar', href: '/radar', description: 'Divergence feed, CUSUM detector & Z-score bands' },
@@ -62,7 +64,6 @@ const NAV_GROUPS: NavGroup[] = [
       { label: 'Track Record', href: '/track-record', description: 'Out-of-sample validation vs base rates' },
       { label: 'Methodology', href: '/methodology', description: 'Mathematical formulas & statistical specifications' },
       { label: 'Source Data Health', href: '/data-health', description: 'Upstream feed freshness & circuit breaker status' },
-      { label: 'Corrections Log', href: '/corrections', description: 'Transparent error & revision audit log' },
     ],
   },
 ];

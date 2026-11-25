@@ -1406,6 +1406,12 @@ def export_all_datasets(
         {"id": "ssec", "name": "China (Shanghai Composite)", "code": "cn"},
         {"id": "kospi", "name": "South Korea (KOSPI)", "code": "kr"},
         {"id": "asx200", "name": "Australia (ASX 200)", "code": "au"},
+        {"id": "twii", "name": "Taiwan (TAIEX)", "code": "tw"},
+        {"id": "smi", "name": "Switzerland (SMI)", "code": "ch"},
+        {"id": "cac40", "name": "France (CAC 40)", "code": "fr"},
+        {"id": "ipc", "name": "Mexico (IPC)", "code": "mx"},
+        {"id": "jkse", "name": "Indonesia (IDX)", "code": "id"},
+        {"id": "ksa", "name": "Saudi Arabia (MSCI KSA)", "code": "sa"},
     ]
 
     try:
@@ -2493,6 +2499,48 @@ def export_all_datasets(
             as_of=as_of,
         )
     )
+
+    # 30B. Export Cross-Asset Ratios & Valuation Models
+    try:
+        from radar.metrics.ratios import compute_ratios_and_valuations
+        from radar.export.schemas import RatiosData, RatiosEnvelope
+
+        ratios_res = compute_ratios_and_valuations(all_points)
+        ratios_env = RatiosEnvelope(
+            schema_version="1.0",
+            as_of=as_of,
+            code_version=code_version,
+            params_hash=params_hash,
+            data=RatiosData(**ratios_res),
+        )
+        ratios_file = out_path / "ratios.json"
+        r_sz = write_json_file(ratios_file, ratios_env)
+        manifest_entries.append(
+            ManifestFileEntry(path="/v1/ratios.json", schema_version="1.0", size_bytes=r_sz, as_of=as_of)
+        )
+    except Exception as e:
+        LOGGER.warning(f"Failed to export ratios: {e}")
+
+    # 30C. Export 4-Quadrant Growth-Inflation Macro Cycles
+    try:
+        from radar.metrics.cycles import compute_macro_cycles
+        from radar.export.schemas import CyclesData, CyclesEnvelope
+
+        cycles_res = compute_macro_cycles(all_points)
+        cycles_env = CyclesEnvelope(
+            schema_version="1.0",
+            as_of=as_of,
+            code_version=code_version,
+            params_hash=params_hash,
+            data=CyclesData(**cycles_res),
+        )
+        cycles_file = out_path / "cycles.json"
+        c_sz = write_json_file(cycles_file, cycles_env)
+        manifest_entries.append(
+            ManifestFileEntry(path="/v1/cycles.json", schema_version="1.0", size_bytes=c_sz, as_of=as_of)
+        )
+    except Exception as e:
+        LOGGER.warning(f"Failed to export cycles: {e}")
 
     # 31. Export Manifest (Atomic switch)
     manifest_envelope = ManifestEnvelope(

@@ -19,17 +19,17 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark">
       <body className="min-h-screen flex flex-col bg-[#07090d] text-[#e8edf5]">
-        {/* Top Navigation Bar */}
-        <header className="border-b border-[#1d2633] bg-[#0c1017] sticky top-0 z-40">
+        {/* Top Navigation Bar (Frosted Glass) */}
+        <header className="border-b border-white/[0.08] bg-[#0a0d14]/80 backdrop-blur-xl sticky top-0 z-40">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-14">
               {/* Brand & Symbol */}
               <div className="flex items-center space-x-3 shrink-0">
-                <Link href="/" className="flex items-center space-x-2">
-                  <div className="w-6 h-6 rounded bg-[#2f6fb4] flex items-center justify-center font-mono font-bold text-xs text-white">
+                <Link href="/" className="flex items-center space-x-2.5 group">
+                  <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-sky-400 to-blue-600 flex items-center justify-center font-semibold text-xs text-white shadow-sm shadow-sky-500/20 group-hover:scale-105 transition-transform">
                     M
                   </div>
-                  <span className="font-semibold text-sm tracking-tight text-[#e8edf5]">
+                  <span className="font-semibold text-[15px] tracking-tight text-[#f3f6fb]">
                     MacroMonitor
                   </span>
                 </Link>
@@ -85,8 +85,8 @@ export default function RootLayout({
                 <Link href="/positioning" className="hover:text-[#a9b4c4] transition">
                   COT Positioning
                 </Link>
-                <Link href="/corrections" className="hover:text-[#a9b4c4] transition">
-                  Integrity Audit Log
+                <Link href="/data-health" className="hover:text-[#a9b4c4] transition">
+                  Data Health
                 </Link>
                 <Link href="/methodology" className="hover:text-[#a9b4c4] transition">
                   Methodology &amp; Specs

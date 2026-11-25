@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-24",
-  "fetched_at": "2026-11-25T04:09:26Z",
+  "as_of": "2026-11-25",
+  "fetched_at": "2026-11-25T09:27:06Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
     "observations": [
       {
-        "id": "country_divergence_v1:brent_vs_nifty50:2026-11-24",
+        "id": "country_divergence_v1:brent_vs_nifty50:2026-11-25",
         "type": "country_divergence",
         "asset": "brent_vs_nifty50",
         "severity": "high",
@@ -21,13 +21,35 @@
         "inputs": [
           "brent_vs_nifty50"
         ],
-        "as_of": "2026-11-24",
+        "as_of": "2026-11-25",
         "chart_ref": "radar",
         "rule_id": "country_divergence_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "commodity_shock_v1:gold:2026-11-24",
+        "id": "vol_shift_v1:twii:2026-11-25",
+        "type": "vol_shift",
+        "asset": "twii",
+        "severity": "high",
+        "headline": "TWII realized volatility moved above historical baseline",
+        "body": "20-day realized volatility is 62.3%, corresponding to the 100th percentile of historical observations (N=6901, effective N=36.7).",
+        "metrics": {
+          "vol20": 0.6232,
+          "percentile": 100.0,
+          "n": 6901,
+          "n_eff": 36.7
+        },
+        "window": "20D",
+        "inputs": [
+          "twii"
+        ],
+        "as_of": "2026-11-25",
+        "chart_ref": "vol_landscape",
+        "rule_id": "vol_shift_v1",
+        "code_version": "v1.0.0"
+      },
+      {
+        "id": "commodity_shock_v1:gold:2026-11-25",
         "type": "commodity_shock",
         "asset": "gold",
         "severity": "high",
@@ -41,13 +63,13 @@
         "inputs": [
           "gold"
         ],
-        "as_of": "2026-11-24",
+        "as_of": "2026-11-25",
         "chart_ref": "drivers",
         "rule_id": "commodity_shock_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "vol_cone_breach_v1:n225:2026-11-24",
+        "id": "vol_cone_breach_v1:n225:2026-11-25",
         "type": "vol_cone_breach",
         "asset": "n225",
         "severity": "high",
@@ -66,13 +88,13 @@
         "inputs": [
           "n225"
         ],
-        "as_of": "2026-11-24",
+        "as_of": "2026-11-25",
         "chart_ref": "risk",
         "rule_id": "vol_cone_breach_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "vol_cone_breach_v1:kospi:2026-11-24",
+        "id": "vol_cone_breach_v1:kospi:2026-11-25",
         "type": "vol_cone_breach",
         "asset": "kospi",
         "severity": "high",
@@ -92,13 +114,13 @@
         "inputs": [
           "kospi"
         ],
-        "as_of": "2026-11-24",
+        "as_of": "2026-11-25",
         "chart_ref": "risk",
         "rule_id": "vol_cone_breach_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "vol_cone_breach_v1:gold:2026-11-24",
+        "id": "vol_cone_breach_v1:gold:2026-11-25",
         "type": "vol_cone_breach",
         "asset": "gold",
         "severity": "high",
@@ -117,13 +139,13 @@
         "inputs": [
           "gold"
         ],
-        "as_of": "2026-11-24",
+        "as_of": "2026-11-25",
         "chart_ref": "risk",
         "rule_id": "vol_cone_breach_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "country_divergence_v1:dxy_vs_gold:2026-11-24",
+        "id": "country_divergence_v1:dxy_vs_gold:2026-11-25",
         "type": "country_divergence",
         "asset": "dxy_vs_gold",
         "severity": "medium",
@@ -137,13 +159,13 @@
         "inputs": [
           "dxy_vs_gold"
         ],
-        "as_of": "2026-11-24",
+        "as_of": "2026-11-25",
         "chart_ref": "radar",
         "rule_id": "country_divergence_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "country_divergence_v1:vix_vs_spx:2026-11-24",
+        "id": "country_divergence_v1:vix_vs_spx:2026-11-25",
         "type": "country_divergence",
         "asset": "vix_vs_spx",
         "severity": "medium",
@@ -157,27 +179,7 @@
         "inputs": [
           "vix_vs_spx"
         ],
-        "as_of": "2026-11-24",
-        "chart_ref": "radar",
-        "rule_id": "country_divergence_v1",
-        "code_version": "v1.0.0"
-      },
-      {
-        "id": "country_divergence_v1:usdinr_vs_nifty50:2026-11-24",
-        "type": "country_divergence",
-        "asset": "usdinr_vs_nifty50",
-        "severity": "medium",
-        "headline": "Momentum divergence between USDINR and NIFTY50",
-        "body": "The 20-day momentum divergence spread reached -3.25 standard deviations, persisting for 3 consecutive sessions.",
-        "metrics": {
-          "spread_z": -3.250392676363154,
-          "percentile": 96.76244435451234
-        },
-        "window": "20D",
-        "inputs": [
-          "usdinr_vs_nifty50"
-        ],
-        "as_of": "2026-11-24",
+        "as_of": "2026-11-25",
         "chart_ref": "radar",
         "rule_id": "country_divergence_v1",
         "code_version": "v1.0.0"

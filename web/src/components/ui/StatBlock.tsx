@@ -42,13 +42,13 @@ export const StatBlock: React.FC<StatBlockProps> = ({
       : value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
   return (
-    <div className="group relative p-4 rounded-lg bg-[var(--bg-1)] border border-[var(--line)] hover:border-[var(--line-strong)] transition-all">
+    <div className="group relative p-4 rounded-2xl bg-[#0e121a]/90 backdrop-blur-md border border-white/[0.08] hover:border-white/[0.16] hover:-translate-y-0.5 transition-all duration-200 shadow-sm">
       <div className="flex items-start justify-between">
         <div>
-          <span className="text-xs uppercase font-mono tracking-wider text-[var(--tx-2)] block">
+          <span className="text-[11px] font-medium tracking-wide text-[var(--tx-2)] block">
             {name}
           </span>
-          <div className="text-xl font-mono font-semibold text-[var(--tx-0)] mt-1 tracking-tight">
+          <div className="text-2xl font-semibold text-[var(--tx-0)] mt-1 tracking-tight tabular-nums">
             {formattedValue}
           </div>
         </div>

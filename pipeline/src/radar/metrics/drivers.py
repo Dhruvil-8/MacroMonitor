@@ -24,9 +24,9 @@ from radar.metrics.decomposition import compute_vif
 LOGGER = logging.getLogger(__name__)
 
 # Launch countries classification for economic priors
-OIL_IMPORTERS = {"in", "jp", "de", "gb", "kr", "cn", "nifty50", "n225", "dax", "ftse", "kospi", "ssec"}
-OIL_EXPORTERS = {"ca", "br", "tsse", "ibov"}
-EMERGING_MARKETS = {"in", "br", "cn", "kr", "nifty50", "ibov", "ssec", "kospi"}
+OIL_IMPORTERS = {"in", "jp", "de", "gb", "kr", "cn", "tw", "ch", "fr", "id", "nifty50", "n225", "dax", "ftse", "kospi", "ssec", "twii", "smi", "cac40", "jkse"}
+OIL_EXPORTERS = {"ca", "br", "mx", "sa", "tsse", "ibov", "ipc", "ksa"}
+EMERGING_MARKETS = {"in", "br", "cn", "kr", "tw", "mx", "id", "sa", "nifty50", "ibov", "ssec", "kospi", "twii", "ipc", "jkse", "ksa"}
 
 
 def get_economic_prior(factor_id: str, target_id: str, target_code: str) -> str:

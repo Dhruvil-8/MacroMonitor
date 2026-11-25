@@ -1,7 +1,7 @@
 // web/src/app/countries/[code]/page.tsx
 import { CountryClientView } from "./CountryClientView";
 
-const LAUNCH_CODES = ["us", "ca", "br", "gb", "de", "jp", "cn", "in", "kr", "au"];
+const LAUNCH_CODES = ["us", "ca", "br", "gb", "de", "jp", "cn", "in", "kr", "au", "tw", "ch", "fr", "mx", "id", "sa"];
 
 export function generateStaticParams() {
   return LAUNCH_CODES.map((code) => ({ code }));

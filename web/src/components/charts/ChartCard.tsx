@@ -160,21 +160,21 @@ export const ChartCard: React.FC<ChartCardProps> = ({
 
   return (
     <div
-      className={`p-5 rounded-lg bg-[var(--bg-1)] border border-[var(--line)] shadow-sm flex flex-col justify-between ${className}`}
+      className={`p-6 rounded-2xl bg-[#0e121a]/90 backdrop-blur-md border border-white/[0.08] hover:border-white/[0.14] shadow-[0_8px_30px_rgba(0,0,0,0.35)] transition-all duration-200 flex flex-col justify-between ${className}`}
     >
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 pb-4 border-b border-[var(--line)]">
+      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 pb-4 border-b border-white/[0.07]">
         <div>
           {eyebrow && (
-            <span className="text-[10px] uppercase font-mono tracking-widest text-[var(--tx-2)] block mb-1">
+            <span className="text-[10px] uppercase font-medium tracking-[0.12em] text-sky-400/90 block mb-1">
               {eyebrow}
             </span>
           )}
-          <h3 className="text-base font-semibold text-[var(--tx-0)] tracking-tight">
+          <h3 className="text-[17px] font-semibold text-[var(--tx-0)] tracking-tight leading-snug">
             {title}
           </h3>
           {subtitle && (
-            <p className="text-xs text-[var(--tx-2)] mt-0.5">{subtitle}</p>
+            <p className="text-xs text-[var(--tx-2)] mt-1 leading-relaxed">{subtitle}</p>
           )}
         </div>
 

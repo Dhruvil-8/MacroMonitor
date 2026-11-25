@@ -19,12 +19,18 @@ import {
   loadStateMap,
   loadVolLandscape,
   loadDecomposition,
+  loadCycles,
+  loadRatios,
+  loadPositioning,
 } from "@/lib/data/client";
 import {
   PulseEnvelope,
   StateMapEnvelope,
   VolLandscapeEnvelope,
   DecompositionEnvelope,
+  CyclesEnvelope,
+  RatiosEnvelope,
+  PositioningEnvelope,
 } from "@/lib/data/schemas";
 
 export default function TodayPage() {
@@ -32,6 +38,9 @@ export default function TodayPage() {
   const [stateMapData, setStateMapData] = useState<StateMapEnvelope | null>(null);
   const [volData, setVolData] = useState<VolLandscapeEnvelope | null>(null);
   const [decompData, setDecompData] = useState<DecompositionEnvelope | null>(null);
+  const [cyclesData, setCyclesData] = useState<CyclesEnvelope | null>(null);
+  const [ratiosData, setRatiosData] = useState<RatiosEnvelope | null>(null);
+  const [posData, setPosData] = useState<PositioningEnvelope | null>(null);
   const [activeTarget, setActiveTarget] = useState<string>("featured");
   const [asOf, setAsOf] = useState<string>("");
   const [isStale, setIsStale] = useState<boolean>(false);
@@ -73,11 +82,14 @@ export default function TodayPage() {
     async function loadAll() {
       setLoading(true);
       try {
-        const [pulseRes, stateRes, volRes, decompRes] = await Promise.all([
+        const [pulseRes, stateRes, volRes, decompRes, cyclesRes, ratiosRes, posRes] = await Promise.all([
           loadPulse(),
           loadStateMap(),
           loadVolLandscape(),
           loadDecomposition("featured"),
+          loadCycles(),
+          loadRatios(),
+          loadPositioning(),
         ]);
 
         if (pulseRes.status !== "error") {
@@ -93,6 +105,15 @@ export default function TodayPage() {
         }
         if (decompRes.status !== "error") {
           setDecompData(decompRes.data);
+        }
+        if (cyclesRes.status !== "error") {
+          setCyclesData(cyclesRes.data);
+        }
+        if (ratiosRes.status !== "error") {
+          setRatiosData(ratiosRes.data);
+        }
+        if (posRes.status !== "error") {
+          setPosData(posRes.data);
         }
       } catch (err) {
         console.error("Error loading today datasets:", err);
@@ -135,6 +156,76 @@ export default function TodayPage() {
           </div>
         </div>
       </div>
+
+      {/* Executive Morning Desk Strip: Regime, Stretched Crowding & Ratio Outliers */}
+      {(cyclesData || ratiosData || posData) && (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {cyclesData && (
+            <Link
+              href="/cycles"
+              className="p-3.5 rounded-lg bg-[var(--bg-1)] border border-[var(--line)] hover:border-[var(--accent)] transition flex flex-col justify-between"
+            >
+              <div className="flex items-center justify-between text-[10px] font-mono uppercase tracking-wider text-[var(--tx-2)]">
+                <span>Macro Cycle Regime</span>
+                <span className="text-[var(--accent)]">View Clock &rarr;</span>
+              </div>
+              <div className="mt-1.5 flex items-baseline justify-between">
+                <span className="text-lg font-bold text-[var(--tx-0)]">{cyclesData.data.current_quadrant}</span>
+                <span className="text-xs font-mono text-[var(--tx-2)] tabular-nums">
+                  G: {cyclesData.data.current_growth_z >= 0 ? "+" : ""}{cyclesData.data.current_growth_z}σ · I: {cyclesData.data.current_inflation_z >= 0 ? "+" : ""}{cyclesData.data.current_inflation_z}σ
+                </span>
+              </div>
+            </Link>
+          )}
+
+          {posData && (
+            <Link
+              href="/positioning"
+              className="p-3.5 rounded-lg bg-[var(--bg-1)] border border-[var(--line)] hover:border-[var(--accent)] transition flex flex-col justify-between"
+            >
+              <div className="flex items-center justify-between text-[10px] font-mono uppercase tracking-wider text-[var(--tx-2)]">
+                <span>CFTC Crowding Extremes</span>
+                <span className="text-[var(--accent)]">View Ladder &rarr;</span>
+              </div>
+              <div className="mt-1.5 text-xs font-mono text-[var(--tx-0)] truncate">
+                {(() => {
+                  const items = ((posData as any).data?.contracts || (posData as any).contracts || [])
+                    .filter((c: any) => c.percentile >= 85 || c.percentile <= 15)
+                    .slice(0, 2);
+                  if (items.length === 0) return "No extreme (>85th / <15th) CFTC positioning";
+                  return items
+                    .map((c: any) => `${c.name.split(" ")[0]} (${c.percentile.toFixed(0)}th)`)
+                    .join(" · ");
+                })()}
+              </div>
+            </Link>
+          )}
+
+          {ratiosData && (
+            <Link
+              href="/ratios"
+              className="p-3.5 rounded-lg bg-[var(--bg-1)] border border-[var(--line)] hover:border-[var(--accent)] transition flex flex-col justify-between"
+            >
+              <div className="flex items-center justify-between text-[10px] font-mono uppercase tracking-wider text-[var(--tx-2)]">
+                <span>Valuation &amp; Ratio Outliers</span>
+                <span className="text-[var(--accent)]">View Ratios &rarr;</span>
+              </div>
+              <div className="mt-1.5 text-xs font-mono text-[var(--tx-0)] truncate">
+                {(() => {
+                  const outliers = ratiosData.data.ratios
+                    .filter((r) => Math.abs(r.z_score) >= 1.2)
+                    .sort((a, b) => Math.abs(b.z_score) - Math.abs(a.z_score))
+                    .slice(0, 2);
+                  if (outliers.length === 0) return "All cross-asset ratios within ±1.2σ normal band";
+                  return outliers
+                    .map((r) => `${r.id.replace("_", "/").toUpperCase()} (${r.z_score >= 0 ? "+" : ""}${r.z_score}σ)`)
+                    .join(" · ");
+                })()}
+              </div>
+            </Link>
+          )}
+        </div>
+      )}
 
       {/* Signature Module: The Move Decomposer */}
       {decompData && (
