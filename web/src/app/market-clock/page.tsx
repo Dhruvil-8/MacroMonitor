@@ -437,6 +437,15 @@ export default function MarketClockPage() {
   }, [now, effectiveTz]);
 
   const openCount = exchangeStates.filter((s) => s.status === "open").length;
+  const utcTotalSeconds = now
+    ? now.getUTCHours() * 3600 + now.getUTCMinutes() * 60 + now.getUTCSeconds()
+    : 0;
+  const utcNowPct = (utcTotalSeconds / 86400) * 100;
+  const isAsiaActive = exchangeStates.some((e) => e.region === "apac" && e.id !== "nse" && e.status === "open");
+  const isNseActive = exchangeStates.some((e) => e.id === "nse" && e.status === "open");
+  const isEuropeActive = exchangeStates.some((e) => e.region === "europe" && e.status === "open");
+  const isUsActive = exchangeStates.some((e) => e.region === "americas" && e.status === "open");
+  const secPulse = now ? now.getUTCSeconds() % 2 === 0 : true;
 
   const filteredExchanges = useMemo(() => {
     if (activeRegion === "all") return exchangeStates;
@@ -491,11 +500,17 @@ export default function MarketClockPage() {
               <Clock className="w-3.5 h-3.5 text-[var(--accent)]" />
               <span>Your Current Time</span>
             </div>
-            <div className="text-2xl font-bold font-mono text-[var(--tx-0)] tracking-wider mt-0.5">
-              {userClockString}
+            <div className="text-2xl font-bold font-mono text-[var(--tx-0)] tracking-wider mt-0.5 tabular-nums flex items-center gap-2">
+              <span>{userClockString}</span>
+              <span
+                className={`w-2 h-2 rounded-full transition-opacity duration-300 ${
+                  secPulse ? "bg-emerald-400 opacity-100" : "bg-emerald-400 opacity-30"
+                }`}
+                title="Live ticking clock"
+              />
             </div>
-            <div className="text-[10px] font-mono text-[var(--tx-2)] mt-0.5">
-              {userDateString} &bull; UTC: <span className="text-[var(--accent)]">{utcClockString}</span>
+            <div className="text-[10px] font-mono text-[var(--tx-2)] mt-0.5 tabular-nums">
+              {userDateString} &bull; UTC: <span className="text-[var(--accent)] font-semibold">{utcClockString}</span>
             </div>
           </div>
         </div>
@@ -511,9 +526,12 @@ export default function MarketClockPage() {
             </h2>
           </div>
           <div className="flex items-center gap-3 text-xs font-mono">
-            <span className="flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-              <strong className="text-[var(--tx-0)]">{openCount}</strong>
+            <span className="flex items-center gap-2 px-2.5 py-1 rounded-full bg-emerald-950/60 border border-emerald-700/50">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+              </span>
+              <strong className="text-emerald-300 tabular-nums">{openCount}</strong>
               <span className="text-[var(--tx-2)]">of 12 Markets Open Now</span>
             </span>
           </div>
@@ -521,70 +539,104 @@ export default function MarketClockPage() {
 
         {/* Visual 24h Timeline Bar */}
         <div className="space-y-2 pt-1 font-mono text-xs">
-          <div className="grid grid-cols-4 sm:grid-cols-8 md:grid-cols-12 gap-1 text-[10px] text-[var(--tx-2)] pb-1 border-b border-[var(--line)]/50 text-center">
+          <div className="grid grid-cols-4 sm:grid-cols-8 md:grid-cols-12 gap-1 text-[10px] text-[var(--tx-2)] pb-1 border-b border-[var(--line)]/50 text-center tabular-nums">
             {["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"].map((t) => (
               <span key={t}>{t}</span>
             ))}
           </div>
 
-          {/* Session Ribbons */}
-          <div className="space-y-2 pt-2">
-            {/* Asia-Pacific */}
+          {/* Session Ribbons with Live Sweeping UTC Needle */}
+          <div className="relative space-y-2.5 pt-4 pb-1">
+            {/* Live UTC NOW Laser Needle */}
+            <div
+              className="hidden sm:block absolute top-0 bottom-0 z-20 pointer-events-none transition-all duration-1000 ease-linear"
+              style={{ left: `calc(7.75rem + (100% - 7.75rem) * ${utcNowPct / 100})` }}
+            >
+              <div className="relative -translate-x-1/2 flex flex-col items-center h-full">
+                <span className="px-1.5 py-0.5 rounded bg-sky-500 text-slate-950 font-mono text-[9px] font-bold tracking-wider shadow-md shadow-sky-500/40 whitespace-nowrap tabular-nums">
+                  NOW {utcClockString.slice(0, 5)} UTC
+                </span>
+                <span className="w-2 h-2 rounded-full bg-sky-400 animate-ping mt-0.5" />
+                <div className="w-[1.5px] flex-1 bg-gradient-to-b from-sky-400 via-sky-400/70 to-transparent shadow-[0_0_8px_rgba(56,189,248,0.8)]" />
+              </div>
+            </div>
+
+            {/* Asia-Pacific (00:00 - 06:30 UTC) */}
             <div className="flex items-center gap-3">
-              <span className="w-28 text-[11px] text-[var(--tx-2)] shrink-0 flex items-center gap-1">
-                <span>🌏</span> Tokyo / Asia
+              <span className="w-28 text-[11px] text-[var(--tx-2)] shrink-0 flex items-center gap-1.5">
+                <span className={`w-1.5 h-1.5 rounded-full ${isAsiaActive ? "bg-purple-400 animate-pulse" : "bg-[var(--tx-3)]"}`} />
+                <span>🌏 Tokyo / Asia</span>
               </span>
-              <div className="flex-1 h-6 bg-[var(--bg-0)] rounded border border-[var(--line)] relative overflow-hidden flex items-center">
+              <div className="flex-1 h-7 bg-[var(--bg-0)] rounded border border-[var(--line)] relative overflow-hidden flex items-center">
                 <div
-                  className="h-full bg-purple-500/20 border-x border-purple-500/50 flex items-center px-2 text-[10px] text-purple-300 font-semibold"
-                  style={{ width: "27%", marginLeft: "37.5%" }}
+                  className={`h-full border-x flex items-center px-2 text-[10px] font-semibold transition-all ${
+                    isAsiaActive
+                      ? "bg-purple-500/30 border-purple-400 text-purple-200 shadow-[inset_0_0_12px_rgba(168,85,247,0.3)]"
+                      : "bg-purple-500/15 border-purple-500/40 text-purple-300/80"
+                  }`}
+                  style={{ width: "27.1%", marginLeft: "0%" }}
                 >
-                  Tokyo &bull; HK &bull; Singapore
+                  Tokyo &bull; HK &bull; SGX (00–06:30 UTC)
                 </div>
               </div>
             </div>
 
-            {/* India NSE */}
+            {/* India NSE (03:45 - 10:00 UTC) */}
             <div className="flex items-center gap-3">
-              <span className="w-28 text-[11px] text-[var(--tx-2)] shrink-0 flex items-center gap-1">
-                <span>🇮🇳</span> India (NSE)
+              <span className="w-28 text-[11px] text-[var(--tx-2)] shrink-0 flex items-center gap-1.5">
+                <span className={`w-1.5 h-1.5 rounded-full ${isNseActive ? "bg-orange-400 animate-pulse" : "bg-[var(--tx-3)]"}`} />
+                <span>🇮🇳 India (NSE)</span>
               </span>
-              <div className="flex-1 h-6 bg-[var(--bg-0)] rounded border border-[var(--line)] relative overflow-hidden flex items-center">
+              <div className="flex-1 h-7 bg-[var(--bg-0)] rounded border border-[var(--line)] relative overflow-hidden flex items-center">
                 <div
-                  className="h-full bg-orange-500/20 border-x border-orange-500/50 flex items-center px-2 text-[10px] text-orange-300 font-semibold"
-                  style={{ width: "26%", marginLeft: "38.5%" }}
+                  className={`h-full border-x flex items-center px-2 text-[10px] font-semibold transition-all ${
+                    isNseActive
+                      ? "bg-orange-500/30 border-orange-400 text-orange-200 shadow-[inset_0_0_12px_rgba(249,115,22,0.3)]"
+                      : "bg-orange-500/15 border-orange-500/40 text-orange-300/80"
+                  }`}
+                  style={{ width: "26.0%", marginLeft: "15.6%" }}
                 >
-                  09:15 – 15:30 IST
+                  03:45 – 10:00 UTC
                 </div>
               </div>
             </div>
 
-            {/* Europe / London */}
+            {/* Europe / London (08:00 - 16:30 UTC) */}
             <div className="flex items-center gap-3">
-              <span className="w-28 text-[11px] text-[var(--tx-2)] shrink-0 flex items-center gap-1">
-                <span>🇬🇧</span> Europe / London
+              <span className="w-28 text-[11px] text-[var(--tx-2)] shrink-0 flex items-center gap-1.5">
+                <span className={`w-1.5 h-1.5 rounded-full ${isEuropeActive ? "bg-sky-400 animate-pulse" : "bg-[var(--tx-3)]"}`} />
+                <span>🇬🇧 Europe / LDN</span>
               </span>
-              <div className="flex-1 h-6 bg-[var(--bg-0)] rounded border border-[var(--line)] relative overflow-hidden flex items-center">
+              <div className="flex-1 h-7 bg-[var(--bg-0)] rounded border border-[var(--line)] relative overflow-hidden flex items-center">
                 <div
-                  className="h-full bg-sky-500/20 border-x border-sky-500/50 flex items-center px-2 text-[10px] text-sky-300 font-semibold"
-                  style={{ width: "35%", marginLeft: "33.3%" }}
+                  className={`h-full border-x flex items-center px-2 text-[10px] font-semibold transition-all ${
+                    isEuropeActive
+                      ? "bg-sky-500/30 border-sky-400 text-sky-200 shadow-[inset_0_0_12px_rgba(56,189,248,0.3)]"
+                      : "bg-sky-500/15 border-sky-500/40 text-sky-300/80"
+                  }`}
+                  style={{ width: "35.4%", marginLeft: "33.3%" }}
                 >
-                  London &bull; Frankfurt &bull; Paris
+                  London &bull; Frankfurt &bull; Paris (08–16:30 UTC)
                 </div>
               </div>
             </div>
 
-            {/* US / New York */}
+            {/* US / New York (14:30 - 21:00 UTC) */}
             <div className="flex items-center gap-3">
-              <span className="w-28 text-[11px] text-[var(--tx-2)] shrink-0 flex items-center gap-1">
-                <span>🇺🇸</span> US / New York
+              <span className="w-28 text-[11px] text-[var(--tx-2)] shrink-0 flex items-center gap-1.5">
+                <span className={`w-1.5 h-1.5 rounded-full ${isUsActive ? "bg-emerald-400 animate-pulse" : "bg-[var(--tx-3)]"}`} />
+                <span>🇺🇸 US / NY</span>
               </span>
-              <div className="flex-1 h-6 bg-[var(--bg-0)] rounded border border-[var(--line)] relative overflow-hidden flex items-center">
+              <div className="flex-1 h-7 bg-[var(--bg-0)] rounded border border-[var(--line)] relative overflow-hidden flex items-center">
                 <div
-                  className="h-full bg-emerald-500/20 border-x border-emerald-500/50 flex items-center px-2 text-[10px] text-emerald-300 font-semibold"
-                  style={{ width: "27%", marginLeft: "39.5%" }}
+                  className={`h-full border-x flex items-center px-2 text-[10px] font-semibold transition-all ${
+                    isUsActive
+                      ? "bg-emerald-500/30 border-emerald-400 text-emerald-200 shadow-[inset_0_0_12px_rgba(16,185,129,0.3)]"
+                      : "bg-emerald-500/15 border-emerald-500/40 text-emerald-300/80"
+                  }`}
+                  style={{ width: "27.1%", marginLeft: "60.4%" }}
                 >
-                  NYSE &bull; NASDAQ &bull; CME
+                  NYSE &bull; NASDAQ (14:30–21 UTC)
                 </div>
               </div>
             </div>
@@ -690,9 +742,11 @@ export default function MarketClockPage() {
                     </div>
                     <div className="w-full h-1.5 bg-[var(--bg-0)] rounded-full overflow-hidden border border-[var(--line)]">
                       <div
-                        className="h-full bg-emerald-400 transition-all duration-1000"
+                        className="h-full bg-gradient-to-r from-emerald-500 to-emerald-300 transition-all duration-1000 relative"
                         style={{ width: `${ex.progressPct}%` }}
-                      ></div>
+                      >
+                        <span className="absolute right-0 top-0 bottom-0 w-1.5 bg-white/80 animate-pulse rounded-full" />
+                      </div>
                     </div>
                   </div>
                 )}

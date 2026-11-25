@@ -89,11 +89,7 @@ export default function RootLayout({
                   Integrity Audit Log
                 </Link>
                 <Link href="/methodology" className="hover:text-[#a9b4c4] transition">
-                  Methodology & Specs
-                </Link>
-                <Link href="/market-clock" className="hover:text-[#a9b4c4] text-emerald-400 font-mono transition flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                  Market Clock
+                  Methodology &amp; Specs
                 </Link>
                 <a
                   href="https://github.com/Dhruvil-8/MacroMonitor"

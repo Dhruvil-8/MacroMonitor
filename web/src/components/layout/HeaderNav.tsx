@@ -22,13 +22,12 @@ const NAV_GROUPS: NavGroup[] = [
     name: 'Markets',
     items: [
       { label: 'Today (Market Pulse)', href: '/', description: 'Global market strip, attribution & state map' },
-      { label: 'Asset Compare & Stress', href: '/compare', description: 'Compare any 2–4 assets & test portfolio macro shocks', badge: 'New' },
+      { label: 'Asset Compare & Stress', href: '/compare', description: 'Compare any 2–4 assets & test portfolio macro shocks' },
       { label: 'Country Profiles', href: '/countries', description: '10 global equity markets & FX performance' },
       { label: 'Sector Breakdown', href: '/sectors', description: '11 GICS sector performance and dispersion' },
       { label: 'Historical Analogues', href: '/analogues', description: 'Nearest-neighbor historical macro trajectory search' },
       { label: 'Cross-Asset Radar', href: '/radar', description: 'Divergence feed, CUSUM detector & Z-score bands' },
       { label: 'Cross-Asset Matrix', href: '/cross-asset', description: 'Pairwise correlation and lead-lag matrix' },
-      { label: 'Market Clock', href: '/market-clock', description: 'Global exchange trading hours & 24h sessions', badge: 'Live' },
     ],
   },
   {
