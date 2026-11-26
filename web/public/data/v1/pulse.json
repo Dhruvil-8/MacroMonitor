@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-26",
-  "fetched_at": "2026-11-26T08:41:53Z",
+  "fetched_at": "2026-11-26T19:57:27Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -71,8 +71,8 @@
       {
         "id": "dxy",
         "name": "US Dollar Index",
-        "value": 103.74,
-        "change_1d": 0.07,
+        "value": 103.78,
+        "change_1d": 0.1,
         "unit": "index",
         "percentile": 32.9,
         "sparkline": [
@@ -95,16 +95,16 @@
           104.32,
           103.81,
           103.67,
-          103.74
+          103.78
         ]
       },
       {
         "id": "brent",
         "name": "Brent Crude Oil Futures",
-        "value": 90.59,
-        "change_1d": -4.25,
+        "value": 91.73,
+        "change_1d": -3.04,
         "unit": "usd_per_barrel",
-        "percentile": 93.8,
+        "percentile": 93.7,
         "sparkline": [
           117.64,
           104.77,
@@ -125,14 +125,14 @@
           89.37,
           91.4,
           94.61,
-          90.59
+          91.73
         ]
       },
       {
         "id": "vix",
         "name": "Cboe Volatility Index",
-        "value": 27.1,
-        "change_1d": -4.21,
+        "value": 26.8,
+        "change_1d": -5.27,
         "unit": "index",
         "percentile": 97.9,
         "sparkline": [
@@ -155,7 +155,7 @@
           26.62,
           26.36,
           28.29,
-          27.1
+          26.8
         ]
       },
       {
@@ -221,8 +221,8 @@
       {
         "id": "gold",
         "name": "Gold Futures",
-        "value": 3591.2,
-        "change_1d": 1.57,
+        "value": 3593.4,
+        "change_1d": 1.63,
         "unit": "usd_per_oz",
         "percentile": 97.0,
         "sparkline": [
@@ -245,7 +245,7 @@
           3651.4,
           3561.9,
           3535.8,
-          3591.2
+          3593.4
         ]
       }
     ],

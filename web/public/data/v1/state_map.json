@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-26",
-  "fetched_at": "2026-11-26T08:41:53Z",
+  "fetched_at": "2026-11-26T19:57:27Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -41,40 +41,40 @@
         "name": "USD / MXN Currency Pair",
         "group": "fx",
         "region": "MX",
-        "trend_t": 19.18,
-        "vol_percentile": 87.9,
+        "trend_t": 19.13,
+        "vol_percentile": 88.7,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.053
+        "momentum_20d": 0.0584
       },
       {
         "asset": "dxy",
         "name": "US Dollar Index",
         "group": "fx",
         "region": "US",
-        "trend_t": 15.07,
+        "trend_t": 15.09,
         "vol_percentile": 32.9,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0166
+        "momentum_20d": 0.017
       },
       {
         "asset": "wti",
         "name": "WTI Crude Oil Futures",
         "group": "commodity",
         "region": "US",
-        "trend_t": -4.77,
-        "vol_percentile": 89.4,
+        "trend_t": -4.74,
+        "vol_percentile": 89.6,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1774
+        "momentum_20d": -0.1675
       },
       {
         "asset": "usdcad",
         "name": "USD / CAD Currency Pair",
         "group": "fx",
         "region": "CA",
-        "trend_t": 5.89,
-        "vol_percentile": 15.0,
+        "trend_t": 5.94,
+        "vol_percentile": 12.4,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0167
+        "momentum_20d": 0.0186
       },
       {
         "asset": "us5y",
@@ -171,10 +171,10 @@
         "name": "Brent Crude Oil Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -3.21,
-        "vol_percentile": 93.8,
+        "trend_t": -3.18,
+        "vol_percentile": 93.7,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.2114
+        "momentum_20d": -0.2015
       },
       {
         "asset": "niftysmall",
@@ -184,17 +184,17 @@
         "trend_t": -2.05,
         "vol_percentile": 96.7,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.1405
+        "momentum_20d": 0.1402
       },
       {
         "asset": "audusd",
         "name": "AUD / USD Currency Pair",
         "group": "fx",
         "region": "AU",
-        "trend_t": -13.06,
-        "vol_percentile": 21.5,
+        "trend_t": -13.05,
+        "vol_percentile": 21.3,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0596
+        "momentum_20d": -0.0599
       },
       {
         "asset": "dji",
@@ -231,10 +231,10 @@
         "name": "Ibovespa Index",
         "group": "equity_index",
         "region": "BR",
-        "trend_t": -4.68,
-        "vol_percentile": 29.4,
-        "quadrant": "Orderly trend",
-        "momentum_20d": -0.0253
+        "trend_t": -4.88,
+        "vol_percentile": 54.1,
+        "quadrant": "Violent trend",
+        "momentum_20d": 0.0248
       },
       {
         "asset": "niftyfmcg",
@@ -261,10 +261,10 @@
         "name": "USD / IDR Currency Pair",
         "group": "fx",
         "region": "ID",
-        "trend_t": 3.78,
+        "trend_t": 3.75,
         "vol_percentile": 97.5,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0155
+        "momentum_20d": 0.0132
       },
       {
         "asset": "kospi",
@@ -321,30 +321,30 @@
         "name": "Shanghai Composite Index",
         "group": "equity_index",
         "region": "CN",
-        "trend_t": -27.58,
+        "trend_t": -27.57,
         "vol_percentile": 40.3,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0478
+        "momentum_20d": -0.0479
       },
       {
         "asset": "tsse",
         "name": "S&P/TSX Composite Index",
         "group": "equity_index",
         "region": "CA",
-        "trend_t": -3.3,
-        "vol_percentile": 90.3,
+        "trend_t": -3.36,
+        "vol_percentile": 90.6,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0575
+        "momentum_20d": -0.0495
       },
       {
         "asset": "usdtwd",
         "name": "USD / TWD Currency Pair",
         "group": "fx",
         "region": "TW",
-        "trend_t": 26.13,
+        "trend_t": 26.0,
         "vol_percentile": 66.5,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0181
+        "momentum_20d": 0.0171
       },
       {
         "asset": "us30y",
@@ -384,7 +384,7 @@
         "trend_t": 9.62,
         "vol_percentile": 97.9,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.5756
+        "momentum_20d": 0.5581
       },
       {
         "asset": "cac40",
@@ -394,17 +394,17 @@
         "trend_t": 0.07,
         "vol_percentile": 52.2,
         "quadrant": "Choppy",
-        "momentum_20d": 0.0175
+        "momentum_20d": 0.0174
       },
       {
         "asset": "usdchf",
         "name": "USD / CHF Currency Pair",
         "group": "fx",
         "region": "CH",
-        "trend_t": 5.71,
-        "vol_percentile": 34.8,
+        "trend_t": 5.76,
+        "vol_percentile": 33.1,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0059
+        "momentum_20d": 0.0075
       },
       {
         "asset": "sofr",
@@ -421,10 +421,10 @@
         "name": "USD / BRL Currency Pair",
         "group": "fx",
         "region": "BR",
-        "trend_t": 9.61,
-        "vol_percentile": 42.4,
-        "quadrant": "Orderly trend",
-        "momentum_20d": 0.0897
+        "trend_t": 9.56,
+        "vol_percentile": 61.6,
+        "quadrant": "Violent trend",
+        "momentum_20d": 0.0744
       },
       {
         "asset": "xlu",
@@ -481,10 +481,10 @@
         "name": "Copper Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -8.24,
-        "vol_percentile": 86.7,
+        "trend_t": -8.23,
+        "vol_percentile": 85.8,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1706
+        "momentum_20d": -0.1744
       },
       {
         "asset": "usdkrw",
@@ -494,7 +494,7 @@
         "trend_t": -4.24,
         "vol_percentile": 54.1,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0021
+        "momentum_20d": 0.0023
       },
       {
         "asset": "ksa",
@@ -531,10 +531,10 @@
         "name": "Silver Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -24.03,
-        "vol_percentile": 95.8,
+        "trend_t": -24.06,
+        "vol_percentile": 95.9,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.203
+        "momentum_20d": -0.2001
       },
       {
         "asset": "xlc",
@@ -631,10 +631,10 @@
         "name": "FTSE 100 Index",
         "group": "equity_index",
         "region": "UK",
-        "trend_t": -0.94,
-        "vol_percentile": 65.8,
+        "trend_t": -0.85,
+        "vol_percentile": 68.5,
         "quadrant": "Choppy",
-        "momentum_20d": -0.0154
+        "momentum_20d": -0.0105
       },
       {
         "asset": "usdinr",
@@ -642,9 +642,9 @@
         "group": "fx",
         "region": "IN",
         "trend_t": -7.48,
-        "vol_percentile": 27.6,
+        "vol_percentile": 28.1,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0289
+        "momentum_20d": -0.0291
       },
       {
         "asset": "niftyit",
@@ -671,40 +671,40 @@
         "name": "Swiss Market Index (SMI)",
         "group": "equity_index",
         "region": "CH",
-        "trend_t": 11.25,
-        "vol_percentile": 60.9,
+        "trend_t": 11.26,
+        "vol_percentile": 61.2,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0035
+        "momentum_20d": 0.0041
       },
       {
         "asset": "ipc",
         "name": "S&P/BMV IPC Mexico Index",
         "group": "equity_index",
         "region": "MX",
-        "trend_t": 14.54,
-        "vol_percentile": 54.9,
+        "trend_t": 14.98,
+        "vol_percentile": 58.9,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0317
+        "momentum_20d": 0.0094
       },
       {
         "asset": "gold",
         "name": "Gold Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -18.01,
+        "trend_t": -18.02,
         "vol_percentile": 97.0,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1092
+        "momentum_20d": -0.1086
       },
       {
         "asset": "usdjpy",
         "name": "USD / JPY Currency Pair",
         "group": "fx",
         "region": "JP",
-        "trend_t": 9.67,
-        "vol_percentile": 7.6,
+        "trend_t": 9.71,
+        "vol_percentile": 7.4,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0083
+        "momentum_20d": 0.0091
       },
       {
         "asset": "hsi",
@@ -761,10 +761,10 @@
         "name": "Natural Gas Futures",
         "group": "commodity",
         "region": "US",
-        "trend_t": 3.83,
-        "vol_percentile": 75.1,
+        "trend_t": 3.82,
+        "vol_percentile": 74.5,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.2236
+        "momentum_20d": 0.2192
       },
       {
         "asset": "xly",
@@ -781,10 +781,10 @@
         "name": "DAX Performance Index",
         "group": "equity_index",
         "region": "EU",
-        "trend_t": 1.64,
-        "vol_percentile": 75.7,
+        "trend_t": 1.69,
+        "vol_percentile": 76.9,
         "quadrant": "Choppy",
-        "momentum_20d": -0.035
+        "momentum_20d": -0.0317
       }
     ]
   }

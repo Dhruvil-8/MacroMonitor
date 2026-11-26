@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-26",
-  "fetched_at": "2026-11-26T08:43:11Z",
+  "fetched_at": "2026-11-26T19:58:43Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
     "current_quadrant": "Recovery",
-    "current_growth_z": 0.41,
-    "current_inflation_z": -1.89,
+    "current_growth_z": 0.37,
+    "current_inflation_z": -1.85,
     "trail": [
       {
         "date": "2024-12",
@@ -149,8 +149,8 @@
       },
       {
         "date": "2026-11",
-        "growth_z": 0.41,
-        "inflation_z": -1.89,
+        "growth_z": 0.37,
+        "inflation_z": -1.85,
         "quadrant": "Recovery"
       }
     ],
@@ -163,7 +163,7 @@
           "spx": 26.3,
           "nifty50": 5.4,
           "gold": -21.4,
-          "brent": -9.3,
+          "brent": -9.0,
           "us10y": 63.5
         }
       },

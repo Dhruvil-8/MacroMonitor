@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-26",
-  "fetched_at": "2026-11-26T08:41:54Z",
+  "fetched_at": "2026-11-26T19:57:28Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -1062,8 +1062,8 @@
         "asset_a": "brent",
         "asset_b": "nifty50",
         "rationale": "Oil import bill impact on Indian current account and corporate margins",
-        "spread_z": -4.16,
-        "percentile": 99.3,
+        "spread_z": -4.07,
+        "percentile": 99.2,
         "consecutive_days": 3,
         "active": true,
         "history_dates": [
@@ -1188,7 +1188,7 @@
           -4.14,
           -3.84,
           -4.08,
-          -4.16
+          -4.07
         ],
         "cusum": {
           "dates": [
@@ -1370,7 +1370,7 @@
             0.0,
             2.29,
             0.0,
-            2.89,
+            2.9,
             0.0,
             3.07,
             0.0,
@@ -1401,7 +1401,7 @@
             {
               "date": "2026-11-26",
               "direction": "downward",
-              "value": 6.12
+              "value": 6.04
             }
           ],
           "threshold": 4.0
@@ -1412,8 +1412,8 @@
         "asset_a": "copper",
         "asset_b": "gold",
         "rationale": "Growth-sensitive industrial metal vs risk-off safe haven",
-        "spread_z": 0.05,
-        "percentile": 4.2,
+        "spread_z": -0.01,
+        "percentile": 0.6,
         "consecutive_days": 0,
         "active": false,
         "history_dates": [
@@ -1538,7 +1538,7 @@
           0.26,
           0.14,
           0.07,
-          0.05
+          -0.01
         ],
         "cusum": {
           "dates": [
@@ -2462,8 +2462,8 @@
         "asset_a": "usdinr",
         "asset_b": "nifty50",
         "rationale": "FX depreciation pressure on domestic equity flows",
-        "spread_z": -3.72,
-        "percentile": 97.8,
+        "spread_z": -3.73,
+        "percentile": 97.9,
         "consecutive_days": 3,
         "active": true,
         "history_dates": [
@@ -2588,7 +2588,7 @@
           -3.28,
           -3.28,
           -3.74,
-          -3.72
+          -3.73
         ],
         "cusum": {
           "dates": [
@@ -2775,7 +2775,7 @@
             0.0,
             1.9,
             0.0,
-            2.23
+            2.24
           ],
           "shifts": [
             {

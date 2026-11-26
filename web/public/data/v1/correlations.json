@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-26",
-  "fetched_at": "2026-11-26T08:41:54Z",
+  "fetched_at": "2026-11-26T19:57:28Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -800,7 +800,7 @@
         "asset_b": "gold",
         "rho60": 0.59,
         "rho250": 0.59,
-        "shift": -0.0,
+        "shift": -0.01,
         "percentile": 50.0,
         "history_dates": [
           "2026-09-04",

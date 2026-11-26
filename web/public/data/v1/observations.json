@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of": "2026-11-26",
-  "fetched_at": "2026-11-26T08:43:09Z",
+  "fetched_at": "2026-11-26T19:58:42Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -12,10 +12,10 @@
         "asset": "brent_vs_nifty50",
         "severity": "high",
         "headline": "Momentum divergence between BRENT and NIFTY50",
-        "body": "The 20-day momentum divergence spread reached -4.16 standard deviations, persisting for 3 consecutive sessions.",
+        "body": "The 20-day momentum divergence spread reached -4.07 standard deviations, persisting for 3 consecutive sessions.",
         "metrics": {
-          "spread_z": -4.164256700352474,
-          "percentile": 99.25161812297735
+          "spread_z": -4.0687573411670845,
+          "percentile": 99.17071197411003
         },
         "window": "20D",
         "inputs": [
@@ -105,12 +105,13 @@
         "asset": "gold",
         "severity": "high",
         "headline": "Realized volatility elevated across multiple horizons for Gold",
-        "body": "Realized volatility exceeded the 90th historical percentile across 3 horizons simultaneously (10D, 20D, 250D).",
+        "body": "Realized volatility exceeded the 90th historical percentile across 4 horizons simultaneously (10D, 20D, 120D, 250D).",
         "metrics": {
-          "num_breaches": 3,
+          "num_breaches": 4,
           "horizons": [
             "10D",
             "20D",
+            "120D",
             "250D"
           ]
         },
@@ -175,10 +176,10 @@
         "asset": "usdinr_vs_nifty50",
         "severity": "medium",
         "headline": "Momentum divergence between USDINR and NIFTY50",
-        "body": "The 20-day momentum divergence spread reached -3.72 standard deviations, persisting for 3 consecutive sessions.",
+        "body": "The 20-day momentum divergence spread reached -3.73 standard deviations, persisting for 3 consecutive sessions.",
         "metrics": {
-          "spread_z": -3.721722816153476,
-          "percentile": 97.83049472830496
+          "spread_z": -3.7349217667077954,
+          "percentile": 97.93187347931874
         },
         "window": "20D",
         "inputs": [
