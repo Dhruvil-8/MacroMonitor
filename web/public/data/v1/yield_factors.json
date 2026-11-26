@@ -1,38 +1,38 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
+  "as_of": "2026-11-26",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "lambda_diebold_li": 0.0609,
   "current_factors": {
-    "level": 5.229,
-    "slope": -1.368,
-    "curvature": -0.049,
-    "rmse": 0.11,
-    "level_percentile": 80.9,
-    "slope_percentile": 44.6,
-    "curvature_percentile": 88.5
+    "level": 5.232,
+    "slope": -1.356,
+    "curvature": -0.164,
+    "rmse": 0.125,
+    "level_percentile": 81.0,
+    "slope_percentile": 44.9,
+    "curvature_percentile": 88.1
   },
   "spreads": [
     {
       "name": "10Y - 2Y Curve Spread",
-      "current": 0.29,
-      "chg_1m": 0.0,
-      "percentile": 27.8,
+      "current": 0.28,
+      "chg_1m": -0.01,
+      "percentile": 27.4,
       "inverted": false
     },
     {
       "name": "10Y - 3M Near-Term Spread",
-      "current": 0.98,
-      "chg_1m": -0.06,
-      "percentile": 72.3,
+      "current": 0.97,
+      "chg_1m": -0.07,
+      "percentile": 72.0,
       "inverted": false
     },
     {
       "name": "30Y - 5Y Ultra-Long Spread",
-      "current": 0.55,
-      "chg_1m": 0.07,
-      "percentile": 28.5,
+      "current": 0.61,
+      "chg_1m": 0.13,
+      "percentile": 31.2,
       "inverted": false
     }
   ]

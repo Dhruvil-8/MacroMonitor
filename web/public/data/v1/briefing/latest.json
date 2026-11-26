@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T20:23:05Z",
+  "as_of": "2026-11-26",
+  "fetched_at": "2026-11-26T08:43:09Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
-    "as_of": "2026-11-25",
-    "headline": "MacroMonitor Briefing: Normal Market Conditions (67.4/100)",
-    "executive_summary": "As of 2026-11-25, the Global Financial Stress Composite registered 67.4/100, reflecting normal market conditions. US Net Liquidity has expanded by $78.8B over the trailing 4-week window, while institutional cash participants in India recorded net inflows (FII: ₹1,250.4 Cr) and recorded net inflows (DII: ₹1,840.2 Cr).",
-    "stress_score": 67.4,
+    "as_of": "2026-11-26",
+    "headline": "MacroMonitor Briefing: Normal Market Conditions (68.3/100)",
+    "executive_summary": "As of 2026-11-26, the Global Financial Stress Composite registered 68.3/100, reflecting normal market conditions. US Net Liquidity has expanded by $78.8B over the trailing 4-week window, while institutional cash participants in India recorded net inflows (FII: ₹1,250.4 Cr) and recorded net inflows (DII: ₹1,840.2 Cr).",
+    "stress_score": 68.3,
     "stress_regime": "Normal Market Conditions",
     "sections": [
       {
         "title": "Financial Stress & Volatility Breakdown",
-        "content": "The composite score is derived as the arithmetic mean of available cross-asset frictions: Equity: 87.8th percentile, Rates: 82.4th percentile, Fx: 30.0th percentile, Commodity: 93.3th percentile, Correlation: 58.5th percentile. No values are imputed for missing series."
+        "content": "The composite score is derived as the arithmetic mean of available cross-asset frictions: Equity: 86.1th percentile, Rates: 72.9th percentile, Fx: 25.1th percentile, Commodity: 93.8th percentile, Correlation: 58.5th percentile. No values are imputed for missing series."
       },
       {
         "title": "Primary Statistical Observations",

@@ -1,24 +1,23 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T20:21:23Z",
+  "as_of": "2026-11-26",
+  "fetched_at": "2026-11-26T08:41:57Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
-    "current_stress": 67.4,
+    "current_stress": 68.3,
     "regime": "Normal Market Conditions",
     "components": {
-      "equity": 87.8,
-      "rates": 82.4,
-      "fx": 30.0,
-      "commodity": 93.3,
+      "equity": 86.1,
+      "rates": 72.9,
+      "fx": 25.1,
+      "commodity": 93.8,
       "correlation": 58.5
     },
     "missing_components": [
       "credit"
     ],
     "dates": [
-      "2025-10-02",
       "2025-10-03",
       "2025-10-06",
       "2025-10-07",
@@ -317,10 +316,10 @@
       "2026-11-20",
       "2026-11-23",
       "2026-11-24",
-      "2026-11-25"
+      "2026-11-25",
+      "2026-11-26"
     ],
     "history": [
-      38.9,
       38.2,
       39.0,
       39.9,
@@ -618,8 +617,9 @@
       64.3,
       69.7,
       67.6,
-      64.6,
-      67.4
+      66.3,
+      66.7,
+      68.3
     ],
     "episodes": [
       {
@@ -650,8 +650,8 @@
         "eurusd",
         "brent"
       ],
-      "n": 6988,
-      "n_eff": 4542.2
+      "n": 6989,
+      "n_eff": 4542.9
     }
   }
 }

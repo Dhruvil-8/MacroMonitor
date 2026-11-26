@@ -1,64 +1,63 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T20:23:05Z",
+  "as_of": "2026-11-26",
+  "fetched_at": "2026-11-26T08:43:10Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
-    "as_of": "2026-11-25",
+    "as_of": "2026-11-26",
     "current_state": "backwardation",
-    "slope_3m": -0.0936,
-    "slope_9d": -0.0477,
-    "slope_percentile": 2.8,
+    "slope_3m": -0.0861,
+    "slope_9d": -0.0441,
+    "slope_percentile": 3.5,
     "curve": [
       {
         "tenor": "9D",
         "days": 9,
-        "current": 29.25,
-        "one_month_ago": 17.77,
-        "one_year_median": 16.88,
+        "current": 28.35,
+        "one_month_ago": 17.06,
+        "one_year_median": 17.01,
         "p10": 14.59,
-        "p90": 25.04
+        "p90": 25.16
       },
       {
         "tenor": "30D",
         "days": 30,
-        "current": 27.85,
-        "one_month_ago": 17.52,
-        "one_year_median": 17.16,
+        "current": 27.1,
+        "one_month_ago": 16.91,
+        "one_year_median": 17.19,
         "p10": 14.9,
-        "p90": 24.22
+        "p90": 24.48
       },
       {
         "tenor": "3M",
         "days": 90,
-        "current": 25.24,
-        "one_month_ago": 17.06,
-        "one_year_median": 17.32,
+        "current": 24.77,
+        "one_month_ago": 16.63,
+        "one_year_median": 17.35,
         "p10": 15.43,
-        "p90": 23.04
+        "p90": 23.1
       },
       {
         "tenor": "6M",
         "days": 180,
-        "current": 24.13,
-        "one_month_ago": 16.86,
+        "current": 23.77,
+        "one_month_ago": 16.5,
         "one_year_median": 17.5,
         "p10": 15.67,
-        "p90": 22.08
+        "p90": 22.15
       }
     ],
     "fear_tail_indices": [
       {
         "id": "vix",
         "name": "Cboe VIX (30-Day Vol)",
-        "current": 27.85,
-        "percentile": 87.8,
-        "z_score": 0.99,
-        "chg_1w": 3.29,
-        "chg_1m": 10.33,
+        "current": 27.1,
+        "percentile": 86.1,
+        "z_score": 0.9,
+        "chg_1w": -1.34,
+        "chg_1m": 10.19,
         "sparkline": [
-          16.46,
           19.99,
           18.44,
           17.31,
@@ -87,19 +86,19 @@
           35.89,
           26.62,
           26.36,
-          27.85
+          28.29,
+          27.1
         ]
       },
       {
         "id": "vvix",
         "name": "Cboe VVIX (Vol of Vol)",
-        "current": 144.82,
-        "percentile": 87.8,
-        "z_score": 0.99,
-        "chg_1w": 17.11,
-        "chg_1m": 53.72,
+        "current": 140.92,
+        "percentile": 86.1,
+        "z_score": 0.9,
+        "chg_1w": -6.97,
+        "chg_1m": 52.99,
         "sparkline": [
-          85.59,
           103.95,
           95.89,
           90.01,
@@ -128,19 +127,19 @@
           186.63,
           138.42,
           137.07,
-          144.82
+          147.11,
+          140.92
         ]
       },
       {
         "id": "skew",
         "name": "Cboe SKEW (Tail Risk)",
-        "current": 208.88,
-        "percentile": 87.8,
-        "z_score": 0.99,
-        "chg_1w": 24.68,
-        "chg_1m": 77.47,
+        "current": 203.25,
+        "percentile": 86.1,
+        "z_score": 0.9,
+        "chg_1w": -10.05,
+        "chg_1m": 76.43,
         "sparkline": [
-          123.45,
           149.92,
           138.3,
           129.82,
@@ -169,21 +168,19 @@
           269.17,
           199.65,
           197.7,
-          208.88
+          212.18,
+          203.25
         ]
       },
       {
         "id": "indiavix",
         "name": "India VIX (Nifty 30D)",
-        "current": 17.7,
-        "percentile": 57.3,
-        "z_score": -0.14,
-        "chg_1w": 2.18,
-        "chg_1m": 0.54,
+        "current": 17.13,
+        "percentile": 53.7,
+        "z_score": -0.21,
+        "chg_1w": -0.19,
+        "chg_1m": 2.01,
         "sparkline": [
-          14.12,
-          14.63,
-          14.03,
           14.06,
           14.77,
           14.77,
@@ -210,40 +207,34 @@
           15.57,
           16.11,
           17.32,
-          17.7
+          17.7,
+          17.7,
+          17.67,
+          17.13
         ]
       }
     ],
     "implied_vs_realized": [
       {
         "market": "US (S&P 500)",
-        "implied_vol": 27.85,
+        "implied_vol": 28.29,
         "realized_vol_21d": 30.99,
-        "gap": -3.14,
-        "gap_percentile": 6.0,
-        "vrp_proxy": -184.7,
+        "gap": -2.7,
+        "gap_percentile": 6.6,
+        "vrp_proxy": -160.1,
         "vrp_label": "Trailing proxy: VIX² - σ²_21d (Labeled descriptive)"
       },
       {
         "market": "India (Nifty 50)",
-        "implied_vol": 17.7,
-        "realized_vol_21d": 15.24,
-        "gap": 2.46,
-        "gap_percentile": 35.9,
-        "vrp_proxy": 81.0,
+        "implied_vol": 17.13,
+        "realized_vol_21d": 15.77,
+        "gap": 1.36,
+        "gap_percentile": 23.5,
+        "vrp_proxy": 44.7,
         "vrp_label": "Trailing proxy: IndiaVIX² - σ²_21d"
       }
     ],
     "slope_history": [
-      {
-        "date": "2024-12-26",
-        "vix": 14.73,
-        "vix3m": 15.43,
-        "slope_3m": 0.0475,
-        "slope_9d": 0.0261,
-        "state": "contango",
-        "percentile": 80.6
-      },
       {
         "date": "2024-12-27",
         "vix": 15.95,
@@ -4728,14 +4719,23 @@
       },
       {
         "date": "2026-11-25",
-        "vix": 27.85,
-        "vix3m": 25.24,
-        "slope_3m": -0.0936,
-        "slope_9d": -0.0477,
+        "vix": 28.29,
+        "vix3m": 25.56,
+        "slope_3m": -0.0964,
+        "slope_9d": -0.0491,
         "state": "backwardation",
-        "percentile": 2.8
+        "percentile": 2.6
+      },
+      {
+        "date": "2026-11-26",
+        "vix": 27.1,
+        "vix3m": 24.77,
+        "slope_3m": -0.0861,
+        "slope_9d": -0.0441,
+        "state": "backwardation",
+        "percentile": 3.5
       }
     ],
-    "interpretation": "VIX term structure is currently in BACKWARDATION (3M/30D slope at -9.4%, 3th percentile). Front-month VIX stands at 27.9 (88th pct)."
+    "interpretation": "VIX term structure is currently in BACKWARDATION (3M/30D slope at -8.6%, 4th percentile). Front-month VIX stands at 27.1 (86th pct)."
   }
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T20:21:23Z",
+  "as_of": "2026-11-26",
+  "fetched_at": "2026-11-26T08:41:57Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -9,67 +9,67 @@
     "target_id": "ssec",
     "horizon_days": 5,
     "lens": "usd",
-    "total_return": -0.0169,
+    "total_return": -0.0101,
     "contributions": {
-      "brent": -0.0012,
-      "copper": -0.0013,
-      "gold": -0.0055,
-      "dxy": 0.0015,
-      "us10y": -0.0034,
-      "row_equity": -0.0202,
-      "fx_effect": 0.0009
+      "brent": -0.0006,
+      "copper": -0.0022,
+      "gold": -0.0084,
+      "dxy": 0.0006,
+      "us10y": -0.0033,
+      "row_equity": -0.0104,
+      "fx_effect": 0.0
     },
     "intervals": {
       "brent": [
-        -0.0026,
-        0.0003
+        -0.0014,
+        0.0002
       ],
       "copper": [
-        -0.0057,
-        0.0031
+        -0.0097,
+        0.0052
       ],
       "gold": [
-        -0.01,
-        -0.0011
+        -0.0151,
+        -0.0017
       ],
       "dxy": [
-        -0.0009,
-        0.0038
+        -0.0003,
+        0.0016
       ],
       "us10y": [
-        -0.0081,
+        -0.0077,
         0.0012
       ],
       "row_equity": [
-        -0.0261,
-        -0.0142
+        -0.0135,
+        -0.0073
       ],
       "fx_effect": [
-        0.0009,
-        0.0009
+        0.0,
+        0.0
       ]
     },
-    "residual": 0.0123,
+    "residual": 0.0142,
     "betas": {
-      "brent": 0.0344,
-      "copper": 0.0199,
-      "gold": 0.1031,
-      "dxy": 0.1961,
+      "brent": 0.034,
+      "copper": 0.0206,
+      "gold": 0.1036,
+      "dxy": 0.2086,
       "us10y": 0.0002,
-      "row_equity": 0.6152
+      "row_equity": 0.609
     },
-    "r2_in_sample": 0.3142,
-    "r2_out_sample": 0.3087,
+    "r2_in_sample": 0.3143,
+    "r2_out_sample": 0.3085,
     "mostly_unexplained": false,
     "regularized": false,
     "n_obs": 250,
     "window_dates": {
-      "prior_start": "2025-11-25",
-      "prior_end": "2026-11-16",
-      "horizon_start": "2026-11-17",
-      "horizon_end": "2026-11-23"
+      "prior_start": "2025-11-26",
+      "prior_end": "2026-11-17",
+      "horizon_start": "2026-11-18",
+      "horizon_end": "2026-11-24"
     },
-    "narrative": "Over 5 days, China (Shanghai Composite)'s USD return of -1.7% was associated with: row equity -2.0%, gold -0.6%, us10y -0.3%, dxy +0.1%, copper -0.1%, brent -0.1%, fx effect +0.1%, unexplained +1.2% (out-of-sample R-squared 0.31).",
+    "narrative": "Over 5 days, China (Shanghai Composite)'s USD return of -1.0% was associated with: row equity -1.0%, gold -0.8%, us10y -0.3%, copper -0.2%, dxy +0.1%, brent -0.1%, fx effect +0.0%, unexplained +1.4% (out-of-sample R-squared 0.31).",
     "history": []
   }
 }

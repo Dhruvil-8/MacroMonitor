@@ -1,40 +1,40 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T20:23:06Z",
+  "as_of": "2026-11-26",
+  "fetched_at": "2026-11-26T08:43:10Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
     "as_of": "2026-11-24",
     "factors": {
-      "level": 5.229,
-      "slope": -1.368,
-      "curvature": -0.049,
-      "rmse": 0.11,
-      "level_percentile": 80.9,
-      "slope_percentile": 44.6,
-      "curvature_percentile": 88.5
+      "level": 5.232,
+      "slope": -1.356,
+      "curvature": -0.164,
+      "rmse": 0.125,
+      "level_percentile": 81.0,
+      "slope_percentile": 44.9,
+      "curvature_percentile": 88.1
     },
     "spreads": [
       {
         "name": "10Y - 2Y Curve Spread",
-        "current": 0.29,
-        "chg_1m": 0.0,
-        "percentile": 27.8,
+        "current": 0.28,
+        "chg_1m": -0.01,
+        "percentile": 27.4,
         "inverted": false
       },
       {
         "name": "10Y - 3M Near-Term Spread",
-        "current": 0.98,
-        "chg_1m": -0.06,
-        "percentile": 72.3,
+        "current": 0.97,
+        "chg_1m": -0.07,
+        "percentile": 72.0,
         "inverted": false
       },
       {
         "name": "30Y - 5Y Ultra-Long Spread",
-        "current": 0.55,
-        "chg_1m": 0.07,
-        "percentile": 28.5,
+        "current": 0.61,
+        "chg_1m": 0.13,
+        "percentile": 31.2,
         "inverted": false
       }
     ],
@@ -47,433 +47,433 @@
             "maturity": "3M",
             "months": 3,
             "yield_pct": 3.94,
-            "fitted_pct": 3.974
+            "fitted_pct": 3.98
           },
           {
             "maturity": "2Y",
             "months": 24,
             "yield_pct": 4.63,
-            "fitted_pct": 4.495
+            "fitted_pct": 4.471
           },
           {
             "maturity": "5Y",
             "months": 60,
-            "yield_pct": 4.74,
-            "fitted_pct": 4.852
+            "yield_pct": 4.69,
+            "fitted_pct": 4.831
           },
           {
             "maturity": "10Y",
             "months": 120,
-            "yield_pct": 4.92,
-            "fitted_pct": 5.035
+            "yield_pct": 4.91,
+            "fitted_pct": 5.025
           },
           {
             "maturity": "30Y",
             "months": 360,
-            "yield_pct": 5.29,
-            "fitted_pct": 5.164
+            "yield_pct": 5.3,
+            "fitted_pct": 5.163
           }
         ],
         "smooth_fitted": [
           {
             "months": 1.0,
-            "yield_pct": 3.9
+            "yield_pct": 3.912
           },
           {
             "months": 4.6,
-            "yield_pct": 4.03
+            "yield_pct": 4.031
           },
           {
             "months": 8.3,
-            "yield_pct": 4.144
+            "yield_pct": 4.137
           },
           {
             "months": 11.9,
-            "yield_pct": 4.244
+            "yield_pct": 4.23
           },
           {
             "months": 15.5,
-            "yield_pct": 4.331
+            "yield_pct": 4.312
           },
           {
             "months": 19.1,
-            "yield_pct": 4.407
+            "yield_pct": 4.386
           },
           {
             "months": 22.8,
-            "yield_pct": 4.474
+            "yield_pct": 4.451
           },
           {
             "months": 26.4,
-            "yield_pct": 4.533
+            "yield_pct": 4.509
           },
           {
             "months": 30.0,
-            "yield_pct": 4.586
+            "yield_pct": 4.561
           },
           {
             "months": 33.6,
-            "yield_pct": 4.632
+            "yield_pct": 4.607
           },
           {
             "months": 37.3,
-            "yield_pct": 4.674
+            "yield_pct": 4.649
           },
           {
             "months": 40.9,
-            "yield_pct": 4.711
+            "yield_pct": 4.686
           },
           {
             "months": 44.5,
-            "yield_pct": 4.744
+            "yield_pct": 4.72
           },
           {
             "months": 48.1,
-            "yield_pct": 4.774
+            "yield_pct": 4.75
           },
           {
             "months": 51.8,
-            "yield_pct": 4.8
+            "yield_pct": 4.778
           },
           {
             "months": 55.4,
-            "yield_pct": 4.825
+            "yield_pct": 4.803
           },
           {
             "months": 59.0,
-            "yield_pct": 4.847
+            "yield_pct": 4.826
           },
           {
             "months": 62.6,
-            "yield_pct": 4.866
+            "yield_pct": 4.846
           },
           {
             "months": 66.3,
-            "yield_pct": 4.885
+            "yield_pct": 4.865
           },
           {
             "months": 69.9,
-            "yield_pct": 4.901
+            "yield_pct": 4.883
           },
           {
             "months": 73.5,
-            "yield_pct": 4.916
+            "yield_pct": 4.899
           },
           {
             "months": 77.2,
-            "yield_pct": 4.93
+            "yield_pct": 4.913
           },
           {
             "months": 80.8,
-            "yield_pct": 4.943
+            "yield_pct": 4.927
           },
           {
             "months": 84.4,
-            "yield_pct": 4.955
+            "yield_pct": 4.939
           },
           {
             "months": 88.0,
-            "yield_pct": 4.966
+            "yield_pct": 4.951
           },
           {
             "months": 91.7,
-            "yield_pct": 4.976
+            "yield_pct": 4.962
           },
           {
             "months": 95.3,
-            "yield_pct": 4.985
+            "yield_pct": 4.972
           },
           {
             "months": 98.9,
-            "yield_pct": 4.994
+            "yield_pct": 4.981
           },
           {
             "months": 102.5,
-            "yield_pct": 5.002
+            "yield_pct": 4.99
           },
           {
             "months": 106.2,
-            "yield_pct": 5.01
+            "yield_pct": 4.998
           },
           {
             "months": 109.8,
-            "yield_pct": 5.017
+            "yield_pct": 5.005
           },
           {
             "months": 113.4,
-            "yield_pct": 5.024
+            "yield_pct": 5.013
           },
           {
             "months": 117.0,
-            "yield_pct": 5.03
+            "yield_pct": 5.019
           },
           {
             "months": 120.7,
-            "yield_pct": 5.036
+            "yield_pct": 5.026
           },
           {
             "months": 124.3,
-            "yield_pct": 5.042
+            "yield_pct": 5.032
           },
           {
             "months": 127.9,
-            "yield_pct": 5.047
+            "yield_pct": 5.037
           },
           {
             "months": 131.5,
-            "yield_pct": 5.052
+            "yield_pct": 5.043
           },
           {
             "months": 135.2,
-            "yield_pct": 5.057
+            "yield_pct": 5.048
           },
           {
             "months": 138.8,
-            "yield_pct": 5.061
+            "yield_pct": 5.053
           },
           {
             "months": 142.4,
-            "yield_pct": 5.065
+            "yield_pct": 5.057
           },
           {
             "months": 146.1,
-            "yield_pct": 5.069
+            "yield_pct": 5.061
           },
           {
             "months": 149.7,
-            "yield_pct": 5.073
+            "yield_pct": 5.066
           },
           {
             "months": 153.3,
-            "yield_pct": 5.077
+            "yield_pct": 5.07
           },
           {
             "months": 156.9,
-            "yield_pct": 5.08
+            "yield_pct": 5.073
           },
           {
             "months": 160.6,
-            "yield_pct": 5.084
+            "yield_pct": 5.077
           },
           {
             "months": 164.2,
-            "yield_pct": 5.087
+            "yield_pct": 5.08
           },
           {
             "months": 167.8,
-            "yield_pct": 5.09
+            "yield_pct": 5.084
           },
           {
             "months": 171.4,
-            "yield_pct": 5.093
+            "yield_pct": 5.087
           },
           {
             "months": 175.1,
-            "yield_pct": 5.096
+            "yield_pct": 5.09
           },
           {
             "months": 178.7,
-            "yield_pct": 5.098
+            "yield_pct": 5.093
           },
           {
             "months": 182.3,
-            "yield_pct": 5.101
+            "yield_pct": 5.095
           },
           {
             "months": 185.9,
-            "yield_pct": 5.103
+            "yield_pct": 5.098
           },
           {
             "months": 189.6,
-            "yield_pct": 5.106
+            "yield_pct": 5.101
           },
           {
             "months": 193.2,
-            "yield_pct": 5.108
+            "yield_pct": 5.103
           },
           {
             "months": 196.8,
-            "yield_pct": 5.11
+            "yield_pct": 5.106
           },
           {
             "months": 200.4,
-            "yield_pct": 5.113
+            "yield_pct": 5.108
           },
           {
             "months": 204.1,
-            "yield_pct": 5.115
+            "yield_pct": 5.11
           },
           {
             "months": 207.7,
-            "yield_pct": 5.117
+            "yield_pct": 5.112
           },
           {
             "months": 211.3,
-            "yield_pct": 5.118
+            "yield_pct": 5.114
           },
           {
             "months": 214.9,
-            "yield_pct": 5.12
+            "yield_pct": 5.116
           },
           {
             "months": 218.6,
-            "yield_pct": 5.122
+            "yield_pct": 5.118
           },
           {
             "months": 222.2,
-            "yield_pct": 5.124
+            "yield_pct": 5.12
           },
           {
             "months": 225.8,
-            "yield_pct": 5.126
+            "yield_pct": 5.122
           },
           {
             "months": 229.5,
-            "yield_pct": 5.127
+            "yield_pct": 5.124
           },
           {
             "months": 233.1,
-            "yield_pct": 5.129
+            "yield_pct": 5.125
           },
           {
             "months": 236.7,
-            "yield_pct": 5.13
+            "yield_pct": 5.127
           },
           {
             "months": 240.3,
-            "yield_pct": 5.132
+            "yield_pct": 5.128
           },
           {
             "months": 244.0,
-            "yield_pct": 5.133
+            "yield_pct": 5.13
           },
           {
             "months": 247.6,
-            "yield_pct": 5.135
+            "yield_pct": 5.132
           },
           {
             "months": 251.2,
-            "yield_pct": 5.136
+            "yield_pct": 5.133
           },
           {
             "months": 254.8,
-            "yield_pct": 5.137
+            "yield_pct": 5.134
           },
           {
             "months": 258.5,
-            "yield_pct": 5.139
+            "yield_pct": 5.136
           },
           {
             "months": 262.1,
-            "yield_pct": 5.14
+            "yield_pct": 5.137
           },
           {
             "months": 265.7,
-            "yield_pct": 5.141
+            "yield_pct": 5.138
           },
           {
             "months": 269.3,
-            "yield_pct": 5.142
+            "yield_pct": 5.14
           },
           {
             "months": 273.0,
-            "yield_pct": 5.143
+            "yield_pct": 5.141
           },
           {
             "months": 276.6,
-            "yield_pct": 5.144
+            "yield_pct": 5.142
           },
           {
             "months": 280.2,
-            "yield_pct": 5.146
+            "yield_pct": 5.143
           },
           {
             "months": 283.8,
-            "yield_pct": 5.147
+            "yield_pct": 5.144
           },
           {
             "months": 287.5,
-            "yield_pct": 5.148
+            "yield_pct": 5.146
           },
           {
             "months": 291.1,
-            "yield_pct": 5.149
+            "yield_pct": 5.147
           },
           {
             "months": 294.7,
-            "yield_pct": 5.15
+            "yield_pct": 5.148
           },
           {
             "months": 298.4,
-            "yield_pct": 5.151
+            "yield_pct": 5.149
           },
           {
             "months": 302.0,
-            "yield_pct": 5.152
+            "yield_pct": 5.15
           },
           {
             "months": 305.6,
-            "yield_pct": 5.152
+            "yield_pct": 5.151
           },
           {
             "months": 309.2,
-            "yield_pct": 5.153
+            "yield_pct": 5.152
           },
           {
             "months": 312.9,
-            "yield_pct": 5.154
+            "yield_pct": 5.153
           },
           {
             "months": 316.5,
-            "yield_pct": 5.155
+            "yield_pct": 5.153
           },
           {
             "months": 320.1,
-            "yield_pct": 5.156
+            "yield_pct": 5.154
           },
           {
             "months": 323.7,
-            "yield_pct": 5.157
+            "yield_pct": 5.155
           },
           {
             "months": 327.4,
-            "yield_pct": 5.158
+            "yield_pct": 5.156
           },
           {
             "months": 331.0,
-            "yield_pct": 5.158
+            "yield_pct": 5.157
           },
           {
             "months": 334.6,
-            "yield_pct": 5.159
+            "yield_pct": 5.158
           },
           {
             "months": 338.2,
-            "yield_pct": 5.16
+            "yield_pct": 5.159
           },
           {
             "months": 341.9,
-            "yield_pct": 5.161
+            "yield_pct": 5.159
           },
           {
             "months": 345.5,
-            "yield_pct": 5.161
+            "yield_pct": 5.16
           },
           {
             "months": 349.1,
-            "yield_pct": 5.162
+            "yield_pct": 5.161
           },
           {
             "months": 352.7,
-            "yield_pct": 5.163
+            "yield_pct": 5.162
           },
           {
             "months": 356.4,
-            "yield_pct": 5.163
+            "yield_pct": 5.162
           },
           {
             "months": 360.0,
-            "yield_pct": 5.164
+            "yield_pct": 5.163
           }
         ]
       },
@@ -3552,8 +3552,8 @@
       },
       {
         "date": "2026-11-24",
-        "nominal_10y": 4.92,
-        "real_10y": 2.72,
+        "nominal_10y": 4.91,
+        "real_10y": 2.79,
         "breakeven_10y": 2.12,
         "term_premium": 0.39
       }
@@ -4154,9 +4154,9 @@
         "yields": {
           "3M": 3.94,
           "2Y": 4.63,
-          "5Y": 4.74,
-          "10Y": 4.92,
-          "30Y": 5.29
+          "5Y": 4.69,
+          "10Y": 4.91,
+          "30Y": 5.3
         }
       }
     ],
@@ -4167,6 +4167,6 @@
       "10Y",
       "30Y"
     ],
-    "interpretation": "US Treasury yield curve exhibits a level of 5.23% (81th pct) and slope of -1.37%. Curve displays normal positive term spread. Nelson-Siegel fit RMSE across 11 tenors is 0.110%."
+    "interpretation": "US Treasury yield curve exhibits a level of 5.23% (81th pct) and slope of -1.36%. Curve displays normal positive term spread. Nelson-Siegel fit RMSE across 11 tenors is 0.125%."
   }
 }

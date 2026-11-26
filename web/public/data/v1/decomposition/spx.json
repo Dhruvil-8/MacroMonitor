@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T20:21:23Z",
+  "as_of": "2026-11-26",
+  "fetched_at": "2026-11-26T08:41:57Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -9,62 +9,62 @@
     "target_id": "spx",
     "horizon_days": 5,
     "lens": "local",
-    "total_return": -0.0245,
+    "total_return": -0.0192,
     "contributions": {
-      "brent": 0.0011,
-      "copper": -0.0089,
-      "gold": 0.002,
-      "dxy": -0.0022,
-      "us10y": -0.0086,
-      "row_equity": -0.0069
+      "brent": 0.0006,
+      "copper": -0.0154,
+      "gold": 0.0031,
+      "dxy": -0.0009,
+      "us10y": -0.0085,
+      "row_equity": -0.0034
     },
     "intervals": {
       "brent": [
-        0.0003,
-        0.002
+        0.0001,
+        0.0011
       ],
       "copper": [
-        -0.0122,
-        -0.0057
+        -0.0209,
+        -0.0099
       ],
       "gold": [
-        -0.0008,
-        0.0048
+        -0.001,
+        0.0073
       ],
       "dxy": [
-        -0.0041,
-        -0.0003
+        -0.0017,
+        -0.0001
       ],
       "us10y": [
-        -0.0189,
-        0.0017
+        -0.0186,
+        0.0016
       ],
       "row_equity": [
-        -0.0108,
-        -0.003
+        -0.0053,
+        -0.0016
       ]
     },
-    "residual": -0.001,
+    "residual": 0.0053,
     "betas": {
-      "brent": -0.0333,
-      "copper": 0.1397,
-      "gold": -0.0373,
-      "dxy": -0.3004,
+      "brent": -0.033,
+      "copper": 0.142,
+      "gold": -0.0385,
+      "dxy": -0.2946,
       "us10y": 0.0004,
-      "row_equity": 0.2191
+      "row_equity": 0.2245
     },
-    "r2_in_sample": 0.2113,
-    "r2_out_sample": 0.2113,
+    "r2_in_sample": 0.2068,
+    "r2_out_sample": 0.2068,
     "mostly_unexplained": false,
     "regularized": false,
     "n_obs": 250,
     "window_dates": {
-      "prior_start": "2025-12-02",
-      "prior_end": "2026-11-16",
-      "horizon_start": "2026-11-17",
-      "horizon_end": "2026-11-23"
+      "prior_start": "2025-12-03",
+      "prior_end": "2026-11-17",
+      "horizon_start": "2026-11-18",
+      "horizon_end": "2026-11-24"
     },
-    "narrative": "Over 5 days, United States (S&P 500)'s LOCAL return of -2.4% was associated with: copper -0.9%, us10y -0.9%, row equity -0.7%, dxy -0.2%, gold +0.2%, brent +0.1%, unexplained -0.1% (out-of-sample R-squared 0.21).",
+    "narrative": "Over 5 days, United States (S&P 500)'s LOCAL return of -1.9% was associated with: copper -1.5%, us10y -0.9%, row equity -0.3%, gold +0.3%, dxy -0.1%, brent +0.1%, unexplained +0.5% (out-of-sample R-squared 0.21).",
     "history": []
   }
 }

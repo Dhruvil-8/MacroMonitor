@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T20:21:19Z",
+  "as_of": "2026-11-26",
+  "fetched_at": "2026-11-26T08:41:53Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -11,7 +11,7 @@
         "name": "US 10-Year Treasury Yield",
         "group": "rates",
         "region": "US",
-        "trend_t": 1.09,
+        "trend_t": 0.54,
         "vol_percentile": 68.2,
         "quadrant": "Choppy",
         "momentum_20d": -0.016
@@ -21,10 +21,10 @@
         "name": "US 10-Year Breakeven Inflation Rate",
         "group": "rates",
         "region": "US",
-        "trend_t": -9.46,
-        "vol_percentile": 41.1,
+        "trend_t": -10.06,
+        "vol_percentile": 31.7,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0979
+        "momentum_20d": -0.1092
       },
       {
         "asset": "spx",
@@ -34,107 +34,107 @@
         "trend_t": -6.17,
         "vol_percentile": 95.2,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0733
+        "momentum_20d": -0.0725
       },
       {
         "asset": "usdmxn",
         "name": "USD / MXN Currency Pair",
         "group": "fx",
         "region": "MX",
-        "trend_t": 19.12,
-        "vol_percentile": 89.9,
+        "trend_t": 19.18,
+        "vol_percentile": 87.9,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0488
+        "momentum_20d": 0.053
       },
       {
         "asset": "dxy",
         "name": "US Dollar Index",
         "group": "fx",
         "region": "US",
-        "trend_t": 15.21,
-        "vol_percentile": 34.2,
+        "trend_t": 15.07,
+        "vol_percentile": 32.9,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0144
+        "momentum_20d": 0.0166
       },
       {
         "asset": "wti",
         "name": "WTI Crude Oil Futures",
         "group": "commodity",
         "region": "US",
-        "trend_t": -4.25,
-        "vol_percentile": 89.3,
+        "trend_t": -4.77,
+        "vol_percentile": 89.4,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1845
+        "momentum_20d": -0.1774
       },
       {
         "asset": "usdcad",
         "name": "USD / CAD Currency Pair",
         "group": "fx",
         "region": "CA",
-        "trend_t": 5.97,
-        "vol_percentile": 35.0,
+        "trend_t": 5.89,
+        "vol_percentile": 15.0,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0106
+        "momentum_20d": 0.0167
       },
       {
         "asset": "us5y",
         "name": "US 5-Year Treasury Yield",
         "group": "rates",
         "region": "US",
-        "trend_t": 1.24,
-        "vol_percentile": 78.1,
+        "trend_t": 0.61,
+        "vol_percentile": 78.9,
         "quadrant": "Choppy",
-        "momentum_20d": -0.0207
+        "momentum_20d": -0.027
       },
       {
         "asset": "niftyrealty",
         "name": "Nifty Realty Index",
         "group": "india_sector",
         "region": "IN",
-        "trend_t": 1.43,
-        "vol_percentile": 46.6,
-        "quadrant": "Quiet range",
-        "momentum_20d": 0.1927
+        "trend_t": 3.54,
+        "vol_percentile": 46.2,
+        "quadrant": "Orderly trend",
+        "momentum_20d": 0.1873
       },
       {
         "asset": "xli",
         "name": "Industrial Select Sector SPDR",
         "group": "us_sector",
         "region": "US",
-        "trend_t": -7.4,
+        "trend_t": -7.39,
         "vol_percentile": 91.5,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0335
+        "momentum_20d": -0.0329
       },
       {
         "asset": "n225",
         "name": "Nikkei 225 Index",
         "group": "equity_index",
         "region": "JP",
-        "trend_t": -6.58,
-        "vol_percentile": 95.9,
+        "trend_t": -7.79,
+        "vol_percentile": 96.1,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0731
+        "momentum_20d": -0.1107
       },
       {
         "asset": "eem",
         "name": "MSCI Emerging Markets Index ETF",
         "group": "equity_index",
         "region": "EM",
-        "trend_t": -17.3,
+        "trend_t": -17.31,
         "vol_percentile": 95.7,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1141
+        "momentum_20d": -0.1121
       },
       {
         "asset": "xlre",
         "name": "Real Estate Select Sector SPDR",
         "group": "us_sector",
         "region": "US",
-        "trend_t": 3.49,
-        "vol_percentile": 81.9,
+        "trend_t": 3.47,
+        "vol_percentile": 81.7,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0433
+        "momentum_20d": 0.0411
       },
       {
         "asset": "rut",
@@ -144,17 +144,17 @@
         "trend_t": -9.58,
         "vol_percentile": 89.0,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0448
+        "momentum_20d": -0.0447
       },
       {
         "asset": "niftymid",
         "name": "Nifty Midcap 100 Index",
         "group": "india_equity",
         "region": "IN",
-        "trend_t": 1.55,
-        "vol_percentile": 44.1,
-        "quadrant": "Quiet range",
-        "momentum_20d": 0.099
+        "trend_t": 3.31,
+        "vol_percentile": 45.4,
+        "quadrant": "Orderly trend",
+        "momentum_20d": 0.0956
       },
       {
         "asset": "rrp",
@@ -171,30 +171,30 @@
         "name": "Brent Crude Oil Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -2.67,
-        "vol_percentile": 93.3,
+        "trend_t": -3.21,
+        "vol_percentile": 93.8,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.2154
+        "momentum_20d": -0.2114
       },
       {
         "asset": "niftysmall",
         "name": "Nifty Smallcap 100 Index",
         "group": "india_equity",
         "region": "IN",
-        "trend_t": -3.07,
-        "vol_percentile": 96.9,
+        "trend_t": -2.05,
+        "vol_percentile": 96.7,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.1356
+        "momentum_20d": 0.1405
       },
       {
         "asset": "audusd",
         "name": "AUD / USD Currency Pair",
         "group": "fx",
         "region": "AU",
-        "trend_t": -12.82,
-        "vol_percentile": 24.3,
+        "trend_t": -13.06,
+        "vol_percentile": 21.5,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0569
+        "momentum_20d": -0.0596
       },
       {
         "asset": "dji",
@@ -202,9 +202,9 @@
         "group": "equity_index",
         "region": "US",
         "trend_t": -3.84,
-        "vol_percentile": 91.5,
+        "vol_percentile": 91.4,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0428
+        "momentum_20d": -0.0437
       },
       {
         "asset": "ig_spread",
@@ -221,10 +221,10 @@
         "name": "IDX Composite (Jakarta)",
         "group": "equity_index",
         "region": "ID",
-        "trend_t": -17.79,
-        "vol_percentile": 87.2,
+        "trend_t": -16.98,
+        "vol_percentile": 81.2,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.016
+        "momentum_20d": 0.0261
       },
       {
         "asset": "ibov",
@@ -232,49 +232,49 @@
         "group": "equity_index",
         "region": "BR",
         "trend_t": -4.68,
-        "vol_percentile": 28.9,
+        "vol_percentile": 29.4,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0258
+        "momentum_20d": -0.0253
       },
       {
         "asset": "niftyfmcg",
         "name": "Nifty FMCG Index",
         "group": "india_sector",
         "region": "IN",
-        "trend_t": 1.94,
-        "vol_percentile": 82.1,
-        "quadrant": "Choppy",
-        "momentum_20d": 0.1288
+        "trend_t": 3.88,
+        "vol_percentile": 92.0,
+        "quadrant": "Violent trend",
+        "momentum_20d": 0.1307
       },
       {
         "asset": "us2s10s",
         "name": "US 10Y minus 2Y Yield Spread",
         "group": "rates",
         "region": "US",
-        "trend_t": -2.73,
-        "vol_percentile": 63.4,
-        "quadrant": "Violent trend",
-        "momentum_20d": -0.0345
+        "trend_t": -2.89,
+        "vol_percentile": 46.7,
+        "quadrant": "Orderly trend",
+        "momentum_20d": -0.3684
       },
       {
         "asset": "usdidr",
         "name": "USD / IDR Currency Pair",
         "group": "fx",
         "region": "ID",
-        "trend_t": 3.53,
+        "trend_t": 3.78,
         "vol_percentile": 97.5,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.009
+        "momentum_20d": 0.0155
       },
       {
         "asset": "kospi",
         "name": "KOSPI Composite Index",
         "group": "equity_index",
         "region": "KR",
-        "trend_t": -16.44,
-        "vol_percentile": 97.8,
+        "trend_t": -19.41,
+        "vol_percentile": 97.3,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1121
+        "momentum_20d": -0.2066
       },
       {
         "asset": "hy_spread",
@@ -291,20 +291,20 @@
         "name": "Nifty Pharma Index",
         "group": "india_sector",
         "region": "IN",
-        "trend_t": 4.51,
-        "vol_percentile": 60.7,
+        "trend_t": 5.86,
+        "vol_percentile": 64.2,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0976
+        "momentum_20d": 0.0875
       },
       {
         "asset": "us2y",
         "name": "US 2-Year Treasury Yield",
         "group": "rates",
         "region": "US",
-        "trend_t": 2.44,
-        "vol_percentile": 84.0,
-        "quadrant": "Violent trend",
-        "momentum_20d": -0.0107
+        "trend_t": 1.91,
+        "vol_percentile": 83.8,
+        "quadrant": "Choppy",
+        "momentum_20d": -0.0149
       },
       {
         "asset": "xlp",
@@ -314,17 +314,17 @@
         "trend_t": 13.6,
         "vol_percentile": 91.5,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0635
+        "momentum_20d": 0.0629
       },
       {
         "asset": "ssec",
         "name": "Shanghai Composite Index",
         "group": "equity_index",
         "region": "CN",
-        "trend_t": -28.42,
-        "vol_percentile": 31.3,
+        "trend_t": -27.58,
+        "vol_percentile": 40.3,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0362
+        "momentum_20d": -0.0478
       },
       {
         "asset": "tsse",
@@ -334,77 +334,77 @@
         "trend_t": -3.3,
         "vol_percentile": 90.3,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0576
+        "momentum_20d": -0.0575
       },
       {
         "asset": "usdtwd",
         "name": "USD / TWD Currency Pair",
         "group": "fx",
         "region": "TW",
-        "trend_t": 25.39,
-        "vol_percentile": 72.2,
+        "trend_t": 26.13,
+        "vol_percentile": 66.5,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0236
+        "momentum_20d": 0.0181
       },
       {
         "asset": "us30y",
         "name": "US 30-Year Treasury Yield",
         "group": "rates",
         "region": "US",
-        "trend_t": 0.16,
-        "vol_percentile": 51.1,
+        "trend_t": -0.24,
+        "vol_percentile": 51.2,
         "quadrant": "Choppy",
-        "momentum_20d": -0.0038
+        "momentum_20d": 0.0
       },
       {
         "asset": "asx200",
         "name": "S&P/ASX 200 Index",
         "group": "equity_index",
         "region": "AU",
-        "trend_t": 1.69,
-        "vol_percentile": 78.6,
+        "trend_t": 1.98,
+        "vol_percentile": 79.2,
         "quadrant": "Choppy",
-        "momentum_20d": -0.0175
+        "momentum_20d": -0.0144
       },
       {
         "asset": "gbpusd",
         "name": "GBP / USD Currency Pair",
         "group": "fx",
         "region": "UK",
-        "trend_t": -5.01,
-        "vol_percentile": 26.0,
+        "trend_t": -5.11,
+        "vol_percentile": 23.2,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0136
+        "momentum_20d": -0.0165
       },
       {
         "asset": "vix",
         "name": "Cboe Volatility Index",
         "group": "risk_gauge",
         "region": "US",
-        "trend_t": 9.41,
+        "trend_t": 9.62,
         "vol_percentile": 97.9,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.647
+        "momentum_20d": 0.5756
       },
       {
         "asset": "cac40",
         "name": "CAC 40 Index",
         "group": "equity_index",
         "region": "FR",
-        "trend_t": -0.32,
-        "vol_percentile": 49.2,
-        "quadrant": "Quiet range",
-        "momentum_20d": 0.0119
+        "trend_t": 0.07,
+        "vol_percentile": 52.2,
+        "quadrant": "Choppy",
+        "momentum_20d": 0.0175
       },
       {
         "asset": "usdchf",
         "name": "USD / CHF Currency Pair",
         "group": "fx",
         "region": "CH",
-        "trend_t": 5.74,
-        "vol_percentile": 50.5,
-        "quadrant": "Violent trend",
-        "momentum_20d": 0.0023
+        "trend_t": 5.71,
+        "vol_percentile": 34.8,
+        "quadrant": "Orderly trend",
+        "momentum_20d": 0.0059
       },
       {
         "asset": "sofr",
@@ -421,50 +421,50 @@
         "name": "USD / BRL Currency Pair",
         "group": "fx",
         "region": "BR",
-        "trend_t": 9.15,
-        "vol_percentile": 48.0,
+        "trend_t": 9.61,
+        "vol_percentile": 42.4,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0872
+        "momentum_20d": 0.0897
       },
       {
         "asset": "xlu",
         "name": "Utilities Select Sector SPDR",
         "group": "us_sector",
         "region": "US",
-        "trend_t": 6.04,
-        "vol_percentile": 43.1,
+        "trend_t": 6.03,
+        "vol_percentile": 42.7,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0277
+        "momentum_20d": 0.0264
       },
       {
         "asset": "us10y_real",
         "name": "US 10-Year TIPS Real Yield",
         "group": "rates",
         "region": "US",
-        "trend_t": 4.0,
-        "vol_percentile": 67.3,
+        "trend_t": 3.68,
+        "vol_percentile": 66.7,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0489
+        "momentum_20d": 0.0568
       },
       {
         "asset": "xlk",
         "name": "Technology Select Sector SPDR",
         "group": "us_sector",
         "region": "US",
-        "trend_t": -8.26,
+        "trend_t": -8.25,
         "vol_percentile": 97.8,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1883
+        "momentum_20d": -0.1843
       },
       {
         "asset": "niftybank",
         "name": "Nifty Bank Index",
         "group": "india_equity",
         "region": "IN",
-        "trend_t": 4.31,
-        "vol_percentile": 63.6,
+        "trend_t": 6.18,
+        "vol_percentile": 64.3,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.1512
+        "momentum_20d": 0.1548
       },
       {
         "asset": "rsp",
@@ -481,20 +481,20 @@
         "name": "Copper Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -7.84,
-        "vol_percentile": 85.9,
+        "trend_t": -8.24,
+        "vol_percentile": 86.7,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1768
+        "momentum_20d": -0.1706
       },
       {
         "asset": "usdkrw",
         "name": "USD / KRW Currency Pair",
         "group": "fx",
         "region": "KR",
-        "trend_t": -4.47,
-        "vol_percentile": 58.8,
+        "trend_t": -4.24,
+        "vol_percentile": 54.1,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0128
+        "momentum_20d": 0.0021
       },
       {
         "asset": "ksa",
@@ -504,217 +504,217 @@
         "trend_t": -9.93,
         "vol_percentile": 38.9,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0055
+        "momentum_20d": 0.0058
       },
       {
         "asset": "xlb",
         "name": "Materials Select Sector SPDR",
         "group": "us_sector",
         "region": "US",
-        "trend_t": 2.21,
-        "vol_percentile": 83.5,
+        "trend_t": 2.19,
+        "vol_percentile": 83.1,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0109
+        "momentum_20d": -0.0125
       },
       {
         "asset": "ndx",
         "name": "Nasdaq 100 Index",
         "group": "equity_index",
         "region": "US",
-        "trend_t": -8.14,
+        "trend_t": -8.13,
         "vol_percentile": 94.2,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1135
+        "momentum_20d": -0.1116
       },
       {
         "asset": "silver",
         "name": "Silver Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -24.14,
-        "vol_percentile": 95.1,
+        "trend_t": -24.03,
+        "vol_percentile": 95.8,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.2309
+        "momentum_20d": -0.203
       },
       {
         "asset": "xlc",
         "name": "Communication Services Select SPDR",
         "group": "us_sector",
         "region": "US",
-        "trend_t": -9.38,
-        "vol_percentile": 86.1,
+        "trend_t": -9.35,
+        "vol_percentile": 86.2,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.02
+        "momentum_20d": 0.0217
       },
       {
         "asset": "indiavix",
         "name": "India VIX",
         "group": "risk_gauge",
         "region": "IN",
-        "trend_t": 15.32,
-        "vol_percentile": 45.1,
+        "trend_t": 15.09,
+        "vol_percentile": 38.6,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0315
+        "momentum_20d": 0.1328
       },
       {
         "asset": "xlf",
         "name": "Financial Select Sector SPDR",
         "group": "us_sector",
         "region": "US",
-        "trend_t": 2.01,
-        "vol_percentile": 76.4,
-        "quadrant": "Violent trend",
-        "momentum_20d": 0.0079
+        "trend_t": 2.0,
+        "vol_percentile": 76.3,
+        "quadrant": "Choppy",
+        "momentum_20d": 0.0068
       },
       {
         "asset": "niftymetal",
         "name": "Nifty Metal Index",
         "group": "india_sector",
         "region": "IN",
-        "trend_t": -6.08,
-        "vol_percentile": 54.2,
+        "trend_t": -6.19,
+        "vol_percentile": 61.0,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0075
+        "momentum_20d": -0.0096
       },
       {
         "asset": "twii",
         "name": "Taiwan Weighted Index (TAIEX)",
         "group": "equity_index",
         "region": "TW",
-        "trend_t": -8.12,
+        "trend_t": -8.83,
         "vol_percentile": 100.0,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1879
+        "momentum_20d": -0.1556
       },
       {
         "asset": "sensex",
         "name": "BSE Sensex Index",
         "group": "india_equity",
         "region": "IN",
-        "trend_t": 5.53,
-        "vol_percentile": 64.2,
+        "trend_t": 7.76,
+        "vol_percentile": 64.6,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.12
+        "momentum_20d": 0.1321
       },
       {
         "asset": "xle",
         "name": "Energy Select Sector SPDR",
         "group": "us_sector",
         "region": "US",
-        "trend_t": -0.47,
-        "vol_percentile": 81.5,
+        "trend_t": -0.49,
+        "vol_percentile": 81.1,
         "quadrant": "Choppy",
-        "momentum_20d": -0.1077
+        "momentum_20d": -0.1103
       },
       {
         "asset": "nifty50",
         "name": "Nifty 50 Index",
         "group": "india_equity",
         "region": "IN",
-        "trend_t": 4.35,
-        "vol_percentile": 62.6,
+        "trend_t": 6.43,
+        "vol_percentile": 65.1,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.1141
+        "momentum_20d": 0.1252
       },
       {
         "asset": "xlv",
         "name": "Health Care Select Sector SPDR",
         "group": "us_sector",
         "region": "US",
-        "trend_t": 12.83,
+        "trend_t": 12.8,
         "vol_percentile": 92.0,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0234
+        "momentum_20d": 0.022
       },
       {
         "asset": "ftse",
         "name": "FTSE 100 Index",
         "group": "equity_index",
         "region": "UK",
-        "trend_t": -0.99,
-        "vol_percentile": 61.5,
+        "trend_t": -0.94,
+        "vol_percentile": 65.8,
         "quadrant": "Choppy",
-        "momentum_20d": -0.025
+        "momentum_20d": -0.0154
       },
       {
         "asset": "usdinr",
         "name": "USD / INR Currency Pair",
         "group": "fx",
         "region": "IN",
-        "trend_t": -6.5,
-        "vol_percentile": 38.2,
+        "trend_t": -7.48,
+        "vol_percentile": 27.6,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0311
+        "momentum_20d": -0.0289
       },
       {
         "asset": "niftyit",
         "name": "Nifty IT Index",
         "group": "india_sector",
         "region": "IN",
-        "trend_t": 6.37,
-        "vol_percentile": 56.4,
+        "trend_t": 8.81,
+        "vol_percentile": 57.2,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0131
+        "momentum_20d": 0.0334
       },
       {
         "asset": "niftyauto",
         "name": "Nifty Auto Index",
         "group": "india_sector",
         "region": "IN",
-        "trend_t": 0.02,
-        "vol_percentile": 88.1,
+        "trend_t": 1.88,
+        "vol_percentile": 88.5,
         "quadrant": "Choppy",
-        "momentum_20d": 0.141
+        "momentum_20d": 0.1147
       },
       {
         "asset": "smi",
         "name": "Swiss Market Index (SMI)",
         "group": "equity_index",
         "region": "CH",
-        "trend_t": 10.21,
-        "vol_percentile": 61.9,
+        "trend_t": 11.25,
+        "vol_percentile": 60.9,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0057
+        "momentum_20d": 0.0035
       },
       {
         "asset": "ipc",
         "name": "S&P/BMV IPC Mexico Index",
         "group": "equity_index",
         "region": "MX",
-        "trend_t": 14.51,
-        "vol_percentile": 50.7,
+        "trend_t": 14.54,
+        "vol_percentile": 54.9,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0292
+        "momentum_20d": 0.0317
       },
       {
         "asset": "gold",
         "name": "Gold Futures",
         "group": "commodity",
         "region": "Global",
-        "trend_t": -18.41,
-        "vol_percentile": 96.9,
+        "trend_t": -18.01,
+        "vol_percentile": 97.0,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.1145
+        "momentum_20d": -0.1092
       },
       {
         "asset": "usdjpy",
         "name": "USD / JPY Currency Pair",
         "group": "fx",
         "region": "JP",
-        "trend_t": 8.26,
+        "trend_t": 9.67,
         "vol_percentile": 7.6,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.0079
+        "momentum_20d": 0.0083
       },
       {
         "asset": "hsi",
         "name": "Hang Seng Index",
         "group": "equity_index",
         "region": "HK",
-        "trend_t": -10.06,
-        "vol_percentile": 69.6,
+        "trend_t": -10.29,
+        "vol_percentile": 72.2,
         "quadrant": "Violent trend",
-        "momentum_20d": -0.0357
+        "momentum_20d": -0.0319
       },
       {
         "asset": "eurusd",
@@ -722,19 +722,19 @@
         "group": "fx",
         "region": "EU",
         "trend_t": -21.53,
-        "vol_percentile": 30.0,
+        "vol_percentile": 25.1,
         "quadrant": "Orderly trend",
-        "momentum_20d": -0.0133
+        "momentum_20d": -0.0162
       },
       {
         "asset": "usdcny",
         "name": "USD / CNY Currency Pair",
         "group": "fx",
         "region": "CN",
-        "trend_t": -15.6,
-        "vol_percentile": 42.8,
+        "trend_t": -16.25,
+        "vol_percentile": 41.0,
         "quadrant": "Orderly trend",
-        "momentum_20d": 0.001
+        "momentum_20d": -0.001
       },
       {
         "asset": "fed_assets",
@@ -761,30 +761,30 @@
         "name": "Natural Gas Futures",
         "group": "commodity",
         "region": "US",
-        "trend_t": 3.72,
-        "vol_percentile": 74.9,
+        "trend_t": 3.83,
+        "vol_percentile": 75.1,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.2982
+        "momentum_20d": 0.2236
       },
       {
         "asset": "xly",
         "name": "Consumer Discretionary Select SPDR",
         "group": "us_sector",
         "region": "US",
-        "trend_t": 7.48,
-        "vol_percentile": 91.3,
+        "trend_t": 7.46,
+        "vol_percentile": 91.4,
         "quadrant": "Violent trend",
-        "momentum_20d": 0.0205
+        "momentum_20d": 0.0187
       },
       {
         "asset": "dax",
         "name": "DAX Performance Index",
         "group": "equity_index",
         "region": "EU",
-        "trend_t": 1.67,
-        "vol_percentile": 74.3,
+        "trend_t": 1.64,
+        "vol_percentile": 75.7,
         "quadrant": "Choppy",
-        "momentum_20d": -0.039
+        "momentum_20d": -0.035
       }
     ]
   }

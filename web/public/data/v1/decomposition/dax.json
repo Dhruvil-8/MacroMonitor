@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T20:21:23Z",
+  "as_of": "2026-11-26",
+  "fetched_at": "2026-11-26T08:41:57Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -9,67 +9,67 @@
     "target_id": "dax",
     "horizon_days": 5,
     "lens": "usd",
-    "total_return": -0.0532,
+    "total_return": -0.0481,
     "contributions": {
-      "brent": 0.0034,
-      "copper": -0.0032,
-      "gold": 0.0023,
-      "dxy": -0.0014,
-      "us10y": 0.0012,
-      "row_equity": -0.017,
-      "fx_effect": -0.0049
+      "brent": 0.0019,
+      "copper": -0.0053,
+      "gold": 0.0033,
+      "dxy": -0.0006,
+      "us10y": 0.0002,
+      "row_equity": -0.0072,
+      "fx_effect": -0.0082
     },
     "intervals": {
       "brent": [
-        0.0026,
-        0.0042
+        0.0014,
+        0.0023
       ],
       "copper": [
-        -0.0063,
-        -0.0002
+        -0.0105,
+        -0.0001
       ],
       "gold": [
-        -0.0003,
-        0.0048
+        -0.0006,
+        0.0073
       ],
       "dxy": [
-        -0.0032,
-        0.0003
+        -0.0013,
+        0.0001
       ],
       "us10y": [
-        -0.0084,
-        0.0108
+        -0.0093,
+        0.0096
       ],
       "row_equity": [
-        -0.0203,
-        -0.0137
+        -0.0086,
+        -0.0058
       ],
       "fx_effect": [
-        -0.0049,
-        -0.0049
+        -0.0082,
+        -0.0082
       ]
     },
-    "residual": -0.0336,
+    "residual": -0.0322,
     "betas": {
-      "brent": -0.1007,
-      "copper": 0.0508,
-      "gold": -0.042,
-      "dxy": -0.1957,
-      "us10y": -0.0001,
-      "row_equity": 0.6381
+      "brent": -0.1,
+      "copper": 0.0492,
+      "gold": -0.0411,
+      "dxy": -0.1934,
+      "us10y": -0.0,
+      "row_equity": 0.6507
     },
-    "r2_in_sample": 0.4908,
-    "r2_out_sample": 0.4887,
+    "r2_in_sample": 0.4899,
+    "r2_out_sample": 0.4885,
     "mostly_unexplained": false,
     "regularized": false,
     "n_obs": 250,
     "window_dates": {
-      "prior_start": "2025-12-02",
-      "prior_end": "2026-11-16",
-      "horizon_start": "2026-11-17",
-      "horizon_end": "2026-11-23"
+      "prior_start": "2025-12-03",
+      "prior_end": "2026-11-17",
+      "horizon_start": "2026-11-18",
+      "horizon_end": "2026-11-24"
     },
-    "narrative": "Over 5 days, Germany (DAX)'s USD return of -5.3% was associated with: row equity -1.7%, fx effect -0.5%, brent +0.3%, copper -0.3%, gold +0.2%, dxy -0.1%, us10y +0.1%, unexplained -3.4% (out-of-sample R-squared 0.49).",
+    "narrative": "Over 5 days, Germany (DAX)'s USD return of -4.8% was associated with: fx effect -0.8%, row equity -0.7%, copper -0.5%, gold +0.3%, brent +0.2%, dxy -0.1%, us10y +0.0%, unexplained -3.2% (out-of-sample R-squared 0.49).",
     "history": []
   }
 }

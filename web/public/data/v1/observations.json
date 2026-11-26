@@ -1,55 +1,55 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T20:23:05Z",
+  "as_of": "2026-11-26",
+  "fetched_at": "2026-11-26T08:43:09Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
     "observations": [
       {
-        "id": "country_divergence_v1:brent_vs_nifty50:2026-11-25",
+        "id": "country_divergence_v1:brent_vs_nifty50:2026-11-26",
         "type": "country_divergence",
         "asset": "brent_vs_nifty50",
         "severity": "high",
         "headline": "Momentum divergence between BRENT and NIFTY50",
-        "body": "The 20-day momentum divergence spread reached -4.14 standard deviations, persisting for 3 consecutive sessions.",
+        "body": "The 20-day momentum divergence spread reached -4.16 standard deviations, persisting for 3 consecutive sessions.",
         "metrics": {
-          "spread_z": -4.1377250579060005,
-          "percentile": 99.25116373203805
+          "spread_z": -4.164256700352474,
+          "percentile": 99.25161812297735
         },
         "window": "20D",
         "inputs": [
           "brent_vs_nifty50"
         ],
-        "as_of": "2026-11-25",
+        "as_of": "2026-11-26",
         "chart_ref": "radar",
         "rule_id": "country_divergence_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "vol_shift_v1:twii:2026-11-25",
+        "id": "vol_shift_v1:twii:2026-11-26",
         "type": "vol_shift",
         "asset": "twii",
         "severity": "high",
         "headline": "Taiwan Weighted Index (TAIEX) realized volatility moved above historical baseline",
-        "body": "20-day realized volatility is 62.3%, corresponding to the 100th percentile of historical observations (N=6901, effective N=36.7).",
+        "body": "20-day realized volatility is 63.5%, corresponding to the 100th percentile of historical observations (N=6902, effective N=36.6).",
         "metrics": {
-          "vol20": 0.6232,
+          "vol20": 0.6353,
           "percentile": 100.0,
-          "n": 6901,
-          "n_eff": 36.7
+          "n": 6902,
+          "n_eff": 36.6
         },
         "window": "20D",
         "inputs": [
           "twii"
         ],
-        "as_of": "2026-11-25",
+        "as_of": "2026-11-26",
         "chart_ref": "vol_landscape",
         "rule_id": "vol_shift_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "vol_cone_breach_v1:n225:2026-11-25",
+        "id": "vol_cone_breach_v1:n225:2026-11-26",
         "type": "vol_cone_breach",
         "asset": "n225",
         "severity": "high",
@@ -68,13 +68,13 @@
         "inputs": [
           "n225"
         ],
-        "as_of": "2026-11-25",
+        "as_of": "2026-11-26",
         "chart_ref": "risk",
         "rule_id": "vol_cone_breach_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "vol_cone_breach_v1:kospi:2026-11-25",
+        "id": "vol_cone_breach_v1:kospi:2026-11-26",
         "type": "vol_cone_breach",
         "asset": "kospi",
         "severity": "high",
@@ -94,24 +94,23 @@
         "inputs": [
           "kospi"
         ],
-        "as_of": "2026-11-25",
+        "as_of": "2026-11-26",
         "chart_ref": "risk",
         "rule_id": "vol_cone_breach_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "vol_cone_breach_v1:gold:2026-11-25",
+        "id": "vol_cone_breach_v1:gold:2026-11-26",
         "type": "vol_cone_breach",
         "asset": "gold",
         "severity": "high",
         "headline": "Realized volatility elevated across multiple horizons for Gold",
-        "body": "Realized volatility exceeded the 90th historical percentile across 4 horizons simultaneously (10D, 20D, 60D, 250D).",
+        "body": "Realized volatility exceeded the 90th historical percentile across 3 horizons simultaneously (10D, 20D, 250D).",
         "metrics": {
-          "num_breaches": 4,
+          "num_breaches": 3,
           "horizons": [
             "10D",
             "20D",
-            "60D",
             "250D"
           ]
         },
@@ -119,13 +118,13 @@
         "inputs": [
           "gold"
         ],
-        "as_of": "2026-11-25",
+        "as_of": "2026-11-26",
         "chart_ref": "risk",
         "rule_id": "vol_cone_breach_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "vol_cone_breach_v1:vix:2026-11-25",
+        "id": "vol_cone_breach_v1:vix:2026-11-26",
         "type": "vol_cone_breach",
         "asset": "vix",
         "severity": "high",
@@ -145,47 +144,47 @@
         "inputs": [
           "vix"
         ],
-        "as_of": "2026-11-25",
+        "as_of": "2026-11-26",
         "chart_ref": "risk",
         "rule_id": "vol_cone_breach_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "country_divergence_v1:vix_vs_spx:2026-11-25",
+        "id": "country_divergence_v1:vix_vs_spx:2026-11-26",
         "type": "country_divergence",
         "asset": "vix_vs_spx",
         "severity": "medium",
         "headline": "Momentum divergence between VIX and SPX",
-        "body": "The 20-day momentum divergence spread reached +4.05 standard deviations, persisting for 3 consecutive sessions.",
+        "body": "The 20-day momentum divergence spread reached +4.13 standard deviations, persisting for 3 consecutive sessions.",
         "metrics": {
-          "spread_z": 4.051260434787174,
-          "percentile": 95.67963255346635
+          "spread_z": 4.129350768988024,
+          "percentile": 96.02411367877136
         },
         "window": "20D",
         "inputs": [
           "vix_vs_spx"
         ],
-        "as_of": "2026-11-25",
+        "as_of": "2026-11-26",
         "chart_ref": "radar",
         "rule_id": "country_divergence_v1",
         "code_version": "v1.0.0"
       },
       {
-        "id": "country_divergence_v1:usdinr_vs_nifty50:2026-11-25",
+        "id": "country_divergence_v1:usdinr_vs_nifty50:2026-11-26",
         "type": "country_divergence",
         "asset": "usdinr_vs_nifty50",
         "severity": "medium",
         "headline": "Momentum divergence between USDINR and NIFTY50",
-        "body": "The 20-day momentum divergence spread reached -3.28 standard deviations, persisting for 3 consecutive sessions.",
+        "body": "The 20-day momentum divergence spread reached -3.72 standard deviations, persisting for 3 consecutive sessions.",
         "metrics": {
-          "spread_z": -3.277042838048434,
-          "percentile": 96.83505782105904
+          "spread_z": -3.721722816153476,
+          "percentile": 97.83049472830496
         },
         "window": "20D",
         "inputs": [
           "usdinr_vs_nifty50"
         ],
-        "as_of": "2026-11-25",
+        "as_of": "2026-11-26",
         "chart_ref": "radar",
         "rule_id": "country_divergence_v1",
         "code_version": "v1.0.0"

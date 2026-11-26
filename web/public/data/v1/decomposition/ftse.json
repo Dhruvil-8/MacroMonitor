@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T20:21:23Z",
+  "as_of": "2026-11-26",
+  "fetched_at": "2026-11-26T08:41:57Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -9,67 +9,67 @@
     "target_id": "ftse",
     "horizon_days": 5,
     "lens": "usd",
-    "total_return": -0.0464,
+    "total_return": -0.0323,
     "contributions": {
-      "brent": 0.0012,
-      "copper": -0.0029,
-      "gold": -0.001,
-      "dxy": 0.0002,
-      "us10y": 0.0038,
-      "row_equity": -0.0069,
-      "fx_effect": -0.0093
+      "brent": 0.0007,
+      "copper": -0.0047,
+      "gold": -0.0015,
+      "dxy": 0.0001,
+      "us10y": 0.0026,
+      "row_equity": -0.0037,
+      "fx_effect": -0.0114
     },
     "intervals": {
       "brent": [
-        0.0006,
-        0.0019
+        0.0003,
+        0.0011
       ],
       "copper": [
-        -0.0054,
+        -0.009,
         -0.0004
       ],
       "gold": [
-        -0.0031,
-        0.0011
-      ],
-      "dxy": [
-        -0.0012,
+        -0.0047,
         0.0017
       ],
+      "dxy": [
+        -0.0005,
+        0.0007
+      ],
       "us10y": [
-        -0.0041,
-        0.0116
+        -0.0052,
+        0.0103
       ],
       "row_equity": [
-        -0.0096,
-        -0.0042
+        -0.0052,
+        -0.0023
       ],
       "fx_effect": [
-        -0.0093,
-        -0.0093
+        -0.0114,
+        -0.0114
       ]
     },
-    "residual": -0.0315,
+    "residual": -0.0144,
     "betas": {
-      "brent": -0.0365,
-      "copper": 0.0453,
-      "gold": 0.0188,
-      "dxy": 0.0315,
-      "us10y": -0.0002,
-      "row_equity": 0.239
+      "brent": -0.0363,
+      "copper": 0.0435,
+      "gold": 0.0181,
+      "dxy": 0.0299,
+      "us10y": -0.0001,
+      "row_equity": 0.2508
     },
-    "r2_in_sample": 0.2488,
-    "r2_out_sample": 0.2439,
+    "r2_in_sample": 0.246,
+    "r2_out_sample": 0.2427,
     "mostly_unexplained": false,
     "regularized": false,
     "n_obs": 250,
     "window_dates": {
-      "prior_start": "2025-12-02",
-      "prior_end": "2026-11-16",
-      "horizon_start": "2026-11-17",
-      "horizon_end": "2026-11-23"
+      "prior_start": "2025-12-03",
+      "prior_end": "2026-11-17",
+      "horizon_start": "2026-11-18",
+      "horizon_end": "2026-11-24"
     },
-    "narrative": "Over 5 days, United Kingdom (FTSE 100)'s USD return of -4.6% was associated with: fx effect -0.9%, row equity -0.7%, us10y +0.4%, copper -0.3%, brent +0.1%, gold -0.1%, dxy +0.0%, unexplained -3.2% (out-of-sample R-squared 0.24).",
+    "narrative": "Over 5 days, United Kingdom (FTSE 100)'s USD return of -3.2% was associated with: fx effect -1.1%, copper -0.5%, row equity -0.4%, us10y +0.3%, gold -0.1%, brent +0.1%, dxy +0.0%, unexplained -1.4% (out-of-sample R-squared 0.24).",
     "history": []
   }
 }

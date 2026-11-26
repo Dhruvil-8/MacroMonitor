@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "as_of": "2026-11-25",
-  "fetched_at": "2026-11-25T20:21:19Z",
+  "as_of": "2026-11-26",
+  "fetched_at": "2026-11-26T08:41:53Z",
   "code_version": "v1.0.0",
   "params_hash": "f1687f268479",
   "data": {
@@ -11,12 +11,11 @@
       {
         "id": "us10y",
         "name": "US 10-Year Treasury Yield",
-        "value": 4.92,
-        "change_1d": 0.0,
+        "value": 4.91,
+        "change_1d": -0.2,
         "unit": "pct",
         "percentile": 68.2,
         "sparkline": [
-          4.99,
           5.05,
           4.98,
           4.94,
@@ -35,14 +34,15 @@
           5.07,
           5.04,
           4.92,
-          4.92
+          4.92,
+          4.91
         ]
       },
       {
         "id": "spx",
         "name": "S&P 500 Index",
-        "value": 7176.36,
-        "change_1d": -0.34,
+        "value": 7182.78,
+        "change_1d": -0.25,
         "unit": "index",
         "percentile": 95.2,
         "sparkline": [
@@ -65,18 +65,17 @@
           6910.39,
           7237.17,
           7201.09,
-          7176.36
+          7182.78
         ]
       },
       {
         "id": "dxy",
         "name": "US Dollar Index",
-        "value": 103.67,
-        "change_1d": -0.14,
+        "value": 103.74,
+        "change_1d": 0.07,
         "unit": "index",
-        "percentile": 34.2,
+        "percentile": 32.9,
         "sparkline": [
-          102.04,
           101.88,
           101.75,
           101.87,
@@ -95,18 +94,18 @@
           103.81,
           104.32,
           103.81,
-          103.67
+          103.67,
+          103.74
         ]
       },
       {
         "id": "brent",
         "name": "Brent Crude Oil Futures",
-        "value": 90.48,
-        "change_1d": -1.01,
+        "value": 90.59,
+        "change_1d": -4.25,
         "unit": "usd_per_barrel",
-        "percentile": 93.3,
+        "percentile": 93.8,
         "sparkline": [
-          114.88,
           117.64,
           104.77,
           103.6,
@@ -125,18 +124,18 @@
           92.57,
           89.37,
           91.4,
-          90.48
+          94.61,
+          90.59
         ]
       },
       {
         "id": "vix",
         "name": "Cboe Volatility Index",
-        "value": 27.85,
-        "change_1d": 5.65,
+        "value": 27.1,
+        "change_1d": -4.21,
         "unit": "index",
         "percentile": 97.9,
         "sparkline": [
-          17.2,
           19.42,
           21.15,
           20.83,
@@ -155,14 +154,15 @@
           35.89,
           26.62,
           26.36,
-          27.85
+          28.29,
+          27.1
         ]
       },
       {
         "id": "ndx",
         "name": "Nasdaq 100 Index",
-        "value": 23535.56,
-        "change_1d": -0.83,
+        "value": 23585.8,
+        "change_1d": -0.62,
         "unit": "index",
         "percentile": 94.2,
         "sparkline": [
@@ -185,20 +185,17 @@
           22617.73,
           24089.56,
           23733.54,
-          23535.56
+          23585.8
         ]
       },
       {
         "id": "nifty50",
         "name": "Nifty 50 Index",
-        "value": 25349.65,
-        "change_1d": -1.75,
+        "value": 25807.45,
+        "change_1d": -0.05,
         "unit": "index",
-        "percentile": 62.6,
+        "percentile": 65.1,
         "sparkline": [
-          22749.75,
-          22698.85,
-          22936.75,
           23053.1,
           23440.8,
           23810.85,
@@ -215,18 +212,20 @@
           25227.95,
           25514.3,
           25800.6,
-          25349.65
+          25349.65,
+          25349.65,
+          25819.25,
+          25807.45
         ]
       },
       {
         "id": "gold",
         "name": "Gold Futures",
-        "value": 3587.6,
-        "change_1d": 0.72,
+        "value": 3591.2,
+        "change_1d": 1.57,
         "unit": "usd_per_oz",
-        "percentile": 96.9,
+        "percentile": 97.0,
         "sparkline": [
-          4031.4,
           3898.9,
           3969.6,
           3940.4,
@@ -245,7 +244,8 @@
           3515.4,
           3651.4,
           3561.9,
-          3587.6
+          3535.8,
+          3591.2
         ]
       }
     ],
