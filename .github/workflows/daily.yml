@@ -1,11 +1,10 @@
 name: Daily Market Pipeline (Lightweight)
 
 on:
-  schedule:
-    # 11:00 UTC = 4:30 PM IST (after India / NSE close, Mon-Fri)
-    - cron: '0 11 * * 1-5'
-    # 00:30 UTC = 6:00 AM IST (after US close in both EST & EDT/DST, Tue-Sat covers Mon-Fri US sessions)
-    - cron: '30 0 * * 2-6'
+  # Scheduled auto-updates disabled for demo mode (trigger manually via Actions -> Run workflow)
+  # schedule:
+  #   - cron: '0 11 * * 1-5'
+  #   - cron: '30 0 * * 2-6'
   workflow_dispatch:
 
 permissions:

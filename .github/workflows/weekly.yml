@@ -1,9 +1,9 @@
 name: Weekly Deep Pipeline (Heavy Analytics)
 
 on:
-  schedule:
-    # 02:00 UTC every Sunday = ~7:30 AM IST Sunday
-    - cron: '0 2 * * 0'
+  # Scheduled auto-updates disabled for demo mode (trigger manually via Actions -> Run workflow)
+  # schedule:
+  #   - cron: '0 2 * * 0'
   workflow_dispatch:
 
 permissions:
